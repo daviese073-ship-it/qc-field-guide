@@ -15,7 +15,7 @@ try {
       `Sections: ${registries.sections.getAll().length}`,
       `Activities: ${registries.activities.getAll().length}`,
       `Relationships: ${registries.relationships.getAll().length}`,
-      "Production dataset validation and relationship derivation are not implemented in this phase."
+      "Production dataset validation is not implemented in this phase."
     ].join("\n")
   );
 } catch (error) {
