@@ -1,15 +1,17 @@
-import { z } from "zod";
+import { spawnSync } from "node:child_process";
+import { join } from "node:path";
 
-const foundationValidationSchema = z.object({
-  phase: z.literal("foundation-only"),
-  canonicalDataImplemented: z.literal(false)
+const tscExecutable = join("node_modules", "typescript", "bin", "tsc");
+
+const result = spawnSync(process.execPath, [tscExecutable, "--noEmit"], {
+  stdio: "inherit",
+  shell: false
 });
 
-foundationValidationSchema.parse({
-  phase: "foundation-only",
-  canonicalDataImplemented: false
-});
+if (result.status !== 0) {
+  process.exit(result.status ?? 1);
+}
 
 console.log(
-  "Foundation-only data validation passed. Canonical data schemas and datasets are not implemented in this phase."
+  "Phase 002 schema validation passed. Canonical object schemas compile; production dataset validation and referential integrity are deferred to Phase 003."
 );
