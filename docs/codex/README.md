@@ -13,3 +13,7 @@ behavior.
 
 If a future phase is ambiguous, stop and report the ambiguity before changing
 product behavior.
+
+`phase-sequence.md` records the ordered implementation sequence and checkpoint
+rules. It is a planning/governance artifact only; future phase prompts still
+control what work is authorized.

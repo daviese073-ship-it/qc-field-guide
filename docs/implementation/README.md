@@ -48,6 +48,8 @@ implementation use only and does not change the source documents.
   contract layer.
 - `technical-stack.md` documents the Phase 007 technical-stack freeze and
   executable foundation audit.
+- `implementation-sequence.md` documents the Phase 008 implementation sequence
+  and dependency plan.
 
 ## Current Boundary
 

@@ -10,7 +10,8 @@ const requiredScripts = [
   "test",
   "test:e2e",
   "validate:data",
-  "validate:foundation"
+  "validate:foundation",
+  "validate:phase-plan"
 ];
 
 const requiredDependencies = [
