@@ -35,10 +35,22 @@ implementation use only and does not change the source documents.
 - No backend, database, accounts, runtime content API, translation API, or
   official project-QMS behavior belongs in the foundation.
 
-## Current Phase Boundary
+## Implemented Phase Notes
 
-This phase creates the repository foundation only. It does not ingest Build 2
-content, create canonical activity data, implement Quick / Full / Learn,
-relationships, search, terminology, bilingual rendering, workflows,
-pre-concealment logic, gates, reports, approvals, official records, or project
-tracking.
+- `domain-model.md` documents the Phase 002 canonical TypeScript/Zod contracts.
+- `data-loading-and-integrity.md` documents the Phase 003 loading, registry,
+  node-resolution, duplicate-ID, and referential-integrity layer.
+- `relationship-navigation.md` documents the Phase 004 relationship derivation
+  and canonical navigation helpers.
+- `screen-contracts.md` documents the Phase 005 non-visual screen contracts and
+  screen models.
+- `component-architecture.md` documents the Phase 006 reusable component
+  contract layer.
+
+## Current Boundary
+
+The repository now has domain contracts, validation, registries, relationship
+services, screen contracts, and reusable component foundations. It still does
+not ingest production Build 2 content, implement search ranking/results,
+favorites/recents, official records, approvals, releases, signatures, backend
+services, databases, authentication, analytics, or project tracking.
