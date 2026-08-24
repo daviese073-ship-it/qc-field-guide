@@ -5,6 +5,7 @@ import {
   deriveBefore,
   deriveCloseout,
   deriveCommissioning,
+  deriveControlledByGate,
   deriveGates,
   deriveInterfaces,
   deriveNavigationGroups,
@@ -20,6 +21,8 @@ export const createRelationshipService = (registries: CanonicalRegistries) =>
     getAfter: (nodeId: string) => deriveAfter(nodeId, registries),
     getInterfaces: (nodeId: string) => deriveInterfaces(nodeId, registries),
     getGates: (nodeId: string) => deriveGates(nodeId, registries),
+    getControlledByGate: (gateId: string) =>
+      deriveControlledByGate(gateId, registries),
     getWorkflows: (nodeId: string) => deriveWorkflows(nodeId, registries),
     getTesting: (nodeId: string) => deriveTesting(nodeId, registries),
     getCommissioning: (nodeId: string) =>

@@ -7,6 +7,7 @@ import {
 
 describe("navigation service helpers", () => {
   it("builds canonical routes without changing language-neutral IDs", () => {
+    expect(getCanonicalRoute({ objectType: "home" })).toBe("/");
     expect(
       getCanonicalRoute({
         objectType: "activity",

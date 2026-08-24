@@ -211,6 +211,30 @@ const deriveOutgoingByType = (
 export const deriveGates = (nodeId: string, registries: CanonicalRegistries) =>
   deriveOutgoingByType(nodeId, ["GATED_BY"], registries);
 
+export const deriveControlledByGate = (
+  gateId: string,
+  registries: CanonicalRegistries
+) =>
+  dedupeByRelatedNode(
+    registries.relationships.getAll().flatMap((relationship) => {
+      if (
+        relationship.type !== "GATED_BY" ||
+        relationship.targetId !== gateId
+      ) {
+        return [];
+      }
+
+      const item = resolveItem(
+        relationship,
+        relationship.sourceId,
+        "incoming",
+        registries
+      );
+
+      return item ? [item] : [];
+    })
+  );
+
 export const deriveWorkflows = (
   nodeId: string,
   registries: CanonicalRegistries

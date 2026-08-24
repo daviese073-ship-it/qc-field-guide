@@ -1,6 +1,7 @@
 import type { ActivityMode } from "@/services/navigation/navigationContext";
 
 export type CanonicalRouteTarget =
+  | { objectType: "home" }
   | { objectType: "section"; id: string }
   | { objectType: "activity"; id: string; mode?: ActivityMode }
   | { objectType: "workflow"; id: string }
@@ -17,6 +18,8 @@ const encodePathId = (id: string) =>
 
 export const getCanonicalRoute = (target: CanonicalRouteTarget): string => {
   switch (target.objectType) {
+    case "home":
+      return "/";
     case "section":
       return `/section/${encodePathId(target.id)}`;
     case "activity": {
