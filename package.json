@@ -10,7 +10,8 @@
     "lint": "eslint .",
     "test": "vitest run",
     "test:e2e": "node scripts/run-e2e.mjs",
-    "validate:data": "node scripts/validate-data.mjs"
+    "validate:data": "node scripts/validate-data.mjs",
+    "validate:foundation": "node scripts/verify-technical-foundation.mjs"
   },
   "dependencies": {
     "lucide-react": "^0.468.0",

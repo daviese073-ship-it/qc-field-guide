@@ -46,11 +46,13 @@ implementation use only and does not change the source documents.
   screen models.
 - `component-architecture.md` documents the Phase 006 reusable component
   contract layer.
+- `technical-stack.md` documents the Phase 007 technical-stack freeze and
+  executable foundation audit.
 
 ## Current Boundary
 
 The repository now has domain contracts, validation, registries, relationship
 services, screen contracts, and reusable component foundations. It still does
-not ingest production Build 2 content, implement search ranking/results,
+not ingest production Build 2 content, implement search indexing/ranking/results,
 favorites/recents, official records, approvals, releases, signatures, backend
 services, databases, authentication, analytics, or project tracking.

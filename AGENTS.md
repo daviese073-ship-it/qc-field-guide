@@ -39,10 +39,14 @@ acceptance.
 17. The design-reference images guide presentation only and may not add functionality absent from the specification.
 18. Relationships will later be stored once and derived centrally; do not create duplicate reverse links in UI code.
 
-## Foundation Boundary
+## Phase Boundary
 
-This repository is foundation-only until a later phase explicitly authorizes
-canonical data schemas and content ingestion. Do not ingest Build 2 content, do
-not create the activity dataset, and do not implement relationship, gate,
-workflow, pre-concealment, search, terminology, or bilingual behavior without a
-phase instruction that names the governing source documents.
+This repository is implemented in controlled phases. Preserve the established
+domain schemas, data loading, integrity validation, relationship services,
+screen contracts, component contracts, and technical foundation unless a later
+phase explicitly authorizes a narrow change.
+
+Do not ingest Build 2 production content, create the production activity
+dataset, implement search indexing/ranking, persistence features, final screen
+presentation, or official project-QMS behavior without a phase instruction that
+names the governing source documents.

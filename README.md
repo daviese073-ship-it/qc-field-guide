@@ -51,12 +51,12 @@ records, or project status tracking.
 - `docs/codex/`: Codex phase guidance.
 - `scripts/`: repository validation scripts.
 - `src/app/`: application entry, router, providers, and styles.
-- `src/screens/`: route-level screen contracts.
+- `src/screens/`: route-level screen scaffolds and future screen templates.
 - `src/components/`: reusable shell, navigation, workflow, gate, search,
   terminology, content, and UI components.
-- `src/domain/`: future canonical types, schemas, and registries.
-- `src/data/`: future canonical data modules.
-- `src/generated/`: future generated artifacts such as search indexes.
+- `src/domain/`: canonical types, schemas, and registries.
+- `src/data/`: canonical dataset boundary and future production data modules.
+- `src/generated/`: future generated artifacts such as derived search indexes.
 - `src/services/`: application services, including storage wrappers.
 - `tests/integration/`: Vitest and React Testing Library tests.
 - `tests/e2e/`: Playwright smoke tests.
@@ -80,9 +80,15 @@ npm run test:e2e
 
 ```bash
 npm run validate:data
+npm run validate:foundation
 npm run typecheck
 npm run lint
 ```
 
-`validate:data` is foundation-only in this phase. It confirms that the validation
-harness runs and that canonical data ingestion has not been implemented yet.
+`validate:data` validates the current non-production fixture dataset through the
+canonical schema, registry, and referential-integrity pipeline. Production Build
+2 content has not been ingested yet.
+
+`validate:foundation` audits the frozen technical stack, required scripts,
+repository folders, ignored artifact paths, PWA/TypeScript settings, and
+dependency boundaries.
