@@ -1,0 +1,5033 @@
+[
+  {
+    "activityId": "5.1",
+    "before": [
+      {
+        "type": "checkList",
+        "items": [
+          {
+            "id": "QV-BEFORE-CNT-5.1-REQ-001-001",
+            "text": {
+              "en": "Obtain:",
+              "fr": "Obtain:",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.1",
+              "page": "CNT-5.1-REQ-001",
+              "note": {
+                "en": "Mapped from canonical Activity 5.1 before/requirements/planning/documentControl item CNT-5.1-REQ-001."
+              }
+            },
+            "authority": {
+              "projectDocumentsGovern": true
+            }
+          },
+          {
+            "id": "QV-BEFORE-CNT-5.1-REQ-002-002",
+            "text": {
+              "en": "roof plans;",
+              "fr": "toiture plans;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.1",
+              "page": "CNT-5.1-REQ-002",
+              "note": {
+                "en": "Mapped from canonical Activity 5.1 before/requirements/planning/documentControl item CNT-5.1-REQ-002."
+              }
+            }
+          },
+          {
+            "id": "QV-BEFORE-CNT-5.1-REQ-003-003",
+            "text": {
+              "en": "structural roof framing/deck drawings;",
+              "fr": "structural toiture cadrage/deck plans;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.1",
+              "page": "CNT-5.1-REQ-003",
+              "note": {
+                "en": "Mapped from canonical Activity 5.1 before/requirements/planning/documentControl item CNT-5.1-REQ-003."
+              }
+            }
+          },
+          {
+            "id": "QV-BEFORE-CNT-5.1-REQ-004-004",
+            "text": {
+              "en": "roof sections/details;",
+              "fr": "toiture sections/details;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.1",
+              "page": "CNT-5.1-REQ-004",
+              "note": {
+                "en": "Mapped from canonical Activity 5.1 before/requirements/planning/documentControl item CNT-5.1-REQ-004."
+              }
+            }
+          },
+          {
+            "id": "QV-BEFORE-CNT-5.1-REQ-005-005",
+            "text": {
+              "en": "roof specification;",
+              "fr": "toiture devis;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.1",
+              "page": "CNT-5.1-REQ-005",
+              "note": {
+                "en": "Mapped from canonical Activity 5.1 before/requirements/planning/documentControl item CNT-5.1-REQ-005."
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "inspect": [
+      {
+        "type": "checkList",
+        "items": [
+          {
+            "id": "QV-INSPECT-CNT-5.1-INS-DURING-001-001",
+            "text": {
+              "en": "clean;",
+              "fr": "clean;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.1",
+              "page": "CNT-5.1-INS-DURING-001",
+              "note": {
+                "en": "Mapped from canonical Activity 5.1 inspection.during/materialControl/qualityCheckpoint item CNT-5.1-INS-DURING-001."
+              }
+            }
+          },
+          {
+            "id": "QV-INSPECT-CNT-5.1-INS-DURING-002-002",
+            "text": {
+              "en": "dry;",
+              "fr": "dry;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.1",
+              "page": "CNT-5.1-INS-DURING-002",
+              "note": {
+                "en": "Mapped from canonical Activity 5.1 inspection.during/materialControl/qualityCheckpoint item CNT-5.1-INS-DURING-002."
+              }
+            }
+          },
+          {
+            "id": "QV-INSPECT-CNT-5.1-INS-DURING-003-003",
+            "text": {
+              "en": "structurally sound;",
+              "fr": "structurally sound;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.1",
+              "page": "CNT-5.1-INS-DURING-003",
+              "note": {
+                "en": "Mapped from canonical Activity 5.1 inspection.during/materialControl/qualityCheckpoint item CNT-5.1-INS-DURING-003."
+              }
+            }
+          },
+          {
+            "id": "QV-INSPECT-CNT-5.1-INS-DURING-004-004",
+            "text": {
+              "en": "no loose debris;",
+              "fr": "aucun loose debris;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.1",
+              "page": "CNT-5.1-INS-DURING-004",
+              "note": {
+                "en": "Mapped from canonical Activity 5.1 inspection.during/materialControl/qualityCheckpoint item CNT-5.1-INS-DURING-004."
+              }
+            }
+          },
+          {
+            "id": "QV-INSPECT-CNT-5.1-INS-DURING-005-005",
+            "text": {
+              "en": "no oil/contaminants;",
+              "fr": "aucun oil/contaminants;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.1",
+              "page": "CNT-5.1-INS-DURING-005",
+              "note": {
+                "en": "Mapped from canonical Activity 5.1 inspection.during/materialControl/qualityCheckpoint item CNT-5.1-INS-DURING-005."
+              }
+            }
+          },
+          {
+            "id": "QV-INSPECT-CNT-5.1-INS-DURING-006-006",
+            "text": {
+              "en": "no sharp projections;",
+              "fr": "aucun sharp projections;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.1",
+              "page": "CNT-5.1-INS-DURING-006",
+              "note": {
+                "en": "Mapped from canonical Activity 5.1 inspection.during/materialControl/qualityCheckpoint item CNT-5.1-INS-DURING-006."
+              }
+            }
+          },
+          {
+            "id": "QV-INSPECT-CNT-5.1-INS-DURING-007-007",
+            "text": {
+              "en": "no damaged areas;",
+              "fr": "aucun damaged areas;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.1",
+              "page": "CNT-5.1-INS-DURING-007",
+              "note": {
+                "en": "Mapped from canonical Activity 5.1 inspection.during/materialControl/qualityCheckpoint item CNT-5.1-INS-DURING-007."
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "type": "checkList",
+        "items": [
+          {
+            "id": "QV-EVIDENCE-CNT-5.1-EVID-001-001",
+            "text": {
+              "en": "roof zone;",
+              "fr": "toiture zone;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.1",
+              "page": "CNT-5.1-EVID-001",
+              "note": {
+                "en": "Mapped from canonical Activity 5.1 evidence/verification/closureCriteria item CNT-5.1-EVID-001."
+              }
+            }
+          },
+          {
+            "id": "QV-EVIDENCE-CNT-5.1-EVID-002-002",
+            "text": {
+              "en": "deck type;",
+              "fr": "deck type;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.1",
+              "page": "CNT-5.1-EVID-002",
+              "note": {
+                "en": "Mapped from canonical Activity 5.1 evidence/verification/closureCriteria item CNT-5.1-EVID-002."
+              }
+            }
+          },
+          {
+            "id": "QV-EVIDENCE-CNT-5.1-EVID-003-003",
+            "text": {
+              "en": "condition;",
+              "fr": "condition;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.1",
+              "page": "CNT-5.1-EVID-003",
+              "note": {
+                "en": "Mapped from canonical Activity 5.1 evidence/verification/closureCriteria item CNT-5.1-EVID-003."
+              }
+            }
+          },
+          {
+            "id": "QV-EVIDENCE-CNT-5.1-EVID-004-004",
+            "text": {
+              "en": "fastening inspection;",
+              "fr": "fastening inspection;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.1",
+              "page": "CNT-5.1-EVID-004",
+              "note": {
+                "en": "Mapped from canonical Activity 5.1 evidence/verification/closureCriteria item CNT-5.1-EVID-004."
+              }
+            }
+          },
+          {
+            "id": "QV-EVIDENCE-CNT-5.1-EVID-005-005",
+            "text": {
+              "en": "slope/elevation verification;",
+              "fr": "pente/élévation vérification;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.1",
+              "page": "CNT-5.1-EVID-005",
+              "note": {
+                "en": "Mapped from canonical Activity 5.1 evidence/verification/closureCriteria item CNT-5.1-EVID-005."
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "watchFor": [
+      {
+        "type": "bulletList",
+        "items": [
+          {
+            "id": "QV-WATCH-CNT-5.1-ISSUE-001-001",
+            "text": {
+              "en": "damaged deck;",
+              "fr": "damaged deck;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.1",
+              "page": "CNT-5.1-ISSUE-001",
+              "note": {
+                "en": "Mapped from canonical Activity 5.1 issues.commonDeficiencies/correctiveAction item CNT-5.1-ISSUE-001."
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            }
+          },
+          {
+            "id": "QV-WATCH-CNT-5.1-ISSUE-002-002",
+            "text": {
+              "en": "wet substrate;",
+              "fr": "wet support;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.1",
+              "page": "CNT-5.1-ISSUE-002",
+              "note": {
+                "en": "Mapped from canonical Activity 5.1 issues.commonDeficiencies/correctiveAction item CNT-5.1-ISSUE-002."
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            }
+          },
+          {
+            "id": "QV-WATCH-CNT-5.1-ISSUE-003-003",
+            "text": {
+              "en": "wrong slope;",
+              "fr": "wrong pente;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.1",
+              "page": "CNT-5.1-ISSUE-003",
+              "note": {
+                "en": "Mapped from canonical Activity 5.1 issues.commonDeficiencies/correctiveAction item CNT-5.1-ISSUE-003."
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            }
+          },
+          {
+            "id": "QV-WATCH-CNT-5.1-ISSUE-004-004",
+            "text": {
+              "en": "missing fasteners;",
+              "fr": "manquant fasteners;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.1",
+              "page": "CNT-5.1-ISSUE-004",
+              "note": {
+                "en": "Mapped from canonical Activity 5.1 issues.commonDeficiencies/correctiveAction item CNT-5.1-ISSUE-004."
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            }
+          },
+          {
+            "id": "QV-WATCH-CNT-5.1-ISSUE-005-005",
+            "text": {
+              "en": "excessive openings;",
+              "fr": "excessive openings;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.1",
+              "page": "CNT-5.1-ISSUE-005",
+              "note": {
+                "en": "Mapped from canonical Activity 5.1 issues.commonDeficiencies/correctiveAction item CNT-5.1-ISSUE-005."
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            }
+          }
+        ]
+      }
+    ],
+    "dontMiss": [
+      {
+        "type": "bulletList",
+        "items": [
+          {
+            "id": "QV-DONTMISS-CNT-5.1-QC-001-001",
+            "text": {
+              "en": "Correct deck",
+              "fr": "corriger deck",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.1",
+              "page": "CNT-5.1-QC-001",
+              "note": {
+                "en": "Mapped from canonical Activity 5.1 qualityCheckpoint/closureCriteria/verification item CNT-5.1-QC-001."
+              }
+            }
+          },
+          {
+            "id": "QV-DONTMISS-CNT-5.1-QC-002-002",
+            "text": {
+              "en": "Fastening",
+              "fr": "Fastening",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.1",
+              "page": "CNT-5.1-QC-002",
+              "note": {
+                "en": "Mapped from canonical Activity 5.1 qualityCheckpoint/closureCriteria/verification item CNT-5.1-QC-002."
+              }
+            }
+          },
+          {
+            "id": "QV-DONTMISS-CNT-5.1-QC-003-003",
+            "text": {
+              "en": "Clean",
+              "fr": "Clean",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.1",
+              "page": "CNT-5.1-QC-003",
+              "note": {
+                "en": "Mapped from canonical Activity 5.1 qualityCheckpoint/closureCriteria/verification item CNT-5.1-QC-003."
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "priorityRelationshipIds": [
+      "REL-5.2-REQUIRES-5.1",
+      "REL-5.9-REQUIRES-5.1-whereApplicable",
+      "REL-11.1-INTERFACES_WITH-5.1"
+    ]
+  },
+  {
+    "activityId": "5.2",
+    "before": [
+      {
+        "type": "checkList",
+        "items": [
+          {
+            "id": "QV-BEFORE-CNT-5.2-REQ-001-001",
+            "text": {
+              "en": "roof assembly details;",
+              "fr": "toiture assemblage details;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.2",
+              "page": "CNT-5.2-REQ-001",
+              "note": {
+                "en": "Mapped from canonical Activity 5.2 before/requirements/planning/documentControl item CNT-5.2-REQ-001."
+              }
+            }
+          },
+          {
+            "id": "QV-BEFORE-CNT-5.2-REQ-002-002",
+            "text": {
+              "en": "wall-to-roof transition details;",
+              "fr": "mur-à-toiture transition details;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.2",
+              "page": "CNT-5.2-REQ-002",
+              "note": {
+                "en": "Mapped from canonical Activity 5.2 before/requirements/planning/documentControl item CNT-5.2-REQ-002."
+              }
+            }
+          },
+          {
+            "id": "QV-BEFORE-CNT-5.2-REQ-003-003",
+            "text": {
+              "en": "approved membrane;",
+              "fr": "approuvé membrane;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.2",
+              "page": "CNT-5.2-REQ-003",
+              "note": {
+                "en": "Mapped from canonical Activity 5.2 before/requirements/planning/documentControl item CNT-5.2-REQ-003."
+              }
+            }
+          },
+          {
+            "id": "QV-BEFORE-CNT-5.2-REQ-004-004",
+            "text": {
+              "en": "primer;",
+              "fr": "apprêt;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.2",
+              "page": "CNT-5.2-REQ-004",
+              "note": {
+                "en": "Mapped from canonical Activity 5.2 before/requirements/planning/documentControl item CNT-5.2-REQ-004."
+              }
+            }
+          },
+          {
+            "id": "QV-BEFORE-CNT-5.2-REQ-005-005",
+            "text": {
+              "en": "seam/lap requirements;",
+              "fr": "seam/lap requirements;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.2",
+              "page": "CNT-5.2-REQ-005",
+              "note": {
+                "en": "Mapped from canonical Activity 5.2 before/requirements/planning/documentControl item CNT-5.2-REQ-005."
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "inspect": [
+      {
+        "type": "checkList",
+        "items": [
+          {
+            "id": "QV-INSPECT-CNT-5.2-INS-DURING-001-001",
+            "text": {
+              "en": "clean;",
+              "fr": "clean;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.2",
+              "page": "CNT-5.2-INS-DURING-001",
+              "note": {
+                "en": "Mapped from canonical Activity 5.2 inspection.during/materialControl/qualityCheckpoint item CNT-5.2-INS-DURING-001."
+              }
+            }
+          },
+          {
+            "id": "QV-INSPECT-CNT-5.2-INS-DURING-002-002",
+            "text": {
+              "en": "dry;",
+              "fr": "dry;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.2",
+              "page": "CNT-5.2-INS-DURING-002",
+              "note": {
+                "en": "Mapped from canonical Activity 5.2 inspection.during/materialControl/qualityCheckpoint item CNT-5.2-INS-DURING-002."
+              }
+            }
+          },
+          {
+            "id": "QV-INSPECT-CNT-5.2-INS-DURING-003-003",
+            "text": {
+              "en": "sound;",
+              "fr": "sound;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.2",
+              "page": "CNT-5.2-INS-DURING-003",
+              "note": {
+                "en": "Mapped from canonical Activity 5.2 inspection.during/materialControl/qualityCheckpoint item CNT-5.2-INS-DURING-003."
+              }
+            }
+          },
+          {
+            "id": "QV-INSPECT-CNT-5.2-INS-DURING-004-004",
+            "text": {
+              "en": "acceptable temperature;",
+              "fr": "acceptable temperature;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.2",
+              "page": "CNT-5.2-INS-DURING-004",
+              "note": {
+                "en": "Mapped from canonical Activity 5.2 inspection.during/materialControl/qualityCheckpoint item CNT-5.2-INS-DURING-004."
+              }
+            }
+          },
+          {
+            "id": "QV-INSPECT-CNT-5.2-INS-DURING-005-005",
+            "text": {
+              "en": "free of sharp projections.",
+              "fr": "free de sharp projections.",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.2",
+              "page": "CNT-5.2-INS-DURING-005",
+              "note": {
+                "en": "Mapped from canonical Activity 5.2 inspection.during/materialControl/qualityCheckpoint item CNT-5.2-INS-DURING-005."
+              }
+            }
+          },
+          {
+            "id": "QV-INSPECT-CNT-5.2-INS-DURING-006-006",
+            "text": {
+              "en": "continuous installation;",
+              "fr": "continuous installation;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.2",
+              "page": "CNT-5.2-INS-DURING-006",
+              "note": {
+                "en": "Mapped from canonical Activity 5.2 inspection.during/materialControl/qualityCheckpoint item CNT-5.2-INS-DURING-006."
+              }
+            }
+          },
+          {
+            "id": "QV-INSPECT-CNT-5.2-INS-DURING-007-007",
+            "text": {
+              "en": "full adhesion;",
+              "fr": "full adhérence;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.2",
+              "page": "CNT-5.2-INS-DURING-007",
+              "note": {
+                "en": "Mapped from canonical Activity 5.2 inspection.during/materialControl/qualityCheckpoint item CNT-5.2-INS-DURING-007."
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "type": "checkList",
+        "items": [
+          {
+            "id": "QV-EVIDENCE-CNT-5.2-EVID-001-001",
+            "text": {
+              "en": "zone;",
+              "fr": "zone;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.2",
+              "page": "CNT-5.2-EVID-001",
+              "note": {
+                "en": "Mapped from canonical Activity 5.2 evidence/verification/closureCriteria item CNT-5.2-EVID-001."
+              }
+            }
+          },
+          {
+            "id": "QV-EVIDENCE-CNT-5.2-EVID-002-002",
+            "text": {
+              "en": "product;",
+              "fr": "product;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.2",
+              "page": "CNT-5.2-EVID-002",
+              "note": {
+                "en": "Mapped from canonical Activity 5.2 evidence/verification/closureCriteria item CNT-5.2-EVID-002."
+              }
+            }
+          },
+          {
+            "id": "QV-EVIDENCE-CNT-5.2-EVID-003-003",
+            "text": {
+              "en": "substrate;",
+              "fr": "support;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.2",
+              "page": "CNT-5.2-EVID-003",
+              "note": {
+                "en": "Mapped from canonical Activity 5.2 evidence/verification/closureCriteria item CNT-5.2-EVID-003."
+              }
+            }
+          },
+          {
+            "id": "QV-EVIDENCE-CNT-5.2-EVID-004-004",
+            "text": {
+              "en": "weather/temp where required;",
+              "fr": "weather/temp lorsque requis;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.2",
+              "page": "CNT-5.2-EVID-004",
+              "note": {
+                "en": "Mapped from canonical Activity 5.2 evidence/verification/closureCriteria item CNT-5.2-EVID-004."
+              }
+            }
+          },
+          {
+            "id": "QV-EVIDENCE-CNT-5.2-EVID-005-005",
+            "text": {
+              "en": "seams;",
+              "fr": "seams;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.2",
+              "page": "CNT-5.2-EVID-005",
+              "note": {
+                "en": "Mapped from canonical Activity 5.2 evidence/verification/closureCriteria item CNT-5.2-EVID-005."
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "watchFor": [
+      {
+        "type": "bulletList",
+        "items": [
+          {
+            "id": "QV-WATCH-CNT-5.2-ISSUE-001-001",
+            "text": {
+              "en": "open seam;",
+              "fr": "open seam;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.2",
+              "page": "CNT-5.2-ISSUE-001",
+              "note": {
+                "en": "Mapped from canonical Activity 5.2 issues.commonDeficiencies/correctiveAction item CNT-5.2-ISSUE-001."
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            }
+          },
+          {
+            "id": "QV-WATCH-CNT-5.2-ISSUE-002-002",
+            "text": {
+              "en": "puncture;",
+              "fr": "puncture;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.2",
+              "page": "CNT-5.2-ISSUE-002",
+              "note": {
+                "en": "Mapped from canonical Activity 5.2 issues.commonDeficiencies/correctiveAction item CNT-5.2-ISSUE-002."
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            }
+          },
+          {
+            "id": "QV-WATCH-CNT-5.2-ISSUE-003-003",
+            "text": {
+              "en": "poor adhesion;",
+              "fr": "poor adhérence;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.2",
+              "page": "CNT-5.2-ISSUE-003",
+              "note": {
+                "en": "Mapped from canonical Activity 5.2 issues.commonDeficiencies/correctiveAction item CNT-5.2-ISSUE-003."
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            }
+          },
+          {
+            "id": "QV-WATCH-CNT-5.2-ISSUE-004-004",
+            "text": {
+              "en": "missing transition;",
+              "fr": "manquant transition;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.2",
+              "page": "CNT-5.2-ISSUE-004",
+              "note": {
+                "en": "Mapped from canonical Activity 5.2 issues.commonDeficiencies/correctiveAction item CNT-5.2-ISSUE-004."
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            }
+          },
+          {
+            "id": "QV-WATCH-CNT-5.2-ISSUE-005-005",
+            "text": {
+              "en": "unsealed penetration;",
+              "fr": "unsealed penetration;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.2",
+              "page": "CNT-5.2-ISSUE-005",
+              "note": {
+                "en": "Mapped from canonical Activity 5.2 issues.commonDeficiencies/correctiveAction item CNT-5.2-ISSUE-005."
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            }
+          }
+        ]
+      }
+    ],
+    "dontMiss": [
+      {
+        "type": "bulletList",
+        "items": [
+          {
+            "id": "QV-DONTMISS-CNT-5.2-QC-001-001",
+            "text": {
+              "en": "Substrate ready",
+              "fr": "support ready",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.2",
+              "page": "CNT-5.2-QC-001",
+              "note": {
+                "en": "Mapped from canonical Activity 5.2 qualityCheckpoint/closureCriteria/verification item CNT-5.2-QC-001."
+              }
+            }
+          },
+          {
+            "id": "QV-DONTMISS-CNT-5.2-QC-002-002",
+            "text": {
+              "en": "Product correct",
+              "fr": "Product corriger",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.2",
+              "page": "CNT-5.2-QC-002",
+              "note": {
+                "en": "Mapped from canonical Activity 5.2 qualityCheckpoint/closureCriteria/verification item CNT-5.2-QC-002."
+              }
+            }
+          },
+          {
+            "id": "QV-DONTMISS-CNT-5.2-QC-003-003",
+            "text": {
+              "en": "Seams/laps",
+              "fr": "Seams/laps",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.2",
+              "page": "CNT-5.2-QC-003",
+              "note": {
+                "en": "Mapped from canonical Activity 5.2 qualityCheckpoint/closureCriteria/verification item CNT-5.2-QC-003."
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "priorityRelationshipIds": [
+      "REL-5.2-GATED_BY-G-ROOF-01A",
+      "REL-5.2-REQUIRES-5.1",
+      "REL-5.3-REQUIRES-5.2",
+      "REL-4.2-INTERFACES_WITH-5.2-whereRoof"
+    ]
+  },
+  {
+    "activityId": "5.3",
+    "before": [
+      {
+        "type": "checkList",
+        "items": [
+          {
+            "id": "QV-BEFORE-CNT-5.3-REQ-001-001",
+            "text": {
+              "en": "roof plan;",
+              "fr": "toiture planifier;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.3",
+              "page": "CNT-5.3-REQ-001",
+              "note": {
+                "en": "Mapped from canonical Activity 5.3 before/requirements/planning/documentControl item CNT-5.3-REQ-001."
+              }
+            }
+          },
+          {
+            "id": "QV-BEFORE-CNT-5.3-REQ-002-002",
+            "text": {
+              "en": "roof assembly details;",
+              "fr": "toiture assemblage details;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.3",
+              "page": "CNT-5.3-REQ-002",
+              "note": {
+                "en": "Mapped from canonical Activity 5.3 before/requirements/planning/documentControl item CNT-5.3-REQ-002."
+              }
+            }
+          },
+          {
+            "id": "QV-BEFORE-CNT-5.3-REQ-003-003",
+            "text": {
+              "en": "insulation specification;",
+              "fr": "isolation devis;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.3",
+              "page": "CNT-5.3-REQ-003",
+              "note": {
+                "en": "Mapped from canonical Activity 5.3 before/requirements/planning/documentControl item CNT-5.3-REQ-003."
+              }
+            }
+          },
+          {
+            "id": "QV-BEFORE-CNT-5.3-REQ-004-004",
+            "text": {
+              "en": "tapered insulation layout;",
+              "fr": "tapered isolation layout;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.3",
+              "page": "CNT-5.3-REQ-004",
+              "note": {
+                "en": "Mapped from canonical Activity 5.3 before/requirements/planning/documentControl item CNT-5.3-REQ-004."
+              }
+            }
+          },
+          {
+            "id": "QV-BEFORE-CNT-5.3-REQ-005-005",
+            "text": {
+              "en": "approved product data;",
+              "fr": "approuvé product data;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.3",
+              "page": "CNT-5.3-REQ-005",
+              "note": {
+                "en": "Mapped from canonical Activity 5.3 before/requirements/planning/documentControl item CNT-5.3-REQ-005."
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "inspect": [
+      {
+        "type": "checkList",
+        "items": [
+          {
+            "id": "QV-INSPECT-CNT-5.3-INS-DURING-001-001",
+            "text": {
+              "en": "Correct type and thickness.",
+              "fr": "corriger type et thickness.",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.3",
+              "page": "CNT-5.3-INS-DURING-001",
+              "note": {
+                "en": "Mapped from canonical Activity 5.3 inspection.during/materialControl/qualityCheckpoint item CNT-5.3-INS-DURING-001."
+              }
+            }
+          },
+          {
+            "id": "QV-INSPECT-CNT-5.3-INS-DURING-002-002",
+            "text": {
+              "en": "required number of layers;",
+              "fr": "requis number de layers;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.3",
+              "page": "CNT-5.3-INS-DURING-002",
+              "note": {
+                "en": "Mapped from canonical Activity 5.3 inspection.during/materialControl/qualityCheckpoint item CNT-5.3-INS-DURING-002."
+              }
+            }
+          },
+          {
+            "id": "QV-INSPECT-CNT-5.3-INS-DURING-003-003",
+            "text": {
+              "en": "joints staggered;",
+              "fr": "joints staggered;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.3",
+              "page": "CNT-5.3-INS-DURING-003",
+              "note": {
+                "en": "Mapped from canonical Activity 5.3 inspection.during/materialControl/qualityCheckpoint item CNT-5.3-INS-DURING-003."
+              }
+            }
+          },
+          {
+            "id": "QV-INSPECT-CNT-5.3-INS-DURING-004-004",
+            "text": {
+              "en": "no aligned through-joints unless permitted.",
+              "fr": "aucun aligned through-joints à moins que permitted.",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.3",
+              "page": "CNT-5.3-INS-DURING-004",
+              "note": {
+                "en": "Mapped from canonical Activity 5.3 inspection.during/materialControl/qualityCheckpoint item CNT-5.3-INS-DURING-004."
+              }
+            }
+          },
+          {
+            "id": "QV-INSPECT-CNT-5.3-INS-DURING-005-005",
+            "text": {
+              "en": "Verify proper offset between layers.",
+              "fr": "vérifier proper offset between layers.",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.3",
+              "page": "CNT-5.3-INS-DURING-005",
+              "note": {
+                "en": "Mapped from canonical Activity 5.3 inspection.during/materialControl/qualityCheckpoint item CNT-5.3-INS-DURING-005."
+              }
+            }
+          },
+          {
+            "id": "QV-INSPECT-CNT-5.3-INS-DURING-006-006",
+            "text": {
+              "en": "fastener type;",
+              "fr": "fastener type;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.3",
+              "page": "CNT-5.3-INS-DURING-006",
+              "note": {
+                "en": "Mapped from canonical Activity 5.3 inspection.during/materialControl/qualityCheckpoint item CNT-5.3-INS-DURING-006."
+              }
+            }
+          },
+          {
+            "id": "QV-INSPECT-CNT-5.3-INS-DURING-007-007",
+            "text": {
+              "en": "quantity;",
+              "fr": "quantity;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.3",
+              "page": "CNT-5.3-INS-DURING-007",
+              "note": {
+                "en": "Mapped from canonical Activity 5.3 inspection.during/materialControl/qualityCheckpoint item CNT-5.3-INS-DURING-007."
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "type": "checkList",
+        "items": [
+          {
+            "id": "QV-EVIDENCE-CNT-5.3-EVID-001-001",
+            "text": {
+              "en": "roof zone;",
+              "fr": "toiture zone;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.3",
+              "page": "CNT-5.3-EVID-001",
+              "note": {
+                "en": "Mapped from canonical Activity 5.3 evidence/verification/closureCriteria item CNT-5.3-EVID-001."
+              }
+            }
+          },
+          {
+            "id": "QV-EVIDENCE-CNT-5.3-EVID-002-002",
+            "text": {
+              "en": "product;",
+              "fr": "product;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.3",
+              "page": "CNT-5.3-EVID-002",
+              "note": {
+                "en": "Mapped from canonical Activity 5.3 evidence/verification/closureCriteria item CNT-5.3-EVID-002."
+              }
+            }
+          },
+          {
+            "id": "QV-EVIDENCE-CNT-5.3-EVID-003-003",
+            "text": {
+              "en": "thickness;",
+              "fr": "thickness;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.3",
+              "page": "CNT-5.3-EVID-003",
+              "note": {
+                "en": "Mapped from canonical Activity 5.3 evidence/verification/closureCriteria item CNT-5.3-EVID-003."
+              }
+            }
+          },
+          {
+            "id": "QV-EVIDENCE-CNT-5.3-EVID-004-004",
+            "text": {
+              "en": "layer sequence;",
+              "fr": "layer séquence;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.3",
+              "page": "CNT-5.3-EVID-004",
+              "note": {
+                "en": "Mapped from canonical Activity 5.3 evidence/verification/closureCriteria item CNT-5.3-EVID-004."
+              }
+            }
+          },
+          {
+            "id": "QV-EVIDENCE-CNT-5.3-EVID-005-005",
+            "text": {
+              "en": "tapered insulation;",
+              "fr": "tapered isolation;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.3",
+              "page": "CNT-5.3-EVID-005",
+              "note": {
+                "en": "Mapped from canonical Activity 5.3 evidence/verification/closureCriteria item CNT-5.3-EVID-005."
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "watchFor": [
+      {
+        "type": "bulletList",
+        "items": [
+          {
+            "id": "QV-WATCH-CNT-5.3-ISSUE-001-001",
+            "text": {
+              "en": "wrong insulation;",
+              "fr": "wrong isolation;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.3",
+              "page": "CNT-5.3-ISSUE-001",
+              "note": {
+                "en": "Mapped from canonical Activity 5.3 issues.commonDeficiencies/correctiveAction item CNT-5.3-ISSUE-001."
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            }
+          },
+          {
+            "id": "QV-WATCH-CNT-5.3-ISSUE-002-002",
+            "text": {
+              "en": "wrong thickness;",
+              "fr": "wrong thickness;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.3",
+              "page": "CNT-5.3-ISSUE-002",
+              "note": {
+                "en": "Mapped from canonical Activity 5.3 issues.commonDeficiencies/correctiveAction item CNT-5.3-ISSUE-002."
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            }
+          },
+          {
+            "id": "QV-WATCH-CNT-5.3-ISSUE-003-003",
+            "text": {
+              "en": "wet insulation;",
+              "fr": "wet isolation;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.3",
+              "page": "CNT-5.3-ISSUE-003",
+              "note": {
+                "en": "Mapped from canonical Activity 5.3 issues.commonDeficiencies/correctiveAction item CNT-5.3-ISSUE-003."
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            }
+          },
+          {
+            "id": "QV-WATCH-CNT-5.3-ISSUE-004-004",
+            "text": {
+              "en": "missing layer;",
+              "fr": "manquant layer;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.3",
+              "page": "CNT-5.3-ISSUE-004",
+              "note": {
+                "en": "Mapped from canonical Activity 5.3 issues.commonDeficiencies/correctiveAction item CNT-5.3-ISSUE-004."
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            }
+          },
+          {
+            "id": "QV-WATCH-CNT-5.3-ISSUE-005-005",
+            "text": {
+              "en": "joints not staggered;",
+              "fr": "joints ne pas staggered;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.3",
+              "page": "CNT-5.3-ISSUE-005",
+              "note": {
+                "en": "Mapped from canonical Activity 5.3 issues.commonDeficiencies/correctiveAction item CNT-5.3-ISSUE-005."
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            }
+          }
+        ]
+      }
+    ],
+    "dontMiss": [
+      {
+        "type": "bulletList",
+        "items": [
+          {
+            "id": "QV-DONTMISS-CNT-5.3-QC-001-001",
+            "text": {
+              "en": "Product",
+              "fr": "Product",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.3",
+              "page": "CNT-5.3-QC-001",
+              "note": {
+                "en": "Mapped from canonical Activity 5.3 qualityCheckpoint/closureCriteria/verification item CNT-5.3-QC-001."
+              }
+            }
+          },
+          {
+            "id": "QV-DONTMISS-CNT-5.3-QC-002-002",
+            "text": {
+              "en": "Thickness",
+              "fr": "Thickness",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.3",
+              "page": "CNT-5.3-QC-002",
+              "note": {
+                "en": "Mapped from canonical Activity 5.3 qualityCheckpoint/closureCriteria/verification item CNT-5.3-QC-002."
+              }
+            }
+          },
+          {
+            "id": "QV-DONTMISS-CNT-5.3-QC-003-003",
+            "text": {
+              "en": "Layers",
+              "fr": "Layers",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.3",
+              "page": "CNT-5.3-QC-003",
+              "note": {
+                "en": "Mapped from canonical Activity 5.3 qualityCheckpoint/closureCriteria/verification item CNT-5.3-QC-003."
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "priorityRelationshipIds": [
+      "REL-5.3-GATED_BY-G-ROOF-01B",
+      "REL-5.3-REQUIRES-5.2",
+      "REL-5.4-REQUIRES-5.3",
+      "REL-4.4-INTERFACES_WITH-5.3-whereRoof"
+    ]
+  },
+  {
+    "activityId": "5.4",
+    "before": [
+      {
+        "type": "checkList",
+        "items": [
+          {
+            "id": "QV-BEFORE-CNT-5.4-REQ-001-001",
+            "text": {
+              "en": "roofing specification;",
+              "fr": "toiture devis;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.4",
+              "page": "CNT-5.4-REQ-001",
+              "note": {
+                "en": "Mapped from canonical Activity 5.4 before/requirements/planning/documentControl item CNT-5.4-REQ-001."
+              }
+            }
+          },
+          {
+            "id": "QV-BEFORE-CNT-5.4-REQ-002-002",
+            "text": {
+              "en": "membrane type;",
+              "fr": "membrane type;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.4",
+              "page": "CNT-5.4-REQ-002",
+              "note": {
+                "en": "Mapped from canonical Activity 5.4 before/requirements/planning/documentControl item CNT-5.4-REQ-002."
+              }
+            }
+          },
+          {
+            "id": "QV-BEFORE-CNT-5.4-REQ-003-003",
+            "text": {
+              "en": "approved product;",
+              "fr": "approuvé product;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.4",
+              "page": "CNT-5.4-REQ-003",
+              "note": {
+                "en": "Mapped from canonical Activity 5.4 before/requirements/planning/documentControl item CNT-5.4-REQ-003."
+              }
+            }
+          },
+          {
+            "id": "QV-BEFORE-CNT-5.4-REQ-004-004",
+            "text": {
+              "en": "manufacturer instructions;",
+              "fr": "instructions du fabricant;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.4",
+              "page": "CNT-5.4-REQ-004",
+              "note": {
+                "en": "Mapped from canonical Activity 5.4 before/requirements/planning/documentControl item CNT-5.4-REQ-004."
+              }
+            }
+          },
+          {
+            "id": "QV-BEFORE-CNT-5.4-REQ-005-005",
+            "text": {
+              "en": "lap/seam requirements;",
+              "fr": "lap/seam requirements;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.4",
+              "page": "CNT-5.4-REQ-005",
+              "note": {
+                "en": "Mapped from canonical Activity 5.4 before/requirements/planning/documentControl item CNT-5.4-REQ-005."
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "inspect": [
+      {
+        "type": "checkList",
+        "items": [
+          {
+            "id": "QV-INSPECT-CNT-5.4-INS-DURING-001-001",
+            "text": {
+              "en": "dry;",
+              "fr": "dry;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.4",
+              "page": "CNT-5.4-INS-DURING-001",
+              "note": {
+                "en": "Mapped from canonical Activity 5.4 inspection.during/materialControl/qualityCheckpoint item CNT-5.4-INS-DURING-001."
+              }
+            }
+          },
+          {
+            "id": "QV-INSPECT-CNT-5.4-INS-DURING-002-002",
+            "text": {
+              "en": "clean;",
+              "fr": "clean;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.4",
+              "page": "CNT-5.4-INS-DURING-002",
+              "note": {
+                "en": "Mapped from canonical Activity 5.4 inspection.during/materialControl/qualityCheckpoint item CNT-5.4-INS-DURING-002."
+              }
+            }
+          },
+          {
+            "id": "QV-INSPECT-CNT-5.4-INS-DURING-003-003",
+            "text": {
+              "en": "smooth;",
+              "fr": "lisser;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.4",
+              "page": "CNT-5.4-INS-DURING-003",
+              "note": {
+                "en": "Mapped from canonical Activity 5.4 inspection.during/materialControl/qualityCheckpoint item CNT-5.4-INS-DURING-003."
+              }
+            }
+          },
+          {
+            "id": "QV-INSPECT-CNT-5.4-INS-DURING-004-004",
+            "text": {
+              "en": "firmly attached;",
+              "fr": "firmly attached;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.4",
+              "page": "CNT-5.4-INS-DURING-004",
+              "note": {
+                "en": "Mapped from canonical Activity 5.4 inspection.during/materialControl/qualityCheckpoint item CNT-5.4-INS-DURING-004."
+              }
+            }
+          },
+          {
+            "id": "QV-INSPECT-CNT-5.4-INS-DURING-005-005",
+            "text": {
+              "en": "no gaps;",
+              "fr": "aucun gaps;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.4",
+              "page": "CNT-5.4-INS-DURING-005",
+              "note": {
+                "en": "Mapped from canonical Activity 5.4 inspection.during/materialControl/qualityCheckpoint item CNT-5.4-INS-DURING-005."
+              }
+            }
+          },
+          {
+            "id": "QV-INSPECT-CNT-5.4-INS-DURING-006-006",
+            "text": {
+              "en": "no projections.",
+              "fr": "aucun projections.",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.4",
+              "page": "CNT-5.4-INS-DURING-006",
+              "note": {
+                "en": "Mapped from canonical Activity 5.4 inspection.during/materialControl/qualityCheckpoint item CNT-5.4-INS-DURING-006."
+              }
+            }
+          },
+          {
+            "id": "QV-INSPECT-CNT-5.4-INS-DURING-007-007",
+            "text": {
+              "en": "proper sheet orientation;",
+              "fr": "proper sheet orientation;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.4",
+              "page": "CNT-5.4-INS-DURING-007",
+              "note": {
+                "en": "Mapped from canonical Activity 5.4 inspection.during/materialControl/qualityCheckpoint item CNT-5.4-INS-DURING-007."
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "type": "checkList",
+        "items": [
+          {
+            "id": "QV-EVIDENCE-CNT-5.4-EVID-001-001",
+            "text": {
+              "en": "roof zone;",
+              "fr": "toiture zone;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.4",
+              "page": "CNT-5.4-EVID-001",
+              "note": {
+                "en": "Mapped from canonical Activity 5.4 evidence/verification/closureCriteria item CNT-5.4-EVID-001."
+              }
+            }
+          },
+          {
+            "id": "QV-EVIDENCE-CNT-5.4-EVID-002-002",
+            "text": {
+              "en": "membrane product;",
+              "fr": "membrane product;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.4",
+              "page": "CNT-5.4-EVID-002",
+              "note": {
+                "en": "Mapped from canonical Activity 5.4 evidence/verification/closureCriteria item CNT-5.4-EVID-002."
+              }
+            }
+          },
+          {
+            "id": "QV-EVIDENCE-CNT-5.4-EVID-003-003",
+            "text": {
+              "en": "installation date;",
+              "fr": "installation date;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.4",
+              "page": "CNT-5.4-EVID-003",
+              "note": {
+                "en": "Mapped from canonical Activity 5.4 evidence/verification/closureCriteria item CNT-5.4-EVID-003."
+              }
+            }
+          },
+          {
+            "id": "QV-EVIDENCE-CNT-5.4-EVID-004-004",
+            "text": {
+              "en": "weather;",
+              "fr": "weather;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.4",
+              "page": "CNT-5.4-EVID-004",
+              "note": {
+                "en": "Mapped from canonical Activity 5.4 evidence/verification/closureCriteria item CNT-5.4-EVID-004."
+              }
+            }
+          },
+          {
+            "id": "QV-EVIDENCE-CNT-5.4-EVID-005-005",
+            "text": {
+              "en": "seams;",
+              "fr": "seams;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.4",
+              "page": "CNT-5.4-EVID-005",
+              "note": {
+                "en": "Mapped from canonical Activity 5.4 evidence/verification/closureCriteria item CNT-5.4-EVID-005."
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "watchFor": [
+      {
+        "type": "bulletList",
+        "items": [
+          {
+            "id": "QV-WATCH-CNT-5.4-ISSUE-001-001",
+            "text": {
+              "en": "insufficient lap;",
+              "fr": "insufficient lap;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.4",
+              "page": "CNT-5.4-ISSUE-001",
+              "note": {
+                "en": "Mapped from canonical Activity 5.4 issues.commonDeficiencies/correctiveAction item CNT-5.4-ISSUE-001."
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            }
+          },
+          {
+            "id": "QV-WATCH-CNT-5.4-ISSUE-002-002",
+            "text": {
+              "en": "failed seam;",
+              "fr": "non conforme seam;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.4",
+              "page": "CNT-5.4-ISSUE-002",
+              "note": {
+                "en": "Mapped from canonical Activity 5.4 issues.commonDeficiencies/correctiveAction item CNT-5.4-ISSUE-002."
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            }
+          },
+          {
+            "id": "QV-WATCH-CNT-5.4-ISSUE-003-003",
+            "text": {
+              "en": "puncture;",
+              "fr": "puncture;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.4",
+              "page": "CNT-5.4-ISSUE-003",
+              "note": {
+                "en": "Mapped from canonical Activity 5.4 issues.commonDeficiencies/correctiveAction item CNT-5.4-ISSUE-003."
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            }
+          },
+          {
+            "id": "QV-WATCH-CNT-5.4-ISSUE-004-004",
+            "text": {
+              "en": "wrinkle;",
+              "fr": "wrinkle;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.4",
+              "page": "CNT-5.4-ISSUE-004",
+              "note": {
+                "en": "Mapped from canonical Activity 5.4 issues.commonDeficiencies/correctiveAction item CNT-5.4-ISSUE-004."
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            }
+          },
+          {
+            "id": "QV-WATCH-CNT-5.4-ISSUE-005-005",
+            "text": {
+              "en": "blister;",
+              "fr": "blister;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.4",
+              "page": "CNT-5.4-ISSUE-005",
+              "note": {
+                "en": "Mapped from canonical Activity 5.4 issues.commonDeficiencies/correctiveAction item CNT-5.4-ISSUE-005."
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            }
+          }
+        ]
+      }
+    ],
+    "dontMiss": [
+      {
+        "type": "bulletList",
+        "items": [
+          {
+            "id": "QV-DONTMISS-CNT-5.4-QC-001-001",
+            "text": {
+              "en": "Correct membrane",
+              "fr": "corriger membrane",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.4",
+              "page": "CNT-5.4-QC-001",
+              "note": {
+                "en": "Mapped from canonical Activity 5.4 qualityCheckpoint/closureCriteria/verification item CNT-5.4-QC-001."
+              }
+            }
+          },
+          {
+            "id": "QV-DONTMISS-CNT-5.4-QC-002-002",
+            "text": {
+              "en": "Substrate dry/ready",
+              "fr": "support dry/ready",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.4",
+              "page": "CNT-5.4-QC-002",
+              "note": {
+                "en": "Mapped from canonical Activity 5.4 qualityCheckpoint/closureCriteria/verification item CNT-5.4-QC-002."
+              }
+            }
+          },
+          {
+            "id": "QV-DONTMISS-CNT-5.4-QC-003-003",
+            "text": {
+              "en": "Application correct",
+              "fr": "Application corriger",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.4",
+              "page": "CNT-5.4-QC-003",
+              "note": {
+                "en": "Mapped from canonical Activity 5.4 qualityCheckpoint/closureCriteria/verification item CNT-5.4-QC-003."
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "priorityRelationshipIds": [
+      "REL-5.4-GATED_BY-G-ROOF-01C",
+      "REL-5.4-REQUIRES-5.3",
+      "REL-5.5-REQUIRES-5.4",
+      "REL-5.6-REQUIRES-5.4-whereRoof"
+    ]
+  },
+  {
+    "activityId": "5.5",
+    "before": [
+      {
+        "type": "checkList",
+        "items": [
+          {
+            "id": "QV-BEFORE-CNT-5.5-REQ-001-001",
+            "text": {
+              "en": "parapet details;",
+              "fr": "parapet details;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.5",
+              "page": "CNT-5.5-REQ-001",
+              "note": {
+                "en": "Mapped from canonical Activity 5.5 before/requirements/planning/documentControl item CNT-5.5-REQ-001."
+              }
+            }
+          },
+          {
+            "id": "QV-BEFORE-CNT-5.5-REQ-002-002",
+            "text": {
+              "en": "edge details;",
+              "fr": "edge details;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.5",
+              "page": "CNT-5.5-REQ-002",
+              "note": {
+                "en": "Mapped from canonical Activity 5.5 before/requirements/planning/documentControl item CNT-5.5-REQ-002."
+              }
+            }
+          },
+          {
+            "id": "QV-BEFORE-CNT-5.5-REQ-003-003",
+            "text": {
+              "en": "wall transitions;",
+              "fr": "mur transitions;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.5",
+              "page": "CNT-5.5-REQ-003",
+              "note": {
+                "en": "Mapped from canonical Activity 5.5 before/requirements/planning/documentControl item CNT-5.5-REQ-003."
+              }
+            }
+          },
+          {
+            "id": "QV-BEFORE-CNT-5.5-REQ-004-004",
+            "text": {
+              "en": "metal flashing shop drawings;",
+              "fr": "metal solin dessins d’atelier;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.5",
+              "page": "CNT-5.5-REQ-004",
+              "note": {
+                "en": "Mapped from canonical Activity 5.5 before/requirements/planning/documentControl item CNT-5.5-REQ-004."
+              }
+            }
+          },
+          {
+            "id": "QV-BEFORE-CNT-5.5-REQ-005-005",
+            "text": {
+              "en": "membrane flashing details;",
+              "fr": "membrane solin details;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.5",
+              "page": "CNT-5.5-REQ-005",
+              "note": {
+                "en": "Mapped from canonical Activity 5.5 before/requirements/planning/documentControl item CNT-5.5-REQ-005."
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "inspect": [
+      {
+        "type": "checkList",
+        "items": [
+          {
+            "id": "QV-INSPECT-CNT-5.5-INS-DURING-001-001",
+            "text": {
+              "en": "flashing height;",
+              "fr": "solin height;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.5",
+              "page": "CNT-5.5-INS-DURING-001",
+              "note": {
+                "en": "Mapped from canonical Activity 5.5 inspection.during/materialControl/qualityCheckpoint item CNT-5.5-INS-DURING-001."
+              }
+            }
+          },
+          {
+            "id": "QV-INSPECT-CNT-5.5-INS-DURING-002-002",
+            "text": {
+              "en": "continuity;",
+              "fr": "continuité;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.5",
+              "page": "CNT-5.5-INS-DURING-002",
+              "note": {
+                "en": "Mapped from canonical Activity 5.5 inspection.during/materialControl/qualityCheckpoint item CNT-5.5-INS-DURING-002."
+              }
+            }
+          },
+          {
+            "id": "QV-INSPECT-CNT-5.5-INS-DURING-003-003",
+            "text": {
+              "en": "corners;",
+              "fr": "corners;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.5",
+              "page": "CNT-5.5-INS-DURING-003",
+              "note": {
+                "en": "Mapped from canonical Activity 5.5 inspection.during/materialControl/qualityCheckpoint item CNT-5.5-INS-DURING-003."
+              }
+            }
+          },
+          {
+            "id": "QV-INSPECT-CNT-5.5-INS-DURING-004-004",
+            "text": {
+              "en": "overlaps;",
+              "fr": "overlaps;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.5",
+              "page": "CNT-5.5-INS-DURING-004",
+              "note": {
+                "en": "Mapped from canonical Activity 5.5 inspection.during/materialControl/qualityCheckpoint item CNT-5.5-INS-DURING-004."
+              }
+            }
+          },
+          {
+            "id": "QV-INSPECT-CNT-5.5-INS-DURING-005-005",
+            "text": {
+              "en": "fastening;",
+              "fr": "fastening;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.5",
+              "page": "CNT-5.5-INS-DURING-005",
+              "note": {
+                "en": "Mapped from canonical Activity 5.5 inspection.during/materialControl/qualityCheckpoint item CNT-5.5-INS-DURING-005."
+              }
+            }
+          },
+          {
+            "id": "QV-INSPECT-CNT-5.5-INS-DURING-006-006",
+            "text": {
+              "en": "termination;",
+              "fr": "termination;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.5",
+              "page": "CNT-5.5-INS-DURING-006",
+              "note": {
+                "en": "Mapped from canonical Activity 5.5 inspection.during/materialControl/qualityCheckpoint item CNT-5.5-INS-DURING-006."
+              }
+            }
+          },
+          {
+            "id": "QV-INSPECT-CNT-5.5-INS-DURING-007-007",
+            "text": {
+              "en": "counterflashing;",
+              "fr": "counterflashing;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.5",
+              "page": "CNT-5.5-INS-DURING-007",
+              "note": {
+                "en": "Mapped from canonical Activity 5.5 inspection.during/materialControl/qualityCheckpoint item CNT-5.5-INS-DURING-007."
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "type": "checkList",
+        "items": [
+          {
+            "id": "QV-EVIDENCE-CNT-5.5-EVID-001-001",
+            "text": {
+              "en": "Capture representative and critical transitions before concealment.",
+              "fr": "Capture representative et critical transitions avant dissimulation.",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.5",
+              "page": "CNT-5.5-EVID-001",
+              "note": {
+                "en": "Mapped from canonical Activity 5.5 evidence/verification/closureCriteria item CNT-5.5-EVID-001."
+              }
+            }
+          },
+          {
+            "id": "QV-EVIDENCE-CNT-5.5-VER-001-002",
+            "text": {
+              "en": "Confirm continuity and secure termination.",
+              "fr": "confirmer continuité et sécuriser termination.",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.5",
+              "page": "CNT-5.5-VER-001",
+              "note": {
+                "en": "Mapped from canonical Activity 5.5 evidence/verification/closureCriteria item CNT-5.5-VER-001."
+              }
+            }
+          },
+          {
+            "id": "QV-EVIDENCE-CNT-5.5-CLOSE-001-003",
+            "text": {
+              "en": "all transitions complete",
+              "fr": "all transitions complete",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.5",
+              "page": "CNT-5.5-CLOSE-001",
+              "note": {
+                "en": "Mapped from canonical Activity 5.5 evidence/verification/closureCriteria item CNT-5.5-CLOSE-001."
+              }
+            }
+          },
+          {
+            "id": "QV-EVIDENCE-CNT-5.5-CLOSE-002-004",
+            "text": {
+              "en": "corners complete",
+              "fr": "corners complete",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.5",
+              "page": "CNT-5.5-CLOSE-002",
+              "note": {
+                "en": "Mapped from canonical Activity 5.5 evidence/verification/closureCriteria item CNT-5.5-CLOSE-002."
+              }
+            }
+          },
+          {
+            "id": "QV-EVIDENCE-CNT-5.5-CLOSE-003-005",
+            "text": {
+              "en": "terminations secure",
+              "fr": "terminations sécuriser",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.5",
+              "page": "CNT-5.5-CLOSE-003",
+              "note": {
+                "en": "Mapped from canonical Activity 5.5 evidence/verification/closureCriteria item CNT-5.5-CLOSE-003."
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "watchFor": [
+      {
+        "type": "bulletList",
+        "items": [
+          {
+            "id": "QV-WATCH-CNT-5.5-ISSUE-001-001",
+            "text": {
+              "en": "flashing too low;",
+              "fr": "solin too low;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.5",
+              "page": "CNT-5.5-ISSUE-001",
+              "note": {
+                "en": "Mapped from canonical Activity 5.5 issues.commonDeficiencies/correctiveAction item CNT-5.5-ISSUE-001."
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            }
+          },
+          {
+            "id": "QV-WATCH-CNT-5.5-ISSUE-002-002",
+            "text": {
+              "en": "incomplete corner;",
+              "fr": "incomplete corner;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.5",
+              "page": "CNT-5.5-ISSUE-002",
+              "note": {
+                "en": "Mapped from canonical Activity 5.5 issues.commonDeficiencies/correctiveAction item CNT-5.5-ISSUE-002."
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            }
+          },
+          {
+            "id": "QV-WATCH-CNT-5.5-ISSUE-003-003",
+            "text": {
+              "en": "reverse lap;",
+              "fr": "reverse lap;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.5",
+              "page": "CNT-5.5-ISSUE-003",
+              "note": {
+                "en": "Mapped from canonical Activity 5.5 issues.commonDeficiencies/correctiveAction item CNT-5.5-ISSUE-003."
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            }
+          },
+          {
+            "id": "QV-WATCH-CNT-5.5-ISSUE-004-004",
+            "text": {
+              "en": "open termination;",
+              "fr": "open termination;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.5",
+              "page": "CNT-5.5-ISSUE-004",
+              "note": {
+                "en": "Mapped from canonical Activity 5.5 issues.commonDeficiencies/correctiveAction item CNT-5.5-ISSUE-004."
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            }
+          },
+          {
+            "id": "QV-WATCH-CNT-5.5-ISSUE-005-005",
+            "text": {
+              "en": "missing fastener;",
+              "fr": "manquant fastener;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.5",
+              "page": "CNT-5.5-ISSUE-005",
+              "note": {
+                "en": "Mapped from canonical Activity 5.5 issues.commonDeficiencies/correctiveAction item CNT-5.5-ISSUE-005."
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            }
+          }
+        ]
+      }
+    ],
+    "dontMiss": [
+      {
+        "type": "bulletList",
+        "items": [
+          {
+            "id": "QV-DONTMISS-CNT-5.5-QC-001-001",
+            "text": {
+              "en": "Parapets",
+              "fr": "Parapets",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.5",
+              "page": "CNT-5.5-QC-001",
+              "note": {
+                "en": "Mapped from canonical Activity 5.5 qualityCheckpoint/closureCriteria/verification item CNT-5.5-QC-001."
+              }
+            }
+          },
+          {
+            "id": "QV-DONTMISS-CNT-5.5-QC-002-002",
+            "text": {
+              "en": "Walls",
+              "fr": "murs",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.5",
+              "page": "CNT-5.5-QC-002",
+              "note": {
+                "en": "Mapped from canonical Activity 5.5 qualityCheckpoint/closureCriteria/verification item CNT-5.5-QC-002."
+              }
+            }
+          },
+          {
+            "id": "QV-DONTMISS-CNT-5.5-QC-003-003",
+            "text": {
+              "en": "Edges",
+              "fr": "Edges",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.5",
+              "page": "CNT-5.5-QC-003",
+              "note": {
+                "en": "Mapped from canonical Activity 5.5 qualityCheckpoint/closureCriteria/verification item CNT-5.5-QC-003."
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "priorityRelationshipIds": [
+      "REL-5.5-REQUIRES-5.4",
+      "REL-5.5-INTERFACES_WITH-4.2-whereRoof",
+      "REL-5.9-REQUIRES-5.5-whereApplicable"
+    ]
+  },
+  {
+    "activityId": "5.6",
+    "before": [
+      {
+        "type": "checkList",
+        "items": [
+          {
+            "id": "QV-BEFORE-CNT-5.6-REQ-001-001",
+            "text": {
+              "en": "roof penetration details;",
+              "fr": "toiture penetration details;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.6",
+              "page": "CNT-5.6-REQ-001",
+              "note": {
+                "en": "Mapped from canonical Activity 5.6 before/requirements/planning/documentControl item CNT-5.6-REQ-001."
+              }
+            }
+          },
+          {
+            "id": "QV-BEFORE-CNT-5.6-REQ-002-002",
+            "text": {
+              "en": "mechanical drawings;",
+              "fr": "plans mécaniques;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.6",
+              "page": "CNT-5.6-REQ-002",
+              "note": {
+                "en": "Mapped from canonical Activity 5.6 before/requirements/planning/documentControl item CNT-5.6-REQ-002."
+              }
+            }
+          },
+          {
+            "id": "QV-BEFORE-CNT-5.6-REQ-003-003",
+            "text": {
+              "en": "electrical drawings;",
+              "fr": "plans électriques;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.6",
+              "page": "CNT-5.6-REQ-003",
+              "note": {
+                "en": "Mapped from canonical Activity 5.6 before/requirements/planning/documentControl item CNT-5.6-REQ-003."
+              }
+            }
+          },
+          {
+            "id": "QV-BEFORE-CNT-5.6-REQ-004-004",
+            "text": {
+              "en": "structural drawings;",
+              "fr": "plans structuraux;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.6",
+              "page": "CNT-5.6-REQ-004",
+              "note": {
+                "en": "Mapped from canonical Activity 5.6 before/requirements/planning/documentControl item CNT-5.6-REQ-004."
+              }
+            }
+          },
+          {
+            "id": "QV-BEFORE-CNT-5.6-REQ-005-005",
+            "text": {
+              "en": "equipment shop drawings;",
+              "fr": "equipment dessins d’atelier;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.6",
+              "page": "CNT-5.6-REQ-005",
+              "note": {
+                "en": "Mapped from canonical Activity 5.6 before/requirements/planning/documentControl item CNT-5.6-REQ-005."
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "inspect": [
+      {
+        "type": "checkList",
+        "items": [
+          {
+            "id": "QV-INSPECT-CNT-5.6-INS-DURING-001-001",
+            "text": {
+              "en": "penetration location;",
+              "fr": "penetration emplacement;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.6",
+              "page": "CNT-5.6-INS-DURING-001",
+              "note": {
+                "en": "Mapped from canonical Activity 5.6 inspection.during/materialControl/qualityCheckpoint item CNT-5.6-INS-DURING-001."
+              }
+            }
+          },
+          {
+            "id": "QV-INSPECT-CNT-5.6-INS-DURING-002-002",
+            "text": {
+              "en": "clearance;",
+              "fr": "clearance;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.6",
+              "page": "CNT-5.6-INS-DURING-002",
+              "note": {
+                "en": "Mapped from canonical Activity 5.6 inspection.during/materialControl/qualityCheckpoint item CNT-5.6-INS-DURING-002."
+              }
+            }
+          },
+          {
+            "id": "QV-INSPECT-CNT-5.6-INS-DURING-003-003",
+            "text": {
+              "en": "curb/sleeve height;",
+              "fr": "bordure/sleeve height;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.6",
+              "page": "CNT-5.6-INS-DURING-003",
+              "note": {
+                "en": "Mapped from canonical Activity 5.6 inspection.during/materialControl/qualityCheckpoint item CNT-5.6-INS-DURING-003."
+              }
+            }
+          },
+          {
+            "id": "QV-INSPECT-CNT-5.6-INS-DURING-004-004",
+            "text": {
+              "en": "membrane upturn;",
+              "fr": "membrane upturn;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.6",
+              "page": "CNT-5.6-INS-DURING-004",
+              "note": {
+                "en": "Mapped from canonical Activity 5.6 inspection.during/materialControl/qualityCheckpoint item CNT-5.6-INS-DURING-004."
+              }
+            }
+          },
+          {
+            "id": "QV-INSPECT-CNT-5.6-INS-DURING-005-005",
+            "text": {
+              "en": "flashing;",
+              "fr": "solin;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.6",
+              "page": "CNT-5.6-INS-DURING-005",
+              "note": {
+                "en": "Mapped from canonical Activity 5.6 inspection.during/materialControl/qualityCheckpoint item CNT-5.6-INS-DURING-005."
+              }
+            }
+          },
+          {
+            "id": "QV-INSPECT-CNT-5.6-INS-DURING-006-006",
+            "text": {
+              "en": "seam continuity;",
+              "fr": "seam continuité;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.6",
+              "page": "CNT-5.6-INS-DURING-006",
+              "note": {
+                "en": "Mapped from canonical Activity 5.6 inspection.during/materialControl/qualityCheckpoint item CNT-5.6-INS-DURING-006."
+              }
+            }
+          },
+          {
+            "id": "QV-INSPECT-CNT-5.6-INS-DURING-007-007",
+            "text": {
+              "en": "insulation around penetration;",
+              "fr": "isolation around penetration;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.6",
+              "page": "CNT-5.6-INS-DURING-007",
+              "note": {
+                "en": "Mapped from canonical Activity 5.6 inspection.during/materialControl/qualityCheckpoint item CNT-5.6-INS-DURING-007."
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "type": "checkList",
+        "items": [
+          {
+            "id": "QV-EVIDENCE-CNT-5.6-EVID-001-001",
+            "text": {
+              "en": "penetration ID;",
+              "fr": "penetration ID;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.6",
+              "page": "CNT-5.6-EVID-001",
+              "note": {
+                "en": "Mapped from canonical Activity 5.6 evidence/verification/closureCriteria item CNT-5.6-EVID-001."
+              }
+            }
+          },
+          {
+            "id": "QV-EVIDENCE-CNT-5.6-EVID-002-002",
+            "text": {
+              "en": "service/system;",
+              "fr": "service/system;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.6",
+              "page": "CNT-5.6-EVID-002",
+              "note": {
+                "en": "Mapped from canonical Activity 5.6 evidence/verification/closureCriteria item CNT-5.6-EVID-002."
+              }
+            }
+          },
+          {
+            "id": "QV-EVIDENCE-CNT-5.6-EVID-003-003",
+            "text": {
+              "en": "location;",
+              "fr": "emplacement;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.6",
+              "page": "CNT-5.6-EVID-003",
+              "note": {
+                "en": "Mapped from canonical Activity 5.6 evidence/verification/closureCriteria item CNT-5.6-EVID-003."
+              }
+            }
+          },
+          {
+            "id": "QV-EVIDENCE-CNT-5.6-EVID-004-004",
+            "text": {
+              "en": "detail;",
+              "fr": "detail;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.6",
+              "page": "CNT-5.6-EVID-004",
+              "note": {
+                "en": "Mapped from canonical Activity 5.6 evidence/verification/closureCriteria item CNT-5.6-EVID-004."
+              }
+            }
+          },
+          {
+            "id": "QV-EVIDENCE-CNT-5.6-EVID-005-005",
+            "text": {
+              "en": "flashing;",
+              "fr": "solin;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.6",
+              "page": "CNT-5.6-EVID-005",
+              "note": {
+                "en": "Mapped from canonical Activity 5.6 evidence/verification/closureCriteria item CNT-5.6-EVID-005."
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "watchFor": [
+      {
+        "type": "bulletList",
+        "items": [
+          {
+            "id": "QV-WATCH-CNT-5.6-ISSUE-001-001",
+            "text": {
+              "en": "unapproved penetration;",
+              "fr": "unapproved penetration;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.6",
+              "page": "CNT-5.6-ISSUE-001",
+              "note": {
+                "en": "Mapped from canonical Activity 5.6 issues.commonDeficiencies/correctiveAction item CNT-5.6-ISSUE-001."
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            }
+          },
+          {
+            "id": "QV-WATCH-CNT-5.6-ISSUE-002-002",
+            "text": {
+              "en": "poor flashing;",
+              "fr": "poor solin;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.6",
+              "page": "CNT-5.6-ISSUE-002",
+              "note": {
+                "en": "Mapped from canonical Activity 5.6 issues.commonDeficiencies/correctiveAction item CNT-5.6-ISSUE-002."
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            }
+          },
+          {
+            "id": "QV-WATCH-CNT-5.6-ISSUE-003-003",
+            "text": {
+              "en": "insufficient curb height;",
+              "fr": "insufficient bordure height;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.6",
+              "page": "CNT-5.6-ISSUE-003",
+              "note": {
+                "en": "Mapped from canonical Activity 5.6 issues.commonDeficiencies/correctiveAction item CNT-5.6-ISSUE-003."
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            }
+          },
+          {
+            "id": "QV-WATCH-CNT-5.6-ISSUE-004-004",
+            "text": {
+              "en": "cut membrane;",
+              "fr": "cut membrane;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.6",
+              "page": "CNT-5.6-ISSUE-004",
+              "note": {
+                "en": "Mapped from canonical Activity 5.6 issues.commonDeficiencies/correctiveAction item CNT-5.6-ISSUE-004."
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            }
+          },
+          {
+            "id": "QV-WATCH-CNT-5.6-ISSUE-005-005",
+            "text": {
+              "en": "incompatible sealant;",
+              "fr": "incompatible scellant;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.6",
+              "page": "CNT-5.6-ISSUE-005",
+              "note": {
+                "en": "Mapped from canonical Activity 5.6 issues.commonDeficiencies/correctiveAction item CNT-5.6-ISSUE-005."
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            }
+          }
+        ]
+      }
+    ],
+    "dontMiss": [
+      {
+        "type": "bulletList",
+        "items": [
+          {
+            "id": "QV-DONTMISS-CNT-5.6-QC-001-001",
+            "text": {
+              "en": "Unplanned penetrations are controlled events.",
+              "fr": "Unplanned penetrations are controlled events.",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.6",
+              "page": "CNT-5.6-QC-001",
+              "note": {
+                "en": "Mapped from canonical Activity 5.6 qualityCheckpoint/closureCriteria/verification item CNT-5.6-QC-001."
+              }
+            }
+          },
+          {
+            "id": "QV-DONTMISS-CNT-5.6-QC-002-002",
+            "text": {
+              "en": "Nobody should casually drill through completed roofing without coordinated details.",
+              "fr": "Nobody devrait casually perceuse through terminé toiture sans coordinated details.",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.6",
+              "page": "CNT-5.6-QC-002",
+              "note": {
+                "en": "Mapped from canonical Activity 5.6 qualityCheckpoint/closureCriteria/verification item CNT-5.6-QC-002."
+              }
+            }
+          },
+          {
+            "id": "QV-DONTMISS-CNT-5.6-QC-003-003",
+            "text": {
+              "en": "Approved penetration",
+              "fr": "approuvé penetration",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.6",
+              "page": "CNT-5.6-QC-003",
+              "note": {
+                "en": "Mapped from canonical Activity 5.6 qualityCheckpoint/closureCriteria/verification item CNT-5.6-QC-003."
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "priorityRelationshipIds": [
+      "REL-5.6-AS_BUILT_FEEDS-14.10-whereApplicable",
+      "REL-5.6-INTERFACES_WITH-8.9-whereRoof",
+      "REL-5.6-INTERFACES_WITH-9.9-whereRoof",
+      "REL-5.6-PENETRATION_MANAGED_BY-11.7-whereApplicable"
+    ]
+  },
+  {
+    "activityId": "5.7",
+    "before": [
+      {
+        "type": "checkList",
+        "items": [
+          {
+            "id": "QV-BEFORE-CNT-5.7-REQ-001-001",
+            "text": {
+              "en": "mechanical/equipment drawings;",
+              "fr": "mécanique/equipment plans;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.7",
+              "page": "CNT-5.7-REQ-001",
+              "note": {
+                "en": "Mapped from canonical Activity 5.7 before/requirements/planning/documentControl item CNT-5.7-REQ-001."
+              }
+            }
+          },
+          {
+            "id": "QV-BEFORE-CNT-5.7-REQ-002-002",
+            "text": {
+              "en": "structural support details;",
+              "fr": "structural support details;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.7",
+              "page": "CNT-5.7-REQ-002",
+              "note": {
+                "en": "Mapped from canonical Activity 5.7 before/requirements/planning/documentControl item CNT-5.7-REQ-002."
+              }
+            }
+          },
+          {
+            "id": "QV-BEFORE-CNT-5.7-REQ-003-003",
+            "text": {
+              "en": "curb shop drawings;",
+              "fr": "bordure dessins d’atelier;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.7",
+              "page": "CNT-5.7-REQ-003",
+              "note": {
+                "en": "Mapped from canonical Activity 5.7 before/requirements/planning/documentControl item CNT-5.7-REQ-003."
+              }
+            }
+          },
+          {
+            "id": "QV-BEFORE-CNT-5.7-REQ-004-004",
+            "text": {
+              "en": "roof details;",
+              "fr": "toiture details;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.7",
+              "page": "CNT-5.7-REQ-004",
+              "note": {
+                "en": "Mapped from canonical Activity 5.7 before/requirements/planning/documentControl item CNT-5.7-REQ-004."
+              }
+            }
+          },
+          {
+            "id": "QV-BEFORE-CNT-5.7-REQ-005-005",
+            "text": {
+              "en": "manufacturer requirements;",
+              "fr": "exigences du fabricant;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.7",
+              "page": "CNT-5.7-REQ-005",
+              "note": {
+                "en": "Mapped from canonical Activity 5.7 before/requirements/planning/documentControl item CNT-5.7-REQ-005."
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "inspect": [
+      {
+        "type": "checkList",
+        "items": [
+          {
+            "id": "QV-INSPECT-CNT-5.7-INS-DURING-001-001",
+            "text": {
+              "en": "location;",
+              "fr": "emplacement;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.7",
+              "page": "CNT-5.7-INS-DURING-001",
+              "note": {
+                "en": "Mapped from canonical Activity 5.7 inspection.during/materialControl/qualityCheckpoint item CNT-5.7-INS-DURING-001."
+              }
+            }
+          },
+          {
+            "id": "QV-INSPECT-CNT-5.7-INS-DURING-002-002",
+            "text": {
+              "en": "dimensions;",
+              "fr": "dimensions;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.7",
+              "page": "CNT-5.7-INS-DURING-002",
+              "note": {
+                "en": "Mapped from canonical Activity 5.7 inspection.during/materialControl/qualityCheckpoint item CNT-5.7-INS-DURING-002."
+              }
+            }
+          },
+          {
+            "id": "QV-INSPECT-CNT-5.7-INS-DURING-003-003",
+            "text": {
+              "en": "orientation;",
+              "fr": "orientation;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.7",
+              "page": "CNT-5.7-INS-DURING-003",
+              "note": {
+                "en": "Mapped from canonical Activity 5.7 inspection.during/materialControl/qualityCheckpoint item CNT-5.7-INS-DURING-003."
+              }
+            }
+          },
+          {
+            "id": "QV-INSPECT-CNT-5.7-INS-DURING-004-004",
+            "text": {
+              "en": "elevation/height;",
+              "fr": "élévation/height;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.7",
+              "page": "CNT-5.7-INS-DURING-004",
+              "note": {
+                "en": "Mapped from canonical Activity 5.7 inspection.during/materialControl/qualityCheckpoint item CNT-5.7-INS-DURING-004."
+              }
+            }
+          },
+          {
+            "id": "QV-INSPECT-CNT-5.7-INS-DURING-005-005",
+            "text": {
+              "en": "level;",
+              "fr": "level;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.7",
+              "page": "CNT-5.7-INS-DURING-005",
+              "note": {
+                "en": "Mapped from canonical Activity 5.7 inspection.during/materialControl/qualityCheckpoint item CNT-5.7-INS-DURING-005."
+              }
+            }
+          },
+          {
+            "id": "QV-INSPECT-CNT-5.7-INS-DURING-006-006",
+            "text": {
+              "en": "anchorage;",
+              "fr": "ancrage;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.7",
+              "page": "CNT-5.7-INS-DURING-006",
+              "note": {
+                "en": "Mapped from canonical Activity 5.7 inspection.during/materialControl/qualityCheckpoint item CNT-5.7-INS-DURING-006."
+              }
+            }
+          },
+          {
+            "id": "QV-INSPECT-CNT-5.7-INS-DURING-007-007",
+            "text": {
+              "en": "structural support;",
+              "fr": "structural support;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.7",
+              "page": "CNT-5.7-INS-DURING-007",
+              "note": {
+                "en": "Mapped from canonical Activity 5.7 inspection.during/materialControl/qualityCheckpoint item CNT-5.7-INS-DURING-007."
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "type": "checkList",
+        "items": [
+          {
+            "id": "QV-EVIDENCE-CNT-5.7-EVID-001-001",
+            "text": {
+              "en": "curb ID;",
+              "fr": "bordure ID;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.7",
+              "page": "CNT-5.7-EVID-001",
+              "note": {
+                "en": "Mapped from canonical Activity 5.7 evidence/verification/closureCriteria item CNT-5.7-EVID-001."
+              }
+            }
+          },
+          {
+            "id": "QV-EVIDENCE-CNT-5.7-EVID-002-002",
+            "text": {
+              "en": "equipment ID;",
+              "fr": "equipment ID;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.7",
+              "page": "CNT-5.7-EVID-002",
+              "note": {
+                "en": "Mapped from canonical Activity 5.7 evidence/verification/closureCriteria item CNT-5.7-EVID-002."
+              }
+            }
+          },
+          {
+            "id": "QV-EVIDENCE-CNT-5.7-EVID-003-003",
+            "text": {
+              "en": "location;",
+              "fr": "emplacement;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.7",
+              "page": "CNT-5.7-EVID-003",
+              "note": {
+                "en": "Mapped from canonical Activity 5.7 evidence/verification/closureCriteria item CNT-5.7-EVID-003."
+              }
+            }
+          },
+          {
+            "id": "QV-EVIDENCE-CNT-5.7-EVID-004-004",
+            "text": {
+              "en": "dimensions;",
+              "fr": "dimensions;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.7",
+              "page": "CNT-5.7-EVID-004",
+              "note": {
+                "en": "Mapped from canonical Activity 5.7 evidence/verification/closureCriteria item CNT-5.7-EVID-004."
+              }
+            }
+          },
+          {
+            "id": "QV-EVIDENCE-CNT-5.7-EVID-005-005",
+            "text": {
+              "en": "anchor inspection;",
+              "fr": "ancrage inspection;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.7",
+              "page": "CNT-5.7-EVID-005",
+              "note": {
+                "en": "Mapped from canonical Activity 5.7 evidence/verification/closureCriteria item CNT-5.7-EVID-005."
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "watchFor": [
+      {
+        "type": "bulletList",
+        "items": [
+          {
+            "id": "QV-WATCH-CNT-5.7-ISSUE-001-001",
+            "text": {
+              "en": "wrong curb size;",
+              "fr": "wrong bordure size;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.7",
+              "page": "CNT-5.7-ISSUE-001",
+              "note": {
+                "en": "Mapped from canonical Activity 5.7 issues.commonDeficiencies/correctiveAction item CNT-5.7-ISSUE-001."
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            }
+          },
+          {
+            "id": "QV-WATCH-CNT-5.7-ISSUE-002-002",
+            "text": {
+              "en": "wrong orientation;",
+              "fr": "wrong orientation;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.7",
+              "page": "CNT-5.7-ISSUE-002",
+              "note": {
+                "en": "Mapped from canonical Activity 5.7 issues.commonDeficiencies/correctiveAction item CNT-5.7-ISSUE-002."
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            }
+          },
+          {
+            "id": "QV-WATCH-CNT-5.7-ISSUE-003-003",
+            "text": {
+              "en": "low curb;",
+              "fr": "low bordure;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.7",
+              "page": "CNT-5.7-ISSUE-003",
+              "note": {
+                "en": "Mapped from canonical Activity 5.7 issues.commonDeficiencies/correctiveAction item CNT-5.7-ISSUE-003."
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            }
+          },
+          {
+            "id": "QV-WATCH-CNT-5.7-ISSUE-004-004",
+            "text": {
+              "en": "inadequate anchorage;",
+              "fr": "inadequate ancrage;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.7",
+              "page": "CNT-5.7-ISSUE-004",
+              "note": {
+                "en": "Mapped from canonical Activity 5.7 issues.commonDeficiencies/correctiveAction item CNT-5.7-ISSUE-004."
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            }
+          },
+          {
+            "id": "QV-WATCH-CNT-5.7-ISSUE-005-005",
+            "text": {
+              "en": "poor flashing;",
+              "fr": "poor solin;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.7",
+              "page": "CNT-5.7-ISSUE-005",
+              "note": {
+                "en": "Mapped from canonical Activity 5.7 issues.commonDeficiencies/correctiveAction item CNT-5.7-ISSUE-005."
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            }
+          }
+        ]
+      }
+    ],
+    "dontMiss": [
+      {
+        "type": "bulletList",
+        "items": [
+          {
+            "id": "QV-DONTMISS-CNT-5.7-QC-001-001",
+            "text": {
+              "en": "Equipment ID",
+              "fr": "Equipment ID",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.7",
+              "page": "CNT-5.7-QC-001",
+              "note": {
+                "en": "Mapped from canonical Activity 5.7 qualityCheckpoint/closureCriteria/verification item CNT-5.7-QC-001."
+              }
+            }
+          },
+          {
+            "id": "QV-DONTMISS-CNT-5.7-QC-002-002",
+            "text": {
+              "en": "Curb ID",
+              "fr": "bordure ID",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.7",
+              "page": "CNT-5.7-QC-002",
+              "note": {
+                "en": "Mapped from canonical Activity 5.7 qualityCheckpoint/closureCriteria/verification item CNT-5.7-QC-002."
+              }
+            }
+          },
+          {
+            "id": "QV-DONTMISS-CNT-5.7-QC-003-003",
+            "text": {
+              "en": "Dimensions",
+              "fr": "Dimensions",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.7",
+              "page": "CNT-5.7-QC-003",
+              "note": {
+                "en": "Mapped from canonical Activity 5.7 qualityCheckpoint/closureCriteria/verification item CNT-5.7-QC-003."
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "priorityRelationshipIds": [
+      "REL-5.7-ACCESS_CHECKED_BY-11.10-whereApplicable",
+      "REL-5.7-GATED_BY-G-ROOF-01D-whereEquipmentPresent",
+      "REL-5.7-INTERFACES_WITH-8.6-whereEquipmentPresent",
+      "REL-5.7-INTERFACES_WITH-9.4-whereEquipmentPresent"
+    ]
+  },
+  {
+    "activityId": "5.8",
+    "before": [
+      {
+        "type": "checkList",
+        "items": [
+          {
+            "id": "QV-BEFORE-CNT-5.8-REQ-001-001",
+            "text": {
+              "en": "roof drainage plan;",
+              "fr": "toiture planifier de drainage;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.8",
+              "page": "CNT-5.8-REQ-001",
+              "note": {
+                "en": "Mapped from canonical Activity 5.8 before/requirements/planning/documentControl item CNT-5.8-REQ-001."
+              }
+            }
+          },
+          {
+            "id": "QV-BEFORE-CNT-5.8-REQ-002-002",
+            "text": {
+              "en": "mechanical/plumbing drawings;",
+              "fr": "mécanique/plumbing plans;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.8",
+              "page": "CNT-5.8-REQ-002",
+              "note": {
+                "en": "Mapped from canonical Activity 5.8 before/requirements/planning/documentControl item CNT-5.8-REQ-002."
+              }
+            }
+          },
+          {
+            "id": "QV-BEFORE-CNT-5.8-REQ-003-003",
+            "text": {
+              "en": "drain details;",
+              "fr": "drain details;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.8",
+              "page": "CNT-5.8-REQ-003",
+              "note": {
+                "en": "Mapped from canonical Activity 5.8 before/requirements/planning/documentControl item CNT-5.8-REQ-003."
+              }
+            }
+          },
+          {
+            "id": "QV-BEFORE-CNT-5.8-REQ-004-004",
+            "text": {
+              "en": "slope/taper plan;",
+              "fr": "pente/taper planifier;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.8",
+              "page": "CNT-5.8-REQ-004",
+              "note": {
+                "en": "Mapped from canonical Activity 5.8 before/requirements/planning/documentControl item CNT-5.8-REQ-004."
+              }
+            }
+          },
+          {
+            "id": "QV-BEFORE-CNT-5.8-REQ-005-005",
+            "text": {
+              "en": "membrane drain detail;",
+              "fr": "membrane drain detail;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.8",
+              "page": "CNT-5.8-REQ-005",
+              "note": {
+                "en": "Mapped from canonical Activity 5.8 before/requirements/planning/documentControl item CNT-5.8-REQ-005."
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "inspect": [
+      {
+        "type": "checkList",
+        "items": [
+          {
+            "id": "QV-INSPECT-CNT-5.8-INS-DURING-001-001",
+            "text": {
+              "en": "Correct point on roof.",
+              "fr": "corriger point sur toiture.",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.8",
+              "page": "CNT-5.8-INS-DURING-001",
+              "note": {
+                "en": "Mapped from canonical Activity 5.8 inspection.during/materialControl/qualityCheckpoint item CNT-5.8-INS-DURING-001."
+              }
+            }
+          },
+          {
+            "id": "QV-INSPECT-CNT-5.8-INS-DURING-002-002",
+            "text": {
+              "en": "Drain should function as low point according to design.",
+              "fr": "drain devrait function as low point according à design.",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.8",
+              "page": "CNT-5.8-INS-DURING-002",
+              "note": {
+                "en": "Mapped from canonical Activity 5.8 inspection.during/materialControl/qualityCheckpoint item CNT-5.8-INS-DURING-002."
+              }
+            }
+          },
+          {
+            "id": "QV-INSPECT-CNT-5.8-INS-DURING-003-003",
+            "text": {
+              "en": "secure;",
+              "fr": "sécuriser;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.8",
+              "page": "CNT-5.8-INS-DURING-003",
+              "note": {
+                "en": "Mapped from canonical Activity 5.8 inspection.during/materialControl/qualityCheckpoint item CNT-5.8-INS-DURING-003."
+              }
+            }
+          },
+          {
+            "id": "QV-INSPECT-CNT-5.8-INS-DURING-004-004",
+            "text": {
+              "en": "correct piping;",
+              "fr": "corriger tuyauterie;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.8",
+              "page": "CNT-5.8-INS-DURING-004",
+              "note": {
+                "en": "Mapped from canonical Activity 5.8 inspection.during/materialControl/qualityCheckpoint item CNT-5.8-INS-DURING-004."
+              }
+            }
+          },
+          {
+            "id": "QV-INSPECT-CNT-5.8-INS-DURING-005-005",
+            "text": {
+              "en": "no obvious leakage.",
+              "fr": "aucun obvious leakage.",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.8",
+              "page": "CNT-5.8-INS-DURING-005",
+              "note": {
+                "en": "Mapped from canonical Activity 5.8 inspection.during/materialControl/qualityCheckpoint item CNT-5.8-INS-DURING-005."
+              }
+            }
+          },
+          {
+            "id": "QV-INSPECT-CNT-5.8-INS-DURING-006-006",
+            "text": {
+              "en": "membrane properly dressed into drain;",
+              "fr": "membrane correctement dressed dans drain;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.8",
+              "page": "CNT-5.8-INS-DURING-006",
+              "note": {
+                "en": "Mapped from canonical Activity 5.8 inspection.during/materialControl/qualityCheckpoint item CNT-5.8-INS-DURING-006."
+              }
+            }
+          },
+          {
+            "id": "QV-INSPECT-CNT-5.8-INS-DURING-007-007",
+            "text": {
+              "en": "clamping ring;",
+              "fr": "clamping ring;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.8",
+              "page": "CNT-5.8-INS-DURING-007",
+              "note": {
+                "en": "Mapped from canonical Activity 5.8 inspection.during/materialControl/qualityCheckpoint item CNT-5.8-INS-DURING-007."
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "type": "checkList",
+        "items": [
+          {
+            "id": "QV-EVIDENCE-CNT-5.8-EVID-001-001",
+            "text": {
+              "en": "drain ID;",
+              "fr": "drain ID;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.8",
+              "page": "CNT-5.8-EVID-001",
+              "note": {
+                "en": "Mapped from canonical Activity 5.8 evidence/verification/closureCriteria item CNT-5.8-EVID-001."
+              }
+            }
+          },
+          {
+            "id": "QV-EVIDENCE-CNT-5.8-EVID-002-002",
+            "text": {
+              "en": "location;",
+              "fr": "emplacement;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.8",
+              "page": "CNT-5.8-EVID-002",
+              "note": {
+                "en": "Mapped from canonical Activity 5.8 evidence/verification/closureCriteria item CNT-5.8-EVID-002."
+              }
+            }
+          },
+          {
+            "id": "QV-EVIDENCE-CNT-5.8-EVID-003-003",
+            "text": {
+              "en": "elevation;",
+              "fr": "élévation;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.8",
+              "page": "CNT-5.8-EVID-003",
+              "note": {
+                "en": "Mapped from canonical Activity 5.8 evidence/verification/closureCriteria item CNT-5.8-EVID-003."
+              }
+            }
+          },
+          {
+            "id": "QV-EVIDENCE-CNT-5.8-EVID-004-004",
+            "text": {
+              "en": "sump;",
+              "fr": "sump;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.8",
+              "page": "CNT-5.8-EVID-004",
+              "note": {
+                "en": "Mapped from canonical Activity 5.8 evidence/verification/closureCriteria item CNT-5.8-EVID-004."
+              }
+            }
+          },
+          {
+            "id": "QV-EVIDENCE-CNT-5.8-EVID-005-005",
+            "text": {
+              "en": "membrane detail;",
+              "fr": "membrane detail;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.8",
+              "page": "CNT-5.8-EVID-005",
+              "note": {
+                "en": "Mapped from canonical Activity 5.8 evidence/verification/closureCriteria item CNT-5.8-EVID-005."
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "watchFor": [
+      {
+        "type": "bulletList",
+        "items": [
+          {
+            "id": "QV-WATCH-CNT-5.8-ISSUE-001-001",
+            "text": {
+              "en": "drain too high;",
+              "fr": "drain too high;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.8",
+              "page": "CNT-5.8-ISSUE-001",
+              "note": {
+                "en": "Mapped from canonical Activity 5.8 issues.commonDeficiencies/correctiveAction item CNT-5.8-ISSUE-001."
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            }
+          },
+          {
+            "id": "QV-WATCH-CNT-5.8-ISSUE-002-002",
+            "text": {
+              "en": "wrong location;",
+              "fr": "wrong emplacement;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.8",
+              "page": "CNT-5.8-ISSUE-002",
+              "note": {
+                "en": "Mapped from canonical Activity 5.8 issues.commonDeficiencies/correctiveAction item CNT-5.8-ISSUE-002."
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            }
+          },
+          {
+            "id": "QV-WATCH-CNT-5.8-ISSUE-003-003",
+            "text": {
+              "en": "poor membrane clamp;",
+              "fr": "poor membrane serre-joint;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.8",
+              "page": "CNT-5.8-ISSUE-003",
+              "note": {
+                "en": "Mapped from canonical Activity 5.8 issues.commonDeficiencies/correctiveAction item CNT-5.8-ISSUE-003."
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            }
+          },
+          {
+            "id": "QV-WATCH-CNT-5.8-ISSUE-004-004",
+            "text": {
+              "en": "blocked drain;",
+              "fr": "blocked drain;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.8",
+              "page": "CNT-5.8-ISSUE-004",
+              "note": {
+                "en": "Mapped from canonical Activity 5.8 issues.commonDeficiencies/correctiveAction item CNT-5.8-ISSUE-004."
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            }
+          },
+          {
+            "id": "QV-WATCH-CNT-5.8-ISSUE-005-005",
+            "text": {
+              "en": "inadequate sump;",
+              "fr": "inadequate sump;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.8",
+              "page": "CNT-5.8-ISSUE-005",
+              "note": {
+                "en": "Mapped from canonical Activity 5.8 issues.commonDeficiencies/correctiveAction item CNT-5.8-ISSUE-005."
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            }
+          }
+        ]
+      }
+    ],
+    "dontMiss": [
+      {
+        "type": "bulletList",
+        "items": [
+          {
+            "id": "QV-DONTMISS-CNT-5.8-QC-001-001",
+            "text": {
+              "en": "Drain ID",
+              "fr": "drain ID",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.8",
+              "page": "CNT-5.8-QC-001",
+              "note": {
+                "en": "Mapped from canonical Activity 5.8 qualityCheckpoint/closureCriteria/verification item CNT-5.8-QC-001."
+              }
+            }
+          },
+          {
+            "id": "QV-DONTMISS-CNT-5.8-QC-002-002",
+            "text": {
+              "en": "Location",
+              "fr": "emplacement",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.8",
+              "page": "CNT-5.8-QC-002",
+              "note": {
+                "en": "Mapped from canonical Activity 5.8 qualityCheckpoint/closureCriteria/verification item CNT-5.8-QC-002."
+              }
+            }
+          },
+          {
+            "id": "QV-DONTMISS-CNT-5.8-QC-003-003",
+            "text": {
+              "en": "Elevation",
+              "fr": "élévation",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.8",
+              "page": "CNT-5.8-QC-003",
+              "note": {
+                "en": "Mapped from canonical Activity 5.8 qualityCheckpoint/closureCriteria/verification item CNT-5.8-QC-003."
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "priorityRelationshipIds": [
+      "REL-5.8-INTERFACES_WITH-8.3-whereRoof",
+      "REL-5.8-REQUIRES-5.4-whereRoof",
+      "REL-5.9-REQUIRES-5.8-whereApplicable"
+    ]
+  },
+  {
+    "activityId": "5.9",
+    "before": [
+      {
+        "type": "checkList",
+        "items": [
+          {
+            "id": "QV-BEFORE-CNT-5.9-REQ-001-001",
+            "text": {
+              "en": "roof testing specification;",
+              "fr": "toiture réalisation des essais devis;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.9",
+              "page": "CNT-5.9-REQ-001",
+              "note": {
+                "en": "Mapped from canonical Activity 5.9 before/requirements/planning/documentControl item CNT-5.9-REQ-001."
+              }
+            }
+          },
+          {
+            "id": "QV-BEFORE-CNT-5.9-REQ-002-002",
+            "text": {
+              "en": "manufacturer warranty requirements;",
+              "fr": "fabricant garantie requirements;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.9",
+              "page": "CNT-5.9-REQ-002",
+              "note": {
+                "en": "Mapped from canonical Activity 5.9 before/requirements/planning/documentControl item CNT-5.9-REQ-002."
+              }
+            }
+          },
+          {
+            "id": "QV-BEFORE-CNT-5.9-REQ-003-003",
+            "text": {
+              "en": "water-test procedure if specified;",
+              "fr": "eau-essai procédure if spécifié;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.9",
+              "page": "CNT-5.9-REQ-003",
+              "note": {
+                "en": "Mapped from canonical Activity 5.9 before/requirements/planning/documentControl item CNT-5.9-REQ-003."
+              }
+            }
+          },
+          {
+            "id": "QV-BEFORE-CNT-5.9-REQ-004-004",
+            "text": {
+              "en": "electronic leak detection requirements;",
+              "fr": "electronic leak detection requirements;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.9",
+              "page": "CNT-5.9-REQ-004",
+              "note": {
+                "en": "Mapped from canonical Activity 5.9 before/requirements/planning/documentControl item CNT-5.9-REQ-004."
+              }
+            }
+          },
+          {
+            "id": "QV-BEFORE-CNT-5.9-REQ-005-005",
+            "text": {
+              "en": "flood-test limitations;",
+              "fr": "flood-essai limitations;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.9",
+              "page": "CNT-5.9-REQ-005",
+              "note": {
+                "en": "Mapped from canonical Activity 5.9 before/requirements/planning/documentControl item CNT-5.9-REQ-005."
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "inspect": [
+      {
+        "type": "checkList",
+        "items": [
+          {
+            "id": "QV-INSPECT-CNT-5.9-INS-DURING-001-001",
+            "text": {
+              "en": "membrane installation complete enough;",
+              "fr": "membrane installation complete enough;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.9",
+              "page": "CNT-5.9-INS-DURING-001",
+              "note": {
+                "en": "Mapped from canonical Activity 5.9 inspection.during/materialControl/qualityCheckpoint item CNT-5.9-INS-DURING-001."
+              }
+            }
+          },
+          {
+            "id": "QV-INSPECT-CNT-5.9-INS-DURING-002-002",
+            "text": {
+              "en": "drains operational;",
+              "fr": "drains operational;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.9",
+              "page": "CNT-5.9-INS-DURING-002",
+              "note": {
+                "en": "Mapped from canonical Activity 5.9 inspection.during/materialControl/qualityCheckpoint item CNT-5.9-INS-DURING-002."
+              }
+            }
+          },
+          {
+            "id": "QV-INSPECT-CNT-5.9-INS-DURING-003-003",
+            "text": {
+              "en": "penetrations complete;",
+              "fr": "penetrations complete;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.9",
+              "page": "CNT-5.9-INS-DURING-003",
+              "note": {
+                "en": "Mapped from canonical Activity 5.9 inspection.during/materialControl/qualityCheckpoint item CNT-5.9-INS-DURING-003."
+              }
+            }
+          },
+          {
+            "id": "QV-INSPECT-CNT-5.9-INS-DURING-004-004",
+            "text": {
+              "en": "flashings complete;",
+              "fr": "flashings complete;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.9",
+              "page": "CNT-5.9-INS-DURING-004",
+              "note": {
+                "en": "Mapped from canonical Activity 5.9 inspection.during/materialControl/qualityCheckpoint item CNT-5.9-INS-DURING-004."
+              }
+            }
+          },
+          {
+            "id": "QV-INSPECT-CNT-5.9-INS-DURING-005-005",
+            "text": {
+              "en": "curbs complete;",
+              "fr": "curbs complete;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.9",
+              "page": "CNT-5.9-INS-DURING-005",
+              "note": {
+                "en": "Mapped from canonical Activity 5.9 inspection.during/materialControl/qualityCheckpoint item CNT-5.9-INS-DURING-005."
+              }
+            }
+          },
+          {
+            "id": "QV-INSPECT-CNT-5.9-INS-DURING-006-006",
+            "text": {
+              "en": "roof cleaned;",
+              "fr": "toiture cleaned;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.9",
+              "page": "CNT-5.9-INS-DURING-006",
+              "note": {
+                "en": "Mapped from canonical Activity 5.9 inspection.during/materialControl/qualityCheckpoint item CNT-5.9-INS-DURING-006."
+              }
+            }
+          },
+          {
+            "id": "QV-INSPECT-CNT-5.9-INS-DURING-007-007",
+            "text": {
+              "en": "test zones defined;",
+              "fr": "essai zones defined;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.9",
+              "page": "CNT-5.9-INS-DURING-007",
+              "note": {
+                "en": "Mapped from canonical Activity 5.9 inspection.during/materialControl/qualityCheckpoint item CNT-5.9-INS-DURING-007."
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "type": "checkList",
+        "items": [
+          {
+            "id": "QV-EVIDENCE-CNT-5.9-EVID-001-001",
+            "text": {
+              "en": "final inspection checklist;",
+              "fr": "inspection finale checklist;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.9",
+              "page": "CNT-5.9-EVID-001",
+              "note": {
+                "en": "Mapped from canonical Activity 5.9 evidence/verification/closureCriteria item CNT-5.9-EVID-001."
+              }
+            }
+          },
+          {
+            "id": "QV-EVIDENCE-CNT-5.9-EVID-002-002",
+            "text": {
+              "en": "roof plan marked with deficiencies;",
+              "fr": "toiture planifier marked avec déficiences;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.9",
+              "page": "CNT-5.9-EVID-002",
+              "note": {
+                "en": "Mapped from canonical Activity 5.9 evidence/verification/closureCriteria item CNT-5.9-EVID-002."
+              }
+            }
+          },
+          {
+            "id": "QV-EVIDENCE-CNT-5.9-EVID-003-003",
+            "text": {
+              "en": "photographs;",
+              "fr": "photographs;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.9",
+              "page": "CNT-5.9-EVID-003",
+              "note": {
+                "en": "Mapped from canonical Activity 5.9 evidence/verification/closureCriteria item CNT-5.9-EVID-003."
+              }
+            }
+          },
+          {
+            "id": "QV-EVIDENCE-CNT-5.9-EVID-004-004",
+            "text": {
+              "en": "electronic test report;",
+              "fr": "electronic rapport d’essai;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.9",
+              "page": "CNT-5.9-EVID-004",
+              "note": {
+                "en": "Mapped from canonical Activity 5.9 evidence/verification/closureCriteria item CNT-5.9-EVID-004."
+              }
+            }
+          },
+          {
+            "id": "QV-EVIDENCE-CNT-5.9-EVID-005-005",
+            "text": {
+              "en": "water-test report;",
+              "fr": "eau-rapport d’essai;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.9",
+              "page": "CNT-5.9-EVID-005",
+              "note": {
+                "en": "Mapped from canonical Activity 5.9 evidence/verification/closureCriteria item CNT-5.9-EVID-005."
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "watchFor": [
+      {
+        "type": "bulletList",
+        "items": [
+          {
+            "id": "QV-WATCH-CNT-5.9-ISSUE-001-001",
+            "text": {
+              "en": "punctures;",
+              "fr": "punctures;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.9",
+              "page": "CNT-5.9-ISSUE-001",
+              "note": {
+                "en": "Mapped from canonical Activity 5.9 issues.commonDeficiencies/correctiveAction item CNT-5.9-ISSUE-001."
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            }
+          },
+          {
+            "id": "QV-WATCH-CNT-5.9-ISSUE-002-002",
+            "text": {
+              "en": "open seams;",
+              "fr": "open seams;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.9",
+              "page": "CNT-5.9-ISSUE-002",
+              "note": {
+                "en": "Mapped from canonical Activity 5.9 issues.commonDeficiencies/correctiveAction item CNT-5.9-ISSUE-002."
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            }
+          },
+          {
+            "id": "QV-WATCH-CNT-5.9-ISSUE-003-003",
+            "text": {
+              "en": "incomplete flashing;",
+              "fr": "incomplete solin;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.9",
+              "page": "CNT-5.9-ISSUE-003",
+              "note": {
+                "en": "Mapped from canonical Activity 5.9 issues.commonDeficiencies/correctiveAction item CNT-5.9-ISSUE-003."
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            }
+          },
+          {
+            "id": "QV-WATCH-CNT-5.9-ISSUE-004-004",
+            "text": {
+              "en": "damaged coating;",
+              "fr": "damaged enduit;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.9",
+              "page": "CNT-5.9-ISSUE-004",
+              "note": {
+                "en": "Mapped from canonical Activity 5.9 issues.commonDeficiencies/correctiveAction item CNT-5.9-ISSUE-004."
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            }
+          },
+          {
+            "id": "QV-WATCH-CNT-5.9-ISSUE-005-005",
+            "text": {
+              "en": "sealant defects;",
+              "fr": "scellant defects;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.9",
+              "page": "CNT-5.9-ISSUE-005",
+              "note": {
+                "en": "Mapped from canonical Activity 5.9 issues.commonDeficiencies/correctiveAction item CNT-5.9-ISSUE-005."
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            }
+          }
+        ]
+      }
+    ],
+    "dontMiss": [
+      {
+        "type": "bulletList",
+        "items": [
+          {
+            "id": "QV-DONTMISS-CNT-5.9-QC-001-001",
+            "text": {
+              "en": "Deck/substrate accepted",
+              "fr": "Deck/support accepted",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.9",
+              "page": "CNT-5.9-QC-001",
+              "note": {
+                "en": "Mapped from canonical Activity 5.9 qualityCheckpoint/closureCriteria/verification item CNT-5.9-QC-001."
+              }
+            }
+          },
+          {
+            "id": "QV-DONTMISS-CNT-5.9-QC-002-002",
+            "text": {
+              "en": "Air/vapour layer accepted",
+              "fr": "Air/vapour layer accepted",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.9",
+              "page": "CNT-5.9-QC-002",
+              "note": {
+                "en": "Mapped from canonical Activity 5.9 qualityCheckpoint/closureCriteria/verification item CNT-5.9-QC-002."
+              }
+            }
+          },
+          {
+            "id": "QV-DONTMISS-CNT-5.9-QC-003-003",
+            "text": {
+              "en": "Insulation accepted",
+              "fr": "isolation accepted",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.9",
+              "page": "CNT-5.9-QC-003",
+              "note": {
+                "en": "Mapped from canonical Activity 5.9 qualityCheckpoint/closureCriteria/verification item CNT-5.9-QC-003."
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "priorityRelationshipIds": [
+      "REL-5.9-GATED_BY-G-ROOF-01E",
+      "REL-5.9-REQUIRES-5.1-whereApplicable",
+      "REL-5.9-REQUIRES-5.2-whereApplicable",
+      "REL-5.9-REQUIRES-5.3-whereApplicable"
+    ]
+  }
+]

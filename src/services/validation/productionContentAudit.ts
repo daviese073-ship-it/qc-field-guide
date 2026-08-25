@@ -18,8 +18,6 @@ const contentBlockFields = [
 ] as const;
 
 const laterPhaseCollections = [
-  "quickViews",
-  "learnContent",
   "workflows",
   "preConcealmentWorkflows"
 ] as const;

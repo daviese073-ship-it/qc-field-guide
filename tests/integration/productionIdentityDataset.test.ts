@@ -121,9 +121,9 @@ describe("Phase 009 production identity dataset", () => {
     expect(report.contentItemCount).toBeGreaterThan(1000);
   });
 
-  it("does not populate production presentation or search data", () => {
-    expect(productionCanonicalDataset.quickViews).toHaveLength(0);
-    expect(productionCanonicalDataset.learnContent).toHaveLength(0);
+  it("populates Phase 014 Quick/Learn data without later workflow or search data", () => {
+    expect(productionCanonicalDataset.quickViews).toHaveLength(139);
+    expect(productionCanonicalDataset.learnContent).toHaveLength(139);
     expect(productionCanonicalDataset.workflows).toHaveLength(0);
     expect(productionCanonicalDataset.preConcealmentWorkflows).toHaveLength(0);
     expect(productionCanonicalDataset.terminology.length).toBeGreaterThan(0);

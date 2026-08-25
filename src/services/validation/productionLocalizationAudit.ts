@@ -538,14 +538,9 @@ export const auditProductionLocalizationDataset = (
       `Found ${terminologyConformanceIssueCount} terminology-conformance issues in content-item translations.`
     );
   }
-  if (
-    dataset.quickViews.length > 0 ||
-    dataset.learnContent.length > 0 ||
-    dataset.workflows.length > 0 ||
-    dataset.preConcealmentWorkflows.length > 0
-  ) {
+  if (dataset.workflows.length > 0 || dataset.preConcealmentWorkflows.length > 0) {
     errors.push(
-      "Phase 013 must not populate QuickView, LearnContent, Workflow, or PreConcealmentWorkflow production records."
+      "Phase 014 must not populate Workflow or PreConcealmentWorkflow production records."
     );
   }
 

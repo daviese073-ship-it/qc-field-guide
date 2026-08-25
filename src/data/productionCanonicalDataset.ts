@@ -16,6 +16,34 @@ import acronyms from "@/data/acronyms/acronyms.json";
 import conditions from "@/data/conditions/conditions.json";
 import gates from "@/data/gates/gates.json";
 import invalidationRules from "@/data/invalidation/invalidation-rules.json";
+import section01Learn from "@/data/learn/section-01.learn.json";
+import section02Learn from "@/data/learn/section-02.learn.json";
+import section03Learn from "@/data/learn/section-03.learn.json";
+import section04Learn from "@/data/learn/section-04.learn.json";
+import section05Learn from "@/data/learn/section-05.learn.json";
+import section06Learn from "@/data/learn/section-06.learn.json";
+import section07Learn from "@/data/learn/section-07.learn.json";
+import section08Learn from "@/data/learn/section-08.learn.json";
+import section09Learn from "@/data/learn/section-09.learn.json";
+import section10Learn from "@/data/learn/section-10.learn.json";
+import section11Learn from "@/data/learn/section-11.learn.json";
+import section12Learn from "@/data/learn/section-12.learn.json";
+import section13Learn from "@/data/learn/section-13.learn.json";
+import section14Learn from "@/data/learn/section-14.learn.json";
+import section01QuickViews from "@/data/quick/section-01.quick.json";
+import section02QuickViews from "@/data/quick/section-02.quick.json";
+import section03QuickViews from "@/data/quick/section-03.quick.json";
+import section04QuickViews from "@/data/quick/section-04.quick.json";
+import section05QuickViews from "@/data/quick/section-05.quick.json";
+import section06QuickViews from "@/data/quick/section-06.quick.json";
+import section07QuickViews from "@/data/quick/section-07.quick.json";
+import section08QuickViews from "@/data/quick/section-08.quick.json";
+import section09QuickViews from "@/data/quick/section-09.quick.json";
+import section10QuickViews from "@/data/quick/section-10.quick.json";
+import section11QuickViews from "@/data/quick/section-11.quick.json";
+import section12QuickViews from "@/data/quick/section-12.quick.json";
+import section13QuickViews from "@/data/quick/section-13.quick.json";
+import section14QuickViews from "@/data/quick/section-14.quick.json";
 import crossDisciplineRelationships from "@/data/relationships/cross-discipline.json";
 import electricalRelationships from "@/data/relationships/electrical.json";
 import envelopeRelationships from "@/data/relationships/envelope.json";
@@ -74,6 +102,40 @@ const relationships = [
   ...crossDisciplineRelationships
 ];
 
+const quickViews = [
+  ...section01QuickViews,
+  ...section02QuickViews,
+  ...section03QuickViews,
+  ...section04QuickViews,
+  ...section05QuickViews,
+  ...section06QuickViews,
+  ...section07QuickViews,
+  ...section08QuickViews,
+  ...section09QuickViews,
+  ...section10QuickViews,
+  ...section11QuickViews,
+  ...section12QuickViews,
+  ...section13QuickViews,
+  ...section14QuickViews
+];
+
+const learnContent = [
+  ...section01Learn,
+  ...section02Learn,
+  ...section03Learn,
+  ...section04Learn,
+  ...section05Learn,
+  ...section06Learn,
+  ...section07Learn,
+  ...section08Learn,
+  ...section09Learn,
+  ...section10Learn,
+  ...section11Learn,
+  ...section12Learn,
+  ...section13Learn,
+  ...section14Learn
+];
+
 const terminology = [
   ...terminologyQuality,
   ...terminologyEarthworks,
@@ -93,8 +155,8 @@ const terminology = [
 export const productionCanonicalDataset = {
   sections,
   activities,
-  quickViews: [],
-  learnContent: [],
+  quickViews,
+  learnContent,
   relationships,
   gates,
   invalidationRules,
@@ -106,7 +168,7 @@ export const productionCanonicalDataset = {
   uiStrings,
   version: {
     schemaVersion: "phase-002",
-    contentVersion: "phase-013a-production-bilingual-content",
+    contentVersion: "phase-014-authored-field-presentation",
     terminologyVersion: "phase-013a-batir-terminology"
   }
 };

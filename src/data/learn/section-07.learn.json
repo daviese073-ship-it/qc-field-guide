@@ -1,0 +1,4980 @@
+[
+  {
+    "activityId": "7.1",
+    "whatIsThis": [
+      {
+        "type": "paragraph",
+        "item": {
+          "id": "LRN-WHAT-7.1-QUALITYOBJECTIVE",
+          "text": {
+            "en": "Provide a clean, sound, dry, level, properly profiled concrete substrate suitable for the specified floor finish system.\nA large percentage of floor-finish failures originate in poor substrate preparation rather than the finish material itself.",
+            "fr": "Provide a clean, sound, dry, level, correctement profiled Béton support approprié pour le spécifié floor finish system. A large percentage de floor-finish failures originate dans poor support preparation rather than le finish matériau itself.",
+            "status": {
+              "en": "validated",
+              "fr": "provisional"
+            }
+          },
+          "sourceRef": {
+            "build": "Phase 014",
+            "document": "Authored field-presentation data",
+            "section": "7.1",
+            "page": "qualityObjective",
+            "note": {
+              "en": "Mapped from canonical Activity 7.1 field qualityObjective."
+            }
+          }
+        }
+      }
+    ],
+    "whyItMatters": [
+      {
+        "type": "paragraph",
+        "item": {
+          "id": "LRN-WHY-7.1-AUTHORITYNOTE",
+          "text": {
+            "en": "The project drawings, devis, Plan Qualite, PIE/PRIE, approved procedures, professional instructions and CRT/Hydro-Quebec requirements govern. This playbook tells you how to systematically find, verify, document and close the quality requirements; it does not replace them.",
+            "fr": "le projet plans, devis, planifier Qualite, PIE/PRIE, procédures approuvées, professional instructions et CRT/Hydro-Quebec requirements govern. cela guide tells vous how à systematically find, vérifier, documenter et clore le quality requirements; cela does ne pas remplacer them.",
+            "status": {
+              "en": "validated",
+              "fr": "provisional"
+            }
+          },
+          "sourceRef": {
+            "build": "Phase 014",
+            "document": "Authored field-presentation data",
+            "section": "7.1",
+            "page": "authorityNote",
+            "note": {
+              "en": "Mapped from canonical Activity 7.1 field authorityNote."
+            }
+          }
+        }
+      },
+      {
+        "type": "bulletList",
+        "items": [
+          {
+            "id": "LRN-WHY-CNT-7.1-QC-001-001",
+            "text": {
+              "en": "Correct finish zone",
+              "fr": "corriger finish zone",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.1",
+              "page": "CNT-7.1-QC-001",
+              "note": {
+                "en": "Mapped from canonical Activity 7.1 qualityCheckpoint/reportingAnalysis item CNT-7.1-QC-001."
+              }
+            }
+          },
+          {
+            "id": "LRN-WHY-CNT-7.1-QC-002-002",
+            "text": {
+              "en": "Moisture checked",
+              "fr": "Moisture checked",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.1",
+              "page": "CNT-7.1-QC-002",
+              "note": {
+                "en": "Mapped from canonical Activity 7.1 qualityCheckpoint/reportingAnalysis item CNT-7.1-QC-002."
+              }
+            }
+          },
+          {
+            "id": "LRN-WHY-CNT-7.1-QC-003-003",
+            "text": {
+              "en": "Surface clean",
+              "fr": "surface clean",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.1",
+              "page": "CNT-7.1-QC-003",
+              "note": {
+                "en": "Mapped from canonical Activity 7.1 qualityCheckpoint/reportingAnalysis item CNT-7.1-QC-003."
+              }
+            }
+          },
+          {
+            "id": "LRN-WHY-CNT-7.1-QC-004-004",
+            "text": {
+              "en": "Profile acceptable",
+              "fr": "Profile acceptable",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.1",
+              "page": "CNT-7.1-QC-004",
+              "note": {
+                "en": "Mapped from canonical Activity 7.1 qualityCheckpoint/reportingAnalysis item CNT-7.1-QC-004."
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "howGoodWorkLooks": [
+      {
+        "type": "bulletList",
+        "items": [
+          {
+            "id": "LRN-GOOD-CNT-7.1-VER-001-001",
+            "text": {
+              "en": "repaired substrate;",
+              "fr": "repaired support;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.1",
+              "page": "CNT-7.1-VER-001",
+              "note": {
+                "en": "Mapped from canonical Activity 7.1 verification/closureCriteria/evidence item CNT-7.1-VER-001."
+              }
+            }
+          },
+          {
+            "id": "LRN-GOOD-CNT-7.1-VER-002-002",
+            "text": {
+              "en": "moisture acceptable;",
+              "fr": "moisture acceptable;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.1",
+              "page": "CNT-7.1-VER-002",
+              "note": {
+                "en": "Mapped from canonical Activity 7.1 verification/closureCriteria/evidence item CNT-7.1-VER-002."
+              }
+            }
+          },
+          {
+            "id": "LRN-GOOD-CNT-7.1-VER-003-003",
+            "text": {
+              "en": "surface profile correct;",
+              "fr": "surface profile corriger;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.1",
+              "page": "CNT-7.1-VER-003",
+              "note": {
+                "en": "Mapped from canonical Activity 7.1 verification/closureCriteria/evidence item CNT-7.1-VER-003."
+              }
+            }
+          },
+          {
+            "id": "LRN-GOOD-CNT-7.1-VER-004-004",
+            "text": {
+              "en": "patching sound;",
+              "fr": "patching sound;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.1",
+              "page": "CNT-7.1-VER-004",
+              "note": {
+                "en": "Mapped from canonical Activity 7.1 verification/closureCriteria/evidence item CNT-7.1-VER-004."
+              }
+            }
+          },
+          {
+            "id": "LRN-GOOD-CNT-7.1-VER-005-005",
+            "text": {
+              "en": "elevations acceptable.",
+              "fr": "elevations acceptable.",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.1",
+              "page": "CNT-7.1-VER-005",
+              "note": {
+                "en": "Mapped from canonical Activity 7.1 verification/closureCriteria/evidence item CNT-7.1-VER-005."
+              }
+            }
+          },
+          {
+            "id": "LRN-GOOD-CNT-7.1-CLOSE-001-006",
+            "text": {
+              "en": "substrate clean",
+              "fr": "support clean",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.1",
+              "page": "CNT-7.1-CLOSE-001",
+              "note": {
+                "en": "Mapped from canonical Activity 7.1 verification/closureCriteria/evidence item CNT-7.1-CLOSE-001."
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "criticalChecksExplained": [
+      {
+        "type": "bulletList",
+        "items": [
+          {
+            "id": "LRN-CHECK-CNT-7.1-INS-DURING-001-001",
+            "text": {
+              "en": "dust;",
+              "fr": "dust;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.1",
+              "page": "CNT-7.1-INS-DURING-001",
+              "note": {
+                "en": "Mapped from canonical Activity 7.1 inspection/materialControl/requirements item CNT-7.1-INS-DURING-001."
+              }
+            }
+          },
+          {
+            "id": "LRN-CHECK-CNT-7.1-INS-DURING-002-002",
+            "text": {
+              "en": "dirt;",
+              "fr": "dirt;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.1",
+              "page": "CNT-7.1-INS-DURING-002",
+              "note": {
+                "en": "Mapped from canonical Activity 7.1 inspection/materialControl/requirements item CNT-7.1-INS-DURING-002."
+              }
+            }
+          },
+          {
+            "id": "LRN-CHECK-CNT-7.1-INS-DURING-003-003",
+            "text": {
+              "en": "grease/oil;",
+              "fr": "grease/oil;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.1",
+              "page": "CNT-7.1-INS-DURING-003",
+              "note": {
+                "en": "Mapped from canonical Activity 7.1 inspection/materialControl/requirements item CNT-7.1-INS-DURING-003."
+              }
+            }
+          },
+          {
+            "id": "LRN-CHECK-CNT-7.1-INS-DURING-004-004",
+            "text": {
+              "en": "laitance;",
+              "fr": "laitance;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.1",
+              "page": "CNT-7.1-INS-DURING-004",
+              "note": {
+                "en": "Mapped from canonical Activity 7.1 inspection/materialControl/requirements item CNT-7.1-INS-DURING-004."
+              }
+            }
+          },
+          {
+            "id": "LRN-CHECK-CNT-7.1-INS-DURING-005-005",
+            "text": {
+              "en": "curing compounds;",
+              "fr": "cure compounds;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.1",
+              "page": "CNT-7.1-INS-DURING-005",
+              "note": {
+                "en": "Mapped from canonical Activity 7.1 inspection/materialControl/requirements item CNT-7.1-INS-DURING-005."
+              }
+            }
+          },
+          {
+            "id": "LRN-CHECK-CNT-7.1-INS-DURING-006-006",
+            "text": {
+              "en": "loose material;",
+              "fr": "loose matériau;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.1",
+              "page": "CNT-7.1-INS-DURING-006",
+              "note": {
+                "en": "Mapped from canonical Activity 7.1 inspection/materialControl/requirements item CNT-7.1-INS-DURING-006."
+              }
+            }
+          },
+          {
+            "id": "LRN-CHECK-CNT-7.1-INS-DURING-007-007",
+            "text": {
+              "en": "paint/contaminants.",
+              "fr": "peinture/contaminants.",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.1",
+              "page": "CNT-7.1-INS-DURING-007",
+              "note": {
+                "en": "Mapped from canonical Activity 7.1 inspection/materialControl/requirements item CNT-7.1-INS-DURING-007."
+              }
+            }
+          },
+          {
+            "id": "LRN-CHECK-CNT-7.1-INS-DURING-008-008",
+            "text": {
+              "en": "cracks;",
+              "fr": "cracks;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.1",
+              "page": "CNT-7.1-INS-DURING-008",
+              "note": {
+                "en": "Mapped from canonical Activity 7.1 inspection/materialControl/requirements item CNT-7.1-INS-DURING-008."
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "commonFailures": [
+      {
+        "type": "bulletList",
+        "items": [
+          {
+            "id": "LRN-FAIL-CNT-7.1-ISSUE-001-001",
+            "text": {
+              "en": "excessive moisture;",
+              "fr": "excessive moisture;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.1",
+              "page": "CNT-7.1-ISSUE-001",
+              "note": {
+                "en": "Mapped from canonical Activity 7.1 issues.commonDeficiencies/correctiveAction item CNT-7.1-ISSUE-001."
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            }
+          },
+          {
+            "id": "LRN-FAIL-CNT-7.1-ISSUE-002-002",
+            "text": {
+              "en": "contaminated slab;",
+              "fr": "contaminated dalle;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.1",
+              "page": "CNT-7.1-ISSUE-002",
+              "note": {
+                "en": "Mapped from canonical Activity 7.1 issues.commonDeficiencies/correctiveAction item CNT-7.1-ISSUE-002."
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            }
+          },
+          {
+            "id": "LRN-FAIL-CNT-7.1-ISSUE-003-003",
+            "text": {
+              "en": "poor profile;",
+              "fr": "poor profile;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.1",
+              "page": "CNT-7.1-ISSUE-003",
+              "note": {
+                "en": "Mapped from canonical Activity 7.1 issues.commonDeficiencies/correctiveAction item CNT-7.1-ISSUE-003."
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            }
+          },
+          {
+            "id": "LRN-FAIL-CNT-7.1-ISSUE-004-004",
+            "text": {
+              "en": "cracks untreated;",
+              "fr": "cracks untreated;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.1",
+              "page": "CNT-7.1-ISSUE-004",
+              "note": {
+                "en": "Mapped from canonical Activity 7.1 issues.commonDeficiencies/correctiveAction item CNT-7.1-ISSUE-004."
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            }
+          },
+          {
+            "id": "LRN-FAIL-CNT-7.1-ISSUE-005-005",
+            "text": {
+              "en": "high/low spots;",
+              "fr": "high/low spots;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.1",
+              "page": "CNT-7.1-ISSUE-005",
+              "note": {
+                "en": "Mapped from canonical Activity 7.1 issues.commonDeficiencies/correctiveAction item CNT-7.1-ISSUE-005."
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            }
+          },
+          {
+            "id": "LRN-FAIL-CNT-7.1-ISSUE-006-006",
+            "text": {
+              "en": "loose patch;",
+              "fr": "loose patch;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.1",
+              "page": "CNT-7.1-ISSUE-006",
+              "note": {
+                "en": "Mapped from canonical Activity 7.1 issues.commonDeficiencies/correctiveAction item CNT-7.1-ISSUE-006."
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            }
+          },
+          {
+            "id": "LRN-FAIL-CNT-7.1-ISSUE-007-007",
+            "text": {
+              "en": "floor finish installed before substrate acceptance.",
+              "fr": "floor finish installed avant support acceptation.",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.1",
+              "page": "CNT-7.1-ISSUE-007",
+              "note": {
+                "en": "Mapped from canonical Activity 7.1 issues.commonDeficiencies/correctiveAction item CNT-7.1-ISSUE-007."
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            }
+          }
+        ]
+      }
+    ],
+    "interfacesAndSequence": [
+      {
+        "type": "bulletList",
+        "items": [
+          {
+            "id": "LRN-SEQ-CNT-7.1-PLAN-001-001",
+            "text": {
+              "en": "confirm slab sufficiently cured;",
+              "fr": "confirmer dalle sufficiently cured;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.1",
+              "page": "CNT-7.1-PLAN-001",
+              "note": {
+                "en": "Mapped from canonical Activity 7.1 planning/documentControl/requirements item CNT-7.1-PLAN-001."
+              }
+            }
+          },
+          {
+            "id": "LRN-SEQ-CNT-7.1-PLAN-002-002",
+            "text": {
+              "en": "identify finish type by room/zone;",
+              "fr": "identifier finish type par room/zone;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.1",
+              "page": "CNT-7.1-PLAN-002",
+              "note": {
+                "en": "Mapped from canonical Activity 7.1 planning/documentControl/requirements item CNT-7.1-PLAN-002."
+              }
+            }
+          },
+          {
+            "id": "LRN-SEQ-CNT-7.1-PLAN-003-003",
+            "text": {
+              "en": "identify moisture testing requirement;",
+              "fr": "identifier moisture réalisation des essais exigence;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.1",
+              "page": "CNT-7.1-PLAN-003",
+              "note": {
+                "en": "Mapped from canonical Activity 7.1 planning/documentControl/requirements item CNT-7.1-PLAN-003."
+              }
+            }
+          },
+          {
+            "id": "LRN-SEQ-CNT-7.1-PLAN-004-004",
+            "text": {
+              "en": "identify levelness/flatness criteria;",
+              "fr": "identifier horizontalité/planifierécelaé critères;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.1",
+              "page": "CNT-7.1-PLAN-004",
+              "note": {
+                "en": "Mapped from canonical Activity 7.1 planning/documentControl/requirements item CNT-7.1-PLAN-004."
+              }
+            }
+          },
+          {
+            "id": "LRN-SEQ-CNT-7.1-PLAN-005-005",
+            "text": {
+              "en": "coordinate grinding/shot blasting/scarifying where needed;",
+              "fr": "coordonner grinding/shot blasting/scarifying where needed;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.1",
+              "page": "CNT-7.1-PLAN-005",
+              "note": {
+                "en": "Mapped from canonical Activity 7.1 planning/documentControl/requirements item CNT-7.1-PLAN-005."
+              }
+            }
+          },
+          {
+            "id": "LRN-SEQ-CNT-7.1-PLAN-006-006",
+            "text": {
+              "en": "locate cracks, joints, spalls, laitance;",
+              "fr": "locate cracks, joints, spalls, laitance;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.1",
+              "page": "CNT-7.1-PLAN-006",
+              "note": {
+                "en": "Mapped from canonical Activity 7.1 planning/documentControl/requirements item CNT-7.1-PLAN-006."
+              }
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "activityId": "7.2",
+    "whatIsThis": [
+      {
+        "type": "paragraph",
+        "item": {
+          "id": "LRN-WHAT-7.2-QUALITYOBJECTIVE",
+          "text": {
+            "en": "This module should branch by system because tile, resilient flooring and epoxy behave very differently.\nTILE: Install tile with the correct product, layout, substrate preparation, bonding coverage, alignment, joint spacing, movement joints and finish.\nRESILIENT FLOORING: Install resilient flooring over a properly prepared, dry, smooth substrate with correct adhesive, seams, layout and transitions.\nEPOXY / FLOOR COATINGS: Apply the approved floor-coating system to a properly prepared substrate under acceptable environmental conditions at the required thickness and finish.",
+            "fr": "cela module devrait branch par system because tile, resilient flooring et epoxy behave very differently. TILE: installer tile avec le corriger product, layout, support preparation, bonding coverage, alignement, joint spacing, movement joints et finish. RESILIENT FLOORING: installer resilient flooring over a correctement prepared, dry, lisser support avec corriger adhésif, seams, layout et transitions. EPOXY / FLOOR COATINGS: Apply le approuvé floor-enduit system à a correctement prepared support sous acceptable environmental conditions à le requis thickness et finish.",
+            "status": {
+              "en": "validated",
+              "fr": "provisional"
+            }
+          },
+          "sourceRef": {
+            "build": "Phase 014",
+            "document": "Authored field-presentation data",
+            "section": "7.2",
+            "page": "qualityObjective",
+            "note": {
+              "en": "Mapped from canonical Activity 7.2 field qualityObjective."
+            }
+          }
+        }
+      }
+    ],
+    "whyItMatters": [
+      {
+        "type": "paragraph",
+        "item": {
+          "id": "LRN-WHY-7.2-AUTHORITYNOTE",
+          "text": {
+            "en": "The project drawings, devis, Plan Qualite, PIE/PRIE, approved procedures, professional instructions and CRT/Hydro-Quebec requirements govern. This playbook tells you how to systematically find, verify, document and close the quality requirements; it does not replace them.",
+            "fr": "le projet plans, devis, planifier Qualite, PIE/PRIE, procédures approuvées, professional instructions et CRT/Hydro-Quebec requirements govern. cela guide tells vous how à systematically find, vérifier, documenter et clore le quality requirements; cela does ne pas remplacer them.",
+            "status": {
+              "en": "validated",
+              "fr": "provisional"
+            }
+          },
+          "sourceRef": {
+            "build": "Phase 014",
+            "document": "Authored field-presentation data",
+            "section": "7.2",
+            "page": "authorityNote",
+            "note": {
+              "en": "Mapped from canonical Activity 7.2 field authorityNote."
+            }
+          }
+        }
+      }
+    ],
+    "howGoodWorkLooks": [
+      {
+        "type": "bulletList",
+        "items": [
+          {
+            "id": "LRN-GOOD-CNT-7.2-CLOSE-001-001",
+            "text": {
+              "en": "correct tile",
+              "fr": "corriger tile",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.2",
+              "page": "CNT-7.2-CLOSE-001",
+              "note": {
+                "en": "Mapped from canonical Activity 7.2 verification/closureCriteria/evidence item CNT-7.2-CLOSE-001."
+              }
+            }
+          },
+          {
+            "id": "LRN-GOOD-CNT-7.2-CLOSE-002-002",
+            "text": {
+              "en": "layout accepted",
+              "fr": "layout accepted",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.2",
+              "page": "CNT-7.2-CLOSE-002",
+              "note": {
+                "en": "Mapped from canonical Activity 7.2 verification/closureCriteria/evidence item CNT-7.2-CLOSE-002."
+              }
+            }
+          },
+          {
+            "id": "LRN-GOOD-CNT-7.2-CLOSE-003-003",
+            "text": {
+              "en": "alignment accepted",
+              "fr": "alignement accepted",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.2",
+              "page": "CNT-7.2-CLOSE-003",
+              "note": {
+                "en": "Mapped from canonical Activity 7.2 verification/closureCriteria/evidence item CNT-7.2-CLOSE-003."
+              }
+            }
+          },
+          {
+            "id": "LRN-GOOD-CNT-7.2-CLOSE-004-004",
+            "text": {
+              "en": "joints consistent",
+              "fr": "joints consistent",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.2",
+              "page": "CNT-7.2-CLOSE-004",
+              "note": {
+                "en": "Mapped from canonical Activity 7.2 verification/closureCriteria/evidence item CNT-7.2-CLOSE-004."
+              }
+            }
+          },
+          {
+            "id": "LRN-GOOD-CNT-7.2-CLOSE-005-005",
+            "text": {
+              "en": "slope correct",
+              "fr": "pente corriger",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.2",
+              "page": "CNT-7.2-CLOSE-005",
+              "note": {
+                "en": "Mapped from canonical Activity 7.2 verification/closureCriteria/evidence item CNT-7.2-CLOSE-005."
+              }
+            }
+          },
+          {
+            "id": "LRN-GOOD-CNT-7.2-CLOSE-006-006",
+            "text": {
+              "en": "movement joints complete",
+              "fr": "movement joints complete",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.2",
+              "page": "CNT-7.2-CLOSE-006",
+              "note": {
+                "en": "Mapped from canonical Activity 7.2 verification/closureCriteria/evidence item CNT-7.2-CLOSE-006."
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "criticalChecksExplained": [
+      {
+        "type": "bulletList",
+        "items": [
+          {
+            "id": "LRN-CHECK-CNT-7.2-INS-DURING-001-001",
+            "text": {
+              "en": "layout;",
+              "fr": "layout;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.2",
+              "page": "CNT-7.2-INS-DURING-001",
+              "note": {
+                "en": "Mapped from canonical Activity 7.2 inspection/materialControl/requirements item CNT-7.2-INS-DURING-001."
+              }
+            }
+          },
+          {
+            "id": "LRN-CHECK-CNT-7.2-INS-DURING-002-002",
+            "text": {
+              "en": "alignment;",
+              "fr": "alignement;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.2",
+              "page": "CNT-7.2-INS-DURING-002",
+              "note": {
+                "en": "Mapped from canonical Activity 7.2 inspection/materialControl/requirements item CNT-7.2-INS-DURING-002."
+              }
+            }
+          },
+          {
+            "id": "LRN-CHECK-CNT-7.2-INS-DURING-003-003",
+            "text": {
+              "en": "joint width;",
+              "fr": "joint width;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.2",
+              "page": "CNT-7.2-INS-DURING-003",
+              "note": {
+                "en": "Mapped from canonical Activity 7.2 inspection/materialControl/requirements item CNT-7.2-INS-DURING-003."
+              }
+            }
+          },
+          {
+            "id": "LRN-CHECK-CNT-7.2-INS-DURING-004-004",
+            "text": {
+              "en": "lippage;",
+              "fr": "lippage;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.2",
+              "page": "CNT-7.2-INS-DURING-004",
+              "note": {
+                "en": "Mapped from canonical Activity 7.2 inspection/materialControl/requirements item CNT-7.2-INS-DURING-004."
+              }
+            }
+          },
+          {
+            "id": "LRN-CHECK-CNT-7.2-INS-DURING-005-005",
+            "text": {
+              "en": "cut quality;",
+              "fr": "cut quality;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.2",
+              "page": "CNT-7.2-INS-DURING-005",
+              "note": {
+                "en": "Mapped from canonical Activity 7.2 inspection/materialControl/requirements item CNT-7.2-INS-DURING-005."
+              }
+            }
+          },
+          {
+            "id": "LRN-CHECK-CNT-7.2-INS-DURING-006-006",
+            "text": {
+              "en": "bonding;",
+              "fr": "bonding;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.2",
+              "page": "CNT-7.2-INS-DURING-006",
+              "note": {
+                "en": "Mapped from canonical Activity 7.2 inspection/materialControl/requirements item CNT-7.2-INS-DURING-006."
+              }
+            }
+          },
+          {
+            "id": "LRN-CHECK-CNT-7.2-INS-DURING-007-007",
+            "text": {
+              "en": "coverage where required;",
+              "fr": "coverage lorsque requis;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.2",
+              "page": "CNT-7.2-INS-DURING-007",
+              "note": {
+                "en": "Mapped from canonical Activity 7.2 inspection/materialControl/requirements item CNT-7.2-INS-DURING-007."
+              }
+            }
+          },
+          {
+            "id": "LRN-CHECK-CNT-7.2-INS-DURING-008-008",
+            "text": {
+              "en": "slope;",
+              "fr": "pente;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.2",
+              "page": "CNT-7.2-INS-DURING-008",
+              "note": {
+                "en": "Mapped from canonical Activity 7.2 inspection/materialControl/requirements item CNT-7.2-INS-DURING-008."
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "commonFailures": [
+      {
+        "type": "bulletList",
+        "items": [
+          {
+            "id": "LRN-FAIL-CNT-7.2-ISSUE-001-001",
+            "text": {
+              "en": "poor alignment;",
+              "fr": "poor alignement;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.2",
+              "page": "CNT-7.2-ISSUE-001",
+              "note": {
+                "en": "Mapped from canonical Activity 7.2 issues.commonDeficiencies/correctiveAction item CNT-7.2-ISSUE-001."
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            }
+          },
+          {
+            "id": "LRN-FAIL-CNT-7.2-ISSUE-002-002",
+            "text": {
+              "en": "inconsistent joints;",
+              "fr": "inconsistent joints;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.2",
+              "page": "CNT-7.2-ISSUE-002",
+              "note": {
+                "en": "Mapped from canonical Activity 7.2 issues.commonDeficiencies/correctiveAction item CNT-7.2-ISSUE-002."
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            }
+          },
+          {
+            "id": "LRN-FAIL-CNT-7.2-ISSUE-003-003",
+            "text": {
+              "en": "lippage;",
+              "fr": "lippage;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.2",
+              "page": "CNT-7.2-ISSUE-003",
+              "note": {
+                "en": "Mapped from canonical Activity 7.2 issues.commonDeficiencies/correctiveAction item CNT-7.2-ISSUE-003."
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            }
+          },
+          {
+            "id": "LRN-FAIL-CNT-7.2-ISSUE-004-004",
+            "text": {
+              "en": "hollow tiles;",
+              "fr": "hollow tiles;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.2",
+              "page": "CNT-7.2-ISSUE-004",
+              "note": {
+                "en": "Mapped from canonical Activity 7.2 issues.commonDeficiencies/correctiveAction item CNT-7.2-ISSUE-004."
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            }
+          },
+          {
+            "id": "LRN-FAIL-CNT-7.2-ISSUE-005-005",
+            "text": {
+              "en": "wrong tile;",
+              "fr": "wrong tile;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.2",
+              "page": "CNT-7.2-ISSUE-005",
+              "note": {
+                "en": "Mapped from canonical Activity 7.2 issues.commonDeficiencies/correctiveAction item CNT-7.2-ISSUE-005."
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            }
+          },
+          {
+            "id": "LRN-FAIL-CNT-7.2-ISSUE-006-006",
+            "text": {
+              "en": "chipped edges;",
+              "fr": "chipped edges;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.2",
+              "page": "CNT-7.2-ISSUE-006",
+              "note": {
+                "en": "Mapped from canonical Activity 7.2 issues.commonDeficiencies/correctiveAction item CNT-7.2-ISSUE-006."
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            }
+          },
+          {
+            "id": "LRN-FAIL-CNT-7.2-ISSUE-007-007",
+            "text": {
+              "en": "incorrect slope;",
+              "fr": "incorrect pente;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.2",
+              "page": "CNT-7.2-ISSUE-007",
+              "note": {
+                "en": "Mapped from canonical Activity 7.2 issues.commonDeficiencies/correctiveAction item CNT-7.2-ISSUE-007."
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            }
+          }
+        ]
+      }
+    ],
+    "interfacesAndSequence": [
+      {
+        "type": "bulletList",
+        "items": [
+          {
+            "id": "LRN-SEQ-CNT-7.2-PLAN-001-001",
+            "text": {
+              "en": "verify substrate accepted;",
+              "fr": "vérifier support accepted;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.2",
+              "page": "CNT-7.2-PLAN-001",
+              "note": {
+                "en": "Mapped from canonical Activity 7.2 planning/documentControl/requirements item CNT-7.2-PLAN-001."
+              }
+            }
+          },
+          {
+            "id": "LRN-SEQ-CNT-7.2-PLAN-002-002",
+            "text": {
+              "en": "establish layout/grid;",
+              "fr": "établir layout/grille;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.2",
+              "page": "CNT-7.2-PLAN-002",
+              "note": {
+                "en": "Mapped from canonical Activity 7.2 planning/documentControl/requirements item CNT-7.2-PLAN-002."
+              }
+            }
+          },
+          {
+            "id": "LRN-SEQ-CNT-7.2-PLAN-003-003",
+            "text": {
+              "en": "coordinate cuts;",
+              "fr": "coordonner cuts;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.2",
+              "page": "CNT-7.2-PLAN-003",
+              "note": {
+                "en": "Mapped from canonical Activity 7.2 planning/documentControl/requirements item CNT-7.2-PLAN-003."
+              }
+            }
+          },
+          {
+            "id": "LRN-SEQ-CNT-7.2-PLAN-004-004",
+            "text": {
+              "en": "identify drains;",
+              "fr": "identifier drains;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.2",
+              "page": "CNT-7.2-PLAN-004",
+              "note": {
+                "en": "Mapped from canonical Activity 7.2 planning/documentControl/requirements item CNT-7.2-PLAN-004."
+              }
+            }
+          },
+          {
+            "id": "LRN-SEQ-CNT-7.2-PLAN-005-005",
+            "text": {
+              "en": "verify slopes in wet areas;",
+              "fr": "vérifier slopes dans wet areas;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.2",
+              "page": "CNT-7.2-PLAN-005",
+              "note": {
+                "en": "Mapped from canonical Activity 7.2 planning/documentControl/requirements item CNT-7.2-PLAN-005."
+              }
+            }
+          },
+          {
+            "id": "LRN-SEQ-CNT-7.2-PLAN-006-006",
+            "text": {
+              "en": "establish expansion/movement joints;",
+              "fr": "établir dilatation/movement joints;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.2",
+              "page": "CNT-7.2-PLAN-006",
+              "note": {
+                "en": "Mapped from canonical Activity 7.2 planning/documentControl/requirements item CNT-7.2-PLAN-006."
+              }
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "activityId": "7.3",
+    "whatIsThis": [
+      {
+        "type": "paragraph",
+        "item": {
+          "id": "LRN-WHAT-7.3-QUALITYOBJECTIVE",
+          "text": {
+            "en": "Provide wall finishes that are installed over suitable substrates, use approved materials, follow required alignment/layout and achieve the specified appearance and durability.\nThis can include:\nwall tile;\npanels;\nacoustic panels;\nwall protection;\nlaminates;\nspecialty wall systems.",
+            "fr": "Provide mur finishes cela are installed over approprié substrates, use approuvé matériaux, follow requis alignement/layout et achieve le spécifié appearance et durability. cela can include: mur tile; panels; acoustic panels; mur protection; laminates; specialty mur systems.",
+            "status": {
+              "en": "validated",
+              "fr": "provisional"
+            }
+          },
+          "sourceRef": {
+            "build": "Phase 014",
+            "document": "Authored field-presentation data",
+            "section": "7.3",
+            "page": "qualityObjective",
+            "note": {
+              "en": "Mapped from canonical Activity 7.3 field qualityObjective."
+            }
+          }
+        }
+      }
+    ],
+    "whyItMatters": [
+      {
+        "type": "paragraph",
+        "item": {
+          "id": "LRN-WHY-7.3-AUTHORITYNOTE",
+          "text": {
+            "en": "The project drawings, devis, Plan Qualite, PIE/PRIE, approved procedures, professional instructions and CRT/Hydro-Quebec requirements govern. This playbook tells you how to systematically find, verify, document and close the quality requirements; it does not replace them.",
+            "fr": "le projet plans, devis, planifier Qualite, PIE/PRIE, procédures approuvées, professional instructions et CRT/Hydro-Quebec requirements govern. cela guide tells vous how à systematically find, vérifier, documenter et clore le quality requirements; cela does ne pas remplacer them.",
+            "status": {
+              "en": "validated",
+              "fr": "provisional"
+            }
+          },
+          "sourceRef": {
+            "build": "Phase 014",
+            "document": "Authored field-presentation data",
+            "section": "7.3",
+            "page": "authorityNote",
+            "note": {
+              "en": "Mapped from canonical Activity 7.3 field authorityNote."
+            }
+          }
+        }
+      },
+      {
+        "type": "bulletList",
+        "items": [
+          {
+            "id": "LRN-WHY-CNT-7.3-QC-001-001",
+            "text": {
+              "en": "Product",
+              "fr": "Product",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.3",
+              "page": "CNT-7.3-QC-001",
+              "note": {
+                "en": "Mapped from canonical Activity 7.3 qualityCheckpoint/reportingAnalysis item CNT-7.3-QC-001."
+              }
+            }
+          },
+          {
+            "id": "LRN-WHY-CNT-7.3-QC-002-002",
+            "text": {
+              "en": "Colour/pattern",
+              "fr": "Colour/pattern",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.3",
+              "page": "CNT-7.3-QC-002",
+              "note": {
+                "en": "Mapped from canonical Activity 7.3 qualityCheckpoint/reportingAnalysis item CNT-7.3-QC-002."
+              }
+            }
+          },
+          {
+            "id": "LRN-WHY-CNT-7.3-QC-003-003",
+            "text": {
+              "en": "Substrate",
+              "fr": "support",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.3",
+              "page": "CNT-7.3-QC-003",
+              "note": {
+                "en": "Mapped from canonical Activity 7.3 qualityCheckpoint/reportingAnalysis item CNT-7.3-QC-003."
+              }
+            }
+          },
+          {
+            "id": "LRN-WHY-CNT-7.3-QC-004-004",
+            "text": {
+              "en": "Layout",
+              "fr": "Layout",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.3",
+              "page": "CNT-7.3-QC-004",
+              "note": {
+                "en": "Mapped from canonical Activity 7.3 qualityCheckpoint/reportingAnalysis item CNT-7.3-QC-004."
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "howGoodWorkLooks": [
+      {
+        "type": "bulletList",
+        "items": [
+          {
+            "id": "LRN-GOOD-CNT-7.3-VER-001-001",
+            "text": {
+              "en": "Compare corrected area to approved sample/mock-up.",
+              "fr": "comparer corrected zone à approuvé sample/échantillon témoin.",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.3",
+              "page": "CNT-7.3-VER-001",
+              "note": {
+                "en": "Mapped from canonical Activity 7.3 verification/closureCriteria/evidence item CNT-7.3-VER-001."
+              }
+            }
+          },
+          {
+            "id": "LRN-GOOD-CNT-7.3-CLOSE-001-002",
+            "text": {
+              "en": "correct finish",
+              "fr": "corriger finish",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.3",
+              "page": "CNT-7.3-CLOSE-001",
+              "note": {
+                "en": "Mapped from canonical Activity 7.3 verification/closureCriteria/evidence item CNT-7.3-CLOSE-001."
+              }
+            }
+          },
+          {
+            "id": "LRN-GOOD-CNT-7.3-CLOSE-002-003",
+            "text": {
+              "en": "layout accepted",
+              "fr": "layout accepted",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.3",
+              "page": "CNT-7.3-CLOSE-002",
+              "note": {
+                "en": "Mapped from canonical Activity 7.3 verification/closureCriteria/evidence item CNT-7.3-CLOSE-002."
+              }
+            }
+          },
+          {
+            "id": "LRN-GOOD-CNT-7.3-CLOSE-003-004",
+            "text": {
+              "en": "edges/joints correct",
+              "fr": "edges/joints corriger",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.3",
+              "page": "CNT-7.3-CLOSE-003",
+              "note": {
+                "en": "Mapped from canonical Activity 7.3 verification/closureCriteria/evidence item CNT-7.3-CLOSE-003."
+              }
+            }
+          },
+          {
+            "id": "LRN-GOOD-CNT-7.3-CLOSE-004-005",
+            "text": {
+              "en": "attachment accepted",
+              "fr": "attachment accepted",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.3",
+              "page": "CNT-7.3-CLOSE-004",
+              "note": {
+                "en": "Mapped from canonical Activity 7.3 verification/closureCriteria/evidence item CNT-7.3-CLOSE-004."
+              }
+            }
+          },
+          {
+            "id": "LRN-GOOD-CNT-7.3-CLOSE-005-006",
+            "text": {
+              "en": "appearance accepted",
+              "fr": "appearance accepted",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.3",
+              "page": "CNT-7.3-CLOSE-005",
+              "note": {
+                "en": "Mapped from canonical Activity 7.3 verification/closureCriteria/evidence item CNT-7.3-CLOSE-005."
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "criticalChecksExplained": [
+      {
+        "type": "bulletList",
+        "items": [
+          {
+            "id": "LRN-CHECK-CNT-7.3-INS-DURING-001-001",
+            "text": {
+              "en": "substrate;",
+              "fr": "support;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.3",
+              "page": "CNT-7.3-INS-DURING-001",
+              "note": {
+                "en": "Mapped from canonical Activity 7.3 inspection/materialControl/requirements item CNT-7.3-INS-DURING-001."
+              }
+            }
+          },
+          {
+            "id": "LRN-CHECK-CNT-7.3-INS-DURING-002-002",
+            "text": {
+              "en": "alignment;",
+              "fr": "alignement;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.3",
+              "page": "CNT-7.3-INS-DURING-002",
+              "note": {
+                "en": "Mapped from canonical Activity 7.3 inspection/materialControl/requirements item CNT-7.3-INS-DURING-002."
+              }
+            }
+          },
+          {
+            "id": "LRN-CHECK-CNT-7.3-INS-DURING-003-003",
+            "text": {
+              "en": "pattern;",
+              "fr": "pattern;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.3",
+              "page": "CNT-7.3-INS-DURING-003",
+              "note": {
+                "en": "Mapped from canonical Activity 7.3 inspection/materialControl/requirements item CNT-7.3-INS-DURING-003."
+              }
+            }
+          },
+          {
+            "id": "LRN-CHECK-CNT-7.3-INS-DURING-004-004",
+            "text": {
+              "en": "joints;",
+              "fr": "joints;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.3",
+              "page": "CNT-7.3-INS-DURING-004",
+              "note": {
+                "en": "Mapped from canonical Activity 7.3 inspection/materialControl/requirements item CNT-7.3-INS-DURING-004."
+              }
+            }
+          },
+          {
+            "id": "LRN-CHECK-CNT-7.3-INS-DURING-005-005",
+            "text": {
+              "en": "edges;",
+              "fr": "edges;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.3",
+              "page": "CNT-7.3-INS-DURING-005",
+              "note": {
+                "en": "Mapped from canonical Activity 7.3 inspection/materialControl/requirements item CNT-7.3-INS-DURING-005."
+              }
+            }
+          },
+          {
+            "id": "LRN-CHECK-CNT-7.3-INS-DURING-006-006",
+            "text": {
+              "en": "corners;",
+              "fr": "corners;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.3",
+              "page": "CNT-7.3-INS-DURING-006",
+              "note": {
+                "en": "Mapped from canonical Activity 7.3 inspection/materialControl/requirements item CNT-7.3-INS-DURING-006."
+              }
+            }
+          },
+          {
+            "id": "LRN-CHECK-CNT-7.3-INS-DURING-007-007",
+            "text": {
+              "en": "fastening;",
+              "fr": "fastening;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.3",
+              "page": "CNT-7.3-INS-DURING-007",
+              "note": {
+                "en": "Mapped from canonical Activity 7.3 inspection/materialControl/requirements item CNT-7.3-INS-DURING-007."
+              }
+            }
+          },
+          {
+            "id": "LRN-CHECK-CNT-7.3-INS-DURING-008-008",
+            "text": {
+              "en": "adhesive;",
+              "fr": "adhésif;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.3",
+              "page": "CNT-7.3-INS-DURING-008",
+              "note": {
+                "en": "Mapped from canonical Activity 7.3 inspection/materialControl/requirements item CNT-7.3-INS-DURING-008."
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "commonFailures": [
+      {
+        "type": "bulletList",
+        "items": [
+          {
+            "id": "LRN-FAIL-CNT-7.3-ISSUE-001-001",
+            "text": {
+              "en": "wrong finish;",
+              "fr": "wrong finish;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.3",
+              "page": "CNT-7.3-ISSUE-001",
+              "note": {
+                "en": "Mapped from canonical Activity 7.3 issues.commonDeficiencies/correctiveAction item CNT-7.3-ISSUE-001."
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            }
+          },
+          {
+            "id": "LRN-FAIL-CNT-7.3-ISSUE-002-002",
+            "text": {
+              "en": "poor alignment;",
+              "fr": "poor alignement;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.3",
+              "page": "CNT-7.3-ISSUE-002",
+              "note": {
+                "en": "Mapped from canonical Activity 7.3 issues.commonDeficiencies/correctiveAction item CNT-7.3-ISSUE-002."
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            }
+          },
+          {
+            "id": "LRN-FAIL-CNT-7.3-ISSUE-003-003",
+            "text": {
+              "en": "visible gaps;",
+              "fr": "visible gaps;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.3",
+              "page": "CNT-7.3-ISSUE-003",
+              "note": {
+                "en": "Mapped from canonical Activity 7.3 issues.commonDeficiencies/correctiveAction item CNT-7.3-ISSUE-003."
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            }
+          },
+          {
+            "id": "LRN-FAIL-CNT-7.3-ISSUE-004-004",
+            "text": {
+              "en": "damaged panels;",
+              "fr": "damaged panels;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.3",
+              "page": "CNT-7.3-ISSUE-004",
+              "note": {
+                "en": "Mapped from canonical Activity 7.3 issues.commonDeficiencies/correctiveAction item CNT-7.3-ISSUE-004."
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            }
+          },
+          {
+            "id": "LRN-FAIL-CNT-7.3-ISSUE-005-005",
+            "text": {
+              "en": "mismatched colour;",
+              "fr": "mismatched colour;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.3",
+              "page": "CNT-7.3-ISSUE-005",
+              "note": {
+                "en": "Mapped from canonical Activity 7.3 issues.commonDeficiencies/correctiveAction item CNT-7.3-ISSUE-005."
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            }
+          },
+          {
+            "id": "LRN-FAIL-CNT-7.3-ISSUE-006-006",
+            "text": {
+              "en": "poor edge treatment;",
+              "fr": "poor edge treatment;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.3",
+              "page": "CNT-7.3-ISSUE-006",
+              "note": {
+                "en": "Mapped from canonical Activity 7.3 issues.commonDeficiencies/correctiveAction item CNT-7.3-ISSUE-006."
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            }
+          },
+          {
+            "id": "LRN-FAIL-CNT-7.3-ISSUE-007-007",
+            "text": {
+              "en": "loose adhesion.",
+              "fr": "loose adhérence.",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.3",
+              "page": "CNT-7.3-ISSUE-007",
+              "note": {
+                "en": "Mapped from canonical Activity 7.3 issues.commonDeficiencies/correctiveAction item CNT-7.3-ISSUE-007."
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            }
+          }
+        ]
+      }
+    ],
+    "interfacesAndSequence": [
+      {
+        "type": "bulletList",
+        "items": [
+          {
+            "id": "LRN-SEQ-CNT-7.3-PLAN-001-001",
+            "text": {
+              "en": "substrate accepted;",
+              "fr": "support accepted;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.3",
+              "page": "CNT-7.3-PLAN-001",
+              "note": {
+                "en": "Mapped from canonical Activity 7.3 planning/documentControl/requirements item CNT-7.3-PLAN-001."
+              }
+            }
+          },
+          {
+            "id": "LRN-SEQ-CNT-7.3-PLAN-002-002",
+            "text": {
+              "en": "layout established;",
+              "fr": "layout established;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.3",
+              "page": "CNT-7.3-PLAN-002",
+              "note": {
+                "en": "Mapped from canonical Activity 7.3 planning/documentControl/requirements item CNT-7.3-PLAN-002."
+              }
+            }
+          },
+          {
+            "id": "LRN-SEQ-CNT-7.3-PLAN-003-003",
+            "text": {
+              "en": "openings/MEP devices coordinated;",
+              "fr": "openings/MEP devices coordinated;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.3",
+              "page": "CNT-7.3-PLAN-003",
+              "note": {
+                "en": "Mapped from canonical Activity 7.3 planning/documentControl/requirements item CNT-7.3-PLAN-003."
+              }
+            }
+          },
+          {
+            "id": "LRN-SEQ-CNT-7.3-PLAN-004-004",
+            "text": {
+              "en": "corners/transitions planned;",
+              "fr": "corners/transitions planned;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.3",
+              "page": "CNT-7.3-PLAN-004",
+              "note": {
+                "en": "Mapped from canonical Activity 7.3 planning/documentControl/requirements item CNT-7.3-PLAN-004."
+              }
+            }
+          },
+          {
+            "id": "LRN-SEQ-CNT-7.3-PLAN-005-005",
+            "text": {
+              "en": "mock-up approved;",
+              "fr": "échantillon témoin approuvé;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.3",
+              "page": "CNT-7.3-PLAN-005",
+              "note": {
+                "en": "Mapped from canonical Activity 7.3 planning/documentControl/requirements item CNT-7.3-PLAN-005."
+              }
+            }
+          },
+          {
+            "id": "LRN-SEQ-CNT-7.3-PLAN-006-006",
+            "text": {
+              "en": "protection after installation planned.",
+              "fr": "protection après installation planned.",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.3",
+              "page": "CNT-7.3-PLAN-006",
+              "note": {
+                "en": "Mapped from canonical Activity 7.3 planning/documentControl/requirements item CNT-7.3-PLAN-006."
+              }
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "activityId": "7.4",
+    "whatIsThis": [
+      {
+        "type": "paragraph",
+        "item": {
+          "id": "LRN-WHAT-7.4-QUALITYOBJECTIVE",
+          "text": {
+            "en": "Apply the specified coating system to a properly prepared substrate under acceptable conditions, with correct coverage, thickness, curing and uniform final appearance.",
+            "fr": "Apply le spécifié enduit system à a correctement prepared support sous acceptable conditions, avec corriger coverage, thickness, cure et uniform final appearance.",
+            "status": {
+              "en": "validated",
+              "fr": "provisional"
+            }
+          },
+          "sourceRef": {
+            "build": "Phase 014",
+            "document": "Authored field-presentation data",
+            "section": "7.4",
+            "page": "qualityObjective",
+            "note": {
+              "en": "Mapped from canonical Activity 7.4 field qualityObjective."
+            }
+          }
+        }
+      }
+    ],
+    "whyItMatters": [
+      {
+        "type": "paragraph",
+        "item": {
+          "id": "LRN-WHY-7.4-AUTHORITYNOTE",
+          "text": {
+            "en": "The project drawings, devis, Plan Qualite, PIE/PRIE, approved procedures, professional instructions and CRT/Hydro-Quebec requirements govern. This playbook tells you how to systematically find, verify, document and close the quality requirements; it does not replace them.",
+            "fr": "le projet plans, devis, planifier Qualite, PIE/PRIE, procédures approuvées, professional instructions et CRT/Hydro-Quebec requirements govern. cela guide tells vous how à systematically find, vérifier, documenter et clore le quality requirements; cela does ne pas remplacer them.",
+            "status": {
+              "en": "validated",
+              "fr": "provisional"
+            }
+          },
+          "sourceRef": {
+            "build": "Phase 014",
+            "document": "Authored field-presentation data",
+            "section": "7.4",
+            "page": "authorityNote",
+            "note": {
+              "en": "Mapped from canonical Activity 7.4 field authorityNote."
+            }
+          }
+        }
+      },
+      {
+        "type": "bulletList",
+        "items": [
+          {
+            "id": "LRN-WHY-CNT-7.4-QC-001-001",
+            "text": {
+              "en": "Surface prep",
+              "fr": "surface prep",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.4",
+              "page": "CNT-7.4-QC-001",
+              "note": {
+                "en": "Mapped from canonical Activity 7.4 qualityCheckpoint/reportingAnalysis item CNT-7.4-QC-001."
+              }
+            }
+          },
+          {
+            "id": "LRN-WHY-CNT-7.4-QC-002-002",
+            "text": {
+              "en": "Product",
+              "fr": "Product",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.4",
+              "page": "CNT-7.4-QC-002",
+              "note": {
+                "en": "Mapped from canonical Activity 7.4 qualityCheckpoint/reportingAnalysis item CNT-7.4-QC-002."
+              }
+            }
+          },
+          {
+            "id": "LRN-WHY-CNT-7.4-QC-003-003",
+            "text": {
+              "en": "Colour",
+              "fr": "Colour",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.4",
+              "page": "CNT-7.4-QC-003",
+              "note": {
+                "en": "Mapped from canonical Activity 7.4 qualityCheckpoint/reportingAnalysis item CNT-7.4-QC-003."
+              }
+            }
+          },
+          {
+            "id": "LRN-WHY-CNT-7.4-QC-004-004",
+            "text": {
+              "en": "Primer",
+              "fr": "apprêt",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.4",
+              "page": "CNT-7.4-QC-004",
+              "note": {
+                "en": "Mapped from canonical Activity 7.4 qualityCheckpoint/reportingAnalysis item CNT-7.4-QC-004."
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "howGoodWorkLooks": [
+      {
+        "type": "bulletList",
+        "items": [
+          {
+            "id": "LRN-GOOD-CNT-7.4-VER-001-001",
+            "text": {
+              "en": "required thickness;",
+              "fr": "requis thickness;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.4",
+              "page": "CNT-7.4-VER-001",
+              "note": {
+                "en": "Mapped from canonical Activity 7.4 verification/closureCriteria/evidence item CNT-7.4-VER-001."
+              }
+            }
+          },
+          {
+            "id": "LRN-GOOD-CNT-7.4-VER-002-002",
+            "text": {
+              "en": "uniform colour;",
+              "fr": "uniform colour;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.4",
+              "page": "CNT-7.4-VER-002",
+              "note": {
+                "en": "Mapped from canonical Activity 7.4 verification/closureCriteria/evidence item CNT-7.4-VER-002."
+              }
+            }
+          },
+          {
+            "id": "LRN-GOOD-CNT-7.4-VER-003-003",
+            "text": {
+              "en": "defects repaired;",
+              "fr": "defects repaired;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.4",
+              "page": "CNT-7.4-VER-003",
+              "note": {
+                "en": "Mapped from canonical Activity 7.4 verification/closureCriteria/evidence item CNT-7.4-VER-003."
+              }
+            }
+          },
+          {
+            "id": "LRN-GOOD-CNT-7.4-VER-004-004",
+            "text": {
+              "en": "complete curing.",
+              "fr": "complete cure.",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.4",
+              "page": "CNT-7.4-VER-004",
+              "note": {
+                "en": "Mapped from canonical Activity 7.4 verification/closureCriteria/evidence item CNT-7.4-VER-004."
+              }
+            }
+          },
+          {
+            "id": "LRN-GOOD-CNT-7.4-CLOSE-001-005",
+            "text": {
+              "en": "substrate accepted",
+              "fr": "support accepted",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.4",
+              "page": "CNT-7.4-CLOSE-001",
+              "note": {
+                "en": "Mapped from canonical Activity 7.4 verification/closureCriteria/evidence item CNT-7.4-CLOSE-001."
+              }
+            }
+          },
+          {
+            "id": "LRN-GOOD-CNT-7.4-CLOSE-002-006",
+            "text": {
+              "en": "primer complete",
+              "fr": "apprêt complete",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.4",
+              "page": "CNT-7.4-CLOSE-002",
+              "note": {
+                "en": "Mapped from canonical Activity 7.4 verification/closureCriteria/evidence item CNT-7.4-CLOSE-002."
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "criticalChecksExplained": [
+      {
+        "type": "bulletList",
+        "items": [
+          {
+            "id": "LRN-CHECK-CNT-7.4-INS-DURING-001-001",
+            "text": {
+              "en": "clean;",
+              "fr": "clean;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.4",
+              "page": "CNT-7.4-INS-DURING-001",
+              "note": {
+                "en": "Mapped from canonical Activity 7.4 inspection/materialControl/requirements item CNT-7.4-INS-DURING-001."
+              }
+            }
+          },
+          {
+            "id": "LRN-CHECK-CNT-7.4-INS-DURING-002-002",
+            "text": {
+              "en": "dry;",
+              "fr": "dry;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.4",
+              "page": "CNT-7.4-INS-DURING-002",
+              "note": {
+                "en": "Mapped from canonical Activity 7.4 inspection/materialControl/requirements item CNT-7.4-INS-DURING-002."
+              }
+            }
+          },
+          {
+            "id": "LRN-CHECK-CNT-7.4-INS-DURING-003-003",
+            "text": {
+              "en": "smooth;",
+              "fr": "lisser;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.4",
+              "page": "CNT-7.4-INS-DURING-003",
+              "note": {
+                "en": "Mapped from canonical Activity 7.4 inspection/materialControl/requirements item CNT-7.4-INS-DURING-003."
+              }
+            }
+          },
+          {
+            "id": "LRN-CHECK-CNT-7.4-INS-DURING-004-004",
+            "text": {
+              "en": "patched;",
+              "fr": "patched;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.4",
+              "page": "CNT-7.4-INS-DURING-004",
+              "note": {
+                "en": "Mapped from canonical Activity 7.4 inspection/materialControl/requirements item CNT-7.4-INS-DURING-004."
+              }
+            }
+          },
+          {
+            "id": "LRN-CHECK-CNT-7.4-INS-DURING-005-005",
+            "text": {
+              "en": "sanded;",
+              "fr": "sanded;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.4",
+              "page": "CNT-7.4-INS-DURING-005",
+              "note": {
+                "en": "Mapped from canonical Activity 7.4 inspection/materialControl/requirements item CNT-7.4-INS-DURING-005."
+              }
+            }
+          },
+          {
+            "id": "LRN-CHECK-CNT-7.4-INS-DURING-006-006",
+            "text": {
+              "en": "free of dust;",
+              "fr": "free de dust;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.4",
+              "page": "CNT-7.4-INS-DURING-006",
+              "note": {
+                "en": "Mapped from canonical Activity 7.4 inspection/materialControl/requirements item CNT-7.4-INS-DURING-006."
+              }
+            }
+          },
+          {
+            "id": "LRN-CHECK-CNT-7.4-INS-DURING-007-007",
+            "text": {
+              "en": "existing coating compatible.",
+              "fr": "existing enduit compatible.",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.4",
+              "page": "CNT-7.4-INS-DURING-007",
+              "note": {
+                "en": "Mapped from canonical Activity 7.4 inspection/materialControl/requirements item CNT-7.4-INS-DURING-007."
+              }
+            }
+          },
+          {
+            "id": "LRN-CHECK-CNT-7.4-INS-DURING-008-008",
+            "text": {
+              "en": "temperature;",
+              "fr": "temperature;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.4",
+              "page": "CNT-7.4-INS-DURING-008",
+              "note": {
+                "en": "Mapped from canonical Activity 7.4 inspection/materialControl/requirements item CNT-7.4-INS-DURING-008."
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "commonFailures": [
+      {
+        "type": "bulletList",
+        "items": [
+          {
+            "id": "LRN-FAIL-CNT-7.4-ISSUE-001-001",
+            "text": {
+              "en": "wrong colour;",
+              "fr": "wrong colour;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.4",
+              "page": "CNT-7.4-ISSUE-001",
+              "note": {
+                "en": "Mapped from canonical Activity 7.4 issues.commonDeficiencies/correctiveAction item CNT-7.4-ISSUE-001."
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            }
+          },
+          {
+            "id": "LRN-FAIL-CNT-7.4-ISSUE-002-002",
+            "text": {
+              "en": "wrong product;",
+              "fr": "wrong product;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.4",
+              "page": "CNT-7.4-ISSUE-002",
+              "note": {
+                "en": "Mapped from canonical Activity 7.4 issues.commonDeficiencies/correctiveAction item CNT-7.4-ISSUE-002."
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            }
+          },
+          {
+            "id": "LRN-FAIL-CNT-7.4-ISSUE-003-003",
+            "text": {
+              "en": "missed primer;",
+              "fr": "missed apprêt;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.4",
+              "page": "CNT-7.4-ISSUE-003",
+              "note": {
+                "en": "Mapped from canonical Activity 7.4 issues.commonDeficiencies/correctiveAction item CNT-7.4-ISSUE-003."
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            }
+          },
+          {
+            "id": "LRN-FAIL-CNT-7.4-ISSUE-004-004",
+            "text": {
+              "en": "insufficient coats;",
+              "fr": "insufficient coats;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.4",
+              "page": "CNT-7.4-ISSUE-004",
+              "note": {
+                "en": "Mapped from canonical Activity 7.4 issues.commonDeficiencies/correctiveAction item CNT-7.4-ISSUE-004."
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            }
+          },
+          {
+            "id": "LRN-FAIL-CNT-7.4-ISSUE-005-005",
+            "text": {
+              "en": "thin coating;",
+              "fr": "thin enduit;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.4",
+              "page": "CNT-7.4-ISSUE-005",
+              "note": {
+                "en": "Mapped from canonical Activity 7.4 issues.commonDeficiencies/correctiveAction item CNT-7.4-ISSUE-005."
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            }
+          },
+          {
+            "id": "LRN-FAIL-CNT-7.4-ISSUE-006-006",
+            "text": {
+              "en": "runs/sags;",
+              "fr": "runs/sags;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.4",
+              "page": "CNT-7.4-ISSUE-006",
+              "note": {
+                "en": "Mapped from canonical Activity 7.4 issues.commonDeficiencies/correctiveAction item CNT-7.4-ISSUE-006."
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            }
+          },
+          {
+            "id": "LRN-FAIL-CNT-7.4-ISSUE-007-007",
+            "text": {
+              "en": "poor substrate prep;",
+              "fr": "poor support prep;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.4",
+              "page": "CNT-7.4-ISSUE-007",
+              "note": {
+                "en": "Mapped from canonical Activity 7.4 issues.commonDeficiencies/correctiveAction item CNT-7.4-ISSUE-007."
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            }
+          }
+        ]
+      }
+    ],
+    "interfacesAndSequence": [
+      {
+        "type": "bulletList",
+        "items": [
+          {
+            "id": "LRN-SEQ-CNT-7.4-PLAN-001-001",
+            "text": {
+              "en": "substrate complete;",
+              "fr": "support complete;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.4",
+              "page": "CNT-7.4-PLAN-001",
+              "note": {
+                "en": "Mapped from canonical Activity 7.4 planning/documentControl/requirements item CNT-7.4-PLAN-001."
+              }
+            }
+          },
+          {
+            "id": "LRN-SEQ-CNT-7.4-PLAN-002-002",
+            "text": {
+              "en": "repairs complete;",
+              "fr": "repairs complete;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.4",
+              "page": "CNT-7.4-PLAN-002",
+              "note": {
+                "en": "Mapped from canonical Activity 7.4 planning/documentControl/requirements item CNT-7.4-PLAN-002."
+              }
+            }
+          },
+          {
+            "id": "LRN-SEQ-CNT-7.4-PLAN-003-003",
+            "text": {
+              "en": "moisture acceptable;",
+              "fr": "moisture acceptable;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.4",
+              "page": "CNT-7.4-PLAN-003",
+              "note": {
+                "en": "Mapped from canonical Activity 7.4 planning/documentControl/requirements item CNT-7.4-PLAN-003."
+              }
+            }
+          },
+          {
+            "id": "LRN-SEQ-CNT-7.4-PLAN-004-004",
+            "text": {
+              "en": "room/environment suitable;",
+              "fr": "room/environment approprié;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.4",
+              "page": "CNT-7.4-PLAN-004",
+              "note": {
+                "en": "Mapped from canonical Activity 7.4 planning/documentControl/requirements item CNT-7.4-PLAN-004."
+              }
+            }
+          },
+          {
+            "id": "LRN-SEQ-CNT-7.4-PLAN-005-005",
+            "text": {
+              "en": "adjacent work protected;",
+              "fr": "adjacent travaux protected;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.4",
+              "page": "CNT-7.4-PLAN-005",
+              "note": {
+                "en": "Mapped from canonical Activity 7.4 planning/documentControl/requirements item CNT-7.4-PLAN-005."
+              }
+            }
+          },
+          {
+            "id": "LRN-SEQ-CNT-7.4-PLAN-006-006",
+            "text": {
+              "en": "colour schedule confirmed;",
+              "fr": "colour échéancier confirmed;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.4",
+              "page": "CNT-7.4-PLAN-006",
+              "note": {
+                "en": "Mapped from canonical Activity 7.4 planning/documentControl/requirements item CNT-7.4-PLAN-006."
+              }
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "activityId": "7.5",
+    "whatIsThis": [
+      {
+        "type": "paragraph",
+        "item": {
+          "id": "LRN-WHAT-7.5-QUALITYOBJECTIVE",
+          "text": {
+            "en": "This differs slightly from exterior-envelope sealants because interior architectural sealants may be used for:\nacoustic control;\nsanitary joints;\nfinish joints;\nmovement joints;\nperimeter sealing.\nInstall compatible sealant systems with correct joint preparation, geometry, adhesion and finish while maintaining the intended acoustic, sanitary or movement function.",
+            "fr": "cela differs slightly de exterior-envelope scellants because interior architectural scellants peut be used pour: acoustic contrôler; sanitary joints; finish joints; movement joints; perimeter scellement. installer compatible scellant systems avec corriger joint preparation, géométrie, adhérence et finish while maintaining le intended acoustic, sanitary ou movement function.",
+            "status": {
+              "en": "validated",
+              "fr": "provisional"
+            }
+          },
+          "sourceRef": {
+            "build": "Phase 014",
+            "document": "Authored field-presentation data",
+            "section": "7.5",
+            "page": "qualityObjective",
+            "note": {
+              "en": "Mapped from canonical Activity 7.5 field qualityObjective."
+            }
+          }
+        }
+      }
+    ],
+    "whyItMatters": [
+      {
+        "type": "paragraph",
+        "item": {
+          "id": "LRN-WHY-7.5-AUTHORITYNOTE",
+          "text": {
+            "en": "The project drawings, devis, Plan Qualite, PIE/PRIE, approved procedures, professional instructions and CRT/Hydro-Quebec requirements govern. This playbook tells you how to systematically find, verify, document and close the quality requirements; it does not replace them.",
+            "fr": "le projet plans, devis, planifier Qualite, PIE/PRIE, procédures approuvées, professional instructions et CRT/Hydro-Quebec requirements govern. cela guide tells vous how à systematically find, vérifier, documenter et clore le quality requirements; cela does ne pas remplacer them.",
+            "status": {
+              "en": "validated",
+              "fr": "provisional"
+            }
+          },
+          "sourceRef": {
+            "build": "Phase 014",
+            "document": "Authored field-presentation data",
+            "section": "7.5",
+            "page": "authorityNote",
+            "note": {
+              "en": "Mapped from canonical Activity 7.5 field authorityNote."
+            }
+          }
+        }
+      },
+      {
+        "type": "bulletList",
+        "items": [
+          {
+            "id": "LRN-WHY-CNT-7.5-QC-001-001",
+            "text": {
+              "en": "Product",
+              "fr": "Product",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.5",
+              "page": "CNT-7.5-QC-001",
+              "note": {
+                "en": "Mapped from canonical Activity 7.5 qualityCheckpoint/reportingAnalysis item CNT-7.5-QC-001."
+              }
+            }
+          },
+          {
+            "id": "LRN-WHY-CNT-7.5-QC-002-002",
+            "text": {
+              "en": "Colour",
+              "fr": "Colour",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.5",
+              "page": "CNT-7.5-QC-002",
+              "note": {
+                "en": "Mapped from canonical Activity 7.5 qualityCheckpoint/reportingAnalysis item CNT-7.5-QC-002."
+              }
+            }
+          },
+          {
+            "id": "LRN-WHY-CNT-7.5-QC-003-003",
+            "text": {
+              "en": "Joint prep",
+              "fr": "joint prep",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.5",
+              "page": "CNT-7.5-QC-003",
+              "note": {
+                "en": "Mapped from canonical Activity 7.5 qualityCheckpoint/reportingAnalysis item CNT-7.5-QC-003."
+              }
+            }
+          },
+          {
+            "id": "LRN-WHY-CNT-7.5-QC-004-004",
+            "text": {
+              "en": "Backer rod",
+              "fr": "Backer rod",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.5",
+              "page": "CNT-7.5-QC-004",
+              "note": {
+                "en": "Mapped from canonical Activity 7.5 qualityCheckpoint/reportingAnalysis item CNT-7.5-QC-004."
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "howGoodWorkLooks": [
+      {
+        "type": "bulletList",
+        "items": [
+          {
+            "id": "LRN-GOOD-CNT-7.5-VER-001-001",
+            "text": {
+              "en": "Check adhesion and final appearance.",
+              "fr": "Check adhérence et final appearance.",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.5",
+              "page": "CNT-7.5-VER-001",
+              "note": {
+                "en": "Mapped from canonical Activity 7.5 verification/closureCriteria/evidence item CNT-7.5-VER-001."
+              }
+            }
+          },
+          {
+            "id": "LRN-GOOD-CNT-7.5-CLOSE-001-002",
+            "text": {
+              "en": "correct product",
+              "fr": "corriger product",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.5",
+              "page": "CNT-7.5-CLOSE-001",
+              "note": {
+                "en": "Mapped from canonical Activity 7.5 verification/closureCriteria/evidence item CNT-7.5-CLOSE-001."
+              }
+            }
+          },
+          {
+            "id": "LRN-GOOD-CNT-7.5-CLOSE-002-003",
+            "text": {
+              "en": "joint prep correct",
+              "fr": "joint prep corriger",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.5",
+              "page": "CNT-7.5-CLOSE-002",
+              "note": {
+                "en": "Mapped from canonical Activity 7.5 verification/closureCriteria/evidence item CNT-7.5-CLOSE-002."
+              }
+            }
+          },
+          {
+            "id": "LRN-GOOD-CNT-7.5-CLOSE-003-004",
+            "text": {
+              "en": "geometry correct",
+              "fr": "géométrie corriger",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.5",
+              "page": "CNT-7.5-CLOSE-003",
+              "note": {
+                "en": "Mapped from canonical Activity 7.5 verification/closureCriteria/evidence item CNT-7.5-CLOSE-003."
+              }
+            }
+          },
+          {
+            "id": "LRN-GOOD-CNT-7.5-CLOSE-004-005",
+            "text": {
+              "en": "adhesion accepted",
+              "fr": "adhérence accepted",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.5",
+              "page": "CNT-7.5-CLOSE-004",
+              "note": {
+                "en": "Mapped from canonical Activity 7.5 verification/closureCriteria/evidence item CNT-7.5-CLOSE-004."
+              }
+            }
+          },
+          {
+            "id": "LRN-GOOD-CNT-7.5-CLOSE-005-006",
+            "text": {
+              "en": "appearance accepted",
+              "fr": "appearance accepted",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.5",
+              "page": "CNT-7.5-CLOSE-005",
+              "note": {
+                "en": "Mapped from canonical Activity 7.5 verification/closureCriteria/evidence item CNT-7.5-CLOSE-005."
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "criticalChecksExplained": [
+      {
+        "type": "bulletList",
+        "items": [
+          {
+            "id": "LRN-CHECK-CNT-7.5-INS-DURING-001-001",
+            "text": {
+              "en": "clean joint;",
+              "fr": "clean joint;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.5",
+              "page": "CNT-7.5-INS-DURING-001",
+              "note": {
+                "en": "Mapped from canonical Activity 7.5 inspection/materialControl/requirements item CNT-7.5-INS-DURING-001."
+              }
+            }
+          },
+          {
+            "id": "LRN-CHECK-CNT-7.5-INS-DURING-002-002",
+            "text": {
+              "en": "correct depth/width;",
+              "fr": "corriger depth/width;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.5",
+              "page": "CNT-7.5-INS-DURING-002",
+              "note": {
+                "en": "Mapped from canonical Activity 7.5 inspection/materialControl/requirements item CNT-7.5-INS-DURING-002."
+              }
+            }
+          },
+          {
+            "id": "LRN-CHECK-CNT-7.5-INS-DURING-003-003",
+            "text": {
+              "en": "backer rod;",
+              "fr": "backer rod;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.5",
+              "page": "CNT-7.5-INS-DURING-003",
+              "note": {
+                "en": "Mapped from canonical Activity 7.5 inspection/materialControl/requirements item CNT-7.5-INS-DURING-003."
+              }
+            }
+          },
+          {
+            "id": "LRN-CHECK-CNT-7.5-INS-DURING-004-004",
+            "text": {
+              "en": "primer;",
+              "fr": "apprêt;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.5",
+              "page": "CNT-7.5-INS-DURING-004",
+              "note": {
+                "en": "Mapped from canonical Activity 7.5 inspection/materialControl/requirements item CNT-7.5-INS-DURING-004."
+              }
+            }
+          },
+          {
+            "id": "LRN-CHECK-CNT-7.5-INS-DURING-005-005",
+            "text": {
+              "en": "continuous application;",
+              "fr": "continuous application;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.5",
+              "page": "CNT-7.5-INS-DURING-005",
+              "note": {
+                "en": "Mapped from canonical Activity 7.5 inspection/materialControl/requirements item CNT-7.5-INS-DURING-005."
+              }
+            }
+          },
+          {
+            "id": "LRN-CHECK-CNT-7.5-INS-DURING-006-006",
+            "text": {
+              "en": "full adhesion;",
+              "fr": "full adhérence;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.5",
+              "page": "CNT-7.5-INS-DURING-006",
+              "note": {
+                "en": "Mapped from canonical Activity 7.5 inspection/materialControl/requirements item CNT-7.5-INS-DURING-006."
+              }
+            }
+          },
+          {
+            "id": "LRN-CHECK-CNT-7.5-INS-DURING-007-007",
+            "text": {
+              "en": "no voids;",
+              "fr": "aucun voids;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.5",
+              "page": "CNT-7.5-INS-DURING-007",
+              "note": {
+                "en": "Mapped from canonical Activity 7.5 inspection/materialControl/requirements item CNT-7.5-INS-DURING-007."
+              }
+            }
+          },
+          {
+            "id": "LRN-CHECK-CNT-7.5-INS-DURING-008-008",
+            "text": {
+              "en": "tooling;",
+              "fr": "tooling;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.5",
+              "page": "CNT-7.5-INS-DURING-008",
+              "note": {
+                "en": "Mapped from canonical Activity 7.5 inspection/materialControl/requirements item CNT-7.5-INS-DURING-008."
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "commonFailures": [
+      {
+        "type": "bulletList",
+        "items": [
+          {
+            "id": "LRN-FAIL-CNT-7.5-ISSUE-001-001",
+            "text": {
+              "en": "wrong sealant;",
+              "fr": "wrong scellant;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.5",
+              "page": "CNT-7.5-ISSUE-001",
+              "note": {
+                "en": "Mapped from canonical Activity 7.5 issues.commonDeficiencies/correctiveAction item CNT-7.5-ISSUE-001."
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            }
+          },
+          {
+            "id": "LRN-FAIL-CNT-7.5-ISSUE-002-002",
+            "text": {
+              "en": "missing backer rod;",
+              "fr": "manquant backer rod;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.5",
+              "page": "CNT-7.5-ISSUE-002",
+              "note": {
+                "en": "Mapped from canonical Activity 7.5 issues.commonDeficiencies/correctiveAction item CNT-7.5-ISSUE-002."
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            }
+          },
+          {
+            "id": "LRN-FAIL-CNT-7.5-ISSUE-003-003",
+            "text": {
+              "en": "poor adhesion;",
+              "fr": "poor adhérence;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.5",
+              "page": "CNT-7.5-ISSUE-003",
+              "note": {
+                "en": "Mapped from canonical Activity 7.5 issues.commonDeficiencies/correctiveAction item CNT-7.5-ISSUE-003."
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            }
+          },
+          {
+            "id": "LRN-FAIL-CNT-7.5-ISSUE-004-004",
+            "text": {
+              "en": "gaps;",
+              "fr": "gaps;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.5",
+              "page": "CNT-7.5-ISSUE-004",
+              "note": {
+                "en": "Mapped from canonical Activity 7.5 issues.commonDeficiencies/correctiveAction item CNT-7.5-ISSUE-004."
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            }
+          },
+          {
+            "id": "LRN-FAIL-CNT-7.5-ISSUE-005-005",
+            "text": {
+              "en": "wrong colour;",
+              "fr": "wrong colour;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.5",
+              "page": "CNT-7.5-ISSUE-005",
+              "note": {
+                "en": "Mapped from canonical Activity 7.5 issues.commonDeficiencies/correctiveAction item CNT-7.5-ISSUE-005."
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            }
+          },
+          {
+            "id": "LRN-FAIL-CNT-7.5-ISSUE-006-006",
+            "text": {
+              "en": "excessive smearing;",
+              "fr": "excessive smearing;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.5",
+              "page": "CNT-7.5-ISSUE-006",
+              "note": {
+                "en": "Mapped from canonical Activity 7.5 issues.commonDeficiencies/correctiveAction item CNT-7.5-ISSUE-006."
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            }
+          },
+          {
+            "id": "LRN-FAIL-CNT-7.5-ISSUE-007-007",
+            "text": {
+              "en": "missing joint.",
+              "fr": "manquant joint.",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.5",
+              "page": "CNT-7.5-ISSUE-007",
+              "note": {
+                "en": "Mapped from canonical Activity 7.5 issues.commonDeficiencies/correctiveAction item CNT-7.5-ISSUE-007."
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            }
+          }
+        ]
+      }
+    ],
+    "interfacesAndSequence": [
+      {
+        "type": "bulletList",
+        "items": [
+          {
+            "id": "LRN-SEQ-CNT-7.5-PLAN-001-001",
+            "text": {
+              "en": "joint locations;",
+              "fr": "joint locations;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.5",
+              "page": "CNT-7.5-PLAN-001",
+              "note": {
+                "en": "Mapped from canonical Activity 7.5 planning/documentControl/requirements item CNT-7.5-PLAN-001."
+              }
+            }
+          },
+          {
+            "id": "LRN-SEQ-CNT-7.5-PLAN-002-002",
+            "text": {
+              "en": "substrate compatibility;",
+              "fr": "support compatibility;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.5",
+              "page": "CNT-7.5-PLAN-002",
+              "note": {
+                "en": "Mapped from canonical Activity 7.5 planning/documentControl/requirements item CNT-7.5-PLAN-002."
+              }
+            }
+          },
+          {
+            "id": "LRN-SEQ-CNT-7.5-PLAN-003-003",
+            "text": {
+              "en": "sequencing;",
+              "fr": "séquençage;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.5",
+              "page": "CNT-7.5-PLAN-003",
+              "note": {
+                "en": "Mapped from canonical Activity 7.5 planning/documentControl/requirements item CNT-7.5-PLAN-003."
+              }
+            }
+          },
+          {
+            "id": "LRN-SEQ-CNT-7.5-PLAN-004-004",
+            "text": {
+              "en": "environmental conditions;",
+              "fr": "environmental conditions;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.5",
+              "page": "CNT-7.5-PLAN-004",
+              "note": {
+                "en": "Mapped from canonical Activity 7.5 planning/documentControl/requirements item CNT-7.5-PLAN-004."
+              }
+            }
+          },
+          {
+            "id": "LRN-SEQ-CNT-7.5-PLAN-005-005",
+            "text": {
+              "en": "finish requirements.",
+              "fr": "finish requirements.",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.5",
+              "page": "CNT-7.5-PLAN-005",
+              "note": {
+                "en": "Mapped from canonical Activity 7.5 planning/documentControl/requirements item CNT-7.5-PLAN-005."
+              }
+            }
+          },
+          {
+            "id": "LRN-SEQ-CNT-7.5-DOC-001-006",
+            "text": {
+              "en": "correct sealant for application",
+              "fr": "corriger scellant pour application",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.5",
+              "page": "CNT-7.5-DOC-001",
+              "note": {
+                "en": "Mapped from canonical Activity 7.5 planning/documentControl/requirements item CNT-7.5-DOC-001."
+              }
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "activityId": "7.6",
+    "whatIsThis": [
+      {
+        "type": "paragraph",
+        "item": {
+          "id": "LRN-WHAT-7.6-QUALITYOBJECTIVE",
+          "text": {
+            "en": "This is intentionally flexible because Hochelaga may include systems we haven't yet seen.\nExamples:\nepoxy wall systems;\nprotective wall panels;\nFRP panels;\nacoustic treatments;\nanti-static flooring;\nindustrial coatings;\nspecialty ceiling/wall systems.\nEnsure specialty finishes are installed from approved products and mock-ups using the manufacturer/project-defined substrate preparation, sequencing and inspection criteria.",
+            "fr": "cela is intentionally flexible because Hochelaga peut include systems we haven't yet seen. Examples: epoxy mur systems; protective mur panels; FRP panels; acoustic treatments; anti-static flooring; industrial coatings; specialty plafond/mur systems. Ensure specialty finishes are installed de approuvé products et échantillons témoins using le fabricant/projet-defined support preparation, séquençage et inspection critères.",
+            "status": {
+              "en": "validated",
+              "fr": "provisional"
+            }
+          },
+          "sourceRef": {
+            "build": "Phase 014",
+            "document": "Authored field-presentation data",
+            "section": "7.6",
+            "page": "qualityObjective",
+            "note": {
+              "en": "Mapped from canonical Activity 7.6 field qualityObjective."
+            }
+          }
+        }
+      }
+    ],
+    "whyItMatters": [
+      {
+        "type": "paragraph",
+        "item": {
+          "id": "LRN-WHY-7.6-AUTHORITYNOTE",
+          "text": {
+            "en": "The project drawings, devis, Plan Qualite, PIE/PRIE, approved procedures, professional instructions and CRT/Hydro-Quebec requirements govern. This playbook tells you how to systematically find, verify, document and close the quality requirements; it does not replace them.",
+            "fr": "le projet plans, devis, planifier Qualite, PIE/PRIE, procédures approuvées, professional instructions et CRT/Hydro-Quebec requirements govern. cela guide tells vous how à systematically find, vérifier, documenter et clore le quality requirements; cela does ne pas remplacer them.",
+            "status": {
+              "en": "validated",
+              "fr": "provisional"
+            }
+          },
+          "sourceRef": {
+            "build": "Phase 014",
+            "document": "Authored field-presentation data",
+            "section": "7.6",
+            "page": "authorityNote",
+            "note": {
+              "en": "Mapped from canonical Activity 7.6 field authorityNote."
+            }
+          }
+        }
+      },
+      {
+        "type": "bulletList",
+        "items": [
+          {
+            "id": "LRN-WHY-CNT-7.6-QC-001-001",
+            "text": {
+              "en": "Product",
+              "fr": "Product",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.6",
+              "page": "CNT-7.6-QC-001",
+              "note": {
+                "en": "Mapped from canonical Activity 7.6 qualityCheckpoint/reportingAnalysis item CNT-7.6-QC-001."
+              }
+            }
+          },
+          {
+            "id": "LRN-WHY-CNT-7.6-QC-002-002",
+            "text": {
+              "en": "Substrate",
+              "fr": "support",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.6",
+              "page": "CNT-7.6-QC-002",
+              "note": {
+                "en": "Mapped from canonical Activity 7.6 qualityCheckpoint/reportingAnalysis item CNT-7.6-QC-002."
+              }
+            }
+          },
+          {
+            "id": "LRN-WHY-CNT-7.6-QC-003-003",
+            "text": {
+              "en": "Mock-up/reference",
+              "fr": "échantillon témoin/référence",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.6",
+              "page": "CNT-7.6-QC-003",
+              "note": {
+                "en": "Mapped from canonical Activity 7.6 qualityCheckpoint/reportingAnalysis item CNT-7.6-QC-003."
+              }
+            }
+          },
+          {
+            "id": "LRN-WHY-CNT-7.6-QC-004-004",
+            "text": {
+              "en": "Layout",
+              "fr": "Layout",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.6",
+              "page": "CNT-7.6-QC-004",
+              "note": {
+                "en": "Mapped from canonical Activity 7.6 qualityCheckpoint/reportingAnalysis item CNT-7.6-QC-004."
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "howGoodWorkLooks": [
+      {
+        "type": "bulletList",
+        "items": [
+          {
+            "id": "LRN-GOOD-CNT-7.6-VER-001-001",
+            "text": {
+              "en": "Compare repaired work to approved mock-up/sample.",
+              "fr": "comparer repaired travaux à approuvé échantillon témoin/sample.",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.6",
+              "page": "CNT-7.6-VER-001",
+              "note": {
+                "en": "Mapped from canonical Activity 7.6 verification/closureCriteria/evidence item CNT-7.6-VER-001."
+              }
+            }
+          },
+          {
+            "id": "LRN-GOOD-CNT-7.6-CLOSE-001-002",
+            "text": {
+              "en": "approved system",
+              "fr": "système approuvé",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.6",
+              "page": "CNT-7.6-CLOSE-001",
+              "note": {
+                "en": "Mapped from canonical Activity 7.6 verification/closureCriteria/evidence item CNT-7.6-CLOSE-001."
+              }
+            }
+          },
+          {
+            "id": "LRN-GOOD-CNT-7.6-CLOSE-002-003",
+            "text": {
+              "en": "substrate accepted",
+              "fr": "support accepted",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.6",
+              "page": "CNT-7.6-CLOSE-002",
+              "note": {
+                "en": "Mapped from canonical Activity 7.6 verification/closureCriteria/evidence item CNT-7.6-CLOSE-002."
+              }
+            }
+          },
+          {
+            "id": "LRN-GOOD-CNT-7.6-CLOSE-003-004",
+            "text": {
+              "en": "installation accepted",
+              "fr": "installation accepted",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.6",
+              "page": "CNT-7.6-CLOSE-003",
+              "note": {
+                "en": "Mapped from canonical Activity 7.6 verification/closureCriteria/evidence item CNT-7.6-CLOSE-003."
+              }
+            }
+          },
+          {
+            "id": "LRN-GOOD-CNT-7.6-CLOSE-004-005",
+            "text": {
+              "en": "appearance accepted",
+              "fr": "appearance accepted",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.6",
+              "page": "CNT-7.6-CLOSE-004",
+              "note": {
+                "en": "Mapped from canonical Activity 7.6 verification/closureCriteria/evidence item CNT-7.6-CLOSE-004."
+              }
+            }
+          },
+          {
+            "id": "LRN-GOOD-CNT-7.6-CLOSE-005-006",
+            "text": {
+              "en": "protection complete",
+              "fr": "protection complete",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.6",
+              "page": "CNT-7.6-CLOSE-005",
+              "note": {
+                "en": "Mapped from canonical Activity 7.6 verification/closureCriteria/evidence item CNT-7.6-CLOSE-005."
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "criticalChecksExplained": [
+      {
+        "type": "bulletList",
+        "items": [
+          {
+            "id": "LRN-CHECK-CNT-7.6-INS-DURING-001-001",
+            "text": {
+              "en": "substrate;",
+              "fr": "support;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.6",
+              "page": "CNT-7.6-INS-DURING-001",
+              "note": {
+                "en": "Mapped from canonical Activity 7.6 inspection/materialControl/requirements item CNT-7.6-INS-DURING-001."
+              }
+            }
+          },
+          {
+            "id": "LRN-CHECK-CNT-7.6-INS-DURING-002-002",
+            "text": {
+              "en": "layout;",
+              "fr": "layout;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.6",
+              "page": "CNT-7.6-INS-DURING-002",
+              "note": {
+                "en": "Mapped from canonical Activity 7.6 inspection/materialControl/requirements item CNT-7.6-INS-DURING-002."
+              }
+            }
+          },
+          {
+            "id": "LRN-CHECK-CNT-7.6-INS-DURING-003-003",
+            "text": {
+              "en": "installation method;",
+              "fr": "installation method;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.6",
+              "page": "CNT-7.6-INS-DURING-003",
+              "note": {
+                "en": "Mapped from canonical Activity 7.6 inspection/materialControl/requirements item CNT-7.6-INS-DURING-003."
+              }
+            }
+          },
+          {
+            "id": "LRN-CHECK-CNT-7.6-INS-DURING-004-004",
+            "text": {
+              "en": "fastening/adhesion;",
+              "fr": "fastening/adhérence;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.6",
+              "page": "CNT-7.6-INS-DURING-004",
+              "note": {
+                "en": "Mapped from canonical Activity 7.6 inspection/materialControl/requirements item CNT-7.6-INS-DURING-004."
+              }
+            }
+          },
+          {
+            "id": "LRN-CHECK-CNT-7.6-INS-DURING-005-005",
+            "text": {
+              "en": "seams/joints;",
+              "fr": "seams/joints;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.6",
+              "page": "CNT-7.6-INS-DURING-005",
+              "note": {
+                "en": "Mapped from canonical Activity 7.6 inspection/materialControl/requirements item CNT-7.6-INS-DURING-005."
+              }
+            }
+          },
+          {
+            "id": "LRN-CHECK-CNT-7.6-INS-DURING-006-006",
+            "text": {
+              "en": "edges;",
+              "fr": "edges;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.6",
+              "page": "CNT-7.6-INS-DURING-006",
+              "note": {
+                "en": "Mapped from canonical Activity 7.6 inspection/materialControl/requirements item CNT-7.6-INS-DURING-006."
+              }
+            }
+          },
+          {
+            "id": "LRN-CHECK-CNT-7.6-INS-DURING-007-007",
+            "text": {
+              "en": "finish;",
+              "fr": "finish;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.6",
+              "page": "CNT-7.6-INS-DURING-007",
+              "note": {
+                "en": "Mapped from canonical Activity 7.6 inspection/materialControl/requirements item CNT-7.6-INS-DURING-007."
+              }
+            }
+          },
+          {
+            "id": "LRN-CHECK-CNT-7.6-INS-DURING-008-008",
+            "text": {
+              "en": "compatibility;",
+              "fr": "compatibility;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.6",
+              "page": "CNT-7.6-INS-DURING-008",
+              "note": {
+                "en": "Mapped from canonical Activity 7.6 inspection/materialControl/requirements item CNT-7.6-INS-DURING-008."
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "commonFailures": [
+      {
+        "type": "bulletList",
+        "items": [
+          {
+            "id": "LRN-FAIL-CNT-7.6-ISSUE-001-001",
+            "text": {
+              "en": "approved system;",
+              "fr": "système approuvé;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.6",
+              "page": "CNT-7.6-ISSUE-001",
+              "note": {
+                "en": "Mapped from canonical Activity 7.6 issues.commonDeficiencies/correctiveAction item CNT-7.6-ISSUE-001."
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            }
+          },
+          {
+            "id": "LRN-FAIL-CNT-7.6-ISSUE-002-002",
+            "text": {
+              "en": "layout;",
+              "fr": "layout;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.6",
+              "page": "CNT-7.6-ISSUE-002",
+              "note": {
+                "en": "Mapped from canonical Activity 7.6 issues.commonDeficiencies/correctiveAction item CNT-7.6-ISSUE-002."
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            }
+          },
+          {
+            "id": "LRN-FAIL-CNT-7.6-ISSUE-003-003",
+            "text": {
+              "en": "substrate requirement;",
+              "fr": "support exigence;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.6",
+              "page": "CNT-7.6-ISSUE-003",
+              "note": {
+                "en": "Mapped from canonical Activity 7.6 issues.commonDeficiencies/correctiveAction item CNT-7.6-ISSUE-003."
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            }
+          },
+          {
+            "id": "LRN-FAIL-CNT-7.6-ISSUE-004-004",
+            "text": {
+              "en": "attachment;",
+              "fr": "attachment;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.6",
+              "page": "CNT-7.6-ISSUE-004",
+              "note": {
+                "en": "Mapped from canonical Activity 7.6 issues.commonDeficiencies/correctiveAction item CNT-7.6-ISSUE-004."
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            }
+          },
+          {
+            "id": "LRN-FAIL-CNT-7.6-ISSUE-005-005",
+            "text": {
+              "en": "manufacturer instruction.",
+              "fr": "fabricant instruction.",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.6",
+              "page": "CNT-7.6-ISSUE-005",
+              "note": {
+                "en": "Mapped from canonical Activity 7.6 issues.commonDeficiencies/correctiveAction item CNT-7.6-ISSUE-005."
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            }
+          },
+          {
+            "id": "LRN-FAIL-CNT-7.6-CA-001-006",
+            "text": {
+              "en": "Follow approved manufacturer/project repair method.",
+              "fr": "Follow approuvé fabricant/projet réparer method.",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.6",
+              "page": "CNT-7.6-CA-001",
+              "note": {
+                "en": "Mapped from canonical Activity 7.6 issues.commonDeficiencies/correctiveAction item CNT-7.6-CA-001."
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "interfacesAndSequence": [
+      {
+        "type": "bulletList",
+        "items": [
+          {
+            "id": "LRN-SEQ-CNT-7.6-PLAN-001-001",
+            "text": {
+              "en": "substrate readiness;",
+              "fr": "support readiness;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.6",
+              "page": "CNT-7.6-PLAN-001",
+              "note": {
+                "en": "Mapped from canonical Activity 7.6 planning/documentControl/requirements item CNT-7.6-PLAN-001."
+              }
+            }
+          },
+          {
+            "id": "LRN-SEQ-CNT-7.6-PLAN-002-002",
+            "text": {
+              "en": "environmental needs;",
+              "fr": "environmental needs;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.6",
+              "page": "CNT-7.6-PLAN-002",
+              "note": {
+                "en": "Mapped from canonical Activity 7.6 planning/documentControl/requirements item CNT-7.6-PLAN-002."
+              }
+            }
+          },
+          {
+            "id": "LRN-SEQ-CNT-7.6-PLAN-003-003",
+            "text": {
+              "en": "mock-up/reference standard;",
+              "fr": "échantillon témoin/référence standard;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.6",
+              "page": "CNT-7.6-PLAN-003",
+              "note": {
+                "en": "Mapped from canonical Activity 7.6 planning/documentControl/requirements item CNT-7.6-PLAN-003."
+              }
+            }
+          },
+          {
+            "id": "LRN-SEQ-CNT-7.6-PLAN-004-004",
+            "text": {
+              "en": "skilled installer requirements;",
+              "fr": "skilled installer requirements;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.6",
+              "page": "CNT-7.6-PLAN-004",
+              "note": {
+                "en": "Mapped from canonical Activity 7.6 planning/documentControl/requirements item CNT-7.6-PLAN-004."
+              }
+            }
+          },
+          {
+            "id": "LRN-SEQ-CNT-7.6-PLAN-005-005",
+            "text": {
+              "en": "sequence;",
+              "fr": "séquence;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.6",
+              "page": "CNT-7.6-PLAN-005",
+              "note": {
+                "en": "Mapped from canonical Activity 7.6 planning/documentControl/requirements item CNT-7.6-PLAN-005."
+              }
+            }
+          },
+          {
+            "id": "LRN-SEQ-CNT-7.6-PLAN-006-006",
+            "text": {
+              "en": "protection.",
+              "fr": "protection.",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.6",
+              "page": "CNT-7.6-PLAN-006",
+              "note": {
+                "en": "Mapped from canonical Activity 7.6 planning/documentControl/requirements item CNT-7.6-PLAN-006."
+              }
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "activityId": "7.7",
+    "whatIsThis": [
+      {
+        "type": "paragraph",
+        "item": {
+          "id": "LRN-WHAT-7.7-QUALITYOBJECTIVE",
+          "text": {
+            "en": "This is where all interior architectural quality streams converge.\nIdentify, document, assign, verify and close all architectural deficiencies systematically before turnover, leaving no unresolved condition hidden in vague punch-list language.",
+            "fr": "cela is where all interior architectural quality streams converge. identifier, documenter, affecter, vérifier et clore all architectural déficiences systematically avant remise, leaving aucun unresolved condition hidden dans vague punch-list language.",
+            "status": {
+              "en": "validated",
+              "fr": "provisional"
+            }
+          },
+          "sourceRef": {
+            "build": "Phase 014",
+            "document": "Authored field-presentation data",
+            "section": "7.7",
+            "page": "qualityObjective",
+            "note": {
+              "en": "Mapped from canonical Activity 7.7 field qualityObjective."
+            }
+          }
+        }
+      }
+    ],
+    "whyItMatters": [
+      {
+        "type": "paragraph",
+        "item": {
+          "id": "LRN-WHY-7.7-AUTHORITYNOTE",
+          "text": {
+            "en": "The project drawings, devis, Plan Qualite, PIE/PRIE, approved procedures, professional instructions and CRT/Hydro-Quebec requirements govern. This playbook tells you how to systematically find, verify, document and close the quality requirements; it does not replace them.",
+            "fr": "le projet plans, devis, planifier Qualite, PIE/PRIE, procédures approuvées, professional instructions et CRT/Hydro-Quebec requirements govern. cela guide tells vous how à systematically find, vérifier, documenter et clore le quality requirements; cela does ne pas remplacer them.",
+            "status": {
+              "en": "validated",
+              "fr": "provisional"
+            }
+          },
+          "sourceRef": {
+            "build": "Phase 014",
+            "document": "Authored field-presentation data",
+            "section": "7.7",
+            "page": "authorityNote",
+            "note": {
+              "en": "Mapped from canonical Activity 7.7 field authorityNote."
+            }
+          }
+        }
+      },
+      {
+        "type": "bulletList",
+        "items": [
+          {
+            "id": "LRN-WHY-CNT-7.7-QC-001-001",
+            "text": {
+              "en": "Complete",
+              "fr": "Complete",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.7",
+              "page": "CNT-7.7-QC-001",
+              "note": {
+                "en": "Mapped from canonical Activity 7.7 qualityCheckpoint/reportingAnalysis item CNT-7.7-QC-001."
+              }
+            }
+          },
+          {
+            "id": "LRN-WHY-CNT-7.7-QC-002-002",
+            "text": {
+              "en": "Level/aligned",
+              "fr": "Level/aligned",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.7",
+              "page": "CNT-7.7-QC-002",
+              "note": {
+                "en": "Mapped from canonical Activity 7.7 qualityCheckpoint/reportingAnalysis item CNT-7.7-QC-002."
+              }
+            }
+          },
+          {
+            "id": "LRN-WHY-CNT-7.7-QC-003-003",
+            "text": {
+              "en": "No damage/staining",
+              "fr": "aucun damage/staining",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.7",
+              "page": "CNT-7.7-QC-003",
+              "note": {
+                "en": "Mapped from canonical Activity 7.7 qualityCheckpoint/reportingAnalysis item CNT-7.7-QC-003."
+              }
+            }
+          },
+          {
+            "id": "LRN-WHY-CNT-7.7-QC-004-004",
+            "text": {
+              "en": "Access panels installed",
+              "fr": "Access panels installed",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.7",
+              "page": "CNT-7.7-QC-004",
+              "note": {
+                "en": "Mapped from canonical Activity 7.7 qualityCheckpoint/reportingAnalysis item CNT-7.7-QC-004."
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "howGoodWorkLooks": [
+      {
+        "type": "bulletList",
+        "items": [
+          {
+            "id": "LRN-GOOD-CNT-7.7-VER-001-001",
+            "text": {
+              "en": "correct finish;",
+              "fr": "corriger finish;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.7",
+              "page": "CNT-7.7-VER-001",
+              "note": {
+                "en": "Mapped from canonical Activity 7.7 verification/closureCriteria/evidence item CNT-7.7-VER-001."
+              }
+            }
+          },
+          {
+            "id": "LRN-GOOD-CNT-7.7-VER-002-002",
+            "text": {
+              "en": "colour;",
+              "fr": "colour;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.7",
+              "page": "CNT-7.7-VER-002",
+              "note": {
+                "en": "Mapped from canonical Activity 7.7 verification/closureCriteria/evidence item CNT-7.7-VER-002."
+              }
+            }
+          },
+          {
+            "id": "LRN-GOOD-CNT-7.7-VER-003-003",
+            "text": {
+              "en": "hardware;",
+              "fr": "hardware;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.7",
+              "page": "CNT-7.7-VER-003",
+              "note": {
+                "en": "Mapped from canonical Activity 7.7 verification/closureCriteria/evidence item CNT-7.7-VER-003."
+              }
+            }
+          },
+          {
+            "id": "LRN-GOOD-CNT-7.7-VER-004-004",
+            "text": {
+              "en": "panels;",
+              "fr": "panels;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.7",
+              "page": "CNT-7.7-VER-004",
+              "note": {
+                "en": "Mapped from canonical Activity 7.7 verification/closureCriteria/evidence item CNT-7.7-VER-004."
+              }
+            }
+          },
+          {
+            "id": "LRN-GOOD-CNT-7.7-VER-005-005",
+            "text": {
+              "en": "tiles;",
+              "fr": "tiles;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.7",
+              "page": "CNT-7.7-VER-005",
+              "note": {
+                "en": "Mapped from canonical Activity 7.7 verification/closureCriteria/evidence item CNT-7.7-VER-005."
+              }
+            }
+          },
+          {
+            "id": "LRN-GOOD-CNT-7.7-VER-006-006",
+            "text": {
+              "en": "accessories.",
+              "fr": "accessories.",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.7",
+              "page": "CNT-7.7-VER-006",
+              "note": {
+                "en": "Mapped from canonical Activity 7.7 verification/closureCriteria/evidence item CNT-7.7-VER-006."
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "criticalChecksExplained": [
+      {
+        "type": "bulletList",
+        "items": [
+          {
+            "id": "LRN-CHECK-CNT-7.7-INS-DURING-001-001",
+            "text": {
+              "en": "building → floor/zone → room → system",
+              "fr": "building → floor/zone → room → system",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.7",
+              "page": "CNT-7.7-INS-DURING-001",
+              "note": {
+                "en": "Mapped from canonical Activity 7.7 inspection/materialControl/requirements item CNT-7.7-INS-DURING-001."
+              }
+            }
+          },
+          {
+            "id": "LRN-CHECK-CNT-7.7-INS-DURING-002-002",
+            "text": {
+              "en": "rather than wandering randomly.",
+              "fr": "rather than wandering randomly.",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.7",
+              "page": "CNT-7.7-INS-DURING-002",
+              "note": {
+                "en": "Mapped from canonical Activity 7.7 inspection/materialControl/requirements item CNT-7.7-INS-DURING-002."
+              }
+            }
+          },
+          {
+            "id": "LRN-CHECK-CNT-7.7-INS-DURING-003-003",
+            "text": {
+              "en": "Ceiling → walls → doors → hardware → floors → sealants → equipment interfaces → final cleanliness",
+              "fr": "plafond → murs → portes → hardware → floors → scellants → equipment interfaces → final cleanliness",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.7",
+              "page": "CNT-7.7-INS-DURING-003",
+              "note": {
+                "en": "Mapped from canonical Activity 7.7 inspection/materialControl/requirements item CNT-7.7-INS-DURING-003."
+              }
+            }
+          },
+          {
+            "id": "LRN-CHECK-CNT-7.7-INS-DURING-004-004",
+            "text": {
+              "en": "That prevents omissions.",
+              "fr": "cela prevents omissions.",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.7",
+              "page": "CNT-7.7-INS-DURING-004",
+              "note": {
+                "en": "Mapped from canonical Activity 7.7 inspection/materialControl/requirements item CNT-7.7-INS-DURING-004."
+              }
+            }
+          },
+          {
+            "id": "LRN-CHECK-CNT-7.7-INS-DURING-005-005",
+            "text": {
+              "en": "grid/panels;",
+              "fr": "grille/panels;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.7",
+              "page": "CNT-7.7-INS-DURING-005",
+              "note": {
+                "en": "Mapped from canonical Activity 7.7 inspection/materialControl/requirements item CNT-7.7-INS-DURING-005."
+              }
+            }
+          },
+          {
+            "id": "LRN-CHECK-CNT-7.7-INS-DURING-006-006",
+            "text": {
+              "en": "alignment;",
+              "fr": "alignement;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.7",
+              "page": "CNT-7.7-INS-DURING-006",
+              "note": {
+                "en": "Mapped from canonical Activity 7.7 inspection/materialControl/requirements item CNT-7.7-INS-DURING-006."
+              }
+            }
+          },
+          {
+            "id": "LRN-CHECK-CNT-7.7-INS-DURING-007-007",
+            "text": {
+              "en": "stains/damage;",
+              "fr": "stains/damage;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.7",
+              "page": "CNT-7.7-INS-DURING-007",
+              "note": {
+                "en": "Mapped from canonical Activity 7.7 inspection/materialControl/requirements item CNT-7.7-INS-DURING-007."
+              }
+            }
+          },
+          {
+            "id": "LRN-CHECK-CNT-7.7-INS-DURING-008-008",
+            "text": {
+              "en": "access panels;",
+              "fr": "access panels;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.7",
+              "page": "CNT-7.7-INS-DURING-008",
+              "note": {
+                "en": "Mapped from canonical Activity 7.7 inspection/materialControl/requirements item CNT-7.7-INS-DURING-008."
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "commonFailures": [
+      {
+        "type": "bulletList",
+        "items": [
+          {
+            "id": "LRN-FAIL-CNT-7.7-ISSUE-001-001",
+            "text": {
+              "en": "unique ID;",
+              "fr": "unique ID;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.7",
+              "page": "CNT-7.7-ISSUE-001",
+              "note": {
+                "en": "Mapped from canonical Activity 7.7 issues.commonDeficiencies/correctiveAction item CNT-7.7-ISSUE-001."
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            }
+          },
+          {
+            "id": "LRN-FAIL-CNT-7.7-ISSUE-002-002",
+            "text": {
+              "en": "exact location;",
+              "fr": "exact emplacement;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.7",
+              "page": "CNT-7.7-ISSUE-002",
+              "note": {
+                "en": "Mapped from canonical Activity 7.7 issues.commonDeficiencies/correctiveAction item CNT-7.7-ISSUE-002."
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            }
+          },
+          {
+            "id": "LRN-FAIL-CNT-7.7-ISSUE-003-003",
+            "text": {
+              "en": "room/zone;",
+              "fr": "room/zone;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.7",
+              "page": "CNT-7.7-ISSUE-003",
+              "note": {
+                "en": "Mapped from canonical Activity 7.7 issues.commonDeficiencies/correctiveAction item CNT-7.7-ISSUE-003."
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            }
+          },
+          {
+            "id": "LRN-FAIL-CNT-7.7-ISSUE-004-004",
+            "text": {
+              "en": "trade/system;",
+              "fr": "corps de métier/system;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.7",
+              "page": "CNT-7.7-ISSUE-004",
+              "note": {
+                "en": "Mapped from canonical Activity 7.7 issues.commonDeficiencies/correctiveAction item CNT-7.7-ISSUE-004."
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            }
+          },
+          {
+            "id": "LRN-FAIL-CNT-7.7-ISSUE-005-005",
+            "text": {
+              "en": "concise description;",
+              "fr": "concise description;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.7",
+              "page": "CNT-7.7-ISSUE-005",
+              "note": {
+                "en": "Mapped from canonical Activity 7.7 issues.commonDeficiencies/correctiveAction item CNT-7.7-ISSUE-005."
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            }
+          },
+          {
+            "id": "LRN-FAIL-CNT-7.7-ISSUE-006-006",
+            "text": {
+              "en": "requirement/reference where needed;",
+              "fr": "exigence/référence where needed;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.7",
+              "page": "CNT-7.7-ISSUE-006",
+              "note": {
+                "en": "Mapped from canonical Activity 7.7 issues.commonDeficiencies/correctiveAction item CNT-7.7-ISSUE-006."
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            }
+          },
+          {
+            "id": "LRN-FAIL-CNT-7.7-ISSUE-007-007",
+            "text": {
+              "en": "photograph;",
+              "fr": "photographier;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.7",
+              "page": "CNT-7.7-ISSUE-007",
+              "note": {
+                "en": "Mapped from canonical Activity 7.7 issues.commonDeficiencies/correctiveAction item CNT-7.7-ISSUE-007."
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            }
+          }
+        ]
+      }
+    ],
+    "interfacesAndSequence": [
+      {
+        "type": "bulletList",
+        "items": [
+          {
+            "id": "LRN-SEQ-CNT-7.7-DOC-001-001",
+            "text": {
+              "en": "room configuration",
+              "fr": "room configuration",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.7",
+              "page": "CNT-7.7-DOC-001",
+              "note": {
+                "en": "Mapped from canonical Activity 7.7 planning/documentControl/requirements item CNT-7.7-DOC-001."
+              }
+            }
+          },
+          {
+            "id": "LRN-SEQ-CNT-7.7-DOC-002-002",
+            "text": {
+              "en": "finish schedule",
+              "fr": "finish échéancier",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.7",
+              "page": "CNT-7.7-DOC-002",
+              "note": {
+                "en": "Mapped from canonical Activity 7.7 planning/documentControl/requirements item CNT-7.7-DOC-002."
+              }
+            }
+          },
+          {
+            "id": "LRN-SEQ-CNT-7.7-DOC-003-003",
+            "text": {
+              "en": "door/hardware schedule",
+              "fr": "porte/hardware échéancier",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.7",
+              "page": "CNT-7.7-DOC-003",
+              "note": {
+                "en": "Mapped from canonical Activity 7.7 planning/documentControl/requirements item CNT-7.7-DOC-003."
+              }
+            }
+          },
+          {
+            "id": "LRN-SEQ-CNT-7.7-DOC-004-004",
+            "text": {
+              "en": "ceiling layout",
+              "fr": "plafond layout",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.7",
+              "page": "CNT-7.7-DOC-004",
+              "note": {
+                "en": "Mapped from canonical Activity 7.7 planning/documentControl/requirements item CNT-7.7-DOC-004."
+              }
+            }
+          },
+          {
+            "id": "LRN-SEQ-CNT-7.7-DOC-005-005",
+            "text": {
+              "en": "approved changes",
+              "fr": "approuvé changes",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.7",
+              "page": "CNT-7.7-DOC-005",
+              "note": {
+                "en": "Mapped from canonical Activity 7.7 planning/documentControl/requirements item CNT-7.7-DOC-005."
+              }
+            }
+          },
+          {
+            "id": "LRN-SEQ-CNT-7.7-DOC-006-006",
+            "text": {
+              "en": "prior deficiency list",
+              "fr": "prior déficience list",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "7.7",
+              "page": "CNT-7.7-DOC-006",
+              "note": {
+                "en": "Mapped from canonical Activity 7.7 planning/documentControl/requirements item CNT-7.7-DOC-006."
+              }
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
