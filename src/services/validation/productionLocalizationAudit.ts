@@ -84,9 +84,27 @@ export interface ProductionLocalizationAuditReport {
   contentItemCount: number;
   contentItemFrCount: number;
   contentItemReviewedFrCount: number;
+  contentItemProvisionalFrCount: number;
   contentItemFallbackOnlyCount: number;
   authoritySensitiveContentItemCount: number;
   authoritySensitiveFrCount: number;
+  authoritySensitiveReviewedFrCount: number;
+  authoritySensitiveProvisionalFrCount: number;
+  authoritySensitiveFallbackOnlyCount: number;
+  highControlContentItemCount: number;
+  highControlFrCount: number;
+  highControlReviewedFrCount: number;
+  highControlProvisionalFrCount: number;
+  highControlFallbackOnlyCount: number;
+  terminologyConformanceIssueCount: number;
+  numericTokenMismatchCount: number;
+  criticalTokenMismatchCount: number;
+  authorityObligationIssueCount: number;
+  untranslatedSectionTitleCount: number;
+  untranslatedActivityTitleCount: number;
+  untranslatedUiStringCount: number;
+  missingTranslationStatusCount: number;
+  unresolvedQaFlagCount: number;
   terminologyReferenceCount: number;
   unresolvedReferenceCount: number;
   languageSpecificIdCount: number;
@@ -161,8 +179,182 @@ const isAuthoritySensitive = (item: ContentItem) =>
     item.authority?.authorizedProcessRequired
   );
 
+const isHighControl = (item: ContentItem) =>
+  Boolean(
+    item.highControl?.highControl ||
+      item.highControl?.traceabilityCritical ||
+      item.highControl?.evidenceRequired
+  );
+
 const isReviewedFrench = (item: ContentItem) =>
   item.text.status?.fr === "validated";
+
+const isProvisionalFrench = (item: ContentItem) =>
+  item.text.status?.fr === "provisional";
+
+const normalizeForQa = (value: string) =>
+  value
+    .normalize("NFKD")
+    .replace(/\p{Diacritic}/gu, "")
+    .toLowerCase();
+
+const collectNumbers = (value: string) =>
+  value.match(/\b\d+(?:[.,]\d+)?\b/g)?.sort() ?? [];
+
+const collectUnits = (value: string) =>
+  value.match(
+    /\b\d+(?:[.,]\d+)?\s*(?:mm|cm|m|km|mpa|kpa|pa|psi|%|degc|°c|hours?|hrs?|days?|minutes?)\b/gi
+  )?.map((token) => token.toLowerCase()).sort() ?? [];
+
+const nonCriticalUppercaseWords = new Set([
+  "ACTUAL",
+  "DIMENSIONS",
+  "DO",
+  "FIT",
+  "IT",
+  "LATER",
+  "MODIFIED",
+  "ON",
+  "PROJECT",
+  "PROVES",
+  "SOURCES",
+  "SYSTEM",
+  "THAT",
+  "THE",
+  "WAS",
+  "WHAT"
+]);
+
+const collectKnownAcronymForms = (registries: CanonicalRegistries) => {
+  const forms = new Map<string, readonly string[]>();
+
+  for (const acronym of registries.acronyms.getAll()) {
+    const allForms = [
+      ...(acronym.abbreviations.en ?? []),
+      ...(acronym.abbreviations.fr ?? []),
+      ...(acronym.abbreviations.shared ?? [])
+    ];
+
+    for (const form of allForms) {
+      forms.set(form, allForms);
+    }
+  }
+
+  return forms;
+};
+
+const collectCriticalTokens = (
+  value: string,
+  knownAcronymForms: ReadonlyMap<string, readonly string[]>
+) =>
+  (value.match(/\b[A-Z][A-Z0-9/&.]{1,}\b/g) ?? [])
+    .map((token) => token.replace(/[/]+$/u, ""))
+    .filter(
+      (token) =>
+        knownAcronymForms.has(token) ||
+        (!nonCriticalUppercaseWords.has(token) &&
+          /(?:\d|\/|\.|ID$|FS$)/.test(token))
+    )
+    .sort();
+
+const sortedEquals = (left: readonly string[], right: readonly string[]) =>
+  left.length === right.length && left.every((value, index) => value === right[index]);
+
+const hasNumericOrUnitMismatch = (item: ContentItem) => {
+  const english = item.text.en;
+  const french = item.text.fr;
+
+  if (!french) {
+    return false;
+  }
+
+  return (
+    !sortedEquals(collectNumbers(english), collectNumbers(french)) ||
+    !sortedEquals(collectUnits(english), collectUnits(french))
+  );
+};
+
+const hasCriticalTokenMismatch = (
+  item: ContentItem,
+  knownAcronymForms: ReadonlyMap<string, readonly string[]>
+) => {
+  const englishAcronyms = collectCriticalTokens(
+    item.text.en,
+    knownAcronymForms
+  );
+
+  if (englishAcronyms.length === 0 || !item.text.fr) {
+    return false;
+  }
+
+  const french = item.text.fr;
+
+  return englishAcronyms.some((token) => {
+    const authorizedForms = knownAcronymForms.get(token);
+
+    if (authorizedForms) {
+      return !authorizedForms.some((form) => french.includes(form));
+    }
+
+    return !french.includes(token);
+  });
+};
+
+const obligationPairs = [
+  { en: /\bmust\b/i, fr: /\b(doit|doivent|requis|obligatoire)\b/i },
+  { en: /\bshould\b/i, fr: /\b(devrait|devraient|devriez)\b/i },
+  { en: /\bmay\b/i, fr: /\b(peut|peuvent)\b/i },
+  { en: /\bdo not\b/i, fr: /\bne pas\b/i },
+  { en: /\bcannot\b/i, fr: /\bne peut pas\b/i },
+  { en: /\bwhere required\b/i, fr: /\b(lorsque requis|si requis)\b/i },
+  { en: /\bwhere applicable\b/i, fr: /\b(le cas échéant|s’il y a lieu)\b/i },
+  { en: /\bbefore\b/i, fr: /\bavant\b/i },
+  { en: /\bafter\b/i, fr: /après/i },
+  { en: /\bunless\b/i, fr: /à moins que/i },
+  { en: /\bonly when\b/i, fr: /\bseulement lorsque\b/i }
+] as const;
+
+const hasAuthorityObligationIssue = (item: ContentItem) =>
+  Boolean(
+    item.text.fr &&
+      obligationPairs.some(
+        (pair) => pair.en.test(item.text.en) && !pair.fr.test(item.text.fr ?? "")
+      )
+  );
+
+const hasTerminologyConformanceIssue = (
+  item: ContentItem,
+  registries: CanonicalRegistries
+) => {
+  if (!item.text.fr) {
+    return false;
+  }
+
+  const english = normalizeForQa(item.text.en);
+  const french = normalizeForQa(item.text.fr);
+
+  return (item.terminologyRefs ?? []).some((termId) => {
+    const concept = registries.terminology.getById(termId);
+
+    if (!concept?.preferred.fr) {
+      return false;
+    }
+
+    const englishTerms = [
+      concept.preferred.en,
+      ...(concept.aliases?.en ?? [])
+    ].map(normalizeForQa);
+    const frenchTerms = [
+      concept.preferred.fr,
+      ...(concept.aliases?.fr ?? [])
+    ].map(normalizeForQa);
+
+    return (
+      englishTerms.some((term) => english.includes(term)) &&
+      !frenchTerms.some((term) => french.includes(term))
+    );
+  });
+};
 
 const collectCanonicalIds = (dataset: CanonicalDataset) => [
   ...dataset.sections.map((section) => section.id),
@@ -206,10 +398,44 @@ export const auditProductionLocalizationDataset = (
   const contentItemFrCount = contentItems.filter((item) =>
     Boolean(item.text.fr)
   ).length;
+  const contentItemReviewedFrCount =
+    contentItems.filter(isReviewedFrench).length;
+  const contentItemProvisionalFrCount =
+    contentItems.filter(isProvisionalFrench).length;
   const authoritySensitiveItems = contentItems.filter(isAuthoritySensitive);
+  const highControlItems = contentItems.filter(isHighControl);
   const languageSpecificIdCount = collectCanonicalIds(dataset).filter((id) =>
     languageSpecificIdPattern.test(id)
   ).length;
+  const knownAcronymForms = collectKnownAcronymForms(registries);
+  const terminologyConformanceIssueCount = contentItems.filter((item) =>
+    hasTerminologyConformanceIssue(item, registries)
+  ).length;
+  const numericTokenMismatchCount = contentItems.filter(
+    hasNumericOrUnitMismatch
+  ).length;
+  const criticalTokenMismatchCount = contentItems.filter(
+    (item) => hasCriticalTokenMismatch(item, knownAcronymForms)
+  ).length;
+  const authorityObligationIssueCount = authoritySensitiveItems.filter(
+    hasAuthorityObligationIssue
+  ).length;
+  const missingTranslationStatusCount = contentItems.filter(
+    (item) => Boolean(item.text.fr) && !item.text.status?.fr
+  ).length;
+  const untranslatedSectionTitleCount =
+    sections.length - localizedSectionTitleCount;
+  const untranslatedActivityTitleCount =
+    activities.length - localizedActivityTitleCount;
+  const untranslatedUiStringCount = uiStrings.filter(
+    (uiString) => !uiString.fr
+  ).length;
+  const unresolvedQaFlagCount =
+    terminologyConformanceIssueCount +
+    numericTokenMismatchCount +
+    criticalTokenMismatchCount +
+    authorityObligationIssueCount +
+    missingTranslationStatusCount;
   let terminologyReferenceCount = 0;
   let unresolvedReferenceCount = 0;
 
@@ -277,6 +503,41 @@ export const auditProductionLocalizationDataset = (
       `Found ${languageSpecificIdCount} language-specific canonical IDs.`
     );
   }
+  if (contentItemFrCount !== expectedContentItemCount) {
+    errors.push(
+      `Expected French text for ${expectedContentItemCount} content items; found ${contentItemFrCount}.`
+    );
+  }
+  if (missingTranslationStatusCount > 0) {
+    errors.push(
+      `Found ${missingTranslationStatusCount} translated content items without explicit French translation status.`
+    );
+  }
+  if (authoritySensitiveItems.length > 0 && authoritySensitiveItems.length !== authoritySensitiveItems.filter((item) => Boolean(item.text.fr)).length) {
+    errors.push(
+      "Not all authority-sensitive content items have French text."
+    );
+  }
+  if (numericTokenMismatchCount > 0) {
+    errors.push(
+      `Found ${numericTokenMismatchCount} content items with numeric/unit token mismatches.`
+    );
+  }
+  if (criticalTokenMismatchCount > 0) {
+    errors.push(
+      `Found ${criticalTokenMismatchCount} content items with critical acronym/token mismatches.`
+    );
+  }
+  if (authorityObligationIssueCount > 0) {
+    errors.push(
+      `Found ${authorityObligationIssueCount} authority-sensitive content items with obligation-token issues.`
+    );
+  }
+  if (terminologyConformanceIssueCount > 0) {
+    errors.push(
+      `Found ${terminologyConformanceIssueCount} terminology-conformance issues in content-item translations.`
+    );
+  }
   if (
     dataset.quickViews.length > 0 ||
     dataset.learnContent.length > 0 ||
@@ -306,7 +567,10 @@ export const auditProductionLocalizationDataset = (
   }
 
   return {
-    ok: errors.length === 0 && unresolvedReferenceCount === 0,
+    ok:
+      errors.length === 0 &&
+      unresolvedReferenceCount === 0 &&
+      unresolvedQaFlagCount === 0,
     errors:
       unresolvedReferenceCount > 0
         ? [
@@ -350,12 +614,40 @@ export const auditProductionLocalizationDataset = (
     uiStringCategoryCounts: countUiCategories(uiStrings),
     contentItemCount: contentItems.length,
     contentItemFrCount,
-    contentItemReviewedFrCount: contentItems.filter(isReviewedFrench).length,
+    contentItemReviewedFrCount,
+    contentItemProvisionalFrCount,
     contentItemFallbackOnlyCount: contentItems.length - contentItemFrCount,
     authoritySensitiveContentItemCount: authoritySensitiveItems.length,
     authoritySensitiveFrCount: authoritySensitiveItems.filter((item) =>
       Boolean(item.text.fr)
     ).length,
+    authoritySensitiveReviewedFrCount:
+      authoritySensitiveItems.filter(isReviewedFrench).length,
+    authoritySensitiveProvisionalFrCount:
+      authoritySensitiveItems.filter(isProvisionalFrench).length,
+    authoritySensitiveFallbackOnlyCount:
+      authoritySensitiveItems.length -
+      authoritySensitiveItems.filter((item) => Boolean(item.text.fr)).length,
+    highControlContentItemCount: highControlItems.length,
+    highControlFrCount: highControlItems.filter((item) =>
+      Boolean(item.text.fr)
+    ).length,
+    highControlReviewedFrCount:
+      highControlItems.filter(isReviewedFrench).length,
+    highControlProvisionalFrCount:
+      highControlItems.filter(isProvisionalFrench).length,
+    highControlFallbackOnlyCount:
+      highControlItems.length -
+      highControlItems.filter((item) => Boolean(item.text.fr)).length,
+    terminologyConformanceIssueCount,
+    numericTokenMismatchCount,
+    criticalTokenMismatchCount,
+    authorityObligationIssueCount,
+    untranslatedSectionTitleCount,
+    untranslatedActivityTitleCount,
+    untranslatedUiStringCount,
+    missingTranslationStatusCount,
+    unresolvedQaFlagCount,
     terminologyReferenceCount,
     unresolvedReferenceCount,
     languageSpecificIdCount
@@ -366,9 +658,9 @@ export const formatProductionLocalizationAuditReport = (
   report: ProductionLocalizationAuditReport
 ) => {
   const lines = report.ok
-    ? ["Phase 013 production localization audit passed."]
+    ? ["Phase 013A production localization audit passed."]
     : [
-        "Phase 013 production localization audit failed.",
+        "Phase 013A production localization audit failed.",
         ...report.errors.map((error) => `- ${error}`)
       ];
 
@@ -386,8 +678,19 @@ export const formatProductionLocalizationAuditReport = (
     `UI strings EN/FR: ${report.uiStringEnCount}/${report.uiStringFrCount}`,
     `Content items with FR: ${report.contentItemFrCount}/${report.contentItemCount}`,
     `Content items reviewed FR: ${report.contentItemReviewedFrCount}`,
+    `Content items provisional FR: ${report.contentItemProvisionalFrCount}`,
     `Content items fallback-only: ${report.contentItemFallbackOnlyCount}`,
     `Authority-sensitive content with FR: ${report.authoritySensitiveFrCount}/${report.authoritySensitiveContentItemCount}`,
+    `Authority-sensitive reviewed/provisional/fallback: ${report.authoritySensitiveReviewedFrCount}/${report.authoritySensitiveProvisionalFrCount}/${report.authoritySensitiveFallbackOnlyCount}`,
+    `High-control content with FR: ${report.highControlFrCount}/${report.highControlContentItemCount}`,
+    `High-control reviewed/provisional/fallback: ${report.highControlReviewedFrCount}/${report.highControlProvisionalFrCount}/${report.highControlFallbackOnlyCount}`,
+    `Terminology-conformance issues: ${report.terminologyConformanceIssueCount}`,
+    `Numeric/unit token mismatches: ${report.numericTokenMismatchCount}`,
+    `Critical token mismatches: ${report.criticalTokenMismatchCount}`,
+    `Authority/obligation issues: ${report.authorityObligationIssueCount}`,
+    `Missing French translation statuses: ${report.missingTranslationStatusCount}`,
+    `Untranslated section/activity/UI labels: ${report.untranslatedSectionTitleCount}/${report.untranslatedActivityTitleCount}/${report.untranslatedUiStringCount}`,
+    `Unresolved QA flags: ${report.unresolvedQaFlagCount}`,
     `Terminology references: ${report.terminologyReferenceCount}`,
     `Unresolved terminology references: ${report.unresolvedReferenceCount}`,
     `Language-specific canonical IDs: ${report.languageSpecificIdCount}`

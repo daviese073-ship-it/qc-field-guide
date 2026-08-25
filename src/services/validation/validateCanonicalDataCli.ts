@@ -17,6 +17,10 @@ import {
   formatProductionLocalizationAuditReport
 } from "./productionLocalizationAudit";
 import {
+  auditBatirTerminologyDataset,
+  formatBatirTerminologyAuditReport
+} from "./batirTerminologyAudit";
+import {
   auditProductionRelationshipDataset,
   formatProductionRelationshipAuditReport
 } from "./productionRelationshipAudit";
@@ -38,6 +42,9 @@ try {
   const localizationAudit = auditProductionLocalizationDataset(
     productionValidation.dataset,
     productionValidation.registries
+  );
+  const batirAudit = auditBatirTerminologyDataset(
+    productionValidation.dataset
   );
 
   if (!contentAudit.ok) {
@@ -68,6 +75,13 @@ try {
     );
   }
 
+  if (!batirAudit.ok) {
+    throw new CanonicalDataValidationError(
+      "BÂTIR terminology validation failed.",
+      batirAudit.errors
+    );
+  }
+
   console.log(
     [
       "Canonical data validation passed.",
@@ -83,7 +97,8 @@ try {
       formatProductionContentAuditReport(contentAudit),
       formatProductionLogicAuditReport(logicAudit),
       formatProductionRelationshipAuditReport(relationshipAudit),
-      formatProductionLocalizationAuditReport(localizationAudit)
+      formatProductionLocalizationAuditReport(localizationAudit),
+      formatBatirTerminologyAuditReport(batirAudit)
     ].join("\n")
   );
 } catch (error) {

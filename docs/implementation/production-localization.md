@@ -23,7 +23,8 @@ small set of concrete terminology examples and several explicit validation
 backlogs. Phase 013 therefore populates only source-authorized records and marks
 missing/provisional French where Build 4 did not freeze a preferred term.
 
-Current production terminology count: 26 concepts.
+Phase 013A expanded the production terminology registry with a QC-relevant
+BÂTIR-derived subset. Current production terminology count: 146 concepts.
 
 Discipline files:
 
@@ -34,8 +35,7 @@ Discipline files:
 - fire-life-safety: 2
 - testing: 2
 - closeout: 3
-- earthworks, structural, roofing, interiors, electrical: 0 source-authorized
-  records in this phase
+- BÂTIR-derived QC concepts: 120
 
 ## Acronyms
 
@@ -63,15 +63,17 @@ content. Build 4H requires translations to live on the same semantic content
 items and explicitly forbids runtime machine translation or word-for-word
 glossary substitution.
 
-Build 4H defines rollout tiers but does not provide a reviewed French corpus for
-the 13,576 Phase 010 Full-content items. Phase 013 therefore does not invent
-French QC prose. The validation audit reports these content items as
-fallback-only:
+Build 4H defines rollout tiers. Phase 013A uses the supplied BÂTIR workbook and
+controlled QC phrase mappings to create draft French prose on the same
+canonical Phase 010 Full-content items. This is a development translation
+draft, not reviewed product authority.
 
 - total content items: 13,576
-- content items with French prose: 0
-- fallback-only content items: 13,576
-- authority-sensitive content items with French prose: 0 / 1,064
+- content items with French prose: 13,576
+- reviewed/final French content items: 0
+- provisional/draft French content items: 13,576
+- fallback-only content items: 0
+- authority-sensitive content items with French prose: 1,064 / 1,064
 
 Section/activity titles, condition labels, terminology, acronyms, and recurring
 UI strings are localized where Build 4 authorizes them.
@@ -96,9 +98,17 @@ registries, verifies referential integrity, and audits:
 - terminology/acronym/UI-string coverage
 - content translation counts
 - authority-sensitive translation counts
+- high-control translation counts
+- translation status transparency
+- numeric/unit token preservation
+- critical token preservation
+- authority/obligation token preservation
 - terminology-reference resolution
 - language-neutral ID invariance
 - absence of Phase 014 presentation datasets
+
+`npm run validate:batir` audits the BÂTIR workbook parsing summary and verifies
+that the BÂTIR-derived concept count matches the canonical terminology registry.
 
 `npm run validate:data` also runs the Phase 013 audit after the existing
 content, logic, and relationship audits.

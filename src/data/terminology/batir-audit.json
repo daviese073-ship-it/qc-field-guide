@@ -1,0 +1,46 @@
+{
+  "sourceWorkbook": "docs/source/batir data.xlsx",
+  "sheetNames": [
+    "Buildings",
+    "Infrastructure",
+    "Gestion de projet"
+  ],
+  "rowsParsed": {
+    "Buildings": 1284,
+    "Infrastructure": 606,
+    "Gestion de projet": 240
+  },
+  "totalRowsParsed": 2130,
+  "candidateRelevantRows": 385,
+  "candidateRelevantConcepts": 201,
+  "canonicalConceptsCreated": 120,
+  "existingConceptsMatchedWithoutOverride": 3,
+  "duplicatesConsolidated": 184,
+  "irrelevantOrUnmappedRows": 1745,
+  "ambiguousEntries": [
+    "bearing capacity",
+    "compaction",
+    "insulation",
+    "schedule",
+    "sealant",
+    "slope"
+  ],
+  "preferredTerminologyConflicts": [],
+  "parsingErrors": [],
+  "notes": [
+    "Rows from verb-only paths were excluded from canonical concept creation and used only as draft-translation vocabulary.",
+    "BÂTIR terms were matched against production corpus phrases before becoming candidates.",
+    "Existing Build-4 preferred terminology was not overridden by BÂTIR."
+  ],
+  "translationDrafting": {
+    "method": "Deterministic terminology-aware draft generation using BÂTIR terms plus controlled QC phrase mappings.",
+    "statusApplied": "provisional",
+    "contentItems": 13576,
+    "contentItemsWithFr": 13576,
+    "localizedActivityValuesChanged": 17552,
+    "authoritySensitiveItems": 1064,
+    "authoritySensitiveItemsWithFr": 1064,
+    "highControlItems": 0,
+    "highControlItemsWithFr": 0
+  }
+}

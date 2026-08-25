@@ -1,0 +1,5078 @@
+[
+  {
+    "id": "TERM-BATIR-CLOSEOUT-FINAL-INSPECTION",
+    "discipline": "Closeout",
+    "preferred": {
+      "en": "final inspection",
+      "fr": "inspection finale"
+    },
+    "definition": {
+      "en": "Inspection performed at the end of the work to verify the compliance of the project.",
+      "fr": "Inspection réalisée à la fin des travaux afin de vérifier la conformité de l'ouvrage.",
+      "status": {
+        "en": "provisional",
+        "fr": "provisional"
+      }
+    },
+    "contextNotes": {
+      "en": "BÂTIR-derived terminology candidate matched to the QC Field Guide production corpus; not a new QC requirement.",
+      "fr": "Candidat terminologique dérivé de BÂTIR et apparié au corpus de production du Guide CQ; il ne constitue pas une nouvelle exigence CQ.",
+      "status": {
+        "en": "validated",
+        "fr": "provisional"
+      }
+    },
+    "status": {
+      "en": "provisional",
+      "fr": "provisional"
+    },
+    "confidence": {
+      "en": "medium",
+      "fr": "medium"
+    },
+    "sourceRef": {
+      "build": "Build 4 / BÂTIR",
+      "document": "batir data.xlsx",
+      "section": "Buildings → Post-construction →Activities"
+    },
+    "aliases": {
+      "fr": [
+        "inspection de clôture",
+        "inspection de fin de travaux"
+      ]
+    }
+  },
+  {
+    "id": "TERM-BATIR-CLOSEOUT-INSPECTION-REPORT",
+    "discipline": "Closeout",
+    "preferred": {
+      "en": "inspection report",
+      "fr": "rapport d'inspection"
+    },
+    "definition": {
+      "en": "Document presenting the findings of an inspection.",
+      "fr": "Document présentant les résultats d'une inspection.",
+      "status": {
+        "en": "provisional",
+        "fr": "provisional"
+      }
+    },
+    "contextNotes": {
+      "en": "BÂTIR-derived terminology candidate matched to the QC Field Guide production corpus; not a new QC requirement.",
+      "fr": "Candidat terminologique dérivé de BÂTIR et apparié au corpus de production du Guide CQ; il ne constitue pas une nouvelle exigence CQ.",
+      "status": {
+        "en": "validated",
+        "fr": "provisional"
+      }
+    },
+    "status": {
+      "en": "provisional",
+      "fr": "provisional"
+    },
+    "confidence": {
+      "en": "medium",
+      "fr": "medium"
+    },
+    "sourceRef": {
+      "build": "Build 4 / BÂTIR",
+      "document": "batir data.xlsx",
+      "section": "Buildings → Post-construction → Documents"
+    },
+    "aliases": {
+      "fr": [
+        "compte rendu d'inspection",
+        "rapport de contrôle"
+      ]
+    }
+  },
+  {
+    "id": "TERM-BATIR-CLOSEOUT-RECORD-DRAWINGS",
+    "discipline": "Closeout",
+    "preferred": {
+      "en": "record drawings",
+      "fr": "plans conformes à l'exécution"
+    },
+    "definition": {
+      "en": "Set of updated drawings reflecting the completed work.",
+      "fr": "Ensemble des plans mis à jour afin de refléter les travaux réalisés.",
+      "status": {
+        "en": "provisional",
+        "fr": "provisional"
+      }
+    },
+    "contextNotes": {
+      "en": "BÂTIR-derived terminology candidate matched to the QC Field Guide production corpus; not a new QC requirement.",
+      "fr": "Candidat terminologique dérivé de BÂTIR et apparié au corpus de production du Guide CQ; il ne constitue pas une nouvelle exigence CQ.",
+      "status": {
+        "en": "validated",
+        "fr": "provisional"
+      }
+    },
+    "status": {
+      "en": "provisional",
+      "fr": "provisional"
+    },
+    "confidence": {
+      "en": "medium",
+      "fr": "medium"
+    },
+    "sourceRef": {
+      "build": "Build 4 / BÂTIR",
+      "document": "batir data.xlsx",
+      "section": "Buildings → Post-construction → Documents"
+    },
+    "aliases": {
+      "fr": [
+        "plans révisés"
+      ]
+    }
+  },
+  {
+    "id": "TERM-BATIR-CLOSEOUT-SHOP-DRAWING",
+    "discipline": "Closeout",
+    "preferred": {
+      "en": "shop drawing",
+      "fr": "dessin d'atelier"
+    },
+    "definition": {
+      "en": "Detailed drawing used for the fabrication and installation of components.",
+      "fr": "Dessin détaillé servant à la fabrication et à l'installation des composants.",
+      "status": {
+        "en": "provisional",
+        "fr": "provisional"
+      }
+    },
+    "contextNotes": {
+      "en": "BÂTIR-derived terminology candidate matched to the QC Field Guide production corpus; not a new QC requirement.",
+      "fr": "Candidat terminologique dérivé de BÂTIR et apparié au corpus de production du Guide CQ; il ne constitue pas une nouvelle exigence CQ.",
+      "status": {
+        "en": "validated",
+        "fr": "provisional"
+      }
+    },
+    "status": {
+      "en": "provisional",
+      "fr": "provisional"
+    },
+    "confidence": {
+      "en": "medium",
+      "fr": "medium"
+    },
+    "sourceRef": {
+      "build": "Build 4 / BÂTIR",
+      "document": "batir data.xlsx",
+      "section": "Buildings → Post-construction → Documents"
+    },
+    "aliases": {
+      "fr": [
+        "plan d'atelier"
+      ]
+    }
+  },
+  {
+    "id": "TERM-BATIR-CLOSEOUT-TEST-REPORT",
+    "discipline": "Closeout",
+    "preferred": {
+      "en": "test report",
+      "fr": "rapport d'essai"
+    },
+    "definition": {
+      "en": "Document recording the results of a test or technical analysis.",
+      "fr": "Document consignant les résultats d'un essai ou d'une analyse technique.",
+      "status": {
+        "en": "provisional",
+        "fr": "provisional"
+      }
+    },
+    "contextNotes": {
+      "en": "BÂTIR-derived terminology candidate matched to the QC Field Guide production corpus; not a new QC requirement.",
+      "fr": "Candidat terminologique dérivé de BÂTIR et apparié au corpus de production du Guide CQ; il ne constitue pas une nouvelle exigence CQ.",
+      "status": {
+        "en": "validated",
+        "fr": "provisional"
+      }
+    },
+    "status": {
+      "en": "provisional",
+      "fr": "provisional"
+    },
+    "confidence": {
+      "en": "medium",
+      "fr": "medium"
+    },
+    "sourceRef": {
+      "build": "Build 4 / BÂTIR",
+      "document": "batir data.xlsx",
+      "section": "Buildings → Post-construction → Documents"
+    },
+    "aliases": {
+      "fr": [
+        "compte rendu d'essai",
+        "rapport d'analyse"
+      ]
+    }
+  },
+  {
+    "id": "TERM-BATIR-CLOSEOUT-TESTING",
+    "discipline": "Closeout",
+    "preferred": {
+      "en": "testing",
+      "fr": "réalisation des essais"
+    },
+    "definition": {
+      "en": "Activity involving the testing of systems and equipment.",
+      "fr": "Activité consistant à effectuer des essais sur les systèmes et les équipements.",
+      "status": {
+        "en": "provisional",
+        "fr": "provisional"
+      }
+    },
+    "contextNotes": {
+      "en": "BÂTIR-derived terminology candidate matched to the QC Field Guide production corpus; not a new QC requirement.",
+      "fr": "Candidat terminologique dérivé de BÂTIR et apparié au corpus de production du Guide CQ; il ne constitue pas une nouvelle exigence CQ.",
+      "status": {
+        "en": "validated",
+        "fr": "provisional"
+      }
+    },
+    "status": {
+      "en": "provisional",
+      "fr": "provisional"
+    },
+    "confidence": {
+      "en": "medium",
+      "fr": "medium"
+    },
+    "sourceRef": {
+      "build": "Build 4 / BÂTIR",
+      "document": "batir data.xlsx",
+      "section": "Buildings → Post-construction →Activities"
+    },
+    "aliases": {
+      "fr": [
+        "exécution des essais"
+      ]
+    }
+  },
+  {
+    "id": "TERM-BATIR-CONCRETE-ALIGNMENT",
+    "discipline": "Concrete",
+    "preferred": {
+      "en": "alignment",
+      "fr": "alignement"
+    },
+    "definition": {
+      "en": "Proper positioning of the components of a structure.",
+      "fr": "Positionnement correct des différents éléments d'un ouvrage.",
+      "status": {
+        "en": "provisional",
+        "fr": "provisional"
+      }
+    },
+    "contextNotes": {
+      "en": "BÂTIR-derived terminology candidate matched to the QC Field Guide production corpus; not a new QC requirement.",
+      "fr": "Candidat terminologique dérivé de BÂTIR et apparié au corpus de production du Guide CQ; il ne constitue pas une nouvelle exigence CQ.",
+      "status": {
+        "en": "validated",
+        "fr": "provisional"
+      }
+    },
+    "status": {
+      "en": "provisional",
+      "fr": "provisional"
+    },
+    "confidence": {
+      "en": "medium",
+      "fr": "medium"
+    },
+    "sourceRef": {
+      "build": "Build 4 / BÂTIR",
+      "document": "batir data.xlsx",
+      "section": "Buildings → Construction → Building envelope → Notions techniques"
+    },
+    "aliases": {
+      "fr": [
+        "positionnement",
+        "tracé"
+      ]
+    }
+  },
+  {
+    "id": "TERM-BATIR-CONCRETE-ANCHOR",
+    "discipline": "Concrete",
+    "preferred": {
+      "en": "anchor",
+      "fr": "ancrage"
+    },
+    "definition": {
+      "en": "Device used to secure one element to another.",
+      "fr": "Dispositif assurant la fixation d'un élément à un autre.",
+      "status": {
+        "en": "provisional",
+        "fr": "provisional"
+      }
+    },
+    "contextNotes": {
+      "en": "BÂTIR-derived terminology candidate matched to the QC Field Guide production corpus; not a new QC requirement.",
+      "fr": "Candidat terminologique dérivé de BÂTIR et apparié au corpus de production du Guide CQ; il ne constitue pas une nouvelle exigence CQ.",
+      "status": {
+        "en": "validated",
+        "fr": "provisional"
+      }
+    },
+    "status": {
+      "en": "provisional",
+      "fr": "provisional"
+    },
+    "confidence": {
+      "en": "medium",
+      "fr": "medium"
+    },
+    "sourceRef": {
+      "build": "Build 4 / BÂTIR",
+      "document": "batir data.xlsx",
+      "section": "Buildings → Construction → Building envelope → Elements"
+    },
+    "aliases": {
+      "fr": [
+        "dispositif d'ancrage",
+        "fixation"
+      ]
+    }
+  },
+  {
+    "id": "TERM-BATIR-CONCRETE-ANCHOR-BOLT",
+    "discipline": "Concrete",
+    "preferred": {
+      "en": "anchor bolt",
+      "fr": "boulon d'ancrage"
+    },
+    "definition": {
+      "en": "Bolt used to secure a structural element.",
+      "fr": "Boulon servant à fixer un élément structural.",
+      "status": {
+        "en": "provisional",
+        "fr": "provisional"
+      }
+    },
+    "contextNotes": {
+      "en": "BÂTIR-derived terminology candidate matched to the QC Field Guide production corpus; not a new QC requirement.",
+      "fr": "Candidat terminologique dérivé de BÂTIR et apparié au corpus de production du Guide CQ; il ne constitue pas une nouvelle exigence CQ.",
+      "status": {
+        "en": "validated",
+        "fr": "provisional"
+      }
+    },
+    "status": {
+      "en": "provisional",
+      "fr": "provisional"
+    },
+    "confidence": {
+      "en": "medium",
+      "fr": "medium"
+    },
+    "sourceRef": {
+      "build": "Build 4 / BÂTIR",
+      "document": "batir data.xlsx",
+      "section": "Buildings → Construction → Foundation → Elements"
+    },
+    "aliases": {
+      "fr": [
+        "tige d'ancrage"
+      ]
+    }
+  },
+  {
+    "id": "TERM-BATIR-CONCRETE-BEAM",
+    "discipline": "Concrete",
+    "preferred": {
+      "en": "beam",
+      "fr": "poutre"
+    },
+    "definition": {
+      "en": "Horizontal element used to transfer loads to supporting members.",
+      "fr": "Élément horizontal servant à transférer les charges vers les appuis.",
+      "status": {
+        "en": "provisional",
+        "fr": "provisional"
+      }
+    },
+    "contextNotes": {
+      "en": "BÂTIR-derived terminology candidate matched to the QC Field Guide production corpus; not a new QC requirement.",
+      "fr": "Candidat terminologique dérivé de BÂTIR et apparié au corpus de production du Guide CQ; il ne constitue pas une nouvelle exigence CQ.",
+      "status": {
+        "en": "validated",
+        "fr": "provisional"
+      }
+    },
+    "status": {
+      "en": "provisional",
+      "fr": "provisional"
+    },
+    "confidence": {
+      "en": "medium",
+      "fr": "medium"
+    },
+    "sourceRef": {
+      "build": "Build 4 / BÂTIR",
+      "document": "batir data.xlsx",
+      "section": "Buildings → Construction → Concrete works → Elements"
+    },
+    "aliases": {
+      "fr": [
+        "poutre structurale"
+      ]
+    }
+  },
+  {
+    "id": "TERM-BATIR-CONCRETE-BEARING-CAPACITY",
+    "discipline": "Concrete",
+    "preferred": {
+      "en": "bearing capacity",
+      "fr": "portance"
+    },
+    "definition": {
+      "en": "Ability of the soil to support a load without excessive deformation.",
+      "fr": "Capacité du sol à supporter une charge sans se déformer excessivement.",
+      "status": {
+        "en": "provisional",
+        "fr": "provisional"
+      }
+    },
+    "contextNotes": {
+      "en": "BÂTIR-derived terminology candidate matched to the QC Field Guide production corpus; not a new QC requirement.",
+      "fr": "Candidat terminologique dérivé de BÂTIR et apparié au corpus de production du Guide CQ; il ne constitue pas une nouvelle exigence CQ.",
+      "status": {
+        "en": "validated",
+        "fr": "provisional"
+      }
+    },
+    "status": {
+      "en": "provisional",
+      "fr": "provisional"
+    },
+    "confidence": {
+      "en": "medium",
+      "fr": "medium"
+    },
+    "sourceRef": {
+      "build": "Build 4 / BÂTIR",
+      "document": "batir data.xlsx",
+      "section": "Buildings → Construction → Foundation → Notions techniques"
+    },
+    "aliases": {
+      "fr": [
+        "capacité portante",
+        "portance du sol",
+        "résistance du sol",
+        "résistance portante"
+      ]
+    }
+  },
+  {
+    "id": "TERM-BATIR-CONCRETE-COMPACTION",
+    "discipline": "Concrete",
+    "preferred": {
+      "en": "compaction",
+      "fr": "compaction"
+    },
+    "definition": {
+      "en": "Process used to increase the density of a material.",
+      "fr": "Processus visant à augmenter la densité d'un matériau.",
+      "status": {
+        "en": "provisional",
+        "fr": "provisional"
+      }
+    },
+    "contextNotes": {
+      "en": "BÂTIR-derived terminology candidate matched to the QC Field Guide production corpus; not a new QC requirement.",
+      "fr": "Candidat terminologique dérivé de BÂTIR et apparié au corpus de production du Guide CQ; il ne constitue pas une nouvelle exigence CQ.",
+      "status": {
+        "en": "validated",
+        "fr": "provisional"
+      }
+    },
+    "status": {
+      "en": "provisional",
+      "fr": "provisional"
+    },
+    "confidence": {
+      "en": "medium",
+      "fr": "medium"
+    },
+    "sourceRef": {
+      "build": "Build 4 / BÂTIR",
+      "document": "batir data.xlsx",
+      "section": "Buildings → Construction → Concrete works → Notions techniques"
+    },
+    "aliases": {
+      "fr": [
+        "densification",
+        "tassement contrôlé"
+      ]
+    }
+  },
+  {
+    "id": "TERM-BATIR-CONCRETE-CONCRETE",
+    "discipline": "Concrete",
+    "preferred": {
+      "en": "concrete",
+      "fr": "béton"
+    },
+    "definition": {
+      "en": "Mixture of cement, water, and aggregates used in construction.",
+      "fr": "Mélange de ciment, d'eau et de granulats utilisé pour la construction.",
+      "status": {
+        "en": "provisional",
+        "fr": "provisional"
+      }
+    },
+    "contextNotes": {
+      "en": "BÂTIR-derived terminology candidate matched to the QC Field Guide production corpus; not a new QC requirement.",
+      "fr": "Candidat terminologique dérivé de BÂTIR et apparié au corpus de production du Guide CQ; il ne constitue pas une nouvelle exigence CQ.",
+      "status": {
+        "en": "validated",
+        "fr": "provisional"
+      }
+    },
+    "status": {
+      "en": "provisional",
+      "fr": "provisional"
+    },
+    "confidence": {
+      "en": "medium",
+      "fr": "medium"
+    },
+    "sourceRef": {
+      "build": "Build 4 / BÂTIR",
+      "document": "batir data.xlsx",
+      "section": "Buildings → Construction → Building envelope → Materials"
+    },
+    "aliases": {
+      "fr": [
+        "béton de ciment"
+      ]
+    }
+  },
+  {
+    "id": "TERM-BATIR-CONCRETE-CONSTRUCTION-JOINTS",
+    "discipline": "Concrete",
+    "preferred": {
+      "en": "construction joints",
+      "fr": "joints de construction"
+    },
+    "definition": {
+      "en": "Joints formed between successive concrete placements.",
+      "fr": "Joints formés entre deux étapes successives de bétonnage.",
+      "status": {
+        "en": "provisional",
+        "fr": "provisional"
+      }
+    },
+    "contextNotes": {
+      "en": "BÂTIR-derived terminology candidate matched to the QC Field Guide production corpus; not a new QC requirement.",
+      "fr": "Candidat terminologique dérivé de BÂTIR et apparié au corpus de production du Guide CQ; il ne constitue pas une nouvelle exigence CQ.",
+      "status": {
+        "en": "validated",
+        "fr": "provisional"
+      }
+    },
+    "status": {
+      "en": "provisional",
+      "fr": "provisional"
+    },
+    "confidence": {
+      "en": "medium",
+      "fr": "medium"
+    },
+    "sourceRef": {
+      "build": "Build 4 / BÂTIR",
+      "document": "batir data.xlsx",
+      "section": "Buildings → Construction → Concrete works → Notions techniques"
+    },
+    "aliases": {
+      "fr": [
+        "joints de reprise"
+      ]
+    }
+  },
+  {
+    "id": "TERM-BATIR-CONCRETE-CRANE",
+    "discipline": "Concrete",
+    "preferred": {
+      "en": "crane",
+      "fr": "grue"
+    },
+    "definition": {
+      "en": "Machine used to lift and move heavy loads.",
+      "fr": "Machine utilisée pour soulever et déplacer des charges lourdes.",
+      "status": {
+        "en": "provisional",
+        "fr": "provisional"
+      }
+    },
+    "contextNotes": {
+      "en": "BÂTIR-derived terminology candidate matched to the QC Field Guide production corpus; not a new QC requirement.",
+      "fr": "Candidat terminologique dérivé de BÂTIR et apparié au corpus de production du Guide CQ; il ne constitue pas une nouvelle exigence CQ.",
+      "status": {
+        "en": "validated",
+        "fr": "provisional"
+      }
+    },
+    "status": {
+      "en": "provisional",
+      "fr": "provisional"
+    },
+    "confidence": {
+      "en": "medium",
+      "fr": "medium"
+    },
+    "sourceRef": {
+      "build": "Build 4 / BÂTIR",
+      "document": "batir data.xlsx",
+      "section": "Buildings → Construction → Building envelope → Equipment"
+    },
+    "aliases": {
+      "fr": [
+        "appareil de levage"
+      ]
+    }
+  },
+  {
+    "id": "TERM-BATIR-CONCRETE-CURB",
+    "discipline": "Concrete",
+    "preferred": {
+      "en": "curb",
+      "fr": "bordure"
+    },
+    "definition": {
+      "en": "Element used to define the limits of a surface or roadway.",
+      "fr": "Élément servant à délimiter une surface ou une voie de circulation.",
+      "status": {
+        "en": "provisional",
+        "fr": "provisional"
+      }
+    },
+    "contextNotes": {
+      "en": "BÂTIR-derived terminology candidate matched to the QC Field Guide production corpus; not a new QC requirement.",
+      "fr": "Candidat terminologique dérivé de BÂTIR et apparié au corpus de production du Guide CQ; il ne constitue pas une nouvelle exigence CQ.",
+      "status": {
+        "en": "validated",
+        "fr": "provisional"
+      }
+    },
+    "status": {
+      "en": "provisional",
+      "fr": "provisional"
+    },
+    "confidence": {
+      "en": "medium",
+      "fr": "medium"
+    },
+    "sourceRef": {
+      "build": "Build 4 / BÂTIR",
+      "document": "batir data.xlsx",
+      "section": "Buildings → Construction → Concrete works → Elements"
+    },
+    "aliases": {
+      "fr": [
+        "bordure de béton",
+        "bordure de rue"
+      ]
+    }
+  },
+  {
+    "id": "TERM-BATIR-CONCRETE-CURING",
+    "discipline": "Concrete",
+    "preferred": {
+      "en": "curing",
+      "fr": "cure"
+    },
+    "definition": {
+      "en": "Set of measures intended to ensure proper concrete hardening.",
+      "fr": "Ensemble des mesures destinées à assurer le durcissement adéquat du béton.",
+      "status": {
+        "en": "provisional",
+        "fr": "provisional"
+      }
+    },
+    "contextNotes": {
+      "en": "BÂTIR-derived terminology candidate matched to the QC Field Guide production corpus; not a new QC requirement.",
+      "fr": "Candidat terminologique dérivé de BÂTIR et apparié au corpus de production du Guide CQ; il ne constitue pas une nouvelle exigence CQ.",
+      "status": {
+        "en": "validated",
+        "fr": "provisional"
+      }
+    },
+    "status": {
+      "en": "provisional",
+      "fr": "provisional"
+    },
+    "confidence": {
+      "en": "medium",
+      "fr": "medium"
+    },
+    "sourceRef": {
+      "build": "Build 4 / BÂTIR",
+      "document": "batir data.xlsx",
+      "section": "Buildings → Construction → Concrete works → Notions techniques"
+    },
+    "aliases": {
+      "fr": [
+        "cure du béton"
+      ]
+    }
+  },
+  {
+    "id": "TERM-BATIR-CONCRETE-DENSITY",
+    "discipline": "Concrete",
+    "preferred": {
+      "en": "density",
+      "fr": "densité"
+    },
+    "definition": {
+      "en": "Ratio between the mass of a material and its volume.",
+      "fr": "Rapport entre la masse d'un matériau et son volume.",
+      "status": {
+        "en": "provisional",
+        "fr": "provisional"
+      }
+    },
+    "contextNotes": {
+      "en": "BÂTIR-derived terminology candidate matched to the QC Field Guide production corpus; not a new QC requirement.",
+      "fr": "Candidat terminologique dérivé de BÂTIR et apparié au corpus de production du Guide CQ; il ne constitue pas une nouvelle exigence CQ.",
+      "status": {
+        "en": "validated",
+        "fr": "provisional"
+      }
+    },
+    "status": {
+      "en": "provisional",
+      "fr": "provisional"
+    },
+    "confidence": {
+      "en": "medium",
+      "fr": "medium"
+    },
+    "sourceRef": {
+      "build": "Build 4 / BÂTIR",
+      "document": "batir data.xlsx",
+      "section": "Buildings → Construction → Foundation → Notions techniques"
+    },
+    "aliases": {
+      "fr": [
+        "masse volumique"
+      ]
+    }
+  },
+  {
+    "id": "TERM-BATIR-CONCRETE-DRAINAGE",
+    "discipline": "Concrete",
+    "preferred": {
+      "en": "drainage",
+      "fr": "drainage"
+    },
+    "definition": {
+      "en": "Collection of measures designed to remove water from an area.",
+      "fr": "Ensemble des mesures destinées à évacuer l'eau d'une zone.",
+      "status": {
+        "en": "provisional",
+        "fr": "provisional"
+      }
+    },
+    "contextNotes": {
+      "en": "BÂTIR-derived terminology candidate matched to the QC Field Guide production corpus; not a new QC requirement.",
+      "fr": "Candidat terminologique dérivé de BÂTIR et apparié au corpus de production du Guide CQ; il ne constitue pas une nouvelle exigence CQ.",
+      "status": {
+        "en": "validated",
+        "fr": "provisional"
+      }
+    },
+    "status": {
+      "en": "provisional",
+      "fr": "provisional"
+    },
+    "confidence": {
+      "en": "medium",
+      "fr": "medium"
+    },
+    "sourceRef": {
+      "build": "Build 4 / BÂTIR",
+      "document": "batir data.xlsx",
+      "section": "Buildings → Construction → Building envelope → Notions techniques"
+    },
+    "aliases": {
+      "fr": [
+        "évacuation de l'eau",
+        "évacuation des eaux",
+        "système de drainage"
+      ]
+    }
+  },
+  {
+    "id": "TERM-BATIR-CONCRETE-EXPANSION-JOINTS",
+    "discipline": "Concrete",
+    "preferred": {
+      "en": "expansion joints",
+      "fr": "joints de dilatation"
+    },
+    "definition": {
+      "en": "Joints designed to absorb dimensional changes in concrete.",
+      "fr": "Joints conçus pour absorber les variations dimensionnelles du béton.",
+      "status": {
+        "en": "provisional",
+        "fr": "provisional"
+      }
+    },
+    "contextNotes": {
+      "en": "BÂTIR-derived terminology candidate matched to the QC Field Guide production corpus; not a new QC requirement.",
+      "fr": "Candidat terminologique dérivé de BÂTIR et apparié au corpus de production du Guide CQ; il ne constitue pas une nouvelle exigence CQ.",
+      "status": {
+        "en": "validated",
+        "fr": "provisional"
+      }
+    },
+    "status": {
+      "en": "provisional",
+      "fr": "provisional"
+    },
+    "confidence": {
+      "en": "medium",
+      "fr": "medium"
+    },
+    "sourceRef": {
+      "build": "Build 4 / BÂTIR",
+      "document": "batir data.xlsx",
+      "section": "Buildings → Construction → Concrete works → Notions techniques"
+    },
+    "aliases": {
+      "fr": [
+        "joints de mouvement"
+      ]
+    }
+  },
+  {
+    "id": "TERM-BATIR-CONCRETE-FOOTING",
+    "discipline": "Concrete",
+    "preferred": {
+      "en": "footing",
+      "fr": "semelle"
+    },
+    "definition": {
+      "en": "Foundation element used to transfer loads into the ground.",
+      "fr": "Fondation servant à transmettre les charges vers le sol.",
+      "status": {
+        "en": "provisional",
+        "fr": "provisional"
+      }
+    },
+    "contextNotes": {
+      "en": "BÂTIR-derived terminology candidate matched to the QC Field Guide production corpus; not a new QC requirement.",
+      "fr": "Candidat terminologique dérivé de BÂTIR et apparié au corpus de production du Guide CQ; il ne constitue pas une nouvelle exigence CQ.",
+      "status": {
+        "en": "validated",
+        "fr": "provisional"
+      }
+    },
+    "status": {
+      "en": "provisional",
+      "fr": "provisional"
+    },
+    "confidence": {
+      "en": "medium",
+      "fr": "medium"
+    },
+    "sourceRef": {
+      "build": "Build 4 / BÂTIR",
+      "document": "batir data.xlsx",
+      "section": "Buildings → Construction → Concrete works → Elements"
+    },
+    "aliases": {
+      "fr": [
+        "semelle de fondation"
+      ]
+    }
+  },
+  {
+    "id": "TERM-BATIR-CONCRETE-FORMWORK",
+    "discipline": "Concrete",
+    "preferred": {
+      "en": "formwork",
+      "fr": "coffrage"
+    },
+    "definition": {
+      "en": "Temporary structure used to hold concrete in place.",
+      "fr": "Structure temporaire servant à maintenir le béton en place.",
+      "status": {
+        "en": "provisional",
+        "fr": "provisional"
+      }
+    },
+    "contextNotes": {
+      "en": "BÂTIR-derived terminology candidate matched to the QC Field Guide production corpus; not a new QC requirement.",
+      "fr": "Candidat terminologique dérivé de BÂTIR et apparié au corpus de production du Guide CQ; il ne constitue pas une nouvelle exigence CQ.",
+      "status": {
+        "en": "validated",
+        "fr": "provisional"
+      }
+    },
+    "status": {
+      "en": "provisional",
+      "fr": "provisional"
+    },
+    "confidence": {
+      "en": "medium",
+      "fr": "medium"
+    },
+    "sourceRef": {
+      "build": "Build 4 / BÂTIR",
+      "document": "batir data.xlsx",
+      "section": "Buildings → Construction → Concrete works → Elements"
+    },
+    "aliases": {
+      "fr": [
+        "moule"
+      ]
+    }
+  },
+  {
+    "id": "TERM-BATIR-CONCRETE-FOUNDATION",
+    "discipline": "Concrete",
+    "preferred": {
+      "en": "foundation",
+      "fr": "fondation"
+    },
+    "definition": {
+      "en": "Part of the structure that transfers loads to the ground.",
+      "fr": "Partie de l'ouvrage qui transmet les charges au sol.",
+      "status": {
+        "en": "provisional",
+        "fr": "provisional"
+      }
+    },
+    "contextNotes": {
+      "en": "BÂTIR-derived terminology candidate matched to the QC Field Guide production corpus; not a new QC requirement.",
+      "fr": "Candidat terminologique dérivé de BÂTIR et apparié au corpus de production du Guide CQ; il ne constitue pas une nouvelle exigence CQ.",
+      "status": {
+        "en": "validated",
+        "fr": "provisional"
+      }
+    },
+    "status": {
+      "en": "provisional",
+      "fr": "provisional"
+    },
+    "confidence": {
+      "en": "medium",
+      "fr": "medium"
+    },
+    "sourceRef": {
+      "build": "Build 4 / BÂTIR",
+      "document": "batir data.xlsx",
+      "section": "Infrastructure → Construction → Bridges → Elements"
+    },
+    "aliases": {
+      "fr": [
+        "assise"
+      ]
+    }
+  },
+  {
+    "id": "TERM-BATIR-CONCRETE-GROUT",
+    "discipline": "Concrete",
+    "preferred": {
+      "en": "grout",
+      "fr": "coulis"
+    },
+    "definition": {
+      "en": "Fluid mixture used to fill voids or anchor components.",
+      "fr": "Mélange fluide utilisé pour remplir des espaces ou assurer l'ancrage d'éléments.",
+      "status": {
+        "en": "provisional",
+        "fr": "provisional"
+      }
+    },
+    "contextNotes": {
+      "en": "BÂTIR-derived terminology candidate matched to the QC Field Guide production corpus; not a new QC requirement.",
+      "fr": "Candidat terminologique dérivé de BÂTIR et apparié au corpus de production du Guide CQ; il ne constitue pas une nouvelle exigence CQ.",
+      "status": {
+        "en": "validated",
+        "fr": "provisional"
+      }
+    },
+    "status": {
+      "en": "provisional",
+      "fr": "provisional"
+    },
+    "confidence": {
+      "en": "medium",
+      "fr": "medium"
+    },
+    "sourceRef": {
+      "build": "Build 4 / BÂTIR",
+      "document": "batir data.xlsx",
+      "section": "Buildings → Construction → Building envelope → Materials"
+    },
+    "aliases": {
+      "fr": [
+        "coulis de ciment",
+        "mortier de jointoiement"
+      ]
+    }
+  },
+  {
+    "id": "TERM-BATIR-CONCRETE-INSULATION",
+    "discipline": "Concrete",
+    "preferred": {
+      "en": "insulation",
+      "fr": "isolant"
+    },
+    "definition": {
+      "en": "Material used to reduce heat transfer.",
+      "fr": "Matériau utilisé pour limiter les transferts de chaleur.",
+      "status": {
+        "en": "provisional",
+        "fr": "provisional"
+      }
+    },
+    "contextNotes": {
+      "en": "BÂTIR-derived terminology candidate matched to the QC Field Guide production corpus; not a new QC requirement.",
+      "fr": "Candidat terminologique dérivé de BÂTIR et apparié au corpus de production du Guide CQ; il ne constitue pas une nouvelle exigence CQ.",
+      "status": {
+        "en": "validated",
+        "fr": "provisional"
+      }
+    },
+    "status": {
+      "en": "provisional",
+      "fr": "provisional"
+    },
+    "confidence": {
+      "en": "medium",
+      "fr": "medium"
+    },
+    "sourceRef": {
+      "build": "Build 4 / BÂTIR",
+      "document": "batir data.xlsx",
+      "section": "Buildings → Construction → Building envelope → Elements"
+    },
+    "aliases": {
+      "fr": [
+        "matériau isolant",
+        "protection isolante"
+      ]
+    }
+  },
+  {
+    "id": "TERM-BATIR-CONCRETE-MORTAR",
+    "discipline": "Concrete",
+    "preferred": {
+      "en": "mortar",
+      "fr": "mortier"
+    },
+    "definition": {
+      "en": "Mixture composed of cement, sand, and water.",
+      "fr": "Mélange composé de ciment, de sable et d'eau.",
+      "status": {
+        "en": "provisional",
+        "fr": "provisional"
+      }
+    },
+    "contextNotes": {
+      "en": "BÂTIR-derived terminology candidate matched to the QC Field Guide production corpus; not a new QC requirement.",
+      "fr": "Candidat terminologique dérivé de BÂTIR et apparié au corpus de production du Guide CQ; il ne constitue pas une nouvelle exigence CQ.",
+      "status": {
+        "en": "validated",
+        "fr": "provisional"
+      }
+    },
+    "status": {
+      "en": "provisional",
+      "fr": "provisional"
+    },
+    "confidence": {
+      "en": "medium",
+      "fr": "medium"
+    },
+    "sourceRef": {
+      "build": "Build 4 / BÂTIR",
+      "document": "batir data.xlsx",
+      "section": "Buildings → Construction → Building envelope → Materials"
+    },
+    "aliases": {
+      "fr": [
+        "mortier de ciment",
+        "mortier de pose"
+      ]
+    }
+  },
+  {
+    "id": "TERM-BATIR-CONCRETE-POROSITY",
+    "discipline": "Concrete",
+    "preferred": {
+      "en": "porosity",
+      "fr": "porosité"
+    },
+    "definition": {
+      "en": "Proportion of voids contained within a material.",
+      "fr": "Proportion des vides présents dans un matériau.",
+      "status": {
+        "en": "provisional",
+        "fr": "provisional"
+      }
+    },
+    "contextNotes": {
+      "en": "BÂTIR-derived terminology candidate matched to the QC Field Guide production corpus; not a new QC requirement.",
+      "fr": "Candidat terminologique dérivé de BÂTIR et apparié au corpus de production du Guide CQ; il ne constitue pas une nouvelle exigence CQ.",
+      "status": {
+        "en": "validated",
+        "fr": "provisional"
+      }
+    },
+    "status": {
+      "en": "provisional",
+      "fr": "provisional"
+    },
+    "confidence": {
+      "en": "medium",
+      "fr": "medium"
+    },
+    "sourceRef": {
+      "build": "Build 4 / BÂTIR",
+      "document": "batir data.xlsx",
+      "section": "Buildings → Construction → Concrete works → Notions techniques"
+    },
+    "aliases": {
+      "fr": [
+        "perméabilité interne",
+        "taux de vide"
+      ]
+    }
+  },
+  {
+    "id": "TERM-BATIR-CONCRETE-SEGREGATION",
+    "discipline": "Concrete",
+    "preferred": {
+      "en": "segregation",
+      "fr": "ségrégation"
+    },
+    "definition": {
+      "en": "Separation of concrete components during placement.",
+      "fr": "Séparation des composants du béton durant sa mise en œuvre.",
+      "status": {
+        "en": "provisional",
+        "fr": "provisional"
+      }
+    },
+    "contextNotes": {
+      "en": "BÂTIR-derived terminology candidate matched to the QC Field Guide production corpus; not a new QC requirement.",
+      "fr": "Candidat terminologique dérivé de BÂTIR et apparié au corpus de production du Guide CQ; il ne constitue pas une nouvelle exigence CQ.",
+      "status": {
+        "en": "validated",
+        "fr": "provisional"
+      }
+    },
+    "status": {
+      "en": "provisional",
+      "fr": "provisional"
+    },
+    "confidence": {
+      "en": "medium",
+      "fr": "medium"
+    },
+    "sourceRef": {
+      "build": "Build 4 / BÂTIR",
+      "document": "batir data.xlsx",
+      "section": "Buildings → Construction → Concrete works → Notions techniques"
+    },
+    "aliases": {
+      "fr": [
+        "séparation des constituants"
+      ]
+    }
+  },
+  {
+    "id": "TERM-BATIR-CONCRETE-SLAB",
+    "discipline": "Concrete",
+    "preferred": {
+      "en": "slab",
+      "fr": "dalle"
+    },
+    "definition": {
+      "en": "Horizontal concrete element designed to support loads.",
+      "fr": "Élément horizontal en béton servant à supporter des charges.",
+      "status": {
+        "en": "provisional",
+        "fr": "provisional"
+      }
+    },
+    "contextNotes": {
+      "en": "BÂTIR-derived terminology candidate matched to the QC Field Guide production corpus; not a new QC requirement.",
+      "fr": "Candidat terminologique dérivé de BÂTIR et apparié au corpus de production du Guide CQ; il ne constitue pas une nouvelle exigence CQ.",
+      "status": {
+        "en": "validated",
+        "fr": "provisional"
+      }
+    },
+    "status": {
+      "en": "provisional",
+      "fr": "provisional"
+    },
+    "confidence": {
+      "en": "medium",
+      "fr": "medium"
+    },
+    "sourceRef": {
+      "build": "Build 4 / BÂTIR",
+      "document": "batir data.xlsx",
+      "section": "Buildings → Construction → Concrete works → Elements"
+    },
+    "aliases": {
+      "fr": [
+        "dalle de béton"
+      ]
+    }
+  },
+  {
+    "id": "TERM-BATIR-CONCRETE-SLAB-ON-GRADE",
+    "discipline": "Concrete",
+    "preferred": {
+      "en": "slab-on-grade",
+      "fr": "dalle sur sol"
+    },
+    "definition": {
+      "en": "Concrete slab poured directly onto prepared ground.",
+      "fr": "Dalle de béton coulée directement sur le sol préparé.",
+      "status": {
+        "en": "provisional",
+        "fr": "provisional"
+      }
+    },
+    "contextNotes": {
+      "en": "BÂTIR-derived terminology candidate matched to the QC Field Guide production corpus; not a new QC requirement.",
+      "fr": "Candidat terminologique dérivé de BÂTIR et apparié au corpus de production du Guide CQ; il ne constitue pas une nouvelle exigence CQ.",
+      "status": {
+        "en": "validated",
+        "fr": "provisional"
+      }
+    },
+    "status": {
+      "en": "provisional",
+      "fr": "provisional"
+    },
+    "confidence": {
+      "en": "medium",
+      "fr": "medium"
+    },
+    "sourceRef": {
+      "build": "Build 4 / BÂTIR",
+      "document": "batir data.xlsx",
+      "section": "Buildings → Construction → Concrete works → Elements"
+    },
+    "aliases": {
+      "fr": [
+        "dalle de béton",
+        "dalle de béton sur sol"
+      ]
+    }
+  },
+  {
+    "id": "TERM-BATIR-CONCRETE-SLUMP",
+    "discipline": "Concrete",
+    "preferred": {
+      "en": "slump",
+      "fr": "affaissement"
+    },
+    "definition": {
+      "en": "Measurement of the consistency of fresh concrete.",
+      "fr": "Mesure de la consistance du béton frais.",
+      "status": {
+        "en": "provisional",
+        "fr": "provisional"
+      }
+    },
+    "contextNotes": {
+      "en": "BÂTIR-derived terminology candidate matched to the QC Field Guide production corpus; not a new QC requirement.",
+      "fr": "Candidat terminologique dérivé de BÂTIR et apparié au corpus de production du Guide CQ; il ne constitue pas une nouvelle exigence CQ.",
+      "status": {
+        "en": "validated",
+        "fr": "provisional"
+      }
+    },
+    "status": {
+      "en": "provisional",
+      "fr": "provisional"
+    },
+    "confidence": {
+      "en": "medium",
+      "fr": "medium"
+    },
+    "sourceRef": {
+      "build": "Build 4 / BÂTIR",
+      "document": "batir data.xlsx",
+      "section": "Buildings → Construction → Concrete works → Notions techniques"
+    },
+    "aliases": {
+      "fr": [
+        "essai d'affaissement"
+      ]
+    }
+  },
+  {
+    "id": "TERM-BATIR-CONCRETE-TOLERANCE",
+    "discipline": "Concrete",
+    "preferred": {
+      "en": "tolerance",
+      "fr": "tolérance"
+    },
+    "definition": {
+      "en": "Acceptable deviation from specified dimensions.",
+      "fr": "Écart acceptable par rapport aux dimensions prévues.",
+      "status": {
+        "en": "provisional",
+        "fr": "provisional"
+      }
+    },
+    "contextNotes": {
+      "en": "BÂTIR-derived terminology candidate matched to the QC Field Guide production corpus; not a new QC requirement.",
+      "fr": "Candidat terminologique dérivé de BÂTIR et apparié au corpus de production du Guide CQ; il ne constitue pas une nouvelle exigence CQ.",
+      "status": {
+        "en": "validated",
+        "fr": "provisional"
+      }
+    },
+    "status": {
+      "en": "provisional",
+      "fr": "provisional"
+    },
+    "confidence": {
+      "en": "medium",
+      "fr": "medium"
+    },
+    "sourceRef": {
+      "build": "Build 4 / BÂTIR",
+      "document": "batir data.xlsx",
+      "section": "Buildings → Construction → Building envelope → Notions techniques"
+    },
+    "aliases": {
+      "fr": [
+        "marge admissible"
+      ]
+    }
+  },
+  {
+    "id": "TERM-BATIR-CONCRETE-VIBRATION",
+    "discipline": "Concrete",
+    "preferred": {
+      "en": "vibration",
+      "fr": "vibration"
+    },
+    "definition": {
+      "en": "Process intended to eliminate voids in fresh concrete.",
+      "fr": "Opération visant à éliminer les vides présents dans le béton frais.",
+      "status": {
+        "en": "provisional",
+        "fr": "provisional"
+      }
+    },
+    "contextNotes": {
+      "en": "BÂTIR-derived terminology candidate matched to the QC Field Guide production corpus; not a new QC requirement.",
+      "fr": "Candidat terminologique dérivé de BÂTIR et apparié au corpus de production du Guide CQ; il ne constitue pas une nouvelle exigence CQ.",
+      "status": {
+        "en": "validated",
+        "fr": "provisional"
+      }
+    },
+    "status": {
+      "en": "provisional",
+      "fr": "provisional"
+    },
+    "confidence": {
+      "en": "medium",
+      "fr": "medium"
+    },
+    "sourceRef": {
+      "build": "Build 4 / BÂTIR",
+      "document": "batir data.xlsx",
+      "section": "Buildings → Construction → Concrete works → Notions techniques"
+    },
+    "aliases": {
+      "fr": [
+        "compactage vibratoire"
+      ]
+    }
+  },
+  {
+    "id": "TERM-BATIR-CONCRETE-WATER",
+    "discipline": "Concrete",
+    "preferred": {
+      "en": "water",
+      "fr": "eau"
+    },
+    "definition": {
+      "en": "Liquid used in concrete preparation and soil compaction.",
+      "fr": "Liquide utilisé dans la préparation du béton et le compactage des sols.",
+      "status": {
+        "en": "provisional",
+        "fr": "provisional"
+      }
+    },
+    "contextNotes": {
+      "en": "BÂTIR-derived terminology candidate matched to the QC Field Guide production corpus; not a new QC requirement.",
+      "fr": "Candidat terminologique dérivé de BÂTIR et apparié au corpus de production du Guide CQ; il ne constitue pas une nouvelle exigence CQ.",
+      "status": {
+        "en": "validated",
+        "fr": "provisional"
+      }
+    },
+    "status": {
+      "en": "provisional",
+      "fr": "provisional"
+    },
+    "confidence": {
+      "en": "medium",
+      "fr": "medium"
+    },
+    "sourceRef": {
+      "build": "Build 4 / BÂTIR",
+      "document": "batir data.xlsx",
+      "section": "Buildings → Construction → Concrete works → Materials"
+    },
+    "aliases": {
+      "fr": [
+        "eau de chantier",
+        "eau de gâchage"
+      ]
+    }
+  },
+  {
+    "id": "TERM-BATIR-EARTHWORKS-ASPHALT",
+    "discipline": "Earthworks",
+    "preferred": {
+      "en": "asphalt",
+      "fr": "asphalte"
+    },
+    "definition": {
+      "en": "Mixture used for the construction of traffic surfaces.",
+      "fr": "Mélange utilisé pour la construction des surfaces de circulation.",
+      "status": {
+        "en": "provisional",
+        "fr": "provisional"
+      }
+    },
+    "contextNotes": {
+      "en": "BÂTIR-derived terminology candidate matched to the QC Field Guide production corpus; not a new QC requirement.",
+      "fr": "Candidat terminologique dérivé de BÂTIR et apparié au corpus de production du Guide CQ; il ne constitue pas une nouvelle exigence CQ.",
+      "status": {
+        "en": "validated",
+        "fr": "provisional"
+      }
+    },
+    "status": {
+      "en": "provisional",
+      "fr": "provisional"
+    },
+    "confidence": {
+      "en": "medium",
+      "fr": "medium"
+    },
+    "sourceRef": {
+      "build": "Build 4 / BÂTIR",
+      "document": "batir data.xlsx",
+      "section": "Buildings → Construction → Site preparation → Materials"
+    },
+    "aliases": {
+      "fr": [
+        "enrobé bitumineux",
+        "revêtement asphaltique"
+      ]
+    }
+  },
+  {
+    "id": "TERM-BATIR-EARTHWORKS-GEOTEXTILE",
+    "discipline": "Earthworks",
+    "preferred": {
+      "en": "geotextile",
+      "fr": "géotextile"
+    },
+    "definition": {
+      "en": "Synthetic material used to separate, filter, or reinforce soil.",
+      "fr": "Matériau synthétique utilisé pour séparer, filtrer ou renforcer le sol.",
+      "status": {
+        "en": "provisional",
+        "fr": "provisional"
+      }
+    },
+    "contextNotes": {
+      "en": "BÂTIR-derived terminology candidate matched to the QC Field Guide production corpus; not a new QC requirement.",
+      "fr": "Candidat terminologique dérivé de BÂTIR et apparié au corpus de production du Guide CQ; il ne constitue pas une nouvelle exigence CQ.",
+      "status": {
+        "en": "validated",
+        "fr": "provisional"
+      }
+    },
+    "status": {
+      "en": "provisional",
+      "fr": "provisional"
+    },
+    "confidence": {
+      "en": "medium",
+      "fr": "medium"
+    },
+    "sourceRef": {
+      "build": "Build 4 / BÂTIR",
+      "document": "batir data.xlsx",
+      "section": "Buildings → Construction → Foundation → Materials"
+    },
+    "aliases": {
+      "fr": [
+        "toile géotextile"
+      ]
+    }
+  },
+  {
+    "id": "TERM-BATIR-EARTHWORKS-GRAVEL",
+    "discipline": "Earthworks",
+    "preferred": {
+      "en": "gravel",
+      "fr": "gravier"
+    },
+    "definition": {
+      "en": "Collection of small stones used in construction work.",
+      "fr": "Ensemble de petites pierres utilisées dans les travaux de construction.",
+      "status": {
+        "en": "provisional",
+        "fr": "provisional"
+      }
+    },
+    "contextNotes": {
+      "en": "BÂTIR-derived terminology candidate matched to the QC Field Guide production corpus; not a new QC requirement.",
+      "fr": "Candidat terminologique dérivé de BÂTIR et apparié au corpus de production du Guide CQ; il ne constitue pas une nouvelle exigence CQ.",
+      "status": {
+        "en": "validated",
+        "fr": "provisional"
+      }
+    },
+    "status": {
+      "en": "provisional",
+      "fr": "provisional"
+    },
+    "confidence": {
+      "en": "medium",
+      "fr": "medium"
+    },
+    "sourceRef": {
+      "build": "Build 4 / BÂTIR",
+      "document": "batir data.xlsx",
+      "section": "Buildings → Construction → Concrete works → Materials"
+    },
+    "aliases": {
+      "fr": [
+        "agrégat grossier",
+        "granulat",
+        "pierre nette"
+      ]
+    }
+  },
+  {
+    "id": "TERM-BATIR-EARTHWORKS-MEMBRANE",
+    "discipline": "Earthworks",
+    "preferred": {
+      "en": "membrane",
+      "fr": "membrane"
+    },
+    "definition": {
+      "en": "Layer of material used to ensure waterproofing or surface protection.",
+      "fr": "Couche de matériau utilisée pour assurer l'étanchéité ou la protection d'une surface.",
+      "status": {
+        "en": "provisional",
+        "fr": "provisional"
+      }
+    },
+    "contextNotes": {
+      "en": "BÂTIR-derived terminology candidate matched to the QC Field Guide production corpus; not a new QC requirement.",
+      "fr": "Candidat terminologique dérivé de BÂTIR et apparié au corpus de production du Guide CQ; il ne constitue pas une nouvelle exigence CQ.",
+      "status": {
+        "en": "validated",
+        "fr": "provisional"
+      }
+    },
+    "status": {
+      "en": "provisional",
+      "fr": "provisional"
+    },
+    "confidence": {
+      "en": "medium",
+      "fr": "medium"
+    },
+    "sourceRef": {
+      "build": "Build 4 / BÂTIR",
+      "document": "batir data.xlsx",
+      "section": "Buildings → Construction → Site preparation → Materials"
+    },
+    "aliases": {
+      "fr": [
+        "membrane de protection"
+      ]
+    }
+  },
+  {
+    "id": "TERM-BATIR-EARTHWORKS-SLOPE",
+    "discipline": "Earthworks",
+    "preferred": {
+      "en": "slope",
+      "fr": "pente"
+    },
+    "definition": {
+      "en": "Inclined surface formed naturally or artificially.",
+      "fr": "Surface inclinée formée naturellement ou artificiellement.",
+      "status": {
+        "en": "provisional",
+        "fr": "provisional"
+      }
+    },
+    "contextNotes": {
+      "en": "BÂTIR-derived terminology candidate matched to the QC Field Guide production corpus; not a new QC requirement.",
+      "fr": "Candidat terminologique dérivé de BÂTIR et apparié au corpus de production du Guide CQ; il ne constitue pas une nouvelle exigence CQ.",
+      "status": {
+        "en": "validated",
+        "fr": "provisional"
+      }
+    },
+    "status": {
+      "en": "provisional",
+      "fr": "provisional"
+    },
+    "confidence": {
+      "en": "medium",
+      "fr": "medium"
+    },
+    "sourceRef": {
+      "build": "Build 4 / BÂTIR",
+      "document": "batir data.xlsx",
+      "section": "Buildings → Construction → Site preparation → Elements"
+    },
+    "aliases": {
+      "fr": [
+        "inclinaison",
+        "pente de talus"
+      ]
+    }
+  },
+  {
+    "id": "TERM-BATIR-EARTHWORKS-STEEL",
+    "discipline": "Earthworks",
+    "preferred": {
+      "en": "steel",
+      "fr": "acier"
+    },
+    "definition": {
+      "en": "Metal used to manufacture structural or temporary elements.",
+      "fr": "Métal utilisé pour fabriquer des éléments structuraux ou temporaires.",
+      "status": {
+        "en": "provisional",
+        "fr": "provisional"
+      }
+    },
+    "contextNotes": {
+      "en": "BÂTIR-derived terminology candidate matched to the QC Field Guide production corpus; not a new QC requirement.",
+      "fr": "Candidat terminologique dérivé de BÂTIR et apparié au corpus de production du Guide CQ; il ne constitue pas une nouvelle exigence CQ.",
+      "status": {
+        "en": "validated",
+        "fr": "provisional"
+      }
+    },
+    "status": {
+      "en": "provisional",
+      "fr": "provisional"
+    },
+    "confidence": {
+      "en": "medium",
+      "fr": "medium"
+    },
+    "sourceRef": {
+      "build": "Build 4 / BÂTIR",
+      "document": "batir data.xlsx",
+      "section": "Buildings → Construction → Building envelope → Materials"
+    },
+    "aliases": {
+      "fr": [
+        "acier de construction",
+        "acier structural"
+      ]
+    }
+  },
+  {
+    "id": "TERM-BATIR-EARTHWORKS-TRENCH",
+    "discipline": "Earthworks",
+    "preferred": {
+      "en": "trench",
+      "fr": "tranchée"
+    },
+    "definition": {
+      "en": "Narrow excavation made in the ground.",
+      "fr": "Excavation étroite réalisée dans le sol.",
+      "status": {
+        "en": "provisional",
+        "fr": "provisional"
+      }
+    },
+    "contextNotes": {
+      "en": "BÂTIR-derived terminology candidate matched to the QC Field Guide production corpus; not a new QC requirement.",
+      "fr": "Candidat terminologique dérivé de BÂTIR et apparié au corpus de production du Guide CQ; il ne constitue pas une nouvelle exigence CQ.",
+      "status": {
+        "en": "validated",
+        "fr": "provisional"
+      }
+    },
+    "status": {
+      "en": "provisional",
+      "fr": "provisional"
+    },
+    "confidence": {
+      "en": "medium",
+      "fr": "medium"
+    },
+    "sourceRef": {
+      "build": "Build 4 / BÂTIR",
+      "document": "batir data.xlsx",
+      "section": "Buildings → Construction → Site preparation → Elements"
+    },
+    "aliases": {
+      "fr": [
+        "excavation linéaire",
+        "fouille"
+      ]
+    }
+  },
+  {
+    "id": "TERM-BATIR-ELECTRICAL-GROUNDING",
+    "discipline": "Electrical",
+    "preferred": {
+      "en": "grounding",
+      "fr": "mise à la terre"
+    },
+    "definition": {
+      "en": "Process of connecting an electrical system to the ground for safety purposes.",
+      "fr": "Procédé consistant à relier une installation électrique au sol afin d'assurer la sécurité des occupants.",
+      "status": {
+        "en": "provisional",
+        "fr": "provisional"
+      }
+    },
+    "contextNotes": {
+      "en": "BÂTIR-derived terminology candidate matched to the QC Field Guide production corpus; not a new QC requirement.",
+      "fr": "Candidat terminologique dérivé de BÂTIR et apparié au corpus de production du Guide CQ; il ne constitue pas une nouvelle exigence CQ.",
+      "status": {
+        "en": "validated",
+        "fr": "provisional"
+      }
+    },
+    "status": {
+      "en": "provisional",
+      "fr": "provisional"
+    },
+    "confidence": {
+      "en": "medium",
+      "fr": "medium"
+    },
+    "sourceRef": {
+      "build": "Build 4 / BÂTIR",
+      "document": "batir data.xlsx",
+      "section": "Buildings → Construction → Building systems → Notions techniques"
+    },
+    "aliases": {
+      "fr": [
+        "liaison à la terre"
+      ]
+    }
+  },
+  {
+    "id": "TERM-BATIR-ENVELOPE-ADHESION",
+    "discipline": "Envelope",
+    "preferred": {
+      "en": "adhesion",
+      "fr": "adhérence"
+    },
+    "definition": {
+      "en": "Ability of two surfaces to remain firmly attached to each other.",
+      "fr": "Capacité de deux surfaces à demeurer solidement fixées l'une à l'autre.",
+      "status": {
+        "en": "provisional",
+        "fr": "provisional"
+      }
+    },
+    "contextNotes": {
+      "en": "BÂTIR-derived terminology candidate matched to the QC Field Guide production corpus; not a new QC requirement.",
+      "fr": "Candidat terminologique dérivé de BÂTIR et apparié au corpus de production du Guide CQ; il ne constitue pas une nouvelle exigence CQ.",
+      "status": {
+        "en": "validated",
+        "fr": "provisional"
+      }
+    },
+    "status": {
+      "en": "provisional",
+      "fr": "provisional"
+    },
+    "confidence": {
+      "en": "medium",
+      "fr": "medium"
+    },
+    "sourceRef": {
+      "build": "Build 4 / BÂTIR",
+      "document": "batir data.xlsx",
+      "section": "Buildings → Construction → Building envelope → Notions techniques"
+    },
+    "aliases": {
+      "fr": [
+        "liaison"
+      ]
+    }
+  },
+  {
+    "id": "TERM-BATIR-ENVELOPE-COATING",
+    "discipline": "Envelope",
+    "preferred": {
+      "en": "coating",
+      "fr": "enduit"
+    },
+    "definition": {
+      "en": "Protective layer applied to a surface.",
+      "fr": "Couche protectrice appliquée sur une surface.",
+      "status": {
+        "en": "provisional",
+        "fr": "provisional"
+      }
+    },
+    "contextNotes": {
+      "en": "BÂTIR-derived terminology candidate matched to the QC Field Guide production corpus; not a new QC requirement.",
+      "fr": "Candidat terminologique dérivé de BÂTIR et apparié au corpus de production du Guide CQ; il ne constitue pas une nouvelle exigence CQ.",
+      "status": {
+        "en": "validated",
+        "fr": "provisional"
+      }
+    },
+    "status": {
+      "en": "provisional",
+      "fr": "provisional"
+    },
+    "confidence": {
+      "en": "medium",
+      "fr": "medium"
+    },
+    "sourceRef": {
+      "build": "Build 4 / BÂTIR",
+      "document": "batir data.xlsx",
+      "section": "Buildings → Construction → Building envelope → Materials"
+    },
+    "aliases": {
+      "fr": [
+        "revêtement"
+      ]
+    }
+  },
+  {
+    "id": "TERM-BATIR-ENVELOPE-CONDENSATION",
+    "discipline": "Envelope",
+    "preferred": {
+      "en": "condensation",
+      "fr": "condensation"
+    },
+    "definition": {
+      "en": "Transformation of water vapour into liquid water on a cold surface.",
+      "fr": "Transformation de la vapeur d'eau en eau liquide sur une surface froide.",
+      "status": {
+        "en": "provisional",
+        "fr": "provisional"
+      }
+    },
+    "contextNotes": {
+      "en": "BÂTIR-derived terminology candidate matched to the QC Field Guide production corpus; not a new QC requirement.",
+      "fr": "Candidat terminologique dérivé de BÂTIR et apparié au corpus de production du Guide CQ; il ne constitue pas une nouvelle exigence CQ.",
+      "status": {
+        "en": "validated",
+        "fr": "provisional"
+      }
+    },
+    "status": {
+      "en": "provisional",
+      "fr": "provisional"
+    },
+    "confidence": {
+      "en": "medium",
+      "fr": "medium"
+    },
+    "sourceRef": {
+      "build": "Build 4 / BÂTIR",
+      "document": "batir data.xlsx",
+      "section": "Buildings → Construction → Building envelope → Notions techniques"
+    },
+    "aliases": {
+      "fr": [
+        "accumulation d'humidité",
+        "formation de condensation"
+      ]
+    }
+  },
+  {
+    "id": "TERM-BATIR-ENVELOPE-DOOR",
+    "discipline": "Envelope",
+    "preferred": {
+      "en": "door",
+      "fr": "porte"
+    },
+    "definition": {
+      "en": "Movable component allowing access to a space.",
+      "fr": "Élément mobile permettant l'accès à un espace.",
+      "status": {
+        "en": "provisional",
+        "fr": "provisional"
+      }
+    },
+    "contextNotes": {
+      "en": "BÂTIR-derived terminology candidate matched to the QC Field Guide production corpus; not a new QC requirement.",
+      "fr": "Candidat terminologique dérivé de BÂTIR et apparié au corpus de production du Guide CQ; il ne constitue pas une nouvelle exigence CQ.",
+      "status": {
+        "en": "validated",
+        "fr": "provisional"
+      }
+    },
+    "status": {
+      "en": "provisional",
+      "fr": "provisional"
+    },
+    "confidence": {
+      "en": "medium",
+      "fr": "medium"
+    },
+    "sourceRef": {
+      "build": "Build 4 / BÂTIR",
+      "document": "batir data.xlsx",
+      "section": "Buildings → Construction → Building envelope → Elements"
+    },
+    "aliases": {
+      "fr": [
+        "ouverture"
+      ]
+    }
+  },
+  {
+    "id": "TERM-BATIR-ENVELOPE-EXPANSION",
+    "discipline": "Envelope",
+    "preferred": {
+      "en": "expansion",
+      "fr": "dilatation"
+    },
+    "definition": {
+      "en": "Increase in the dimensions of a material due to heat.",
+      "fr": "Augmentation des dimensions d'un matériau sous l'effet de la chaleur.",
+      "status": {
+        "en": "provisional",
+        "fr": "provisional"
+      }
+    },
+    "contextNotes": {
+      "en": "BÂTIR-derived terminology candidate matched to the QC Field Guide production corpus; not a new QC requirement.",
+      "fr": "Candidat terminologique dérivé de BÂTIR et apparié au corpus de production du Guide CQ; il ne constitue pas une nouvelle exigence CQ.",
+      "status": {
+        "en": "validated",
+        "fr": "provisional"
+      }
+    },
+    "status": {
+      "en": "provisional",
+      "fr": "provisional"
+    },
+    "confidence": {
+      "en": "medium",
+      "fr": "medium"
+    },
+    "sourceRef": {
+      "build": "Build 4 / BÂTIR",
+      "document": "batir data.xlsx",
+      "section": "Buildings → Construction → Building envelope → Notions techniques"
+    },
+    "aliases": {
+      "fr": [
+        "expansion thermique"
+      ]
+    }
+  },
+  {
+    "id": "TERM-BATIR-ENVELOPE-FLASHING",
+    "discipline": "Envelope",
+    "preferred": {
+      "en": "flashing",
+      "fr": "solin"
+    },
+    "definition": {
+      "en": "Component ensuring watertightness between adjoining surfaces.",
+      "fr": "Élément assurant l'étanchéité entre différentes surfaces.",
+      "status": {
+        "en": "provisional",
+        "fr": "provisional"
+      }
+    },
+    "contextNotes": {
+      "en": "BÂTIR-derived terminology candidate matched to the QC Field Guide production corpus; not a new QC requirement.",
+      "fr": "Candidat terminologique dérivé de BÂTIR et apparié au corpus de production du Guide CQ; il ne constitue pas une nouvelle exigence CQ.",
+      "status": {
+        "en": "validated",
+        "fr": "provisional"
+      }
+    },
+    "status": {
+      "en": "provisional",
+      "fr": "provisional"
+    },
+    "confidence": {
+      "en": "medium",
+      "fr": "medium"
+    },
+    "sourceRef": {
+      "build": "Build 4 / BÂTIR",
+      "document": "batir data.xlsx",
+      "section": "Buildings → Construction → Building envelope → Elements"
+    },
+    "aliases": {
+      "fr": [
+        "bande d'étanchéité"
+      ]
+    }
+  },
+  {
+    "id": "TERM-BATIR-ENVELOPE-GLASS",
+    "discipline": "Envelope",
+    "preferred": {
+      "en": "glass",
+      "fr": "verre"
+    },
+    "definition": {
+      "en": "Transparent material used in windows and curtain walls.",
+      "fr": "Matériau transparent utilisé pour les fenêtres et les murs-rideaux.",
+      "status": {
+        "en": "provisional",
+        "fr": "provisional"
+      }
+    },
+    "contextNotes": {
+      "en": "BÂTIR-derived terminology candidate matched to the QC Field Guide production corpus; not a new QC requirement.",
+      "fr": "Candidat terminologique dérivé de BÂTIR et apparié au corpus de production du Guide CQ; il ne constitue pas une nouvelle exigence CQ.",
+      "status": {
+        "en": "validated",
+        "fr": "provisional"
+      }
+    },
+    "status": {
+      "en": "provisional",
+      "fr": "provisional"
+    },
+    "confidence": {
+      "en": "medium",
+      "fr": "medium"
+    },
+    "sourceRef": {
+      "build": "Build 4 / BÂTIR",
+      "document": "batir data.xlsx",
+      "section": "Buildings → Construction → Building envelope → Materials"
+    },
+    "aliases": {
+      "fr": [
+        "vitrage"
+      ]
+    }
+  },
+  {
+    "id": "TERM-BATIR-ENVELOPE-JOINT",
+    "discipline": "Envelope",
+    "preferred": {
+      "en": "joint",
+      "fr": "joint"
+    },
+    "definition": {
+      "en": "Space provided between two components to accommodate movement.",
+      "fr": "Espace aménagé entre deux éléments afin de permettre leur mouvement.",
+      "status": {
+        "en": "provisional",
+        "fr": "provisional"
+      }
+    },
+    "contextNotes": {
+      "en": "BÂTIR-derived terminology candidate matched to the QC Field Guide production corpus; not a new QC requirement.",
+      "fr": "Candidat terminologique dérivé de BÂTIR et apparié au corpus de production du Guide CQ; il ne constitue pas une nouvelle exigence CQ.",
+      "status": {
+        "en": "validated",
+        "fr": "provisional"
+      }
+    },
+    "status": {
+      "en": "provisional",
+      "fr": "provisional"
+    },
+    "confidence": {
+      "en": "medium",
+      "fr": "medium"
+    },
+    "sourceRef": {
+      "build": "Build 4 / BÂTIR",
+      "document": "batir data.xlsx",
+      "section": "Buildings → Construction → Building envelope → Elements"
+    },
+    "aliases": {
+      "fr": [
+        "raccord"
+      ]
+    }
+  },
+  {
+    "id": "TERM-BATIR-ENVELOPE-PARAPET",
+    "discipline": "Envelope",
+    "preferred": {
+      "en": "parapet",
+      "fr": "parapet"
+    },
+    "definition": {
+      "en": "Low wall located along the edge of a roof.",
+      "fr": "Mur de faible hauteur situé en bordure d'une toiture.",
+      "status": {
+        "en": "provisional",
+        "fr": "provisional"
+      }
+    },
+    "contextNotes": {
+      "en": "BÂTIR-derived terminology candidate matched to the QC Field Guide production corpus; not a new QC requirement.",
+      "fr": "Candidat terminologique dérivé de BÂTIR et apparié au corpus de production du Guide CQ; il ne constitue pas une nouvelle exigence CQ.",
+      "status": {
+        "en": "validated",
+        "fr": "provisional"
+      }
+    },
+    "status": {
+      "en": "provisional",
+      "fr": "provisional"
+    },
+    "confidence": {
+      "en": "medium",
+      "fr": "medium"
+    },
+    "sourceRef": {
+      "build": "Build 4 / BÂTIR",
+      "document": "batir data.xlsx",
+      "section": "Buildings → Construction → Building envelope → Elements"
+    },
+    "aliases": {
+      "fr": [
+        "garde-corps maçonné",
+        "muret de protection"
+      ]
+    }
+  },
+  {
+    "id": "TERM-BATIR-ENVELOPE-SEALANT",
+    "discipline": "Envelope",
+    "preferred": {
+      "en": "sealant",
+      "fr": "produit de scellement"
+    },
+    "definition": {
+      "en": "Product used to ensure the watertightness of a joint or surface.",
+      "fr": "Produit utilisé pour assurer l'étanchéité d'un joint ou d'une surface.",
+      "status": {
+        "en": "provisional",
+        "fr": "provisional"
+      }
+    },
+    "contextNotes": {
+      "en": "BÂTIR-derived terminology candidate matched to the QC Field Guide production corpus; not a new QC requirement.",
+      "fr": "Candidat terminologique dérivé de BÂTIR et apparié au corpus de production du Guide CQ; il ne constitue pas une nouvelle exigence CQ.",
+      "status": {
+        "en": "validated",
+        "fr": "provisional"
+      }
+    },
+    "status": {
+      "en": "provisional",
+      "fr": "provisional"
+    },
+    "confidence": {
+      "en": "medium",
+      "fr": "medium"
+    },
+    "sourceRef": {
+      "build": "Build 4 / BÂTIR",
+      "document": "batir data.xlsx",
+      "section": "Buildings → Construction → Building envelope → Materials"
+    },
+    "aliases": {
+      "fr": [
+        "produit d'étanchéité",
+        "scellant"
+      ]
+    }
+  },
+  {
+    "id": "TERM-BATIR-ENVELOPE-SEALING",
+    "discipline": "Envelope",
+    "preferred": {
+      "en": "sealing",
+      "fr": "scellement"
+    },
+    "definition": {
+      "en": "Process of making a surface watertight.",
+      "fr": "Action consistant à rendre une surface étanche.",
+      "status": {
+        "en": "provisional",
+        "fr": "provisional"
+      }
+    },
+    "contextNotes": {
+      "en": "BÂTIR-derived terminology candidate matched to the QC Field Guide production corpus; not a new QC requirement.",
+      "fr": "Candidat terminologique dérivé de BÂTIR et apparié au corpus de production du Guide CQ; il ne constitue pas une nouvelle exigence CQ.",
+      "status": {
+        "en": "validated",
+        "fr": "provisional"
+      }
+    },
+    "status": {
+      "en": "provisional",
+      "fr": "provisional"
+    },
+    "confidence": {
+      "en": "medium",
+      "fr": "medium"
+    },
+    "sourceRef": {
+      "build": "Build 4 / BÂTIR",
+      "document": "batir data.xlsx",
+      "section": "Buildings → Construction → Building envelope → Notions techniques"
+    },
+    "aliases": {
+      "fr": [
+        "étanchéisation"
+      ]
+    }
+  },
+  {
+    "id": "TERM-BATIR-ENVELOPE-THRESHOLD",
+    "discipline": "Envelope",
+    "preferred": {
+      "en": "threshold",
+      "fr": "seuil"
+    },
+    "definition": {
+      "en": "Component located at the base of a doorway or opening.",
+      "fr": "Élément situé à la base d'une porte ou d'une ouverture.",
+      "status": {
+        "en": "provisional",
+        "fr": "provisional"
+      }
+    },
+    "contextNotes": {
+      "en": "BÂTIR-derived terminology candidate matched to the QC Field Guide production corpus; not a new QC requirement.",
+      "fr": "Candidat terminologique dérivé de BÂTIR et apparié au corpus de production du Guide CQ; il ne constitue pas une nouvelle exigence CQ.",
+      "status": {
+        "en": "validated",
+        "fr": "provisional"
+      }
+    },
+    "status": {
+      "en": "provisional",
+      "fr": "provisional"
+    },
+    "confidence": {
+      "en": "medium",
+      "fr": "medium"
+    },
+    "sourceRef": {
+      "build": "Build 4 / BÂTIR",
+      "document": "batir data.xlsx",
+      "section": "Buildings → Construction → Building envelope → Elements"
+    },
+    "aliases": {
+      "fr": [
+        "appui de porte"
+      ]
+    }
+  },
+  {
+    "id": "TERM-BATIR-ENVELOPE-WATERTIGHTNESS",
+    "discipline": "Envelope",
+    "preferred": {
+      "en": "watertightness",
+      "fr": "étanchéité"
+    },
+    "definition": {
+      "en": "Ability of a component to prevent water penetration.",
+      "fr": "Capacité d'un élément à empêcher la pénétration de l'eau.",
+      "status": {
+        "en": "provisional",
+        "fr": "provisional"
+      }
+    },
+    "contextNotes": {
+      "en": "BÂTIR-derived terminology candidate matched to the QC Field Guide production corpus; not a new QC requirement.",
+      "fr": "Candidat terminologique dérivé de BÂTIR et apparié au corpus de production du Guide CQ; il ne constitue pas une nouvelle exigence CQ.",
+      "status": {
+        "en": "validated",
+        "fr": "provisional"
+      }
+    },
+    "status": {
+      "en": "provisional",
+      "fr": "provisional"
+    },
+    "confidence": {
+      "en": "medium",
+      "fr": "medium"
+    },
+    "sourceRef": {
+      "build": "Build 4 / BÂTIR",
+      "document": "batir data.xlsx",
+      "section": "Buildings → Construction → Building envelope → Notions techniques"
+    },
+    "aliases": {
+      "fr": [
+        "imperméabilité"
+      ]
+    }
+  },
+  {
+    "id": "TERM-BATIR-ENVELOPE-WINDOW",
+    "discipline": "Envelope",
+    "preferred": {
+      "en": "window",
+      "fr": "fenêtre"
+    },
+    "definition": {
+      "en": "Glazed opening allowing light and air to enter.",
+      "fr": "Ouverture vitrée permettant le passage de la lumière et de l'air.",
+      "status": {
+        "en": "provisional",
+        "fr": "provisional"
+      }
+    },
+    "contextNotes": {
+      "en": "BÂTIR-derived terminology candidate matched to the QC Field Guide production corpus; not a new QC requirement.",
+      "fr": "Candidat terminologique dérivé de BÂTIR et apparié au corpus de production du Guide CQ; il ne constitue pas une nouvelle exigence CQ.",
+      "status": {
+        "en": "validated",
+        "fr": "provisional"
+      }
+    },
+    "status": {
+      "en": "provisional",
+      "fr": "provisional"
+    },
+    "confidence": {
+      "en": "medium",
+      "fr": "medium"
+    },
+    "sourceRef": {
+      "build": "Build 4 / BÂTIR",
+      "document": "batir data.xlsx",
+      "section": "Buildings → Construction → Building envelope → Elements"
+    },
+    "aliases": {
+      "fr": [
+        "ouverture vitrée"
+      ]
+    }
+  },
+  {
+    "id": "TERM-BATIR-INTERIORS-CEILING",
+    "discipline": "Interiors",
+    "preferred": {
+      "en": "ceiling",
+      "fr": "plafond"
+    },
+    "definition": {
+      "en": "Upper surface of a room located below the floor structure or roof.",
+      "fr": "Surface supérieure d'une pièce située sous la structure du plancher supérieur ou de la toiture.",
+      "status": {
+        "en": "provisional",
+        "fr": "provisional"
+      }
+    },
+    "contextNotes": {
+      "en": "BÂTIR-derived terminology candidate matched to the QC Field Guide production corpus; not a new QC requirement.",
+      "fr": "Candidat terminologique dérivé de BÂTIR et apparié au corpus de production du Guide CQ; il ne constitue pas une nouvelle exigence CQ.",
+      "status": {
+        "en": "validated",
+        "fr": "provisional"
+      }
+    },
+    "status": {
+      "en": "provisional",
+      "fr": "provisional"
+    },
+    "confidence": {
+      "en": "medium",
+      "fr": "medium"
+    },
+    "sourceRef": {
+      "build": "Build 4 / BÂTIR",
+      "document": "batir data.xlsx",
+      "section": "Buildings → Construction → Finishes → Elements"
+    }
+  },
+  {
+    "id": "TERM-BATIR-INTERIORS-DRYWALL",
+    "discipline": "Interiors",
+    "preferred": {
+      "en": "drywall",
+      "fr": "gypse"
+    },
+    "definition": {
+      "en": "Panel used to construct interior partitions and ceilings.",
+      "fr": "Panneau utilisé pour la construction des cloisons et des plafonds intérieurs.",
+      "status": {
+        "en": "provisional",
+        "fr": "provisional"
+      }
+    },
+    "contextNotes": {
+      "en": "BÂTIR-derived terminology candidate matched to the QC Field Guide production corpus; not a new QC requirement.",
+      "fr": "Candidat terminologique dérivé de BÂTIR et apparié au corpus de production du Guide CQ; il ne constitue pas une nouvelle exigence CQ.",
+      "status": {
+        "en": "validated",
+        "fr": "provisional"
+      }
+    },
+    "status": {
+      "en": "provisional",
+      "fr": "provisional"
+    },
+    "confidence": {
+      "en": "medium",
+      "fr": "medium"
+    },
+    "sourceRef": {
+      "build": "Build 4 / BÂTIR",
+      "document": "batir data.xlsx",
+      "section": "Buildings → Construction → Finishes → Materials"
+    },
+    "aliases": {
+      "fr": [
+        "plaque de plâtre"
+      ]
+    }
+  },
+  {
+    "id": "TERM-BATIR-INTERIORS-FRAMING",
+    "discipline": "Interiors",
+    "preferred": {
+      "en": "framing",
+      "fr": "cadrage"
+    },
+    "definition": {
+      "en": "Assembly of components forming the support structure of a wall or opening.",
+      "fr": "Ensemble des éléments formant la structure de support d'un mur ou d'une ouverture.",
+      "status": {
+        "en": "provisional",
+        "fr": "provisional"
+      }
+    },
+    "contextNotes": {
+      "en": "BÂTIR-derived terminology candidate matched to the QC Field Guide production corpus; not a new QC requirement.",
+      "fr": "Candidat terminologique dérivé de BÂTIR et apparié au corpus de production du Guide CQ; il ne constitue pas une nouvelle exigence CQ.",
+      "status": {
+        "en": "validated",
+        "fr": "provisional"
+      }
+    },
+    "status": {
+      "en": "provisional",
+      "fr": "provisional"
+    },
+    "confidence": {
+      "en": "medium",
+      "fr": "medium"
+    },
+    "sourceRef": {
+      "build": "Build 4 / BÂTIR",
+      "document": "batir data.xlsx",
+      "section": "Buildings → Construction → Finishes → Elements"
+    },
+    "aliases": {
+      "fr": [
+        "ossature"
+      ]
+    }
+  },
+  {
+    "id": "TERM-BATIR-INTERIORS-PAINT",
+    "discipline": "Interiors",
+    "preferred": {
+      "en": "paint",
+      "fr": "peinture"
+    },
+    "definition": {
+      "en": "Product applied to a surface for protection or decoration.",
+      "fr": "Produit appliqué sur une surface afin de la protéger ou de l'embellir.",
+      "status": {
+        "en": "provisional",
+        "fr": "provisional"
+      }
+    },
+    "contextNotes": {
+      "en": "BÂTIR-derived terminology candidate matched to the QC Field Guide production corpus; not a new QC requirement.",
+      "fr": "Candidat terminologique dérivé de BÂTIR et apparié au corpus de production du Guide CQ; il ne constitue pas une nouvelle exigence CQ.",
+      "status": {
+        "en": "validated",
+        "fr": "provisional"
+      }
+    },
+    "status": {
+      "en": "provisional",
+      "fr": "provisional"
+    },
+    "confidence": {
+      "en": "medium",
+      "fr": "medium"
+    },
+    "sourceRef": {
+      "build": "Build 4 / BÂTIR",
+      "document": "batir data.xlsx",
+      "section": "Buildings → Construction → Finishes → Elements"
+    },
+    "aliases": {
+      "fr": [
+        "revêtement de peinture",
+        "revêtement de surface"
+      ]
+    }
+  },
+  {
+    "id": "TERM-BATIR-INTERIORS-PRIMER",
+    "discipline": "Interiors",
+    "preferred": {
+      "en": "primer",
+      "fr": "apprêt"
+    },
+    "definition": {
+      "en": "Preparatory coating applied before painting to improve adhesion.",
+      "fr": "Couche préparatoire appliquée avant la peinture afin d'améliorer l'adhérence.",
+      "status": {
+        "en": "provisional",
+        "fr": "provisional"
+      }
+    },
+    "contextNotes": {
+      "en": "BÂTIR-derived terminology candidate matched to the QC Field Guide production corpus; not a new QC requirement.",
+      "fr": "Candidat terminologique dérivé de BÂTIR et apparié au corpus de production du Guide CQ; il ne constitue pas une nouvelle exigence CQ.",
+      "status": {
+        "en": "validated",
+        "fr": "provisional"
+      }
+    },
+    "status": {
+      "en": "provisional",
+      "fr": "provisional"
+    },
+    "confidence": {
+      "en": "medium",
+      "fr": "medium"
+    },
+    "sourceRef": {
+      "build": "Build 4 / BÂTIR",
+      "document": "batir data.xlsx",
+      "section": "Buildings → Construction → Finishes → Materials"
+    },
+    "aliases": {
+      "fr": [
+        "couche d'apprêt"
+      ]
+    }
+  },
+  {
+    "id": "TERM-BATIR-MECHANICAL-ADHESIVE",
+    "discipline": "Mechanical",
+    "preferred": {
+      "en": "adhesive",
+      "fr": "adhésif"
+    },
+    "definition": {
+      "en": "Product used to bond or secure materials together.",
+      "fr": "Produit servant à coller ou à fixer différents matériaux.",
+      "status": {
+        "en": "provisional",
+        "fr": "provisional"
+      }
+    },
+    "contextNotes": {
+      "en": "BÂTIR-derived terminology candidate matched to the QC Field Guide production corpus; not a new QC requirement.",
+      "fr": "Candidat terminologique dérivé de BÂTIR et apparié au corpus de production du Guide CQ; il ne constitue pas une nouvelle exigence CQ.",
+      "status": {
+        "en": "validated",
+        "fr": "provisional"
+      }
+    },
+    "status": {
+      "en": "provisional",
+      "fr": "provisional"
+    },
+    "confidence": {
+      "en": "medium",
+      "fr": "medium"
+    },
+    "sourceRef": {
+      "build": "Build 4 / BÂTIR",
+      "document": "batir data.xlsx",
+      "section": "Buildings → Construction → Building systems → Materials"
+    },
+    "aliases": {
+      "fr": [
+        "colle"
+      ]
+    }
+  },
+  {
+    "id": "TERM-BATIR-MECHANICAL-BALANCING",
+    "discipline": "Mechanical",
+    "preferred": {
+      "en": "balancing",
+      "fr": "équilibrage"
+    },
+    "definition": {
+      "en": "Process intended to distribute flow rates properly throughout a system.",
+      "fr": "Procédé visant à répartir correctement les débits dans un système.",
+      "status": {
+        "en": "provisional",
+        "fr": "provisional"
+      }
+    },
+    "contextNotes": {
+      "en": "BÂTIR-derived terminology candidate matched to the QC Field Guide production corpus; not a new QC requirement.",
+      "fr": "Candidat terminologique dérivé de BÂTIR et apparié au corpus de production du Guide CQ; il ne constitue pas une nouvelle exigence CQ.",
+      "status": {
+        "en": "validated",
+        "fr": "provisional"
+      }
+    },
+    "status": {
+      "en": "provisional",
+      "fr": "provisional"
+    },
+    "confidence": {
+      "en": "medium",
+      "fr": "medium"
+    },
+    "sourceRef": {
+      "build": "Build 4 / BÂTIR",
+      "document": "batir data.xlsx",
+      "section": "Buildings → Construction → Building systems → Notions techniques"
+    },
+    "aliases": {
+      "fr": [
+        "équilibrage hydraulique"
+      ]
+    }
+  },
+  {
+    "id": "TERM-BATIR-MECHANICAL-CONTINUITY",
+    "discipline": "Mechanical",
+    "preferred": {
+      "en": "continuity",
+      "fr": "continuité"
+    },
+    "definition": {
+      "en": "Ability of a circuit or system to maintain an uninterrupted connection.",
+      "fr": "Capacité d'un circuit ou d'un système à maintenir une connexion ininterrompue.",
+      "status": {
+        "en": "provisional",
+        "fr": "provisional"
+      }
+    },
+    "contextNotes": {
+      "en": "BÂTIR-derived terminology candidate matched to the QC Field Guide production corpus; not a new QC requirement.",
+      "fr": "Candidat terminologique dérivé de BÂTIR et apparié au corpus de production du Guide CQ; il ne constitue pas une nouvelle exigence CQ.",
+      "status": {
+        "en": "validated",
+        "fr": "provisional"
+      }
+    },
+    "status": {
+      "en": "provisional",
+      "fr": "provisional"
+    },
+    "confidence": {
+      "en": "medium",
+      "fr": "medium"
+    },
+    "sourceRef": {
+      "build": "Build 4 / BÂTIR",
+      "document": "batir data.xlsx",
+      "section": "Buildings → Construction → Building systems → Notions techniques"
+    },
+    "aliases": {
+      "fr": [
+        "continuité électrique"
+      ]
+    }
+  },
+  {
+    "id": "TERM-BATIR-MECHANICAL-DAMPER",
+    "discipline": "Mechanical",
+    "preferred": {
+      "en": "damper",
+      "fr": "clapet"
+    },
+    "definition": {
+      "en": "Device used to regulate the flow of air or fluid.",
+      "fr": "Dispositif servant à contrôler le débit de l'air ou d'un fluide.",
+      "status": {
+        "en": "provisional",
+        "fr": "provisional"
+      }
+    },
+    "contextNotes": {
+      "en": "BÂTIR-derived terminology candidate matched to the QC Field Guide production corpus; not a new QC requirement.",
+      "fr": "Candidat terminologique dérivé de BÂTIR et apparié au corpus de production du Guide CQ; il ne constitue pas une nouvelle exigence CQ.",
+      "status": {
+        "en": "validated",
+        "fr": "provisional"
+      }
+    },
+    "status": {
+      "en": "provisional",
+      "fr": "provisional"
+    },
+    "confidence": {
+      "en": "medium",
+      "fr": "medium"
+    },
+    "sourceRef": {
+      "build": "Build 4 / BÂTIR",
+      "document": "batir data.xlsx",
+      "section": "Buildings → Construction → Building systems → Elements"
+    },
+    "aliases": {
+      "fr": [
+        "registre"
+      ]
+    }
+  },
+  {
+    "id": "TERM-BATIR-MECHANICAL-FITTING",
+    "discipline": "Mechanical",
+    "preferred": {
+      "en": "fitting",
+      "fr": "raccord"
+    },
+    "definition": {
+      "en": "Component used to connect pipes or equipment.",
+      "fr": "Pièce servant à relier plusieurs conduites ou composants.",
+      "status": {
+        "en": "provisional",
+        "fr": "provisional"
+      }
+    },
+    "contextNotes": {
+      "en": "BÂTIR-derived terminology candidate matched to the QC Field Guide production corpus; not a new QC requirement.",
+      "fr": "Candidat terminologique dérivé de BÂTIR et apparié au corpus de production du Guide CQ; il ne constitue pas une nouvelle exigence CQ.",
+      "status": {
+        "en": "validated",
+        "fr": "provisional"
+      }
+    },
+    "status": {
+      "en": "provisional",
+      "fr": "provisional"
+    },
+    "confidence": {
+      "en": "medium",
+      "fr": "medium"
+    },
+    "sourceRef": {
+      "build": "Build 4 / BÂTIR",
+      "document": "batir data.xlsx",
+      "section": "Buildings → Construction → Building systems → Materials"
+    },
+    "aliases": {
+      "fr": [
+        "connecteur"
+      ]
+    }
+  },
+  {
+    "id": "TERM-BATIR-MECHANICAL-PIPING",
+    "discipline": "Mechanical",
+    "preferred": {
+      "en": "piping",
+      "fr": "tuyauterie"
+    },
+    "definition": {
+      "en": "Network of pipes used to transport fluids.",
+      "fr": "Ensemble des conduites servant au transport des fluides.",
+      "status": {
+        "en": "provisional",
+        "fr": "provisional"
+      }
+    },
+    "contextNotes": {
+      "en": "BÂTIR-derived terminology candidate matched to the QC Field Guide production corpus; not a new QC requirement.",
+      "fr": "Candidat terminologique dérivé de BÂTIR et apparié au corpus de production du Guide CQ; il ne constitue pas une nouvelle exigence CQ.",
+      "status": {
+        "en": "validated",
+        "fr": "provisional"
+      }
+    },
+    "status": {
+      "en": "provisional",
+      "fr": "provisional"
+    },
+    "confidence": {
+      "en": "medium",
+      "fr": "medium"
+    },
+    "sourceRef": {
+      "build": "Build 4 / BÂTIR",
+      "document": "batir data.xlsx",
+      "section": "Buildings → Construction → Building systems → Elements"
+    },
+    "aliases": {
+      "fr": [
+        "réseau de tuyaux"
+      ]
+    }
+  },
+  {
+    "id": "TERM-BATIR-MECHANICAL-PRESSURE",
+    "discipline": "Mechanical",
+    "preferred": {
+      "en": "pressure",
+      "fr": "pression"
+    },
+    "definition": {
+      "en": "Force exerted by a fluid on a given surface.",
+      "fr": "Force exercée par un fluide sur une surface donnée.",
+      "status": {
+        "en": "provisional",
+        "fr": "provisional"
+      }
+    },
+    "contextNotes": {
+      "en": "BÂTIR-derived terminology candidate matched to the QC Field Guide production corpus; not a new QC requirement.",
+      "fr": "Candidat terminologique dérivé de BÂTIR et apparié au corpus de production du Guide CQ; il ne constitue pas une nouvelle exigence CQ.",
+      "status": {
+        "en": "validated",
+        "fr": "provisional"
+      }
+    },
+    "status": {
+      "en": "provisional",
+      "fr": "provisional"
+    },
+    "confidence": {
+      "en": "medium",
+      "fr": "medium"
+    },
+    "sourceRef": {
+      "build": "Build 4 / BÂTIR",
+      "document": "batir data.xlsx",
+      "section": "Buildings → Construction → Building systems → Notions techniques"
+    },
+    "aliases": {
+      "fr": [
+        "pression de service"
+      ]
+    }
+  },
+  {
+    "id": "TERM-BATIR-MECHANICAL-SPRINKLER",
+    "discipline": "Mechanical",
+    "preferred": {
+      "en": "sprinkler",
+      "fr": "gicleur"
+    },
+    "definition": {
+      "en": "Device designed to discharge water during a fire.",
+      "fr": "Dispositif servant à projeter de l'eau en cas d'incendie.",
+      "status": {
+        "en": "provisional",
+        "fr": "provisional"
+      }
+    },
+    "contextNotes": {
+      "en": "BÂTIR-derived terminology candidate matched to the QC Field Guide production corpus; not a new QC requirement.",
+      "fr": "Candidat terminologique dérivé de BÂTIR et apparié au corpus de production du Guide CQ; il ne constitue pas une nouvelle exigence CQ.",
+      "status": {
+        "en": "validated",
+        "fr": "provisional"
+      }
+    },
+    "status": {
+      "en": "provisional",
+      "fr": "provisional"
+    },
+    "confidence": {
+      "en": "medium",
+      "fr": "medium"
+    },
+    "sourceRef": {
+      "build": "Build 4 / BÂTIR",
+      "document": "batir data.xlsx",
+      "section": "Buildings → Construction → Building systems → Elements"
+    },
+    "aliases": {
+      "fr": [
+        "tête de gicleur"
+      ]
+    }
+  },
+  {
+    "id": "TERM-BATIR-MECHANICAL-VALVE",
+    "discipline": "Mechanical",
+    "preferred": {
+      "en": "valve",
+      "fr": "vanne"
+    },
+    "definition": {
+      "en": "Device used to control fluid flow.",
+      "fr": "Dispositif servant à contrôler le débit d'un fluide.",
+      "status": {
+        "en": "provisional",
+        "fr": "provisional"
+      }
+    },
+    "contextNotes": {
+      "en": "BÂTIR-derived terminology candidate matched to the QC Field Guide production corpus; not a new QC requirement.",
+      "fr": "Candidat terminologique dérivé de BÂTIR et apparié au corpus de production du Guide CQ; il ne constitue pas une nouvelle exigence CQ.",
+      "status": {
+        "en": "validated",
+        "fr": "provisional"
+      }
+    },
+    "status": {
+      "en": "provisional",
+      "fr": "provisional"
+    },
+    "confidence": {
+      "en": "medium",
+      "fr": "medium"
+    },
+    "sourceRef": {
+      "build": "Build 4 / BÂTIR",
+      "document": "batir data.xlsx",
+      "section": "Buildings → Construction → Building systems → Elements"
+    },
+    "aliases": {
+      "fr": [
+        "soupape"
+      ]
+    }
+  },
+  {
+    "id": "TERM-BATIR-MECHANICAL-WELD",
+    "discipline": "Mechanical",
+    "preferred": {
+      "en": "weld",
+      "fr": "soudure"
+    },
+    "definition": {
+      "en": "Joint produced by fusing two metal components together.",
+      "fr": "Assemblage obtenu par la fusion de deux éléments métalliques.",
+      "status": {
+        "en": "provisional",
+        "fr": "provisional"
+      }
+    },
+    "contextNotes": {
+      "en": "BÂTIR-derived terminology candidate matched to the QC Field Guide production corpus; not a new QC requirement.",
+      "fr": "Candidat terminologique dérivé de BÂTIR et apparié au corpus de production du Guide CQ; il ne constitue pas une nouvelle exigence CQ.",
+      "status": {
+        "en": "validated",
+        "fr": "provisional"
+      }
+    },
+    "status": {
+      "en": "provisional",
+      "fr": "provisional"
+    },
+    "confidence": {
+      "en": "medium",
+      "fr": "medium"
+    },
+    "sourceRef": {
+      "build": "Build 4 / BÂTIR",
+      "document": "batir data.xlsx",
+      "section": "Buildings → Construction → Building systems → Materials"
+    },
+    "aliases": {
+      "fr": [
+        "cordon de soudure"
+      ]
+    }
+  },
+  {
+    "id": "TERM-BATIR-QUALITY-ARCHITECTURAL-DRAWINGS",
+    "discipline": "Quality",
+    "preferred": {
+      "en": "architectural drawings",
+      "fr": "plans architecturaux"
+    },
+    "definition": {
+      "en": "Collection of drawings related to the building's architecture.",
+      "fr": "Ensemble des plans relatifs à l'architecture du bâtiment.",
+      "status": {
+        "en": "provisional",
+        "fr": "provisional"
+      }
+    },
+    "contextNotes": {
+      "en": "BÂTIR-derived terminology candidate matched to the QC Field Guide production corpus; not a new QC requirement.",
+      "fr": "Candidat terminologique dérivé de BÂTIR et apparié au corpus de production du Guide CQ; il ne constitue pas une nouvelle exigence CQ.",
+      "status": {
+        "en": "validated",
+        "fr": "provisional"
+      }
+    },
+    "status": {
+      "en": "provisional",
+      "fr": "provisional"
+    },
+    "confidence": {
+      "en": "medium",
+      "fr": "medium"
+    },
+    "sourceRef": {
+      "build": "Build 4 / BÂTIR",
+      "document": "batir data.xlsx",
+      "section": "Buildings → Pre-construction → Documents"
+    },
+    "aliases": {
+      "fr": [
+        "plans d'architecture"
+      ]
+    }
+  },
+  {
+    "id": "TERM-BATIR-QUALITY-BASELINE",
+    "discipline": "Quality",
+    "preferred": {
+      "en": "baseline",
+      "fr": "référence"
+    },
+    "definition": {
+      "en": "Approved version of a schedule used as a comparison benchmark.",
+      "fr": "Version approuvée de l'échéancier servant de point de comparaison.",
+      "status": {
+        "en": "provisional",
+        "fr": "provisional"
+      }
+    },
+    "contextNotes": {
+      "en": "BÂTIR-derived terminology candidate matched to the QC Field Guide production corpus; not a new QC requirement.",
+      "fr": "Candidat terminologique dérivé de BÂTIR et apparié au corpus de production du Guide CQ; il ne constitue pas une nouvelle exigence CQ.",
+      "status": {
+        "en": "validated",
+        "fr": "provisional"
+      }
+    },
+    "status": {
+      "en": "provisional",
+      "fr": "provisional"
+    },
+    "confidence": {
+      "en": "medium",
+      "fr": "medium"
+    },
+    "sourceRef": {
+      "build": "Build 4 / BÂTIR",
+      "document": "batir data.xlsx",
+      "section": "Gestion de projet → Ordonnancement → Notions techniques"
+    },
+    "aliases": {
+      "fr": [
+        "référence de base"
+      ]
+    }
+  },
+  {
+    "id": "TERM-BATIR-QUALITY-CONTRACT",
+    "discipline": "Quality",
+    "preferred": {
+      "en": "contract",
+      "fr": "contrat"
+    },
+    "definition": {
+      "en": "Official document defining the obligations of the parties.",
+      "fr": "Document officiel qui définit les obligations des parties.",
+      "status": {
+        "en": "provisional",
+        "fr": "provisional"
+      }
+    },
+    "contextNotes": {
+      "en": "BÂTIR-derived terminology candidate matched to the QC Field Guide production corpus; not a new QC requirement.",
+      "fr": "Candidat terminologique dérivé de BÂTIR et apparié au corpus de production du Guide CQ; il ne constitue pas une nouvelle exigence CQ.",
+      "status": {
+        "en": "validated",
+        "fr": "provisional"
+      }
+    },
+    "status": {
+      "en": "provisional",
+      "fr": "provisional"
+    },
+    "confidence": {
+      "en": "medium",
+      "fr": "medium"
+    },
+    "sourceRef": {
+      "build": "Build 4 / BÂTIR",
+      "document": "batir data.xlsx",
+      "section": "Buildings → Pre-construction → Documents"
+    },
+    "aliases": {
+      "fr": [
+        "convention",
+        "entente"
+      ]
+    }
+  },
+  {
+    "id": "TERM-BATIR-QUALITY-CORRECTIVE-ACTION",
+    "discipline": "Quality",
+    "preferred": {
+      "en": "corrective action",
+      "fr": "mesure corrective"
+    },
+    "definition": {
+      "en": "Action intended to eliminate the cause of an existing non-conformity.",
+      "fr": "Intervention visant à éliminer la cause d'une non-conformité existante.",
+      "status": {
+        "en": "provisional",
+        "fr": "provisional"
+      }
+    },
+    "contextNotes": {
+      "en": "BÂTIR-derived terminology candidate matched to the QC Field Guide production corpus; not a new QC requirement.",
+      "fr": "Candidat terminologique dérivé de BÂTIR et apparié au corpus de production du Guide CQ; il ne constitue pas une nouvelle exigence CQ.",
+      "status": {
+        "en": "validated",
+        "fr": "provisional"
+      }
+    },
+    "status": {
+      "en": "provisional",
+      "fr": "provisional"
+    },
+    "confidence": {
+      "en": "medium",
+      "fr": "medium"
+    },
+    "sourceRef": {
+      "build": "Build 4 / BÂTIR",
+      "document": "batir data.xlsx",
+      "section": "Gestion de projet → Gestion de la qualité → Notions techniques"
+    },
+    "aliases": {
+      "fr": [
+        "action corrective"
+      ]
+    }
+  },
+  {
+    "id": "TERM-BATIR-QUALITY-DEPENDENCY",
+    "discipline": "Quality",
+    "preferred": {
+      "en": "dependency",
+      "fr": "dépendance"
+    },
+    "definition": {
+      "en": "Logical relationship linking two activities together.",
+      "fr": "Relation logique reliant deux activités entre elles.",
+      "status": {
+        "en": "provisional",
+        "fr": "provisional"
+      }
+    },
+    "contextNotes": {
+      "en": "BÂTIR-derived terminology candidate matched to the QC Field Guide production corpus; not a new QC requirement.",
+      "fr": "Candidat terminologique dérivé de BÂTIR et apparié au corpus de production du Guide CQ; il ne constitue pas une nouvelle exigence CQ.",
+      "status": {
+        "en": "validated",
+        "fr": "provisional"
+      }
+    },
+    "status": {
+      "en": "provisional",
+      "fr": "provisional"
+    },
+    "confidence": {
+      "en": "medium",
+      "fr": "medium"
+    },
+    "sourceRef": {
+      "build": "Build 4 / BÂTIR",
+      "document": "batir data.xlsx",
+      "section": "Gestion de projet → Ordonnancement → Notions techniques"
+    },
+    "aliases": {
+      "fr": [
+        "relation"
+      ]
+    }
+  },
+  {
+    "id": "TERM-BATIR-QUALITY-ELECTRICAL-DRAWINGS",
+    "discipline": "Quality",
+    "preferred": {
+      "en": "electrical drawings",
+      "fr": "plans électriques"
+    },
+    "definition": {
+      "en": "Collection of drawings related to electrical installations.",
+      "fr": "Ensemble des plans relatifs aux installations électriques.",
+      "status": {
+        "en": "provisional",
+        "fr": "provisional"
+      }
+    },
+    "contextNotes": {
+      "en": "BÂTIR-derived terminology candidate matched to the QC Field Guide production corpus; not a new QC requirement.",
+      "fr": "Candidat terminologique dérivé de BÂTIR et apparié au corpus de production du Guide CQ; il ne constitue pas une nouvelle exigence CQ.",
+      "status": {
+        "en": "validated",
+        "fr": "provisional"
+      }
+    },
+    "status": {
+      "en": "provisional",
+      "fr": "provisional"
+    },
+    "confidence": {
+      "en": "medium",
+      "fr": "medium"
+    },
+    "sourceRef": {
+      "build": "Build 4 / BÂTIR",
+      "document": "batir data.xlsx",
+      "section": "Buildings → Pre-construction → Documents"
+    },
+    "aliases": {
+      "fr": [
+        "plans d'électricité"
+      ]
+    }
+  },
+  {
+    "id": "TERM-BATIR-QUALITY-EXPOSURE",
+    "discipline": "Quality",
+    "preferred": {
+      "en": "exposure",
+      "fr": "exposition"
+    },
+    "definition": {
+      "en": "Situation in which a person is subjected to a specific hazard.",
+      "fr": "Situation dans laquelle une personne est soumise à un danger particulier.",
+      "status": {
+        "en": "provisional",
+        "fr": "provisional"
+      }
+    },
+    "contextNotes": {
+      "en": "BÂTIR-derived terminology candidate matched to the QC Field Guide production corpus; not a new QC requirement.",
+      "fr": "Candidat terminologique dérivé de BÂTIR et apparié au corpus de production du Guide CQ; il ne constitue pas une nouvelle exigence CQ.",
+      "status": {
+        "en": "validated",
+        "fr": "provisional"
+      }
+    },
+    "status": {
+      "en": "provisional",
+      "fr": "provisional"
+    },
+    "confidence": {
+      "en": "medium",
+      "fr": "medium"
+    },
+    "sourceRef": {
+      "build": "Build 4 / BÂTIR",
+      "document": "batir data.xlsx",
+      "section": "Gestion de projet → Santé et sécurité → Notions techniques"
+    },
+    "aliases": {
+      "fr": [
+        "contact"
+      ]
+    }
+  },
+  {
+    "id": "TERM-BATIR-QUALITY-GEOTECHNICAL-REPORT",
+    "discipline": "Quality",
+    "preferred": {
+      "en": "geotechnical report",
+      "fr": "rapport géotechnique"
+    },
+    "definition": {
+      "en": "Document presenting soil characteristics and technical recommendations.",
+      "fr": "Document qui présente les caractéristiques du sol et les recommandations techniques.",
+      "status": {
+        "en": "provisional",
+        "fr": "provisional"
+      }
+    },
+    "contextNotes": {
+      "en": "BÂTIR-derived terminology candidate matched to the QC Field Guide production corpus; not a new QC requirement.",
+      "fr": "Candidat terminologique dérivé de BÂTIR et apparié au corpus de production du Guide CQ; il ne constitue pas une nouvelle exigence CQ.",
+      "status": {
+        "en": "validated",
+        "fr": "provisional"
+      }
+    },
+    "status": {
+      "en": "provisional",
+      "fr": "provisional"
+    },
+    "confidence": {
+      "en": "medium",
+      "fr": "medium"
+    },
+    "sourceRef": {
+      "build": "Build 4 / BÂTIR",
+      "document": "batir data.xlsx",
+      "section": "Buildings → Pre-construction → Documents"
+    },
+    "aliases": {
+      "fr": [
+        "rapport de sol"
+      ]
+    }
+  },
+  {
+    "id": "TERM-BATIR-QUALITY-INSPECTION",
+    "discipline": "Quality",
+    "preferred": {
+      "en": "inspection",
+      "fr": "inspection"
+    },
+    "definition": {
+      "en": "Visual or technical examination intended to assess the condition or compliance of an element.",
+      "fr": "Examen visuel ou technique visant à évaluer l'état d'un élément ou sa conformité.",
+      "status": {
+        "en": "provisional",
+        "fr": "provisional"
+      }
+    },
+    "contextNotes": {
+      "en": "BÂTIR-derived terminology candidate matched to the QC Field Guide production corpus; not a new QC requirement.",
+      "fr": "Candidat terminologique dérivé de BÂTIR et apparié au corpus de production du Guide CQ; il ne constitue pas une nouvelle exigence CQ.",
+      "status": {
+        "en": "validated",
+        "fr": "provisional"
+      }
+    },
+    "status": {
+      "en": "provisional",
+      "fr": "provisional"
+    },
+    "confidence": {
+      "en": "medium",
+      "fr": "medium"
+    },
+    "sourceRef": {
+      "build": "Build 4 / BÂTIR",
+      "document": "batir data.xlsx",
+      "section": "Gestion de projet → Gestion de la qualité → Notions techniques"
+    },
+    "aliases": {
+      "fr": [
+        "contrôle"
+      ]
+    }
+  },
+  {
+    "id": "TERM-BATIR-QUALITY-INSPECTOR",
+    "discipline": "Quality",
+    "preferred": {
+      "en": "inspector",
+      "fr": "inspecteur"
+    },
+    "definition": {
+      "en": "Professional responsible for verifying compliance of the work.",
+      "fr": "Professionnel chargé de vérifier la conformité des travaux.",
+      "status": {
+        "en": "provisional",
+        "fr": "provisional"
+      }
+    },
+    "contextNotes": {
+      "en": "BÂTIR-derived terminology candidate matched to the QC Field Guide production corpus; not a new QC requirement.",
+      "fr": "Candidat terminologique dérivé de BÂTIR et apparié au corpus de production du Guide CQ; il ne constitue pas une nouvelle exigence CQ.",
+      "status": {
+        "en": "validated",
+        "fr": "provisional"
+      }
+    },
+    "status": {
+      "en": "provisional",
+      "fr": "provisional"
+    },
+    "confidence": {
+      "en": "medium",
+      "fr": "medium"
+    },
+    "sourceRef": {
+      "build": "Build 4 / BÂTIR",
+      "document": "batir data.xlsx",
+      "section": "Buildings → Post-construction → Stakeholders"
+    },
+    "aliases": {
+      "fr": [
+        "contrôleur",
+        "vérificateur"
+      ]
+    }
+  },
+  {
+    "id": "TERM-BATIR-QUALITY-MANUFACTURER",
+    "discipline": "Quality",
+    "preferred": {
+      "en": "manufacturer",
+      "fr": "fabricant"
+    },
+    "definition": {
+      "en": "Company that manufactures products used in the project.",
+      "fr": "Entreprise qui fabrique des produits destinés au projet.",
+      "status": {
+        "en": "provisional",
+        "fr": "provisional"
+      }
+    },
+    "contextNotes": {
+      "en": "BÂTIR-derived terminology candidate matched to the QC Field Guide production corpus; not a new QC requirement.",
+      "fr": "Candidat terminologique dérivé de BÂTIR et apparié au corpus de production du Guide CQ; il ne constitue pas une nouvelle exigence CQ.",
+      "status": {
+        "en": "validated",
+        "fr": "provisional"
+      }
+    },
+    "status": {
+      "en": "provisional",
+      "fr": "provisional"
+    },
+    "confidence": {
+      "en": "medium",
+      "fr": "medium"
+    },
+    "sourceRef": {
+      "build": "Build 4 / BÂTIR",
+      "document": "batir data.xlsx",
+      "section": "Buildings → Post-construction → Stakeholders"
+    },
+    "aliases": {
+      "fr": [
+        "producteur"
+      ]
+    }
+  },
+  {
+    "id": "TERM-BATIR-QUALITY-MECHANICAL-DRAWINGS",
+    "discipline": "Quality",
+    "preferred": {
+      "en": "mechanical drawings",
+      "fr": "plans mécaniques"
+    },
+    "definition": {
+      "en": "Collection of drawings related to mechanical systems.",
+      "fr": "Ensemble des plans relatifs aux systèmes mécaniques.",
+      "status": {
+        "en": "provisional",
+        "fr": "provisional"
+      }
+    },
+    "contextNotes": {
+      "en": "BÂTIR-derived terminology candidate matched to the QC Field Guide production corpus; not a new QC requirement.",
+      "fr": "Candidat terminologique dérivé de BÂTIR et apparié au corpus de production du Guide CQ; il ne constitue pas une nouvelle exigence CQ.",
+      "status": {
+        "en": "validated",
+        "fr": "provisional"
+      }
+    },
+    "status": {
+      "en": "provisional",
+      "fr": "provisional"
+    },
+    "confidence": {
+      "en": "medium",
+      "fr": "medium"
+    },
+    "sourceRef": {
+      "build": "Build 4 / BÂTIR",
+      "document": "batir data.xlsx",
+      "section": "Buildings → Pre-construction → Documents"
+    },
+    "aliases": {
+      "fr": [
+        "plans de mécanique"
+      ]
+    }
+  },
+  {
+    "id": "TERM-BATIR-QUALITY-PERFORMANCE",
+    "discipline": "Quality",
+    "preferred": {
+      "en": "performance",
+      "fr": "rendement"
+    },
+    "definition": {
+      "en": "Level of efficiency achieved during the execution of an activity.",
+      "fr": "Niveau d'efficacité obtenu lors de l'exécution d'une activité.",
+      "status": {
+        "en": "provisional",
+        "fr": "provisional"
+      }
+    },
+    "contextNotes": {
+      "en": "BÂTIR-derived terminology candidate matched to the QC Field Guide production corpus; not a new QC requirement.",
+      "fr": "Candidat terminologique dérivé de BÂTIR et apparié au corpus de production du Guide CQ; il ne constitue pas une nouvelle exigence CQ.",
+      "status": {
+        "en": "validated",
+        "fr": "provisional"
+      }
+    },
+    "status": {
+      "en": "provisional",
+      "fr": "provisional"
+    },
+    "confidence": {
+      "en": "medium",
+      "fr": "medium"
+    },
+    "sourceRef": {
+      "build": "Build 4 / BÂTIR",
+      "document": "batir data.xlsx",
+      "section": "Gestion de projet → Planification → Notions techniques"
+    },
+    "aliases": {
+      "fr": [
+        "efficacité"
+      ]
+    }
+  },
+  {
+    "id": "TERM-BATIR-QUALITY-SCHEDULE",
+    "discipline": "Quality",
+    "preferred": {
+      "en": "schedule",
+      "fr": "échéancier"
+    },
+    "definition": {
+      "en": "Document showing the duration and sequence of project activities.",
+      "fr": "Document qui présente la durée et l'ordre des activités du projet.",
+      "status": {
+        "en": "provisional",
+        "fr": "provisional"
+      }
+    },
+    "contextNotes": {
+      "en": "BÂTIR-derived terminology candidate matched to the QC Field Guide production corpus; not a new QC requirement.",
+      "fr": "Candidat terminologique dérivé de BÂTIR et apparié au corpus de production du Guide CQ; il ne constitue pas une nouvelle exigence CQ.",
+      "status": {
+        "en": "validated",
+        "fr": "provisional"
+      }
+    },
+    "status": {
+      "en": "provisional",
+      "fr": "provisional"
+    },
+    "confidence": {
+      "en": "medium",
+      "fr": "medium"
+    },
+    "sourceRef": {
+      "build": "Build 4 / BÂTIR",
+      "document": "batir data.xlsx",
+      "section": "Buildings → Pre-construction → Documents"
+    },
+    "aliases": {
+      "fr": [
+        "calendrier",
+        "calendrier de projet",
+        "calendrier des travaux"
+      ]
+    }
+  },
+  {
+    "id": "TERM-BATIR-QUALITY-SEQUENCE",
+    "discipline": "Quality",
+    "preferred": {
+      "en": "sequence",
+      "fr": "séquence"
+    },
+    "definition": {
+      "en": "Order in which activities must be completed.",
+      "fr": "Ordre dans lequel les activités doivent être réalisées.",
+      "status": {
+        "en": "provisional",
+        "fr": "provisional"
+      }
+    },
+    "contextNotes": {
+      "en": "BÂTIR-derived terminology candidate matched to the QC Field Guide production corpus; not a new QC requirement.",
+      "fr": "Candidat terminologique dérivé de BÂTIR et apparié au corpus de production du Guide CQ; il ne constitue pas une nouvelle exigence CQ.",
+      "status": {
+        "en": "validated",
+        "fr": "provisional"
+      }
+    },
+    "status": {
+      "en": "provisional",
+      "fr": "provisional"
+    },
+    "confidence": {
+      "en": "medium",
+      "fr": "medium"
+    },
+    "sourceRef": {
+      "build": "Build 4 / BÂTIR",
+      "document": "batir data.xlsx",
+      "section": "Gestion de projet → Ordonnancement → Notions techniques"
+    },
+    "aliases": {
+      "fr": [
+        "enchaînement"
+      ]
+    }
+  },
+  {
+    "id": "TERM-BATIR-QUALITY-SPECIFICATIONS",
+    "discipline": "Quality",
+    "preferred": {
+      "en": "specifications",
+      "fr": "devis"
+    },
+    "definition": {
+      "en": "Document describing the project's technical requirements.",
+      "fr": "Document qui décrit les exigences techniques du projet.",
+      "status": {
+        "en": "provisional",
+        "fr": "provisional"
+      }
+    },
+    "contextNotes": {
+      "en": "BÂTIR-derived terminology candidate matched to the QC Field Guide production corpus; not a new QC requirement.",
+      "fr": "Candidat terminologique dérivé de BÂTIR et apparié au corpus de production du Guide CQ; il ne constitue pas une nouvelle exigence CQ.",
+      "status": {
+        "en": "validated",
+        "fr": "provisional"
+      }
+    },
+    "status": {
+      "en": "provisional",
+      "fr": "provisional"
+    },
+    "confidence": {
+      "en": "medium",
+      "fr": "medium"
+    },
+    "sourceRef": {
+      "build": "Build 4 / BÂTIR",
+      "document": "batir data.xlsx",
+      "section": "Buildings → Pre-construction → Documents"
+    },
+    "aliases": {
+      "fr": [
+        "devis technique"
+      ]
+    }
+  },
+  {
+    "id": "TERM-BATIR-QUALITY-STRUCTURAL-DRAWINGS",
+    "discipline": "Quality",
+    "preferred": {
+      "en": "structural drawings",
+      "fr": "plans structuraux"
+    },
+    "definition": {
+      "en": "Collection of drawings related to structural elements.",
+      "fr": "Ensemble des plans relatifs aux éléments structuraux.",
+      "status": {
+        "en": "provisional",
+        "fr": "provisional"
+      }
+    },
+    "contextNotes": {
+      "en": "BÂTIR-derived terminology candidate matched to the QC Field Guide production corpus; not a new QC requirement.",
+      "fr": "Candidat terminologique dérivé de BÂTIR et apparié au corpus de production du Guide CQ; il ne constitue pas une nouvelle exigence CQ.",
+      "status": {
+        "en": "validated",
+        "fr": "provisional"
+      }
+    },
+    "status": {
+      "en": "provisional",
+      "fr": "provisional"
+    },
+    "confidence": {
+      "en": "medium",
+      "fr": "medium"
+    },
+    "sourceRef": {
+      "build": "Build 4 / BÂTIR",
+      "document": "batir data.xlsx",
+      "section": "Buildings → Pre-construction → Documents"
+    },
+    "aliases": {
+      "fr": [
+        "plans de structure"
+      ]
+    }
+  },
+  {
+    "id": "TERM-BATIR-QUALITY-SUBCONTRACTOR",
+    "discipline": "Quality",
+    "preferred": {
+      "en": "subcontractor",
+      "fr": "sous-traitant"
+    },
+    "definition": {
+      "en": "Company hired to perform part of the work.",
+      "fr": "Entreprise mandatée pour exécuter une partie des travaux.",
+      "status": {
+        "en": "provisional",
+        "fr": "provisional"
+      }
+    },
+    "contextNotes": {
+      "en": "BÂTIR-derived terminology candidate matched to the QC Field Guide production corpus; not a new QC requirement.",
+      "fr": "Candidat terminologique dérivé de BÂTIR et apparié au corpus de production du Guide CQ; il ne constitue pas une nouvelle exigence CQ.",
+      "status": {
+        "en": "validated",
+        "fr": "provisional"
+      }
+    },
+    "status": {
+      "en": "provisional",
+      "fr": "provisional"
+    },
+    "confidence": {
+      "en": "medium",
+      "fr": "medium"
+    },
+    "sourceRef": {
+      "build": "Build 4 / BÂTIR",
+      "document": "batir data.xlsx",
+      "section": "Buildings → Post-construction → Stakeholders"
+    },
+    "aliases": {
+      "fr": [
+        "entrepreneur spécialisé",
+        "exécutant",
+        "prestataire",
+        "prestataire spécialisé"
+      ]
+    }
+  },
+  {
+    "id": "TERM-BATIR-QUALITY-SUPPLIER",
+    "discipline": "Quality",
+    "preferred": {
+      "en": "supplier",
+      "fr": "fournisseur"
+    },
+    "definition": {
+      "en": "Company that provides materials, equipment, or services.",
+      "fr": "Entreprise qui fournit des matériaux, des équipements ou des services.",
+      "status": {
+        "en": "provisional",
+        "fr": "provisional"
+      }
+    },
+    "contextNotes": {
+      "en": "BÂTIR-derived terminology candidate matched to the QC Field Guide production corpus; not a new QC requirement.",
+      "fr": "Candidat terminologique dérivé de BÂTIR et apparié au corpus de production du Guide CQ; il ne constitue pas une nouvelle exigence CQ.",
+      "status": {
+        "en": "validated",
+        "fr": "provisional"
+      }
+    },
+    "status": {
+      "en": "provisional",
+      "fr": "provisional"
+    },
+    "confidence": {
+      "en": "medium",
+      "fr": "medium"
+    },
+    "sourceRef": {
+      "build": "Build 4 / BÂTIR",
+      "document": "batir data.xlsx",
+      "section": "Buildings → Post-construction → Stakeholders"
+    },
+    "aliases": {
+      "fr": [
+        "distributeur",
+        "prestataire"
+      ]
+    }
+  },
+  {
+    "id": "TERM-BATIR-QUALITY-TEST",
+    "discipline": "Quality",
+    "preferred": {
+      "en": "test",
+      "fr": "essai"
+    },
+    "definition": {
+      "en": "Procedure intended to assess the properties or performance of an element.",
+      "fr": "Procédure destinée à évaluer les propriétés ou les performances d'un élément.",
+      "status": {
+        "en": "provisional",
+        "fr": "provisional"
+      }
+    },
+    "contextNotes": {
+      "en": "BÂTIR-derived terminology candidate matched to the QC Field Guide production corpus; not a new QC requirement.",
+      "fr": "Candidat terminologique dérivé de BÂTIR et apparié au corpus de production du Guide CQ; il ne constitue pas une nouvelle exigence CQ.",
+      "status": {
+        "en": "validated",
+        "fr": "provisional"
+      }
+    },
+    "status": {
+      "en": "provisional",
+      "fr": "provisional"
+    },
+    "confidence": {
+      "en": "medium",
+      "fr": "medium"
+    },
+    "sourceRef": {
+      "build": "Build 4 / BÂTIR",
+      "document": "batir data.xlsx",
+      "section": "Gestion de projet → Gestion de la qualité → Notions techniques"
+    },
+    "aliases": {
+      "fr": [
+        "test de contrôle"
+      ]
+    }
+  },
+  {
+    "id": "TERM-BATIR-QUALITY-TRACEABILITY",
+    "discipline": "Quality",
+    "preferred": {
+      "en": "traceability",
+      "fr": "traçabilité"
+    },
+    "definition": {
+      "en": "Ability to track the history, use, and location of an element.",
+      "fr": "Capacité à suivre l'historique, l'utilisation et l'emplacement d'un élément.",
+      "status": {
+        "en": "provisional",
+        "fr": "provisional"
+      }
+    },
+    "contextNotes": {
+      "en": "BÂTIR-derived terminology candidate matched to the QC Field Guide production corpus; not a new QC requirement.",
+      "fr": "Candidat terminologique dérivé de BÂTIR et apparié au corpus de production du Guide CQ; il ne constitue pas une nouvelle exigence CQ.",
+      "status": {
+        "en": "validated",
+        "fr": "provisional"
+      }
+    },
+    "status": {
+      "en": "provisional",
+      "fr": "provisional"
+    },
+    "confidence": {
+      "en": "medium",
+      "fr": "medium"
+    },
+    "sourceRef": {
+      "build": "Build 4 / BÂTIR",
+      "document": "batir data.xlsx",
+      "section": "Gestion de projet → Gestion de la qualité → Notions techniques"
+    },
+    "aliases": {
+      "fr": [
+        "suivi documentaire"
+      ]
+    }
+  },
+  {
+    "id": "TERM-BATIR-QUALITY-VERIFICATION",
+    "discipline": "Quality",
+    "preferred": {
+      "en": "verification",
+      "fr": "vérification"
+    },
+    "definition": {
+      "en": "Process intended to confirm that an element satisfies established requirements.",
+      "fr": "Processus visant à confirmer qu'un élément satisfait aux exigences établies.",
+      "status": {
+        "en": "provisional",
+        "fr": "provisional"
+      }
+    },
+    "contextNotes": {
+      "en": "BÂTIR-derived terminology candidate matched to the QC Field Guide production corpus; not a new QC requirement.",
+      "fr": "Candidat terminologique dérivé de BÂTIR et apparié au corpus de production du Guide CQ; il ne constitue pas une nouvelle exigence CQ.",
+      "status": {
+        "en": "validated",
+        "fr": "provisional"
+      }
+    },
+    "status": {
+      "en": "provisional",
+      "fr": "provisional"
+    },
+    "confidence": {
+      "en": "medium",
+      "fr": "medium"
+    },
+    "sourceRef": {
+      "build": "Build 4 / BÂTIR",
+      "document": "batir data.xlsx",
+      "section": "Gestion de projet → Gestion de la qualité → Notions techniques"
+    },
+    "aliases": {
+      "fr": [
+        "contrôle"
+      ]
+    }
+  },
+  {
+    "id": "TERM-BATIR-QUALITY-WARRANTY",
+    "discipline": "Quality",
+    "preferred": {
+      "en": "warranty",
+      "fr": "garantie"
+    },
+    "definition": {
+      "en": "Commitment intended to ensure the quality or durability of a product or structure.",
+      "fr": "Engagement visant à assurer la qualité ou la durabilité d'un produit ou d'un ouvrage.",
+      "status": {
+        "en": "provisional",
+        "fr": "provisional"
+      }
+    },
+    "contextNotes": {
+      "en": "BÂTIR-derived terminology candidate matched to the QC Field Guide production corpus; not a new QC requirement.",
+      "fr": "Candidat terminologique dérivé de BÂTIR et apparié au corpus de production du Guide CQ; il ne constitue pas une nouvelle exigence CQ.",
+      "status": {
+        "en": "validated",
+        "fr": "provisional"
+      }
+    },
+    "status": {
+      "en": "provisional",
+      "fr": "provisional"
+    },
+    "confidence": {
+      "en": "medium",
+      "fr": "medium"
+    },
+    "sourceRef": {
+      "build": "Build 4 / BÂTIR",
+      "document": "batir data.xlsx",
+      "section": "Gestion de projet → Approvisionnement et contrats → Notions techniques"
+    },
+    "aliases": {
+      "fr": [
+        "assurance"
+      ]
+    }
+  },
+  {
+    "id": "TERM-BATIR-ROOFING-ROOFING-MEMBRANE",
+    "discipline": "Roofing",
+    "preferred": {
+      "en": "roofing membrane",
+      "fr": "membrane de toiture"
+    },
+    "definition": {
+      "en": "Protective layer ensuring roof watertightness.",
+      "fr": "Couche protectrice assurant l'étanchéité de la toiture.",
+      "status": {
+        "en": "provisional",
+        "fr": "provisional"
+      }
+    },
+    "contextNotes": {
+      "en": "BÂTIR-derived terminology candidate matched to the QC Field Guide production corpus; not a new QC requirement.",
+      "fr": "Candidat terminologique dérivé de BÂTIR et apparié au corpus de production du Guide CQ; il ne constitue pas une nouvelle exigence CQ.",
+      "status": {
+        "en": "validated",
+        "fr": "provisional"
+      }
+    },
+    "status": {
+      "en": "provisional",
+      "fr": "provisional"
+    },
+    "confidence": {
+      "en": "medium",
+      "fr": "medium"
+    },
+    "sourceRef": {
+      "build": "Build 4 / BÂTIR",
+      "document": "batir data.xlsx",
+      "section": "Buildings → Construction → Building envelope → Elements"
+    },
+    "aliases": {
+      "fr": [
+        "membrane élastomère"
+      ]
+    }
+  },
+  {
+    "id": "TERM-BATIR-ROOFING-WATERPROOFING",
+    "discipline": "Roofing",
+    "preferred": {
+      "en": "waterproofing",
+      "fr": "étanchéité"
+    },
+    "definition": {
+      "en": "Ability of an element to prevent water infiltration.",
+      "fr": "Capacité d'un élément à empêcher la pénétration de l'eau.",
+      "status": {
+        "en": "provisional",
+        "fr": "provisional"
+      }
+    },
+    "contextNotes": {
+      "en": "BÂTIR-derived terminology candidate matched to the QC Field Guide production corpus; not a new QC requirement.",
+      "fr": "Candidat terminologique dérivé de BÂTIR et apparié au corpus de production du Guide CQ; il ne constitue pas une nouvelle exigence CQ.",
+      "status": {
+        "en": "validated",
+        "fr": "provisional"
+      }
+    },
+    "status": {
+      "en": "provisional",
+      "fr": "provisional"
+    },
+    "confidence": {
+      "en": "medium",
+      "fr": "medium"
+    },
+    "sourceRef": {
+      "build": "Build 4 / BÂTIR",
+      "document": "batir data.xlsx",
+      "section": "Buildings → Construction → Foundation → Notions techniques"
+    },
+    "aliases": {
+      "fr": [
+        "imperméabilité"
+      ]
+    }
+  },
+  {
+    "id": "TERM-BATIR-ROOFING-WATERPROOFING-MEMBRANE",
+    "discipline": "Roofing",
+    "preferred": {
+      "en": "waterproofing membrane",
+      "fr": "membrane d'étanchéité"
+    },
+    "definition": {
+      "en": "Protective layer preventing water infiltration.",
+      "fr": "Couche protectrice empêchant l'infiltration de l'eau.",
+      "status": {
+        "en": "provisional",
+        "fr": "provisional"
+      }
+    },
+    "contextNotes": {
+      "en": "BÂTIR-derived terminology candidate matched to the QC Field Guide production corpus; not a new QC requirement.",
+      "fr": "Candidat terminologique dérivé de BÂTIR et apparié au corpus de production du Guide CQ; il ne constitue pas une nouvelle exigence CQ.",
+      "status": {
+        "en": "validated",
+        "fr": "provisional"
+      }
+    },
+    "status": {
+      "en": "provisional",
+      "fr": "provisional"
+    },
+    "confidence": {
+      "en": "medium",
+      "fr": "medium"
+    },
+    "sourceRef": {
+      "build": "Build 4 / BÂTIR",
+      "document": "batir data.xlsx",
+      "section": "Buildings → Construction → Building envelope → Elements"
+    },
+    "aliases": {
+      "fr": [
+        "membrane imperméable"
+      ]
+    }
+  },
+  {
+    "id": "TERM-BATIR-STRUCTURAL-ANCHORAGE",
+    "discipline": "Structural",
+    "preferred": {
+      "en": "anchorage",
+      "fr": "ancrage"
+    },
+    "definition": {
+      "en": "Device used to secure a structural component firmly in place.",
+      "fr": "Dispositif servant à fixer solidement un élément structural.",
+      "status": {
+        "en": "provisional",
+        "fr": "provisional"
+      }
+    },
+    "contextNotes": {
+      "en": "BÂTIR-derived terminology candidate matched to the QC Field Guide production corpus; not a new QC requirement.",
+      "fr": "Candidat terminologique dérivé de BÂTIR et apparié au corpus de production du Guide CQ; il ne constitue pas une nouvelle exigence CQ.",
+      "status": {
+        "en": "validated",
+        "fr": "provisional"
+      }
+    },
+    "status": {
+      "en": "provisional",
+      "fr": "provisional"
+    },
+    "confidence": {
+      "en": "medium",
+      "fr": "medium"
+    },
+    "sourceRef": {
+      "build": "Build 4 / BÂTIR",
+      "document": "batir data.xlsx",
+      "section": "Buildings → Construction → Structure → Notions techniques"
+    },
+    "aliases": {
+      "fr": [
+        "fixation",
+        "point d'ancrage"
+      ]
+    }
+  },
+  {
+    "id": "TERM-BATIR-STRUCTURAL-ASSEMBLY",
+    "discipline": "Structural",
+    "preferred": {
+      "en": "assembly",
+      "fr": "assemblage"
+    },
+    "definition": {
+      "en": "Collection of components connected to form a structure.",
+      "fr": "Ensemble des éléments reliés entre eux pour former une structure.",
+      "status": {
+        "en": "provisional",
+        "fr": "provisional"
+      }
+    },
+    "contextNotes": {
+      "en": "BÂTIR-derived terminology candidate matched to the QC Field Guide production corpus; not a new QC requirement.",
+      "fr": "Candidat terminologique dérivé de BÂTIR et apparié au corpus de production du Guide CQ; il ne constitue pas une nouvelle exigence CQ.",
+      "status": {
+        "en": "validated",
+        "fr": "provisional"
+      }
+    },
+    "status": {
+      "en": "provisional",
+      "fr": "provisional"
+    },
+    "confidence": {
+      "en": "medium",
+      "fr": "medium"
+    },
+    "sourceRef": {
+      "build": "Build 4 / BÂTIR",
+      "document": "batir data.xlsx",
+      "section": "Buildings → Construction → Structure → Elements"
+    },
+    "aliases": {
+      "fr": [
+        "jonction"
+      ]
+    }
+  },
+  {
+    "id": "TERM-BATIR-STRUCTURAL-BOLT",
+    "discipline": "Structural",
+    "preferred": {
+      "en": "bolt",
+      "fr": "boulon"
+    },
+    "definition": {
+      "en": "Threaded fastener used to join different components.",
+      "fr": "Élément de fixation fileté utilisé pour assembler différentes pièces.",
+      "status": {
+        "en": "provisional",
+        "fr": "provisional"
+      }
+    },
+    "contextNotes": {
+      "en": "BÂTIR-derived terminology candidate matched to the QC Field Guide production corpus; not a new QC requirement.",
+      "fr": "Candidat terminologique dérivé de BÂTIR et apparié au corpus de production du Guide CQ; il ne constitue pas une nouvelle exigence CQ.",
+      "status": {
+        "en": "validated",
+        "fr": "provisional"
+      }
+    },
+    "status": {
+      "en": "provisional",
+      "fr": "provisional"
+    },
+    "confidence": {
+      "en": "medium",
+      "fr": "medium"
+    },
+    "sourceRef": {
+      "build": "Build 4 / BÂTIR",
+      "document": "batir data.xlsx",
+      "section": "Buildings → Construction → Building envelope → Materials"
+    },
+    "aliases": {
+      "fr": [
+        "boulon de fixation"
+      ]
+    }
+  },
+  {
+    "id": "TERM-BATIR-STRUCTURAL-BRACING",
+    "discipline": "Structural",
+    "preferred": {
+      "en": "bracing",
+      "fr": "contreventement"
+    },
+    "definition": {
+      "en": "System of elements providing lateral stability to a structure.",
+      "fr": "Ensemble des éléments assurant la stabilité latérale d'une structure.",
+      "status": {
+        "en": "provisional",
+        "fr": "provisional"
+      }
+    },
+    "contextNotes": {
+      "en": "BÂTIR-derived terminology candidate matched to the QC Field Guide production corpus; not a new QC requirement.",
+      "fr": "Candidat terminologique dérivé de BÂTIR et apparié au corpus de production du Guide CQ; il ne constitue pas une nouvelle exigence CQ.",
+      "status": {
+        "en": "validated",
+        "fr": "provisional"
+      }
+    },
+    "status": {
+      "en": "provisional",
+      "fr": "provisional"
+    },
+    "confidence": {
+      "en": "medium",
+      "fr": "medium"
+    },
+    "sourceRef": {
+      "build": "Build 4 / BÂTIR",
+      "document": "batir data.xlsx",
+      "section": "Buildings → Construction → Structure → Elements"
+    },
+    "aliases": {
+      "fr": [
+        "stabilisation",
+        "système de stabilisation"
+      ]
+    }
+  },
+  {
+    "id": "TERM-BATIR-STRUCTURAL-CATCH-BASIN",
+    "discipline": "Structural",
+    "preferred": {
+      "en": "catch basin",
+      "fr": "puisard"
+    },
+    "definition": {
+      "en": "Structure designed to collect water and retain debris and sediment.",
+      "fr": "Ouvrage destiné à recueillir l'eau et à retenir les débris et les sédiments.",
+      "status": {
+        "en": "provisional",
+        "fr": "provisional"
+      }
+    },
+    "contextNotes": {
+      "en": "BÂTIR-derived terminology candidate matched to the QC Field Guide production corpus; not a new QC requirement.",
+      "fr": "Candidat terminologique dérivé de BÂTIR et apparié au corpus de production du Guide CQ; il ne constitue pas une nouvelle exigence CQ.",
+      "status": {
+        "en": "validated",
+        "fr": "provisional"
+      }
+    },
+    "status": {
+      "en": "provisional",
+      "fr": "provisional"
+    },
+    "confidence": {
+      "en": "medium",
+      "fr": "medium"
+    },
+    "sourceRef": {
+      "build": "Build 4 / BÂTIR",
+      "document": "batir data.xlsx",
+      "section": "Infrastructure → Construction → Drainage → Elements"
+    },
+    "aliases": {
+      "fr": [
+        "puisard de rue"
+      ]
+    }
+  },
+  {
+    "id": "TERM-BATIR-STRUCTURAL-COMMISSIONING",
+    "discipline": "Structural",
+    "preferred": {
+      "en": "commissioning",
+      "fr": "mise en service des installations"
+    },
+    "definition": {
+      "en": "Process of placing facilities into operation.",
+      "fr": "Processus consistant à mettre les installations en exploitation.",
+      "status": {
+        "en": "provisional",
+        "fr": "provisional"
+      }
+    },
+    "contextNotes": {
+      "en": "BÂTIR-derived terminology candidate matched to the QC Field Guide production corpus; not a new QC requirement.",
+      "fr": "Candidat terminologique dérivé de BÂTIR et apparié au corpus de production du Guide CQ; il ne constitue pas une nouvelle exigence CQ.",
+      "status": {
+        "en": "validated",
+        "fr": "provisional"
+      }
+    },
+    "status": {
+      "en": "provisional",
+      "fr": "provisional"
+    },
+    "confidence": {
+      "en": "medium",
+      "fr": "medium"
+    },
+    "sourceRef": {
+      "build": "Build 4 / BÂTIR",
+      "document": "batir data.xlsx",
+      "section": "Infrastructure → Post-construction → Activities"
+    },
+    "aliases": {
+      "fr": [
+        "mise en exploitation"
+      ]
+    }
+  },
+  {
+    "id": "TERM-BATIR-STRUCTURAL-COMPRESSION",
+    "discipline": "Structural",
+    "preferred": {
+      "en": "compression",
+      "fr": "compression"
+    },
+    "definition": {
+      "en": "Force that tends to shorten a structural member.",
+      "fr": "Effort qui tend à réduire la longueur d'un élément.",
+      "status": {
+        "en": "provisional",
+        "fr": "provisional"
+      }
+    },
+    "contextNotes": {
+      "en": "BÂTIR-derived terminology candidate matched to the QC Field Guide production corpus; not a new QC requirement.",
+      "fr": "Candidat terminologique dérivé de BÂTIR et apparié au corpus de production du Guide CQ; il ne constitue pas une nouvelle exigence CQ.",
+      "status": {
+        "en": "validated",
+        "fr": "provisional"
+      }
+    },
+    "status": {
+      "en": "provisional",
+      "fr": "provisional"
+    },
+    "confidence": {
+      "en": "medium",
+      "fr": "medium"
+    },
+    "sourceRef": {
+      "build": "Build 4 / BÂTIR",
+      "document": "batir data.xlsx",
+      "section": "Buildings → Construction → Structure → Notions techniques"
+    },
+    "aliases": {
+      "fr": [
+        "effort de compression"
+      ]
+    }
+  },
+  {
+    "id": "TERM-BATIR-STRUCTURAL-CONNECTION",
+    "discipline": "Structural",
+    "preferred": {
+      "en": "connection",
+      "fr": "connexion"
+    },
+    "definition": {
+      "en": "Connection point between two structural members.",
+      "fr": "Point de liaison entre deux éléments structuraux.",
+      "status": {
+        "en": "provisional",
+        "fr": "provisional"
+      }
+    },
+    "contextNotes": {
+      "en": "BÂTIR-derived terminology candidate matched to the QC Field Guide production corpus; not a new QC requirement.",
+      "fr": "Candidat terminologique dérivé de BÂTIR et apparié au corpus de production du Guide CQ; il ne constitue pas une nouvelle exigence CQ.",
+      "status": {
+        "en": "validated",
+        "fr": "provisional"
+      }
+    },
+    "status": {
+      "en": "provisional",
+      "fr": "provisional"
+    },
+    "confidence": {
+      "en": "medium",
+      "fr": "medium"
+    },
+    "sourceRef": {
+      "build": "Build 4 / BÂTIR",
+      "document": "batir data.xlsx",
+      "section": "Buildings → Construction → Structure → Elements"
+    },
+    "aliases": {
+      "fr": [
+        "jonction"
+      ]
+    }
+  },
+  {
+    "id": "TERM-BATIR-STRUCTURAL-DEFLECTION",
+    "discipline": "Structural",
+    "preferred": {
+      "en": "deflection",
+      "fr": "flèche"
+    },
+    "definition": {
+      "en": "Displacement of a component under load.",
+      "fr": "Déplacement d'un élément sous l'effet d'une charge.",
+      "status": {
+        "en": "provisional",
+        "fr": "provisional"
+      }
+    },
+    "contextNotes": {
+      "en": "BÂTIR-derived terminology candidate matched to the QC Field Guide production corpus; not a new QC requirement.",
+      "fr": "Candidat terminologique dérivé de BÂTIR et apparié au corpus de production du Guide CQ; il ne constitue pas une nouvelle exigence CQ.",
+      "status": {
+        "en": "validated",
+        "fr": "provisional"
+      }
+    },
+    "status": {
+      "en": "provisional",
+      "fr": "provisional"
+    },
+    "confidence": {
+      "en": "medium",
+      "fr": "medium"
+    },
+    "sourceRef": {
+      "build": "Build 4 / BÂTIR",
+      "document": "batir data.xlsx",
+      "section": "Buildings → Construction → Structure → Notions techniques"
+    },
+    "aliases": {
+      "fr": [
+        "déflexion",
+        "déformation"
+      ]
+    }
+  },
+  {
+    "id": "TERM-BATIR-STRUCTURAL-DRAIN",
+    "discipline": "Structural",
+    "preferred": {
+      "en": "drain",
+      "fr": "drain"
+    },
+    "definition": {
+      "en": "Component used to collect and remove water from the ground.",
+      "fr": "Élément permettant de capter et d'évacuer l'eau présente dans le sol.",
+      "status": {
+        "en": "provisional",
+        "fr": "provisional"
+      }
+    },
+    "contextNotes": {
+      "en": "BÂTIR-derived terminology candidate matched to the QC Field Guide production corpus; not a new QC requirement.",
+      "fr": "Candidat terminologique dérivé de BÂTIR et apparié au corpus de production du Guide CQ; il ne constitue pas une nouvelle exigence CQ.",
+      "status": {
+        "en": "validated",
+        "fr": "provisional"
+      }
+    },
+    "status": {
+      "en": "provisional",
+      "fr": "provisional"
+    },
+    "confidence": {
+      "en": "medium",
+      "fr": "medium"
+    },
+    "sourceRef": {
+      "build": "Build 4 / BÂTIR",
+      "document": "batir data.xlsx",
+      "section": "Infrastructure → Construction → Drainage → Elements"
+    },
+    "aliases": {
+      "fr": [
+        "drain de drainage"
+      ]
+    }
+  },
+  {
+    "id": "TERM-BATIR-STRUCTURAL-DRAINAGE-PLAN",
+    "discipline": "Structural",
+    "preferred": {
+      "en": "drainage plan",
+      "fr": "plan de drainage"
+    },
+    "definition": {
+      "en": "Document describing the measures planned for water management.",
+      "fr": "Document décrivant les mesures prévues pour la gestion des eaux.",
+      "status": {
+        "en": "provisional",
+        "fr": "provisional"
+      }
+    },
+    "contextNotes": {
+      "en": "BÂTIR-derived terminology candidate matched to the QC Field Guide production corpus; not a new QC requirement.",
+      "fr": "Candidat terminologique dérivé de BÂTIR et apparié au corpus de production du Guide CQ; il ne constitue pas une nouvelle exigence CQ.",
+      "status": {
+        "en": "validated",
+        "fr": "provisional"
+      }
+    },
+    "status": {
+      "en": "provisional",
+      "fr": "provisional"
+    },
+    "confidence": {
+      "en": "medium",
+      "fr": "medium"
+    },
+    "sourceRef": {
+      "build": "Build 4 / BÂTIR",
+      "document": "batir data.xlsx",
+      "section": "Infrastructure → Pre-construction → Documents"
+    },
+    "aliases": {
+      "fr": [
+        "plan d'évacuation des eaux"
+      ]
+    }
+  },
+  {
+    "id": "TERM-BATIR-STRUCTURAL-DRILL",
+    "discipline": "Structural",
+    "preferred": {
+      "en": "drill",
+      "fr": "perceuse"
+    },
+    "definition": {
+      "en": "Tool used to drill holes in various materials.",
+      "fr": "Outil utilisé pour percer des trous dans différents matériaux.",
+      "status": {
+        "en": "provisional",
+        "fr": "provisional"
+      }
+    },
+    "contextNotes": {
+      "en": "BÂTIR-derived terminology candidate matched to the QC Field Guide production corpus; not a new QC requirement.",
+      "fr": "Candidat terminologique dérivé de BÂTIR et apparié au corpus de production du Guide CQ; il ne constitue pas une nouvelle exigence CQ.",
+      "status": {
+        "en": "validated",
+        "fr": "provisional"
+      }
+    },
+    "status": {
+      "en": "provisional",
+      "fr": "provisional"
+    },
+    "confidence": {
+      "en": "medium",
+      "fr": "medium"
+    },
+    "sourceRef": {
+      "build": "Build 4 / BÂTIR",
+      "document": "batir data.xlsx",
+      "section": "Buildings → Construction → Building envelope → Tools"
+    },
+    "aliases": {
+      "fr": [
+        "perceuse électrique"
+      ]
+    }
+  },
+  {
+    "id": "TERM-BATIR-STRUCTURAL-EROSION",
+    "discipline": "Structural",
+    "preferred": {
+      "en": "erosion",
+      "fr": "érosion"
+    },
+    "definition": {
+      "en": "Progressive degradation of soil caused by water, wind, or human activity.",
+      "fr": "Dégradation progressive du sol sous l'action de l'eau, du vent ou des activités humaines.",
+      "status": {
+        "en": "provisional",
+        "fr": "provisional"
+      }
+    },
+    "contextNotes": {
+      "en": "BÂTIR-derived terminology candidate matched to the QC Field Guide production corpus; not a new QC requirement.",
+      "fr": "Candidat terminologique dérivé de BÂTIR et apparié au corpus de production du Guide CQ; il ne constitue pas une nouvelle exigence CQ.",
+      "status": {
+        "en": "validated",
+        "fr": "provisional"
+      }
+    },
+    "status": {
+      "en": "provisional",
+      "fr": "provisional"
+    },
+    "confidence": {
+      "en": "medium",
+      "fr": "medium"
+    },
+    "sourceRef": {
+      "build": "Build 4 / BÂTIR",
+      "document": "batir data.xlsx",
+      "section": "Infrastructure → Construction → Drainage → Notions techniques"
+    },
+    "aliases": {
+      "fr": [
+        "dégradation du sol"
+      ]
+    }
+  },
+  {
+    "id": "TERM-BATIR-STRUCTURAL-FILL",
+    "discipline": "Structural",
+    "preferred": {
+      "en": "fill",
+      "fr": "remblai"
+    },
+    "definition": {
+      "en": "Material placed to raise ground elevation or fill an excavation.",
+      "fr": "Matériau déposé afin d'augmenter le niveau du terrain ou de combler une excavation.",
+      "status": {
+        "en": "provisional",
+        "fr": "provisional"
+      }
+    },
+    "contextNotes": {
+      "en": "BÂTIR-derived terminology candidate matched to the QC Field Guide production corpus; not a new QC requirement.",
+      "fr": "Candidat terminologique dérivé de BÂTIR et apparié au corpus de production du Guide CQ; il ne constitue pas une nouvelle exigence CQ.",
+      "status": {
+        "en": "validated",
+        "fr": "provisional"
+      }
+    },
+    "status": {
+      "en": "provisional",
+      "fr": "provisional"
+    },
+    "confidence": {
+      "en": "medium",
+      "fr": "medium"
+    },
+    "sourceRef": {
+      "build": "Build 4 / BÂTIR",
+      "document": "batir data.xlsx",
+      "section": "Infrastructure → Construction → Earthworks → Elements"
+    },
+    "aliases": {
+      "fr": [
+        "matériau de remblayage"
+      ]
+    }
+  },
+  {
+    "id": "TERM-BATIR-STRUCTURAL-GRADING",
+    "discipline": "Structural",
+    "preferred": {
+      "en": "grading",
+      "fr": "nivellement"
+    },
+    "definition": {
+      "en": "Operation involving the adjustment of ground elevations and slopes.",
+      "fr": "Opération consistant à ajuster les niveaux et les pentes du terrain.",
+      "status": {
+        "en": "provisional",
+        "fr": "provisional"
+      }
+    },
+    "contextNotes": {
+      "en": "BÂTIR-derived terminology candidate matched to the QC Field Guide production corpus; not a new QC requirement.",
+      "fr": "Candidat terminologique dérivé de BÂTIR et apparié au corpus de production du Guide CQ; il ne constitue pas une nouvelle exigence CQ.",
+      "status": {
+        "en": "validated",
+        "fr": "provisional"
+      }
+    },
+    "status": {
+      "en": "provisional",
+      "fr": "provisional"
+    },
+    "confidence": {
+      "en": "medium",
+      "fr": "medium"
+    },
+    "sourceRef": {
+      "build": "Build 4 / BÂTIR",
+      "document": "batir data.xlsx",
+      "section": "Infrastructure → Construction → Earthworks → Notions techniques"
+    },
+    "aliases": {
+      "fr": [
+        "mise à niveau"
+      ]
+    }
+  },
+  {
+    "id": "TERM-BATIR-STRUCTURAL-LINTEL",
+    "discipline": "Structural",
+    "preferred": {
+      "en": "lintel",
+      "fr": "linteau"
+    },
+    "definition": {
+      "en": "Horizontal member located above an opening.",
+      "fr": "Élément horizontal situé au-dessus d'une ouverture.",
+      "status": {
+        "en": "provisional",
+        "fr": "provisional"
+      }
+    },
+    "contextNotes": {
+      "en": "BÂTIR-derived terminology candidate matched to the QC Field Guide production corpus; not a new QC requirement.",
+      "fr": "Candidat terminologique dérivé de BÂTIR et apparié au corpus de production du Guide CQ; il ne constitue pas une nouvelle exigence CQ.",
+      "status": {
+        "en": "validated",
+        "fr": "provisional"
+      }
+    },
+    "status": {
+      "en": "provisional",
+      "fr": "provisional"
+    },
+    "confidence": {
+      "en": "medium",
+      "fr": "medium"
+    },
+    "sourceRef": {
+      "build": "Build 4 / BÂTIR",
+      "document": "batir data.xlsx",
+      "section": "Buildings → Construction → Building envelope → Elements"
+    },
+    "aliases": {
+      "fr": [
+        "traverse"
+      ]
+    }
+  },
+  {
+    "id": "TERM-BATIR-STRUCTURAL-PIPE",
+    "discipline": "Structural",
+    "preferred": {
+      "en": "pipe",
+      "fr": "conduite"
+    },
+    "definition": {
+      "en": "Tubular component used to convey water or other fluids.",
+      "fr": "Élément tubulaire servant au transport de l'eau ou d'autres fluides.",
+      "status": {
+        "en": "provisional",
+        "fr": "provisional"
+      }
+    },
+    "contextNotes": {
+      "en": "BÂTIR-derived terminology candidate matched to the QC Field Guide production corpus; not a new QC requirement.",
+      "fr": "Candidat terminologique dérivé de BÂTIR et apparié au corpus de production du Guide CQ; il ne constitue pas une nouvelle exigence CQ.",
+      "status": {
+        "en": "validated",
+        "fr": "provisional"
+      }
+    },
+    "status": {
+      "en": "provisional",
+      "fr": "provisional"
+    },
+    "confidence": {
+      "en": "medium",
+      "fr": "medium"
+    },
+    "sourceRef": {
+      "build": "Build 4 / BÂTIR",
+      "document": "batir data.xlsx",
+      "section": "Infrastructure → Construction → Drainage → Elements"
+    },
+    "aliases": {
+      "fr": [
+        "canalisation"
+      ]
+    }
+  },
+  {
+    "id": "TERM-BATIR-STRUCTURAL-PLATE",
+    "discipline": "Structural",
+    "preferred": {
+      "en": "plate",
+      "fr": "lisse"
+    },
+    "definition": {
+      "en": "Horizontal member used as a support or connecting component.",
+      "fr": "Élément horizontal servant d'appui ou de liaison.",
+      "status": {
+        "en": "provisional",
+        "fr": "provisional"
+      }
+    },
+    "contextNotes": {
+      "en": "BÂTIR-derived terminology candidate matched to the QC Field Guide production corpus; not a new QC requirement.",
+      "fr": "Candidat terminologique dérivé de BÂTIR et apparié au corpus de production du Guide CQ; il ne constitue pas une nouvelle exigence CQ.",
+      "status": {
+        "en": "validated",
+        "fr": "provisional"
+      }
+    },
+    "status": {
+      "en": "provisional",
+      "fr": "provisional"
+    },
+    "confidence": {
+      "en": "medium",
+      "fr": "medium"
+    },
+    "sourceRef": {
+      "build": "Build 4 / BÂTIR",
+      "document": "batir data.xlsx",
+      "section": "Buildings → Construction → Structure → Elements"
+    },
+    "aliases": {
+      "fr": [
+        "pièce d'appui"
+      ]
+    }
+  },
+  {
+    "id": "TERM-BATIR-STRUCTURAL-PLUMBNESS",
+    "discipline": "Structural",
+    "preferred": {
+      "en": "plumbness",
+      "fr": "aplomb"
+    },
+    "definition": {
+      "en": "Exact vertical position of a component.",
+      "fr": "Position verticale exacte d'un élément.",
+      "status": {
+        "en": "provisional",
+        "fr": "provisional"
+      }
+    },
+    "contextNotes": {
+      "en": "BÂTIR-derived terminology candidate matched to the QC Field Guide production corpus; not a new QC requirement.",
+      "fr": "Candidat terminologique dérivé de BÂTIR et apparié au corpus de production du Guide CQ; il ne constitue pas une nouvelle exigence CQ.",
+      "status": {
+        "en": "validated",
+        "fr": "provisional"
+      }
+    },
+    "status": {
+      "en": "provisional",
+      "fr": "provisional"
+    },
+    "confidence": {
+      "en": "medium",
+      "fr": "medium"
+    },
+    "sourceRef": {
+      "build": "Build 4 / BÂTIR",
+      "document": "batir data.xlsx",
+      "section": "Buildings → Construction → Building envelope → Notions techniques"
+    },
+    "aliases": {
+      "fr": [
+        "verticalité"
+      ]
+    }
+  },
+  {
+    "id": "TERM-BATIR-STRUCTURAL-STABILITY",
+    "discipline": "Structural",
+    "preferred": {
+      "en": "stability",
+      "fr": "stabilité"
+    },
+    "definition": {
+      "en": "Ability of a structure to maintain its equilibrium.",
+      "fr": "Capacité d'une structure à conserver son équilibre.",
+      "status": {
+        "en": "provisional",
+        "fr": "provisional"
+      }
+    },
+    "contextNotes": {
+      "en": "BÂTIR-derived terminology candidate matched to the QC Field Guide production corpus; not a new QC requirement.",
+      "fr": "Candidat terminologique dérivé de BÂTIR et apparié au corpus de production du Guide CQ; il ne constitue pas une nouvelle exigence CQ.",
+      "status": {
+        "en": "validated",
+        "fr": "provisional"
+      }
+    },
+    "status": {
+      "en": "provisional",
+      "fr": "provisional"
+    },
+    "confidence": {
+      "en": "medium",
+      "fr": "medium"
+    },
+    "sourceRef": {
+      "build": "Build 4 / BÂTIR",
+      "document": "batir data.xlsx",
+      "section": "Buildings → Construction → Structure → Notions techniques"
+    },
+    "aliases": {
+      "fr": [
+        "équilibre",
+        "équilibre structural",
+        "stabilité structurale"
+      ]
+    }
+  },
+  {
+    "id": "TERM-BATIR-STRUCTURAL-STRENGTH",
+    "discipline": "Structural",
+    "preferred": {
+      "en": "strength",
+      "fr": "résistance"
+    },
+    "definition": {
+      "en": "Ability of a material or structure to withstand loads.",
+      "fr": "Capacité d'un matériau ou d'une structure à supporter des charges.",
+      "status": {
+        "en": "provisional",
+        "fr": "provisional"
+      }
+    },
+    "contextNotes": {
+      "en": "BÂTIR-derived terminology candidate matched to the QC Field Guide production corpus; not a new QC requirement.",
+      "fr": "Candidat terminologique dérivé de BÂTIR et apparié au corpus de production du Guide CQ; il ne constitue pas une nouvelle exigence CQ.",
+      "status": {
+        "en": "validated",
+        "fr": "provisional"
+      }
+    },
+    "status": {
+      "en": "provisional",
+      "fr": "provisional"
+    },
+    "confidence": {
+      "en": "medium",
+      "fr": "medium"
+    },
+    "sourceRef": {
+      "build": "Build 4 / BÂTIR",
+      "document": "batir data.xlsx",
+      "section": "Buildings → Construction → Structure → Notions techniques"
+    },
+    "aliases": {
+      "fr": [
+        "capacité portante"
+      ]
+    }
+  },
+  {
+    "id": "TERM-BATIR-STRUCTURAL-STRUCTURAL-STEEL",
+    "discipline": "Structural",
+    "preferred": {
+      "en": "structural steel",
+      "fr": "acier de construction"
+    },
+    "definition": {
+      "en": "Steel designed to withstand structural loads.",
+      "fr": "Acier conçu pour résister aux charges appliquées aux structures.",
+      "status": {
+        "en": "provisional",
+        "fr": "provisional"
+      }
+    },
+    "contextNotes": {
+      "en": "BÂTIR-derived terminology candidate matched to the QC Field Guide production corpus; not a new QC requirement.",
+      "fr": "Candidat terminologique dérivé de BÂTIR et apparié au corpus de production du Guide CQ; il ne constitue pas une nouvelle exigence CQ.",
+      "status": {
+        "en": "validated",
+        "fr": "provisional"
+      }
+    },
+    "status": {
+      "en": "provisional",
+      "fr": "provisional"
+    },
+    "confidence": {
+      "en": "medium",
+      "fr": "medium"
+    },
+    "sourceRef": {
+      "build": "Build 4 / BÂTIR",
+      "document": "batir data.xlsx",
+      "section": "Buildings → Construction → Structure → Materials"
+    },
+    "aliases": {
+      "fr": [
+        "acier structural"
+      ]
+    }
+  },
+  {
+    "id": "TERM-BATIR-STRUCTURAL-WELDING",
+    "discipline": "Structural",
+    "preferred": {
+      "en": "welding",
+      "fr": "soudage"
+    },
+    "definition": {
+      "en": "Process used to join metal components through fusion.",
+      "fr": "Procédé permettant d'assembler des pièces métalliques par fusion.",
+      "status": {
+        "en": "provisional",
+        "fr": "provisional"
+      }
+    },
+    "contextNotes": {
+      "en": "BÂTIR-derived terminology candidate matched to the QC Field Guide production corpus; not a new QC requirement.",
+      "fr": "Candidat terminologique dérivé de BÂTIR et apparié au corpus de production du Guide CQ; il ne constitue pas une nouvelle exigence CQ.",
+      "status": {
+        "en": "validated",
+        "fr": "provisional"
+      }
+    },
+    "status": {
+      "en": "provisional",
+      "fr": "provisional"
+    },
+    "confidence": {
+      "en": "medium",
+      "fr": "medium"
+    },
+    "sourceRef": {
+      "build": "Build 4 / BÂTIR",
+      "document": "batir data.xlsx",
+      "section": "Buildings → Construction → Structure → Notions techniques"
+    },
+    "aliases": {
+      "fr": [
+        "soudure"
+      ]
+    }
+  }
+]

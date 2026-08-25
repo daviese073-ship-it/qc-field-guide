@@ -29,6 +29,7 @@ import structuralRelationships from "@/data/relationships/structural.json";
 import testingCloseoutRelationships from "@/data/relationships/testing-closeout.json";
 import sections from "@/data/sections/sections.json";
 import terminologyCloseout from "@/data/terminology/closeout.json";
+import terminologyBatirQc from "@/data/terminology/batir-qc.json";
 import terminologyConcrete from "@/data/terminology/concrete.json";
 import terminologyEarthworks from "@/data/terminology/earthworks.json";
 import terminologyElectrical from "@/data/terminology/electrical.json";
@@ -85,7 +86,8 @@ const terminology = [
   ...terminologyElectrical,
   ...terminologyFireLifeSafety,
   ...terminologyTesting,
-  ...terminologyCloseout
+  ...terminologyCloseout,
+  ...terminologyBatirQc
 ];
 
 export const productionCanonicalDataset = {
@@ -104,7 +106,7 @@ export const productionCanonicalDataset = {
   uiStrings,
   version: {
     schemaVersion: "phase-002",
-    contentVersion: "phase-013-production-localization",
-    terminologyVersion: "phase-013-production-localization"
+    contentVersion: "phase-013a-production-bilingual-content",
+    terminologyVersion: "phase-013a-batir-terminology"
   }
 };

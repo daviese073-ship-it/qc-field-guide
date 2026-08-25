@@ -3,6 +3,7 @@ import { describe, expect, it } from "vitest";
 
 import { LocalizedText } from "@/components/content/LocalizedText";
 import { productionCanonicalDataset } from "@/data/productionCanonicalDataset";
+import type { Activity, ContentBlock, ContentItem } from "@/domain/types";
 import { getCanonicalRoute } from "@/services/navigation/routeHelpers";
 import { createRelationshipService } from "@/services/relationships/relationshipService";
 import {
@@ -20,7 +21,53 @@ import { validateCanonicalDataset } from "@/services/validation/validateCanonica
 const validatedProduction = () =>
   validateCanonicalDataset(productionCanonicalDataset);
 
-describe("Phase 013 production localization", () => {
+const collectBlockItems = (blocks: readonly ContentBlock[] | undefined) => {
+  const items: ContentItem[] = [];
+
+  for (const block of blocks ?? []) {
+    if (block.type === "paragraph" || block.type === "notice") {
+      items.push(block.item);
+    }
+    if (block.type === "bulletList" || block.type === "checkList") {
+      items.push(...block.items);
+    }
+  }
+
+  return items;
+};
+
+const collectActivityItems = (activity: Activity) => [
+  ...[
+    "requirements",
+    "planning",
+    "documentControl",
+    "materialControl",
+    "evidence",
+    "correctiveAction",
+    "verification",
+    "closureCriteria",
+    "reportingAnalysis",
+    "qualityCheckpoint"
+  ].flatMap((field) =>
+    collectBlockItems(activity[field as keyof Activity] as ContentBlock[])
+  ),
+  ...collectBlockItems(activity.inspection?.before),
+  ...collectBlockItems(activity.inspection?.during),
+  ...collectBlockItems(activity.inspection?.after),
+  ...collectBlockItems(activity.inspection?.testing),
+  ...collectBlockItems(activity.issues?.commonDeficiencies),
+  ...collectBlockItems(activity.issues?.escalationTriggers),
+  ...collectBlockItems(activity.communications?.before),
+  ...collectBlockItems(activity.communications?.during),
+  ...collectBlockItems(activity.communications?.issueEscalation),
+  ...collectBlockItems(activity.communications?.after),
+  ...collectBlockItems(activity.outputs?.records),
+  ...collectBlockItems(activity.outputs?.acceptanceEvidence),
+  ...collectBlockItems(activity.outputs?.followUp),
+  ...(activity.specialistBoundary ? [activity.specialistBoundary] : [])
+];
+
+describe("Phase 013A production localization", () => {
   it("passes the production localization audit with explicit coverage counts", () => {
     const { dataset, registries } = validatedProduction();
     const report = auditProductionLocalizationDataset(dataset, registries);
@@ -28,16 +75,58 @@ describe("Phase 013 production localization", () => {
     expect(report.ok).toBe(true);
     expect(report.localizedSectionTitleCount).toBe(14);
     expect(report.localizedActivityTitleCount).toBe(139);
-    expect(report.terminologyCount).toBe(26);
+    expect(report.terminologyCount).toBe(146);
     expect(report.acronymCount).toBe(20);
     expect(report.uiStringCount).toBe(169);
     expect(report.contentItemCount).toBe(13576);
-    expect(report.contentItemFrCount).toBe(0);
-    expect(report.contentItemFallbackOnlyCount).toBe(13576);
+    expect(report.contentItemFrCount).toBe(13576);
+    expect(report.contentItemReviewedFrCount).toBe(0);
+    expect(report.contentItemProvisionalFrCount).toBe(13576);
+    expect(report.contentItemFallbackOnlyCount).toBe(0);
+    expect(report.authoritySensitiveFrCount).toBe(1064);
+    expect(report.authoritySensitiveProvisionalFrCount).toBe(1064);
+    expect(report.numericTokenMismatchCount).toBe(0);
+    expect(report.criticalTokenMismatchCount).toBe(0);
+    expect(report.authorityObligationIssueCount).toBe(0);
+    expect(report.unresolvedQaFlagCount).toBe(0);
     expect(report.unresolvedReferenceCount).toBe(0);
     expect(formatProductionLocalizationAuditReport(report)).toContain(
       "Language-specific canonical IDs: 0"
     );
+  });
+
+  it("keeps bilingual content on the same content-item IDs", () => {
+    const { registries } = validatedProduction();
+    const activity = registries.activities.getById("10.3");
+
+    expect(activity?.id).toBe("10.3");
+
+    const items = activity ? collectActivityItems(activity) : [];
+    const correctiveAction = items.find(
+      (item) => item.id === "CNT-10.3-CA-002"
+    );
+
+    expect(correctiveAction?.text.en).toContain("Identify FS ID");
+    expect(correctiveAction?.text.fr).toContain("FS ID");
+    expect(correctiveAction?.text.status?.fr).toBe("provisional");
+  });
+
+  it("reports complete French coverage across all 139 activities", () => {
+    const { registries } = validatedProduction();
+    const activityCoverage = registries.activities.getAll().map((activity) => {
+      const items = collectActivityItems(activity);
+
+      return {
+        activityId: activity.id,
+        total: items.length,
+        translated: items.filter((item) => Boolean(item.text.fr)).length
+      };
+    });
+
+    expect(activityCoverage).toHaveLength(139);
+    expect(
+      activityCoverage.every((coverage) => coverage.total === coverage.translated)
+    ).toBe(true);
   });
 
   it("renders localized text in EN, FR, and bilingual modes", () => {
