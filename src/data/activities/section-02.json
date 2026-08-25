@@ -3,7 +3,12 @@
     "id": "2.1",
     "sectionId": "2",
     "title": {
-      "en": "Foundation Formwork"
+      "en": "Foundation Formwork",
+      "fr": "Coffrage des fondations",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "nodeTags": [
       "activity",
@@ -1897,7 +1902,12 @@
     "id": "2.2",
     "sectionId": "2",
     "title": {
-      "en": "Foundation Reinforcement"
+      "en": "Foundation Reinforcement",
+      "fr": "Armatures des fondations",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "nodeTags": [
       "activity",
@@ -3869,13 +3879,22 @@
     },
     "authorityNote": {
       "en": "The project drawings, devis, Plan Qualite, PIE/PRIE, approved procedures, professional instructions and CRT/Hydro-Quebec requirements govern. This playbook tells you how to systematically find, verify, document and close the quality requirements; it does not replace them."
-    }
+    },
+    "terminologyRefs": [
+      "TERM-CONC-COVER",
+      "TERM-CONC-REINFORCEMENT"
+    ]
   },
   {
     "id": "2.3",
     "sectionId": "2",
     "title": {
-      "en": "Embedded Items"
+      "en": "Embedded Items",
+      "fr": "Éléments incorporés",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "nodeTags": [
       "activity",
@@ -5265,7 +5284,12 @@
     "id": "2.4",
     "sectionId": "2",
     "title": {
-      "en": "Pre-Pour Quality Gate"
+      "en": "Pre-Pour Quality Gate",
+      "fr": "Point de contrôle qualité avant bétonnage",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "nodeTags": [
       "gate",
@@ -5408,7 +5432,12 @@
     "id": "2.5",
     "sectionId": "2",
     "title": {
-      "en": "Foundation Concrete"
+      "en": "Foundation Concrete",
+      "fr": "Béton des fondations",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "nodeTags": [
       "activity",
@@ -7753,7 +7782,12 @@
     "id": "2.6",
     "sectionId": "2",
     "title": {
-      "en": "Foundation Concrete Acceptance"
+      "en": "Foundation Concrete Acceptance",
+      "fr": "Acceptation du béton des fondations",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "nodeTags": [
       "gate",
@@ -9150,7 +9184,12 @@
     "id": "2.7",
     "sectionId": "2",
     "title": {
-      "en": "Foundation Walls"
+      "en": "Foundation Walls",
+      "fr": "Murs de fondation",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "nodeTags": [
       "activity",
@@ -9172,7 +9211,12 @@
     "id": "2.8",
     "sectionId": "2",
     "title": {
-      "en": "Slab-on-Grade"
+      "en": "Slab-on-Grade",
+      "fr": "Dalle sur sol",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "nodeTags": [
       "activity",
@@ -9196,7 +9240,12 @@
     "id": "2.9",
     "sectionId": "2",
     "title": {
-      "en": "Below-Grade Waterproofing"
+      "en": "Below-Grade Waterproofing",
+      "fr": "Étanchéité sous le niveau du sol",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "nodeTags": [
       "activity",
@@ -9219,7 +9268,12 @@
     "id": "2.10",
     "sectionId": "2",
     "title": {
-      "en": "Foundation Insulation"
+      "en": "Foundation Insulation",
+      "fr": "Isolation des fondations",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "nodeTags": [
       "activity",
@@ -9241,7 +9295,12 @@
     "id": "2.11",
     "sectionId": "2",
     "title": {
-      "en": "Foundation Drainage"
+      "en": "Foundation Drainage",
+      "fr": "Drainage des fondations",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "nodeTags": [
       "activity",
@@ -9265,7 +9324,12 @@
     "id": "2.12",
     "sectionId": "2",
     "title": {
-      "en": "Backfill Against Structure"
+      "en": "Backfill Against Structure",
+      "fr": "Remblai contre l’ouvrage",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "nodeTags": [
       "activity",

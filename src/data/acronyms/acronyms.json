@@ -1,0 +1,530 @@
+[
+  {
+    "id": "ACR-QA",
+    "preferredLabel": {
+      "en": "Quality Assurance",
+      "fr": "Assurance qualité"
+    },
+    "abbreviations": {
+      "en": ["QA"]
+    },
+    "fullForms": {
+      "en": ["Quality Assurance"],
+      "fr": ["Assurance qualité"]
+    },
+    "relationType": "SHARED_ACRONYM",
+    "relatedConceptIds": ["TERM-QA-QUALITY-ASSURANCE"],
+    "aliases": ["Q.A."],
+    "status": {
+      "en": "validated",
+      "fr": "validated"
+    },
+    "confidence": "medium",
+    "sourceRef": {
+      "build": "Build 4",
+      "document": "03-build-4-bilingual-system.docx",
+      "section": "4D"
+    }
+  },
+  {
+    "id": "ACR-QC",
+    "preferredLabel": {
+      "en": "Quality Control",
+      "fr": "Contrôle de la qualité"
+    },
+    "abbreviations": {
+      "en": ["QC"],
+      "fr": ["CQ"]
+    },
+    "fullForms": {
+      "en": ["Quality Control"],
+      "fr": ["Contrôle de la qualité"]
+    },
+    "relationType": "EXACT_EQUIVALENT",
+    "relatedConceptIds": ["TERM-QC-QUALITY-CONTROL"],
+    "aliases": ["Q.C.", "C.Q."],
+    "status": {
+      "en": "validated",
+      "fr": "provisional"
+    },
+    "confidence": "medium",
+    "sourceRef": {
+      "build": "Build 4",
+      "document": "03-build-4-bilingual-system.docx",
+      "section": "4D"
+    }
+  },
+  {
+    "id": "ACR-QA-QC",
+    "preferredLabel": {
+      "en": "QA/QC",
+      "fr": "Assurance qualité / contrôle de la qualité"
+    },
+    "abbreviations": {
+      "en": ["QA/QC"],
+      "fr": ["QA/QC"]
+    },
+    "fullForms": {
+      "en": ["Quality Assurance / Quality Control"],
+      "fr": ["Assurance qualité / contrôle de la qualité"]
+    },
+    "relationType": "RELATED_NOT_EQUIVALENT",
+    "relatedConceptIds": [
+      "TERM-QA-QUALITY-ASSURANCE",
+      "TERM-QC-QUALITY-CONTROL"
+    ],
+    "aliases": ["QA-QC", "QA QC"],
+    "status": {
+      "en": "validated",
+      "fr": "provisional"
+    },
+    "confidence": "medium",
+    "sourceRef": {
+      "build": "Build 4",
+      "document": "03-build-4-bilingual-system.docx",
+      "section": "4D"
+    }
+  },
+  {
+    "id": "ACR-QC-PIE",
+    "preferredLabel": {
+      "en": "PIE",
+      "fr": "PIE"
+    },
+    "abbreviations": {
+      "fr": ["PIE"]
+    },
+    "fullForms": {
+      "en": ["Inspection/test planning document"],
+      "fr": ["Plan d’inspection et d’essais"]
+    },
+    "relationType": "RELATED_NOT_EQUIVALENT",
+    "relatedConceptIds": ["TERM-QC-PIE", "TERM-QC-ITP", "TERM-QC-PRIE"],
+    "relatedActivityIds": ["13.1"],
+    "provisional": true,
+    "status": {
+      "en": "provisional",
+      "fr": "provisional"
+    },
+    "confidence": "medium",
+    "sourceRef": {
+      "build": "Build 4",
+      "document": "03-build-4-bilingual-system.docx",
+      "section": "4D"
+    }
+  },
+  {
+    "id": "ACR-QC-PRIE",
+    "preferredLabel": {
+      "en": "PRIE",
+      "fr": "PRIE"
+    },
+    "abbreviations": {
+      "fr": ["PRIE"]
+    },
+    "relationType": "ORGANIZATION_SPECIFIC",
+    "relatedConceptIds": ["TERM-QC-PRIE", "TERM-QC-PIE", "TERM-QC-ITP"],
+    "organizationSpecific": true,
+    "provisional": true,
+    "status": {
+      "en": "missing",
+      "fr": "missing"
+    },
+    "confidence": "low",
+    "sourceRef": {
+      "build": "Build 4",
+      "document": "03-build-4-bilingual-system.docx",
+      "section": "4D"
+    }
+  },
+  {
+    "id": "ACR-QC-ITP",
+    "preferredLabel": {
+      "en": "Inspection and Test Plan"
+    },
+    "abbreviations": {
+      "en": ["ITP"]
+    },
+    "fullForms": {
+      "en": ["Inspection and Test Plan"]
+    },
+    "relationType": "RELATED_NOT_EQUIVALENT",
+    "relatedConceptIds": ["TERM-QC-ITP", "TERM-QC-PIE", "TERM-QC-PRIE"],
+    "relatedActivityIds": ["13.1"],
+    "provisional": true,
+    "status": {
+      "en": "validated",
+      "fr": "missing"
+    },
+    "confidence": "medium",
+    "sourceRef": {
+      "build": "Build 4",
+      "document": "03-build-4-bilingual-system.docx",
+      "section": "4D"
+    }
+  },
+  {
+    "id": "ACR-QC-NC",
+    "preferredLabel": {
+      "en": "Non-Conformance",
+      "fr": "Non-conformité"
+    },
+    "abbreviations": {
+      "shared": ["NC"]
+    },
+    "fullForms": {
+      "en": ["Non-Conformance"],
+      "fr": ["Non-conformité"]
+    },
+    "relationType": "SHARED_ACRONYM",
+    "relatedConceptIds": ["TERM-QC-NONCONFORMANCE"],
+    "relatedActivityIds": ["14.8"],
+    "aliases": ["N.C."],
+    "status": {
+      "en": "validated",
+      "fr": "validated"
+    },
+    "confidence": "high",
+    "sourceRef": {
+      "build": "Build 4",
+      "document": "03-build-4-bilingual-system.docx",
+      "section": "4D"
+    }
+  },
+  {
+    "id": "ACR-QC-NCR",
+    "preferredLabel": {
+      "en": "Non-Conformance Report"
+    },
+    "abbreviations": {
+      "en": ["NCR"]
+    },
+    "fullForms": {
+      "en": ["Non-Conformance Report"]
+    },
+    "relationType": "RELATED_NOT_EQUIVALENT",
+    "relatedConceptIds": [
+      "TERM-QC-NONCONFORMANCE-REPORT",
+      "TERM-QC-NONCONFORMANCE"
+    ],
+    "relatedActivityIds": ["14.8"],
+    "aliases": ["N.C.R."],
+    "provisional": true,
+    "status": {
+      "en": "validated",
+      "fr": "missing"
+    },
+    "confidence": "medium",
+    "sourceRef": {
+      "build": "Build 4",
+      "document": "03-build-4-bilingual-system.docx",
+      "section": "4D"
+    }
+  },
+  {
+    "id": "ACR-DOC-RFI",
+    "preferredLabel": {
+      "en": "Request for Information"
+    },
+    "abbreviations": {
+      "shared": ["RFI"]
+    },
+    "fullForms": {
+      "en": ["Request for Information"]
+    },
+    "relationType": "SHARED_ACRONYM",
+    "relatedConceptIds": ["TERM-DOC-RFI"],
+    "aliases": ["R.F.I."],
+    "provisional": true,
+    "status": {
+      "en": "validated",
+      "fr": "missing"
+    },
+    "confidence": "medium",
+    "sourceRef": {
+      "build": "Build 4",
+      "document": "03-build-4-bilingual-system.docx",
+      "section": "4D"
+    }
+  },
+  {
+    "id": "ACR-DOC-QMT",
+    "preferredLabel": {
+      "en": "Technical question process"
+    },
+    "abbreviations": {
+      "fr": ["QMT"]
+    },
+    "relationType": "ORGANIZATION_SPECIFIC",
+    "relatedConceptIds": ["TERM-DOC-QMT", "TERM-DOC-RFI"],
+    "organizationSpecific": true,
+    "provisional": true,
+    "status": {
+      "en": "provisional",
+      "fr": "missing"
+    },
+    "confidence": "low",
+    "sourceRef": {
+      "build": "Build 4",
+      "document": "03-build-4-bilingual-system.docx",
+      "section": "4D"
+    }
+  },
+  {
+    "id": "ACR-QC-TQC",
+    "preferredLabel": {
+      "en": "QC/project-process concept"
+    },
+    "abbreviations": {
+      "fr": ["TQC"]
+    },
+    "relationType": "ORGANIZATION_SPECIFIC",
+    "relatedConceptIds": ["TERM-QC-TQC"],
+    "organizationSpecific": true,
+    "provisional": true,
+    "status": {
+      "en": "provisional",
+      "fr": "missing"
+    },
+    "confidence": "low",
+    "sourceRef": {
+      "build": "Build 4",
+      "document": "03-build-4-bilingual-system.docx",
+      "section": "4D"
+    }
+  },
+  {
+    "id": "ACR-CLS-OM",
+    "preferredLabel": {
+      "en": "Operations & Maintenance",
+      "fr": "Exploitation et entretien"
+    },
+    "abbreviations": {
+      "en": ["O&M"],
+      "shared": ["OM"]
+    },
+    "fullForms": {
+      "en": ["Operations & Maintenance"],
+      "fr": ["Exploitation et entretien"]
+    },
+    "relationType": "SHARED_ACRONYM",
+    "relatedConceptIds": ["TERM-CLS-OM"],
+    "relatedActivityIds": ["14.11"],
+    "aliases": ["O and M", "O.M."],
+    "provisional": true,
+    "status": {
+      "en": "validated",
+      "fr": "provisional"
+    },
+    "confidence": "medium",
+    "sourceRef": {
+      "build": "Build 4",
+      "document": "03-build-4-bilingual-system.docx",
+      "section": "4D"
+    }
+  },
+  {
+    "id": "ACR-MECH-BAS",
+    "preferredLabel": {
+      "en": "Building Automation System"
+    },
+    "abbreviations": {
+      "en": ["BAS"]
+    },
+    "fullForms": {
+      "en": ["Building Automation System"]
+    },
+    "relationType": "ORGANIZATION_SPECIFIC",
+    "relatedConceptIds": ["TERM-MECH-BAS"],
+    "relatedActivityIds": ["8.8"],
+    "provisional": true,
+    "status": {
+      "en": "validated",
+      "fr": "missing"
+    },
+    "confidence": "low",
+    "sourceRef": {
+      "build": "Build 4",
+      "document": "03-build-4-bilingual-system.docx",
+      "section": "4D"
+    }
+  },
+  {
+    "id": "ACR-MECH-HVAC",
+    "preferredLabel": {
+      "en": "HVAC",
+      "fr": "CVCA"
+    },
+    "abbreviations": {
+      "en": ["HVAC"],
+      "fr": ["CVCA"]
+    },
+    "fullForms": {
+      "en": ["Heating, Ventilation and Air Conditioning"],
+      "fr": ["Chauffage, ventilation et conditionnement d’air"]
+    },
+    "relationType": "EXACT_EQUIVALENT",
+    "relatedConceptIds": ["TERM-MECH-HVAC-SYSTEM"],
+    "relatedActivityIds": ["8.5", "8.6"],
+    "aliases": ["H.V.A.C.", "C.V.C.A."],
+    "status": {
+      "en": "validated",
+      "fr": "validated"
+    },
+    "confidence": "high",
+    "sourceRef": {
+      "build": "Build 4",
+      "document": "03-build-4-bilingual-system.docx",
+      "section": "4D"
+    }
+  },
+  {
+    "id": "ACR-TEST-NDT",
+    "preferredLabel": {
+      "en": "Non-Destructive Testing"
+    },
+    "abbreviations": {
+      "en": ["NDT"]
+    },
+    "fullForms": {
+      "en": ["Non-Destructive Testing"]
+    },
+    "relationType": "SHARED_ACRONYM",
+    "relatedConceptIds": ["TERM-TEST-NDT"],
+    "relatedActivityIds": ["13.3", "13.4"],
+    "provisional": true,
+    "status": {
+      "en": "validated",
+      "fr": "missing"
+    },
+    "confidence": "medium",
+    "sourceRef": {
+      "build": "Build 4",
+      "document": "03-build-4-bilingual-system.docx",
+      "section": "4D"
+    }
+  },
+  {
+    "id": "ACR-DOC-RCP",
+    "preferredLabel": {
+      "en": "Reflected Ceiling Plan"
+    },
+    "abbreviations": {
+      "en": ["RCP"]
+    },
+    "fullForms": {
+      "en": ["Reflected Ceiling Plan"]
+    },
+    "relationType": "ORGANIZATION_SPECIFIC",
+    "relatedActivityIds": ["6.8", "9.7", "10.6"],
+    "provisional": true,
+    "status": {
+      "en": "provisional",
+      "fr": "missing"
+    },
+    "confidence": "low",
+    "sourceRef": {
+      "build": "Build 4",
+      "document": "03-build-4-bilingual-system.docx",
+      "section": "4D"
+    }
+  },
+  {
+    "id": "ACR-DOC-IFC",
+    "preferredLabel": {
+      "en": "Issued for Construction"
+    },
+    "abbreviations": {
+      "en": ["IFC"]
+    },
+    "fullForms": {
+      "en": ["Issued for Construction"]
+    },
+    "relationType": "ORGANIZATION_SPECIFIC",
+    "provisional": true,
+    "status": {
+      "en": "provisional",
+      "fr": "missing"
+    },
+    "confidence": "low",
+    "sourceRef": {
+      "build": "Build 4",
+      "document": "03-build-4-bilingual-system.docx",
+      "section": "4D"
+    }
+  },
+  {
+    "id": "ACR-DOC-CO",
+    "preferredLabel": {
+      "en": "Change Order"
+    },
+    "abbreviations": {
+      "en": ["CO"]
+    },
+    "fullForms": {
+      "en": ["Change Order"]
+    },
+    "relationType": "ORGANIZATION_SPECIFIC",
+    "provisional": true,
+    "status": {
+      "en": "provisional",
+      "fr": "missing"
+    },
+    "confidence": "low",
+    "sourceRef": {
+      "build": "Build 4",
+      "document": "03-build-4-bilingual-system.docx",
+      "section": "4D"
+    }
+  },
+  {
+    "id": "ACR-DOC-SI",
+    "preferredLabel": {
+      "en": "Site Instruction"
+    },
+    "abbreviations": {
+      "en": ["SI"]
+    },
+    "fullForms": {
+      "en": ["Site Instruction"]
+    },
+    "relationType": "ORGANIZATION_SPECIFIC",
+    "provisional": true,
+    "status": {
+      "en": "provisional",
+      "fr": "missing"
+    },
+    "confidence": "low",
+    "sourceRef": {
+      "build": "Build 4",
+      "document": "03-build-4-bilingual-system.docx",
+      "section": "4D"
+    }
+  },
+  {
+    "id": "ACR-MECH-TAB",
+    "preferredLabel": {
+      "en": "Testing, Adjusting and Balancing"
+    },
+    "abbreviations": {
+      "en": ["TAB"]
+    },
+    "fullForms": {
+      "en": ["Testing, Adjusting and Balancing"]
+    },
+    "relationType": "SHARED_ACRONYM",
+    "relatedConceptIds": ["TERM-MECH-TAB"],
+    "relatedActivityIds": ["13.3"],
+    "provisional": true,
+    "status": {
+      "en": "validated",
+      "fr": "missing"
+    },
+    "confidence": "medium",
+    "sourceRef": {
+      "build": "Build 4",
+      "document": "03-build-4-bilingual-system.docx",
+      "section": "4D"
+    }
+  }
+]

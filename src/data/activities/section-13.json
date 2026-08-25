@@ -3,7 +3,12 @@
     "id": "13.1",
     "sectionId": "13",
     "title": {
-      "en": "Test Readiness"
+      "en": "Test Readiness",
+      "fr": "Préparation aux essais",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "nodeTags": [
       "testing",
@@ -2027,13 +2032,21 @@
     },
     "authorityNote": {
       "en": "The project drawings, devis, Plan Qualite, PIE/PRIE, approved procedures, professional instructions and CRT/Hydro-Quebec requirements govern. This playbook tells you how to systematically find, verify, document and close the quality requirements; it does not replace them."
-    }
+    },
+    "terminologyRefs": [
+      "TERM-QC-ITP"
+    ]
   },
   {
     "id": "13.2",
     "sectionId": "13",
     "title": {
-      "en": "Test Documentation"
+      "en": "Test Documentation",
+      "fr": "Documentation des essais",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "nodeTags": [
       "testing",
@@ -3530,7 +3543,12 @@
     "id": "13.3",
     "sectionId": "13",
     "title": {
-      "en": "Mechanical Testing"
+      "en": "Mechanical Testing",
+      "fr": "Essais mécaniques",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "nodeTags": [
       "testing",
@@ -4946,13 +4964,22 @@
     },
     "authorityNote": {
       "en": "The project drawings, devis, Plan Qualite, PIE/PRIE, approved procedures, professional instructions and CRT/Hydro-Quebec requirements govern. This playbook tells you how to systematically find, verify, document and close the quality requirements; it does not replace them."
-    }
+    },
+    "terminologyRefs": [
+      "TERM-MECH-TAB",
+      "TERM-TEST-NDT"
+    ]
   },
   {
     "id": "13.4",
     "sectionId": "13",
     "title": {
-      "en": "Electrical Testing Interfaces"
+      "en": "Electrical Testing Interfaces",
+      "fr": "Interfaces d’essais électriques",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "nodeTags": [
       "testing",
@@ -6124,7 +6151,12 @@
     "id": "13.5",
     "sectionId": "13",
     "title": {
-      "en": "Building Envelope Testing"
+      "en": "Building Envelope Testing",
+      "fr": "Essais de l’enveloppe du bâtiment",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "nodeTags": [
       "testing",
@@ -7333,7 +7365,12 @@
     "id": "13.6",
     "sectionId": "13",
     "title": {
-      "en": "Functional Testing"
+      "en": "Functional Testing",
+      "fr": "Essais fonctionnels",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "nodeTags": [
       "testing",
@@ -8279,7 +8316,12 @@
     "id": "13.7",
     "sectionId": "13",
     "title": {
-      "en": "Equipment Start-Up"
+      "en": "Equipment Start-Up",
+      "fr": "Démarrage des équipements",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "nodeTags": [
       "testing",
@@ -9503,7 +9545,12 @@
     "id": "13.8",
     "sectionId": "13",
     "title": {
-      "en": "Integrated / System Testing — Where Applicable"
+      "en": "Integrated / System Testing — Where Applicable",
+      "fr": "Essais intégrés / essais de systèmes",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "nodeTags": [
       "testing",
@@ -10526,7 +10573,12 @@
     "id": "13.9",
     "sectionId": "13",
     "title": {
-      "en": "Failed-Test Management"
+      "en": "Failed-Test Management",
+      "fr": "Gestion des essais non conformes",
+      "status": {
+        "en": "validated",
+        "fr": "provisional"
+      }
     },
     "nodeTags": [
       "testing",
@@ -11616,7 +11668,12 @@
     "id": "13.10",
     "sectionId": "13",
     "title": {
-      "en": "Retesting"
+      "en": "Retesting",
+      "fr": "Réessais",
+      "status": {
+        "en": "validated",
+        "fr": "provisional"
+      }
     },
     "nodeTags": [
       "testing",
@@ -12283,13 +12340,21 @@
     },
     "authorityNote": {
       "en": "The project drawings, devis, Plan Qualite, PIE/PRIE, approved procedures, professional instructions and CRT/Hydro-Quebec requirements govern. This playbook tells you how to systematically find, verify, document and close the quality requirements; it does not replace them."
-    }
+    },
+    "terminologyRefs": [
+      "TERM-TEST-RETEST"
+    ]
   },
   {
     "id": "13.11",
     "sectionId": "13",
     "title": {
-      "en": "Acceptance Evidence"
+      "en": "Acceptance Evidence",
+      "fr": "Preuves d’acceptation",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "nodeTags": [
       "testing",

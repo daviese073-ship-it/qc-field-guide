@@ -1,0 +1,78 @@
+[
+  {
+    "id": "TERM-CLS-OM",
+    "discipline": "Closeout",
+    "preferred": {
+      "en": "Operations & Maintenance",
+      "fr": "Exploitation et entretien"
+    },
+    "aliases": {
+      "en": ["O&M", "OM"]
+    },
+    "relatedActivityIds": ["14.11"],
+    "status": {
+      "en": "validated",
+      "fr": "provisional"
+    },
+    "confidence": {
+      "en": "medium",
+      "fr": "medium"
+    },
+    "sourceRef": {
+      "build": "Build 4",
+      "document": "03-build-4-bilingual-system.docx",
+      "section": "4D/4F"
+    }
+  },
+  {
+    "id": "TERM-CLS-AS-BUILT",
+    "discipline": "Closeout",
+    "preferred": {
+      "en": "As-built",
+      "fr": "Plan tel que construit"
+    },
+    "aliases": {
+      "en": ["as built", "as-builts"],
+      "fr": ["plans tels que construits"]
+    },
+    "relatedActivityIds": ["14.10"],
+    "status": {
+      "en": "validated",
+      "fr": "validated"
+    },
+    "confidence": {
+      "en": "high",
+      "fr": "high"
+    },
+    "sourceRef": {
+      "build": "Build 4",
+      "document": "03-build-4-bilingual-system.docx",
+      "section": "4D/4F"
+    }
+  },
+  {
+    "id": "TERM-CLS-TURNOVER",
+    "discipline": "Closeout",
+    "preferred": {
+      "en": "Turnover",
+      "fr": "Remise"
+    },
+    "relatedActivityIds": ["14.15"],
+    "contextNotes": {
+      "en": "Build 4F marks turnover terminology as project-context sensitive."
+    },
+    "status": {
+      "en": "validated",
+      "fr": "provisional"
+    },
+    "confidence": {
+      "en": "high",
+      "fr": "medium"
+    },
+    "sourceRef": {
+      "build": "Build 4",
+      "document": "03-build-4-bilingual-system.docx",
+      "section": "4F"
+    }
+  }
+]

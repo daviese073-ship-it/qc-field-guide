@@ -21,13 +21,11 @@ const laterPhaseCollections = [
   "quickViews",
   "learnContent",
   "workflows",
-  "preConcealmentWorkflows",
-  "terminology",
-  "acronyms",
-  "uiStrings"
+  "preConcealmentWorkflows"
 ] as const;
 
-const placeholderPattern = /\b(coming soon|tbd|todo|lorem ipsum|placeholder)\b/i;
+const placeholderPattern =
+  /\b(coming soon|tbd|todo|lorem ipsum|placeholder)\b/i;
 const leakedSourceNotePattern = /✓|module complete|build 2 .*status/i;
 
 const isPresentString = (value: string | undefined): value is string =>
@@ -124,21 +122,26 @@ const collectStringsFromBlock = (block: ContentBlock): string[] => {
   }
 };
 
-const collectActivityStrings = (activity: Activity) => [
-  activity.title.en,
-  activity.qualityObjective?.en,
-  activity.applicability?.en,
-  activity.authorityNote?.en,
-  ...contentBlockFields.flatMap((field) =>
-    (activity[field] ?? []).flatMap(collectStringsFromBlock)
-  ),
-  ...(activity.inspection?.before ?? []).flatMap(collectStringsFromBlock),
-  ...(activity.inspection?.during ?? []).flatMap(collectStringsFromBlock),
-  ...(activity.inspection?.after ?? []).flatMap(collectStringsFromBlock),
-  ...(activity.inspection?.testing ?? []).flatMap(collectStringsFromBlock),
-  ...(activity.issues?.commonDeficiencies ?? []).flatMap(collectStringsFromBlock),
-  ...(activity.issues?.escalationTriggers ?? []).flatMap(collectStringsFromBlock)
-].filter(isPresentString);
+const collectActivityStrings = (activity: Activity) =>
+  [
+    activity.title.en,
+    activity.qualityObjective?.en,
+    activity.applicability?.en,
+    activity.authorityNote?.en,
+    ...contentBlockFields.flatMap((field) =>
+      (activity[field] ?? []).flatMap(collectStringsFromBlock)
+    ),
+    ...(activity.inspection?.before ?? []).flatMap(collectStringsFromBlock),
+    ...(activity.inspection?.during ?? []).flatMap(collectStringsFromBlock),
+    ...(activity.inspection?.after ?? []).flatMap(collectStringsFromBlock),
+    ...(activity.inspection?.testing ?? []).flatMap(collectStringsFromBlock),
+    ...(activity.issues?.commonDeficiencies ?? []).flatMap(
+      collectStringsFromBlock
+    ),
+    ...(activity.issues?.escalationTriggers ?? []).flatMap(
+      collectStringsFromBlock
+    )
+  ].filter(isPresentString);
 
 export const auditProductionContentDataset = (
   dataset: CanonicalDataset
@@ -226,12 +229,6 @@ export const auditProductionContentDataset = (
           `Production activity "${activity.id}" appears to contain a source status note: "${value}".`
         );
       }
-    }
-
-    if ("fr" in activity.title) {
-      errors.push(
-        `Production activity "${activity.id}" includes a French title before the localization phase.`
-      );
     }
   }
 

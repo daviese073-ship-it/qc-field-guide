@@ -1,0 +1,1006 @@
+[
+  { "id": "UI-MODE-QUICK", "en": "Quick", "fr": "Rapide", "category": "mode" },
+  { "id": "UI-MODE-FULL", "en": "Full", "fr": "Complet", "category": "mode" },
+  {
+    "id": "UI-MODE-LEARN",
+    "en": "Learn",
+    "fr": "Apprendre",
+    "category": "mode"
+  },
+  {
+    "id": "UI-MODE-DETAILS",
+    "en": "Details",
+    "fr": "Détails",
+    "category": "mode"
+  },
+  {
+    "id": "UI-NAV-HOME",
+    "en": "Home",
+    "fr": "Accueil",
+    "category": "navigation"
+  },
+  {
+    "id": "UI-NAV-BACK",
+    "en": "Back",
+    "fr": "Retour",
+    "category": "navigation"
+  },
+  {
+    "id": "UI-NAV-BEFORE",
+    "en": "Before",
+    "fr": "Avant",
+    "category": "navigation"
+  },
+  {
+    "id": "UI-NAV-AFTER",
+    "en": "After",
+    "fr": "Après",
+    "category": "navigation"
+  },
+  {
+    "id": "UI-NAV-RELATED",
+    "en": "Related",
+    "fr": "Liés",
+    "category": "navigation"
+  },
+  {
+    "id": "UI-NAV-RELATED-WORK",
+    "en": "Related Works",
+    "fr": "Travaux connexes",
+    "category": "navigation"
+  },
+  {
+    "id": "UI-NAV-INTERFACES",
+    "en": "Interfaces",
+    "fr": "Interfaces",
+    "category": "navigation"
+  },
+  {
+    "id": "UI-NAV-GATES",
+    "en": "Gates",
+    "fr": "Points de contrôle",
+    "category": "navigation"
+  },
+  {
+    "id": "UI-NAV-TESTING",
+    "en": "Testing",
+    "fr": "Essais",
+    "category": "navigation"
+  },
+  {
+    "id": "UI-NAV-COMMISSIONING",
+    "en": "Commissioning",
+    "fr": "Mise en service",
+    "category": "navigation"
+  },
+  {
+    "id": "UI-NAV-CLOSEOUT",
+    "en": "Closeout",
+    "fr": "Clôture",
+    "category": "navigation"
+  },
+  {
+    "id": "UI-NAV-UNIVERSAL-WORKFLOWS",
+    "en": "Universal Workflows",
+    "fr": "Processus universels",
+    "category": "navigation"
+  },
+  {
+    "id": "UI-QUICK-BEFORE",
+    "en": "Before",
+    "fr": "Avant",
+    "category": "fieldLabel"
+  },
+  {
+    "id": "UI-QUICK-INSPECT",
+    "en": "Inspect",
+    "fr": "Inspecter",
+    "category": "fieldLabel"
+  },
+  {
+    "id": "UI-QUICK-EVIDENCE",
+    "en": "Evidence",
+    "fr": "Preuves",
+    "category": "fieldLabel"
+  },
+  {
+    "id": "UI-QUICK-WATCH-FOR",
+    "en": "Watch For",
+    "fr": "À surveiller",
+    "category": "fieldLabel"
+  },
+  {
+    "id": "UI-QUICK-DONT-MISS",
+    "en": "Don’t Miss",
+    "fr": "À ne pas oublier",
+    "category": "fieldLabel"
+  },
+  {
+    "id": "UI-QUICK-NEXT",
+    "en": "Next",
+    "fr": "Ensuite",
+    "category": "fieldLabel"
+  },
+  {
+    "id": "UI-QUICK-GATE",
+    "en": "Gate",
+    "fr": "Point de contrôle",
+    "category": "fieldLabel"
+  },
+  {
+    "id": "UI-QUICK-RELATED",
+    "en": "Related",
+    "fr": "Liés",
+    "category": "fieldLabel"
+  },
+  {
+    "id": "UI-QUICK-QC-THINK",
+    "en": "QC Think",
+    "fr": "Réflexe CQ",
+    "category": "fieldLabel"
+  },
+  {
+    "id": "UI-FULL-QUALITY-OBJECTIVE",
+    "en": "Quality Objective",
+    "fr": "Objectif qualité",
+    "category": "fieldLabel"
+  },
+  {
+    "id": "UI-FULL-REQUIREMENTS",
+    "en": "Requirements",
+    "fr": "Exigences",
+    "category": "fieldLabel"
+  },
+  {
+    "id": "UI-FULL-PLANNING",
+    "en": "Planning",
+    "fr": "Planification",
+    "category": "fieldLabel"
+  },
+  {
+    "id": "UI-FULL-DOCUMENT-CONTROL",
+    "en": "Document Control",
+    "fr": "Contrôle documentaire",
+    "category": "fieldLabel"
+  },
+  {
+    "id": "UI-FULL-MATERIAL-CONTROL",
+    "en": "Material Control",
+    "fr": "Contrôle des matériaux",
+    "category": "fieldLabel"
+  },
+  {
+    "id": "UI-FULL-MATERIAL-EQUIPMENT",
+    "en": "Material / Equipment Control",
+    "fr": "Contrôle des matériaux / équipements",
+    "category": "fieldLabel"
+  },
+  {
+    "id": "UI-FULL-INSPECTION-TESTING",
+    "en": "Inspection / Testing",
+    "fr": "Inspection / essais",
+    "category": "fieldLabel"
+  },
+  {
+    "id": "UI-FULL-RECORDS-EVIDENCE",
+    "en": "Records / Evidence",
+    "fr": "Enregistrements / preuves",
+    "category": "fieldLabel"
+  },
+  {
+    "id": "UI-FULL-NC-DEFICIENCY",
+    "en": "NC / Deficiency",
+    "fr": "Non-conformité / déficience",
+    "category": "fieldLabel"
+  },
+  {
+    "id": "UI-FULL-CORRECTIVE-ACTION",
+    "en": "Corrective Action",
+    "fr": "Action corrective",
+    "category": "fieldLabel"
+  },
+  {
+    "id": "UI-FULL-VERIFICATION",
+    "en": "Verification",
+    "fr": "Vérification",
+    "category": "fieldLabel"
+  },
+  {
+    "id": "UI-FULL-CLOSURE",
+    "en": "Closure",
+    "fr": "Clôture",
+    "category": "fieldLabel"
+  },
+  {
+    "id": "UI-FULL-COMMUNICATIONS",
+    "en": "Communications",
+    "fr": "Communications",
+    "category": "fieldLabel"
+  },
+  {
+    "id": "UI-FULL-OUTPUTS",
+    "en": "Outputs",
+    "fr": "Livrables",
+    "category": "fieldLabel"
+  },
+  {
+    "id": "UI-FULL-REPORTING-ANALYSIS",
+    "en": "Reporting / Analysis",
+    "fr": "Rapports / analyse",
+    "category": "fieldLabel"
+  },
+  {
+    "id": "UI-FULL-QUALITY-CHECKPOINT",
+    "en": "Quality Checkpoint",
+    "fr": "Point de contrôle qualité",
+    "category": "fieldLabel"
+  },
+  {
+    "id": "UI-INSPECTION-BEFORE-INSTALLATION",
+    "en": "Before Installation",
+    "fr": "Avant l’installation",
+    "category": "fieldLabel"
+  },
+  {
+    "id": "UI-INSPECTION-DURING-INSTALLATION",
+    "en": "During Installation",
+    "fr": "Pendant l’installation",
+    "category": "fieldLabel"
+  },
+  {
+    "id": "UI-INSPECTION-AFTER-INSTALLATION",
+    "en": "After Installation",
+    "fr": "Après l’installation",
+    "category": "fieldLabel"
+  },
+  {
+    "id": "UI-INSPECTION-TESTING",
+    "en": "Testing",
+    "fr": "Essais",
+    "category": "fieldLabel"
+  },
+  {
+    "id": "UI-REQ-DRAWINGS",
+    "en": "Drawings",
+    "fr": "Plans",
+    "category": "fieldLabel"
+  },
+  {
+    "id": "UI-REQ-SPECIFICATIONS",
+    "en": "Specifications",
+    "fr": "Devis",
+    "category": "fieldLabel"
+  },
+  {
+    "id": "UI-REQ-APPROVED-TECHNICAL-INFORMATION",
+    "en": "Approved Technical Information",
+    "fr": "Information technique approuvée",
+    "category": "fieldLabel"
+  },
+  {
+    "id": "UI-REQ-SHOP-DRAWINGS",
+    "en": "Shop Drawings",
+    "fr": "Dessins d’atelier",
+    "category": "fieldLabel"
+  },
+  {
+    "id": "UI-REQ-APPROVED-SUBMITTALS",
+    "en": "Approved Submittals",
+    "fr": "Soumissions approuvées",
+    "category": "fieldLabel"
+  },
+  {
+    "id": "UI-REQ-PROCEDURES",
+    "en": "Procedures",
+    "fr": "Procédures",
+    "category": "fieldLabel"
+  },
+  {
+    "id": "UI-REQ-MANUFACTURER-INFORMATION",
+    "en": "Manufacturer Information",
+    "fr": "Documentation du fabricant",
+    "category": "fieldLabel"
+  },
+  {
+    "id": "UI-REQ-TECHNICAL-CHANGES",
+    "en": "Technical Changes",
+    "fr": "Modifications techniques",
+    "category": "fieldLabel"
+  },
+  {
+    "id": "UI-EVIDENCE-IDENTIFICATION",
+    "en": "Identification",
+    "fr": "Identification",
+    "category": "fieldLabel"
+  },
+  {
+    "id": "UI-EVIDENCE-LOCATION",
+    "en": "Location",
+    "fr": "Emplacement",
+    "category": "fieldLabel"
+  },
+  {
+    "id": "UI-EVIDENCE-DOCUMENTS",
+    "en": "Documents",
+    "fr": "Documents",
+    "category": "fieldLabel"
+  },
+  {
+    "id": "UI-EVIDENCE-MEASUREMENTS",
+    "en": "Measurements",
+    "fr": "Mesures",
+    "category": "fieldLabel"
+  },
+  {
+    "id": "UI-EVIDENCE-PHOTOS",
+    "en": "Photos",
+    "fr": "Photos",
+    "category": "fieldLabel"
+  },
+  {
+    "id": "UI-EVIDENCE-TEST-RECORDS",
+    "en": "Test Records",
+    "fr": "Enregistrements d’essais",
+    "category": "fieldLabel"
+  },
+  {
+    "id": "UI-EVIDENCE-INSPECTION-RECORD",
+    "en": "Inspection Record",
+    "fr": "Enregistrement d’inspection",
+    "category": "fieldLabel"
+  },
+  {
+    "id": "UI-EVIDENCE-ACCEPTANCE",
+    "en": "Acceptance Evidence",
+    "fr": "Preuves d’acceptation",
+    "category": "fieldLabel"
+  },
+  {
+    "id": "UI-ISSUES-COMMON-DEFICIENCIES",
+    "en": "Common Deficiencies",
+    "fr": "Déficiences courantes",
+    "category": "fieldLabel"
+  },
+  {
+    "id": "UI-ISSUES-ESCALATE-WHEN",
+    "en": "Escalate When",
+    "fr": "Escalader lorsque",
+    "category": "fieldLabel"
+  },
+  {
+    "id": "UI-ISSUES-DEFICIENCY",
+    "en": "Deficiency",
+    "fr": "Déficience",
+    "category": "fieldLabel"
+  },
+  {
+    "id": "UI-ISSUES-NON-CONFORMANCE",
+    "en": "Non-Conformance",
+    "fr": "Non-conformité",
+    "category": "fieldLabel"
+  },
+  {
+    "id": "UI-ISSUES-FAILED-TEST",
+    "en": "Failed Test",
+    "fr": "Essai non conforme",
+    "category": "fieldLabel"
+  },
+  {
+    "id": "UI-ISSUES-CORRECTIVE-WORK",
+    "en": "Corrective Work",
+    "fr": "Travaux correctifs",
+    "category": "fieldLabel"
+  },
+  {
+    "id": "UI-ISSUES-REINSPECTION",
+    "en": "Reinspection",
+    "fr": "Réinspection",
+    "category": "fieldLabel"
+  },
+  {
+    "id": "UI-ISSUES-RETEST",
+    "en": "Retest",
+    "fr": "Réessai",
+    "category": "fieldLabel"
+  },
+  {
+    "id": "UI-LEARN-WHAT",
+    "en": "What Is This?",
+    "fr": "Qu’est-ce que c’est?",
+    "category": "fieldLabel"
+  },
+  {
+    "id": "UI-LEARN-WHY",
+    "en": "Why It Matters",
+    "fr": "Pourquoi c’est important",
+    "category": "fieldLabel"
+  },
+  {
+    "id": "UI-LEARN-TERMS",
+    "en": "Know the Terms",
+    "fr": "Termes à connaître",
+    "category": "fieldLabel"
+  },
+  {
+    "id": "UI-LEARN-GOOD-WORK",
+    "en": "How Good Work Looks",
+    "fr": "À quoi ressemble un travail conforme",
+    "category": "fieldLabel"
+  },
+  {
+    "id": "UI-LEARN-CRITICAL",
+    "en": "Critical Checks Explained",
+    "fr": "Vérifications critiques expliquées",
+    "category": "fieldLabel"
+  },
+  {
+    "id": "UI-LEARN-FAILURES",
+    "en": "Common Failures",
+    "fr": "Défaillances courantes",
+    "category": "fieldLabel"
+  },
+  {
+    "id": "UI-LEARN-EXAMPLES",
+    "en": "Practical Examples",
+    "fr": "Exemples pratiques",
+    "category": "fieldLabel"
+  },
+  {
+    "id": "UI-LEARN-INTERFACES",
+    "en": "Interfaces & Sequence",
+    "fr": "Interfaces et séquence",
+    "category": "fieldLabel"
+  },
+  {
+    "id": "UI-LEARN-SPECIALIST",
+    "en": "Specialist / Authority Boundary",
+    "fr": "Limites du rôle / spécialiste",
+    "category": "fieldLabel"
+  },
+  {
+    "id": "UI-LEARN-MGMT",
+    "en": "Quality Management Insight",
+    "fr": "Perspective de gestion de la qualité",
+    "category": "fieldLabel"
+  },
+  {
+    "id": "UI-LEARN-UNDO",
+    "en": "What Can Undo Acceptance?",
+    "fr": "Qu’est-ce qui peut invalider l’acceptation?",
+    "category": "fieldLabel"
+  },
+  {
+    "id": "UI-LEARN-CONTINUE",
+    "en": "Continue Learning",
+    "fr": "Continuer l’apprentissage",
+    "category": "fieldLabel"
+  },
+  {
+    "id": "UI-ACTIVITY-MODE-WHAT",
+    "en": "What Are You Doing?",
+    "fr": "Que faites-vous?",
+    "category": "fieldLabel"
+  },
+  {
+    "id": "UI-ACTIVITY-MODE-PREPARE",
+    "en": "Prepare",
+    "fr": "Préparer",
+    "category": "fieldLabel"
+  },
+  {
+    "id": "UI-ACTIVITY-MODE-VERIFY",
+    "en": "Verify",
+    "fr": "Vérifier",
+    "category": "fieldLabel"
+  },
+  {
+    "id": "UI-ACTIVITY-MODE-EXECUTE-OBSERVE",
+    "en": "Execute / Observe",
+    "fr": "Exécuter / observer",
+    "category": "fieldLabel"
+  },
+  {
+    "id": "UI-ACTIVITY-MODE-TEST",
+    "en": "Test",
+    "fr": "Tester",
+    "category": "fieldLabel"
+  },
+  {
+    "id": "UI-ACTIVITY-MODE-RELEASE-CLOSE",
+    "en": "Release / Close",
+    "fr": "Autoriser / clore",
+    "category": "fieldLabel"
+  },
+  {
+    "id": "UI-ACTIVITY-MODE-PREREQUISITES",
+    "en": "Prerequisites",
+    "fr": "Préalables",
+    "category": "fieldLabel"
+  },
+  {
+    "id": "UI-ACTIVITY-MODE-DOWNSTREAM",
+    "en": "Downstream Activities",
+    "fr": "Activités suivantes",
+    "category": "fieldLabel"
+  },
+  {
+    "id": "UI-PRECONCEALMENT-BEFORE-CLOSING",
+    "en": "Before Closing / Covering",
+    "fr": "Avant fermeture / recouvrement",
+    "category": "fieldLabel"
+  },
+  {
+    "id": "UI-PRECONCEALMENT-BLOCK-IF",
+    "en": "Block Closure If",
+    "fr": "Bloquer la fermeture si",
+    "category": "fieldLabel"
+  },
+  {
+    "id": "UI-PRECONCEALMENT-AFTER-RELEASE",
+    "en": "After Release",
+    "fr": "Après autorisation",
+    "category": "fieldLabel"
+  },
+  {
+    "id": "UI-PRECONCEALMENT-CAPTURE",
+    "en": "Capture",
+    "fr": "À photographier / documenter",
+    "category": "fieldLabel"
+  },
+  {
+    "id": "UI-FLAG-PRECONCEALMENT",
+    "en": "Pre-Concealment",
+    "fr": "Avant dissimulation",
+    "category": "fieldLabel"
+  },
+  {
+    "id": "UI-FLAG-HIGH-CONTROL",
+    "en": "High-Control",
+    "fr": "Contrôle renforcé",
+    "category": "fieldLabel"
+  },
+  {
+    "id": "UI-FLAG-SPECIALIST",
+    "en": "Specialist",
+    "fr": "Spécialiste",
+    "category": "fieldLabel"
+  },
+  {
+    "id": "UI-FLAG-TESTING",
+    "en": "Testing",
+    "fr": "Essais",
+    "category": "fieldLabel"
+  },
+  {
+    "id": "UI-FLAG-INTERFACE-CRITICAL",
+    "en": "Interface-Critical",
+    "fr": "Interface critique",
+    "category": "fieldLabel"
+  },
+  {
+    "id": "UI-FLAG-RECHECK-IF-MODIFIED",
+    "en": "Recheck if Modified",
+    "fr": "Revérifier si modifié",
+    "category": "fieldLabel"
+  },
+  {
+    "id": "UI-SEARCH-LABEL",
+    "en": "Search",
+    "fr": "Rechercher",
+    "category": "navigation"
+  },
+  {
+    "id": "UI-SEARCH-PLACEHOLDER",
+    "en": "Search term, activity, acronym…",
+    "fr": "Rechercher un terme, une activité, un acronyme…",
+    "category": "navigation"
+  },
+  {
+    "id": "UI-SEARCH-BEST-MATCH",
+    "en": "Best Match",
+    "fr": "Meilleur résultat",
+    "category": "navigation"
+  },
+  {
+    "id": "UI-SEARCH-TERMS",
+    "en": "Terms",
+    "fr": "Termes",
+    "category": "navigation"
+  },
+  {
+    "id": "UI-SEARCH-ACTIVITIES",
+    "en": "Activities",
+    "fr": "Activités",
+    "category": "navigation"
+  },
+  {
+    "id": "UI-SEARCH-WORKFLOWS",
+    "en": "Workflows",
+    "fr": "Processus",
+    "category": "navigation"
+  },
+  {
+    "id": "UI-SEARCH-ACRONYMS",
+    "en": "Acronyms",
+    "fr": "Acronymes",
+    "category": "navigation"
+  },
+  {
+    "id": "UI-SEARCH-NO-EXACT-MATCH",
+    "en": "No Exact Match",
+    "fr": "Aucun résultat exact",
+    "category": "navigation"
+  },
+  {
+    "id": "UI-SEARCH-DID-YOU-MEAN",
+    "en": "Did You Mean?",
+    "fr": "Vouliez-vous dire?",
+    "category": "navigation"
+  },
+  {
+    "id": "UI-SEARCH-NO-ACRONYM-MATCH",
+    "en": "No Acronym Match",
+    "fr": "Aucun acronyme correspondant",
+    "category": "navigation"
+  },
+  {
+    "id": "UI-GENERAL-BROWSE-SYSTEMS",
+    "en": "Browse Systems",
+    "fr": "Parcourir les systèmes",
+    "category": "navigation"
+  },
+  {
+    "id": "UI-GENERAL-FAVORITES",
+    "en": "Favorites",
+    "fr": "Favoris",
+    "category": "navigation"
+  },
+  {
+    "id": "UI-GENERAL-RECENT",
+    "en": "Recent",
+    "fr": "Récents",
+    "category": "navigation"
+  },
+  {
+    "id": "UI-GENERAL-VIEW-ALL",
+    "en": "View All",
+    "fr": "Tout afficher",
+    "category": "navigation"
+  },
+  {
+    "id": "UI-GENERAL-OPEN",
+    "en": "Open",
+    "fr": "Ouvrir",
+    "category": "navigation"
+  },
+  {
+    "id": "UI-GENERAL-CLOSE",
+    "en": "Close",
+    "fr": "Fermer",
+    "category": "navigation"
+  },
+  {
+    "id": "UI-GENERAL-EXPAND",
+    "en": "Expand",
+    "fr": "Développer",
+    "category": "navigation"
+  },
+  {
+    "id": "UI-GENERAL-COLLAPSE",
+    "en": "Collapse",
+    "fr": "Réduire",
+    "category": "navigation"
+  },
+  {
+    "id": "UI-GENERAL-SECTIONS",
+    "en": "Sections",
+    "fr": "Sections",
+    "category": "navigation"
+  },
+  {
+    "id": "UI-GENERAL-SETTINGS",
+    "en": "Settings",
+    "fr": "Paramètres",
+    "category": "navigation"
+  },
+  {
+    "id": "UI-GENERAL-LANGUAGE",
+    "en": "Language",
+    "fr": "Langue",
+    "category": "navigation"
+  },
+  {
+    "id": "UI-LANGUAGE-DISPLAY",
+    "en": "Display Language",
+    "fr": "Langue d’affichage",
+    "category": "navigation"
+  },
+  {
+    "id": "UI-LANGUAGE-BILINGUAL-PRIMARY",
+    "en": "Bilingual Primary Language",
+    "fr": "Langue principale en mode bilingue",
+    "category": "navigation"
+  },
+  {
+    "id": "UI-LANGUAGE-ENGLISH",
+    "en": "English",
+    "fr": "Anglais",
+    "category": "navigation"
+  },
+  {
+    "id": "UI-LANGUAGE-FRENCH",
+    "en": "French",
+    "fr": "Français",
+    "category": "navigation"
+  },
+  {
+    "id": "UI-LANGUAGE-BILINGUAL",
+    "en": "Bilingual",
+    "fr": "Bilingue",
+    "category": "navigation"
+  },
+  {
+    "id": "UI-REL-STRENGTH-HARD",
+    "en": "Required",
+    "fr": "Requis",
+    "category": "fieldLabel"
+  },
+  {
+    "id": "UI-REL-STRENGTH-CONDITIONAL",
+    "en": "If Applicable",
+    "fr": "Si applicable",
+    "category": "fieldLabel"
+  },
+  {
+    "id": "UI-REL-STRENGTH-COORDINATION",
+    "en": "Coordination",
+    "fr": "Coordination",
+    "category": "fieldLabel"
+  },
+  {
+    "id": "UI-SPECIALIST-BOUNDARY",
+    "en": "Specialist / Authority Boundary",
+    "fr": "Limites du rôle / spécialiste",
+    "category": "fieldLabel"
+  },
+  {
+    "id": "UI-SPECIALIST-YOUR-QC-ROLE",
+    "en": "Your QC Role",
+    "fr": "Votre rôle CQ",
+    "category": "fieldLabel"
+  },
+  {
+    "id": "UI-SPECIALIST-ROLE",
+    "en": "Specialist Role",
+    "fr": "Rôle du spécialiste",
+    "category": "fieldLabel"
+  },
+  {
+    "id": "UI-SPECIALIST-AUTHORIZED",
+    "en": "Authorized Specialist",
+    "fr": "Spécialiste autorisé",
+    "category": "fieldLabel"
+  },
+  {
+    "id": "UI-SPECIALIST-VERIFY-REQUIREMENTS",
+    "en": "Verify Project Requirements",
+    "fr": "Vérifier les exigences du projet",
+    "category": "fieldLabel"
+  },
+  {
+    "id": "UI-INVALIDATION-RECHECK-MODIFIED",
+    "en": "Recheck if Modified",
+    "fr": "Revérifier si modifié",
+    "category": "fieldLabel"
+  },
+  {
+    "id": "UI-INVALIDATION-PREVIOUSLY-ACCEPTED-AFFECTED",
+    "en": "Previously Accepted Work May Be Affected",
+    "fr": "Des travaux déjà acceptés peuvent être affectés",
+    "category": "fieldLabel"
+  },
+  {
+    "id": "UI-INVALIDATION-REOPEN-REVIEW",
+    "en": "Reopen for Review",
+    "fr": "Rouvrir pour vérification",
+    "category": "fieldLabel"
+  },
+  {
+    "id": "UI-INVALIDATION-PREVIOUS-TEST-MAY-NOT-APPLY",
+    "en": "Previous Test May No Longer Apply",
+    "fr": "L’essai précédent peut ne plus être représentatif",
+    "category": "fieldLabel"
+  },
+  {
+    "id": "UI-INVALIDATION-AS-BUILT-UPDATE",
+    "en": "As-Built Update Required",
+    "fr": "Mise à jour des plans tels que construits requise",
+    "category": "fieldLabel"
+  },
+  {
+    "id": "UI-INVALIDATION-WHY",
+    "en": "Why?",
+    "fr": "Pourquoi?",
+    "category": "fieldLabel"
+  },
+  {
+    "id": "UI-INVALIDATION-RECHECK",
+    "en": "Recheck",
+    "fr": "Revérifier",
+    "category": "fieldLabel"
+  },
+  {
+    "id": "QCQ-01",
+    "en": "What governs this?",
+    "fr": "Qu’est-ce qui régit ces travaux?",
+    "category": "fieldLabel"
+  },
+  {
+    "id": "QCQ-02",
+    "en": "What could become hidden or difficult to access?",
+    "fr": "Qu’est-ce qui pourrait devenir dissimulé ou difficile d’accès?",
+    "category": "fieldLabel"
+  },
+  {
+    "id": "QCQ-03",
+    "en": "What other system or trade can this affect?",
+    "fr": "Quel autre système ou corps de métier peut être affecté?",
+    "category": "fieldLabel"
+  },
+  {
+    "id": "QCQ-04",
+    "en": "What evidence proves compliance?",
+    "fr": "Quelles preuves démontrent la conformité?",
+    "category": "fieldLabel"
+  },
+  {
+    "id": "QCQ-05",
+    "en": "What happens next if I accept this?",
+    "fr": "Quelle est l’étape suivante si j’accepte cette condition?",
+    "category": "fieldLabel"
+  },
+  {
+    "id": "QCQ-06",
+    "en": "Has anything changed since this was last inspected or tested?",
+    "fr": "Quelque chose a-t-il changé depuis la dernière inspection ou le dernier essai?",
+    "category": "fieldLabel"
+  },
+  {
+    "id": "UI-GATE-PURPOSE",
+    "en": "Purpose",
+    "fr": "Objectif",
+    "category": "fieldLabel"
+  },
+  {
+    "id": "UI-GATE-SCOPE",
+    "en": "Scope",
+    "fr": "Portée",
+    "category": "fieldLabel"
+  },
+  {
+    "id": "UI-GATE-INPUTS",
+    "en": "Inputs / Prerequisites",
+    "fr": "Entrées / préalables",
+    "category": "fieldLabel"
+  },
+  {
+    "id": "UI-GATE-CHECKS",
+    "en": "Checks",
+    "fr": "Vérifications",
+    "category": "fieldLabel"
+  },
+  {
+    "id": "UI-GATE-BLOCKING-CONDITIONS",
+    "en": "Blocking Conditions",
+    "fr": "Conditions bloquantes",
+    "category": "fieldLabel"
+  },
+  {
+    "id": "UI-GATE-RELEASE-CONDITION",
+    "en": "Release Condition",
+    "fr": "Condition d’autorisation",
+    "category": "fieldLabel"
+  },
+  {
+    "id": "UI-GATE-ACTIVITIES-CONTROLLED",
+    "en": "Activities Controlled",
+    "fr": "Activités contrôlées",
+    "category": "fieldLabel"
+  },
+  {
+    "id": "UI-GATE-INVALIDATION-TRIGGERS",
+    "en": "Invalidation Triggers",
+    "fr": "Déclencheurs de révision",
+    "category": "fieldLabel"
+  },
+  {
+    "id": "UI-GATE-BLOCK-IF",
+    "en": "Block If",
+    "fr": "Bloquer si",
+    "category": "fieldLabel"
+  },
+  {
+    "id": "UI-GATE-RELEASES",
+    "en": "Releases",
+    "fr": "Autorise l’étape suivante",
+    "category": "fieldLabel"
+  },
+  {
+    "id": "UI-NOTICE-NOTE",
+    "en": "Note",
+    "fr": "Note",
+    "category": "systemMessage"
+  },
+  {
+    "id": "UI-NOTICE-IMPORTANT",
+    "en": "Important",
+    "fr": "Important",
+    "category": "systemMessage"
+  },
+  {
+    "id": "UI-NOTICE-CAUTION",
+    "en": "Caution",
+    "fr": "Attention",
+    "category": "systemMessage"
+  },
+  {
+    "id": "UI-NOTICE-WARNING",
+    "en": "Warning",
+    "fr": "Avertissement",
+    "category": "systemMessage"
+  },
+  {
+    "id": "UI-NOTICE-HIGH-CONTROL-ACTIVITY",
+    "en": "High-Control Activity",
+    "fr": "Activité à contrôle renforcé",
+    "category": "systemMessage"
+  },
+  {
+    "id": "UI-NOTICE-FULL-INSPECTION-RECOMMENDED",
+    "en": "Full Inspection Recommended",
+    "fr": "Inspection complète recommandée",
+    "category": "systemMessage"
+  },
+  {
+    "id": "UI-NOTICE-PROJECT-REQUIREMENTS-GOVERN",
+    "en": "Project Requirements Govern",
+    "fr": "Les exigences du projet prévalent",
+    "category": "systemMessage"
+  },
+  {
+    "id": "UI-NOTICE-VERIFY-PIE-PRIE",
+    "en": "Verify Applicable PIE / PRIE",
+    "fr": "Vérifier les PIE / PRIE applicables",
+    "category": "systemMessage"
+  },
+  {
+    "id": "UI-NOTICE-UNIVERSAL-PROJECT-BOUNDARY",
+    "en": "Project requirements govern. Verify applicable drawings, specifications, approved submittals and PIE/PRIE.",
+    "fr": "Les exigences du projet prévalent. Vérifier les plans, devis, documents approuvés et PIE/PRIE applicables.",
+    "category": "systemMessage"
+  },
+  {
+    "id": "UI-NOTICE-UNIVERSAL-SPECIALIST",
+    "en": "Verify applicable project requirements and coordinate with the authorized specialist where required.",
+    "fr": "Vérifier les exigences applicables du projet et coordonner avec le spécialiste autorisé lorsque requis.",
+    "category": "systemMessage"
+  },
+  {
+    "id": "UI-DESCRIPTOR-QUICK",
+    "en": "Quick — Critical field checks",
+    "fr": "Rapide — Vérifications critiques au chantier",
+    "category": "systemMessage"
+  },
+  {
+    "id": "UI-DESCRIPTOR-FULL",
+    "en": "Full — Complete QC workflow",
+    "fr": "Complet — Processus CQ complet",
+    "category": "systemMessage"
+  },
+  {
+    "id": "UI-DESCRIPTOR-LEARN",
+    "en": "Learn — Understanding & examples",
+    "fr": "Apprendre — Compréhension et exemples",
+    "category": "systemMessage"
+  }
+]

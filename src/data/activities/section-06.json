@@ -3,7 +3,12 @@
     "id": "6.1",
     "sectionId": "6",
     "title": {
-      "en": "Interior Masonry"
+      "en": "Interior Masonry",
+      "fr": "Maçonnerie intérieure",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "nodeTags": [
       "activity",
@@ -1870,7 +1875,12 @@
     "id": "6.2",
     "sectionId": "6",
     "title": {
-      "en": "Metal Stud Framing"
+      "en": "Metal Stud Framing",
+      "fr": "Ossature de montants métalliques",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "nodeTags": [
       "activity",
@@ -3926,7 +3936,12 @@
     "id": "6.3",
     "sectionId": "6",
     "title": {
-      "en": "Interior Insulation"
+      "en": "Interior Insulation",
+      "fr": "Isolation intérieure",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "nodeTags": [
       "activity",
@@ -5038,7 +5053,12 @@
     "id": "6.4",
     "sectionId": "6",
     "title": {
-      "en": "Gypsum Board"
+      "en": "Gypsum Board",
+      "fr": "Panneaux de gypse",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "nodeTags": [
       "activity",
@@ -6827,7 +6847,12 @@
     "id": "6.5",
     "sectionId": "6",
     "title": {
-      "en": "Fire-Rated Assemblies"
+      "en": "Fire-Rated Assemblies",
+      "fr": "Assemblages résistants au feu",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "nodeTags": [
       "umbrella",
@@ -8514,7 +8539,12 @@
     "id": "6.6",
     "sectionId": "6",
     "title": {
-      "en": "Interior Doors & Frames"
+      "en": "Interior Doors & Frames",
+      "fr": "Portes et cadres intérieurs",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "nodeTags": [
       "activity",
@@ -9919,7 +9949,12 @@
     "id": "6.7",
     "sectionId": "6",
     "title": {
-      "en": "Door Hardware"
+      "en": "Door Hardware",
+      "fr": "Quincaillerie de portes",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "nodeTags": [
       "activity",
@@ -11433,7 +11468,12 @@
     "id": "6.8",
     "sectionId": "6",
     "title": {
-      "en": "Ceilings"
+      "en": "Ceilings",
+      "fr": "Plafonds",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "nodeTags": [
       "activity",
@@ -12995,7 +13035,12 @@
     "id": "6.9",
     "sectionId": "6",
     "title": {
-      "en": "Access Panels"
+      "en": "Access Panels",
+      "fr": "Panneaux d’accès",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "nodeTags": [
       "interface",

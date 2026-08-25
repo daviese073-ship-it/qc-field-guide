@@ -58,6 +58,9 @@ implementation use only and does not change the source documents.
   condition, gate, and invalidation-rule registries.
 - `production-relationship-registry.md` documents the Phase 012 Build-3
   production relationship graph.
+- `production-localization.md` documents the Phase 013 Build-4 terminology,
+  acronym, title localization, UI-string, fallback, and localization-audit
+  layer.
 
 ## Current Boundary
 
@@ -65,8 +68,9 @@ The repository now has domain contracts, validation, registries, relationship
 services, screen contracts, reusable component foundations, the production
 section/activity catalogue with substantive Build 2 technical activity content,
 and the Build-3-governed production condition, gate, and invalidation-rule
-registries, and the Build-3-governed production relationship registry. It still
-does not implement terminology/acronym/localization data, search
-indexing/ranking/results, favorites/recents, official records, approvals,
-releases, signatures, backend services, databases, authentication, analytics, or
-project tracking.
+registries, the Build-3-governed production relationship registry, and the
+Build-4-governed terminology/acronym/localization/UI-string layer. It still does
+not implement Phase-014 Quick/Learn/workflow/pre-concealment production data,
+search indexing/ranking/results, favorites/recents, official records,
+approvals, releases, signatures, backend services, databases, authentication,
+analytics, or project tracking.

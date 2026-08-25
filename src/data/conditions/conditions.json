@@ -8,31 +8,56 @@
   {
     "id": "whereApplicable",
     "label": {
-      "en": "Where applicable"
+      "en": "Where applicable",
+      "fr": "Le cas échéant",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     }
   },
   {
     "id": "whereSpecified",
     "label": {
-      "en": "Where specified"
+      "en": "Where specified",
+      "fr": "Lorsque spécifié",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     }
   },
   {
     "id": "whereRated",
     "label": {
-      "en": "Where rated"
+      "en": "Where rated",
+      "fr": "Lorsque l’assemblage est coté/résistant au feu",
+      "status": {
+        "en": "validated",
+        "fr": "provisional"
+      }
     }
   },
   {
     "id": "whereFireSeparation",
     "label": {
-      "en": "Where fire separation exists"
+      "en": "Where fire separation exists",
+      "fr": "Lors d’une traversée d’un assemblage résistant au feu",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     }
   },
   {
     "id": "whereExterior",
     "label": {
-      "en": "Where exterior"
+      "en": "Where exterior",
+      "fr": "À l’extérieur / en condition extérieure",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     }
   },
   {
@@ -50,19 +75,34 @@
   {
     "id": "whereConcealed",
     "label": {
-      "en": "Where concealed"
+      "en": "Where concealed",
+      "fr": "Lorsque dissimulé",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     }
   },
   {
     "id": "whereTestingRequired",
     "label": {
-      "en": "Where testing is required"
+      "en": "Where testing is required",
+      "fr": "Lorsque des essais sont requis",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     }
   },
   {
     "id": "whereEquipmentPresent",
     "label": {
-      "en": "Where equipment is present"
+      "en": "Where equipment is present",
+      "fr": "Lorsqu’un équipement est présent",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     }
   },
   {
@@ -74,13 +114,23 @@
   {
     "id": "whereBuried",
     "label": {
-      "en": "Where buried"
+      "en": "Where buried",
+      "fr": "Lorsque l’ouvrage est enfoui",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     }
   },
   {
     "id": "whereSpecialistRequired",
     "label": {
-      "en": "Where specialist is required"
+      "en": "Where specialist is required",
+      "fr": "Lorsqu’une acceptation spécialisée est requise",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     }
   }
 ]

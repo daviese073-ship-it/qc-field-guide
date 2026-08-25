@@ -13,6 +13,7 @@
     "validate:data": "node scripts/validate-data.mjs",
     "validate:content": "node scripts/validate-production-content.mjs",
     "validate:foundation": "node scripts/verify-technical-foundation.mjs",
+    "validate:localization": "node scripts/validate-production-localization.mjs",
     "validate:phase-plan": "node scripts/validate-phase-plan.mjs"
   },
   "dependencies": {

@@ -1,0 +1,104 @@
+[
+  {
+    "id": "TERM-MECH-HVAC-SYSTEM",
+    "discipline": "Mechanical",
+    "preferred": {
+      "en": "Heating, Ventilation and Air Conditioning",
+      "fr": "Chauffage, ventilation et conditionnement d’air"
+    },
+    "aliases": {
+      "en": ["HVAC"],
+      "fr": ["CVCA"]
+    },
+    "relatedActivityIds": ["8.5", "8.6"],
+    "status": {
+      "en": "validated",
+      "fr": "validated"
+    },
+    "confidence": {
+      "en": "high",
+      "fr": "high"
+    },
+    "sourceRef": {
+      "build": "Build 4",
+      "document": "03-build-4-bilingual-system.docx",
+      "section": "4D"
+    }
+  },
+  {
+    "id": "TERM-MECH-BAS",
+    "discipline": "Mechanical",
+    "preferred": {
+      "en": "Building Automation System"
+    },
+    "aliases": {
+      "en": ["BAS"]
+    },
+    "relatedActivityIds": ["8.8"],
+    "contextNotes": {
+      "en": "Build 4D says French terminology may vary and should not be invented before validation."
+    },
+    "status": {
+      "en": "validated",
+      "fr": "missing"
+    },
+    "confidence": {
+      "en": "medium",
+      "fr": "low"
+    },
+    "sourceRef": {
+      "build": "Build 4",
+      "document": "03-build-4-bilingual-system.docx",
+      "section": "4D"
+    }
+  },
+  {
+    "id": "TERM-HVAC-DUCTWORK",
+    "discipline": "Mechanical",
+    "preferred": {
+      "en": "HVAC ductwork",
+      "fr": "Réseau de conduits CVCA"
+    },
+    "aliases": {
+      "en": ["ductwork"]
+    },
+    "relatedActivityIds": ["8.5"],
+    "status": {
+      "en": "validated",
+      "fr": "provisional"
+    },
+    "confidence": {
+      "en": "high",
+      "fr": "medium"
+    },
+    "sourceRef": {
+      "build": "Build 4",
+      "document": "03-build-4-bilingual-system.docx",
+      "section": "4F"
+    }
+  },
+  {
+    "id": "TERM-MECH-TAB",
+    "discipline": "Mechanical",
+    "preferred": {
+      "en": "Testing, Adjusting and Balancing"
+    },
+    "aliases": {
+      "en": ["TAB"]
+    },
+    "relatedActivityIds": ["13.3"],
+    "status": {
+      "en": "validated",
+      "fr": "missing"
+    },
+    "confidence": {
+      "en": "medium",
+      "fr": "low"
+    },
+    "sourceRef": {
+      "build": "Build 4",
+      "document": "03-build-4-bilingual-system.docx",
+      "section": "4D"
+    }
+  }
+]

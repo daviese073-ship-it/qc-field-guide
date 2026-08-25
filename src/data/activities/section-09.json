@@ -3,7 +3,12 @@
     "id": "9.1",
     "sectionId": "9",
     "title": {
-      "en": "Conduits / Raceways"
+      "en": "Conduits / Raceways",
+      "fr": "Conduits / canalisations électriques",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "nodeTags": [
       "activity",
@@ -2695,7 +2700,12 @@
     "id": "9.2",
     "sectionId": "9",
     "title": {
-      "en": "Cable Trays"
+      "en": "Cable Trays",
+      "fr": "Chemins de câbles",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "nodeTags": [
       "activity",
@@ -4535,7 +4545,12 @@
     "id": "9.3",
     "sectionId": "9",
     "title": {
-      "en": "Supports / Hangers"
+      "en": "Supports / Hangers",
+      "fr": "Supports / suspensions",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "nodeTags": [
       "activity",
@@ -5631,7 +5646,12 @@
     "id": "9.4",
     "sectionId": "9",
     "title": {
-      "en": "Electrical Equipment Installation"
+      "en": "Electrical Equipment Installation",
+      "fr": "Installation des équipements électriques",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "nodeTags": [
       "activity",
@@ -7633,7 +7653,12 @@
     "id": "9.5",
     "sectionId": "9",
     "title": {
-      "en": "Building Distribution Interfaces"
+      "en": "Building Distribution Interfaces",
+      "fr": "Interfaces de distribution électrique du bâtiment",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "nodeTags": [
       "interface",
@@ -8637,7 +8662,12 @@
     "id": "9.6",
     "sectionId": "9",
     "title": {
-      "en": "Grounding / Bonding — Within Assigned Inspection Scope"
+      "en": "Grounding / Bonding — Within Assigned Inspection Scope",
+      "fr": "Mise à la terre / liaison équipotentielle",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "nodeTags": [
       "interface",
@@ -9723,7 +9753,12 @@
     "id": "9.7",
     "sectionId": "9",
     "title": {
-      "en": "Lighting"
+      "en": "Lighting",
+      "fr": "Éclairage",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "nodeTags": [
       "activity",
@@ -10789,7 +10824,12 @@
     "id": "9.8",
     "sectionId": "9",
     "title": {
-      "en": "Emergency Lighting"
+      "en": "Emergency Lighting",
+      "fr": "Éclairage de secours",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "nodeTags": [
       "activity",
@@ -11739,7 +11779,12 @@
     "id": "9.9",
     "sectionId": "9",
     "title": {
-      "en": "Electrical Penetrations"
+      "en": "Electrical Penetrations",
+      "fr": "Traversées électriques",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "nodeTags": [
       "interface",
@@ -12918,7 +12963,12 @@
     "id": "9.10",
     "sectionId": "9",
     "title": {
-      "en": "Identification / Labels"
+      "en": "Identification / Labels",
+      "fr": "Identification / étiquetage",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "nodeTags": [
       "activity",
@@ -13817,7 +13867,12 @@
     "id": "9.11",
     "sectionId": "9",
     "title": {
-      "en": "Electrical Testing Interfaces"
+      "en": "Electrical Testing Interfaces",
+      "fr": "Interfaces d’essais électriques",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "nodeTags": [
       "testing",

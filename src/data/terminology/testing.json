@@ -1,0 +1,51 @@
+[
+  {
+    "id": "TERM-TEST-NDT",
+    "discipline": "Testing",
+    "preferred": {
+      "en": "Non-Destructive Testing"
+    },
+    "aliases": {
+      "en": ["NDT"]
+    },
+    "relatedActivityIds": ["13.3", "13.4"],
+    "status": {
+      "en": "validated",
+      "fr": "missing"
+    },
+    "confidence": {
+      "en": "medium",
+      "fr": "low"
+    },
+    "sourceRef": {
+      "build": "Build 4",
+      "document": "03-build-4-bilingual-system.docx",
+      "section": "4D"
+    }
+  },
+  {
+    "id": "TERM-TEST-RETEST",
+    "discipline": "Testing",
+    "preferred": {
+      "en": "Retesting",
+      "fr": "Réessais"
+    },
+    "aliases": {
+      "en": ["retest"]
+    },
+    "relatedActivityIds": ["13.10"],
+    "status": {
+      "en": "validated",
+      "fr": "provisional"
+    },
+    "confidence": {
+      "en": "high",
+      "fr": "medium"
+    },
+    "sourceRef": {
+      "build": "Build 4",
+      "document": "03-build-4-bilingual-system.docx",
+      "section": "4F/4G"
+    }
+  }
+]

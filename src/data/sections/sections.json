@@ -2,98 +2,168 @@
   {
     "id": "1",
     "title": {
-      "en": "Sitework & Earthworks"
+      "en": "Sitework & Earthworks",
+      "fr": "Travaux de chantier et terrassement",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "order": 1
   },
   {
     "id": "2",
     "title": {
-      "en": "Substructure"
+      "en": "Substructure",
+      "fr": "Infrastructure du bâtiment",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "order": 2
   },
   {
     "id": "3",
     "title": {
-      "en": "Superstructure"
+      "en": "Superstructure",
+      "fr": "Superstructure",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "order": 3
   },
   {
     "id": "4",
     "title": {
-      "en": "Building Envelope"
+      "en": "Building Envelope",
+      "fr": "Enveloppe du bâtiment",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "order": 4
   },
   {
     "id": "5",
     "title": {
-      "en": "Roofing"
+      "en": "Roofing",
+      "fr": "Toiture",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "order": 5
   },
   {
     "id": "6",
     "title": {
-      "en": "Interior Architectural Construction"
+      "en": "Interior Architectural Construction",
+      "fr": "Construction architecturale intérieure",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "order": 6
   },
   {
     "id": "7",
     "title": {
-      "en": "Finishes"
+      "en": "Finishes",
+      "fr": "Finis",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "order": 7
   },
   {
     "id": "8",
     "title": {
-      "en": "Mechanical Services"
+      "en": "Mechanical Services",
+      "fr": "Services mécaniques",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "order": 8
   },
   {
     "id": "9",
     "title": {
-      "en": "Electrical Building Services"
+      "en": "Electrical Building Services",
+      "fr": "Services électriques du bâtiment",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "order": 9
   },
   {
     "id": "10",
     "title": {
-      "en": "Fire & Life-Safety Construction"
+      "en": "Fire & Life-Safety Construction",
+      "fr": "Protection incendie et sécurité des personnes",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "order": 10
   },
   {
     "id": "11",
     "title": {
-      "en": "Multidisciplinary Interfaces"
+      "en": "Multidisciplinary Interfaces",
+      "fr": "Interfaces multidisciplinaires",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "order": 11
   },
   {
     "id": "12",
     "title": {
-      "en": "External Works"
+      "en": "External Works",
+      "fr": "Travaux extérieurs",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "order": 12
   },
   {
     "id": "13",
     "title": {
-      "en": "Testing, Commissioning & System Acceptance"
+      "en": "Testing, Commissioning & System Acceptance",
+      "fr": "Essais, mise en service et acceptation des systèmes",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "order": 13
   },
   {
     "id": "14",
     "title": {
-      "en": "Deficiencies, Completion & Closeout"
+      "en": "Deficiencies, Completion & Closeout",
+      "fr": "Déficiences, achèvement et clôture",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "order": 14
   }

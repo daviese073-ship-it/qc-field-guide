@@ -12,6 +12,7 @@ import section11Activities from "@/data/activities/section-11.json";
 import section12Activities from "@/data/activities/section-12.json";
 import section13Activities from "@/data/activities/section-13.json";
 import section14Activities from "@/data/activities/section-14.json";
+import acronyms from "@/data/acronyms/acronyms.json";
 import conditions from "@/data/conditions/conditions.json";
 import gates from "@/data/gates/gates.json";
 import invalidationRules from "@/data/invalidation/invalidation-rules.json";
@@ -27,6 +28,19 @@ import siteworkRelationships from "@/data/relationships/sitework.json";
 import structuralRelationships from "@/data/relationships/structural.json";
 import testingCloseoutRelationships from "@/data/relationships/testing-closeout.json";
 import sections from "@/data/sections/sections.json";
+import terminologyCloseout from "@/data/terminology/closeout.json";
+import terminologyConcrete from "@/data/terminology/concrete.json";
+import terminologyEarthworks from "@/data/terminology/earthworks.json";
+import terminologyElectrical from "@/data/terminology/electrical.json";
+import terminologyEnvelope from "@/data/terminology/envelope.json";
+import terminologyFireLifeSafety from "@/data/terminology/fire-life-safety.json";
+import terminologyInteriors from "@/data/terminology/interiors.json";
+import terminologyMechanical from "@/data/terminology/mechanical.json";
+import terminologyQuality from "@/data/terminology/quality.json";
+import terminologyRoofing from "@/data/terminology/roofing.json";
+import terminologyStructural from "@/data/terminology/structural.json";
+import terminologyTesting from "@/data/terminology/testing.json";
+import uiStrings from "@/data/ui/ui-strings.json";
 
 const activities = [
   ...section01Activities,
@@ -59,6 +73,21 @@ const relationships = [
   ...crossDisciplineRelationships
 ];
 
+const terminology = [
+  ...terminologyQuality,
+  ...terminologyEarthworks,
+  ...terminologyConcrete,
+  ...terminologyStructural,
+  ...terminologyEnvelope,
+  ...terminologyRoofing,
+  ...terminologyInteriors,
+  ...terminologyMechanical,
+  ...terminologyElectrical,
+  ...terminologyFireLifeSafety,
+  ...terminologyTesting,
+  ...terminologyCloseout
+];
+
 export const productionCanonicalDataset = {
   sections,
   activities,
@@ -70,12 +99,12 @@ export const productionCanonicalDataset = {
   conditions,
   workflows: [],
   preConcealmentWorkflows: [],
-  terminology: [],
-  acronyms: [],
-  uiStrings: [],
+  terminology,
+  acronyms,
+  uiStrings,
   version: {
     schemaVersion: "phase-002",
-    contentVersion: "phase-012-production-relationship-registry",
-    terminologyVersion: "not-populated"
+    contentVersion: "phase-013-production-localization",
+    terminologyVersion: "phase-013-production-localization"
   }
 };

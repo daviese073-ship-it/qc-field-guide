@@ -3,7 +3,12 @@
     "id": "7.1",
     "sectionId": "7",
     "title": {
-      "en": "Concrete Floor Preparation"
+      "en": "Concrete Floor Preparation",
+      "fr": "Préparation des planchers de béton",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "nodeTags": [
       "activity",
@@ -1715,7 +1720,12 @@
     "id": "7.2",
     "sectionId": "7",
     "title": {
-      "en": "Floor Finishes"
+      "en": "Floor Finishes",
+      "fr": "Revêtements de sol",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "nodeTags": [
       "activity",
@@ -4234,7 +4244,12 @@
     "id": "7.3",
     "sectionId": "7",
     "title": {
-      "en": "Wall Finishes"
+      "en": "Wall Finishes",
+      "fr": "Finis muraux",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "nodeTags": [
       "activity"
@@ -5372,7 +5387,12 @@
     "id": "7.4",
     "sectionId": "7",
     "title": {
-      "en": "Painting / Coatings"
+      "en": "Painting / Coatings",
+      "fr": "Peinture / revêtements",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "nodeTags": [
       "activity",
@@ -7051,7 +7071,12 @@
     "id": "7.5",
     "sectionId": "7",
     "title": {
-      "en": "Architectural Sealants"
+      "en": "Architectural Sealants",
+      "fr": "Scellants architecturaux",
+      "status": {
+        "en": "validated",
+        "fr": "provisional"
+      }
     },
     "nodeTags": [
       "activity",
@@ -8043,7 +8068,12 @@
     "id": "7.6",
     "sectionId": "7",
     "title": {
-      "en": "Specialty Finishes"
+      "en": "Specialty Finishes",
+      "fr": "Finis spéciaux",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "nodeTags": [
       "activity"
@@ -9074,7 +9104,12 @@
     "id": "7.7",
     "sectionId": "7",
     "title": {
-      "en": "Final Architectural Deficiency Inspection"
+      "en": "Final Architectural Deficiency Inspection",
+      "fr": "Inspection finale des déficiences architecturales",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "nodeTags": [
       "closeout",

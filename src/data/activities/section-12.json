@@ -3,7 +3,12 @@
     "id": "12.1",
     "sectionId": "12",
     "title": {
-      "en": "Underground Services"
+      "en": "Underground Services",
+      "fr": "Réseaux souterrains",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "nodeTags": [
       "activity",
@@ -2446,7 +2451,12 @@
     "id": "12.2",
     "sectionId": "12",
     "title": {
-      "en": "Utility Trenches"
+      "en": "Utility Trenches",
+      "fr": "Tranchées de services",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "nodeTags": [
       "activity",
@@ -3876,7 +3886,12 @@
     "id": "12.3",
     "sectionId": "12",
     "title": {
-      "en": "Manholes / Catch Basins / Structures"
+      "en": "Manholes / Catch Basins / Structures",
+      "fr": "Regards / puisards / ouvrages",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "nodeTags": [
       "activity",
@@ -5505,7 +5520,12 @@
     "id": "12.4",
     "sectionId": "12",
     "title": {
-      "en": "Exterior Drainage"
+      "en": "Exterior Drainage",
+      "fr": "Drainage extérieur",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "nodeTags": [
       "activity",
@@ -6632,7 +6652,12 @@
     "id": "12.5",
     "sectionId": "12",
     "title": {
-      "en": "Granular Base / Subbase"
+      "en": "Granular Base / Subbase",
+      "fr": "Fondation / sous-fondation granulaires",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "nodeTags": [
       "activity",
@@ -7711,7 +7736,12 @@
     "id": "12.6",
     "sectionId": "12",
     "title": {
-      "en": "Curbs"
+      "en": "Curbs",
+      "fr": "Bordures",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "nodeTags": [
       "activity"
@@ -8860,7 +8890,12 @@
     "id": "12.7",
     "sectionId": "12",
     "title": {
-      "en": "Concrete Exterior Works"
+      "en": "Concrete Exterior Works",
+      "fr": "Ouvrages extérieurs en béton",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "nodeTags": [
       "activity",
@@ -10134,7 +10169,12 @@
     "id": "12.8",
     "sectionId": "12",
     "title": {
-      "en": "Asphalt"
+      "en": "Asphalt",
+      "fr": "Enrobé bitumineux",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "nodeTags": [
       "activity",
@@ -11556,7 +11596,12 @@
     "id": "12.9",
     "sectionId": "12",
     "title": {
-      "en": "Site Restoration"
+      "en": "Site Restoration",
+      "fr": "Remise en état du site",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "nodeTags": [
       "closeout",
@@ -12662,7 +12707,12 @@
     "id": "12.10",
     "sectionId": "12",
     "title": {
-      "en": "Fencing / Gates — If Applicable"
+      "en": "Fencing / Gates — If Applicable",
+      "fr": "Clôtures / portails",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "nodeTags": [
       "activity",

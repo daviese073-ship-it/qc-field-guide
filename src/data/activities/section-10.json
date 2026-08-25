@@ -3,7 +3,12 @@
     "id": "10.1",
     "sectionId": "10",
     "title": {
-      "en": "Fire-Rated Walls"
+      "en": "Fire-Rated Walls",
+      "fr": "Murs résistants au feu",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "nodeTags": [
       "activity",
@@ -2618,7 +2623,12 @@
     "id": "10.2",
     "sectionId": "10",
     "title": {
-      "en": "Fire-Rated Floors / Ceilings"
+      "en": "Fire-Rated Floors / Ceilings",
+      "fr": "Planchers / plafonds résistants au feu",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "nodeTags": [
       "activity",
@@ -4115,7 +4125,12 @@
     "id": "10.3",
     "sectionId": "10",
     "title": {
-      "en": "Firestopping"
+      "en": "Firestopping",
+      "fr": "Calfeutrement coupe-feu",
+      "status": {
+        "en": "validated",
+        "fr": "provisional"
+      }
     },
     "nodeTags": [
       "interface",
@@ -6739,13 +6754,21 @@
     },
     "authorityNote": {
       "en": "The project drawings, devis, Plan Qualite, PIE/PRIE, approved procedures, professional instructions and CRT/Hydro-Quebec requirements govern. This playbook tells you how to systematically find, verify, document and close the quality requirements; it does not replace them."
-    }
+    },
+    "terminologyRefs": [
+      "TERM-FIRE-FIRESTOPPING"
+    ]
   },
   {
     "id": "10.4",
     "sectionId": "10",
     "title": {
-      "en": "Fire / Smoke Dampers"
+      "en": "Fire / Smoke Dampers",
+      "fr": "Registres coupe-feu / coupe-fumée",
+      "status": {
+        "en": "validated",
+        "fr": "provisional"
+      }
     },
     "nodeTags": [
       "interface",
@@ -8001,13 +8024,21 @@
     },
     "authorityNote": {
       "en": "The project drawings, devis, Plan Qualite, PIE/PRIE, approved procedures, professional instructions and CRT/Hydro-Quebec requirements govern. This playbook tells you how to systematically find, verify, document and close the quality requirements; it does not replace them."
-    }
+    },
+    "terminologyRefs": [
+      "TERM-FIRE-DAMPER"
+    ]
   },
   {
     "id": "10.5",
     "sectionId": "10",
     "title": {
-      "en": "Fire-Rated Doors"
+      "en": "Fire-Rated Doors",
+      "fr": "Portes coupe-feu",
+      "status": {
+        "en": "validated",
+        "fr": "provisional"
+      }
     },
     "nodeTags": [
       "interface",
@@ -9641,7 +9672,12 @@
     "id": "10.6",
     "sectionId": "10",
     "title": {
-      "en": "Fire-Alarm Physical Installation Interfaces"
+      "en": "Fire-Alarm Physical Installation Interfaces",
+      "fr": "Interfaces physiques d’installation du système d’alarme incendie",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "nodeTags": [
       "interface",
@@ -10873,7 +10909,12 @@
     "id": "10.7",
     "sectionId": "10",
     "title": {
-      "en": "Emergency / Life-Safety Interfaces"
+      "en": "Emergency / Life-Safety Interfaces",
+      "fr": "Interfaces d’urgence / de sécurité des personnes",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "nodeTags": [
       "umbrella",
@@ -11808,7 +11849,12 @@
     "id": "10.8",
     "sectionId": "10",
     "title": {
-      "en": "Fire Protection Systems — If Applicable"
+      "en": "Fire Protection Systems — If Applicable",
+      "fr": "Systèmes de protection incendie",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "nodeTags": [
       "activity",

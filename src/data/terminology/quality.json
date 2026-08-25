@@ -1,0 +1,302 @@
+[
+  {
+    "id": "TERM-QA-QUALITY-ASSURANCE",
+    "discipline": "Quality",
+    "preferred": {
+      "en": "Quality Assurance",
+      "fr": "Assurance qualité"
+    },
+    "aliases": {
+      "en": ["QA"]
+    },
+    "definition": {
+      "en": "Quality assurance concept used in QA/QC context."
+    },
+    "relatedActivityIds": ["14.14"],
+    "status": {
+      "en": "validated",
+      "fr": "validated"
+    },
+    "confidence": {
+      "en": "high",
+      "fr": "high"
+    },
+    "sourceRef": {
+      "build": "Build 4",
+      "document": "03-build-4-bilingual-system.docx",
+      "section": "4D"
+    }
+  },
+  {
+    "id": "TERM-QC-QUALITY-CONTROL",
+    "discipline": "Quality",
+    "preferred": {
+      "en": "Quality Control",
+      "fr": "Contrôle de la qualité"
+    },
+    "aliases": {
+      "en": ["QC"],
+      "fr": ["CQ"]
+    },
+    "definition": {
+      "en": "Quality control concept used in field QC context."
+    },
+    "relatedActivityIds": ["14.14"],
+    "status": {
+      "en": "validated",
+      "fr": "validated"
+    },
+    "confidence": {
+      "en": "high",
+      "fr": "medium"
+    },
+    "sourceRef": {
+      "build": "Build 4",
+      "document": "03-build-4-bilingual-system.docx",
+      "section": "4D"
+    }
+  },
+  {
+    "id": "TERM-QC-DEFICIENCY-LOG",
+    "discipline": "Quality",
+    "preferred": {
+      "en": "Deficiency log",
+      "fr": "Registre des déficiences"
+    },
+    "aliases": {
+      "fr": ["Registre des anomalies"]
+    },
+    "definition": {
+      "en": "A record or log for deficiencies identified for correction and closeout."
+    },
+    "relatedActivityIds": ["14.1", "14.2", "14.3"],
+    "status": {
+      "en": "validated",
+      "fr": "validated"
+    },
+    "confidence": {
+      "en": "high",
+      "fr": "high"
+    },
+    "sourceRef": {
+      "build": "Build 4",
+      "document": "03-build-4-bilingual-system.docx",
+      "section": "4B"
+    }
+  },
+  {
+    "id": "TERM-QC-NONCONFORMANCE",
+    "discipline": "Quality",
+    "preferred": {
+      "en": "Non-conformance",
+      "fr": "Non-conformité"
+    },
+    "aliases": {
+      "en": ["nonconformance", "NC"],
+      "fr": ["NC"]
+    },
+    "definition": {
+      "en": "A condition that does not conform to an applicable requirement."
+    },
+    "relatedActivityIds": ["14.8"],
+    "status": {
+      "en": "validated",
+      "fr": "validated"
+    },
+    "confidence": {
+      "en": "high",
+      "fr": "high"
+    },
+    "sourceRef": {
+      "build": "Build 4",
+      "document": "03-build-4-bilingual-system.docx",
+      "section": "4B/4D"
+    }
+  },
+  {
+    "id": "TERM-QC-NONCONFORMANCE-REPORT",
+    "discipline": "Quality",
+    "preferred": {
+      "en": "Non-Conformance Report"
+    },
+    "aliases": {
+      "en": ["NCR", "non-conformance report"]
+    },
+    "relatedActivityIds": ["14.8"],
+    "contextNotes": {
+      "en": "Build 4D keeps NCR separate from NC and marks the French preferred form for validation."
+    },
+    "status": {
+      "en": "validated",
+      "fr": "missing"
+    },
+    "confidence": {
+      "en": "high",
+      "fr": "low"
+    },
+    "sourceRef": {
+      "build": "Build 4",
+      "document": "03-build-4-bilingual-system.docx",
+      "section": "4D"
+    }
+  },
+  {
+    "id": "TERM-QC-PIE",
+    "discipline": "Quality",
+    "preferred": {
+      "en": "Inspection/test planning document",
+      "fr": "Plan d’inspection et d’essais"
+    },
+    "aliases": {
+      "fr": ["PIE"]
+    },
+    "relatedActivityIds": ["13.1"],
+    "contextNotes": {
+      "en": "Build 4D treats PIE as a high-priority Québec QC term and does not force equivalence with ITP."
+    },
+    "status": {
+      "en": "provisional",
+      "fr": "provisional"
+    },
+    "confidence": {
+      "en": "medium",
+      "fr": "medium"
+    },
+    "sourceRef": {
+      "build": "Build 4",
+      "document": "03-build-4-bilingual-system.docx",
+      "section": "4D"
+    }
+  },
+  {
+    "id": "TERM-QC-PRIE",
+    "discipline": "Quality",
+    "preferred": {
+      "en": "Québec inspection/testing plan concept"
+    },
+    "aliases": {
+      "fr": ["PRIE"]
+    },
+    "contextNotes": {
+      "en": "Build 4D requires PRIE to stay separate until its full French expansion and scope are validated."
+    },
+    "status": {
+      "en": "provisional",
+      "fr": "missing"
+    },
+    "confidence": {
+      "en": "low",
+      "fr": "low"
+    },
+    "sourceRef": {
+      "build": "Build 4",
+      "document": "03-build-4-bilingual-system.docx",
+      "section": "4D"
+    }
+  },
+  {
+    "id": "TERM-QC-ITP",
+    "discipline": "Quality",
+    "preferred": {
+      "en": "Inspection and Test Plan"
+    },
+    "aliases": {
+      "en": ["ITP"]
+    },
+    "relatedActivityIds": ["13.1"],
+    "contextNotes": {
+      "en": "Build 4D keeps ITP related to PIE/PRIE without merging the concepts."
+    },
+    "status": {
+      "en": "validated",
+      "fr": "missing"
+    },
+    "confidence": {
+      "en": "medium",
+      "fr": "low"
+    },
+    "sourceRef": {
+      "build": "Build 4",
+      "document": "03-build-4-bilingual-system.docx",
+      "section": "4D"
+    }
+  },
+  {
+    "id": "TERM-DOC-RFI",
+    "discipline": "Quality",
+    "preferred": {
+      "en": "Request for Information"
+    },
+    "aliases": {
+      "en": ["RFI"]
+    },
+    "contextNotes": {
+      "en": "Build 4D allows shared RFI only where validated and warns against equating it with QMT."
+    },
+    "status": {
+      "en": "validated",
+      "fr": "missing"
+    },
+    "confidence": {
+      "en": "medium",
+      "fr": "low"
+    },
+    "sourceRef": {
+      "build": "Build 4",
+      "document": "03-build-4-bilingual-system.docx",
+      "section": "4D"
+    }
+  },
+  {
+    "id": "TERM-DOC-QMT",
+    "discipline": "Quality",
+    "preferred": {
+      "en": "Technical question process"
+    },
+    "aliases": {
+      "fr": ["QMT"]
+    },
+    "contextNotes": {
+      "en": "Build 4D treats QMT as Québec/project-process terminology requiring validation."
+    },
+    "status": {
+      "en": "provisional",
+      "fr": "missing"
+    },
+    "confidence": {
+      "en": "low",
+      "fr": "low"
+    },
+    "sourceRef": {
+      "build": "Build 4",
+      "document": "03-build-4-bilingual-system.docx",
+      "section": "4D"
+    }
+  },
+  {
+    "id": "TERM-QC-TQC",
+    "discipline": "Quality",
+    "preferred": {
+      "en": "QC/project-process concept"
+    },
+    "aliases": {
+      "fr": ["TQC"]
+    },
+    "contextNotes": {
+      "en": "Build 4D treats TQC as organization-specific until proven otherwise."
+    },
+    "status": {
+      "en": "provisional",
+      "fr": "missing"
+    },
+    "confidence": {
+      "en": "low",
+      "fr": "low"
+    },
+    "sourceRef": {
+      "build": "Build 4",
+      "document": "03-build-4-bilingual-system.docx",
+      "section": "4D"
+    }
+  }
+]

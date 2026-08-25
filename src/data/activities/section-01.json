@@ -3,7 +3,12 @@
     "id": "1.1",
     "sectionId": "1",
     "title": {
-      "en": "Existing Conditions"
+      "en": "Existing Conditions",
+      "fr": "Conditions existantes",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "nodeTags": [
       "activity",
@@ -2630,7 +2635,12 @@
     "id": "1.2",
     "sectionId": "1",
     "title": {
-      "en": "Survey & Layout"
+      "en": "Survey & Layout",
+      "fr": "Arpentage et implantation",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "nodeTags": [
       "activity",
@@ -4882,7 +4892,12 @@
     "id": "1.3",
     "sectionId": "1",
     "title": {
-      "en": "Excavation"
+      "en": "Excavation",
+      "fr": "Excavation",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "nodeTags": [
       "activity",
@@ -10240,7 +10255,12 @@
     "id": "1.4",
     "sectionId": "1",
     "title": {
-      "en": "Subgrade"
+      "en": "Subgrade",
+      "fr": "Sol d’assise",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "nodeTags": [
       "activity",
@@ -13266,7 +13286,12 @@
     "id": "1.5",
     "sectionId": "1",
     "title": {
-      "en": "Granular Materials"
+      "en": "Granular Materials",
+      "fr": "Matériaux granulaires",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "nodeTags": [
       "activity",
@@ -16267,7 +16292,12 @@
     "id": "1.6",
     "sectionId": "1",
     "title": {
-      "en": "Backfill"
+      "en": "Backfill",
+      "fr": "Remblai",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "nodeTags": [
       "activity",
@@ -19261,7 +19291,12 @@
     "id": "1.7",
     "sectionId": "1",
     "title": {
-      "en": "Site Drainage"
+      "en": "Site Drainage",
+      "fr": "Drainage du site",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "nodeTags": [
       "activity",

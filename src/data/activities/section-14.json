@@ -3,7 +3,12 @@
     "id": "14.1",
     "sectionId": "14",
     "title": {
-      "en": "Preparatory Deficiency Review"
+      "en": "Preparatory Deficiency Review",
+      "fr": "Revue préparatoire des déficiences",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "nodeTags": [
       "closeout",
@@ -1300,7 +1305,12 @@
     "id": "14.2",
     "sectionId": "14",
     "title": {
-      "en": "Formal Deficiency Survey"
+      "en": "Formal Deficiency Survey",
+      "fr": "Relevé officiel des déficiences",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "nodeTags": [
       "closeout",
@@ -2204,7 +2214,12 @@
     "id": "14.3",
     "sectionId": "14",
     "title": {
-      "en": "Deficiency Classification"
+      "en": "Deficiency Classification",
+      "fr": "Classification des déficiences",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "nodeTags": [
       "closeout",
@@ -2707,7 +2722,12 @@
     "id": "14.4",
     "sectionId": "14",
     "title": {
-      "en": "Assignment"
+      "en": "Assignment",
+      "fr": "Attribution",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "nodeTags": [
       "closeout"
@@ -3276,7 +3296,12 @@
     "id": "14.5",
     "sectionId": "14",
     "title": {
-      "en": "Corrective Work"
+      "en": "Corrective Work",
+      "fr": "Travaux correctifs",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "nodeTags": [
       "closeout",
@@ -3979,7 +4004,12 @@
     "id": "14.6",
     "sectionId": "14",
     "title": {
-      "en": "Reinspection"
+      "en": "Reinspection",
+      "fr": "Réinspection",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "nodeTags": [
       "closeout",
@@ -4595,7 +4625,12 @@
     "id": "14.7",
     "sectionId": "14",
     "title": {
-      "en": "Closure"
+      "en": "Closure",
+      "fr": "Clôture",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "nodeTags": [
       "closeout",
@@ -5245,7 +5280,12 @@
     "id": "14.8",
     "sectionId": "14",
     "title": {
-      "en": "Outstanding NC Closure"
+      "en": "Outstanding NC Closure",
+      "fr": "Clôture des non-conformités en suspens",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "nodeTags": [
       "closeout",
@@ -5924,13 +5964,22 @@
     },
     "authorityNote": {
       "en": "The project drawings, devis, Plan Qualite, PIE/PRIE, approved procedures, professional instructions and CRT/Hydro-Quebec requirements govern. This playbook tells you how to systematically find, verify, document and close the quality requirements; it does not replace them."
-    }
+    },
+    "terminologyRefs": [
+      "TERM-QC-NONCONFORMANCE",
+      "TERM-QC-NONCONFORMANCE-REPORT"
+    ]
   },
   {
     "id": "14.9",
     "sectionId": "14",
     "title": {
-      "en": "Outstanding Test Results"
+      "en": "Outstanding Test Results",
+      "fr": "Résultats d’essais en suspens",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "nodeTags": [
       "closeout",
@@ -6485,7 +6534,12 @@
     "id": "14.10",
     "sectionId": "14",
     "title": {
-      "en": "Redlines / As-Builts"
+      "en": "Redlines / As-Builts",
+      "fr": "Plans annotés / plans tels que construits",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "nodeTags": [
       "closeout",
@@ -7229,13 +7283,21 @@
     },
     "authorityNote": {
       "en": "The project drawings, devis, Plan Qualite, PIE/PRIE, approved procedures, professional instructions and CRT/Hydro-Quebec requirements govern. This playbook tells you how to systematically find, verify, document and close the quality requirements; it does not replace them."
-    }
+    },
+    "terminologyRefs": [
+      "TERM-CLS-AS-BUILT"
+    ]
   },
   {
     "id": "14.11",
     "sectionId": "14",
     "title": {
-      "en": "O&M Documentation"
+      "en": "O&M Documentation",
+      "fr": "Documentation d’exploitation et d’entretien",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "nodeTags": [
       "closeout"
@@ -8005,13 +8067,21 @@
     },
     "authorityNote": {
       "en": "The project drawings, devis, Plan Qualite, PIE/PRIE, approved procedures, professional instructions and CRT/Hydro-Quebec requirements govern. This playbook tells you how to systematically find, verify, document and close the quality requirements; it does not replace them."
-    }
+    },
+    "terminologyRefs": [
+      "TERM-CLS-OM"
+    ]
   },
   {
     "id": "14.12",
     "sectionId": "14",
     "title": {
-      "en": "Certificates / Technical Records"
+      "en": "Certificates / Technical Records",
+      "fr": "Certificats / dossiers techniques",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "nodeTags": [
       "closeout",
@@ -8682,7 +8752,12 @@
     "id": "14.13",
     "sectionId": "14",
     "title": {
-      "en": "Warranties"
+      "en": "Warranties",
+      "fr": "Garanties",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "nodeTags": [
       "closeout"
@@ -9426,7 +9501,12 @@
     "id": "14.14",
     "sectionId": "14",
     "title": {
-      "en": "Final Quality Records"
+      "en": "Final Quality Records",
+      "fr": "Dossier qualité final",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "nodeTags": [
       "closeout",
@@ -10310,7 +10390,12 @@
     "id": "14.15",
     "sectionId": "14",
     "title": {
-      "en": "Turnover / Acceptance"
+      "en": "Turnover / Acceptance",
+      "fr": "Remise / acceptation",
+      "status": {
+        "en": "validated",
+        "fr": "provisional"
+      }
     },
     "nodeTags": [
       "closeout",
@@ -11441,6 +11526,9 @@
     },
     "authorityNote": {
       "en": "The project drawings, devis, Plan Qualite, PIE/PRIE, approved procedures, professional instructions and CRT/Hydro-Quebec requirements govern. This playbook tells you how to systematically find, verify, document and close the quality requirements; it does not replace them."
-    }
+    },
+    "terminologyRefs": [
+      "TERM-CLS-TURNOVER"
+    ]
   }
 ]

@@ -3,7 +3,12 @@
     "id": "5.1",
     "sectionId": "5",
     "title": {
-      "en": "Roof Deck / Substrate"
+      "en": "Roof Deck / Substrate",
+      "fr": "Pontage / support de toiture",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "nodeTags": [
       "activity",
@@ -1903,7 +1908,12 @@
     "id": "5.2",
     "sectionId": "5",
     "title": {
-      "en": "Vapour / Air Control Layer"
+      "en": "Vapour / Air Control Layer",
+      "fr": "Couche de contrôle de l’air et de la vapeur",
+      "status": {
+        "en": "validated",
+        "fr": "provisional"
+      }
     },
     "nodeTags": [
       "activity",
@@ -3349,13 +3359,21 @@
     },
     "authorityNote": {
       "en": "The project drawings, devis, Plan Qualite, PIE/PRIE, approved procedures, professional instructions and CRT/Hydro-Quebec requirements govern. This playbook tells you how to systematically find, verify, document and close the quality requirements; it does not replace them."
-    }
+    },
+    "terminologyRefs": [
+      "TERM-ENV-AIR-BARRIER-MEMBRANE"
+    ]
   },
   {
     "id": "5.3",
     "sectionId": "5",
     "title": {
-      "en": "Roof Insulation"
+      "en": "Roof Insulation",
+      "fr": "Isolation de toiture",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "nodeTags": [
       "activity",
@@ -5189,7 +5207,12 @@
     "id": "5.4",
     "sectionId": "5",
     "title": {
-      "en": "Roofing Membrane"
+      "en": "Roofing Membrane",
+      "fr": "Membrane de toiture",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "nodeTags": [
       "activity",
@@ -7224,7 +7247,12 @@
     "id": "5.5",
     "sectionId": "5",
     "title": {
-      "en": "Flashings & Terminations"
+      "en": "Flashings & Terminations",
+      "fr": "Solins et terminaisons",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "nodeTags": [
       "activity",
@@ -8365,7 +8393,12 @@
     "id": "5.6",
     "sectionId": "5",
     "title": {
-      "en": "Roof Penetrations"
+      "en": "Roof Penetrations",
+      "fr": "Traversées de toiture",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "nodeTags": [
       "interface",
@@ -9740,7 +9773,12 @@
     "id": "5.7",
     "sectionId": "5",
     "title": {
-      "en": "Curbs & Equipment Interfaces"
+      "en": "Curbs & Equipment Interfaces",
+      "fr": "Costières et interfaces d’équipements",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "nodeTags": [
       "interface",
@@ -11009,7 +11047,12 @@
     "id": "5.8",
     "sectionId": "5",
     "title": {
-      "en": "Roof Drains"
+      "en": "Roof Drains",
+      "fr": "Avaloirs de toit",
+      "status": {
+        "en": "validated",
+        "fr": "provisional"
+      }
     },
     "nodeTags": [
       "interface",
@@ -12284,7 +12327,12 @@
     "id": "5.9",
     "sectionId": "5",
     "title": {
-      "en": "Roofing Testing / Final Inspection"
+      "en": "Roofing Testing / Final Inspection",
+      "fr": "Essais et inspection finale de la toiture",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "nodeTags": [
       "testing",

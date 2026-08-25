@@ -121,18 +121,18 @@ describe("Phase 009 production identity dataset", () => {
     expect(report.contentItemCount).toBeGreaterThan(1000);
   });
 
-  it("does not populate production presentation, terminology, or search data", () => {
+  it("does not populate production presentation or search data", () => {
     expect(productionCanonicalDataset.quickViews).toHaveLength(0);
     expect(productionCanonicalDataset.learnContent).toHaveLength(0);
     expect(productionCanonicalDataset.workflows).toHaveLength(0);
     expect(productionCanonicalDataset.preConcealmentWorkflows).toHaveLength(0);
-    expect(productionCanonicalDataset.terminology).toHaveLength(0);
-    expect(productionCanonicalDataset.acronyms).toHaveLength(0);
-    expect(productionCanonicalDataset.uiStrings).toHaveLength(0);
+    expect(productionCanonicalDataset.terminology.length).toBeGreaterThan(0);
+    expect(productionCanonicalDataset.acronyms.length).toBeGreaterThan(0);
+    expect(productionCanonicalDataset.uiStrings.length).toBeGreaterThan(0);
     expect("searchIndex" in productionCanonicalDataset).toBe(false);
   });
 
-  it("defers French identity fields without creating language-specific duplicate IDs", () => {
+  it("localizes identity fields without creating language-specific duplicate IDs", () => {
     const ids = productionCanonicalDataset.activities.map(
       (activity) => activity.id
     );
@@ -141,12 +141,12 @@ describe("Phase 009 production identity dataset", () => {
       false
     );
     expect(
-      productionCanonicalDataset.sections.some((section) => "fr" in section.title)
-    ).toBe(false);
+      productionCanonicalDataset.sections.every((section) => section.title.fr)
+    ).toBe(true);
     expect(
-      productionCanonicalDataset.activities.some(
-        (activity) => "fr" in activity.title
+      productionCanonicalDataset.activities.every(
+        (activity) => activity.title.fr
       )
-    ).toBe(false);
+    ).toBe(true);
   });
 });

@@ -1,0 +1,52 @@
+[
+  {
+    "id": "TERM-ENV-AIR-BARRIER-MEMBRANE",
+    "discipline": "Envelope",
+    "preferred": {
+      "en": "Air barrier membrane",
+      "fr": "Membrane pare-air"
+    },
+    "aliases": {
+      "fr": ["Pare-air"]
+    },
+    "relatedActivityIds": ["4.2", "5.2"],
+    "status": {
+      "en": "validated",
+      "fr": "validated"
+    },
+    "confidence": {
+      "en": "high",
+      "fr": "high"
+    },
+    "sourceRef": {
+      "build": "Build 4",
+      "document": "03-build-4-bilingual-system.docx",
+      "section": "4B"
+    }
+  },
+  {
+    "id": "TERM-ENV-AIR-BARRIER-CONTINUITY",
+    "discipline": "Envelope",
+    "preferred": {
+      "en": "Air barrier continuity",
+      "fr": "Continuité du pare-air"
+    },
+    "aliases": {
+      "fr": ["Continuité de l’étanchéité à l’air"]
+    },
+    "relatedActivityIds": ["4.2", "11.4", "11.5"],
+    "status": {
+      "en": "validated",
+      "fr": "validated"
+    },
+    "confidence": {
+      "en": "high",
+      "fr": "high"
+    },
+    "sourceRef": {
+      "build": "Build 4",
+      "document": "03-build-4-bilingual-system.docx",
+      "section": "4B"
+    }
+  }
+]

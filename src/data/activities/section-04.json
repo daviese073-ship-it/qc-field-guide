@@ -3,7 +3,12 @@
     "id": "4.1",
     "sectionId": "4",
     "title": {
-      "en": "Exterior Wall Assemblies"
+      "en": "Exterior Wall Assemblies",
+      "fr": "Assemblages de murs extérieurs",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "nodeTags": [
       "umbrella",
@@ -2564,7 +2569,12 @@
     "id": "4.2",
     "sectionId": "4",
     "title": {
-      "en": "Air Barrier"
+      "en": "Air Barrier",
+      "fr": "Pare-air",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "nodeTags": [
       "activity",
@@ -4888,13 +4898,22 @@
     },
     "authorityNote": {
       "en": "The project drawings, devis, Plan Qualite, PIE/PRIE, approved procedures, professional instructions and CRT/Hydro-Quebec requirements govern. This playbook tells you how to systematically find, verify, document and close the quality requirements; it does not replace them."
-    }
+    },
+    "terminologyRefs": [
+      "TERM-ENV-AIR-BARRIER-CONTINUITY",
+      "TERM-ENV-AIR-BARRIER-MEMBRANE"
+    ]
   },
   {
     "id": "4.3",
     "sectionId": "4",
     "title": {
-      "en": "Vapour Barrier"
+      "en": "Vapour Barrier",
+      "fr": "Pare-vapeur",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "nodeTags": [
       "activity",
@@ -6145,7 +6164,12 @@
     "id": "4.4",
     "sectionId": "4",
     "title": {
-      "en": "Thermal Insulation"
+      "en": "Thermal Insulation",
+      "fr": "Isolation thermique",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "nodeTags": [
       "activity",
@@ -7682,7 +7706,12 @@
     "id": "4.5",
     "sectionId": "4",
     "title": {
-      "en": "Exterior Sheathing"
+      "en": "Exterior Sheathing",
+      "fr": "Revêtement intermédiaire extérieur",
+      "status": {
+        "en": "validated",
+        "fr": "provisional"
+      }
     },
     "nodeTags": [
       "activity",
@@ -8731,7 +8760,12 @@
     "id": "4.6",
     "sectionId": "4",
     "title": {
-      "en": "Exterior Masonry / Veneer"
+      "en": "Exterior Masonry / Veneer",
+      "fr": "Maçonnerie / parement extérieur",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "nodeTags": [
       "activity",
@@ -10901,7 +10935,12 @@
     "id": "4.7",
     "sectionId": "4",
     "title": {
-      "en": "Exterior Cladding / Panels"
+      "en": "Exterior Cladding / Panels",
+      "fr": "Revêtement extérieur / panneaux",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "nodeTags": [
       "activity",
@@ -12676,7 +12715,12 @@
     "id": "4.8",
     "sectionId": "4",
     "title": {
-      "en": "Windows / Glazing"
+      "en": "Windows / Glazing",
+      "fr": "Fenêtres / vitrage",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "nodeTags": [
       "activity",
@@ -14781,7 +14825,12 @@
     "id": "4.9",
     "sectionId": "4",
     "title": {
-      "en": "Exterior Doors"
+      "en": "Exterior Doors",
+      "fr": "Portes extérieures",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "nodeTags": [
       "activity",
@@ -16464,7 +16513,12 @@
     "id": "4.10",
     "sectionId": "4",
     "title": {
-      "en": "Sealants"
+      "en": "Sealants",
+      "fr": "Scellants",
+      "status": {
+        "en": "validated",
+        "fr": "provisional"
+      }
     },
     "nodeTags": [
       "activity",

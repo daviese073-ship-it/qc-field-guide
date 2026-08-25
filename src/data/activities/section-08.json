@@ -3,7 +3,12 @@
     "id": "8.1",
     "sectionId": "8",
     "title": {
-      "en": "Plumbing — Domestic Water"
+      "en": "Plumbing — Domestic Water",
+      "fr": "Plomberie — Réseau d’eau domestique",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "nodeTags": [
       "activity",
@@ -2564,7 +2569,12 @@
     "id": "8.2",
     "sectionId": "8",
     "title": {
-      "en": "Sanitary Drainage"
+      "en": "Sanitary Drainage",
+      "fr": "Drainage sanitaire",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "nodeTags": [
       "activity",
@@ -4364,7 +4374,12 @@
     "id": "8.3",
     "sectionId": "8",
     "title": {
-      "en": "Storm Drainage"
+      "en": "Storm Drainage",
+      "fr": "Drainage pluvial",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "nodeTags": [
       "activity",
@@ -5552,7 +5567,12 @@
     "id": "8.4",
     "sectionId": "8",
     "title": {
-      "en": "Process / Equipment Piping — Where Applicable"
+      "en": "Process / Equipment Piping — Where Applicable",
+      "fr": "Tuyauterie de procédé / d’équipement",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "nodeTags": [
       "activity",
@@ -7290,7 +7310,12 @@
     "id": "8.5",
     "sectionId": "8",
     "title": {
-      "en": "HVAC Ductwork"
+      "en": "HVAC Ductwork",
+      "fr": "Réseau de conduits CVCA",
+      "status": {
+        "en": "validated",
+        "fr": "provisional"
+      }
     },
     "nodeTags": [
       "activity",
@@ -9417,13 +9442,22 @@
     },
     "authorityNote": {
       "en": "The project drawings, devis, Plan Qualite, PIE/PRIE, approved procedures, professional instructions and CRT/Hydro-Quebec requirements govern. This playbook tells you how to systematically find, verify, document and close the quality requirements; it does not replace them."
-    }
+    },
+    "terminologyRefs": [
+      "TERM-HVAC-DUCTWORK",
+      "TERM-MECH-HVAC-SYSTEM"
+    ]
   },
   {
     "id": "8.6",
     "sectionId": "8",
     "title": {
-      "en": "HVAC Equipment"
+      "en": "HVAC Equipment",
+      "fr": "Équipements CVCA",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "nodeTags": [
       "activity",
@@ -11242,7 +11276,12 @@
     "id": "8.7",
     "sectionId": "8",
     "title": {
-      "en": "Mechanical Insulation"
+      "en": "Mechanical Insulation",
+      "fr": "Isolation mécanique",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "nodeTags": [
       "activity",
@@ -12373,7 +12412,12 @@
     "id": "8.8",
     "sectionId": "8",
     "title": {
-      "en": "Mechanical Controls / BAS Interfaces"
+      "en": "Mechanical Controls / BAS Interfaces",
+      "fr": "Contrôles mécaniques / interfaces du système d’automatisation du bâtiment",
+      "status": {
+        "en": "validated",
+        "fr": "provisional"
+      }
     },
     "nodeTags": [
       "interface",
@@ -13474,13 +13518,21 @@
     },
     "authorityNote": {
       "en": "The project drawings, devis, Plan Qualite, PIE/PRIE, approved procedures, professional instructions and CRT/Hydro-Quebec requirements govern. This playbook tells you how to systematically find, verify, document and close the quality requirements; it does not replace them."
-    }
+    },
+    "terminologyRefs": [
+      "TERM-MECH-BAS"
+    ]
   },
   {
     "id": "8.9",
     "sectionId": "8",
     "title": {
-      "en": "Mechanical Penetrations"
+      "en": "Mechanical Penetrations",
+      "fr": "Traversées mécaniques",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "nodeTags": [
       "interface",
@@ -14825,7 +14877,12 @@
     "id": "8.10",
     "sectionId": "8",
     "title": {
-      "en": "Mechanical Testing"
+      "en": "Mechanical Testing",
+      "fr": "Essais mécaniques",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "nodeTags": [
       "testing",
@@ -16548,7 +16605,12 @@
     "id": "8.11",
     "sectionId": "8",
     "title": {
-      "en": "Mechanical Identification"
+      "en": "Mechanical Identification",
+      "fr": "Identification mécanique",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "nodeTags": [
       "activity",

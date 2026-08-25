@@ -2,9 +2,12 @@ import type { ReactNode } from "react";
 
 import type { LocalizedContent, LocalizedString } from "@/domain/types";
 import type { LanguagePreference } from "@/services/localization/languagePreference";
+import {
+  resolveLocalizedValue,
+  type LocalizedDensity
+} from "@/services/localization/localizationService";
 
 type LocalizedValue = LocalizedString | LocalizedContent;
-type LocalizedDensity = "short" | "long";
 
 type LocalizedTextProps = {
   value: LocalizedValue;
@@ -12,33 +15,12 @@ type LocalizedTextProps = {
   density?: LocalizedDensity;
 };
 
-const getPrimaryLanguage = (preference: LanguagePreference): "en" | "fr" =>
-  preference.mode === "bilingual" ? preference.bilingualPrimary : preference.mode;
-
-const readLanguage = (value: LocalizedValue, language: "en" | "fr") =>
-  language === "fr" ? value.fr ?? value.en : value.en;
-
-const formatLocalizedText = (
-  value: LocalizedValue,
-  preference: LanguagePreference
-) => {
-  const primaryLanguage = getPrimaryLanguage(preference);
-  const primary = readLanguage(value, primaryLanguage);
-  const secondaryLanguage = primaryLanguage === "en" ? "fr" : "en";
-  const secondary =
-    preference.mode === "bilingual" && value[secondaryLanguage]
-      ? value[secondaryLanguage]
-      : undefined;
-
-  return { primary, primaryLanguage, secondary, secondaryLanguage };
-};
-
 export function LocalizedText({
   density = "short",
   preference,
   value
 }: LocalizedTextProps) {
-  const formatted = formatLocalizedText(value, preference);
+  const formatted = resolveLocalizedValue(value, preference);
 
   if (!formatted.secondary) return <>{formatted.primary}</>;
 

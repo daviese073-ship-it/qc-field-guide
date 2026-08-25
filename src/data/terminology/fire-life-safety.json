@@ -1,0 +1,58 @@
+[
+  {
+    "id": "TERM-FIRE-FIRESTOPPING",
+    "discipline": "Fire & Life Safety",
+    "preferred": {
+      "en": "Firestopping",
+      "fr": "Calfeutrement coupe-feu"
+    },
+    "aliases": {
+      "en": ["firestop"]
+    },
+    "relatedActivityIds": ["10.3"],
+    "contextNotes": {
+      "en": "Build 4 flags firestopping terminology as requiring Québec validation."
+    },
+    "status": {
+      "en": "validated",
+      "fr": "provisional"
+    },
+    "confidence": {
+      "en": "high",
+      "fr": "medium"
+    },
+    "sourceRef": {
+      "build": "Build 4",
+      "document": "03-build-4-bilingual-system.docx",
+      "section": "4B/4C/4F"
+    }
+  },
+  {
+    "id": "TERM-FIRE-DAMPER",
+    "discipline": "Fire & Life Safety",
+    "preferred": {
+      "en": "Fire / smoke damper",
+      "fr": "Registre coupe-feu / coupe-fumée"
+    },
+    "aliases": {
+      "en": ["fire damper", "smoke damper"]
+    },
+    "relatedActivityIds": ["10.4"],
+    "contextNotes": {
+      "en": "Build 4C requires damper concepts to be split and validated by context."
+    },
+    "status": {
+      "en": "validated",
+      "fr": "provisional"
+    },
+    "confidence": {
+      "en": "high",
+      "fr": "low"
+    },
+    "sourceRef": {
+      "build": "Build 4",
+      "document": "03-build-4-bilingual-system.docx",
+      "section": "4C/4F"
+    }
+  }
+]

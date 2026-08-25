@@ -1,0 +1,60 @@
+[
+  {
+    "id": "TERM-CONC-REINFORCEMENT",
+    "discipline": "Concrete",
+    "preferred": {
+      "en": "Reinforcement",
+      "fr": "Armatures"
+    },
+    "aliases": {
+      "en": ["reinforcing steel", "rebar"],
+      "fr": ["armature", "acier d’armature", "barres d’armature"]
+    },
+    "definition": {
+      "en": "Collection of steel elements embedded in concrete.",
+      "fr": "Ensemble des éléments en acier intégrés au béton."
+    },
+    "relatedActivityIds": ["2.2", "3.1"],
+    "status": {
+      "en": "validated",
+      "fr": "validated"
+    },
+    "confidence": {
+      "en": "high",
+      "fr": "high"
+    },
+    "sourceRef": {
+      "build": "Build 4",
+      "document": "03-build-4-bilingual-system.docx",
+      "section": "4B"
+    }
+  },
+  {
+    "id": "TERM-CONC-COVER",
+    "discipline": "Concrete",
+    "preferred": {
+      "en": "Concrete cover",
+      "fr": "Enrobage"
+    },
+    "aliases": {
+      "en": ["cover"]
+    },
+    "definition": {
+      "en": "Thickness of concrete between reinforcement and concrete surface."
+    },
+    "relatedActivityIds": ["2.2", "3.1"],
+    "status": {
+      "en": "validated",
+      "fr": "validated"
+    },
+    "confidence": {
+      "en": "high",
+      "fr": "high"
+    },
+    "sourceRef": {
+      "build": "Build 4",
+      "document": "03-build-4-bilingual-system.docx",
+      "section": "4B/4C"
+    }
+  }
+]

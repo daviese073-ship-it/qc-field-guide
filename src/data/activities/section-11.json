@@ -3,7 +3,12 @@
     "id": "11.1",
     "sectionId": "11",
     "title": {
-      "en": "Structural ↔ Architectural"
+      "en": "Structural ↔ Architectural",
+      "fr": "Structure ↔ Architecture",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "nodeTags": [
       "interface"
@@ -1471,7 +1476,12 @@
     "id": "11.2",
     "sectionId": "11",
     "title": {
-      "en": "Structural ↔ Mechanical"
+      "en": "Structural ↔ Mechanical",
+      "fr": "Structure ↔ Mécanique",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "nodeTags": [
       "interface"
@@ -2722,7 +2732,12 @@
     "id": "11.3",
     "sectionId": "11",
     "title": {
-      "en": "Structural ↔ Electrical"
+      "en": "Structural ↔ Electrical",
+      "fr": "Structure ↔ Électricité",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "nodeTags": [
       "interface"
@@ -3807,7 +3822,12 @@
     "id": "11.4",
     "sectionId": "11",
     "title": {
-      "en": "Envelope ↔ Mechanical"
+      "en": "Envelope ↔ Mechanical",
+      "fr": "Enveloppe ↔ Mécanique",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "nodeTags": [
       "interface",
@@ -4979,13 +4999,21 @@
     },
     "authorityNote": {
       "en": "The project drawings, devis, Plan Qualite, PIE/PRIE, approved procedures, professional instructions and CRT/Hydro-Quebec requirements govern. This playbook tells you how to systematically find, verify, document and close the quality requirements; it does not replace them."
-    }
+    },
+    "terminologyRefs": [
+      "TERM-ENV-AIR-BARRIER-CONTINUITY"
+    ]
   },
   {
     "id": "11.5",
     "sectionId": "11",
     "title": {
-      "en": "Envelope ↔ Electrical"
+      "en": "Envelope ↔ Electrical",
+      "fr": "Enveloppe ↔ Électricité",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "nodeTags": [
       "interface",
@@ -5835,13 +5863,21 @@
     },
     "authorityNote": {
       "en": "The project drawings, devis, Plan Qualite, PIE/PRIE, approved procedures, professional instructions and CRT/Hydro-Quebec requirements govern. This playbook tells you how to systematically find, verify, document and close the quality requirements; it does not replace them."
-    }
+    },
+    "terminologyRefs": [
+      "TERM-ENV-AIR-BARRIER-CONTINUITY"
+    ]
   },
   {
     "id": "11.6",
     "sectionId": "11",
     "title": {
-      "en": "Architectural ↔ MEP"
+      "en": "Architectural ↔ MEP",
+      "fr": "Architecture ↔ MEP",
+      "status": {
+        "en": "validated",
+        "fr": "provisional"
+      }
     },
     "nodeTags": [
       "interface",
@@ -6931,7 +6967,12 @@
     "id": "11.7",
     "sectionId": "11",
     "title": {
-      "en": "Universal Penetrations"
+      "en": "Universal Penetrations",
+      "fr": "Traversées",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "nodeTags": [
       "umbrella",
@@ -7933,7 +7974,12 @@
     "id": "11.8",
     "sectionId": "11",
     "title": {
-      "en": "Embedded Items"
+      "en": "Embedded Items",
+      "fr": "Éléments incorporés",
+      "status": {
+        "en": "validated",
+        "fr": "provisional"
+      }
     },
     "nodeTags": [
       "interface",
@@ -8691,7 +8737,12 @@
     "id": "11.9",
     "sectionId": "11",
     "title": {
-      "en": "Equipment Bases / Housekeeping Pads"
+      "en": "Equipment Bases / Housekeeping Pads",
+      "fr": "Bases d’équipement / socles de béton",
+      "status": {
+        "en": "validated",
+        "fr": "provisional"
+      }
     },
     "nodeTags": [
       "interface",
@@ -9797,7 +9848,12 @@
     "id": "11.10",
     "sectionId": "11",
     "title": {
-      "en": "Access & Maintainability"
+      "en": "Access & Maintainability",
+      "fr": "Accès et maintenabilité",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "nodeTags": [
       "interface",
@@ -10767,7 +10823,12 @@
     "id": "11.11",
     "sectionId": "11",
     "title": {
-      "en": "Trade Coordination / Congestion"
+      "en": "Trade Coordination / Congestion",
+      "fr": "Coordination des corps de métier / encombrement",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "nodeTags": [
       "umbrella",

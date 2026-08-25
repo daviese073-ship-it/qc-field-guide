@@ -3,7 +3,12 @@
     "id": "3.1",
     "sectionId": "3",
     "title": {
-      "en": "Cast-in-Place Concrete"
+      "en": "Cast-in-Place Concrete",
+      "fr": "Béton coulé en place",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "nodeTags": [
       "activity",
@@ -4254,13 +4259,22 @@
     },
     "authorityNote": {
       "en": "The project drawings, devis, Plan Qualite, PIE/PRIE, approved procedures, professional instructions and CRT/Hydro-Quebec requirements govern. This playbook tells you how to systematically find, verify, document and close the quality requirements; it does not replace them."
-    }
+    },
+    "terminologyRefs": [
+      "TERM-CONC-COVER",
+      "TERM-CONC-REINFORCEMENT"
+    ]
   },
   {
     "id": "3.2",
     "sectionId": "3",
     "title": {
-      "en": "Structural Steel — Materials"
+      "en": "Structural Steel — Materials",
+      "fr": "Acier de charpente — Matériaux",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "nodeTags": [
       "activity",
@@ -6084,7 +6098,12 @@
     "id": "3.3",
     "sectionId": "3",
     "title": {
-      "en": "Structural Steel — Erection"
+      "en": "Structural Steel — Erection",
+      "fr": "Acier de charpente — Montage",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "nodeTags": [
       "activity",
@@ -7718,7 +7737,12 @@
     "id": "3.4",
     "sectionId": "3",
     "title": {
-      "en": "Bolted Connections"
+      "en": "Bolted Connections",
+      "fr": "Assemblages boulonnés",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "nodeTags": [
       "activity",
@@ -9143,7 +9167,12 @@
     "id": "3.5",
     "sectionId": "3",
     "title": {
-      "en": "Welding"
+      "en": "Welding",
+      "fr": "Soudage",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "nodeTags": [
       "activity",
@@ -10950,7 +10979,12 @@
     "id": "3.6",
     "sectionId": "3",
     "title": {
-      "en": "Steel Protection"
+      "en": "Steel Protection",
+      "fr": "Protection de l’acier",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "nodeTags": [
       "activity",
@@ -12413,7 +12447,12 @@
     "id": "3.7",
     "sectionId": "3",
     "title": {
-      "en": "Structural Masonry"
+      "en": "Structural Masonry",
+      "fr": "Maçonnerie structurale",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "nodeTags": [
       "activity",
@@ -14811,7 +14850,12 @@
     "id": "3.8",
     "sectionId": "3",
     "title": {
-      "en": "Precast Elements — If Applicable"
+      "en": "Precast Elements — If Applicable",
+      "fr": "Éléments préfabriqués",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "nodeTags": [
       "activity",

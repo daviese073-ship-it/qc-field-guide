@@ -13,6 +13,10 @@ import {
   formatProductionLogicAuditReport
 } from "./productionLogicAudit";
 import {
+  auditProductionLocalizationDataset,
+  formatProductionLocalizationAuditReport
+} from "./productionLocalizationAudit";
+import {
   auditProductionRelationshipDataset,
   formatProductionRelationshipAuditReport
 } from "./productionRelationshipAudit";
@@ -28,6 +32,10 @@ try {
   );
   const logicAudit = auditProductionLogicDataset(productionValidation.dataset);
   const relationshipAudit = auditProductionRelationshipDataset(
+    productionValidation.dataset,
+    productionValidation.registries
+  );
+  const localizationAudit = auditProductionLocalizationDataset(
     productionValidation.dataset,
     productionValidation.registries
   );
@@ -53,6 +61,13 @@ try {
     );
   }
 
+  if (!localizationAudit.ok) {
+    throw new CanonicalDataValidationError(
+      "Canonical production localization validation failed.",
+      localizationAudit.errors
+    );
+  }
+
   console.log(
     [
       "Canonical data validation passed.",
@@ -67,7 +82,8 @@ try {
       `Production gates: ${productionValidation.registries.gates.getAll().length}`,
       formatProductionContentAuditReport(contentAudit),
       formatProductionLogicAuditReport(logicAudit),
-      formatProductionRelationshipAuditReport(relationshipAudit)
+      formatProductionRelationshipAuditReport(relationshipAudit),
+      formatProductionLocalizationAuditReport(localizationAudit)
     ].join("\n")
   );
 } catch (error) {
