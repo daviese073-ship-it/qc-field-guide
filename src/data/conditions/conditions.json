@@ -1,0 +1,86 @@
+[
+  {
+    "id": "always",
+    "label": {
+      "en": "Always"
+    }
+  },
+  {
+    "id": "whereApplicable",
+    "label": {
+      "en": "Where applicable"
+    }
+  },
+  {
+    "id": "whereSpecified",
+    "label": {
+      "en": "Where specified"
+    }
+  },
+  {
+    "id": "whereRated",
+    "label": {
+      "en": "Where rated"
+    }
+  },
+  {
+    "id": "whereFireSeparation",
+    "label": {
+      "en": "Where fire separation exists"
+    }
+  },
+  {
+    "id": "whereExterior",
+    "label": {
+      "en": "Where exterior"
+    }
+  },
+  {
+    "id": "whereExteriorEnvelope",
+    "label": {
+      "en": "Where exterior envelope"
+    }
+  },
+  {
+    "id": "whereRoof",
+    "label": {
+      "en": "Where roof"
+    }
+  },
+  {
+    "id": "whereConcealed",
+    "label": {
+      "en": "Where concealed"
+    }
+  },
+  {
+    "id": "whereTestingRequired",
+    "label": {
+      "en": "Where testing is required"
+    }
+  },
+  {
+    "id": "whereEquipmentPresent",
+    "label": {
+      "en": "Where equipment is present"
+    }
+  },
+  {
+    "id": "whereSystemPresent",
+    "label": {
+      "en": "Where system is present"
+    }
+  },
+  {
+    "id": "whereBuried",
+    "label": {
+      "en": "Where buried"
+    }
+  },
+  {
+    "id": "whereSpecialistRequired",
+    "label": {
+      "en": "Where specialist is required"
+    }
+  }
+]

@@ -1,0 +1,1404 @@
+[
+  {
+    "id": "INV-STRUCT-REBAR-MOVED",
+    "trigger": {
+      "en": "Reinforcement moved after inspection."
+    },
+    "affectedActivityIds": ["2.2", "2.4"],
+    "affectedGateIds": ["G-STR-01"],
+    "reason": {
+      "en": "The inspected reinforcement condition may no longer represent the current pour condition."
+    },
+    "recheckGuidance": [
+      {
+        "type": "paragraph",
+        "item": {
+          "id": "INV-RG-STRUCT-REBAR-MOVED-001",
+          "text": {
+            "en": "Reopen the affected reinforcement and pre-pour gate scope for review before concrete placement proceeds."
+          },
+          "sourceRef": {
+            "build": "Build 3",
+            "document": "docs/source/02-build-3-relationships.docx",
+            "section": "Step 6 canonical invalidation logic registry"
+          }
+        }
+      }
+    ],
+    "severity": "high",
+    "actions": ["REOPEN_ACTIVITY", "REOPEN_GATE"],
+    "smallestDefensibleScope": {
+      "en": "Apply invalidation to the smallest affected pour area, element, or embedded condition, and broaden only where evidence justifies it."
+    },
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "Concrete / structural invalidation"
+    }
+  },
+  {
+    "id": "INV-STRUCT-EMBED-MOVED",
+    "trigger": {
+      "en": "Embed, anchor, sleeve, or conduit moved after pre-pour review."
+    },
+    "affectedActivityIds": ["2.3", "11.8", "9.1", "9.6", "2.4"],
+    "affectedGateIds": ["G-STR-01"],
+    "reason": {
+      "en": "Embeds, conduits, anchors, sleeves, and openings are prerequisite items verified before pour readiness."
+    },
+    "recheckGuidance": [
+      {
+        "type": "paragraph",
+        "item": {
+          "id": "INV-RG-STRUCT-EMBED-MOVED-001",
+          "text": {
+            "en": "Reopen the affected embed/interface activity and structural pre-pour gate; update records where the moved item affects evidence or as-built accuracy."
+          },
+          "sourceRef": {
+            "build": "Build 3",
+            "document": "docs/source/02-build-3-relationships.docx",
+            "section": "Step 6 canonical invalidation logic registry"
+          }
+        }
+      }
+    ],
+    "severity": "high",
+    "actions": ["REOPEN_ACTIVITY", "REOPEN_GATE", "UPDATE_RECORD_REQUIRED"],
+    "smallestDefensibleScope": {
+      "en": "Apply invalidation to the affected embed, opening, local pour area, or interface only unless evidence shows broader impact."
+    },
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "Concrete / structural invalidation"
+    }
+  },
+  {
+    "id": "INV-STRUCT-FORMWORK-ALTERED",
+    "trigger": {
+      "en": "Formwork altered after inspection."
+    },
+    "affectedActivityIds": ["2.1", "2.4"],
+    "affectedGateIds": ["G-STR-01"],
+    "reason": {
+      "en": "The inspected formwork geometry, stability, openings, or joint condition may no longer be current."
+    },
+    "recheckGuidance": [
+      {
+        "type": "paragraph",
+        "item": {
+          "id": "INV-RG-STRUCT-FORMWORK-ALTERED-001",
+          "text": {
+            "en": "Reopen the affected formwork and pre-pour scope before relying on the previous readiness review."
+          },
+          "sourceRef": {
+            "build": "Build 3",
+            "document": "docs/source/02-build-3-relationships.docx",
+            "section": "Step 6 canonical invalidation logic registry"
+          }
+        }
+      }
+    ],
+    "severity": "high",
+    "actions": ["REOPEN_ACTIVITY", "REOPEN_GATE"],
+    "smallestDefensibleScope": {
+      "en": "Limit the recheck to the altered formwork area unless connected geometry or stability is affected."
+    },
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "Concrete / structural invalidation"
+    }
+  },
+  {
+    "id": "INV-STRUCT-SUPPORTING-CONCRETE-MODIFIED",
+    "trigger": {
+      "en": "Supporting concrete modified after steel erection acceptance."
+    },
+    "affectedActivityIds": ["2.6", "3.3", "3.4"],
+    "reason": {
+      "en": "Modified anchors, chipped concrete, or changed bases may affect previously accepted steel support conditions."
+    },
+    "recheckGuidance": [
+      {
+        "type": "paragraph",
+        "item": {
+          "id": "INV-RG-STRUCT-SUPPORTING-CONCRETE-MODIFIED-001",
+          "text": {
+            "en": "Flag the affected support/interface for review and reopen the activity where the modification is significant."
+          },
+          "sourceRef": {
+            "build": "Build 3",
+            "document": "docs/source/02-build-3-relationships.docx",
+            "section": "Step 6 canonical invalidation logic registry"
+          }
+        }
+      }
+    ],
+    "severity": "medium",
+    "actions": ["FLAG_FOR_REVIEW", "REOPEN_ACTIVITY"],
+    "smallestDefensibleScope": {
+      "en": "Review the affected support, base, anchor, or connection scope first."
+    },
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "Concrete / structural invalidation"
+    }
+  },
+  {
+    "id": "INV-BG-WATERPROOFING-DAMAGED",
+    "trigger": {
+      "en": "Waterproofing damaged during backfill."
+    },
+    "affectedActivityIds": ["2.9", "1.6", "2.12"],
+    "affectedGateIds": ["G-EXT-01"],
+    "reason": {
+      "en": "Torn waterproofing during backfill requires local control, documentation, approved repair, reinspection, and release before backfill resumes."
+    },
+    "recheckGuidance": [
+      {
+        "type": "paragraph",
+        "item": {
+          "id": "INV-RG-BG-WATERPROOFING-DAMAGED-001",
+          "text": {
+            "en": "Reopen the damaged waterproofing area and the relevant pre-backfill gate before backfill proceeds over the affected condition."
+          },
+          "sourceRef": {
+            "build": "Build 3",
+            "document": "docs/source/02-build-3-relationships.docx",
+            "section": "Step 6 canonical invalidation logic registry"
+          }
+        }
+      }
+    ],
+    "severity": "high",
+    "actions": ["REOPEN_ACTIVITY", "REOPEN_GATE"],
+    "smallestDefensibleScope": {
+      "en": "Apply to the local waterproofing/backfill area affected by the damage."
+    },
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "Below-grade / backfill invalidation"
+    }
+  },
+  {
+    "id": "INV-BG-BURIED-SERVICE-DISTURBED",
+    "trigger": {
+      "en": "Buried service disturbed before covering."
+    },
+    "affectedActivityIds": ["12.1", "8.1", "8.2", "8.3", "8.4", "9.1"],
+    "affectedGateIds": ["G-EXT-01"],
+    "reason": {
+      "en": "A disturbed service may affect an inspected joint, alignment, or previously tested system before burial."
+    },
+    "recheckGuidance": [
+      {
+        "type": "paragraph",
+        "item": {
+          "id": "INV-RG-BG-BURIED-SERVICE-DISTURBED-001",
+          "text": {
+            "en": "Reopen the affected service and pre-backfill gate; invalidate tests where the disturbance could affect a previously tested joint or system."
+          },
+          "sourceRef": {
+            "build": "Build 3",
+            "document": "docs/source/02-build-3-relationships.docx",
+            "section": "Step 6 canonical invalidation logic registry"
+          }
+        }
+      }
+    ],
+    "severity": "high",
+    "actions": ["REOPEN_ACTIVITY", "REOPEN_GATE", "INVALIDATE_TEST"],
+    "smallestDefensibleScope": {
+      "en": "Apply to the disturbed service segment and directly affected joints or tests."
+    },
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "Below-grade / backfill invalidation"
+    }
+  },
+  {
+    "id": "INV-BG-SERVICE-ROUTE-CHANGED",
+    "trigger": {
+      "en": "Service route or elevation changed."
+    },
+    "affectedActivityIds": ["12.1", "1.2", "14.10", "8.1", "8.2", "8.3", "8.4", "9.1"],
+    "reason": {
+      "en": "Changed service route or elevation may affect layout acceptance and redline/as-built accuracy."
+    },
+    "recheckGuidance": [
+      {
+        "type": "paragraph",
+        "item": {
+          "id": "INV-RG-BG-SERVICE-ROUTE-CHANGED-001",
+          "text": {
+            "en": "Reopen the affected service/layout review and require record updates where route, elevation, or installed configuration changed."
+          },
+          "sourceRef": {
+            "build": "Build 3",
+            "document": "docs/source/02-build-3-relationships.docx",
+            "section": "Step 6 canonical invalidation logic registry"
+          }
+        }
+      }
+    ],
+    "severity": "medium",
+    "actions": ["REOPEN_ACTIVITY", "UPDATE_RECORD_REQUIRED"],
+    "smallestDefensibleScope": {
+      "en": "Apply to the changed service segment and associated records."
+    },
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "Below-grade / backfill invalidation"
+    }
+  },
+  {
+    "id": "INV-ENV-LATER-PENETRATION",
+    "trigger": {
+      "en": "Later penetration through accepted envelope."
+    },
+    "affectedActivityIds": ["4.2", "4.3", "4.4", "5.4", "8.9", "9.9", "11.7"],
+    "affectedGateIds": ["G-ENV-01", "G-ROOF-01D"],
+    "reason": {
+      "en": "A later penetration can affect envelope continuity, insulation continuity, and prior test validity in the tested area."
+    },
+    "recheckGuidance": [
+      {
+        "type": "paragraph",
+        "item": {
+          "id": "INV-RG-ENV-LATER-PENETRATION-001",
+          "text": {
+            "en": "Reopen the affected envelope and penetration activities, reassess applicable gates, and invalidate envelope testing only where the new penetration affects the tested area."
+          },
+          "sourceRef": {
+            "build": "Build 3",
+            "document": "docs/source/02-build-3-relationships.docx",
+            "section": "Step 6 canonical invalidation logic registry"
+          }
+        }
+      }
+    ],
+    "severity": "high",
+    "actions": ["REOPEN_ACTIVITY", "REOPEN_GATE", "INVALIDATE_TEST"],
+    "conditionId": "whereExteriorEnvelope",
+    "smallestDefensibleScope": {
+      "en": "Apply to the affected penetration, envelope area, roof zone, or tested area."
+    },
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "Building envelope invalidation"
+    }
+  },
+  {
+    "id": "INV-ENV-MEMBRANE-DAMAGE",
+    "trigger": {
+      "en": "Membrane damaged by later trade."
+    },
+    "affectedActivityIds": ["4.2", "5.4", "4.10", "5.5"],
+    "affectedGateIds": ["G-ENV-01", "G-ROOF-01D"],
+    "reason": {
+      "en": "A damaged membrane or related flashing/sealant/interface may no longer satisfy the previously reviewed envelope condition."
+    },
+    "recheckGuidance": [
+      {
+        "type": "paragraph",
+        "item": {
+          "id": "INV-RG-ENV-MEMBRANE-DAMAGE-001",
+          "text": {
+            "en": "Reopen the damaged membrane or interface and reassess the applicable envelope or roof gate for the affected area."
+          },
+          "sourceRef": {
+            "build": "Build 3",
+            "document": "docs/source/02-build-3-relationships.docx",
+            "section": "Step 6 canonical invalidation logic registry"
+          }
+        }
+      }
+    ],
+    "severity": "high",
+    "actions": ["REOPEN_ACTIVITY", "REOPEN_GATE"],
+    "conditionId": "whereExteriorEnvelope",
+    "smallestDefensibleScope": {
+      "en": "Apply to the damaged membrane/interface area and directly affected adjacent layers."
+    },
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "Building envelope invalidation"
+    }
+  },
+  {
+    "id": "INV-ENV-OPENING-RESET",
+    "trigger": {
+      "en": "Window or exterior door removed or reset."
+    },
+    "affectedActivityIds": ["4.8", "4.9", "4.2", "4.4", "4.10", "13.5"],
+    "affectedGateIds": ["G-ENV-01"],
+    "reason": {
+      "en": "Reset openings can affect air barrier, insulation, sealants, flashing, and previous envelope testing."
+    },
+    "recheckGuidance": [
+      {
+        "type": "paragraph",
+        "item": {
+          "id": "INV-RG-ENV-OPENING-RESET-001",
+          "text": {
+            "en": "Reopen the affected opening and envelope interface; invalidate testing where opening reset affects previously tested performance."
+          },
+          "sourceRef": {
+            "build": "Build 3",
+            "document": "docs/source/02-build-3-relationships.docx",
+            "section": "Step 6 canonical invalidation logic registry"
+          }
+        }
+      }
+    ],
+    "severity": "high",
+    "actions": ["REOPEN_ACTIVITY", "REOPEN_GATE", "INVALIDATE_TEST"],
+    "conditionId": "whereExterior",
+    "smallestDefensibleScope": {
+      "en": "Apply to the reset opening and affected adjacent envelope transitions."
+    },
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "Building envelope invalidation"
+    }
+  },
+  {
+    "id": "INV-ENV-SEALANT-REWORK",
+    "trigger": {
+      "en": "Exterior sealant removed or reworked."
+    },
+    "affectedActivityIds": ["4.10", "4.8", "4.9", "13.5"],
+    "reason": {
+      "en": "Reworked exterior sealant may affect an associated opening/interface and, where relevant, previously accepted performance."
+    },
+    "recheckGuidance": [
+      {
+        "type": "paragraph",
+        "item": {
+          "id": "INV-RG-ENV-SEALANT-REWORK-001",
+          "text": {
+            "en": "Reopen the affected sealant/interface activity; invalidate testing only where sealant is part of previously accepted or tested performance."
+          },
+          "sourceRef": {
+            "build": "Build 3",
+            "document": "docs/source/02-build-3-relationships.docx",
+            "section": "Step 6 canonical invalidation logic registry"
+          }
+        }
+      }
+    ],
+    "severity": "medium",
+    "actions": ["REOPEN_ACTIVITY", "INVALIDATE_TEST"],
+    "conditionId": "whereExterior",
+    "smallestDefensibleScope": {
+      "en": "Apply to the reworked joint, opening, or interface scope."
+    },
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "Building envelope invalidation"
+    }
+  },
+  {
+    "id": "INV-ROOF-NEW-PENETRATION",
+    "trigger": {
+      "en": "New roof penetration."
+    },
+    "affectedActivityIds": ["5.4", "5.5", "5.6", "5.3", "5.2", "11.7", "8.9", "9.9"],
+    "affectedGateIds": ["G-ROOF-01D"],
+    "reason": {
+      "en": "A new roof penetration can affect membrane, flashings, local insulation, air/vapour layer, and related penetration interfaces."
+    },
+    "recheckGuidance": [
+      {
+        "type": "paragraph",
+        "item": {
+          "id": "INV-RG-ROOF-NEW-PENETRATION-001",
+          "text": {
+            "en": "Reopen the affected roof penetration, membrane, flashing, and gate scope; invalidate testing where the new penetration affects test validity."
+          },
+          "sourceRef": {
+            "build": "Build 3",
+            "document": "docs/source/02-build-3-relationships.docx",
+            "section": "Step 6 canonical invalidation logic registry"
+          }
+        }
+      }
+    ],
+    "severity": "high",
+    "actions": ["REOPEN_ACTIVITY", "REOPEN_GATE", "INVALIDATE_TEST"],
+    "conditionId": "whereRoof",
+    "smallestDefensibleScope": {
+      "en": "Apply to the affected penetration and roof zone."
+    },
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "Roof invalidation"
+    }
+  },
+  {
+    "id": "INV-ROOF-MEMBRANE-DAMAGE",
+    "trigger": {
+      "en": "Membrane punctured or damaged by traffic."
+    },
+    "affectedActivityIds": ["5.4", "5.9"],
+    "affectedGateIds": ["G-ROOF-01D", "G-ROOF-01E"],
+    "reason": {
+      "en": "A punctured or damaged membrane may invalidate final membrane acceptance and final roof inspection for the affected area."
+    },
+    "recheckGuidance": [
+      {
+        "type": "paragraph",
+        "item": {
+          "id": "INV-RG-ROOF-MEMBRANE-DAMAGE-001",
+          "text": {
+            "en": "Reopen the affected membrane scope and reassess the relevant roof gate where the accepted condition has been disturbed."
+          },
+          "sourceRef": {
+            "build": "Build 3",
+            "document": "docs/source/02-build-3-relationships.docx",
+            "section": "Step 6 canonical invalidation logic registry"
+          }
+        }
+      }
+    ],
+    "severity": "high",
+    "actions": ["REOPEN_ACTIVITY", "REOPEN_GATE"],
+    "conditionId": "whereRoof",
+    "smallestDefensibleScope": {
+      "en": "Apply to the damaged membrane area or roof zone."
+    },
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "Roof invalidation"
+    }
+  },
+  {
+    "id": "INV-ROOF-EQUIPMENT-CURB-MODIFIED",
+    "trigger": {
+      "en": "Rooftop equipment or curb modified."
+    },
+    "affectedActivityIds": ["5.7", "5.4", "5.5", "5.6", "8.6", "9.4", "11.9", "11.10", "14.10"],
+    "affectedGateIds": ["G-ROOF-01D", "G-ROOF-01E"],
+    "reason": {
+      "en": "Equipment or curb modification can affect roof interfaces, access, equipment bases, and record accuracy."
+    },
+    "recheckGuidance": [
+      {
+        "type": "paragraph",
+        "item": {
+          "id": "INV-RG-ROOF-EQUIPMENT-CURB-MODIFIED-001",
+          "text": {
+            "en": "Reopen affected roof and equipment interface activities, reassess applicable roof gates, and update records where configuration changed."
+          },
+          "sourceRef": {
+            "build": "Build 3",
+            "document": "docs/source/02-build-3-relationships.docx",
+            "section": "Step 6 canonical invalidation logic registry"
+          }
+        }
+      }
+    ],
+    "severity": "high",
+    "actions": ["REOPEN_ACTIVITY", "REOPEN_GATE", "UPDATE_RECORD_REQUIRED"],
+    "conditionId": "whereRoof",
+    "smallestDefensibleScope": {
+      "en": "Apply to the modified equipment/curb and affected roof-interface area."
+    },
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "Roof invalidation"
+    }
+  },
+  {
+    "id": "INV-ROOF-DRAIN-ALTERED",
+    "trigger": {
+      "en": "Roof drain altered."
+    },
+    "affectedActivityIds": ["5.8", "8.3", "5.9", "13.5"],
+    "reason": {
+      "en": "Altered drainage can affect roof slope/drainage acceptance and previous drainage testing."
+    },
+    "recheckGuidance": [
+      {
+        "type": "paragraph",
+        "item": {
+          "id": "INV-RG-ROOF-DRAIN-ALTERED-001",
+          "text": {
+            "en": "Reopen the affected roof drain and drainage acceptance scope; invalidate drainage testing where the altered drain affects a completed test."
+          },
+          "sourceRef": {
+            "build": "Build 3",
+            "document": "docs/source/02-build-3-relationships.docx",
+            "section": "Step 6 canonical invalidation logic registry"
+          }
+        }
+      }
+    ],
+    "severity": "medium",
+    "actions": ["REOPEN_ACTIVITY", "INVALIDATE_TEST"],
+    "conditionId": "whereRoof",
+    "smallestDefensibleScope": {
+      "en": "Apply to the altered drain and associated roof drainage area."
+    },
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "Roof invalidation"
+    }
+  },
+  {
+    "id": "INV-INT-NEW-ROUGH-IN-AFTER-ACCEPTANCE",
+    "trigger": {
+      "en": "New rough-in after wall pre-concealment acceptance."
+    },
+    "affectedActivityIds": ["8.1", "8.2", "8.3", "8.4", "8.5", "9.1", "9.2", "9.3", "6.2", "6.3", "6.5", "10.3"],
+    "affectedGateIds": ["G-MEP-01", "G-INT-01"],
+    "reason": {
+      "en": "New rough-in can affect previously accepted concealed MEP, framing, insulation, rated assemblies, and firestopping before closure."
+    },
+    "recheckGuidance": [
+      {
+        "type": "paragraph",
+        "item": {
+          "id": "INV-RG-INT-NEW-ROUGH-IN-AFTER-ACCEPTANCE-001",
+          "text": {
+            "en": "Reopen affected concealed work and reassess MEP and interior pre-concealment gate readiness before closure."
+          },
+          "sourceRef": {
+            "build": "Build 3",
+            "document": "docs/source/02-build-3-relationships.docx",
+            "section": "Step 6 canonical invalidation logic registry"
+          }
+        }
+      }
+    ],
+    "severity": "high",
+    "actions": ["REOPEN_ACTIVITY", "REOPEN_GATE"],
+    "conditionId": "whereConcealed",
+    "smallestDefensibleScope": {
+      "en": "Apply to the affected wall, ceiling, room, or concealed service scope."
+    },
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "Interior / architectural invalidation"
+    }
+  },
+  {
+    "id": "INV-INT-WALL-CEILING-REOPENED",
+    "trigger": {
+      "en": "Wall or ceiling reopened after closure."
+    },
+    "affectedActivityIds": ["6.4", "6.8", "6.3", "6.5", "8.1", "8.2", "8.3", "8.4", "8.5", "9.1", "9.2", "9.3"],
+    "reason": {
+      "en": "Reopening a wall or ceiling can affect concealed work, fire/acoustic conditions, insulation, and related MEP in the affected area."
+    },
+    "recheckGuidance": [
+      {
+        "type": "paragraph",
+        "item": {
+          "id": "INV-RG-INT-WALL-CEILING-REOPENED-001",
+          "text": {
+            "en": "Flag the affected closure area for review and reopen any physically disturbed concealed activity."
+          },
+          "sourceRef": {
+            "build": "Build 3",
+            "document": "docs/source/02-build-3-relationships.docx",
+            "section": "Step 6 canonical invalidation logic registry"
+          }
+        }
+      }
+    ],
+    "severity": "medium",
+    "actions": ["FLAG_FOR_REVIEW", "REOPEN_ACTIVITY"],
+    "conditionId": "whereConcealed",
+    "smallestDefensibleScope": {
+      "en": "Apply to the reopened wall, ceiling, room, or concealed-work area."
+    },
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "Interior / architectural invalidation"
+    }
+  },
+  {
+    "id": "INV-INT-ACCESS-PANEL-RELOCATED",
+    "trigger": {
+      "en": "Access panel removed or relocated."
+    },
+    "affectedActivityIds": ["6.9", "11.10"],
+    "affectedGateIds": ["G-INT-01"],
+    "reason": {
+      "en": "Access changes can affect valves, dampers, controls, equipment, and closure readiness where required access would be lost."
+    },
+    "recheckGuidance": [
+      {
+        "type": "paragraph",
+        "item": {
+          "id": "INV-RG-INT-ACCESS-PANEL-RELOCATED-001",
+          "text": {
+            "en": "Reopen the access and maintainability review, and reassess closure gate readiness if required components would become inaccessible."
+          },
+          "sourceRef": {
+            "build": "Build 3",
+            "document": "docs/source/02-build-3-relationships.docx",
+            "section": "Step 6 canonical invalidation logic registry"
+          }
+        }
+      }
+    ],
+    "severity": "medium",
+    "actions": ["REOPEN_ACTIVITY", "REOPEN_GATE"],
+    "conditionId": "whereApplicable",
+    "smallestDefensibleScope": {
+      "en": "Apply to the affected access point and associated component/system."
+    },
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "Interior / architectural invalidation"
+    }
+  },
+  {
+    "id": "INV-FLS-NEW-RATED-PENETRATION",
+    "trigger": {
+      "en": "New penetration through accepted rated wall or floor."
+    },
+    "affectedActivityIds": ["10.1", "10.2", "10.3", "6.5", "11.7"],
+    "affectedGateIds": ["G-INT-01", "G-LS-01"],
+    "reason": {
+      "en": "A new rated penetration can affect rated construction, firestopping, universal penetration control, and life-safety readiness."
+    },
+    "recheckGuidance": [
+      {
+        "type": "paragraph",
+        "item": {
+          "id": "INV-RG-FLS-NEW-RATED-PENETRATION-001",
+          "text": {
+            "en": "Reopen the affected rated assembly and firestopping scope, and reassess interior closure and life-safety readiness where applicable."
+          },
+          "sourceRef": {
+            "build": "Build 3",
+            "document": "docs/source/02-build-3-relationships.docx",
+            "section": "Step 6 canonical invalidation logic registry"
+          }
+        }
+      }
+    ],
+    "severity": "high",
+    "actions": ["REOPEN_ACTIVITY", "REOPEN_GATE"],
+    "conditionId": "whereFireSeparation",
+    "smallestDefensibleScope": {
+      "en": "Apply to the affected penetration and rated assembly area."
+    },
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "Fire / life-safety invalidation"
+    }
+  },
+  {
+    "id": "INV-FLS-FIRESTOP-DAMAGED",
+    "trigger": {
+      "en": "Existing firestop damaged or removed."
+    },
+    "affectedActivityIds": ["10.3", "10.1", "10.2", "10.7"],
+    "affectedGateIds": ["G-INT-01", "G-LS-01"],
+    "reason": {
+      "en": "Damaged or removed firestop may affect the parent rated assembly and life-safety readiness."
+    },
+    "recheckGuidance": [
+      {
+        "type": "paragraph",
+        "item": {
+          "id": "INV-RG-FLS-FIRESTOP-DAMAGED-001",
+          "text": {
+            "en": "Reopen the affected firestop and parent assembly review, and reassess applicable readiness gates."
+          },
+          "sourceRef": {
+            "build": "Build 3",
+            "document": "docs/source/02-build-3-relationships.docx",
+            "section": "Step 6 canonical invalidation logic registry"
+          }
+        }
+      }
+    ],
+    "severity": "high",
+    "actions": ["REOPEN_ACTIVITY", "REOPEN_GATE"],
+    "conditionId": "whereFireSeparation",
+    "smallestDefensibleScope": {
+      "en": "Apply to the damaged firestop location and associated rated assembly scope."
+    },
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "Fire / life-safety invalidation"
+    }
+  },
+  {
+    "id": "INV-FLS-DAMPER-DISTURBED",
+    "trigger": {
+      "en": "Fire or smoke damper relocated or disturbed."
+    },
+    "affectedActivityIds": ["10.4", "8.5", "6.9", "8.8", "10.6", "13.8"],
+    "affectedGateIds": ["G-LS-01"],
+    "reason": {
+      "en": "Damper relocation or disturbance can affect ductwork, access, controls, fire alarm interface, and previous functional/integrated testing."
+    },
+    "recheckGuidance": [
+      {
+        "type": "paragraph",
+        "item": {
+          "id": "INV-RG-FLS-DAMPER-DISTURBED-001",
+          "text": {
+            "en": "Reopen the affected damper and interfaces, reassess life-safety readiness, and invalidate functional/integrated testing where the test no longer represents the current condition."
+          },
+          "sourceRef": {
+            "build": "Build 3",
+            "document": "docs/source/02-build-3-relationships.docx",
+            "section": "Step 6 canonical invalidation logic registry"
+          }
+        }
+      }
+    ],
+    "severity": "high",
+    "actions": ["REOPEN_ACTIVITY", "REOPEN_GATE", "INVALIDATE_TEST"],
+    "conditionId": "whereFireSeparation",
+    "smallestDefensibleScope": {
+      "en": "Apply to the affected damper, interface, and test boundary."
+    },
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "Fire / life-safety invalidation"
+    }
+  },
+  {
+    "id": "INV-FLS-DOOR-HARDWARE-MODIFIED",
+    "trigger": {
+      "en": "Fire-rated door hardware modified."
+    },
+    "affectedActivityIds": ["6.7", "10.5", "10.7"],
+    "affectedGateIds": ["G-LS-01"],
+    "reason": {
+      "en": "Modified fire-rated door hardware may affect operation, closing, latching, and life-safety interface readiness."
+    },
+    "recheckGuidance": [
+      {
+        "type": "paragraph",
+        "item": {
+          "id": "INV-RG-FLS-DOOR-HARDWARE-MODIFIED-001",
+          "text": {
+            "en": "Reopen the affected hardware and fire-rated door review, and invalidate operation/closing/latching test evidence where it no longer represents the current assembly."
+          },
+          "sourceRef": {
+            "build": "Build 3",
+            "document": "docs/source/02-build-3-relationships.docx",
+            "section": "Step 6 canonical invalidation logic registry"
+          }
+        }
+      }
+    ],
+    "severity": "high",
+    "actions": ["REOPEN_ACTIVITY", "INVALIDATE_TEST"],
+    "conditionId": "whereRated",
+    "smallestDefensibleScope": {
+      "en": "Apply to the modified door assembly and affected life-safety test evidence."
+    },
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "Fire / life-safety invalidation"
+    }
+  },
+  {
+    "id": "INV-MECH-PIPING-REPAIRED-AFTER-TEST",
+    "trigger": {
+      "en": "Piping repaired after passed pressure test."
+    },
+    "affectedActivityIds": ["8.1", "8.2", "8.3", "8.4", "8.10", "13.3"],
+    "affectedGateIds": ["G-TST-01"],
+    "reason": {
+      "en": "A repaired piping configuration is no longer the same configuration previously tested."
+    },
+    "recheckGuidance": [
+      {
+        "type": "paragraph",
+        "item": {
+          "id": "INV-RG-MECH-PIPING-REPAIRED-AFTER-TEST-001",
+          "text": {
+            "en": "Reopen the affected piping/testing activity and invalidate the previous test where the repaired configuration changes the tested condition."
+          },
+          "sourceRef": {
+            "build": "Build 3",
+            "document": "docs/source/02-build-3-relationships.docx",
+            "section": "Step 6 canonical invalidation logic registry"
+          }
+        }
+      }
+    ],
+    "severity": "high",
+    "actions": ["REOPEN_ACTIVITY", "INVALIDATE_TEST"],
+    "conditionId": "whereTestingRequired",
+    "smallestDefensibleScope": {
+      "en": "Apply to the repaired piping segment and related test boundary."
+    },
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "Mechanical invalidation"
+    }
+  },
+  {
+    "id": "INV-MECH-DUCTWORK-MODIFIED-AFTER-TEST",
+    "trigger": {
+      "en": "Ductwork modified after leakage, TAB, or functional acceptance."
+    },
+    "affectedActivityIds": ["8.5", "8.10", "13.3", "13.6"],
+    "affectedGateIds": ["G-MEP-01", "G-TST-01"],
+    "reason": {
+      "en": "Modified ductwork may affect leakage, TAB, or functional-test evidence."
+    },
+    "recheckGuidance": [
+      {
+        "type": "paragraph",
+        "item": {
+          "id": "INV-RG-MECH-DUCTWORK-MODIFIED-AFTER-TEST-001",
+          "text": {
+            "en": "Reopen the affected ductwork activity and invalidate test evidence where the modification changes the accepted/tested condition."
+          },
+          "sourceRef": {
+            "build": "Build 3",
+            "document": "docs/source/02-build-3-relationships.docx",
+            "section": "Step 6 canonical invalidation logic registry"
+          }
+        }
+      }
+    ],
+    "severity": "medium",
+    "actions": ["REOPEN_ACTIVITY", "INVALIDATE_TEST"],
+    "conditionId": "whereTestingRequired",
+    "smallestDefensibleScope": {
+      "en": "Apply to the modified duct section and affected test boundary."
+    },
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "Mechanical invalidation"
+    }
+  },
+  {
+    "id": "INV-MECH-EQUIPMENT-RELOCATED",
+    "trigger": {
+      "en": "Equipment relocated."
+    },
+    "affectedActivityIds": ["8.6", "11.9", "11.10", "9.5", "8.8", "13.7", "13.6", "14.10"],
+    "affectedGateIds": ["G-MEP-02"],
+    "reason": {
+      "en": "Relocated equipment can affect bases, access, piping/duct/drain interfaces, electrical distribution, controls, start-up, functional testing, and as-builts."
+    },
+    "recheckGuidance": [
+      {
+        "type": "paragraph",
+        "item": {
+          "id": "INV-RG-MECH-EQUIPMENT-RELOCATED-001",
+          "text": {
+            "en": "Reopen affected equipment/interface activities, update records, and invalidate start-up or functional test evidence where relocation changes the tested condition."
+          },
+          "sourceRef": {
+            "build": "Build 3",
+            "document": "docs/source/02-build-3-relationships.docx",
+            "section": "Step 6 canonical invalidation logic registry"
+          }
+        }
+      }
+    ],
+    "severity": "high",
+    "actions": ["REOPEN_ACTIVITY", "UPDATE_RECORD_REQUIRED", "INVALIDATE_TEST"],
+    "conditionId": "whereEquipmentPresent",
+    "smallestDefensibleScope": {
+      "en": "Apply to the relocated equipment, affected interfaces, and related test package."
+    },
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "Mechanical invalidation"
+    }
+  },
+  {
+    "id": "INV-ELEC-RACEWAY-ROUTE-MODIFIED",
+    "trigger": {
+      "en": "Raceway route modified after concealed-work inspection."
+    },
+    "affectedActivityIds": ["9.1", "9.3", "9.9", "14.10"],
+    "affectedGateIds": ["G-MEP-01", "G-INT-01"],
+    "reason": {
+      "en": "Modified raceway routes can affect concealed-work acceptance, penetrations, supports, and as-built records."
+    },
+    "recheckGuidance": [
+      {
+        "type": "paragraph",
+        "item": {
+          "id": "INV-RG-ELEC-RACEWAY-ROUTE-MODIFIED-001",
+          "text": {
+            "en": "Reopen the affected raceway/support/penetration scope and update records where the route changed."
+          },
+          "sourceRef": {
+            "build": "Build 3",
+            "document": "docs/source/02-build-3-relationships.docx",
+            "section": "Step 6 canonical invalidation logic registry"
+          }
+        }
+      }
+    ],
+    "severity": "medium",
+    "actions": ["REOPEN_ACTIVITY", "UPDATE_RECORD_REQUIRED"],
+    "conditionId": "whereConcealed",
+    "smallestDefensibleScope": {
+      "en": "Apply to the modified raceway route and directly affected penetrations/supports."
+    },
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "Electrical invalidation"
+    }
+  },
+  {
+    "id": "INV-ELEC-TESTED-CABLE-EQUIPMENT-ALTERED",
+    "trigger": {
+      "en": "Tested cable or equipment altered after testing."
+    },
+    "affectedActivityIds": ["9.4", "9.11", "13.4"],
+    "affectedGateIds": ["G-TST-01"],
+    "reason": {
+      "en": "Altered electrical installation may mean previous test evidence no longer represents the current configuration."
+    },
+    "recheckGuidance": [
+      {
+        "type": "paragraph",
+        "item": {
+          "id": "INV-RG-ELEC-TESTED-CABLE-EQUIPMENT-ALTERED-001",
+          "text": {
+            "en": "Flag the affected electrical installation for authorized review and invalidate test evidence where the alteration affects test validity."
+          },
+          "authority": {
+            "specialistRequired": true
+          },
+          "sourceRef": {
+            "build": "Build 3",
+            "document": "docs/source/02-build-3-relationships.docx",
+            "section": "Step 6 canonical invalidation logic registry"
+          }
+        }
+      }
+    ],
+    "severity": "medium",
+    "actions": ["FLAG_FOR_REVIEW", "INVALIDATE_TEST"],
+    "conditionId": "whereTestingRequired",
+    "smallestDefensibleScope": {
+      "en": "Apply to the altered cable, equipment, circuit, or authorized test boundary."
+    },
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "Electrical invalidation"
+    }
+  },
+  {
+    "id": "INV-ELEC-GROUNDING-BONDING-CHANGED",
+    "trigger": {
+      "en": "Grounding/bonding connection changed after test."
+    },
+    "affectedActivityIds": ["9.6", "9.11", "13.4"],
+    "affectedGateIds": ["G-TST-01"],
+    "reason": {
+      "en": "Changed grounding or bonding connections can affect electrical testing interfaces and prior test validity."
+    },
+    "recheckGuidance": [
+      {
+        "type": "paragraph",
+        "item": {
+          "id": "INV-RG-ELEC-GROUNDING-BONDING-CHANGED-001",
+          "text": {
+            "en": "Reopen the affected grounding/bonding review and invalidate applicable test evidence where the tested condition changed."
+          },
+          "authority": {
+            "specialistRequired": true
+          },
+          "sourceRef": {
+            "build": "Build 3",
+            "document": "docs/source/02-build-3-relationships.docx",
+            "section": "Step 6 canonical invalidation logic registry"
+          }
+        }
+      }
+    ],
+    "severity": "high",
+    "actions": ["REOPEN_ACTIVITY", "INVALIDATE_TEST"],
+    "conditionId": "whereTestingRequired",
+    "smallestDefensibleScope": {
+      "en": "Apply to the changed connection and affected test boundary."
+    },
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "Electrical invalidation"
+    }
+  },
+  {
+    "id": "INV-TEST-CONDITION-CHANGED",
+    "trigger": {
+      "en": "Previously tested condition changed."
+    },
+    "affectedActivityIds": ["13.1", "13.2", "13.3", "13.4", "13.5", "13.6", "13.7", "13.8", "13.11"],
+    "affectedGateIds": ["G-TST-01"],
+    "reason": {
+      "en": "A passed test may no longer represent the current condition if the tested component is replaced, system configuration changes, a tested joint/connection is disturbed, control logic or boundary changes, repair is performed, equipment is relocated, or supporting conditions materially change."
+    },
+    "recheckGuidance": [
+      {
+        "type": "paragraph",
+        "item": {
+          "id": "INV-RG-TEST-CONDITION-CHANGED-001",
+          "text": {
+            "en": "Invalidate the previous test where the current condition no longer matches the tested condition; otherwise flag for authorized review."
+          },
+          "authority": {
+            "specialistRequired": true
+          },
+          "sourceRef": {
+            "build": "Build 3",
+            "document": "docs/source/02-build-3-relationships.docx",
+            "section": "Step 6 canonical invalidation logic registry"
+          }
+        }
+      }
+    ],
+    "severity": "high",
+    "actions": ["INVALIDATE_TEST", "FLAG_FOR_REVIEW"],
+    "conditionId": "whereTestingRequired",
+    "smallestDefensibleScope": {
+      "en": "Apply to the affected test package, component, system segment, equipment, or boundary."
+    },
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "Test invalidation"
+    }
+  },
+  {
+    "id": "INV-TEST-FAILED-CORRECTION-RETEST",
+    "trigger": {
+      "en": "Failed-test correction completed."
+    },
+    "affectedActivityIds": ["13.9", "13.10", "13.11"],
+    "affectedGateIds": ["G-TST-01"],
+    "reason": {
+      "en": "Correction does not automatically make a failed test passed; correction, retest, acceptance, and traceability remain linked."
+    },
+    "recheckGuidance": [
+      {
+        "type": "paragraph",
+        "item": {
+          "id": "INV-RG-TEST-FAILED-CORRECTION-RETEST-001",
+          "text": {
+            "en": "Treat the condition as ready for retest rather than passed until retest and authorized acceptance are complete."
+          },
+          "authority": {
+            "authorizedProcessRequired": true
+          },
+          "sourceRef": {
+            "build": "Build 3",
+            "document": "docs/source/02-build-3-relationships.docx",
+            "section": "Step 6 canonical invalidation logic registry"
+          }
+        }
+      }
+    ],
+    "severity": "high",
+    "actions": ["INVALIDATE_TEST", "UPDATE_RECORD_REQUIRED"],
+    "conditionId": "whereTestingRequired",
+    "smallestDefensibleScope": {
+      "en": "Apply to the failed test package and corrected condition."
+    },
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "Failed-test correction is not automatic validation"
+    }
+  },
+  {
+    "id": "INV-CORRECTIVE-ADJACENT-WORK-AFFECTED",
+    "trigger": {
+      "en": "Corrective work touches another accepted system."
+    },
+    "affectedActivityIds": ["14.5", "14.6"],
+    "reason": {
+      "en": "Corrective work must restore adjacent systems, and the correction itself can disturb other accepted work."
+    },
+    "recheckGuidance": [
+      {
+        "type": "paragraph",
+        "item": {
+          "id": "INV-RG-CORRECTIVE-ADJACENT-WORK-AFFECTED-001",
+          "text": {
+            "en": "Flag adjacent accepted work for review whenever correction touches another accepted system; reopen any physically disturbed activity."
+          },
+          "sourceRef": {
+            "build": "Build 3",
+            "document": "docs/source/02-build-3-relationships.docx",
+            "section": "Step 6 canonical invalidation logic registry"
+          }
+        }
+      }
+    ],
+    "severity": "medium",
+    "actions": ["FLAG_FOR_REVIEW", "REOPEN_ACTIVITY"],
+    "smallestDefensibleScope": {
+      "en": "Apply to the corrected condition and directly affected adjacent system."
+    },
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "Corrective work can invalidate adjacent work"
+    }
+  },
+  {
+    "id": "INV-DOCUMENT-REVISION-CHANGE",
+    "trigger": {
+      "en": "Revised approved drawing or technical change."
+    },
+    "affectedActivityIds": ["14.10"],
+    "affectedGateIds": ["G-FINAL-01"],
+    "reason": {
+      "en": "Work based on superseded information may need reference update, review, reopening, test review, or as-built update depending on timing and compatibility."
+    },
+    "recheckGuidance": [
+      {
+        "type": "paragraph",
+        "item": {
+          "id": "INV-RG-DOCUMENT-REVISION-CHANGE-001",
+          "text": {
+            "en": "Update references for work not started, flag in-progress work for review, compare accepted work to the revision, reopen incompatible accepted work, and update records where needed."
+          },
+          "sourceRef": {
+            "build": "Build 3",
+            "document": "docs/source/02-build-3-relationships.docx",
+            "section": "Step 6 canonical invalidation logic registry"
+          }
+        }
+      }
+    ],
+    "severity": "medium",
+    "actions": ["FLAG_FOR_REVIEW", "REOPEN_ACTIVITY", "UPDATE_RECORD_REQUIRED", "INVALIDATE_TEST"],
+    "smallestDefensibleScope": {
+      "en": "Apply to activities, tests, or records actually affected by the revised requirement."
+    },
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "Document change invalidation"
+    }
+  },
+  {
+    "id": "INV-MATERIAL-SUBSTITUTION-CHANGE",
+    "trigger": {
+      "en": "Approved material or system changes."
+    },
+    "reason": {
+      "en": "Changed products or systems can affect material-control acceptance, dependent activities, compatibility interfaces, and performance testing."
+    },
+    "recheckGuidance": [
+      {
+        "type": "paragraph",
+        "item": {
+          "id": "INV-RG-MATERIAL-SUBSTITUTION-CHANGE-001",
+          "text": {
+            "en": "Reopen the affected material-control and dependent activity scope, and seek specialist review, new testing, or compatibility checks where required by governing requirements."
+          },
+          "authority": {
+            "specialistRequired": true
+          },
+          "sourceRef": {
+            "build": "Build 3",
+            "document": "docs/source/02-build-3-relationships.docx",
+            "section": "Step 6 canonical invalidation logic registry"
+          }
+        }
+      }
+    ],
+    "severity": "medium",
+    "actions": ["REOPEN_ACTIVITY", "FLAG_FOR_REVIEW", "INVALIDATE_TEST"],
+    "smallestDefensibleScope": {
+      "en": "Apply to the changed product/system and directly dependent activities, interfaces, or tests."
+    },
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "Material substitution invalidation"
+    }
+  },
+  {
+    "id": "INV-TEMPORARY-CONDITION-CHANGED",
+    "trigger": {
+      "en": "Temporary surrounding condition changes accepted work."
+    },
+    "reason": {
+      "en": "Stored material, water ingress, freeze/thaw, removed protection, or subsequent trade damage can affect accepted work even when the work itself was previously untouched."
+    },
+    "recheckGuidance": [
+      {
+        "type": "paragraph",
+        "item": {
+          "id": "INV-RG-TEMPORARY-CONDITION-CHANGED-001",
+          "text": {
+            "en": "Flag the accepted condition for review and reopen the activity where damage or physical impact is observed."
+          },
+          "sourceRef": {
+            "build": "Build 3",
+            "document": "docs/source/02-build-3-relationships.docx",
+            "section": "Step 6 canonical invalidation logic registry"
+          }
+        }
+      }
+    ],
+    "severity": "medium",
+    "actions": ["FLAG_FOR_REVIEW", "REOPEN_ACTIVITY"],
+    "smallestDefensibleScope": {
+      "en": "Apply to the affected component, surface, stored-material impact area, or protected condition."
+    },
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "Temporary condition invalidation"
+    }
+  },
+  {
+    "id": "INV-ACCESS-MAINTAINABILITY-BLOCKED",
+    "trigger": {
+      "en": "Later work blocks access to a previously acceptable maintainable component."
+    },
+    "affectedActivityIds": ["11.10"],
+    "affectedGateIds": ["G-MEP-02", "G-FINAL-01"],
+    "reason": {
+      "en": "Blocked access can affect maintainability, related equipment/system readiness, commissioning, and turnover readiness."
+    },
+    "recheckGuidance": [
+      {
+        "type": "paragraph",
+        "item": {
+          "id": "INV-RG-ACCESS-MAINTAINABILITY-BLOCKED-001",
+          "text": {
+            "en": "Reopen access and maintainability review, and reassess commissioning or turnover gates where the access issue is a required acceptance dependency."
+          },
+          "sourceRef": {
+            "build": "Build 3",
+            "document": "docs/source/02-build-3-relationships.docx",
+            "section": "Step 6 canonical invalidation logic registry"
+          }
+        }
+      }
+    ],
+    "severity": "medium",
+    "actions": ["REOPEN_ACTIVITY", "REOPEN_GATE"],
+    "conditionId": "whereApplicable",
+    "smallestDefensibleScope": {
+      "en": "Apply to the blocked component, access path, equipment, or system segment."
+    },
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "Access invalidation"
+    }
+  },
+  {
+    "id": "INV-ASBUILT-CONDITION-CHANGED",
+    "trigger": {
+      "en": "Installed condition changes after redline/as-built status was considered complete."
+    },
+    "affectedActivityIds": ["14.10", "14.14"],
+    "affectedGateIds": ["G-FINAL-01"],
+    "reason": {
+      "en": "Changed final installed condition may make redlines, as-builts, or final quality records no longer current."
+    },
+    "recheckGuidance": [
+      {
+        "type": "paragraph",
+        "item": {
+          "id": "INV-RG-ASBUILT-CONDITION-CHANGED-001",
+          "text": {
+            "en": "Require record updates for changed installed conditions; do not automatically reopen physical acceptance unless the physical condition is also affected."
+          },
+          "sourceRef": {
+            "build": "Build 3",
+            "document": "docs/source/02-build-3-relationships.docx",
+            "section": "Step 6 canonical invalidation logic registry"
+          }
+        }
+      }
+    ],
+    "severity": "low",
+    "actions": ["UPDATE_RECORD_REQUIRED"],
+    "smallestDefensibleScope": {
+      "en": "Apply to the changed installed condition and affected final records."
+    },
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "As-built invalidation"
+    }
+  },
+  {
+    "id": "INV-TURNOVER-DEPENDENCY-REOPENED",
+    "trigger": {
+      "en": "Unresolved turnover dependency discovered before formal turnover."
+    },
+    "affectedActivityIds": ["14.7", "14.8", "14.9", "14.10", "14.11", "14.12", "14.13", "14.14", "14.15"],
+    "affectedGateIds": ["G-FINAL-01"],
+    "reason": {
+      "en": "A newly discovered deficiency, reopened NC, missing test, invalidated test, incomplete as-built, missing O&M/certificate/warranty, life-safety issue, or modified accepted work can affect final turnover readiness."
+    },
+    "recheckGuidance": [
+      {
+        "type": "paragraph",
+        "item": {
+          "id": "INV-RG-TURNOVER-DEPENDENCY-REOPENED-001",
+          "text": {
+            "en": "Reassess final turnover readiness only for unresolved dependencies that are required acceptance dependencies for the turnover scope."
+          },
+          "authority": {
+            "projectDocumentsGovern": true,
+            "authorizedProcessRequired": true
+          },
+          "sourceRef": {
+            "build": "Build 3",
+            "document": "docs/source/02-build-3-relationships.docx",
+            "section": "Step 6 canonical invalidation logic registry"
+          }
+        }
+      }
+    ],
+    "severity": "high",
+    "actions": ["FLAG_FOR_REVIEW", "REOPEN_GATE", "UPDATE_RECORD_REQUIRED"],
+    "smallestDefensibleScope": {
+      "en": "Apply to the affected turnover dependency, record package, system, area, or acceptance dependency."
+    },
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "Turnover invalidation"
+    }
+  }
+]

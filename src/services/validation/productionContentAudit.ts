@@ -19,9 +19,6 @@ const contentBlockFields = [
 
 const laterPhaseCollections = [
   "relationships",
-  "gates",
-  "conditions",
-  "invalidationRules",
   "quickViews",
   "learnContent",
   "workflows",

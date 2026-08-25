@@ -12,6 +12,9 @@ import section11Activities from "@/data/activities/section-11.json";
 import section12Activities from "@/data/activities/section-12.json";
 import section13Activities from "@/data/activities/section-13.json";
 import section14Activities from "@/data/activities/section-14.json";
+import conditions from "@/data/conditions/conditions.json";
+import gates from "@/data/gates/gates.json";
+import invalidationRules from "@/data/invalidation/invalidation-rules.json";
 import sections from "@/data/sections/sections.json";
 
 const activities = [
@@ -37,9 +40,9 @@ export const productionCanonicalDataset = {
   quickViews: [],
   learnContent: [],
   relationships: [],
-  gates: [],
-  invalidationRules: [],
-  conditions: [],
+  gates,
+  invalidationRules,
+  conditions,
   workflows: [],
   preConcealmentWorkflows: [],
   terminology: [],
@@ -47,7 +50,7 @@ export const productionCanonicalDataset = {
   uiStrings: [],
   version: {
     schemaVersion: "phase-002",
-    contentVersion: "phase-009-production-identity-seed",
+    contentVersion: "phase-011-production-logic-registries",
     terminologyVersion: "not-populated"
   }
 };

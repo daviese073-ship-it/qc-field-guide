@@ -121,11 +121,8 @@ describe("Phase 009 production identity dataset", () => {
     expect(report.contentItemCount).toBeGreaterThan(1000);
   });
 
-  it("does not populate production logic, relationships, presentation, terminology, or search data", () => {
+  it("does not populate production relationships, presentation, terminology, or search data", () => {
     expect(productionCanonicalDataset.relationships).toHaveLength(0);
-    expect(productionCanonicalDataset.gates).toHaveLength(0);
-    expect(productionCanonicalDataset.conditions).toHaveLength(0);
-    expect(productionCanonicalDataset.invalidationRules).toHaveLength(0);
     expect(productionCanonicalDataset.quickViews).toHaveLength(0);
     expect(productionCanonicalDataset.learnContent).toHaveLength(0);
     expect(productionCanonicalDataset.workflows).toHaveLength(0);

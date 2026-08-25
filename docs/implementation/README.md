@@ -54,13 +54,16 @@ implementation use only and does not change the source documents.
   section/activity identity seed.
 - `production-technical-content.md` documents the Phase 010 Build-2 technical
   activity content ingestion.
+- `production-logic-registries.md` documents the Phase 011 Build-3 production
+  condition, gate, and invalidation-rule registries.
 
 ## Current Boundary
 
 The repository now has domain contracts, validation, registries, relationship
-services, screen contracts, reusable component foundations, and the production
-section/activity catalogue with substantive Build 2 technical activity content.
-It still does not implement production logic/relationships, search
+services, screen contracts, reusable component foundations, the production
+section/activity catalogue with substantive Build 2 technical activity content,
+and the Build-3-governed production condition, gate, and invalidation-rule
+registries. It still does not implement production relationships, search
 indexing/ranking/results, favorites/recents, official records, approvals,
 releases, signatures, backend services, databases, authentication, analytics, or
 project tracking.
