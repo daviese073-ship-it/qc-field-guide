@@ -56,11 +56,8 @@ export function AppSidebar() {
             variant="home"
           />
           <SidebarLink
-            active={
-              location.pathname === "/search" &&
-              location.search.includes("general")
-            }
-            href="/search?q=general%20qc%20processes"
+            active={location.pathname.startsWith("/general-qc")}
+            href="/general-qc"
             icon={<ClipboardList className="h-6 w-6" aria-hidden />}
             label="General QC Processes"
             truncateLabel={false}

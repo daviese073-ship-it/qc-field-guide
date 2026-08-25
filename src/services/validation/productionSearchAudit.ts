@@ -24,6 +24,7 @@ export interface ProductionSearchAuditReport {
   workflowEntryCount: number;
   preConcealmentEntryCount: number;
   gateEntryCount: number;
+  generalQcProcessEntryCount: number;
   terminologyEntryCount: number;
   acronymEntryCount: number;
   relationshipEntryCount: number;
@@ -50,6 +51,8 @@ const getObjectResolver = (
       return registries.preConcealmentWorkflows;
     case "gate":
       return registries.gates;
+    case "generalQcProcess":
+      return registries.generalQcProcesses;
     case "term":
       return registries.terminology;
     case "acronym":
@@ -84,7 +87,8 @@ const hasFamilyCoverageForEveryActivity = (
   const coveredActivityIds = new Set(
     entries
       .filter(
-        (entry) => entry.objectType === "activity" && entry.sourceFamily === sourceFamily
+        (entry) =>
+          entry.objectType === "activity" && entry.sourceFamily === sourceFamily
       )
       .map((entry) => entry.objectId)
   );
@@ -130,7 +134,9 @@ export const auditProductionSearchDataset = (
       );
     }
     if (!entry.route.startsWith("/")) {
-      errors.push(`Search entry "${entry.id}" has invalid route "${entry.route}".`);
+      errors.push(
+        `Search entry "${entry.id}" has invalid route "${entry.route}".`
+      );
     }
   }
 
@@ -151,10 +157,15 @@ export const auditProductionSearchDataset = (
   if (JSON.stringify(index) !== JSON.stringify(rebuiltIndex)) {
     errors.push("Derived search index is not deterministic across rebuilds.");
   }
-  if (countLanguage(entries, "en") === 0 || countLanguage(entries, "fr") === 0) {
+  if (
+    countLanguage(entries, "en") === 0 ||
+    countLanguage(entries, "fr") === 0
+  ) {
     errors.push("Search index must contain both English and French entries.");
   }
-  if (!hasFamilyCoverageForEveryActivity(registries, entries, "activityTitle")) {
+  if (
+    !hasFamilyCoverageForEveryActivity(registries, entries, "activityTitle")
+  ) {
     errors.push("Search index is missing activity-title coverage.");
   }
   if (!hasFamilyCoverageForEveryActivity(registries, entries, "quickView")) {
@@ -168,13 +179,23 @@ export const auditProductionSearchDataset = (
     countFamily(entries, ["preConcealment"]) <
       dataset.preConcealmentWorkflows.length
   ) {
-    errors.push("Search index is missing workflow or pre-concealment coverage.");
+    errors.push(
+      "Search index is missing workflow or pre-concealment coverage."
+    );
   }
-  if (countFamily(entries, ["terminologyPreferred", "terminologyAlias"]) === 0) {
+  if (
+    countFamily(entries, ["terminologyPreferred", "terminologyAlias"]) === 0
+  ) {
     errors.push("Search index is missing terminology coverage.");
   }
   if (countFamily(entries, ["acronym"]) === 0) {
     errors.push("Search index is missing acronym coverage.");
+  }
+  if (
+    countFamily(entries, ["generalQcProcess"]) <
+    dataset.generalQcProcesses.length
+  ) {
+    errors.push("Search index is missing General QC process coverage.");
   }
 
   return {
@@ -196,6 +217,7 @@ export const auditProductionSearchDataset = (
     workflowEntryCount: countFamily(entries, ["workflow"]),
     preConcealmentEntryCount: countFamily(entries, ["preConcealment"]),
     gateEntryCount: countFamily(entries, ["gate"]),
+    generalQcProcessEntryCount: countFamily(entries, ["generalQcProcess"]),
     terminologyEntryCount: countFamily(entries, [
       "terminologyPreferred",
       "terminologyAlias",
@@ -231,6 +253,7 @@ export const formatProductionSearchAuditReport = (
     `QuickView/LearnContent entries: ${report.quickViewEntryCount}/${report.learnContentEntryCount}`,
     `Workflow/PreConcealment entries: ${report.workflowEntryCount}/${report.preConcealmentEntryCount}`,
     `Gate entries: ${report.gateEntryCount}`,
+    `General QC process entries: ${report.generalQcProcessEntryCount}`,
     `Terminology/Acronym entries: ${report.terminologyEntryCount}/${report.acronymEntryCount}`,
     `Relationship metadata entries: ${report.relationshipEntryCount}`,
     `Duplicate/empty/tokenless entries: ${report.duplicateEntryIdCount}/${report.emptyTextEntryCount}/${report.tokenlessEntryCount}`,

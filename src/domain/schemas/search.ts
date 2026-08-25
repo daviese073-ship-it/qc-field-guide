@@ -8,6 +8,7 @@ export const searchableObjectTypeSchema = z.enum([
   "workflow",
   "preConcealment",
   "gate",
+  "generalQcProcess",
   "term",
   "acronym"
 ]);

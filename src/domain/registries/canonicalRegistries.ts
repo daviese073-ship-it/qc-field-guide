@@ -4,6 +4,7 @@ import type {
   Activity,
   ConditionDefinition,
   Gate,
+  GeneralQcProcess,
   InvalidationRule,
   LearnContent,
   PreConcealmentWorkflow,
@@ -56,6 +57,7 @@ export interface CanonicalRegistries {
   terminology: ReadonlyRegistry<TerminologyConcept>;
   acronyms: ReadonlyRegistry<AcronymEntry>;
   uiStrings: ReadonlyRegistry<UiString>;
+  generalQcProcesses: ReadonlyRegistry<GeneralQcProcess>;
   nodes: CanonicalNodeResolver;
 }
 
@@ -198,6 +200,13 @@ export const buildCanonicalRegistries = (
       items: dataset.uiStrings,
       getId: byId,
       sort: compareById
+    }),
+    generalQcProcesses: createIdRegistry({
+      family: "General QC process",
+      items: dataset.generalQcProcesses,
+      getId: byId,
+      sort: (left, right) =>
+        left.sequence - right.sequence || compareCanonicalIds(left.id, right.id)
     })
   };
 

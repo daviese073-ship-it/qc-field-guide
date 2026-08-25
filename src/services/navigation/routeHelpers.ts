@@ -7,6 +7,7 @@ export type CanonicalRouteTarget =
   | { objectType: "workflow"; id: string }
   | { objectType: "preConcealment"; id: string }
   | { objectType: "gate"; id: string }
+  | { objectType: "generalQcProcess"; id: string }
   | { objectType: "term"; id: string }
   | { objectType: "search"; query?: string };
 
@@ -33,6 +34,8 @@ export const getCanonicalRoute = (target: CanonicalRouteTarget): string => {
       return `/preconcealment/${encodePathId(target.id)}`;
     case "gate":
       return `/gate/${encodePathId(target.id)}`;
+    case "generalQcProcess":
+      return `/general-qc/${encodePathId(target.id)}`;
     case "term":
       return `/term/${encodePathId(target.id)}`;
     case "search":

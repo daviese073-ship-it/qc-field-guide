@@ -1,0 +1,2447 @@
+[
+  {
+    "id": "general-qc-inspection-planning",
+    "sequence": 1,
+    "title": {
+      "en": "Inspection Planning"
+    },
+    "summary": {
+      "en": "Prepare the inspection so the right work is checked against the right requirements at the right time."
+    },
+    "whenToUse": {
+      "en": "Before planned work, before a defined inspection point, or whenever upcoming work may become concealed or difficult to verify later."
+    },
+    "fieldWorkflow": [
+      {
+        "sequence": 1,
+        "action": {
+          "en": "Define the inspection scope"
+        },
+        "detail": {
+          "en": "Identify the activity, location, lot/area and stage of work to be inspected."
+        }
+      },
+      {
+        "sequence": 2,
+        "action": {
+          "en": "Review requirements"
+        },
+        "detail": {
+          "en": "Check current drawings, specifications, approved submittals, ITP/PIE/PRIE, procedures and applicable acceptance criteria."
+        }
+      },
+      {
+        "sequence": 3,
+        "action": {
+          "en": "Identify inspection points"
+        },
+        "detail": {
+          "en": "Confirm hold, witness, surveillance and testing points and required notifications."
+        }
+      },
+      {
+        "sequence": 4,
+        "action": {
+          "en": "Confirm prerequisites"
+        },
+        "detail": {
+          "en": "Verify preceding work, approvals, materials, access, equipment and test readiness."
+        }
+      },
+      {
+        "sequence": 5,
+        "action": {
+          "en": "Coordinate timing"
+        },
+        "detail": {
+          "en": "Align with superintendent/foreman, subcontractor, testing agency and owner/consultant as required."
+        }
+      },
+      {
+        "sequence": 6,
+        "action": {
+          "en": "Prepare tools and records"
+        },
+        "detail": {
+          "en": "Have checklist, measuring tools, camera, drawings and forms ready."
+        }
+      },
+      {
+        "sequence": 7,
+        "action": {
+          "en": "Inspect before concealment"
+        },
+        "detail": {
+          "en": "Arrive early enough to observe the condition before it is covered or altered."
+        }
+      }
+    ],
+    "whatToCapture": [
+      {
+        "en": "Activity/location and planned inspection time"
+      },
+      {
+        "en": "Applicable document numbers and revisions"
+      },
+      {
+        "en": "Required hold/witness points and notifications"
+      },
+      {
+        "en": "Required test/inspection equipment"
+      },
+      {
+        "en": "Responsible parties and prerequisites"
+      }
+    ],
+    "keyReminders": [
+      {
+        "en": "Plan from the work sequence, not only from the calendar."
+      },
+      {
+        "en": "A good inspection starts before arriving at the workface."
+      },
+      {
+        "en": "If a critical point may be missed, communicate early."
+      }
+    ],
+    "commonMistakes": [
+      {
+        "en": "Inspecting after concealment"
+      },
+      {
+        "en": "Using an old drawing revision"
+      },
+      {
+        "en": "Arriving without knowing acceptance criteria"
+      },
+      {
+        "en": "Failing to coordinate third-party or owner witness requirements"
+      }
+    ],
+    "typicalOutputs": [
+      {
+        "en": "Inspection plan/readiness confirmation"
+      },
+      {
+        "en": "Prepared checklist/inspection record"
+      },
+      {
+        "en": "Required notifications"
+      }
+    ],
+    "relatedProcessIds": [
+      "general-qc-requirement-review",
+      "general-qc-itp-execution",
+      "general-qc-hold-witness-points"
+    ],
+    "sourceRef": {
+      "document": "QC_Field_Guide_General_QC_Processes(1).docx",
+      "section": "1. Inspection Planning"
+    }
+  },
+  {
+    "id": "general-qc-requirement-review",
+    "sequence": 2,
+    "title": {
+      "en": "Requirement Review"
+    },
+    "summary": {
+      "en": "Establish what 'acceptable' means before inspecting or making a quality decision."
+    },
+    "whenToUse": {
+      "en": "Before inspection, testing, acceptance, deficiency/NCR issuance, material verification, or whenever requirements appear conflicting or unclear."
+    },
+    "fieldWorkflow": [
+      {
+        "sequence": 1,
+        "action": {
+          "en": "Identify the work"
+        },
+        "detail": {
+          "en": "Define the exact component, system, location and activity."
+        }
+      },
+      {
+        "sequence": 2,
+        "action": {
+          "en": "Find governing documents"
+        },
+        "detail": {
+          "en": "Locate contract drawings/specifications and applicable approved procedures."
+        }
+      },
+      {
+        "sequence": 3,
+        "action": {
+          "en": "Confirm current revision"
+        },
+        "detail": {
+          "en": "Verify the document is approved/current for construction."
+        }
+      },
+      {
+        "sequence": 4,
+        "action": {
+          "en": "Check supporting requirements"
+        },
+        "detail": {
+          "en": "Review approved submittals, shop drawings, RFIs, changes, manufacturer instructions and ITP criteria."
+        }
+      },
+      {
+        "sequence": 5,
+        "action": {
+          "en": "Resolve conflicts"
+        },
+        "detail": {
+          "en": "Do not invent an interpretation; identify discrepancies and obtain clarification through the approved channel."
+        }
+      },
+      {
+        "sequence": 6,
+        "action": {
+          "en": "Extract acceptance criteria"
+        },
+        "detail": {
+          "en": "Convert the requirement into observable or measurable checks."
+        }
+      },
+      {
+        "sequence": 7,
+        "action": {
+          "en": "Record the basis"
+        },
+        "detail": {
+          "en": "Keep the document/revision reference supporting the inspection decision."
+        }
+      }
+    ],
+    "whatToCapture": [
+      {
+        "en": "Drawing/specification section and revision"
+      },
+      {
+        "en": "Approved submittal/shop drawing reference"
+      },
+      {
+        "en": "RFI/change reference where applicable"
+      },
+      {
+        "en": "Acceptance criterion or tolerance"
+      },
+      {
+        "en": "Any unresolved ambiguity"
+      }
+    ],
+    "keyReminders": [
+      {
+        "en": "Verify the requirement first; do not inspect from memory when the requirement is available."
+      },
+      {
+        "en": "A manufacturer instruction does not automatically override the contract hierarchy."
+      },
+      {
+        "en": "If documents conflict, escalate through the project's defined authority chain."
+      }
+    ],
+    "commonMistakes": [
+      {
+        "en": "Judging from personal preference"
+      },
+      {
+        "en": "Using superseded drawings"
+      },
+      {
+        "en": "Quoting a requirement without its revision/context"
+      },
+      {
+        "en": "Treating an unresolved conflict as a field decision"
+      }
+    ],
+    "typicalOutputs": [
+      {
+        "en": "Confirmed inspection basis"
+      },
+      {
+        "en": "List of applicable requirements"
+      },
+      {
+        "en": "Technical clarification request if needed"
+      }
+    ],
+    "relatedProcessIds": [
+      "general-qc-rfi-clarification",
+      "general-qc-change-document-control",
+      "general-qc-inspection-acceptance"
+    ],
+    "sourceRef": {
+      "document": "QC_Field_Guide_General_QC_Processes(1).docx",
+      "section": "2. Requirement Review"
+    }
+  },
+  {
+    "id": "general-qc-itp-execution",
+    "sequence": 3,
+    "title": {
+      "en": "ITP / PIE / PRIE Execution"
+    },
+    "summary": {
+      "en": "Use the approved inspection/test plan to control inspection sequence, responsibilities, intervention points and records."
+    },
+    "whenToUse": {
+      "en": "When an activity is governed by an ITP, PIE, PRIE or equivalent inspection/testing plan."
+    },
+    "fieldWorkflow": [
+      {
+        "sequence": 1,
+        "action": {
+          "en": "Select the applicable plan"
+        },
+        "detail": {
+          "en": "Confirm activity, scope and revision."
+        }
+      },
+      {
+        "sequence": 2,
+        "action": {
+          "en": "Review sequence and responsibilities"
+        },
+        "detail": {
+          "en": "Know who performs, verifies, witnesses and accepts each point."
+        }
+      },
+      {
+        "sequence": 3,
+        "action": {
+          "en": "Confirm prerequisites"
+        },
+        "detail": {
+          "en": "Ensure preceding stages and required approvals are complete."
+        }
+      },
+      {
+        "sequence": 4,
+        "action": {
+          "en": "Respect intervention points"
+        },
+        "detail": {
+          "en": "Do not pass a hold point without required release; provide witness notice as required."
+        }
+      },
+      {
+        "sequence": 5,
+        "action": {
+          "en": "Perform/observe checks"
+        },
+        "detail": {
+          "en": "Complete inspections and tests against listed criteria."
+        }
+      },
+      {
+        "sequence": 6,
+        "action": {
+          "en": "Record results"
+        },
+        "detail": {
+          "en": "Enter objective results, references, evidence and signatures/approvals as required."
+        }
+      },
+      {
+        "sequence": 7,
+        "action": {
+          "en": "Address failures"
+        },
+        "detail": {
+          "en": "Route deficiencies or non-conformities through the defined process."
+        }
+      },
+      {
+        "sequence": 8,
+        "action": {
+          "en": "Complete the record"
+        },
+        "detail": {
+          "en": "Ensure all required stages are signed/closed and traceable."
+        }
+      }
+    ],
+    "whatToCapture": [
+      {
+        "en": "Plan number/revision"
+      },
+      {
+        "en": "Inspection/test point and status"
+      },
+      {
+        "en": "Acceptance criteria and measured results"
+      },
+      {
+        "en": "Required signatures/notifications"
+      },
+      {
+        "en": "Linked test reports, photos, NCRs or deficiencies"
+      }
+    ],
+    "keyReminders": [
+      {
+        "en": "The ITP is a control map, not merely a form to sign at the end."
+      },
+      {
+        "en": "A missed hold point can invalidate downstream assurance."
+      },
+      {
+        "en": "Use the project's definitions for H/W/S/R points."
+      }
+    ],
+    "commonMistakes": [
+      {
+        "en": "Back-filling signatures"
+      },
+      {
+        "en": "Skipping points because the work looks acceptable"
+      },
+      {
+        "en": "Treating witness and hold points as interchangeable"
+      },
+      {
+        "en": "Failing to link supporting records"
+      }
+    ],
+    "typicalOutputs": [
+      {
+        "en": "Completed ITP/PIE/PRIE record"
+      },
+      {
+        "en": "Linked inspection/test evidence"
+      },
+      {
+        "en": "Hold/witness releases"
+      }
+    ],
+    "relatedProcessIds": [
+      "general-qc-hold-witness-points",
+      "general-qc-testing-records",
+      "general-qc-traceability"
+    ],
+    "sourceRef": {
+      "document": "QC_Field_Guide_General_QC_Processes(1).docx",
+      "section": "3. ITP / PIE / PRIE Execution"
+    }
+  },
+  {
+    "id": "general-qc-hold-witness-points",
+    "sequence": 4,
+    "title": {
+      "en": "Hold & Witness Points"
+    },
+    "summary": {
+      "en": "Control critical inspection stages so required parties can verify work before it proceeds."
+    },
+    "whenToUse": {
+      "en": "When the ITP/quality plan or contract defines hold, witness, review or surveillance points."
+    },
+    "fieldWorkflow": [
+      {
+        "sequence": 1,
+        "action": {
+          "en": "Identify the point"
+        },
+        "detail": {
+          "en": "Confirm type, requirement, responsible party and notification period."
+        }
+      },
+      {
+        "sequence": 2,
+        "action": {
+          "en": "Verify readiness"
+        },
+        "detail": {
+          "en": "Ensure work and prerequisite documentation are ready for inspection."
+        }
+      },
+      {
+        "sequence": 3,
+        "action": {
+          "en": "Notify required parties"
+        },
+        "detail": {
+          "en": "Issue notice using the approved communication method and lead time."
+        }
+      },
+      {
+        "sequence": 4,
+        "action": {
+          "en": "Maintain control"
+        },
+        "detail": {
+          "en": "For a hold point, do not proceed until formal release is obtained."
+        }
+      },
+      {
+        "sequence": 5,
+        "action": {
+          "en": "Perform/observe inspection"
+        },
+        "detail": {
+          "en": "Record observations, results and evidence."
+        }
+      },
+      {
+        "sequence": 6,
+        "action": {
+          "en": "Obtain disposition/release"
+        },
+        "detail": {
+          "en": "Capture required acceptance, waiver or authorized release."
+        }
+      },
+      {
+        "sequence": 7,
+        "action": {
+          "en": "Record traceability"
+        },
+        "detail": {
+          "en": "Link the release to the activity, location and inspection record."
+        }
+      }
+    ],
+    "whatToCapture": [
+      {
+        "en": "Point type and identifier"
+      },
+      {
+        "en": "Notification date/time"
+      },
+      {
+        "en": "Attendees or notified parties"
+      },
+      {
+        "en": "Inspection result"
+      },
+      {
+        "en": "Release/waiver evidence"
+      }
+    ],
+    "keyReminders": [
+      {
+        "en": "Hold point = stop until authorized release, unless the governing procedure expressly provides otherwise."
+      },
+      {
+        "en": "Witness-point rules can vary; follow the project's notification and waiver procedure."
+      },
+      {
+        "en": "Never self-release a point outside your authority."
+      }
+    ],
+    "commonMistakes": [
+      {
+        "en": "Proceeding because the inspector did not arrive"
+      },
+      {
+        "en": "Verbal release with no record when formal release is required"
+      },
+      {
+        "en": "Late notification"
+      },
+      {
+        "en": "Confusing surveillance with hold/witness requirements"
+      }
+    ],
+    "typicalOutputs": [
+      {
+        "en": "Notification record"
+      },
+      {
+        "en": "Inspection/witness record"
+      },
+      {
+        "en": "Formal release/waiver where applicable"
+      }
+    ],
+    "relatedProcessIds": [
+      "general-qc-itp-execution",
+      "general-qc-inspection-acceptance",
+      "general-qc-traceability"
+    ],
+    "sourceRef": {
+      "document": "QC_Field_Guide_General_QC_Processes(1).docx",
+      "section": "4. Hold & Witness Points"
+    }
+  },
+  {
+    "id": "general-qc-inspection-acceptance",
+    "sequence": 5,
+    "title": {
+      "en": "Inspection & Acceptance"
+    },
+    "summary": {
+      "en": "Verify completed or in-progress work against defined requirements and record an objective result."
+    },
+    "whenToUse": {
+      "en": "At planned inspection stages, before concealment, at completion of an activity, or when acceptance is required."
+    },
+    "fieldWorkflow": [
+      {
+        "sequence": 1,
+        "action": {
+          "en": "Confirm inspection basis"
+        },
+        "detail": {
+          "en": "Verify scope, location and current requirements."
+        }
+      },
+      {
+        "sequence": 2,
+        "action": {
+          "en": "Observe the work"
+        },
+        "detail": {
+          "en": "Inspect condition, installation, workmanship and interfaces."
+        }
+      },
+      {
+        "sequence": 3,
+        "action": {
+          "en": "Measure/test as required"
+        },
+        "detail": {
+          "en": "Use suitable calibrated/verified tools where measurement is required."
+        }
+      },
+      {
+        "sequence": 4,
+        "action": {
+          "en": "Compare with criteria"
+        },
+        "detail": {
+          "en": "Determine compliance against explicit requirements."
+        }
+      },
+      {
+        "sequence": 5,
+        "action": {
+          "en": "Record evidence"
+        },
+        "detail": {
+          "en": "Capture results, measurements, photos and references."
+        }
+      },
+      {
+        "sequence": 6,
+        "action": {
+          "en": "Classify result"
+        },
+        "detail": {
+          "en": "Accept, identify deficiency, initiate NCR, or seek clarification according to project rules."
+        }
+      },
+      {
+        "sequence": 7,
+        "action": {
+          "en": "Communicate result"
+        },
+        "detail": {
+          "en": "Notify responsible parties and record required approvals."
+        }
+      },
+      {
+        "sequence": 8,
+        "action": {
+          "en": "Preserve traceability"
+        },
+        "detail": {
+          "en": "Link the inspection to location, activity and supporting records."
+        }
+      }
+    ],
+    "whatToCapture": [
+      {
+        "en": "Location/element ID"
+      },
+      {
+        "en": "Requirement and revision"
+      },
+      {
+        "en": "Observed/measured result"
+      },
+      {
+        "en": "Photos where useful"
+      },
+      {
+        "en": "Inspector/date/time"
+      },
+      {
+        "en": "Acceptance or issue reference"
+      }
+    ],
+    "keyReminders": [
+      {
+        "en": "Acceptance must be based on requirements, not appearance alone."
+      },
+      {
+        "en": "Record actual values when a measurable criterion exists."
+      },
+      {
+        "en": "Do not sign for work you did not inspect unless the procedure explicitly permits record-based verification."
+      }
+    ],
+    "commonMistakes": [
+      {
+        "en": "'Looks good' without criteria"
+      },
+      {
+        "en": "Recording only pass/fail with no evidence for critical checks"
+      },
+      {
+        "en": "Accepting concealed work that was not verified"
+      },
+      {
+        "en": "Using uncalibrated equipment where calibration is required"
+      }
+    ],
+    "typicalOutputs": [
+      {
+        "en": "Inspection record"
+      },
+      {
+        "en": "Acceptance/release"
+      },
+      {
+        "en": "Deficiency/NCR/RFI if applicable"
+      }
+    ],
+    "relatedProcessIds": [
+      "general-qc-deficiency-reporting",
+      "general-qc-ncr",
+      "general-qc-quality-evidence"
+    ],
+    "sourceRef": {
+      "document": "QC_Field_Guide_General_QC_Processes(1).docx",
+      "section": "5. Inspection & Acceptance"
+    }
+  },
+  {
+    "id": "general-qc-deficiency-reporting",
+    "sequence": 6,
+    "title": {
+      "en": "Deficiency Reporting"
+    },
+    "summary": {
+      "en": "Record an observed quality issue that requires correction but is handled below the project's formal NCR threshold."
+    },
+    "whenToUse": {
+      "en": "When work has a correctable issue and the project quality plan permits it to be managed as a deficiency/punch item rather than an NCR."
+    },
+    "fieldWorkflow": [
+      {
+        "sequence": 1,
+        "action": {
+          "en": "Identify the issue"
+        },
+        "detail": {
+          "en": "State what is wrong and where."
+        }
+      },
+      {
+        "sequence": 2,
+        "action": {
+          "en": "Verify the requirement"
+        },
+        "detail": {
+          "en": "Confirm the expected condition."
+        }
+      },
+      {
+        "sequence": 3,
+        "action": {
+          "en": "Document evidence"
+        },
+        "detail": {
+          "en": "Capture objective description, location and photos/measurements."
+        }
+      },
+      {
+        "sequence": 4,
+        "action": {
+          "en": "Classify correctly"
+        },
+        "detail": {
+          "en": "Confirm the issue belongs in the deficiency process rather than NCR or RFI."
+        }
+      },
+      {
+        "sequence": 5,
+        "action": {
+          "en": "Notify responsible party"
+        },
+        "detail": {
+          "en": "Assign/communicate through the approved process."
+        }
+      },
+      {
+        "sequence": 6,
+        "action": {
+          "en": "Correct the work"
+        },
+        "detail": {
+          "en": "Responsible party completes correction."
+        }
+      },
+      {
+        "sequence": 7,
+        "action": {
+          "en": "Reinspect"
+        },
+        "detail": {
+          "en": "Verify the corrected condition."
+        }
+      },
+      {
+        "sequence": 8,
+        "action": {
+          "en": "Close"
+        },
+        "detail": {
+          "en": "Record verification and closure evidence."
+        }
+      }
+    ],
+    "whatToCapture": [
+      {
+        "en": "Unique issue ID"
+      },
+      {
+        "en": "Exact location/element"
+      },
+      {
+        "en": "Requirement/reference"
+      },
+      {
+        "en": "Clear description and evidence"
+      },
+      {
+        "en": "Responsible party/status"
+      },
+      {
+        "en": "Correction and closure evidence"
+      }
+    ],
+    "keyReminders": [
+      {
+        "en": "A deficiency is not a way to avoid an NCR when the NCR criteria are met."
+      },
+      {
+        "en": "Describe the condition, not the person who caused it."
+      },
+      {
+        "en": "Closure requires verification."
+      }
+    ],
+    "commonMistakes": [
+      {
+        "en": "Vague descriptions such as 'fix wall'"
+      },
+      {
+        "en": "No location reference"
+      },
+      {
+        "en": "Closing from a contractor's message without verification"
+      },
+      {
+        "en": "Using deficiency and NCR terminology interchangeably"
+      }
+    ],
+    "typicalOutputs": [
+      {
+        "en": "Deficiency record"
+      },
+      {
+        "en": "Correction evidence"
+      },
+      {
+        "en": "Verified closure"
+      }
+    ],
+    "relatedProcessIds": [
+      "general-qc-ncr",
+      "general-qc-reinspection-verification",
+      "general-qc-quality-evidence"
+    ],
+    "sourceRef": {
+      "document": "QC_Field_Guide_General_QC_Processes(1).docx",
+      "section": "6. Deficiency Reporting"
+    }
+  },
+  {
+    "id": "general-qc-ncr",
+    "sequence": 7,
+    "title": {
+      "en": "Non-Conformity Reporting (NCR)"
+    },
+    "summary": {
+      "en": "Control, document and resolve work, material or installation that does not conform to an applicable requirement."
+    },
+    "whenToUse": {
+      "en": "When the project's NCR criteria are met: a specified requirement is not satisfied and formal control/disposition is required."
+    },
+    "fieldWorkflow": [
+      {
+        "sequence": 1,
+        "action": {
+          "en": "Identify the non-conformity"
+        },
+        "detail": {
+          "en": "Determine exactly what does not comply and where."
+        }
+      },
+      {
+        "sequence": 2,
+        "action": {
+          "en": "Verify the requirement"
+        },
+        "detail": {
+          "en": "Confirm the applicable drawing, specification, approved submittal, procedure, code or other governing requirement."
+        }
+      },
+      {
+        "sequence": 3,
+        "action": {
+          "en": "Control the condition"
+        },
+        "detail": {
+          "en": "Prevent concealment, continuation, use or incorporation of affected work where required."
+        }
+      },
+      {
+        "sequence": 4,
+        "action": {
+          "en": "Document objective evidence"
+        },
+        "detail": {
+          "en": "Record location, element ID, condition, photos, measurements and requirement."
+        }
+      },
+      {
+        "sequence": 5,
+        "action": {
+          "en": "Notify responsible parties"
+        },
+        "detail": {
+          "en": "Follow the project's NCR communication and quality procedure."
+        }
+      },
+      {
+        "sequence": 6,
+        "action": {
+          "en": "Determine disposition"
+        },
+        "detail": {
+          "en": "Use authorized disposition such as rework, repair, replace, reject, or accept-as-is/concession where formally permitted."
+        }
+      },
+      {
+        "sequence": 7,
+        "action": {
+          "en": "Implement corrective action"
+        },
+        "detail": {
+          "en": "Ensure the approved disposition/action is completed."
+        }
+      },
+      {
+        "sequence": 8,
+        "action": {
+          "en": "Reinspect / verify"
+        },
+        "detail": {
+          "en": "Confirm the resulting work satisfies the approved disposition and applicable requirements."
+        }
+      },
+      {
+        "sequence": 9,
+        "action": {
+          "en": "Close and retain traceability"
+        },
+        "detail": {
+          "en": "Record verification, evidence, approvals and formal closure."
+        }
+      }
+    ],
+    "whatToCapture": [
+      {
+        "en": "NCR number and date"
+      },
+      {
+        "en": "Exact location/affected item"
+      },
+      {
+        "en": "Requirement violated and revision"
+      },
+      {
+        "en": "Objective description and evidence"
+      },
+      {
+        "en": "Immediate control/containment"
+      },
+      {
+        "en": "Disposition and authorizing party"
+      },
+      {
+        "en": "Correction/rework evidence"
+      },
+      {
+        "en": "Reinspection result and closure approval"
+      }
+    ],
+    "keyReminders": [
+      {
+        "en": "Do not close the NCR merely because the repair was performed; verify the completed work first."
+      },
+      {
+        "en": "Do not prescribe an engineering disposition unless you have the authority to do so."
+      },
+      {
+        "en": "Keep the original non-conforming condition traceable to its final disposition."
+      },
+      {
+        "en": "If accept-as-is/use-as-is is proposed, obtain the approval required by the contract and quality procedure."
+      }
+    ],
+    "commonMistakes": [
+      {
+        "en": "Writing the NCR before confirming the requirement"
+      },
+      {
+        "en": "Blaming individuals instead of describing facts"
+      },
+      {
+        "en": "Allowing affected work to be concealed"
+      },
+      {
+        "en": "Using 'repair' and 'rework' casually where the project distinguishes them"
+      },
+      {
+        "en": "Closing without disposition approval or verification"
+      }
+    ],
+    "typicalOutputs": [
+      {
+        "en": "NCR record"
+      },
+      {
+        "en": "Approved disposition"
+      },
+      {
+        "en": "Correction/corrective-action evidence"
+      },
+      {
+        "en": "Reinspection record"
+      },
+      {
+        "en": "Formal closure"
+      }
+    ],
+    "relatedProcessIds": [
+      "general-qc-deficiency-reporting",
+      "general-qc-corrective-action",
+      "general-qc-reinspection-verification",
+      "general-qc-traceability"
+    ],
+    "sourceRef": {
+      "document": "QC_Field_Guide_General_QC_Processes(1).docx",
+      "section": "7. Non-Conformity Reporting (NCR)"
+    },
+    "additionalSections": [
+      {
+        "title": {
+          "en": "Project-specific variation"
+        },
+        "items": [
+          {
+            "en": "Terminology, disposition authority, stop-work/containment requirements and NCR thresholds vary by organization and contract. Follow the approved project quality plan."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "general-qc-corrective-action",
+    "sequence": 8,
+    "title": {
+      "en": "Corrective Action"
+    },
+    "summary": {
+      "en": "Implement and verify action that removes the cause or condition associated with a quality problem and prevents or reduces recurrence where required."
+    },
+    "whenToUse": {
+      "en": "When an NCR, repeated deficiency, audit finding, trend, test failure or other quality event requires formal corrective action."
+    },
+    "fieldWorkflow": [
+      {
+        "sequence": 1,
+        "action": {
+          "en": "Define the problem"
+        },
+        "detail": {
+          "en": "State the issue and scope using evidence."
+        }
+      },
+      {
+        "sequence": 2,
+        "action": {
+          "en": "Contain immediate risk"
+        },
+        "detail": {
+          "en": "Control affected work/material where necessary."
+        }
+      },
+      {
+        "sequence": 3,
+        "action": {
+          "en": "Determine cause"
+        },
+        "detail": {
+          "en": "Use an appropriate root-cause method proportional to significance."
+        }
+      },
+      {
+        "sequence": 4,
+        "action": {
+          "en": "Define action"
+        },
+        "detail": {
+          "en": "Specify what will correct the condition and, where required, address recurrence."
+        }
+      },
+      {
+        "sequence": 5,
+        "action": {
+          "en": "Assign responsibility and due date"
+        },
+        "detail": {
+          "en": "Make ownership and timing explicit."
+        }
+      },
+      {
+        "sequence": 6,
+        "action": {
+          "en": "Implement action"
+        },
+        "detail": {
+          "en": "Complete approved actions and retain evidence."
+        }
+      },
+      {
+        "sequence": 7,
+        "action": {
+          "en": "Verify effectiveness"
+        },
+        "detail": {
+          "en": "Check that the action worked, not merely that it was performed."
+        }
+      },
+      {
+        "sequence": 8,
+        "action": {
+          "en": "Close"
+        },
+        "detail": {
+          "en": "Document verification and approval."
+        }
+      }
+    ],
+    "whatToCapture": [
+      {
+        "en": "Problem statement and scope"
+      },
+      {
+        "en": "Containment actions"
+      },
+      {
+        "en": "Cause analysis"
+      },
+      {
+        "en": "Approved action plan"
+      },
+      {
+        "en": "Owner/due date"
+      },
+      {
+        "en": "Implementation evidence"
+      },
+      {
+        "en": "Effectiveness verification"
+      }
+    ],
+    "keyReminders": [
+      {
+        "en": "Correction fixes a detected condition; corrective action may address why it occurred. Follow project terminology."
+      },
+      {
+        "en": "Root-cause depth should match risk/significance."
+      },
+      {
+        "en": "Effectiveness verification may require observing later work, not only reviewing a completed form."
+      }
+    ],
+    "commonMistakes": [
+      {
+        "en": "Calling every repair a root-cause corrective action"
+      },
+      {
+        "en": "Choosing a cause without evidence"
+      },
+      {
+        "en": "Closing immediately after implementation"
+      },
+      {
+        "en": "Actions with no owner or due date"
+      }
+    ],
+    "typicalOutputs": [
+      {
+        "en": "Corrective action record"
+      },
+      {
+        "en": "Cause analysis"
+      },
+      {
+        "en": "Implementation evidence"
+      },
+      {
+        "en": "Effectiveness verification"
+      }
+    ],
+    "relatedProcessIds": [
+      "general-qc-ncr",
+      "general-qc-reinspection-verification",
+      "general-qc-quality-closeout"
+    ],
+    "sourceRef": {
+      "document": "QC_Field_Guide_General_QC_Processes(1).docx",
+      "section": "8. Corrective Action"
+    }
+  },
+  {
+    "id": "general-qc-reinspection-verification",
+    "sequence": 9,
+    "title": {
+      "en": "Reinspection & Verification"
+    },
+    "summary": {
+      "en": "Confirm that corrected, repaired, reworked or otherwise dispositioned work now satisfies the required condition."
+    },
+    "whenToUse": {
+      "en": "After deficiency correction, NCR disposition, failed inspection/test, or corrective work requiring verification."
+    },
+    "fieldWorkflow": [
+      {
+        "sequence": 1,
+        "action": {
+          "en": "Review original issue"
+        },
+        "detail": {
+          "en": "Understand the requirement, condition and approved disposition."
+        }
+      },
+      {
+        "sequence": 2,
+        "action": {
+          "en": "Confirm correction is complete"
+        },
+        "detail": {
+          "en": "Ensure the work is ready for verification."
+        }
+      },
+      {
+        "sequence": 3,
+        "action": {
+          "en": "Inspect the affected work"
+        },
+        "detail": {
+          "en": "Verify the correction itself and relevant interfaces."
+        }
+      },
+      {
+        "sequence": 4,
+        "action": {
+          "en": "Repeat measurements/tests where required"
+        },
+        "detail": {
+          "en": "Use the same acceptance basis or approved revised basis."
+        }
+      },
+      {
+        "sequence": 5,
+        "action": {
+          "en": "Compare with requirements"
+        },
+        "detail": {
+          "en": "Determine whether closure criteria are met."
+        }
+      },
+      {
+        "sequence": 6,
+        "action": {
+          "en": "Record evidence"
+        },
+        "detail": {
+          "en": "Capture results, photos, measurements and linked records."
+        }
+      },
+      {
+        "sequence": 7,
+        "action": {
+          "en": "Close or return"
+        },
+        "detail": {
+          "en": "Close only if acceptable; otherwise keep open/escalate."
+        }
+      }
+    ],
+    "whatToCapture": [
+      {
+        "en": "Original issue/NCR reference"
+      },
+      {
+        "en": "Approved disposition"
+      },
+      {
+        "en": "Reinspection date/location"
+      },
+      {
+        "en": "Measured/observed result"
+      },
+      {
+        "en": "Photos/test results"
+      },
+      {
+        "en": "Closure status and verifier"
+      }
+    ],
+    "keyReminders": [
+      {
+        "en": "Reinspection is an independent verification step, not an administrative checkbox."
+      },
+      {
+        "en": "Verify the whole affected condition where the correction could create secondary issues."
+      },
+      {
+        "en": "Maintain linkage to the original record."
+      }
+    ],
+    "commonMistakes": [
+      {
+        "en": "Checking only that work was attempted"
+      },
+      {
+        "en": "Closing without viewing inaccessible corrected work"
+      },
+      {
+        "en": "Creating a new unrelated record with no link to the original"
+      }
+    ],
+    "typicalOutputs": [
+      {
+        "en": "Reinspection record"
+      },
+      {
+        "en": "Closure evidence"
+      },
+      {
+        "en": "Updated NCR/deficiency status"
+      }
+    ],
+    "relatedProcessIds": [
+      "general-qc-deficiency-reporting",
+      "general-qc-ncr",
+      "general-qc-traceability"
+    ],
+    "sourceRef": {
+      "document": "QC_Field_Guide_General_QC_Processes(1).docx",
+      "section": "9. Reinspection & Verification"
+    }
+  },
+  {
+    "id": "general-qc-quality-evidence",
+    "sequence": 10,
+    "title": {
+      "en": "Quality Evidence & Photo Documentation"
+    },
+    "summary": {
+      "en": "Create objective, retrievable evidence that shows what was inspected, where, when and against what requirement."
+    },
+    "whenToUse": {
+      "en": "During inspections, tests, receiving, deficiencies/NCRs, corrective work, concealed-work verification and closeout."
+    },
+    "fieldWorkflow": [
+      {
+        "sequence": 1,
+        "action": {
+          "en": "Define what must be proven"
+        },
+        "detail": {
+          "en": "Know the condition/result the evidence needs to support."
+        }
+      },
+      {
+        "sequence": 2,
+        "action": {
+          "en": "Capture context"
+        },
+        "detail": {
+          "en": "Take an overview establishing location/orientation."
+        }
+      },
+      {
+        "sequence": 3,
+        "action": {
+          "en": "Capture detail"
+        },
+        "detail": {
+          "en": "Photograph the specific feature, defect, measurement or identification."
+        }
+      },
+      {
+        "sequence": 4,
+        "action": {
+          "en": "Include scale/ID where useful"
+        },
+        "detail": {
+          "en": "Use measuring device, tag, gridline or element identifier without obscuring the condition."
+        }
+      },
+      {
+        "sequence": 5,
+        "action": {
+          "en": "Record metadata"
+        },
+        "detail": {
+          "en": "Link date, location, activity and record ID."
+        }
+      },
+      {
+        "sequence": 6,
+        "action": {
+          "en": "Add concise notes"
+        },
+        "detail": {
+          "en": "Describe what the image demonstrates."
+        }
+      },
+      {
+        "sequence": 7,
+        "action": {
+          "en": "Store and link"
+        },
+        "detail": {
+          "en": "Place evidence in the approved system and connect it to the relevant record."
+        }
+      }
+    ],
+    "whatToCapture": [
+      {
+        "en": "Overview and detail photos"
+      },
+      {
+        "en": "Location/grid/room/element ID"
+      },
+      {
+        "en": "Date/time if required"
+      },
+      {
+        "en": "Measurement/result shown"
+      },
+      {
+        "en": "Associated inspection/NCR/test/material record"
+      },
+      {
+        "en": "Concise factual caption"
+      }
+    ],
+    "keyReminders": [
+      {
+        "en": "A photo without context may prove very little."
+      },
+      {
+        "en": "Capture evidence before concealment or correction when possible."
+      },
+      {
+        "en": "Do not rely on photos alone when a measurement/test record is required."
+      },
+      {
+        "en": "Follow project privacy/security rules when people, sensitive assets or restricted information may appear."
+      }
+    ],
+    "commonMistakes": [
+      {
+        "en": "Only close-up photos with no location context"
+      },
+      {
+        "en": "Blurry or dark images"
+      },
+      {
+        "en": "No caption or record linkage"
+      },
+      {
+        "en": "Photographing a tape measure at an unreadable angle"
+      },
+      {
+        "en": "Using edited images that obscure original evidence"
+      }
+    ],
+    "typicalOutputs": [
+      {
+        "en": "Photo/evidence record"
+      },
+      {
+        "en": "Linked inspection support"
+      },
+      {
+        "en": "Before/after correction evidence"
+      }
+    ],
+    "relatedProcessIds": [
+      "general-qc-inspection-acceptance",
+      "general-qc-ncr",
+      "general-qc-traceability"
+    ],
+    "sourceRef": {
+      "document": "QC_Field_Guide_General_QC_Processes(1).docx",
+      "section": "10. Quality Evidence & Photo Documentation"
+    }
+  },
+  {
+    "id": "general-qc-testing-records",
+    "sequence": 11,
+    "title": {
+      "en": "Testing & Test Records"
+    },
+    "summary": {
+      "en": "Plan, witness, record and evaluate required quality tests using approved methods and traceable results."
+    },
+    "whenToUse": {
+      "en": "When specifications, codes, ITPs or procedures require testing of materials, systems or completed work."
+    },
+    "fieldWorkflow": [
+      {
+        "sequence": 1,
+        "action": {
+          "en": "Confirm test requirement"
+        },
+        "detail": {
+          "en": "Identify method, frequency, sample/location and acceptance criteria."
+        }
+      },
+      {
+        "sequence": 2,
+        "action": {
+          "en": "Verify readiness"
+        },
+        "detail": {
+          "en": "Confirm test area/material, equipment and prerequisites."
+        }
+      },
+      {
+        "sequence": 3,
+        "action": {
+          "en": "Verify test resources"
+        },
+        "detail": {
+          "en": "Check qualified personnel/laboratory and calibration/certification where required."
+        }
+      },
+      {
+        "sequence": 4,
+        "action": {
+          "en": "Identify sample/test"
+        },
+        "detail": {
+          "en": "Assign traceable sample, location or equipment identification."
+        }
+      },
+      {
+        "sequence": 5,
+        "action": {
+          "en": "Perform or witness test"
+        },
+        "detail": {
+          "en": "Follow approved method and record actual results."
+        }
+      },
+      {
+        "sequence": 6,
+        "action": {
+          "en": "Evaluate result"
+        },
+        "detail": {
+          "en": "Compare against acceptance criteria."
+        }
+      },
+      {
+        "sequence": 7,
+        "action": {
+          "en": "Control failures"
+        },
+        "detail": {
+          "en": "Notify and initiate required deficiency/NCR/retest process."
+        }
+      },
+      {
+        "sequence": 8,
+        "action": {
+          "en": "File final record"
+        },
+        "detail": {
+          "en": "Link signed report and supporting evidence to the work."
+        }
+      }
+    ],
+    "whatToCapture": [
+      {
+        "en": "Test type/method"
+      },
+      {
+        "en": "Location/sample ID"
+      },
+      {
+        "en": "Date/time"
+      },
+      {
+        "en": "Equipment ID/calibration where required"
+      },
+      {
+        "en": "Actual results and units"
+      },
+      {
+        "en": "Acceptance criteria"
+      },
+      {
+        "en": "Technician/lab/witness"
+      },
+      {
+        "en": "Failure/retest links"
+      }
+    ],
+    "keyReminders": [
+      {
+        "en": "Record actual test values, not just 'pass'."
+      },
+      {
+        "en": "A retest does not erase the original failed result."
+      },
+      {
+        "en": "Confirm sampling frequency and location requirements before work advances."
+      }
+    ],
+    "commonMistakes": [
+      {
+        "en": "Missing sample location"
+      },
+      {
+        "en": "No calibration traceability"
+      },
+      {
+        "en": "Discarding failed results after a passing retest"
+      },
+      {
+        "en": "Using wrong units or acceptance criteria"
+      }
+    ],
+    "typicalOutputs": [
+      {
+        "en": "Test report"
+      },
+      {
+        "en": "Laboratory certificate/report where applicable"
+      },
+      {
+        "en": "Failure/NCR/retest record"
+      },
+      {
+        "en": "Acceptance evidence"
+      }
+    ],
+    "relatedProcessIds": [
+      "general-qc-itp-execution",
+      "general-qc-ncr",
+      "general-qc-traceability"
+    ],
+    "sourceRef": {
+      "document": "QC_Field_Guide_General_QC_Processes(1).docx",
+      "section": "11. Testing & Test Records"
+    }
+  },
+  {
+    "id": "general-qc-material-receiving",
+    "sequence": 12,
+    "title": {
+      "en": "Material Receiving & Verification"
+    },
+    "summary": {
+      "en": "Verify delivered materials/equipment are correct, approved, undamaged and traceable before incorporation into the work."
+    },
+    "whenToUse": {
+      "en": "At delivery, before storage/use, and before installation where receiving verification is required."
+    },
+    "fieldWorkflow": [
+      {
+        "sequence": 1,
+        "action": {
+          "en": "Identify delivery"
+        },
+        "detail": {
+          "en": "Confirm purchase/submittal/material description and intended use."
+        }
+      },
+      {
+        "sequence": 2,
+        "action": {
+          "en": "Verify approval status"
+        },
+        "detail": {
+          "en": "Check approved submittal/product data and required certifications."
+        }
+      },
+      {
+        "sequence": 3,
+        "action": {
+          "en": "Inspect condition"
+        },
+        "detail": {
+          "en": "Look for damage, contamination, deterioration or improper packaging."
+        }
+      },
+      {
+        "sequence": 4,
+        "action": {
+          "en": "Verify identification"
+        },
+        "detail": {
+          "en": "Check manufacturer, model/type, grade, size, heat/batch/lot numbers where applicable."
+        }
+      },
+      {
+        "sequence": 5,
+        "action": {
+          "en": "Review documentation"
+        },
+        "detail": {
+          "en": "Confirm delivery ticket, certificates, test reports and compliance documents."
+        }
+      },
+      {
+        "sequence": 6,
+        "action": {
+          "en": "Check storage requirements"
+        },
+        "detail": {
+          "en": "Protect material from damage or environmental exposure."
+        }
+      },
+      {
+        "sequence": 7,
+        "action": {
+          "en": "Accept, quarantine or reject"
+        },
+        "detail": {
+          "en": "Apply project controls to nonconforming or unverified material."
+        }
+      },
+      {
+        "sequence": 8,
+        "action": {
+          "en": "Record traceability"
+        },
+        "detail": {
+          "en": "Link material to delivery, lot and installation area where required."
+        }
+      }
+    ],
+    "whatToCapture": [
+      {
+        "en": "Supplier/manufacturer"
+      },
+      {
+        "en": "Product/model/grade/size"
+      },
+      {
+        "en": "Quantity"
+      },
+      {
+        "en": "Delivery date/ticket"
+      },
+      {
+        "en": "Lot/batch/heat/serial number where applicable"
+      },
+      {
+        "en": "Certificates/test reports"
+      },
+      {
+        "en": "Condition photos"
+      },
+      {
+        "en": "Acceptance/quarantine status"
+      }
+    ],
+    "keyReminders": [
+      {
+        "en": "Approved product does not mean every delivered unit is automatically acceptable."
+      },
+      {
+        "en": "Preserve identification needed for later traceability."
+      },
+      {
+        "en": "Quarantine unverified/nonconforming material according to project procedure."
+      }
+    ],
+    "commonMistakes": [
+      {
+        "en": "Material installed before approval"
+      },
+      {
+        "en": "Certificates filed without linking them to delivered lots"
+      },
+      {
+        "en": "Damaged material accepted because product type is correct"
+      },
+      {
+        "en": "Losing batch/heat identification"
+      }
+    ],
+    "typicalOutputs": [
+      {
+        "en": "Receiving inspection record"
+      },
+      {
+        "en": "Material traceability record"
+      },
+      {
+        "en": "Quarantine/rejection/NCR record if needed"
+      }
+    ],
+    "relatedProcessIds": [
+      "general-qc-requirement-review",
+      "general-qc-ncr",
+      "general-qc-traceability"
+    ],
+    "sourceRef": {
+      "document": "QC_Field_Guide_General_QC_Processes(1).docx",
+      "section": "12. Material Receiving & Verification"
+    }
+  },
+  {
+    "id": "general-qc-rfi-clarification",
+    "sequence": 13,
+    "title": {
+      "en": "RFI / Technical Clarification"
+    },
+    "summary": {
+      "en": "Obtain an authorized clarification when contract information is missing, conflicting, ambiguous or unsuitable for a reliable field decision."
+    },
+    "whenToUse": {
+      "en": "When the inspector cannot determine the requirement without interpretation or when documents conflict."
+    },
+    "fieldWorkflow": [
+      {
+        "sequence": 1,
+        "action": {
+          "en": "Define the question"
+        },
+        "detail": {
+          "en": "State the exact technical issue and location."
+        }
+      },
+      {
+        "sequence": 2,
+        "action": {
+          "en": "Research existing information"
+        },
+        "detail": {
+          "en": "Check drawings, specifications, submittals, prior RFIs and changes first."
+        }
+      },
+      {
+        "sequence": 3,
+        "action": {
+          "en": "Describe the conflict/gap"
+        },
+        "detail": {
+          "en": "Reference the affected documents and revisions."
+        }
+      },
+      {
+        "sequence": 4,
+        "action": {
+          "en": "State field impact"
+        },
+        "detail": {
+          "en": "Identify work affected, timing or quality risk without overstating."
+        }
+      },
+      {
+        "sequence": 5,
+        "action": {
+          "en": "Submit through approved channel"
+        },
+        "detail": {
+          "en": "Use the project's RFI/clarification process."
+        }
+      },
+      {
+        "sequence": 6,
+        "action": {
+          "en": "Track response"
+        },
+        "detail": {
+          "en": "Do not treat informal discussion as final where formal response is required."
+        }
+      },
+      {
+        "sequence": 7,
+        "action": {
+          "en": "Verify implementation"
+        },
+        "detail": {
+          "en": "Ensure the authorized response is reflected in the work and records."
+        }
+      },
+      {
+        "sequence": 8,
+        "action": {
+          "en": "Link downstream records"
+        },
+        "detail": {
+          "en": "Connect response to inspection/change/as-built documentation."
+        }
+      }
+    ],
+    "whatToCapture": [
+      {
+        "en": "RFI number"
+      },
+      {
+        "en": "Location/affected work"
+      },
+      {
+        "en": "Referenced documents/revisions"
+      },
+      {
+        "en": "Clear question"
+      },
+      {
+        "en": "Supporting sketches/photos if useful"
+      },
+      {
+        "en": "Authorized response"
+      },
+      {
+        "en": "Related change/revision"
+      }
+    ],
+    "keyReminders": [
+      {
+        "en": "Ask a focused question; do not write an RFI that hides the actual conflict."
+      },
+      {
+        "en": "An RFI is not automatically authorization to change scope, cost or design."
+      },
+      {
+        "en": "Use the response only within the authority and scope stated."
+      }
+    ],
+    "commonMistakes": [
+      {
+        "en": "Submitting before checking available documents"
+      },
+      {
+        "en": "Suggesting an unapproved design solution as if accepted"
+      },
+      {
+        "en": "Proceeding on a verbal answer when formal response is required"
+      },
+      {
+        "en": "Failing to link the response to affected inspections"
+      }
+    ],
+    "typicalOutputs": [
+      {
+        "en": "RFI/clarification record"
+      },
+      {
+        "en": "Authorized response"
+      },
+      {
+        "en": "Linked change/revised document where applicable"
+      }
+    ],
+    "relatedProcessIds": [
+      "general-qc-requirement-review",
+      "general-qc-change-document-control",
+      "general-qc-inspection-acceptance"
+    ],
+    "sourceRef": {
+      "document": "QC_Field_Guide_General_QC_Processes(1).docx",
+      "section": "13. RFI / Technical Clarification"
+    }
+  },
+  {
+    "id": "general-qc-change-document-control",
+    "sequence": 14,
+    "title": {
+      "en": "Change & Revised Document Control"
+    },
+    "summary": {
+      "en": "Ensure field decisions and inspections use the latest authorized information and that changes remain traceable."
+    },
+    "whenToUse": {
+      "en": "When drawings, specifications, RFIs, site instructions, change notices, shop drawings or procedures are revised."
+    },
+    "fieldWorkflow": [
+      {
+        "sequence": 1,
+        "action": {
+          "en": "Receive authorized revision"
+        },
+        "detail": {
+          "en": "Confirm source, status and approval."
+        }
+      },
+      {
+        "sequence": 2,
+        "action": {
+          "en": "Identify affected work"
+        },
+        "detail": {
+          "en": "Determine systems, locations, inspections and records impacted."
+        }
+      },
+      {
+        "sequence": 3,
+        "action": {
+          "en": "Withdraw superseded information"
+        },
+        "detail": {
+          "en": "Prevent unintended field use according to document-control procedure."
+        }
+      },
+      {
+        "sequence": 4,
+        "action": {
+          "en": "Distribute current information"
+        },
+        "detail": {
+          "en": "Ensure relevant teams have access."
+        }
+      },
+      {
+        "sequence": 5,
+        "action": {
+          "en": "Review quality impact"
+        },
+        "detail": {
+          "en": "Update inspection criteria, ITPs/checklists or pending inspections where needed."
+        }
+      },
+      {
+        "sequence": 6,
+        "action": {
+          "en": "Verify field implementation"
+        },
+        "detail": {
+          "en": "Check work reflects the authorized revision."
+        }
+      },
+      {
+        "sequence": 7,
+        "action": {
+          "en": "Preserve revision history"
+        },
+        "detail": {
+          "en": "Maintain traceability between old/new documents and affected records."
+        }
+      }
+    ],
+    "whatToCapture": [
+      {
+        "en": "Document number/revision/status"
+      },
+      {
+        "en": "Date received"
+      },
+      {
+        "en": "Affected areas/activities"
+      },
+      {
+        "en": "Distribution/acknowledgement where required"
+      },
+      {
+        "en": "Updated inspection records"
+      },
+      {
+        "en": "Linked RFI/change authorization"
+      }
+    ],
+    "keyReminders": [
+      {
+        "en": "'Latest file received' is not always 'approved for construction.' Verify status."
+      },
+      {
+        "en": "Never erase revision history needed to explain earlier inspections."
+      },
+      {
+        "en": "Revisit completed or ongoing work if a revision has retrospective impact."
+      }
+    ],
+    "commonMistakes": [
+      {
+        "en": "Inspecting from a superseded drawing"
+      },
+      {
+        "en": "Deleting old records rather than superseding them"
+      },
+      {
+        "en": "Assuming an RFI response is a formal drawing revision"
+      },
+      {
+        "en": "No impact review for work already installed"
+      }
+    ],
+    "typicalOutputs": [
+      {
+        "en": "Revision/distribution record"
+      },
+      {
+        "en": "Updated inspection basis"
+      },
+      {
+        "en": "Linked change/RFI records"
+      }
+    ],
+    "relatedProcessIds": [
+      "general-qc-requirement-review",
+      "general-qc-rfi-clarification",
+      "general-qc-traceability"
+    ],
+    "sourceRef": {
+      "document": "QC_Field_Guide_General_QC_Processes(1).docx",
+      "section": "14. Change & Revised Document Control"
+    }
+  },
+  {
+    "id": "general-qc-traceability",
+    "sequence": 15,
+    "title": {
+      "en": "Traceability"
+    },
+    "summary": {
+      "en": "Maintain a defensible chain connecting the installed work to requirements, materials, inspections, tests, issues, approvals and closeout records."
+    },
+    "whenToUse": {
+      "en": "Throughout construction, especially for critical materials, concealed work, testing, NCRs and turnover documentation."
+    },
+    "fieldWorkflow": [
+      {
+        "sequence": 1,
+        "action": {
+          "en": "Define traceability requirement"
+        },
+        "detail": {
+          "en": "Know what identifiers and links the project requires."
+        }
+      },
+      {
+        "sequence": 2,
+        "action": {
+          "en": "Assign/use stable identifiers"
+        },
+        "detail": {
+          "en": "Use location, lot, batch, heat, serial, inspection or record IDs."
+        }
+      },
+      {
+        "sequence": 3,
+        "action": {
+          "en": "Link source records"
+        },
+        "detail": {
+          "en": "Connect materials, certificates, submittals and requirements."
+        }
+      },
+      {
+        "sequence": 4,
+        "action": {
+          "en": "Link execution records"
+        },
+        "detail": {
+          "en": "Connect inspections, tests, photos and ITP points."
+        }
+      },
+      {
+        "sequence": 5,
+        "action": {
+          "en": "Link issues and dispositions"
+        },
+        "detail": {
+          "en": "Maintain NCR/deficiency/corrective-action linkage."
+        }
+      },
+      {
+        "sequence": 6,
+        "action": {
+          "en": "Preserve revisions"
+        },
+        "detail": {
+          "en": "Keep the document basis used at the time of inspection."
+        }
+      },
+      {
+        "sequence": 7,
+        "action": {
+          "en": "Verify completeness"
+        },
+        "detail": {
+          "en": "Check the chain can be followed without relying on memory."
+        }
+      },
+      {
+        "sequence": 8,
+        "action": {
+          "en": "Transfer to closeout"
+        },
+        "detail": {
+          "en": "Organize records for turnover/retention."
+        }
+      }
+    ],
+    "whatToCapture": [
+      {
+        "en": "Stable record IDs"
+      },
+      {
+        "en": "Location/asset identifiers"
+      },
+      {
+        "en": "Material batch/heat/serial where required"
+      },
+      {
+        "en": "Document revisions"
+      },
+      {
+        "en": "Inspection/test references"
+      },
+      {
+        "en": "Issue/disposition links"
+      },
+      {
+        "en": "Approvals/signatures"
+      }
+    ],
+    "keyReminders": [
+      {
+        "en": "A record is traceable only if another person can follow the chain later."
+      },
+      {
+        "en": "Use consistent identifiers across systems."
+      },
+      {
+        "en": "Do not depend on filenames alone where metadata/record IDs are available."
+      }
+    ],
+    "commonMistakes": [
+      {
+        "en": "Photos not linked to an activity"
+      },
+      {
+        "en": "Certificates with no installed-location linkage"
+      },
+      {
+        "en": "NCR closure detached from original inspection"
+      },
+      {
+        "en": "Renaming files in ways that break references"
+      }
+    ],
+    "typicalOutputs": [
+      {
+        "en": "Traceability matrix/index where required"
+      },
+      {
+        "en": "Linked quality dossier"
+      },
+      {
+        "en": "Complete audit trail"
+      }
+    ],
+    "relatedProcessIds": [
+      "general-qc-quality-evidence",
+      "general-qc-testing-records",
+      "general-qc-quality-closeout"
+    ],
+    "sourceRef": {
+      "document": "QC_Field_Guide_General_QC_Processes(1).docx",
+      "section": "15. Traceability"
+    }
+  },
+  {
+    "id": "general-qc-quality-closeout",
+    "sequence": 16,
+    "title": {
+      "en": "Quality Closeout"
+    },
+    "summary": {
+      "en": "Confirm required quality obligations are complete, verified, organized and ready for turnover."
+    },
+    "whenToUse": {
+      "en": "At system, area, milestone or project completion and before final quality turnover."
+    },
+    "fieldWorkflow": [
+      {
+        "sequence": 1,
+        "action": {
+          "en": "Define closeout requirements"
+        },
+        "detail": {
+          "en": "Review contract, quality plan and turnover checklist."
+        }
+      },
+      {
+        "sequence": 2,
+        "action": {
+          "en": "Check inspections/tests"
+        },
+        "detail": {
+          "en": "Confirm required records are complete and accepted."
+        }
+      },
+      {
+        "sequence": 3,
+        "action": {
+          "en": "Resolve open issues"
+        },
+        "detail": {
+          "en": "Close or formally disposition deficiencies, NCRs and corrective actions."
+        }
+      },
+      {
+        "sequence": 4,
+        "action": {
+          "en": "Verify final condition"
+        },
+        "detail": {
+          "en": "Complete final inspections/punch verification as required."
+        }
+      },
+      {
+        "sequence": 5,
+        "action": {
+          "en": "Assemble records"
+        },
+        "detail": {
+          "en": "Organize ITPs, inspection reports, test reports, certificates, approvals and evidence."
+        }
+      },
+      {
+        "sequence": 6,
+        "action": {
+          "en": "Check traceability"
+        },
+        "detail": {
+          "en": "Confirm records can be linked to systems/areas/assets."
+        }
+      },
+      {
+        "sequence": 7,
+        "action": {
+          "en": "Verify document status"
+        },
+        "detail": {
+          "en": "Ensure final/as-built/O&M/commissioning interfaces are coordinated where within QC scope."
+        }
+      },
+      {
+        "sequence": 8,
+        "action": {
+          "en": "Complete turnover"
+        },
+        "detail": {
+          "en": "Obtain required reviews, approvals and retention/hand-off."
+        }
+      }
+    ],
+    "whatToCapture": [
+      {
+        "en": "Closeout checklist"
+      },
+      {
+        "en": "Open-item status"
+      },
+      {
+        "en": "Final inspection records"
+      },
+      {
+        "en": "NCR/deficiency closure"
+      },
+      {
+        "en": "Test/certificate dossier"
+      },
+      {
+        "en": "Material records"
+      },
+      {
+        "en": "Traceability index"
+      },
+      {
+        "en": "Required turnover approvals"
+      }
+    ],
+    "keyReminders": [
+      {
+        "en": "Closeout begins during construction, not at the end."
+      },
+      {
+        "en": "Do not hide unresolved items to make the dossier appear complete."
+      },
+      {
+        "en": "Verify completeness and retrievability, not merely file count."
+      }
+    ],
+    "commonMistakes": [
+      {
+        "en": "Waiting until project end to organize records"
+      },
+      {
+        "en": "Missing signatures/revisions"
+      },
+      {
+        "en": "Open NCRs buried in turnover files"
+      },
+      {
+        "en": "Duplicate/uncontrolled records with unclear final status"
+      }
+    ],
+    "typicalOutputs": [
+      {
+        "en": "Quality turnover dossier"
+      },
+      {
+        "en": "Final quality status"
+      },
+      {
+        "en": "Closed issue register"
+      },
+      {
+        "en": "Traceable retained records"
+      }
+    ],
+    "relatedProcessIds": [
+      "general-qc-traceability",
+      "general-qc-reinspection-verification",
+      "general-qc-change-document-control"
+    ],
+    "sourceRef": {
+      "document": "QC_Field_Guide_General_QC_Processes(1).docx",
+      "section": "16. Quality Closeout"
+    }
+  }
+]

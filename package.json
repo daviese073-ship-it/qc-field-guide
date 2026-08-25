@@ -18,6 +18,7 @@
     "validate:presentation": "node scripts/validate-production-presentation.mjs",
     "validate:workflows": "node scripts/validate-production-workflows.mjs",
     "validate:search": "node scripts/validate-production-search.mjs",
+    "validate:general-qc": "node scripts/validate-general-qc.mjs",
     "validate:phase-plan": "node scripts/validate-phase-plan.mjs"
   },
   "dependencies": {

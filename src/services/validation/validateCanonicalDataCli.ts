@@ -25,6 +25,10 @@ import {
   formatProductionWorkflowAuditReport
 } from "./productionWorkflowAudit";
 import {
+  auditProductionGeneralQcDataset,
+  formatProductionGeneralQcAuditReport
+} from "./productionGeneralQcAudit";
+import {
   auditBatirTerminologyDataset,
   formatBatirTerminologyAuditReport
 } from "./batirTerminologyAudit";
@@ -63,9 +67,11 @@ try {
     productionValidation.dataset,
     productionValidation.registries
   );
-  const batirAudit = auditBatirTerminologyDataset(
-    productionValidation.dataset
+  const generalQcAudit = auditProductionGeneralQcDataset(
+    productionValidation.dataset,
+    productionValidation.registries
   );
+  const batirAudit = auditBatirTerminologyDataset(productionValidation.dataset);
   const searchAudit = auditProductionSearchDataset(
     productionValidation.dataset,
     productionValidation.registries
@@ -113,6 +119,13 @@ try {
     );
   }
 
+  if (!generalQcAudit.ok) {
+    throw new CanonicalDataValidationError(
+      "Production General QC process validation failed.",
+      generalQcAudit.errors
+    );
+  }
+
   if (!batirAudit.ok) {
     throw new CanonicalDataValidationError(
       "BÂTIR terminology validation failed.",
@@ -145,6 +158,7 @@ try {
       formatProductionLocalizationAuditReport(localizationAudit),
       formatProductionPresentationAuditReport(presentationAudit),
       formatProductionWorkflowAuditReport(workflowAudit),
+      formatProductionGeneralQcAuditReport(generalQcAudit),
       formatBatirTerminologyAuditReport(batirAudit),
       formatProductionSearchAuditReport(searchAudit)
     ].join("\n")

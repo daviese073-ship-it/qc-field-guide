@@ -3,6 +3,7 @@ export * from "@/domain/types/activity";
 export * from "@/domain/types/condition";
 export * from "@/domain/types/content";
 export * from "@/domain/types/gate";
+export * from "@/domain/types/generalQc";
 export * from "@/domain/types/invalidation";
 export * from "@/domain/types/learnContent";
 export * from "@/domain/types/localization";

@@ -5,6 +5,8 @@ import {
   activitySchema,
   conditionDefinitionSchema,
   gateSchema,
+  generalQcProcessSchema,
+  generalQcUniversalReferenceSchema,
   invalidationRuleSchema,
   learnContentSchema,
   preConcealmentWorkflowSchema,
@@ -32,6 +34,8 @@ export const canonicalDatasetSchema = z
     terminology: z.array(terminologyConceptSchema),
     acronyms: z.array(acronymEntrySchema),
     uiStrings: z.array(uiStringSchema),
+    generalQcProcesses: z.array(generalQcProcessSchema).default([]),
+    generalQcUniversalReference: generalQcUniversalReferenceSchema.optional(),
     version: versionInfoSchema
   })
   .strict();

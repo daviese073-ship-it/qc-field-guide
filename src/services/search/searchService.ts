@@ -28,8 +28,9 @@ const objectTypePriority: Record<SearchableObjectType, number> = {
   acronym: 3,
   workflow: 4,
   preConcealment: 5,
-  gate: 6,
-  section: 7
+  generalQcProcess: 6,
+  gate: 7,
+  section: 8
 };
 
 const sourceFamilyMatchType: Partial<
@@ -40,6 +41,7 @@ const sourceFamilyMatchType: Partial<
   workflow: "exactTitle",
   preConcealment: "exactTitle",
   gate: "exactTitle",
+  generalQcProcess: "exactTitle",
   terminologyPreferred: "exactPreferredTerm",
   terminologyAlias: "exactAlias",
   activityAlias: "exactAlias",
@@ -67,7 +69,8 @@ const scoreEntry = (
     entry.normalizedText === query.normalized ||
     entry.compactText === query.compact;
   const exactId =
-    objectId.normalized === query.normalized || objectId.compact === query.compact;
+    objectId.normalized === query.normalized ||
+    objectId.compact === query.compact;
 
   if (exactId) {
     return {
@@ -77,7 +80,8 @@ const scoreEntry = (
   }
 
   if (exactText) {
-    const matchType = sourceFamilyMatchType[entry.sourceFamily] ?? "exactPhrase";
+    const matchType =
+      sourceFamilyMatchType[entry.sourceFamily] ?? "exactPhrase";
 
     return {
       matchType,

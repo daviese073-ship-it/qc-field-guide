@@ -3,6 +3,7 @@ export * from "@/domain/schemas/activity";
 export * from "@/domain/schemas/condition";
 export * from "@/domain/schemas/content";
 export * from "@/domain/schemas/gate";
+export * from "@/domain/schemas/generalQc";
 export * from "@/domain/schemas/invalidation";
 export * from "@/domain/schemas/learnContent";
 export * from "@/domain/schemas/localization";

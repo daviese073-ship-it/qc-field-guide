@@ -97,7 +97,7 @@ describe("Phase 006 component architecture", () => {
     expect(screen.queryByText("Ctrl + K")).not.toBeInTheDocument();
     expect(
       screen.getByRole("link", { name: /General QC Processes/i })
-    ).toHaveAttribute("href", "/search?q=general%20qc%20processes");
+    ).toHaveAttribute("href", "/general-qc");
     expect(screen.queryByText("Not saved yet")).not.toBeInTheDocument();
     expect(screen.queryByText("Not tracked yet")).not.toBeInTheDocument();
     expect(screen.queryByText("System Status")).not.toBeInTheDocument();
@@ -119,7 +119,7 @@ describe("Phase 006 component architecture", () => {
     ).toHaveAttribute("aria-current", "page");
     expect(
       screen.getByRole("link", { name: /General QC Processes/i })
-    ).toHaveAttribute("href", "/search?q=general%20qc%20processes");
+    ).toHaveAttribute("href", "/general-qc");
     expect(
       screen.queryByRole("link", { name: "QC Think" })
     ).not.toBeInTheDocument();

@@ -36,6 +36,7 @@ export const objectTypeLabels: Record<SearchableObjectType, string> = {
   workflow: "Workflow",
   preConcealment: "Pre-Concealment",
   gate: "Gate",
+  generalQcProcess: "General QC Process",
   term: "Term",
   acronym: "Acronym"
 };

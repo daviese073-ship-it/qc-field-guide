@@ -1,0 +1,155 @@
+{
+  "id": "general-qc-universal-field-reference",
+  "title": {
+    "en": "Universal Field Reference"
+  },
+  "fieldPrinciple": [
+    {
+      "en": "REQUIREMENT"
+    },
+    {
+      "en": "VERIFY"
+    },
+    {
+      "en": "EVIDENCE"
+    },
+    {
+      "en": "DECISION"
+    },
+    {
+      "en": "ACTION"
+    },
+    {
+      "en": "CLOSE"
+    }
+  ],
+  "beforeAnyInspection": [
+    {
+      "en": "Confirm the exact work and location."
+    },
+    {
+      "en": "Confirm current approved drawings/specifications and applicable submittals."
+    },
+    {
+      "en": "Know the acceptance criteria and tolerances."
+    },
+    {
+      "en": "Check ITP/PIE/PRIE points, notifications and prerequisites."
+    },
+    {
+      "en": "Have suitable measuring/test tools and required forms."
+    },
+    {
+      "en": "Inspect before concealment."
+    }
+  ],
+  "whenYouFindAProblem": [
+    {
+      "en": "Do not jump immediately to an NCR: first verify the requirement and project classification rules."
+    },
+    {
+      "en": "Record the actual condition objectively and precisely."
+    },
+    {
+      "en": "Protect/identify affected work where required."
+    },
+    {
+      "en": "Use the approved communication and escalation path."
+    },
+    {
+      "en": "Do not design the fix unless that authority is part of your role."
+    },
+    {
+      "en": "Verify the completed correction/disposition before closure."
+    }
+  ],
+  "minimumUsefulQualityRecord": [
+    {
+      "key": {
+        "en": "Identity"
+      },
+      "question": {
+        "en": "What activity/record is this?"
+      }
+    },
+    {
+      "key": {
+        "en": "Location"
+      },
+      "question": {
+        "en": "Exactly where is it?"
+      }
+    },
+    {
+      "key": {
+        "en": "Requirement"
+      },
+      "question": {
+        "en": "What approved requirement applies?"
+      }
+    },
+    {
+      "key": {
+        "en": "Observation/result"
+      },
+      "question": {
+        "en": "What did I actually see or measure?"
+      }
+    },
+    {
+      "key": {
+        "en": "Evidence"
+      },
+      "question": {
+        "en": "What proves the observation/result?"
+      }
+    },
+    {
+      "key": {
+        "en": "Decision/status"
+      },
+      "question": {
+        "en": "Accepted, deficient, NCR, clarification, pending?"
+      }
+    },
+    {
+      "key": {
+        "en": "Responsibility"
+      },
+      "question": {
+        "en": "Who must act or approve?"
+      }
+    },
+    {
+      "key": {
+        "en": "Follow-up"
+      },
+      "question": {
+        "en": "What happens next and by when?"
+      }
+    },
+    {
+      "key": {
+        "en": "Closure"
+      },
+      "question": {
+        "en": "Who verified it, when, and against what basis?"
+      }
+    }
+  ],
+  "importantLimitations": [
+    {
+      "en": "This guide provides generic field reminders. Contract documents, codes, approved project procedures, owner requirements, delegated authority and the project quality plan govern."
+    },
+    {
+      "en": "Terminology such as deficiency, NCR, observation, punch item, repair, rework, concession, hold point and witness point may be defined differently by different projects."
+    },
+    {
+      "en": "Where safety, structural integrity, life-safety systems or engineering acceptance is implicated, follow the project's escalation and professional-responsibility requirements."
+    }
+  ],
+  "sourceRef": {
+    "document": "QC_Field_Guide_General_QC_Processes(1).docx",
+    "section": "Universal Field Reference"
+  }
+}

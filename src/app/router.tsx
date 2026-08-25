@@ -3,6 +3,8 @@ import { createBrowserRouter, type RouteObject } from "react-router-dom";
 import { App } from "@/app/App";
 import { ActivityPage } from "@/screens/ActivityPage/ActivityPage";
 import { GatePage } from "@/screens/GatePage/GatePage";
+import { GeneralQcProcessDetailPage } from "@/screens/GeneralQcProcessesPage/GeneralQcProcessDetailPage";
+import { GeneralQcProcessesPage } from "@/screens/GeneralQcProcessesPage/GeneralQcProcessesPage";
 import { HomePage } from "@/screens/HomePage/HomePage";
 import { NotFoundPage } from "@/screens/NotFoundPage/NotFoundPage";
 import { PreConcealmentPage } from "@/screens/PreConcealmentPage/PreConcealmentPage";
@@ -21,6 +23,11 @@ export const routes: RouteObject[] = [
       { path: "section/:sectionId", element: <SectionPage /> },
       { path: "activity/:activityId", element: <ActivityPage /> },
       { path: "workflow/:workflowId", element: <WorkflowPage /> },
+      { path: "general-qc", element: <GeneralQcProcessesPage /> },
+      {
+        path: "general-qc/:processId",
+        element: <GeneralQcProcessDetailPage />
+      },
       {
         path: "preconcealment/:preConcealmentId",
         element: <PreConcealmentPage />

@@ -68,7 +68,7 @@ test.describe("Phase 017 correction visual composition", () => {
         width: viewport.width,
         height: viewport.height
       });
-      await page.goto("/search?q=general%20qc%20processes");
+      await page.goto("/general-qc");
 
       await expect(
         page.getByRole("heading", { name: "General QC Processes" })
@@ -80,7 +80,16 @@ test.describe("Phase 017 correction visual composition", () => {
         "aria-pressed",
         "true"
       );
-      await expect(page.getByRole("button", { name: "List" })).toBeDisabled();
+      await expect(page.getByRole("button", { name: "List" })).toHaveAttribute(
+        "aria-pressed",
+        "false"
+      );
+      await expect(
+        page
+          .getByRole("main")
+          .getByRole("link")
+          .filter({ hasText: "Inspection Planning" })
+      ).toHaveAttribute("href", "/general-qc/general-qc-inspection-planning");
       await expect(
         page.getByRole("heading", { name: "Commonly Used" })
       ).toBeVisible();
@@ -101,6 +110,30 @@ test.describe("Phase 017 correction visual composition", () => {
         path: screenshot(viewport.name)
       });
     }
+  });
+
+  test("captures a populated General QC Process detail page", async ({
+    page
+  }) => {
+    await page.setViewportSize({ width: 1440, height: 900 });
+    await page.goto("/general-qc/general-qc-ncr");
+
+    await expect(
+      page.getByRole("heading", { name: "Non-Conformity Reporting (NCR)" })
+    ).toBeVisible();
+    await expect(page.getByText("Field Workflow")).toBeVisible();
+    await expect(page.getByText("What to Capture")).toBeVisible();
+    await expect(page.getByText("Related Processes")).toBeVisible();
+
+    const hasHorizontalOverflow = await page.evaluate(
+      () => document.documentElement.scrollWidth > window.innerWidth
+    );
+
+    expect(hasHorizontalOverflow).toBe(false);
+    await page.screenshot({
+      fullPage: true,
+      path: screenshot("general-qc-detail-ncr")
+    });
   });
 
   test("keeps the shared shell usable across Layer 1 viewport targets", async ({

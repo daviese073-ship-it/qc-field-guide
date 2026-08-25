@@ -5,6 +5,7 @@ import type {
   ContentBlock,
   ContentItem,
   Gate,
+  GeneralQcProcess,
   LearnContent,
   LocalizedContent,
   LocalizedString,
@@ -69,6 +70,7 @@ const sourceFamilyWeights: Record<DerivedSearchSourceFamily, number> = {
   workflow: 86,
   preConcealment: 86,
   gate: 78,
+  generalQcProcess: 84,
   terminologyPreferred: 118,
   terminologyAlias: 106,
   terminologyContent: 62,
@@ -82,8 +84,9 @@ const objectTypePriority: Record<SearchableObjectType, number> = {
   acronym: 3,
   workflow: 4,
   preConcealment: 5,
-  gate: 6,
-  section: 7
+  generalQcProcess: 6,
+  gate: 7,
+  section: 8
 };
 
 interface SearchEntryDraft {
@@ -108,7 +111,10 @@ const getRoute = (objectType: SearchableObjectType, objectId: string) => {
   }
 
   if (objectType === "preConcealment") {
-    return getCanonicalRoute({ objectType: asPreConcealmentType, id: objectId });
+    return getCanonicalRoute({
+      objectType: asPreConcealmentType,
+      id: objectId
+    });
   }
 
   return getCanonicalRoute({ objectType, id: objectId });
@@ -157,7 +163,9 @@ const textEntriesFromLocalized = (
   }
 };
 
-const contentItemsFromBlocks = (blocks: readonly ContentBlock[] | undefined) => {
+const contentItemsFromBlocks = (
+  blocks: readonly ContentBlock[] | undefined
+) => {
   const items: ContentItem[] = [];
 
   for (const block of blocks ?? []) {
@@ -247,10 +255,11 @@ const localizedValuesFromPracticalExample = (example: PracticalExample) =>
       : [];
   });
 
-const getActivityTitle = (registries: CanonicalRegistries, activityId?: string) =>
-  activityId
-    ? registries.activities.getById(activityId)?.title
-    : undefined;
+const getActivityTitle = (
+  registries: CanonicalRegistries,
+  activityId?: string
+) =>
+  activityId ? registries.activities.getById(activityId)?.title : undefined;
 
 const titleFor = (value: LocalizedString | undefined, fallbackId: string) => ({
   en: value?.en ?? fallbackId,
@@ -296,7 +305,9 @@ const addContentBlockDrafts = (
   base: Omit<SearchEntryDraft, "sourceId" | "language" | "text">,
   blocks: readonly ContentBlock[] | undefined
 ) => {
-  for (const { sourceId, value, sourceRef } of localizedValuesFromBlocks(blocks)) {
+  for (const { sourceId, value, sourceRef } of localizedValuesFromBlocks(
+    blocks
+  )) {
     addLocalizedDrafts(
       drafts,
       {
@@ -309,10 +320,7 @@ const addContentBlockDrafts = (
   }
 };
 
-const addActivityEntries = (
-  drafts: SearchEntryDraft[],
-  activity: Activity
-) => {
+const addActivityEntries = (drafts: SearchEntryDraft[], activity: Activity) => {
   const title = titleFor(activity.title, activity.id);
   const base = {
     objectId: activity.id,
@@ -330,14 +338,22 @@ const addActivityEntries = (
   );
   addLiteralDrafts(
     drafts,
-    { ...base, sourceFamily: "activityAlias", sourceId: `${activity.id}:alias` },
+    {
+      ...base,
+      sourceFamily: "activityAlias",
+      sourceId: `${activity.id}:alias`
+    },
     activity.searchRefs?.aliasesEn,
     "en",
     activity.title.status?.en
   );
   addLiteralDrafts(
     drafts,
-    { ...base, sourceFamily: "activityAlias", sourceId: `${activity.id}:alias` },
+    {
+      ...base,
+      sourceFamily: "activityAlias",
+      sourceId: `${activity.id}:alias`
+    },
     activity.searchRefs?.aliasesFr,
     "fr",
     activity.title.status?.fr
@@ -355,65 +371,121 @@ const addActivityEntries = (
   );
 
   for (const field of activityBlockFields) {
-    addContentBlockDrafts(drafts, {
-      ...base,
-      sourceFamily: "activityContent",
-      sourceRef: undefined
-    }, activity[field]);
+    addContentBlockDrafts(
+      drafts,
+      {
+        ...base,
+        sourceFamily: "activityContent",
+        sourceRef: undefined
+      },
+      activity[field]
+    );
   }
 
-  addContentBlockDrafts(drafts, {
-    ...base,
-    sourceFamily: "activityContent"
-  }, activity.inspection?.before);
-  addContentBlockDrafts(drafts, {
-    ...base,
-    sourceFamily: "activityContent"
-  }, activity.inspection?.during);
-  addContentBlockDrafts(drafts, {
-    ...base,
-    sourceFamily: "activityContent"
-  }, activity.inspection?.after);
-  addContentBlockDrafts(drafts, {
-    ...base,
-    sourceFamily: "activityContent"
-  }, activity.inspection?.testing);
-  addContentBlockDrafts(drafts, {
-    ...base,
-    sourceFamily: "activityContent"
-  }, activity.issues?.commonDeficiencies);
-  addContentBlockDrafts(drafts, {
-    ...base,
-    sourceFamily: "activityContent"
-  }, activity.issues?.escalationTriggers);
-  addContentBlockDrafts(drafts, {
-    ...base,
-    sourceFamily: "activityContent"
-  }, activity.communications?.before);
-  addContentBlockDrafts(drafts, {
-    ...base,
-    sourceFamily: "activityContent"
-  }, activity.communications?.during);
-  addContentBlockDrafts(drafts, {
-    ...base,
-    sourceFamily: "activityContent"
-  }, activity.communications?.issueEscalation);
-  addContentBlockDrafts(drafts, {
-    ...base,
-    sourceFamily: "activityContent"
-  }, activity.communications?.after);
-  addContentBlockDrafts(drafts, {
-    ...base,
-    sourceFamily: "activityContent"
-  }, activity.outputs?.records);
-  addContentBlockDrafts(drafts, {
-    ...base,
-    sourceFamily: "activityContent"
-  }, activity.outputs?.acceptanceEvidence);
-  addContentBlockDrafts(drafts, {
-    ...base,
-    sourceFamily: "activityContent"
-  }, activity.outputs?.followUp);
+  addContentBlockDrafts(
+    drafts,
+    {
+      ...base,
+      sourceFamily: "activityContent"
+    },
+    activity.inspection?.before
+  );
+  addContentBlockDrafts(
+    drafts,
+    {
+      ...base,
+      sourceFamily: "activityContent"
+    },
+    activity.inspection?.during
+  );
+  addContentBlockDrafts(
+    drafts,
+    {
+      ...base,
+      sourceFamily: "activityContent"
+    },
+    activity.inspection?.after
+  );
+  addContentBlockDrafts(
+    drafts,
+    {
+      ...base,
+      sourceFamily: "activityContent"
+    },
+    activity.inspection?.testing
+  );
+  addContentBlockDrafts(
+    drafts,
+    {
+      ...base,
+      sourceFamily: "activityContent"
+    },
+    activity.issues?.commonDeficiencies
+  );
+  addContentBlockDrafts(
+    drafts,
+    {
+      ...base,
+      sourceFamily: "activityContent"
+    },
+    activity.issues?.escalationTriggers
+  );
+  addContentBlockDrafts(
+    drafts,
+    {
+      ...base,
+      sourceFamily: "activityContent"
+    },
+    activity.communications?.before
+  );
+  addContentBlockDrafts(
+    drafts,
+    {
+      ...base,
+      sourceFamily: "activityContent"
+    },
+    activity.communications?.during
+  );
+  addContentBlockDrafts(
+    drafts,
+    {
+      ...base,
+      sourceFamily: "activityContent"
+    },
+    activity.communications?.issueEscalation
+  );
+  addContentBlockDrafts(
+    drafts,
+    {
+      ...base,
+      sourceFamily: "activityContent"
+    },
+    activity.communications?.after
+  );
+  addContentBlockDrafts(
+    drafts,
+    {
+      ...base,
+      sourceFamily: "activityContent"
+    },
+    activity.outputs?.records
+  );
+  addContentBlockDrafts(
+    drafts,
+    {
+      ...base,
+      sourceFamily: "activityContent"
+    },
+    activity.outputs?.acceptanceEvidence
+  );
+  addContentBlockDrafts(
+    drafts,
+    {
+      ...base,
+      sourceFamily: "activityContent"
+    },
+    activity.outputs?.followUp
+  );
 
   if (activity.qualityObjective) {
     addLocalizedDrafts(
@@ -509,7 +581,8 @@ const addLearnContentEntries = (
     objectType: "activity" as const,
     sourceFamily: "learnContent" as const,
     title: titleFor(activityTitle, learnContent.activityId),
-    sectionId: registries.activities.getById(learnContent.activityId)?.sectionId,
+    sectionId: registries.activities.getById(learnContent.activityId)
+      ?.sectionId,
     activityId: learnContent.activityId
   };
 
@@ -550,7 +623,11 @@ const addWorkflowEntries = (drafts: SearchEntryDraft[], workflow: Workflow) => {
     sourceRef: workflow.sourceRef
   };
 
-  addLocalizedDrafts(drafts, { ...base, sourceId: workflow.id }, workflow.title);
+  addLocalizedDrafts(
+    drafts,
+    { ...base, sourceId: workflow.id },
+    workflow.title
+  );
   addLocalizedDrafts(
     drafts,
     { ...base, sourceId: `${workflow.id}:description` },
@@ -558,11 +635,7 @@ const addWorkflowEntries = (drafts: SearchEntryDraft[], workflow: Workflow) => {
   );
 
   for (const stage of workflow.stages ?? []) {
-    addLocalizedDrafts(
-      drafts,
-      { ...base, sourceId: stage.id },
-      stage.title
-    );
+    addLocalizedDrafts(drafts, { ...base, sourceId: stage.id }, stage.title);
     addLocalizedDrafts(
       drafts,
       { ...base, sourceId: `${stage.id}:description` },
@@ -586,7 +659,11 @@ const addPreConcealmentEntries = (
     sourceRef: workflow.sourceRef
   };
 
-  addLocalizedDrafts(drafts, { ...base, sourceId: workflow.id }, workflow.title);
+  addLocalizedDrafts(
+    drafts,
+    { ...base, sourceId: workflow.id },
+    workflow.title
+  );
   addContentBlockDrafts(drafts, base, workflow.criticalChecks);
   addContentBlockDrafts(drafts, base, workflow.evidence);
   addContentBlockDrafts(drafts, base, workflow.blockIf);
@@ -619,6 +696,73 @@ const addGateEntries = (drafts: SearchEntryDraft[], gate: Gate) => {
   );
   addContentBlockDrafts(drafts, base, gate.checkItems);
   addContentBlockDrafts(drafts, base, gate.blockingConditions);
+};
+
+const addGeneralQcProcessEntries = (
+  drafts: SearchEntryDraft[],
+  process: GeneralQcProcess
+) => {
+  const base = {
+    objectId: process.id,
+    objectType: "generalQcProcess" as const,
+    sourceFamily: "generalQcProcess" as const,
+    title: titleFor(process.title, process.id),
+    sourceRef: process.sourceRef
+  };
+
+  addLocalizedDrafts(drafts, { ...base, sourceId: process.id }, process.title);
+  addLocalizedDrafts(
+    drafts,
+    { ...base, sourceId: `${process.id}:summary` },
+    process.summary
+  );
+  addLocalizedDrafts(
+    drafts,
+    { ...base, sourceId: `${process.id}:whenToUse` },
+    process.whenToUse
+  );
+
+  for (const step of process.fieldWorkflow) {
+    addLocalizedDrafts(
+      drafts,
+      { ...base, sourceId: `${process.id}:workflow:${step.sequence}:action` },
+      step.action
+    );
+    addLocalizedDrafts(
+      drafts,
+      { ...base, sourceId: `${process.id}:workflow:${step.sequence}:detail` },
+      step.detail
+    );
+  }
+
+  process.whatToCapture.forEach((item, index) =>
+    addLocalizedDrafts(
+      drafts,
+      { ...base, sourceId: `${process.id}:capture:${index + 1}` },
+      item
+    )
+  );
+  process.keyReminders.forEach((item, index) =>
+    addLocalizedDrafts(
+      drafts,
+      { ...base, sourceId: `${process.id}:reminder:${index + 1}` },
+      item
+    )
+  );
+  process.commonMistakes.forEach((item, index) =>
+    addLocalizedDrafts(
+      drafts,
+      { ...base, sourceId: `${process.id}:mistake:${index + 1}` },
+      item
+    )
+  );
+  process.typicalOutputs.forEach((item, index) =>
+    addLocalizedDrafts(
+      drafts,
+      { ...base, sourceId: `${process.id}:output:${index + 1}` },
+      item
+    )
+  );
 };
 
 const addTerminologyEntries = (
@@ -697,7 +841,10 @@ const addTerminologyEntries = (
   );
 };
 
-const addAcronymEntries = (drafts: SearchEntryDraft[], acronym: AcronymEntry) => {
+const addAcronymEntries = (
+  drafts: SearchEntryDraft[],
+  acronym: AcronymEntry
+) => {
   const preferredTitle = acronym.preferredLabel ?? {
     en:
       acronym.abbreviations.en?.[0] ??
@@ -862,7 +1009,8 @@ const finalizeEntries = (drafts: readonly SearchEntryDraft[]) => {
 
   return entries.sort(
     (left, right) =>
-      objectTypePriority[left.objectType] - objectTypePriority[right.objectType] ||
+      objectTypePriority[left.objectType] -
+        objectTypePriority[right.objectType] ||
       left.objectId.localeCompare(right.objectId) ||
       left.sourceFamily.localeCompare(right.sourceFamily) ||
       left.sourceId.localeCompare(right.sourceId) ||
@@ -876,34 +1024,41 @@ export const buildDerivedSearchIndex = (
 ): DerivedSearchIndex => {
   const drafts: SearchEntryDraft[] = [];
 
-  registries.sections.getAll().forEach((section) =>
-    addSectionEntries(drafts, section)
-  );
-  registries.activities.getAll().forEach((activity) =>
-    addActivityEntries(drafts, activity)
-  );
-  registries.quickViews.getAll().forEach((quickView) =>
-    addQuickViewEntries(drafts, registries, quickView)
-  );
-  registries.learnContent.getAll().forEach((learnContent) =>
-    addLearnContentEntries(drafts, registries, learnContent)
-  );
-  registries.workflows.getAll().forEach((workflow) =>
-    addWorkflowEntries(drafts, workflow)
-  );
-  registries.preConcealmentWorkflows.getAll().forEach((workflow) =>
-    addPreConcealmentEntries(drafts, workflow)
-  );
+  registries.sections
+    .getAll()
+    .forEach((section) => addSectionEntries(drafts, section));
+  registries.activities
+    .getAll()
+    .forEach((activity) => addActivityEntries(drafts, activity));
+  registries.quickViews
+    .getAll()
+    .forEach((quickView) => addQuickViewEntries(drafts, registries, quickView));
+  registries.learnContent
+    .getAll()
+    .forEach((learnContent) =>
+      addLearnContentEntries(drafts, registries, learnContent)
+    );
+  registries.workflows
+    .getAll()
+    .forEach((workflow) => addWorkflowEntries(drafts, workflow));
+  registries.preConcealmentWorkflows
+    .getAll()
+    .forEach((workflow) => addPreConcealmentEntries(drafts, workflow));
   registries.gates.getAll().forEach((gate) => addGateEntries(drafts, gate));
-  registries.terminology.getAll().forEach((concept) =>
-    addTerminologyEntries(drafts, concept)
-  );
-  registries.acronyms.getAll().forEach((acronym) =>
-    addAcronymEntries(drafts, acronym)
-  );
-  registries.relationships.getAll().forEach((relationship) =>
-    addRelationshipEntries(drafts, registries, relationship)
-  );
+  registries.generalQcProcesses
+    .getAll()
+    .forEach((process) => addGeneralQcProcessEntries(drafts, process));
+  registries.terminology
+    .getAll()
+    .forEach((concept) => addTerminologyEntries(drafts, concept));
+  registries.acronyms
+    .getAll()
+    .forEach((acronym) => addAcronymEntries(drafts, acronym));
+  registries.relationships
+    .getAll()
+    .forEach((relationship) =>
+      addRelationshipEntries(drafts, registries, relationship)
+    );
 
   const entries = finalizeEntries(drafts);
 

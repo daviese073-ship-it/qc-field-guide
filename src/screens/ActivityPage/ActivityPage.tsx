@@ -701,6 +701,8 @@ function routeToHref(target: CanonicalRouteTarget) {
       return `/preconcealment/${encodeURIComponent(target.id)}`;
     case "gate":
       return `/gate/${encodeURIComponent(target.id)}`;
+    case "generalQcProcess":
+      return `/general-qc/${encodeURIComponent(target.id)}`;
     case "search":
       return "/search";
     case "term":

@@ -15,6 +15,8 @@ import section14Activities from "@/data/activities/section-14.json";
 import acronyms from "@/data/acronyms/acronyms.json";
 import conditions from "@/data/conditions/conditions.json";
 import gates from "@/data/gates/gates.json";
+import generalQcProcesses from "@/data/generalQc/general-qc-processes.json";
+import generalQcUniversalReference from "@/data/generalQc/universal-field-reference.json";
 import invalidationRules from "@/data/invalidation/invalidation-rules.json";
 import section01Learn from "@/data/learn/section-01.learn.json";
 import section02Learn from "@/data/learn/section-02.learn.json";
@@ -168,6 +170,8 @@ export const productionCanonicalDataset = {
   terminology,
   acronyms,
   uiStrings,
+  generalQcProcesses,
+  generalQcUniversalReference,
   version: {
     schemaVersion: "phase-002",
     contentVersion: "phase-015-production-workflow-preconcealment",

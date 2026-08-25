@@ -4,6 +4,7 @@ import {
   FileText,
   Filter,
   Layers,
+  ClipboardList,
   Search,
   ShieldCheck,
   Workflow
@@ -20,7 +21,6 @@ import { classNames } from "@/utils/classNames";
 
 import { objectTypeLabels } from "../screenLabels";
 import { FieldLayout, RailPanel } from "../screenShared";
-import { GeneralQcProcessesPage } from "../GeneralQcProcessesPage/GeneralQcProcessesPage";
 
 const languageOption = (
   mode: ReturnType<typeof useLanguagePreference>["preference"]["mode"]
@@ -32,6 +32,7 @@ const resultIcons: Record<SearchableObjectType, LucideIcon> = {
   workflow: Workflow,
   preConcealment: ClipboardCheck,
   gate: ShieldCheck,
+  generalQcProcess: ClipboardList,
   term: FileText,
   acronym: FileText
 };
@@ -42,6 +43,7 @@ const resultTone: Record<SearchableObjectType, string> = {
   workflow: "border-emerald-200 bg-emerald-50 text-emerald-700",
   preConcealment: "border-blue-200 bg-blue-50 text-blue-700",
   gate: "border-violet-200 bg-violet-50 text-violet-700",
+  generalQcProcess: "border-cyan-200 bg-cyan-50 text-cyan-700",
   term: "border-purple-200 bg-purple-50 text-purple-700",
   acronym: "border-amber-200 bg-amber-50 text-amber-700"
 };
@@ -59,8 +61,6 @@ export function SearchPage() {
   const [searchParams] = useSearchParams();
   const { preference } = useLanguagePreference();
   const query = searchParams.get("q") ?? "";
-  const isGeneralQcProcessesRoute =
-    query.trim().toLowerCase() === "general qc processes";
   const [draftQuery, setDraftQuery] = useState(query);
   const trimmedQuery = query.trim();
   const results = useMemo(
@@ -84,10 +84,6 @@ export function SearchPage() {
       ),
     [results]
   );
-
-  if (isGeneralQcProcessesRoute) {
-    return <GeneralQcProcessesPage />;
-  }
 
   return (
     <FieldLayout
@@ -292,6 +288,8 @@ function resultHref(result: DerivedSearchResult) {
       return `/preconcealment/${encodeURIComponent(result.objectId)}`;
     case "gate":
       return `/gate/${encodeURIComponent(result.objectId)}`;
+    case "generalQcProcess":
+      return `/general-qc/${encodeURIComponent(result.objectId)}`;
     case "term":
     case "acronym":
       return `/term/${encodeURIComponent(result.objectId)}`;

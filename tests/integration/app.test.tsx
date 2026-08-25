@@ -227,8 +227,8 @@ describe("production route-bound screen composition", () => {
     expect(result).toHaveAttribute("href", "/activity/10.3");
   });
 
-  it("renders the General QC Processes visual screen without old search modules", () => {
-    renderRoute("/search?q=general%20qc%20processes");
+  it("renders the General QC Processes visual screen from its canonical route", () => {
+    renderRoute("/general-qc");
 
     const main = screen.getByRole("main");
 
@@ -245,7 +245,10 @@ describe("production route-bound screen composition", () => {
       "aria-pressed",
       "true"
     );
-    expect(within(main).getByRole("button", { name: "List" })).toBeDisabled();
+    expect(within(main).getByRole("button", { name: "List" })).toHaveAttribute(
+      "aria-pressed",
+      "false"
+    );
     expect(
       within(main).getByRole("heading", { name: "Commonly Used" })
     ).toBeInTheDocument();

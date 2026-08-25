@@ -15,6 +15,7 @@ export type DerivedSearchSourceFamily =
   | "workflow"
   | "preConcealment"
   | "gate"
+  | "generalQcProcess"
   | "terminologyPreferred"
   | "terminologyAlias"
   | "terminologyContent"

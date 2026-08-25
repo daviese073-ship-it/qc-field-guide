@@ -5,6 +5,7 @@ import type {
   ContentBlock,
   ContentItem,
   Gate,
+  GeneralQcProcess,
   InvalidationRule,
   LearnContent,
   PreConcealmentWorkflow,
@@ -670,6 +671,40 @@ const validateAcronymEntry = (
   );
 };
 
+const validateGeneralQcProcess = (
+  process: GeneralQcProcess,
+  registries: CanonicalRegistries,
+  errors: string[]
+) => {
+  const context = `GeneralQcProcess "${process.id}"`;
+  const workflowSequences = process.fieldWorkflow.map((step) => step.sequence);
+  const expectedWorkflowSequences = Array.from(
+    { length: workflowSequences.length },
+    (_, index) => index + 1
+  );
+
+  if (
+    workflowSequences.some(
+      (sequence, index) => sequence !== expectedWorkflowSequences[index]
+    )
+  ) {
+    errors.push(`${context} workflow sequence must start at 1 without gaps`);
+  }
+
+  for (const relatedProcessId of process.relatedProcessIds) {
+    if (relatedProcessId === process.id) {
+      errors.push(`${context} has an unsupported self related-process link`);
+      continue;
+    }
+
+    requireReference(
+      errors,
+      registries.generalQcProcesses.has(relatedProcessId),
+      `${context} references missing related process "${relatedProcessId}"`
+    );
+  }
+};
+
 export const validateReferentialIntegrity = (
   registries: CanonicalRegistries
 ): readonly string[] => {
@@ -704,6 +739,9 @@ export const validateReferentialIntegrity = (
   }
   for (const acronym of registries.acronyms.getAll()) {
     validateAcronymEntry(acronym, registries, errors);
+  }
+  for (const process of registries.generalQcProcesses.getAll()) {
+    validateGeneralQcProcess(process, registries, errors);
   }
 
   return errors;
