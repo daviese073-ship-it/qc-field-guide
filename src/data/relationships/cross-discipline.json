@@ -1,0 +1,222 @@
+[
+  {
+    "id": "REL-11.1-INTERFACES_WITH-3.3",
+    "sourceId": "11.1",
+    "type": "INTERFACES_WITH",
+    "targetId": "3.3",
+    "direction": "reciprocal",
+    "strength": "coordination"
+  },
+  {
+    "id": "REL-11.1-INTERFACES_WITH-4.1",
+    "sourceId": "11.1",
+    "type": "INTERFACES_WITH",
+    "targetId": "4.1",
+    "direction": "reciprocal",
+    "strength": "coordination"
+  },
+  {
+    "id": "REL-11.1-INTERFACES_WITH-5.1",
+    "sourceId": "11.1",
+    "type": "INTERFACES_WITH",
+    "targetId": "5.1",
+    "direction": "reciprocal",
+    "strength": "coordination"
+  },
+  {
+    "id": "REL-11.1-INTERFACES_WITH-6.2",
+    "sourceId": "11.1",
+    "type": "INTERFACES_WITH",
+    "targetId": "6.2",
+    "direction": "reciprocal",
+    "strength": "coordination"
+  },
+  {
+    "id": "REL-11.1-INTERFACES_WITH-7.1",
+    "sourceId": "11.1",
+    "type": "INTERFACES_WITH",
+    "targetId": "7.1",
+    "direction": "reciprocal",
+    "strength": "coordination"
+  },
+  {
+    "id": "REL-11.2-INTERFACES_WITH-3.1",
+    "sourceId": "11.2",
+    "type": "INTERFACES_WITH",
+    "targetId": "3.1",
+    "direction": "reciprocal",
+    "strength": "coordination"
+  },
+  {
+    "id": "REL-11.2-INTERFACES_WITH-8.6",
+    "sourceId": "11.2",
+    "type": "INTERFACES_WITH",
+    "targetId": "8.6",
+    "direction": "reciprocal",
+    "strength": "coordination"
+  },
+  {
+    "id": "REL-11.3-INTERFACES_WITH-3.1",
+    "sourceId": "11.3",
+    "type": "INTERFACES_WITH",
+    "targetId": "3.1",
+    "direction": "reciprocal",
+    "strength": "coordination"
+  },
+  {
+    "id": "REL-11.3-INTERFACES_WITH-9.1",
+    "sourceId": "11.3",
+    "type": "INTERFACES_WITH",
+    "targetId": "9.1",
+    "direction": "reciprocal",
+    "strength": "coordination"
+  },
+  {
+    "id": "REL-11.4-INTERFACES_WITH-4.2-whereExteriorEnvelope",
+    "sourceId": "11.4",
+    "type": "INTERFACES_WITH",
+    "targetId": "4.2",
+    "direction": "reciprocal",
+    "conditionId": "whereExteriorEnvelope",
+    "strength": "coordination"
+  },
+  {
+    "id": "REL-11.4-INTERFACES_WITH-8.9-whereExterior",
+    "sourceId": "11.4",
+    "type": "INTERFACES_WITH",
+    "targetId": "8.9",
+    "direction": "reciprocal",
+    "conditionId": "whereExterior",
+    "strength": "coordination"
+  },
+  {
+    "id": "REL-11.5-INTERFACES_WITH-4.2-whereExteriorEnvelope",
+    "sourceId": "11.5",
+    "type": "INTERFACES_WITH",
+    "targetId": "4.2",
+    "direction": "reciprocal",
+    "conditionId": "whereExteriorEnvelope",
+    "strength": "coordination"
+  },
+  {
+    "id": "REL-11.5-INTERFACES_WITH-9.9-whereExterior",
+    "sourceId": "11.5",
+    "type": "INTERFACES_WITH",
+    "targetId": "9.9",
+    "direction": "reciprocal",
+    "conditionId": "whereExterior",
+    "strength": "coordination"
+  },
+  {
+    "id": "REL-11.6-INTERFACES_WITH-6.4-whereConcealed",
+    "sourceId": "11.6",
+    "type": "INTERFACES_WITH",
+    "targetId": "6.4",
+    "direction": "reciprocal",
+    "conditionId": "whereConcealed",
+    "strength": "coordination"
+  },
+  {
+    "id": "REL-11.6-INTERFACES_WITH-8.9-whereConcealed",
+    "sourceId": "11.6",
+    "type": "INTERFACES_WITH",
+    "targetId": "8.9",
+    "direction": "reciprocal",
+    "conditionId": "whereConcealed",
+    "strength": "coordination"
+  },
+  {
+    "id": "REL-11.6-INTERFACES_WITH-9.9-whereConcealed",
+    "sourceId": "11.6",
+    "type": "INTERFACES_WITH",
+    "targetId": "9.9",
+    "direction": "reciprocal",
+    "conditionId": "whereConcealed",
+    "strength": "coordination"
+  },
+  {
+    "id": "REL-9.6-INTERFACES_WITH-11.8-whereApplicable",
+    "sourceId": "9.6",
+    "type": "INTERFACES_WITH",
+    "targetId": "11.8",
+    "direction": "reciprocal",
+    "conditionId": "whereApplicable",
+    "strength": "coordination"
+  },
+  {
+    "id": "REL-8.6-INTERFACES_WITH-11.9-whereEquipmentPresent",
+    "sourceId": "8.6",
+    "type": "INTERFACES_WITH",
+    "targetId": "11.9",
+    "direction": "reciprocal",
+    "conditionId": "whereEquipmentPresent",
+    "strength": "conditional"
+  },
+  {
+    "id": "REL-8.8-ACCESS_CHECKED_BY-11.10-whereApplicable",
+    "sourceId": "8.8",
+    "type": "ACCESS_CHECKED_BY",
+    "targetId": "11.10",
+    "direction": "directed",
+    "conditionId": "whereApplicable",
+    "strength": "conditional"
+  },
+  {
+    "id": "REL-9.4-ACCESS_CHECKED_BY-11.10-whereApplicable",
+    "sourceId": "9.4",
+    "type": "ACCESS_CHECKED_BY",
+    "targetId": "11.10",
+    "direction": "directed",
+    "conditionId": "whereApplicable",
+    "strength": "conditional"
+  },
+  {
+    "id": "REL-9.5-ACCESS_CHECKED_BY-11.10-whereApplicable",
+    "sourceId": "9.5",
+    "type": "ACCESS_CHECKED_BY",
+    "targetId": "11.10",
+    "direction": "directed",
+    "conditionId": "whereApplicable",
+    "strength": "conditional"
+  },
+  {
+    "id": "REL-8.5-INTERFACES_WITH-11.11",
+    "sourceId": "8.5",
+    "type": "INTERFACES_WITH",
+    "targetId": "11.11",
+    "direction": "reciprocal",
+    "strength": "coordination"
+  },
+  {
+    "id": "REL-9.2-INTERFACES_WITH-11.11",
+    "sourceId": "9.2",
+    "type": "INTERFACES_WITH",
+    "targetId": "11.11",
+    "direction": "reciprocal",
+    "strength": "coordination"
+  },
+  {
+    "id": "REL-9.1-INTERFACES_WITH-11.11",
+    "sourceId": "9.1",
+    "type": "INTERFACES_WITH",
+    "targetId": "11.11",
+    "direction": "reciprocal",
+    "strength": "coordination"
+  },
+  {
+    "id": "REL-10.8-INTERFACES_WITH-11.11",
+    "sourceId": "10.8",
+    "type": "INTERFACES_WITH",
+    "targetId": "11.11",
+    "direction": "reciprocal",
+    "strength": "coordination"
+  },
+  {
+    "id": "REL-6.8-INTERFACES_WITH-11.11",
+    "sourceId": "6.8",
+    "type": "INTERFACES_WITH",
+    "targetId": "11.11",
+    "direction": "reciprocal",
+    "strength": "coordination"
+  }
+]

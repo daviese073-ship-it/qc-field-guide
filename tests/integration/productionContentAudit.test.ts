@@ -91,23 +91,27 @@ describe("Phase 010 production content audit", () => {
     expect(report.errors.join("\n")).toMatch(/placeholder-like text/);
   });
 
-  it("fails when later-phase production relationship data appears", () => {
+  it("fails when later-phase production presentation data appears", () => {
     const dataset = validatedProductionDataset();
 
-    dataset.relationships.push({
-      id: "REL-SHOULD-NOT-EXIST",
-      sourceId: "1.1",
-      type: "REQUIRES",
-      targetId: "1.2",
-      direction: "directed",
-      strength: "hard"
+    dataset.quickViews.push({
+      activityId: "1.1",
+      before: [
+        {
+          type: "paragraph",
+          item: {
+            id: "QV-SHOULD-NOT-EXIST",
+            text: { en: "Phase 014 presentation fixture" }
+          }
+        }
+      ]
     });
 
     const report = auditProductionContentDataset(dataset);
 
     expect(report.ok).toBe(false);
     expect(report.errors).toContain(
-      "Production relationships contains 1 records before its authorized phase."
+      "Production quickViews contains 1 records before its authorized phase."
     );
   });
 });

@@ -18,7 +18,6 @@ const contentBlockFields = [
 ] as const;
 
 const laterPhaseCollections = [
-  "relationships",
   "quickViews",
   "learnContent",
   "workflows",

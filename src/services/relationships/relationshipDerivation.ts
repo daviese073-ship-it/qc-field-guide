@@ -250,6 +250,30 @@ export const deriveTesting = (
   registries: CanonicalRegistries
 ) => deriveOutgoingByType(nodeId, ["TESTED_BY"], registries);
 
+export const deriveTestedSystems = (
+  testNodeId: string,
+  registries: CanonicalRegistries
+) =>
+  dedupeByRelatedNode(
+    registries.relationships.getAll().flatMap((relationship) => {
+      if (
+        relationship.type !== "TESTED_BY" ||
+        relationship.targetId !== testNodeId
+      ) {
+        return [];
+      }
+
+      const item = resolveItem(
+        relationship,
+        relationship.sourceId,
+        "incoming",
+        registries
+      );
+
+      return item ? [item] : [];
+    })
+  );
+
 export const deriveCommissioning = (
   nodeId: string,
   registries: CanonicalRegistries

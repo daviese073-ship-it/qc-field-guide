@@ -251,12 +251,6 @@ export const auditProductionLogicDataset = (
     }
   }
 
-  if (dataset.relationships.length > 0) {
-    errors.push(
-      `Production relationships contains ${dataset.relationships.length} records before Phase 012.`
-    );
-  }
-
   if (!invalidationSeverities.has("low")) {
     errors.push("Production invalidation rules do not cover low severity.");
   }

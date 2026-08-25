@@ -12,6 +12,10 @@ import {
   auditProductionLogicDataset,
   formatProductionLogicAuditReport
 } from "./productionLogicAudit";
+import {
+  auditProductionRelationshipDataset,
+  formatProductionRelationshipAuditReport
+} from "./productionRelationshipAudit";
 import { validateCanonicalDataset } from "./validateCanonicalDataset";
 
 try {
@@ -23,6 +27,10 @@ try {
     productionValidation.dataset
   );
   const logicAudit = auditProductionLogicDataset(productionValidation.dataset);
+  const relationshipAudit = auditProductionRelationshipDataset(
+    productionValidation.dataset,
+    productionValidation.registries
+  );
 
   if (!contentAudit.ok) {
     throw new CanonicalDataValidationError(
@@ -35,6 +43,13 @@ try {
     throw new CanonicalDataValidationError(
       "Canonical production logic validation failed.",
       logicAudit.errors
+    );
+  }
+
+  if (!relationshipAudit.ok) {
+    throw new CanonicalDataValidationError(
+      "Canonical production relationship validation failed.",
+      relationshipAudit.errors
     );
   }
 
@@ -51,7 +66,8 @@ try {
       `Production relationships: ${productionValidation.registries.relationships.getAll().length}`,
       `Production gates: ${productionValidation.registries.gates.getAll().length}`,
       formatProductionContentAuditReport(contentAudit),
-      formatProductionLogicAuditReport(logicAudit)
+      formatProductionLogicAuditReport(logicAudit),
+      formatProductionRelationshipAuditReport(relationshipAudit)
     ].join("\n")
   );
 } catch (error) {

@@ -9,6 +9,7 @@ import {
   deriveGates,
   deriveInterfaces,
   deriveNavigationGroups,
+  deriveTestedSystems,
   deriveTesting,
   deriveWorkflows
 } from "./relationshipDerivation";
@@ -25,6 +26,8 @@ export const createRelationshipService = (registries: CanonicalRegistries) =>
       deriveControlledByGate(gateId, registries),
     getWorkflows: (nodeId: string) => deriveWorkflows(nodeId, registries),
     getTesting: (nodeId: string) => deriveTesting(nodeId, registries),
+    getTestedSystems: (testNodeId: string) =>
+      deriveTestedSystems(testNodeId, registries),
     getCommissioning: (nodeId: string) =>
       deriveCommissioning(nodeId, registries),
     getCloseout: (nodeId: string) => deriveCloseout(nodeId, registries)

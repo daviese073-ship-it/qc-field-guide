@@ -125,11 +125,12 @@ history.
 - no unsupported/invented Phase 011 logic records;
 - no project-QMS fields such as approver, signature, release timestamp, or live
   project status;
-- no production relationship records before Phase 012.
+- exact Phase 012 relationship validation now verifies production relationship
+  records separately.
 
 The Phase 010 production content audit was narrowed so it no longer blocks
 Phase-011-authorized logic records, while still protecting the production
-technical activity catalogue and future relationship/presentation/terminology
+technical activity catalogue and future presentation/terminology
 boundaries.
 
 ## Deliberately Deferred
@@ -146,4 +147,5 @@ Phase 011 does not implement:
 - Quick, Learn, workflows, or pre-concealment presentation data;
 - UI rendering of logic records.
 
-Phase 012 owns the production relationship registry.
+Phase 012 owns the production relationship registry and is documented in
+`production-relationship-registry.md`.

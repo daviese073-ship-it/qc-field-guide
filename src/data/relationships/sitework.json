@@ -1,0 +1,121 @@
+[
+  {
+    "id": "REL-1.2-REQUIRES-1.1",
+    "sourceId": "1.2",
+    "type": "REQUIRES",
+    "targetId": "1.1",
+    "direction": "directed",
+    "strength": "hard"
+  },
+  {
+    "id": "REL-1.3-REQUIRES-1.2",
+    "sourceId": "1.3",
+    "type": "REQUIRES",
+    "targetId": "1.2",
+    "direction": "directed",
+    "strength": "hard"
+  },
+  {
+    "id": "REL-1.4-REQUIRES-1.3",
+    "sourceId": "1.4",
+    "type": "REQUIRES",
+    "targetId": "1.3",
+    "direction": "directed",
+    "strength": "hard"
+  },
+  {
+    "id": "REL-1.5-REQUIRES-1.4",
+    "sourceId": "1.5",
+    "type": "REQUIRES",
+    "targetId": "1.4",
+    "direction": "directed",
+    "strength": "hard"
+  },
+  {
+    "id": "REL-1.7-REQUIRES-1.3-whereApplicable",
+    "sourceId": "1.7",
+    "type": "REQUIRES",
+    "targetId": "1.3",
+    "direction": "directed",
+    "conditionId": "whereApplicable",
+    "strength": "conditional"
+  },
+  {
+    "id": "REL-1.7-REQUIRES-1.2",
+    "sourceId": "1.7",
+    "type": "REQUIRES",
+    "targetId": "1.2",
+    "direction": "directed",
+    "strength": "hard"
+  },
+  {
+    "id": "REL-1.6-GATED_BY-G-EXT-01-whereBuried",
+    "sourceId": "1.6",
+    "type": "GATED_BY",
+    "targetId": "G-EXT-01",
+    "direction": "directed",
+    "conditionId": "whereBuried",
+    "strength": "conditional"
+  },
+  {
+    "id": "REL-1.3-INTERFACES_WITH-12.2",
+    "sourceId": "1.3",
+    "type": "INTERFACES_WITH",
+    "targetId": "12.2",
+    "direction": "reciprocal",
+    "strength": "coordination"
+  },
+  {
+    "id": "REL-1.3-INTERFACES_WITH-12.1",
+    "sourceId": "1.3",
+    "type": "INTERFACES_WITH",
+    "targetId": "12.1",
+    "direction": "reciprocal",
+    "strength": "coordination"
+  },
+  {
+    "id": "REL-1.4-INTERFACES_WITH-2.8-whereApplicable",
+    "sourceId": "1.4",
+    "type": "INTERFACES_WITH",
+    "targetId": "2.8",
+    "direction": "reciprocal",
+    "conditionId": "whereApplicable",
+    "strength": "conditional"
+  },
+  {
+    "id": "REL-1.5-INTERFACES_WITH-2.8-whereApplicable",
+    "sourceId": "1.5",
+    "type": "INTERFACES_WITH",
+    "targetId": "2.8",
+    "direction": "reciprocal",
+    "conditionId": "whereApplicable",
+    "strength": "conditional"
+  },
+  {
+    "id": "REL-1.6-INTERFACES_WITH-2.12-whereBuried",
+    "sourceId": "1.6",
+    "type": "INTERFACES_WITH",
+    "targetId": "2.12",
+    "direction": "reciprocal",
+    "conditionId": "whereBuried",
+    "strength": "conditional"
+  },
+  {
+    "id": "REL-1.7-INTERFACES_WITH-2.11-whereApplicable",
+    "sourceId": "1.7",
+    "type": "INTERFACES_WITH",
+    "targetId": "2.11",
+    "direction": "reciprocal",
+    "conditionId": "whereApplicable",
+    "strength": "conditional"
+  },
+  {
+    "id": "REL-1.7-INTERFACES_WITH-12.4-whereExterior",
+    "sourceId": "1.7",
+    "type": "INTERFACES_WITH",
+    "targetId": "12.4",
+    "direction": "reciprocal",
+    "conditionId": "whereExterior",
+    "strength": "conditional"
+  }
+]

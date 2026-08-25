@@ -1,0 +1,362 @@
+[
+  {
+    "id": "REL-4.1-REQUIRES-3.3-whereExterior",
+    "sourceId": "4.1",
+    "type": "REQUIRES",
+    "targetId": "3.3",
+    "direction": "directed",
+    "conditionId": "whereExterior",
+    "strength": "conditional"
+  },
+  {
+    "id": "REL-4.2-REQUIRES-4.5-whereExteriorEnvelope",
+    "sourceId": "4.2",
+    "type": "REQUIRES",
+    "targetId": "4.5",
+    "direction": "directed",
+    "conditionId": "whereExteriorEnvelope",
+    "strength": "hard"
+  },
+  {
+    "id": "REL-4.4-REQUIRES-4.2-whereExteriorEnvelope",
+    "sourceId": "4.4",
+    "type": "REQUIRES",
+    "targetId": "4.2",
+    "direction": "directed",
+    "conditionId": "whereExteriorEnvelope",
+    "strength": "conditional"
+  },
+  {
+    "id": "REL-4.6-REQUIRES-4.2-whereExterior",
+    "sourceId": "4.6",
+    "type": "REQUIRES",
+    "targetId": "4.2",
+    "direction": "directed",
+    "conditionId": "whereExterior",
+    "strength": "conditional"
+  },
+  {
+    "id": "REL-4.6-REQUIRES-4.4-whereExterior",
+    "sourceId": "4.6",
+    "type": "REQUIRES",
+    "targetId": "4.4",
+    "direction": "directed",
+    "conditionId": "whereExterior",
+    "strength": "conditional"
+  },
+  {
+    "id": "REL-4.7-REQUIRES-4.2-whereExterior",
+    "sourceId": "4.7",
+    "type": "REQUIRES",
+    "targetId": "4.2",
+    "direction": "directed",
+    "conditionId": "whereExterior",
+    "strength": "conditional"
+  },
+  {
+    "id": "REL-4.7-REQUIRES-4.4-whereExterior",
+    "sourceId": "4.7",
+    "type": "REQUIRES",
+    "targetId": "4.4",
+    "direction": "directed",
+    "conditionId": "whereExterior",
+    "strength": "conditional"
+  },
+  {
+    "id": "REL-4.8-REQUIRES-4.1-whereExterior",
+    "sourceId": "4.8",
+    "type": "REQUIRES",
+    "targetId": "4.1",
+    "direction": "directed",
+    "conditionId": "whereExterior",
+    "strength": "hard"
+  },
+  {
+    "id": "REL-4.9-REQUIRES-4.1-whereExterior",
+    "sourceId": "4.9",
+    "type": "REQUIRES",
+    "targetId": "4.1",
+    "direction": "directed",
+    "conditionId": "whereExterior",
+    "strength": "hard"
+  },
+  {
+    "id": "REL-4.10-REQUIRES-4.8-whereExterior",
+    "sourceId": "4.10",
+    "type": "REQUIRES",
+    "targetId": "4.8",
+    "direction": "directed",
+    "conditionId": "whereExterior",
+    "strength": "conditional"
+  },
+  {
+    "id": "REL-4.10-REQUIRES-4.9-whereExterior",
+    "sourceId": "4.10",
+    "type": "REQUIRES",
+    "targetId": "4.9",
+    "direction": "directed",
+    "conditionId": "whereExterior",
+    "strength": "conditional"
+  },
+  {
+    "id": "REL-4.10-REQUIRES-4.6-whereExterior",
+    "sourceId": "4.10",
+    "type": "REQUIRES",
+    "targetId": "4.6",
+    "direction": "directed",
+    "conditionId": "whereExterior",
+    "strength": "conditional"
+  },
+  {
+    "id": "REL-4.10-REQUIRES-4.7-whereExterior",
+    "sourceId": "4.10",
+    "type": "REQUIRES",
+    "targetId": "4.7",
+    "direction": "directed",
+    "conditionId": "whereExterior",
+    "strength": "conditional"
+  },
+  {
+    "id": "REL-4.2-INTERFACES_WITH-5.2-whereRoof",
+    "sourceId": "4.2",
+    "type": "INTERFACES_WITH",
+    "targetId": "5.2",
+    "direction": "reciprocal",
+    "conditionId": "whereRoof",
+    "strength": "conditional"
+  },
+  {
+    "id": "REL-4.2-INTERFACES_WITH-4.8-whereExterior",
+    "sourceId": "4.2",
+    "type": "INTERFACES_WITH",
+    "targetId": "4.8",
+    "direction": "reciprocal",
+    "conditionId": "whereExterior",
+    "strength": "conditional"
+  },
+  {
+    "id": "REL-4.2-INTERFACES_WITH-4.9-whereExterior",
+    "sourceId": "4.2",
+    "type": "INTERFACES_WITH",
+    "targetId": "4.9",
+    "direction": "reciprocal",
+    "conditionId": "whereExterior",
+    "strength": "conditional"
+  },
+  {
+    "id": "REL-4.2-INTERFACES_WITH-8.9-whereExterior",
+    "sourceId": "4.2",
+    "type": "INTERFACES_WITH",
+    "targetId": "8.9",
+    "direction": "reciprocal",
+    "conditionId": "whereExterior",
+    "strength": "conditional"
+  },
+  {
+    "id": "REL-4.2-INTERFACES_WITH-9.9-whereExterior",
+    "sourceId": "4.2",
+    "type": "INTERFACES_WITH",
+    "targetId": "9.9",
+    "direction": "reciprocal",
+    "conditionId": "whereExterior",
+    "strength": "conditional"
+  },
+  {
+    "id": "REL-4.3-INTERFACES_WITH-5.2-whereRoof",
+    "sourceId": "4.3",
+    "type": "INTERFACES_WITH",
+    "targetId": "5.2",
+    "direction": "reciprocal",
+    "conditionId": "whereRoof",
+    "strength": "conditional"
+  },
+  {
+    "id": "REL-4.3-INTERFACES_WITH-8.9-whereExterior",
+    "sourceId": "4.3",
+    "type": "INTERFACES_WITH",
+    "targetId": "8.9",
+    "direction": "reciprocal",
+    "conditionId": "whereExterior",
+    "strength": "conditional"
+  },
+  {
+    "id": "REL-4.3-INTERFACES_WITH-9.9-whereExterior",
+    "sourceId": "4.3",
+    "type": "INTERFACES_WITH",
+    "targetId": "9.9",
+    "direction": "reciprocal",
+    "conditionId": "whereExterior",
+    "strength": "conditional"
+  },
+  {
+    "id": "REL-4.4-INTERFACES_WITH-4.8-whereExterior",
+    "sourceId": "4.4",
+    "type": "INTERFACES_WITH",
+    "targetId": "4.8",
+    "direction": "reciprocal",
+    "conditionId": "whereExterior",
+    "strength": "conditional"
+  },
+  {
+    "id": "REL-4.4-INTERFACES_WITH-4.9-whereExterior",
+    "sourceId": "4.4",
+    "type": "INTERFACES_WITH",
+    "targetId": "4.9",
+    "direction": "reciprocal",
+    "conditionId": "whereExterior",
+    "strength": "conditional"
+  },
+  {
+    "id": "REL-4.4-INTERFACES_WITH-5.3-whereRoof",
+    "sourceId": "4.4",
+    "type": "INTERFACES_WITH",
+    "targetId": "5.3",
+    "direction": "reciprocal",
+    "conditionId": "whereRoof",
+    "strength": "conditional"
+  },
+  {
+    "id": "REL-4.6-INTERFACES_WITH-4.8-whereExterior",
+    "sourceId": "4.6",
+    "type": "INTERFACES_WITH",
+    "targetId": "4.8",
+    "direction": "reciprocal",
+    "conditionId": "whereExterior",
+    "strength": "conditional"
+  },
+  {
+    "id": "REL-4.6-INTERFACES_WITH-4.9-whereExterior",
+    "sourceId": "4.6",
+    "type": "INTERFACES_WITH",
+    "targetId": "4.9",
+    "direction": "reciprocal",
+    "conditionId": "whereExterior",
+    "strength": "conditional"
+  },
+  {
+    "id": "REL-4.6-INTERFACES_WITH-4.10-whereExterior",
+    "sourceId": "4.6",
+    "type": "INTERFACES_WITH",
+    "targetId": "4.10",
+    "direction": "reciprocal",
+    "conditionId": "whereExterior",
+    "strength": "conditional"
+  },
+  {
+    "id": "REL-4.7-INTERFACES_WITH-4.8-whereExterior",
+    "sourceId": "4.7",
+    "type": "INTERFACES_WITH",
+    "targetId": "4.8",
+    "direction": "reciprocal",
+    "conditionId": "whereExterior",
+    "strength": "conditional"
+  },
+  {
+    "id": "REL-4.7-INTERFACES_WITH-4.9-whereExterior",
+    "sourceId": "4.7",
+    "type": "INTERFACES_WITH",
+    "targetId": "4.9",
+    "direction": "reciprocal",
+    "conditionId": "whereExterior",
+    "strength": "conditional"
+  },
+  {
+    "id": "REL-4.7-INTERFACES_WITH-4.10-whereExterior",
+    "sourceId": "4.7",
+    "type": "INTERFACES_WITH",
+    "targetId": "4.10",
+    "direction": "reciprocal",
+    "conditionId": "whereExterior",
+    "strength": "conditional"
+  },
+  {
+    "id": "REL-4.8-TESTED_BY-13.5-whereTestingRequired",
+    "sourceId": "4.8",
+    "type": "TESTED_BY",
+    "targetId": "13.5",
+    "direction": "directed",
+    "conditionId": "whereTestingRequired",
+    "strength": "conditional"
+  },
+  {
+    "id": "REL-4.9-TESTED_BY-13.5-whereSpecified",
+    "sourceId": "4.9",
+    "type": "TESTED_BY",
+    "targetId": "13.5",
+    "direction": "directed",
+    "conditionId": "whereSpecified",
+    "strength": "conditional"
+  },
+  {
+    "id": "REL-4.1-TESTED_BY-13.5-whereApplicable",
+    "sourceId": "4.1",
+    "type": "TESTED_BY",
+    "targetId": "13.5",
+    "direction": "directed",
+    "conditionId": "whereApplicable",
+    "strength": "conditional"
+  },
+  {
+    "id": "REL-4.2-GATED_BY-G-ENV-01-whereExteriorEnvelope",
+    "sourceId": "4.2",
+    "type": "GATED_BY",
+    "targetId": "G-ENV-01",
+    "direction": "directed",
+    "conditionId": "whereExteriorEnvelope",
+    "strength": "conditional"
+  },
+  {
+    "id": "REL-4.3-GATED_BY-G-ENV-01-whereExteriorEnvelope",
+    "sourceId": "4.3",
+    "type": "GATED_BY",
+    "targetId": "G-ENV-01",
+    "direction": "directed",
+    "conditionId": "whereExteriorEnvelope",
+    "strength": "conditional"
+  },
+  {
+    "id": "REL-4.4-GATED_BY-G-ENV-01-whereExteriorEnvelope",
+    "sourceId": "4.4",
+    "type": "GATED_BY",
+    "targetId": "G-ENV-01",
+    "direction": "directed",
+    "conditionId": "whereExteriorEnvelope",
+    "strength": "conditional"
+  },
+  {
+    "id": "REL-4.5-GATED_BY-G-ENV-01-whereExteriorEnvelope",
+    "sourceId": "4.5",
+    "type": "GATED_BY",
+    "targetId": "G-ENV-01",
+    "direction": "directed",
+    "conditionId": "whereExteriorEnvelope",
+    "strength": "conditional"
+  },
+  {
+    "id": "REL-4.8-GATED_BY-G-ENV-01-whereExterior",
+    "sourceId": "4.8",
+    "type": "GATED_BY",
+    "targetId": "G-ENV-01",
+    "direction": "directed",
+    "conditionId": "whereExterior",
+    "strength": "conditional"
+  },
+  {
+    "id": "REL-4.9-GATED_BY-G-ENV-01-whereExterior",
+    "sourceId": "4.9",
+    "type": "GATED_BY",
+    "targetId": "G-ENV-01",
+    "direction": "directed",
+    "conditionId": "whereExterior",
+    "strength": "conditional"
+  },
+  {
+    "id": "REL-4.10-GATED_BY-G-ENV-01-whereExterior",
+    "sourceId": "4.10",
+    "type": "GATED_BY",
+    "targetId": "G-ENV-01",
+    "direction": "directed",
+    "conditionId": "whereExterior",
+    "strength": "conditional"
+  }
+]

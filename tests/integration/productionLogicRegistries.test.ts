@@ -176,10 +176,12 @@ describe("Phase 011 production logic registries", () => {
     );
   });
 
-  it("continues to defer Phase 012 production relationship records", () => {
+  it("keeps Phase 011 logic counts intact after relationship data is added", () => {
     const report = auditProductionLogicDataset(validatedProductionDataset());
 
     expect(report.ok).toBe(true);
-    expect(productionCanonicalDataset.relationships).toHaveLength(0);
+    expect(report.conditionCount).toBe(14);
+    expect(report.gateCount).toBe(15);
+    expect(report.invalidationRuleCount).toBe(37);
   });
 });

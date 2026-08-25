@@ -15,6 +15,17 @@ import section14Activities from "@/data/activities/section-14.json";
 import conditions from "@/data/conditions/conditions.json";
 import gates from "@/data/gates/gates.json";
 import invalidationRules from "@/data/invalidation/invalidation-rules.json";
+import crossDisciplineRelationships from "@/data/relationships/cross-discipline.json";
+import electricalRelationships from "@/data/relationships/electrical.json";
+import envelopeRelationships from "@/data/relationships/envelope.json";
+import externalRelationships from "@/data/relationships/external.json";
+import fireLifeSafetyRelationships from "@/data/relationships/fire-life-safety.json";
+import interiorsRelationships from "@/data/relationships/interiors.json";
+import mechanicalRelationships from "@/data/relationships/mechanical.json";
+import roofingRelationships from "@/data/relationships/roofing.json";
+import siteworkRelationships from "@/data/relationships/sitework.json";
+import structuralRelationships from "@/data/relationships/structural.json";
+import testingCloseoutRelationships from "@/data/relationships/testing-closeout.json";
 import sections from "@/data/sections/sections.json";
 
 const activities = [
@@ -34,12 +45,26 @@ const activities = [
   ...section14Activities
 ];
 
+const relationships = [
+  ...siteworkRelationships,
+  ...structuralRelationships,
+  ...envelopeRelationships,
+  ...roofingRelationships,
+  ...interiorsRelationships,
+  ...mechanicalRelationships,
+  ...electricalRelationships,
+  ...fireLifeSafetyRelationships,
+  ...externalRelationships,
+  ...testingCloseoutRelationships,
+  ...crossDisciplineRelationships
+];
+
 export const productionCanonicalDataset = {
   sections,
   activities,
   quickViews: [],
   learnContent: [],
-  relationships: [],
+  relationships,
   gates,
   invalidationRules,
   conditions,
@@ -50,7 +75,7 @@ export const productionCanonicalDataset = {
   uiStrings: [],
   version: {
     schemaVersion: "phase-002",
-    contentVersion: "phase-011-production-logic-registries",
+    contentVersion: "phase-012-production-relationship-registry",
     terminologyVersion: "not-populated"
   }
 };

@@ -1,0 +1,255 @@
+[
+  {
+    "id": "REL-5.2-REQUIRES-5.1",
+    "sourceId": "5.2",
+    "type": "REQUIRES",
+    "targetId": "5.1",
+    "direction": "directed",
+    "strength": "hard"
+  },
+  {
+    "id": "REL-5.3-REQUIRES-5.2",
+    "sourceId": "5.3",
+    "type": "REQUIRES",
+    "targetId": "5.2",
+    "direction": "directed",
+    "strength": "hard"
+  },
+  {
+    "id": "REL-5.4-REQUIRES-5.3",
+    "sourceId": "5.4",
+    "type": "REQUIRES",
+    "targetId": "5.3",
+    "direction": "directed",
+    "strength": "hard"
+  },
+  {
+    "id": "REL-5.5-REQUIRES-5.4",
+    "sourceId": "5.5",
+    "type": "REQUIRES",
+    "targetId": "5.4",
+    "direction": "directed",
+    "strength": "hard"
+  },
+  {
+    "id": "REL-5.6-REQUIRES-5.4-whereRoof",
+    "sourceId": "5.6",
+    "type": "REQUIRES",
+    "targetId": "5.4",
+    "direction": "directed",
+    "conditionId": "whereRoof",
+    "strength": "conditional"
+  },
+  {
+    "id": "REL-5.7-REQUIRES-5.4-whereEquipmentPresent",
+    "sourceId": "5.7",
+    "type": "REQUIRES",
+    "targetId": "5.4",
+    "direction": "directed",
+    "conditionId": "whereEquipmentPresent",
+    "strength": "conditional"
+  },
+  {
+    "id": "REL-5.8-REQUIRES-5.4-whereRoof",
+    "sourceId": "5.8",
+    "type": "REQUIRES",
+    "targetId": "5.4",
+    "direction": "directed",
+    "conditionId": "whereRoof",
+    "strength": "conditional"
+  },
+  {
+    "id": "REL-5.9-REQUIRES-5.1-whereApplicable",
+    "sourceId": "5.9",
+    "type": "REQUIRES",
+    "targetId": "5.1",
+    "direction": "directed",
+    "conditionId": "whereApplicable",
+    "strength": "conditional"
+  },
+  {
+    "id": "REL-5.9-REQUIRES-5.2-whereApplicable",
+    "sourceId": "5.9",
+    "type": "REQUIRES",
+    "targetId": "5.2",
+    "direction": "directed",
+    "conditionId": "whereApplicable",
+    "strength": "conditional"
+  },
+  {
+    "id": "REL-5.9-REQUIRES-5.3-whereApplicable",
+    "sourceId": "5.9",
+    "type": "REQUIRES",
+    "targetId": "5.3",
+    "direction": "directed",
+    "conditionId": "whereApplicable",
+    "strength": "conditional"
+  },
+  {
+    "id": "REL-5.9-REQUIRES-5.4-whereApplicable",
+    "sourceId": "5.9",
+    "type": "REQUIRES",
+    "targetId": "5.4",
+    "direction": "directed",
+    "conditionId": "whereApplicable",
+    "strength": "conditional"
+  },
+  {
+    "id": "REL-5.9-REQUIRES-5.5-whereApplicable",
+    "sourceId": "5.9",
+    "type": "REQUIRES",
+    "targetId": "5.5",
+    "direction": "directed",
+    "conditionId": "whereApplicable",
+    "strength": "conditional"
+  },
+  {
+    "id": "REL-5.9-REQUIRES-5.6-whereApplicable",
+    "sourceId": "5.9",
+    "type": "REQUIRES",
+    "targetId": "5.6",
+    "direction": "directed",
+    "conditionId": "whereApplicable",
+    "strength": "conditional"
+  },
+  {
+    "id": "REL-5.9-REQUIRES-5.7-whereApplicable",
+    "sourceId": "5.9",
+    "type": "REQUIRES",
+    "targetId": "5.7",
+    "direction": "directed",
+    "conditionId": "whereApplicable",
+    "strength": "conditional"
+  },
+  {
+    "id": "REL-5.9-REQUIRES-5.8-whereApplicable",
+    "sourceId": "5.9",
+    "type": "REQUIRES",
+    "targetId": "5.8",
+    "direction": "directed",
+    "conditionId": "whereApplicable",
+    "strength": "conditional"
+  },
+  {
+    "id": "REL-5.2-GATED_BY-G-ROOF-01A",
+    "sourceId": "5.2",
+    "type": "GATED_BY",
+    "targetId": "G-ROOF-01A",
+    "direction": "directed",
+    "strength": "hard"
+  },
+  {
+    "id": "REL-5.3-GATED_BY-G-ROOF-01B",
+    "sourceId": "5.3",
+    "type": "GATED_BY",
+    "targetId": "G-ROOF-01B",
+    "direction": "directed",
+    "strength": "hard"
+  },
+  {
+    "id": "REL-5.4-GATED_BY-G-ROOF-01C",
+    "sourceId": "5.4",
+    "type": "GATED_BY",
+    "targetId": "G-ROOF-01C",
+    "direction": "directed",
+    "strength": "hard"
+  },
+  {
+    "id": "REL-5.7-GATED_BY-G-ROOF-01D-whereEquipmentPresent",
+    "sourceId": "5.7",
+    "type": "GATED_BY",
+    "targetId": "G-ROOF-01D",
+    "direction": "directed",
+    "conditionId": "whereEquipmentPresent",
+    "strength": "conditional"
+  },
+  {
+    "id": "REL-5.9-GATED_BY-G-ROOF-01E",
+    "sourceId": "5.9",
+    "type": "GATED_BY",
+    "targetId": "G-ROOF-01E",
+    "direction": "directed",
+    "strength": "hard"
+  },
+  {
+    "id": "REL-5.5-INTERFACES_WITH-4.2-whereRoof",
+    "sourceId": "5.5",
+    "type": "INTERFACES_WITH",
+    "targetId": "4.2",
+    "direction": "reciprocal",
+    "conditionId": "whereRoof",
+    "strength": "conditional"
+  },
+  {
+    "id": "REL-5.6-INTERFACES_WITH-8.9-whereRoof",
+    "sourceId": "5.6",
+    "type": "INTERFACES_WITH",
+    "targetId": "8.9",
+    "direction": "reciprocal",
+    "conditionId": "whereRoof",
+    "strength": "conditional"
+  },
+  {
+    "id": "REL-5.6-INTERFACES_WITH-9.9-whereRoof",
+    "sourceId": "5.6",
+    "type": "INTERFACES_WITH",
+    "targetId": "9.9",
+    "direction": "reciprocal",
+    "conditionId": "whereRoof",
+    "strength": "conditional"
+  },
+  {
+    "id": "REL-5.6-PENETRATION_MANAGED_BY-11.7-whereApplicable",
+    "sourceId": "5.6",
+    "type": "PENETRATION_MANAGED_BY",
+    "targetId": "11.7",
+    "direction": "directed",
+    "conditionId": "whereApplicable",
+    "strength": "conditional"
+  },
+  {
+    "id": "REL-5.7-INTERFACES_WITH-8.6-whereEquipmentPresent",
+    "sourceId": "5.7",
+    "type": "INTERFACES_WITH",
+    "targetId": "8.6",
+    "direction": "reciprocal",
+    "conditionId": "whereEquipmentPresent",
+    "strength": "conditional"
+  },
+  {
+    "id": "REL-5.7-INTERFACES_WITH-9.4-whereEquipmentPresent",
+    "sourceId": "5.7",
+    "type": "INTERFACES_WITH",
+    "targetId": "9.4",
+    "direction": "reciprocal",
+    "conditionId": "whereEquipmentPresent",
+    "strength": "conditional"
+  },
+  {
+    "id": "REL-5.7-ACCESS_CHECKED_BY-11.10-whereApplicable",
+    "sourceId": "5.7",
+    "type": "ACCESS_CHECKED_BY",
+    "targetId": "11.10",
+    "direction": "directed",
+    "conditionId": "whereApplicable",
+    "strength": "conditional"
+  },
+  {
+    "id": "REL-5.8-INTERFACES_WITH-8.3-whereRoof",
+    "sourceId": "5.8",
+    "type": "INTERFACES_WITH",
+    "targetId": "8.3",
+    "direction": "reciprocal",
+    "conditionId": "whereRoof",
+    "strength": "conditional"
+  },
+  {
+    "id": "REL-5.9-TESTED_BY-13.5-whereTestingRequired",
+    "sourceId": "5.9",
+    "type": "TESTED_BY",
+    "targetId": "13.5",
+    "direction": "directed",
+    "conditionId": "whereTestingRequired",
+    "strength": "conditional"
+  }
+]

@@ -1,0 +1,182 @@
+[
+  {
+    "id": "REL-9.2-REQUIRES-9.3-whereApplicable",
+    "sourceId": "9.2",
+    "type": "REQUIRES",
+    "targetId": "9.3",
+    "direction": "directed",
+    "conditionId": "whereApplicable",
+    "strength": "conditional"
+  },
+  {
+    "id": "REL-9.4-REQUIRES-11.9-whereEquipmentPresent",
+    "sourceId": "9.4",
+    "type": "REQUIRES",
+    "targetId": "11.9",
+    "direction": "directed",
+    "conditionId": "whereEquipmentPresent",
+    "strength": "conditional"
+  },
+  {
+    "id": "REL-9.5-REQUIRES-9.4-whereEquipmentPresent",
+    "sourceId": "9.5",
+    "type": "REQUIRES",
+    "targetId": "9.4",
+    "direction": "directed",
+    "conditionId": "whereEquipmentPresent",
+    "strength": "conditional"
+  },
+  {
+    "id": "REL-9.10-REQUIRES-9.4-whereEquipmentPresent",
+    "sourceId": "9.10",
+    "type": "REQUIRES",
+    "targetId": "9.4",
+    "direction": "directed",
+    "conditionId": "whereEquipmentPresent",
+    "strength": "conditional"
+  },
+  {
+    "id": "REL-9.11-REQUIRES-9.4-whereTestingRequired",
+    "sourceId": "9.11",
+    "type": "REQUIRES",
+    "targetId": "9.4",
+    "direction": "directed",
+    "conditionId": "whereTestingRequired",
+    "strength": "conditional"
+  },
+  {
+    "id": "REL-9.1-INTERFACES_WITH-11.3-whereApplicable",
+    "sourceId": "9.1",
+    "type": "INTERFACES_WITH",
+    "targetId": "11.3",
+    "direction": "reciprocal",
+    "conditionId": "whereApplicable",
+    "strength": "conditional"
+  },
+  {
+    "id": "REL-9.1-INTERFACES_WITH-11.8-whereApplicable",
+    "sourceId": "9.1",
+    "type": "INTERFACES_WITH",
+    "targetId": "11.8",
+    "direction": "reciprocal",
+    "conditionId": "whereApplicable",
+    "strength": "conditional"
+  },
+  {
+    "id": "REL-9.3-INTERFACES_WITH-3.3-whereApplicable",
+    "sourceId": "9.3",
+    "type": "INTERFACES_WITH",
+    "targetId": "3.3",
+    "direction": "reciprocal",
+    "conditionId": "whereApplicable",
+    "strength": "conditional"
+  },
+  {
+    "id": "REL-9.4-INTERFACES_WITH-11.9-whereEquipmentPresent",
+    "sourceId": "9.4",
+    "type": "INTERFACES_WITH",
+    "targetId": "11.9",
+    "direction": "reciprocal",
+    "conditionId": "whereEquipmentPresent",
+    "strength": "conditional"
+  },
+  {
+    "id": "REL-9.6-INTERFACES_WITH-3.3-whereApplicable",
+    "sourceId": "9.6",
+    "type": "INTERFACES_WITH",
+    "targetId": "3.3",
+    "direction": "reciprocal",
+    "conditionId": "whereApplicable",
+    "strength": "conditional"
+  },
+  {
+    "id": "REL-9.8-INTERFACES_WITH-10.7-whereApplicable",
+    "sourceId": "9.8",
+    "type": "INTERFACES_WITH",
+    "targetId": "10.7",
+    "direction": "reciprocal",
+    "conditionId": "whereApplicable",
+    "strength": "conditional"
+  },
+  {
+    "id": "REL-9.9-PENETRATION_MANAGED_BY-11.7-whereApplicable",
+    "sourceId": "9.9",
+    "type": "PENETRATION_MANAGED_BY",
+    "targetId": "11.7",
+    "direction": "directed",
+    "conditionId": "whereApplicable",
+    "strength": "conditional"
+  },
+  {
+    "id": "REL-9.9-INTERFACES_WITH-6.5-whereFireSeparation",
+    "sourceId": "9.9",
+    "type": "INTERFACES_WITH",
+    "targetId": "6.5",
+    "direction": "reciprocal",
+    "conditionId": "whereFireSeparation",
+    "strength": "conditional"
+  },
+  {
+    "id": "REL-9.9-INTERFACES_WITH-10.3-whereFireSeparation",
+    "sourceId": "9.9",
+    "type": "INTERFACES_WITH",
+    "targetId": "10.3",
+    "direction": "reciprocal",
+    "conditionId": "whereFireSeparation",
+    "strength": "conditional"
+  },
+  {
+    "id": "REL-9.4-TESTED_BY-9.11-whereTestingRequired",
+    "sourceId": "9.4",
+    "type": "TESTED_BY",
+    "targetId": "9.11",
+    "direction": "directed",
+    "conditionId": "whereTestingRequired",
+    "strength": "conditional"
+  },
+  {
+    "id": "REL-9.6-TESTED_BY-9.11-whereTestingRequired",
+    "sourceId": "9.6",
+    "type": "TESTED_BY",
+    "targetId": "9.11",
+    "direction": "directed",
+    "conditionId": "whereTestingRequired",
+    "strength": "conditional"
+  },
+  {
+    "id": "REL-9.8-TESTED_BY-9.11-whereTestingRequired",
+    "sourceId": "9.8",
+    "type": "TESTED_BY",
+    "targetId": "9.11",
+    "direction": "directed",
+    "conditionId": "whereTestingRequired",
+    "strength": "conditional"
+  },
+  {
+    "id": "REL-9.11-TESTED_BY-13.4-whereTestingRequired",
+    "sourceId": "9.11",
+    "type": "TESTED_BY",
+    "targetId": "13.4",
+    "direction": "directed",
+    "conditionId": "whereTestingRequired",
+    "strength": "conditional"
+  },
+  {
+    "id": "REL-9.4-COMMISSIONED_BY-13.7-whereEquipmentPresent",
+    "sourceId": "9.4",
+    "type": "COMMISSIONED_BY",
+    "targetId": "13.7",
+    "direction": "directed",
+    "conditionId": "whereEquipmentPresent",
+    "strength": "conditional"
+  },
+  {
+    "id": "REL-9.4-COMMISSIONED_BY-13.6-whereEquipmentPresent",
+    "sourceId": "9.4",
+    "type": "COMMISSIONED_BY",
+    "targetId": "13.6",
+    "direction": "directed",
+    "conditionId": "whereEquipmentPresent",
+    "strength": "conditional"
+  }
+]

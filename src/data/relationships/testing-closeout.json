@@ -1,0 +1,515 @@
+[
+  {
+    "id": "REL-13.3-GATED_BY-G-TST-01",
+    "sourceId": "13.3",
+    "type": "GATED_BY",
+    "targetId": "G-TST-01",
+    "direction": "directed",
+    "strength": "hard"
+  },
+  {
+    "id": "REL-13.4-GATED_BY-G-TST-01",
+    "sourceId": "13.4",
+    "type": "GATED_BY",
+    "targetId": "G-TST-01",
+    "direction": "directed",
+    "strength": "hard"
+  },
+  {
+    "id": "REL-13.5-GATED_BY-G-TST-01",
+    "sourceId": "13.5",
+    "type": "GATED_BY",
+    "targetId": "G-TST-01",
+    "direction": "directed",
+    "strength": "hard"
+  },
+  {
+    "id": "REL-13.6-GATED_BY-G-TST-01",
+    "sourceId": "13.6",
+    "type": "GATED_BY",
+    "targetId": "G-TST-01",
+    "direction": "directed",
+    "strength": "hard"
+  },
+  {
+    "id": "REL-13.7-GATED_BY-G-MEP-02-whereEquipmentPresent",
+    "sourceId": "13.7",
+    "type": "GATED_BY",
+    "targetId": "G-MEP-02",
+    "direction": "directed",
+    "conditionId": "whereEquipmentPresent",
+    "strength": "conditional"
+  },
+  {
+    "id": "REL-13.7-GATED_BY-G-TST-01-whereTestingRequired",
+    "sourceId": "13.7",
+    "type": "GATED_BY",
+    "targetId": "G-TST-01",
+    "direction": "directed",
+    "conditionId": "whereTestingRequired",
+    "strength": "conditional"
+  },
+  {
+    "id": "REL-13.8-GATED_BY-G-LS-01-whereSystemPresent",
+    "sourceId": "13.8",
+    "type": "GATED_BY",
+    "targetId": "G-LS-01",
+    "direction": "directed",
+    "conditionId": "whereSystemPresent",
+    "strength": "conditional"
+  },
+  {
+    "id": "REL-13.3-REQUIRES-13.2",
+    "sourceId": "13.3",
+    "type": "REQUIRES",
+    "targetId": "13.2",
+    "direction": "directed",
+    "strength": "hard"
+  },
+  {
+    "id": "REL-13.4-REQUIRES-13.2",
+    "sourceId": "13.4",
+    "type": "REQUIRES",
+    "targetId": "13.2",
+    "direction": "directed",
+    "strength": "hard"
+  },
+  {
+    "id": "REL-13.5-REQUIRES-13.2",
+    "sourceId": "13.5",
+    "type": "REQUIRES",
+    "targetId": "13.2",
+    "direction": "directed",
+    "strength": "hard"
+  },
+  {
+    "id": "REL-13.6-REQUIRES-13.2",
+    "sourceId": "13.6",
+    "type": "REQUIRES",
+    "targetId": "13.2",
+    "direction": "directed",
+    "strength": "hard"
+  },
+  {
+    "id": "REL-13.7-REQUIRES-13.2",
+    "sourceId": "13.7",
+    "type": "REQUIRES",
+    "targetId": "13.2",
+    "direction": "directed",
+    "strength": "hard"
+  },
+  {
+    "id": "REL-13.8-REQUIRES-13.2",
+    "sourceId": "13.8",
+    "type": "REQUIRES",
+    "targetId": "13.2",
+    "direction": "directed",
+    "strength": "hard"
+  },
+  {
+    "id": "REL-13.9-REQUIRES-13.3-whereTestingRequired",
+    "sourceId": "13.9",
+    "type": "REQUIRES",
+    "targetId": "13.3",
+    "direction": "directed",
+    "conditionId": "whereTestingRequired",
+    "strength": "conditional"
+  },
+  {
+    "id": "REL-13.9-REQUIRES-13.4-whereTestingRequired",
+    "sourceId": "13.9",
+    "type": "REQUIRES",
+    "targetId": "13.4",
+    "direction": "directed",
+    "conditionId": "whereTestingRequired",
+    "strength": "conditional"
+  },
+  {
+    "id": "REL-13.9-REQUIRES-13.5-whereTestingRequired",
+    "sourceId": "13.9",
+    "type": "REQUIRES",
+    "targetId": "13.5",
+    "direction": "directed",
+    "conditionId": "whereTestingRequired",
+    "strength": "conditional"
+  },
+  {
+    "id": "REL-13.9-REQUIRES-13.6-whereTestingRequired",
+    "sourceId": "13.9",
+    "type": "REQUIRES",
+    "targetId": "13.6",
+    "direction": "directed",
+    "conditionId": "whereTestingRequired",
+    "strength": "conditional"
+  },
+  {
+    "id": "REL-13.9-REQUIRES-13.7-whereTestingRequired",
+    "sourceId": "13.9",
+    "type": "REQUIRES",
+    "targetId": "13.7",
+    "direction": "directed",
+    "conditionId": "whereTestingRequired",
+    "strength": "conditional"
+  },
+  {
+    "id": "REL-13.9-REQUIRES-13.8-whereTestingRequired",
+    "sourceId": "13.9",
+    "type": "REQUIRES",
+    "targetId": "13.8",
+    "direction": "directed",
+    "conditionId": "whereTestingRequired",
+    "strength": "conditional"
+  },
+  {
+    "id": "REL-13.10-REQUIRES-13.9",
+    "sourceId": "13.10",
+    "type": "REQUIRES",
+    "targetId": "13.9",
+    "direction": "directed",
+    "strength": "hard"
+  },
+  {
+    "id": "REL-13.11-REQUIRES-13.10-whereTestingRequired",
+    "sourceId": "13.11",
+    "type": "REQUIRES",
+    "targetId": "13.10",
+    "direction": "directed",
+    "conditionId": "whereTestingRequired",
+    "strength": "conditional"
+  },
+  {
+    "id": "REL-13.11-REQUIRES-13.3-whereTestingRequired",
+    "sourceId": "13.11",
+    "type": "REQUIRES",
+    "targetId": "13.3",
+    "direction": "directed",
+    "conditionId": "whereTestingRequired",
+    "strength": "conditional"
+  },
+  {
+    "id": "REL-13.11-REQUIRES-13.4-whereTestingRequired",
+    "sourceId": "13.11",
+    "type": "REQUIRES",
+    "targetId": "13.4",
+    "direction": "directed",
+    "conditionId": "whereTestingRequired",
+    "strength": "conditional"
+  },
+  {
+    "id": "REL-13.11-REQUIRES-13.5-whereTestingRequired",
+    "sourceId": "13.11",
+    "type": "REQUIRES",
+    "targetId": "13.5",
+    "direction": "directed",
+    "conditionId": "whereTestingRequired",
+    "strength": "conditional"
+  },
+  {
+    "id": "REL-13.11-REQUIRES-13.6-whereTestingRequired",
+    "sourceId": "13.11",
+    "type": "REQUIRES",
+    "targetId": "13.6",
+    "direction": "directed",
+    "conditionId": "whereTestingRequired",
+    "strength": "conditional"
+  },
+  {
+    "id": "REL-13.11-REQUIRES-13.7-whereTestingRequired",
+    "sourceId": "13.11",
+    "type": "REQUIRES",
+    "targetId": "13.7",
+    "direction": "directed",
+    "conditionId": "whereTestingRequired",
+    "strength": "conditional"
+  },
+  {
+    "id": "REL-13.11-REQUIRES-13.8-whereTestingRequired",
+    "sourceId": "13.11",
+    "type": "REQUIRES",
+    "targetId": "13.8",
+    "direction": "directed",
+    "conditionId": "whereTestingRequired",
+    "strength": "conditional"
+  },
+  {
+    "id": "REL-14.2-REQUIRES-14.1",
+    "sourceId": "14.2",
+    "type": "REQUIRES",
+    "targetId": "14.1",
+    "direction": "directed",
+    "strength": "hard"
+  },
+  {
+    "id": "REL-14.3-REQUIRES-14.2",
+    "sourceId": "14.3",
+    "type": "REQUIRES",
+    "targetId": "14.2",
+    "direction": "directed",
+    "strength": "hard"
+  },
+  {
+    "id": "REL-14.4-REQUIRES-14.3",
+    "sourceId": "14.4",
+    "type": "REQUIRES",
+    "targetId": "14.3",
+    "direction": "directed",
+    "strength": "hard"
+  },
+  {
+    "id": "REL-14.5-REQUIRES-14.4",
+    "sourceId": "14.5",
+    "type": "REQUIRES",
+    "targetId": "14.4",
+    "direction": "directed",
+    "strength": "hard"
+  },
+  {
+    "id": "REL-14.6-REQUIRES-14.5",
+    "sourceId": "14.6",
+    "type": "REQUIRES",
+    "targetId": "14.5",
+    "direction": "directed",
+    "strength": "hard"
+  },
+  {
+    "id": "REL-14.7-REQUIRES-14.6",
+    "sourceId": "14.7",
+    "type": "REQUIRES",
+    "targetId": "14.6",
+    "direction": "directed",
+    "strength": "hard"
+  },
+  {
+    "id": "REL-14.9-REQUIRES-13.11-whereTestingRequired",
+    "sourceId": "14.9",
+    "type": "REQUIRES",
+    "targetId": "13.11",
+    "direction": "directed",
+    "conditionId": "whereTestingRequired",
+    "strength": "conditional"
+  },
+  {
+    "id": "REL-14.15-REQUIRES-14.9",
+    "sourceId": "14.15",
+    "type": "REQUIRES",
+    "targetId": "14.9",
+    "direction": "directed",
+    "strength": "hard"
+  },
+  {
+    "id": "REL-14.14-REQUIRES-14.10",
+    "sourceId": "14.14",
+    "type": "REQUIRES",
+    "targetId": "14.10",
+    "direction": "directed",
+    "strength": "hard"
+  },
+  {
+    "id": "REL-14.14-REQUIRES-14.11",
+    "sourceId": "14.14",
+    "type": "REQUIRES",
+    "targetId": "14.11",
+    "direction": "directed",
+    "strength": "hard"
+  },
+  {
+    "id": "REL-14.14-REQUIRES-14.12",
+    "sourceId": "14.14",
+    "type": "REQUIRES",
+    "targetId": "14.12",
+    "direction": "directed",
+    "strength": "hard"
+  },
+  {
+    "id": "REL-14.14-REQUIRES-14.13",
+    "sourceId": "14.14",
+    "type": "REQUIRES",
+    "targetId": "14.13",
+    "direction": "directed",
+    "strength": "hard"
+  },
+  {
+    "id": "REL-14.14-REQUIRES-13.11",
+    "sourceId": "14.14",
+    "type": "REQUIRES",
+    "targetId": "13.11",
+    "direction": "directed",
+    "strength": "hard"
+  },
+  {
+    "id": "REL-14.15-REQUIRES-14.7",
+    "sourceId": "14.15",
+    "type": "REQUIRES",
+    "targetId": "14.7",
+    "direction": "directed",
+    "strength": "hard"
+  },
+  {
+    "id": "REL-14.15-REQUIRES-14.8",
+    "sourceId": "14.15",
+    "type": "REQUIRES",
+    "targetId": "14.8",
+    "direction": "directed",
+    "strength": "hard"
+  },
+  {
+    "id": "REL-14.15-REQUIRES-14.14",
+    "sourceId": "14.15",
+    "type": "REQUIRES",
+    "targetId": "14.14",
+    "direction": "directed",
+    "strength": "hard"
+  },
+  {
+    "id": "REL-14.15-GATED_BY-G-FINAL-01",
+    "sourceId": "14.15",
+    "type": "GATED_BY",
+    "targetId": "G-FINAL-01",
+    "direction": "directed",
+    "strength": "hard"
+  },
+  {
+    "id": "REL-14.15-GATED_BY-G-EXT-02-whereExterior",
+    "sourceId": "14.15",
+    "type": "GATED_BY",
+    "targetId": "G-EXT-02",
+    "direction": "directed",
+    "conditionId": "whereExterior",
+    "strength": "conditional"
+  },
+  {
+    "id": "REL-12.1-AS_BUILT_FEEDS-14.10-whereApplicable",
+    "sourceId": "12.1",
+    "type": "AS_BUILT_FEEDS",
+    "targetId": "14.10",
+    "direction": "directed",
+    "conditionId": "whereApplicable",
+    "strength": "conditional"
+  },
+  {
+    "id": "REL-1.7-AS_BUILT_FEEDS-14.10-whereApplicable",
+    "sourceId": "1.7",
+    "type": "AS_BUILT_FEEDS",
+    "targetId": "14.10",
+    "direction": "directed",
+    "conditionId": "whereApplicable",
+    "strength": "conditional"
+  },
+  {
+    "id": "REL-8.1-AS_BUILT_FEEDS-14.10-whereApplicable",
+    "sourceId": "8.1",
+    "type": "AS_BUILT_FEEDS",
+    "targetId": "14.10",
+    "direction": "directed",
+    "conditionId": "whereApplicable",
+    "strength": "conditional"
+  },
+  {
+    "id": "REL-8.2-AS_BUILT_FEEDS-14.10-whereApplicable",
+    "sourceId": "8.2",
+    "type": "AS_BUILT_FEEDS",
+    "targetId": "14.10",
+    "direction": "directed",
+    "conditionId": "whereApplicable",
+    "strength": "conditional"
+  },
+  {
+    "id": "REL-8.3-AS_BUILT_FEEDS-14.10-whereApplicable",
+    "sourceId": "8.3",
+    "type": "AS_BUILT_FEEDS",
+    "targetId": "14.10",
+    "direction": "directed",
+    "conditionId": "whereApplicable",
+    "strength": "conditional"
+  },
+  {
+    "id": "REL-8.4-AS_BUILT_FEEDS-14.10-whereApplicable",
+    "sourceId": "8.4",
+    "type": "AS_BUILT_FEEDS",
+    "targetId": "14.10",
+    "direction": "directed",
+    "conditionId": "whereApplicable",
+    "strength": "conditional"
+  },
+  {
+    "id": "REL-8.5-AS_BUILT_FEEDS-14.10-whereApplicable",
+    "sourceId": "8.5",
+    "type": "AS_BUILT_FEEDS",
+    "targetId": "14.10",
+    "direction": "directed",
+    "conditionId": "whereApplicable",
+    "strength": "conditional"
+  },
+  {
+    "id": "REL-9.1-AS_BUILT_FEEDS-14.10-whereApplicable",
+    "sourceId": "9.1",
+    "type": "AS_BUILT_FEEDS",
+    "targetId": "14.10",
+    "direction": "directed",
+    "conditionId": "whereApplicable",
+    "strength": "conditional"
+  },
+  {
+    "id": "REL-9.5-AS_BUILT_FEEDS-14.10-whereApplicable",
+    "sourceId": "9.5",
+    "type": "AS_BUILT_FEEDS",
+    "targetId": "14.10",
+    "direction": "directed",
+    "conditionId": "whereApplicable",
+    "strength": "conditional"
+  },
+  {
+    "id": "REL-8.6-AS_BUILT_FEEDS-14.10-whereApplicable",
+    "sourceId": "8.6",
+    "type": "AS_BUILT_FEEDS",
+    "targetId": "14.10",
+    "direction": "directed",
+    "conditionId": "whereApplicable",
+    "strength": "conditional"
+  },
+  {
+    "id": "REL-8.9-AS_BUILT_FEEDS-14.10-whereApplicable",
+    "sourceId": "8.9",
+    "type": "AS_BUILT_FEEDS",
+    "targetId": "14.10",
+    "direction": "directed",
+    "conditionId": "whereApplicable",
+    "strength": "conditional"
+  },
+  {
+    "id": "REL-9.9-AS_BUILT_FEEDS-14.10-whereApplicable",
+    "sourceId": "9.9",
+    "type": "AS_BUILT_FEEDS",
+    "targetId": "14.10",
+    "direction": "directed",
+    "conditionId": "whereApplicable",
+    "strength": "conditional"
+  },
+  {
+    "id": "REL-5.6-AS_BUILT_FEEDS-14.10-whereApplicable",
+    "sourceId": "5.6",
+    "type": "AS_BUILT_FEEDS",
+    "targetId": "14.10",
+    "direction": "directed",
+    "conditionId": "whereApplicable",
+    "strength": "conditional"
+  },
+  {
+    "id": "REL-10.3-AS_BUILT_FEEDS-14.10-whereApplicable",
+    "sourceId": "10.3",
+    "type": "AS_BUILT_FEEDS",
+    "targetId": "14.10",
+    "direction": "directed",
+    "conditionId": "whereApplicable",
+    "strength": "conditional"
+  },
+  {
+    "id": "REL-1.2-AS_BUILT_FEEDS-14.10-whereApplicable",
+    "sourceId": "1.2",
+    "type": "AS_BUILT_FEEDS",
+    "targetId": "14.10",
+    "direction": "directed",
+    "conditionId": "whereApplicable",
+    "strength": "conditional"
+  }
+]
