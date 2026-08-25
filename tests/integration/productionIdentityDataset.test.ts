@@ -1,31 +1,8 @@
 import { describe, expect, it } from "vitest";
 
 import { productionCanonicalDataset } from "@/data/productionCanonicalDataset";
+import { auditProductionContentDataset } from "@/services/validation/productionContentAudit";
 import { validateCanonicalDataset } from "@/services/validation/validateCanonicalDataset";
-
-const technicalActivityFields = [
-  "qualityObjective",
-  "applicability",
-  "authorityNote",
-  "requirements",
-  "planning",
-  "documentControl",
-  "materialControl",
-  "inspection",
-  "evidence",
-  "issues",
-  "correctiveAction",
-  "verification",
-  "closureCriteria",
-  "communications",
-  "outputs",
-  "reportingAnalysis",
-  "qualityCheckpoint",
-  "specialistBoundary",
-  "searchRefs",
-  "terminologyRefs",
-  "logic"
-] as const;
 
 describe("Phase 009 production identity dataset", () => {
   it("validates the complete production section and activity identity seed", () => {
@@ -132,12 +109,16 @@ describe("Phase 009 production identity dataset", () => {
     ).toBe(false);
   });
 
-  it("does not ingest substantive Build 2 technical content in Phase 009", () => {
-    for (const activity of productionCanonicalDataset.activities) {
-      for (const field of technicalActivityFields) {
-        expect(activity).not.toHaveProperty(field);
-      }
-    }
+  it("passes the Phase 010 production content completeness audit", () => {
+    const { dataset } = validateCanonicalDataset(productionCanonicalDataset);
+    const report = auditProductionContentDataset(dataset);
+
+    expect(report.ok).toBe(true);
+    expect(report.sectionCount).toBe(14);
+    expect(report.activityCount).toBe(139);
+    expect(report.substantiveActivityCount).toBe(139);
+    expect(report.identityOnlyActivityIds).toEqual([]);
+    expect(report.contentItemCount).toBeGreaterThan(1000);
   });
 
   it("does not populate production logic, relationships, presentation, terminology, or search data", () => {

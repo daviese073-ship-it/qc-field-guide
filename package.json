@@ -11,6 +11,7 @@
     "test": "vitest run",
     "test:e2e": "node scripts/run-e2e.mjs",
     "validate:data": "node scripts/validate-data.mjs",
+    "validate:content": "node scripts/validate-production-content.mjs",
     "validate:foundation": "node scripts/verify-technical-foundation.mjs",
     "validate:phase-plan": "node scripts/validate-phase-plan.mjs"
   },

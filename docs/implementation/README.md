@@ -52,13 +52,15 @@ implementation use only and does not change the source documents.
   and dependency plan.
 - `production-identity-seed.md` documents the Phase 009 production canonical
   section/activity identity seed.
+- `production-technical-content.md` documents the Phase 010 Build-2 technical
+  activity content ingestion.
 
 ## Current Boundary
 
 The repository now has domain contracts, validation, registries, relationship
 services, screen contracts, reusable component foundations, and the production
-section/activity identity catalogue. It still does not ingest substantive
-production Build 2 technical content, implement production logic/relationships,
-search indexing/ranking/results, favorites/recents, official records, approvals,
+section/activity catalogue with substantive Build 2 technical activity content.
+It still does not implement production logic/relationships, search
+indexing/ranking/results, favorites/recents, official records, approvals,
 releases, signatures, backend services, databases, authentication, analytics, or
 project tracking.

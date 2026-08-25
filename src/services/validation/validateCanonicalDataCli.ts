@@ -4,6 +4,10 @@ import { phase003ValidationDataset } from "@/data/development/phase003Validation
 import { productionCanonicalDataset } from "@/data/productionCanonicalDataset";
 import { CanonicalDataValidationError } from "@/domain/registries";
 
+import {
+  auditProductionContentDataset,
+  formatProductionContentAuditReport
+} from "./productionContentAudit";
 import { validateCanonicalDataset } from "./validateCanonicalDataset";
 
 try {
@@ -11,6 +15,16 @@ try {
   const productionValidation = validateCanonicalDataset(
     productionCanonicalDataset
   );
+  const contentAudit = auditProductionContentDataset(
+    productionValidation.dataset
+  );
+
+  if (!contentAudit.ok) {
+    throw new CanonicalDataValidationError(
+      "Canonical production content validation failed.",
+      contentAudit.errors
+    );
+  }
 
   console.log(
     [
@@ -19,11 +33,12 @@ try {
       `Fixture sections: ${fixtureValidation.registries.sections.getAll().length}`,
       `Fixture activities: ${fixtureValidation.registries.activities.getAll().length}`,
       `Fixture relationships: ${fixtureValidation.registries.relationships.getAll().length}`,
-      "Validated Phase 009 production identity dataset.",
+      "Validated production canonical dataset.",
       `Production sections: ${productionValidation.registries.sections.getAll().length}`,
       `Production activities: ${productionValidation.registries.activities.getAll().length}`,
       `Production relationships: ${productionValidation.registries.relationships.getAll().length}`,
-      `Production gates: ${productionValidation.registries.gates.getAll().length}`
+      `Production gates: ${productionValidation.registries.gates.getAll().length}`,
+      formatProductionContentAuditReport(contentAudit)
     ].join("\n")
   );
 } catch (error) {
