@@ -227,6 +227,45 @@ describe("production route-bound screen composition", () => {
     expect(result).toHaveAttribute("href", "/activity/10.3");
   });
 
+  it("renders the General QC Processes visual screen without old search modules", () => {
+    renderRoute("/search?q=general%20qc%20processes");
+
+    const main = screen.getByRole("main");
+
+    expect(
+      screen.getByRole("link", { name: /General QC Processes/i })
+    ).toHaveAttribute("aria-current", "page");
+    expect(
+      within(main).getByRole("heading", { name: "General QC Processes" })
+    ).toBeInTheDocument();
+    expect(
+      within(main).getByRole("heading", { name: "All Processes" })
+    ).toBeInTheDocument();
+    expect(within(main).getByRole("button", { name: "Grid" })).toHaveAttribute(
+      "aria-pressed",
+      "true"
+    );
+    expect(within(main).getByRole("button", { name: "List" })).toBeDisabled();
+    expect(
+      within(main).getByRole("heading", { name: "Commonly Used" })
+    ).toBeInTheDocument();
+    expect(
+      within(main).getByRole("heading", { name: "Field Tips" })
+    ).toBeInTheDocument();
+    expect(
+      within(main).getByRole("link", { name: /Inspection Planning/i })
+    ).toBeInTheDocument();
+    expect(
+      within(main).getAllByRole("link", { name: /Reporting|Review|Planning/i })
+        .length
+    ).toBeGreaterThan(0);
+    expect(
+      within(main).queryByText("Related Searches")
+    ).not.toBeInTheDocument();
+    expect(within(main).queryByText("Search Tip")).not.toBeInTheDocument();
+    expect(within(main).queryByText("Filters")).not.toBeInTheDocument();
+  });
+
   it("switches visible activity content to French without changing route identity", async () => {
     const user = userEvent.setup();
     const { router } = renderRoute("/activity/10.3");

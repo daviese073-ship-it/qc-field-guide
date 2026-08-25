@@ -64,6 +64,7 @@ export function AppSidebar() {
             icon={<ClipboardList className="h-6 w-6" aria-hidden />}
             label="General QC Processes"
             truncateLabel={false}
+            variant="home"
             showChevron
           />
         </div>

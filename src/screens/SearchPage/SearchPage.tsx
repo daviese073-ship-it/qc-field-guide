@@ -20,6 +20,7 @@ import { classNames } from "@/utils/classNames";
 
 import { objectTypeLabels } from "../screenLabels";
 import { FieldLayout, RailPanel } from "../screenShared";
+import { GeneralQcProcessesPage } from "../GeneralQcProcessesPage/GeneralQcProcessesPage";
 
 const languageOption = (
   mode: ReturnType<typeof useLanguagePreference>["preference"]["mode"]
@@ -58,6 +59,8 @@ export function SearchPage() {
   const [searchParams] = useSearchParams();
   const { preference } = useLanguagePreference();
   const query = searchParams.get("q") ?? "";
+  const isGeneralQcProcessesRoute =
+    query.trim().toLowerCase() === "general qc processes";
   const [draftQuery, setDraftQuery] = useState(query);
   const trimmedQuery = query.trim();
   const results = useMemo(
@@ -81,6 +84,10 @@ export function SearchPage() {
       ),
     [results]
   );
+
+  if (isGeneralQcProcessesRoute) {
+    return <GeneralQcProcessesPage />;
+  }
 
   return (
     <FieldLayout

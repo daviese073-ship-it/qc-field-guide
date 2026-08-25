@@ -52,6 +52,57 @@ test.describe("Phase 017 correction visual composition", () => {
     }
   });
 
+  test("captures the General QC Processes rebuild at approved comparison widths", async ({
+    page
+  }) => {
+    test.setTimeout(60000);
+
+    const viewports = [
+      { name: "general-qc-1536", width: 1536, height: 1024 },
+      { name: "general-qc-1280", width: 1280, height: 800 },
+      { name: "general-qc-1024", width: 1024, height: 768 }
+    ];
+
+    for (const viewport of viewports) {
+      await page.setViewportSize({
+        width: viewport.width,
+        height: viewport.height
+      });
+      await page.goto("/search?q=general%20qc%20processes");
+
+      await expect(
+        page.getByRole("heading", { name: "General QC Processes" })
+      ).toBeVisible();
+      await expect(
+        page.getByRole("heading", { name: "All Processes" })
+      ).toBeVisible();
+      await expect(page.getByRole("button", { name: "Grid" })).toHaveAttribute(
+        "aria-pressed",
+        "true"
+      );
+      await expect(page.getByRole("button", { name: "List" })).toBeDisabled();
+      await expect(
+        page.getByRole("heading", { name: "Commonly Used" })
+      ).toBeVisible();
+      await expect(
+        page.getByRole("heading", { name: "Field Tips" })
+      ).toBeVisible();
+      await expect(page.getByText("Related Searches")).toHaveCount(0);
+      await expect(page.getByText("Search Tip")).toHaveCount(0);
+      await expect(page.getByText("Filters")).toHaveCount(0);
+
+      const hasHorizontalOverflow = await page.evaluate(
+        () => document.documentElement.scrollWidth > window.innerWidth
+      );
+
+      expect(hasHorizontalOverflow).toBe(false);
+      await page.screenshot({
+        fullPage: true,
+        path: screenshot(viewport.name)
+      });
+    }
+  });
+
   test("keeps the shared shell usable across Layer 1 viewport targets", async ({
     page
   }) => {
