@@ -88,14 +88,39 @@ describe("Phase 006 component architecture", () => {
     );
 
     expect(
-      screen.getByRole("link", { name: "QC Field Guide home" })
+      screen.getAllByRole("link", { name: "QC Field Guide home" })[0]
     ).toHaveAttribute("href", "/");
-    expect(screen.getByRole("link", { name: /search/i })).toHaveAttribute(
-      "href",
-      "/search"
+    expect(screen.getByRole("searchbox", { name: "Search" })).toHaveAttribute(
+      "placeholder",
+      "Search inspections, systems, topics..."
     );
     expect(
+      screen.getByRole("link", { name: /General QC Processes/i })
+    ).toHaveAttribute("href", "/search?q=general%20qc%20processes");
+    expect(screen.queryByText("Not saved yet")).not.toBeInTheDocument();
+    expect(screen.queryByText("Not tracked yet")).not.toBeInTheDocument();
+    expect(screen.queryByText("System Status")).not.toBeInTheDocument();
+    expect(
       screen.queryByRole("navigation", { name: "Development route checks" })
+    ).not.toBeInTheDocument();
+  });
+
+  it("app shell highlights canonical sidebar destinations with aria-current", () => {
+    renderInRouter(
+      <AppShell>
+        <h1>System screen</h1>
+      </AppShell>,
+      "/section/10"
+    );
+
+    expect(
+      screen.getByRole("link", { name: /Fire & Life-Safety Construction/i })
+    ).toHaveAttribute("aria-current", "page");
+    expect(
+      screen.getByRole("link", { name: /General QC Processes/i })
+    ).toHaveAttribute("href", "/search?q=general%20qc%20processes");
+    expect(
+      screen.queryByRole("link", { name: "QC Think" })
     ).not.toBeInTheDocument();
   });
 

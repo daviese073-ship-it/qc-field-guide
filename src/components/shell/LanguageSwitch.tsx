@@ -21,7 +21,11 @@ export function LanguageSwitch({ ariaLabel }: LanguageSwitchProps) {
   const { preference, setPreference } = useLanguagePreference();
 
   return (
-    <div aria-label={ariaLabel} className="flex gap-1" role="group">
+    <div
+      aria-label={ariaLabel}
+      className="flex h-12 w-[137px] rounded-xl border border-[rgba(15,23,42,0.10)] bg-white/80 p-1 shadow-sm"
+      role="group"
+    >
       {options.map((option) => {
         const active = samePreference(preference, option.preference);
 
@@ -29,10 +33,10 @@ export function LanguageSwitch({ ariaLabel }: LanguageSwitchProps) {
           <button
             aria-pressed={active}
             className={classNames(
-              "min-h-10 rounded px-3 py-2 text-sm font-semibold transition",
+              "h-10 flex-1 rounded-lg px-3 text-[15px] font-bold transition focus-visible:outline-offset-2",
               active
-                ? "bg-sky-400 text-slate-950"
-                : "text-slate-100 hover:bg-slate-800"
+                ? "bg-[#07142e] text-white shadow-sm"
+                : "text-[#07142e] hover:bg-blue-50"
             )}
             key={option.label}
             onClick={() => setPreference(option.preference)}

@@ -10,7 +10,7 @@ export function Card({
   return (
     <section
       className={classNames(
-        "rounded border border-slate-200 bg-white p-4 shadow-sm",
+        "qcfg-card p-[var(--qcfg-card-padding)]",
         className
       )}
       {...props}

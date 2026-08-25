@@ -1,4 +1,4 @@
-import { render, screen } from "@testing-library/react";
+import { render, screen, within } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { createMemoryRouter, RouterProvider } from "react-router-dom";
 
@@ -32,18 +32,78 @@ describe("production route-bound screen composition", () => {
 
   it("renders the production application shell and home route", () => {
     renderRoute("/");
+    const main = screen.getByRole("main");
 
     expect(
-      screen.getByRole("link", { name: "QC Field Guide home" })
+      screen.getAllByRole("link", { name: "QC Field Guide home" })[0]
+    ).toHaveAttribute("href", "/");
+    expect(
+      within(main).getByRole("heading", {
+        name: "What will you inspect today?"
+      })
     ).toBeInTheDocument();
     expect(
-      screen.getByRole("heading", { name: "Browse Systems" })
+      within(main).getByRole("heading", { name: "Inspection Systems" })
     ).toBeInTheDocument();
     expect(
-      screen.getByRole("link", { name: /Quick Inspection/i })
-    ).toHaveAttribute("href", "/search?q=inspection");
-    expect(screen.getByText("Production data")).toBeInTheDocument();
-    expect(screen.getByText("139")).toBeInTheDocument();
+      within(main).getByRole("heading", { name: "Recently Visited Systems" })
+    ).toBeInTheDocument();
+    expect(
+      within(main).getByRole("heading", { name: "Field Tips" })
+    ).toBeInTheDocument();
+    expect(screen.getAllByRole("searchbox", { name: "Search" })).toHaveLength(
+      1
+    );
+
+    for (const section of productionRegistries.sections.getAll()) {
+      expect(
+        within(main).getByRole("link", {
+          name: new RegExp(escapeRegExp(section.title.en))
+        })
+      ).toHaveAttribute("href", `/section/${section.id}`);
+    }
+
+    const fireSystemCard = within(main).getByRole("link", {
+      name: /Fire & Life-Safety Construction/
+    });
+
+    expect(
+      within(main).getByRole("link", { name: /View All Systems/i })
+    ).toHaveAttribute("href", "#home-inspection-systems");
+    expect(
+      within(
+        within(main).getByRole("heading", { name: "Inspection Systems" })
+          .parentElement?.parentElement ?? main
+      ).getAllByRole("link")
+    ).toHaveLength(15);
+    expect(
+      within(fireSystemCard).getByText("8 activities")
+    ).toBeInTheDocument();
+  });
+
+  it("does not render obsolete rejected Home elements", () => {
+    renderRoute("/");
+    const main = screen.getByRole("main");
+
+    [
+      "Quick Inspection",
+      "What Are You Doing?",
+      "Before Closing / Covering",
+      "QC Think",
+      "Production data",
+      "Activity Mode / Workflows",
+      "QC Principles",
+      "System Status",
+      "Tip of the Day"
+    ].forEach((label) => {
+      expect(within(main).queryByText(label)).not.toBeInTheDocument();
+    });
+
+    expect(
+      within(main).queryByPlaceholderText(
+        "Search activity, term, acronym, workflow..."
+      )
+    ).not.toBeInTheDocument();
   });
 
   it("makes all production section routes reachable", () => {

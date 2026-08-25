@@ -1,171 +1,157 @@
-import {
-  AlertTriangle,
-  Brain,
-  ClipboardCheck,
-  Clock,
-  Home,
-  Layers,
-  Search,
-  ShieldCheck,
-  Star,
-  Wrench
-} from "lucide-react";
+import { BookOpenCheck, ChevronRight, ClipboardList, Home } from "lucide-react";
+import type { ReactNode } from "react";
 import { Link, useLocation } from "react-router-dom";
 
+import { useLanguagePreference } from "@/app/languagePreferenceContext";
 import {
-  productionDataset,
-  productionRegistries
+  productionRegistries,
+  productionUiStrings
 } from "@/app/productionAppData";
+import { LocalizedText } from "@/components/content/LocalizedText";
 import { classNames } from "@/utils/classNames";
 
-const navItems = [
-  {
-    label: "Home",
-    href: "/",
-    icon: Home,
-    match: (path: string) => path === "/"
-  },
-  {
-    label: "Search",
-    href: "/search",
-    icon: Search,
-    match: (path: string) => path.startsWith("/search")
-  },
-  {
-    label: "What Are You Doing?",
-    href: "/search?q=workflow",
-    icon: Wrench,
-    match: () => false
-  },
-  {
-    label: "Before Closing / Covering",
-    href: "/preconcealment/PC-FIRE-01",
-    icon: AlertTriangle,
-    match: (path: string) => path.startsWith("/preconcealment")
-  },
-  {
-    label: "Activity Mode / Workflows",
-    href: "/workflow/WF-FIRE-01",
-    icon: ClipboardCheck,
-    match: (path: string) =>
-      path.startsWith("/workflow") || path.startsWith("/activity")
-  },
-  {
-    label: "Pre-Concealment",
-    href: "/preconcealment/PC-FIRE-01",
-    icon: ShieldCheck,
-    match: (path: string) => path.startsWith("/preconcealment")
-  },
-  {
-    label: "Browse Systems",
-    href: "/",
-    icon: Layers,
-    match: (path: string) => path.startsWith("/section")
-  }
-];
+import { getSectionVisual } from "@/screens/screenVisuals";
 
-const unavailableItems = [
-  { label: "QC Think", icon: Brain, note: "Context rail" },
-  { label: "Favorites", icon: Star, note: "Not saved yet" },
-  { label: "Recent", icon: Clock, note: "Not tracked yet" }
-];
+const formatUi = (
+  id: string,
+  preference: ReturnType<typeof useLanguagePreference>["preference"],
+  fallback: string
+) => productionUiStrings.formatUiString(id, preference) ?? fallback;
 
 export function AppSidebar() {
   const location = useLocation();
+  const { preference } = useLanguagePreference();
   const sections = productionRegistries.sections.getAll();
+  const homeLabel = formatUi("UI-NAV-HOME", preference, "Home");
 
   return (
-    <aside className="hidden w-[232px] shrink-0 border-r border-slate-200 bg-white/95 lg:sticky lg:top-[68px] lg:block lg:h-[calc(100vh-68px)] lg:overflow-y-auto">
-      <nav className="space-y-1 p-4" aria-label="Primary">
-        {navItems.map((item) => {
-          const Icon = item.icon;
-          const active = item.match(location.pathname);
-
-          return (
-            <Link
-              className={classNames(
-                "flex min-h-10 items-center gap-3 rounded-lg px-3 text-sm font-semibold transition",
-                active
-                  ? "bg-blue-50 text-blue-700"
-                  : "text-slate-700 hover:bg-slate-50 hover:text-blue-700"
-              )}
-              key={item.label}
-              to={item.href}
-            >
-              <Icon className="h-5 w-5" aria-hidden />
-              <span>{item.label}</span>
-            </Link>
-          );
-        })}
-      </nav>
-
-      <div className="border-t border-slate-200 px-4 py-4">
-        <p className="mb-2 text-xs font-bold uppercase tracking-wide text-slate-500">
-          Systems
-        </p>
-        <div className="space-y-1">
-          {sections.map((section) => (
-            <Link
-              className={classNames(
-                "flex items-center gap-2 rounded-md px-2 py-1.5 text-xs font-semibold",
-                location.pathname === `/section/${section.id}`
-                  ? "bg-blue-50 text-blue-700"
-                  : "text-slate-600 hover:bg-slate-50 hover:text-slate-950"
-              )}
-              key={section.id}
-              to={`/section/${encodeURIComponent(section.id)}`}
-            >
-              <span className="w-6 rounded bg-slate-100 py-0.5 text-center font-mono text-[11px]">
-                {section.id}
-              </span>
-              <span className="truncate">{section.title.en}</span>
-            </Link>
-          ))}
-        </div>
+    <aside className="qcfg-sidebar fixed inset-y-0 left-0 z-40 hidden w-[274px] overflow-y-auto md:block">
+      <div className="flex h-[92px] items-center gap-3 px-6">
+        <Link
+          aria-label="QC Field Guide home"
+          className="flex items-center gap-3 rounded-xl focus-visible:outline-offset-4"
+          to="/"
+        >
+          <span className="flex h-[54px] w-[54px] items-center justify-center rounded-xl border border-[#f7c931]/40 bg-[#07142e]/80 text-[#f7c931] shadow-sm">
+            <BookOpenCheck className="h-8 w-8" aria-hidden />
+          </span>
+          <span className="leading-tight">
+            <span className="block text-[24px] font-extrabold tracking-tight text-white">
+              QC/QA
+            </span>
+            <span className="block text-[11px] font-bold uppercase tracking-wide text-blue-100">
+              Field Execution
+            </span>
+          </span>
+        </Link>
       </div>
 
-      <div className="border-t border-slate-200 p-4">
-        <p className="mb-2 text-xs font-bold uppercase tracking-wide text-slate-500">
-          Later Field State
-        </p>
+      <nav className="px-3 pb-6" aria-label="Primary">
+        <div className="space-y-2">
+          <SidebarLink
+            active={location.pathname === "/"}
+            href="/"
+            icon={<Home className="h-6 w-6" aria-hidden />}
+            label={homeLabel}
+            variant="home"
+          />
+          <SidebarLink
+            active={
+              location.pathname === "/search" &&
+              location.search.includes("general")
+            }
+            href="/search?q=general%20qc%20processes"
+            icon={<ClipboardList className="h-6 w-6" aria-hidden />}
+            label="General QC Processes"
+            showChevron
+          />
+        </div>
+
+        <div className="mx-4 mt-5 border-t border-white/12 pt-5">
+          <p className="mb-3 text-[11px] font-bold uppercase tracking-[0.12em] text-[#9aa3b8]">
+            Systems
+          </p>
+        </div>
+
         <div className="space-y-1">
-          {unavailableItems.map((item) => {
-            const Icon = item.icon;
+          {sections.map((section) => {
+            const visual = getSectionVisual(section.id);
+            const Icon = visual.Icon;
 
             return (
-              <div
-                aria-disabled="true"
-                className="flex items-center gap-3 rounded-lg px-3 py-2 text-sm font-semibold text-slate-400"
-                key={item.label}
-              >
-                <Icon className="h-5 w-5" aria-hidden />
-                <span className="flex-1">{item.label}</span>
-                <span className="text-[10px] font-medium uppercase tracking-wide">
-                  {item.note}
-                </span>
-              </div>
+              <SidebarLink
+                active={location.pathname === `/section/${section.id}`}
+                href={`/section/${encodeURIComponent(section.id)}`}
+                icon={
+                  <Icon
+                    className={classNames("h-7 w-7", visual.accent)}
+                    aria-hidden
+                  />
+                }
+                key={section.id}
+                label={
+                  <LocalizedText
+                    preference={preference}
+                    value={section.title}
+                  />
+                }
+              />
             );
           })}
         </div>
-      </div>
-
-      <div className="border-t border-slate-200 p-4 text-xs text-slate-600">
-        <p className="font-bold uppercase tracking-wide text-slate-500">
-          System Status
-        </p>
-        <dl className="mt-3 space-y-2">
-          <div className="flex justify-between gap-2">
-            <dt>Content</dt>
-            <dd className="font-mono text-blue-700">
-              {productionDataset.version.contentVersion}
-            </dd>
-          </div>
-          <div className="flex justify-between gap-2">
-            <dt>Search</dt>
-            <dd className="text-emerald-700">Ready</dd>
-          </div>
-        </dl>
-      </div>
+      </nav>
     </aside>
+  );
+}
+
+function SidebarLink({
+  active,
+  href,
+  icon,
+  label,
+  showChevron = false,
+  variant = "default"
+}: {
+  active: boolean;
+  href: string;
+  icon: ReactNode;
+  label: ReactNode;
+  showChevron?: boolean;
+  variant?: "default" | "home";
+}) {
+  const homeActive = active && variant === "home";
+
+  return (
+    <Link
+      aria-current={active ? "page" : undefined}
+      className={classNames(
+        "relative flex min-h-[54px] items-center gap-4 rounded-[10px] px-4 text-[15px] font-semibold transition focus-visible:outline-offset-2",
+        homeActive
+          ? "bg-white/10 text-[#f7c931] shadow-[inset_0_0_0_1px_rgba(255,255,255,0.03)]"
+          : active
+            ? "bg-white/10 text-white"
+            : "text-blue-50/90 hover:bg-white/8 hover:text-white"
+      )}
+      to={href}
+    >
+      {homeActive ? (
+        <span
+          className="absolute left-0 top-2 h-[38px] w-[3px] rounded-r-full bg-[#f7c931]"
+          aria-hidden
+        />
+      ) : null}
+      <span
+        className={classNames(
+          "flex h-8 w-8 shrink-0 items-center justify-center",
+          homeActive ? "text-[#f7c931]" : "text-current"
+        )}
+      >
+        {icon}
+      </span>
+      <span className="min-w-0 flex-1 truncate">{label}</span>
+      {showChevron ? (
+        <ChevronRight className="h-4 w-4 shrink-0" aria-hidden />
+      ) : null}
+    </Link>
   );
 }

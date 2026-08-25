@@ -22,27 +22,30 @@ export function AppHeader({
   const [query, setQuery] = useState(searchParams.get("q") ?? "");
 
   return (
-    <header className="sticky top-0 z-30 h-auto border-b border-slate-800 bg-slate-950 text-white shadow-lg shadow-slate-950/10 lg:h-[68px]">
-      <div className="flex h-full flex-col gap-3 px-4 py-3 lg:flex-row lg:items-center lg:gap-5 lg:px-6">
+    <header className="qcfg-app-header sticky top-0 z-30 h-auto border-b text-slate-950 md:h-[92px]">
+      <div className="flex h-full flex-col gap-3 px-4 py-3 md:flex-row md:items-center md:justify-center md:gap-6 md:px-8">
         <Link
           aria-label={homeLabel}
-          className="flex shrink-0 items-center gap-3 font-semibold"
+          className="qcfg-touch-target flex shrink-0 items-center gap-3 rounded-xl pr-2 font-semibold focus-visible:outline-offset-4 md:hidden"
           to="/"
         >
-          <span className="flex h-10 w-10 items-center justify-center rounded-xl border border-sky-400/40 bg-slate-900">
-            <BookOpenCheck className="h-6 w-6 text-sky-300" aria-hidden />
+          <span className="flex h-11 w-11 items-center justify-center rounded-xl border border-blue-200 bg-white/80 shadow-sm">
+            <BookOpenCheck
+              className="h-6 w-6 text-[var(--qcfg-status-info)]"
+              aria-hidden
+            />
           </span>
           <span className="leading-tight">
-            <span className="block text-sm font-bold uppercase tracking-wide">
-              {appName}
+            <span className="block text-[0.82rem] font-extrabold uppercase tracking-wide text-slate-950">
+              {appName.toUpperCase()}
             </span>
-            <span className="block text-xs font-medium text-sky-200">
+            <span className="block text-xs font-semibold text-slate-600">
               Field Inspection • Quality Control • Learning
             </span>
           </span>
         </Link>
         <form
-          className="flex min-w-0 flex-1 items-center rounded-xl border border-slate-700 bg-slate-900/90 px-3 shadow-inner shadow-slate-950/30 focus-within:border-sky-400"
+          className="flex h-14 w-full min-w-0 items-center rounded-[15px] border border-[rgba(15,23,42,0.12)] bg-white/90 px-4 shadow-[0_4px_18px_rgba(15,23,42,0.08)] transition focus-within:border-[var(--qcfg-focus)] focus-within:ring-4 focus-within:ring-blue-100 md:w-[610px]"
           onSubmit={(event) => {
             event.preventDefault();
             const trimmed = query.trim();
@@ -51,20 +54,23 @@ export function AppHeader({
             );
           }}
         >
-          <Search className="h-5 w-5 text-slate-400" aria-hidden />
+          <Search className="h-6 w-6 text-[#07142e]" aria-hidden />
           <label className="sr-only" htmlFor="global-search">
             {searchLabel}
           </label>
           <input
-            className="min-h-11 flex-1 bg-transparent px-3 text-sm text-white outline-none placeholder:text-slate-400"
+            className="min-h-12 flex-1 bg-transparent px-4 text-[15px] font-normal text-[#07142e] outline-none placeholder:text-[#53627d]"
             id="global-search"
             onChange={(event) => setQuery(event.currentTarget.value)}
-            placeholder="Search activity, term, acronym, workflow..."
+            placeholder="Search inspections, systems, topics..."
             type="search"
             value={query}
           />
+          <kbd className="hidden h-7 min-w-14 items-center justify-center rounded-md border border-[rgba(15,23,42,0.18)] bg-white px-2 text-xs font-semibold text-[#53627d] shadow-sm sm:inline-flex">
+            Ctrl + K
+          </kbd>
         </form>
-        <div className="flex shrink-0 flex-wrap items-center gap-3">
+        <div className="flex shrink-0 flex-wrap items-center gap-3 md:absolute md:right-8">
           <LanguageSwitch ariaLabel={languageLabel} />
         </div>
       </div>

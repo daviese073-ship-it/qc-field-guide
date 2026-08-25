@@ -25,10 +25,10 @@ export function FieldLayout({
   rail?: ReactNode;
 }) {
   return (
-    <div className="grid gap-5 xl:grid-cols-[minmax(0,1fr)_300px] 2xl:grid-cols-[minmax(0,1fr)_340px]">
+    <div className="grid gap-[var(--qcfg-section-gap)] xl:grid-cols-[minmax(0,1fr)_minmax(260px,300px)] 2xl:grid-cols-[minmax(0,1fr)_320px]">
       <div className="min-w-0">{children}</div>
       {rail ? (
-        <aside className="space-y-4 xl:sticky xl:top-[88px] xl:self-start">
+        <aside className="space-y-4 xl:sticky xl:top-[92px] xl:self-start">
           {rail}
         </aside>
       ) : null}
@@ -48,17 +48,15 @@ export function RailPanel({
   return (
     <section
       className={classNames(
-        "rounded-xl border p-4 shadow-sm",
+        "qcfg-rail-panel p-[var(--qcfg-card-padding)]",
         tone === "tip"
-          ? "border-emerald-200 bg-emerald-50"
+          ? "border-emerald-200 bg-emerald-50/80"
           : tone === "critical"
-            ? "border-red-200 bg-red-50"
-            : "border-slate-200 bg-white"
+            ? "border-red-200 bg-red-50/80"
+            : undefined
       )}
     >
-      <h2 className="mb-3 text-xs font-bold uppercase tracking-wide text-slate-800">
-        {title}
-      </h2>
+      <h2 className="qcfg-section-heading mb-3">{title}</h2>
       {children}
     </section>
   );
@@ -122,7 +120,7 @@ export function ChecklistPanel({
   title: ReactNode;
 }) {
   return (
-    <section className="border-r border-slate-200 bg-white p-4 last:border-r-0">
+    <section className="border-r border-[var(--qcfg-divider)] bg-[var(--qcfg-surface-card)] p-[var(--qcfg-card-padding)] last:border-r-0">
       <div className="mb-3 flex items-center gap-2">
         <span
           className={classNames(
@@ -132,9 +130,7 @@ export function ChecklistPanel({
         >
           {icon}
         </span>
-        <h2 className="text-xs font-bold uppercase tracking-wide text-slate-800">
-          {title}
-        </h2>
+        <h2 className="qcfg-section-heading">{title}</h2>
       </div>
       <div className={classNames("mb-3 h-0.5 rounded-full", accentClass)} />
       {children}
@@ -156,7 +152,7 @@ export function PageHeader({
   children?: ReactNode;
 }) {
   return (
-    <header className="border-b border-slate-200 pb-4">
+    <header className="border-b border-[var(--qcfg-divider)] pb-4">
       {eyebrow ? (
         <p className="text-xs font-semibold uppercase tracking-wide text-blue-700">
           {eyebrow}
@@ -164,13 +160,9 @@ export function PageHeader({
       ) : null}
       <div className="mt-2 flex flex-col gap-4 md:flex-row md:items-start md:justify-between">
         <div className="min-w-0">
-          <h1 className="text-balance text-2xl font-bold text-slate-950 md:text-3xl">
-            {title}
-          </h1>
+          <h1 className="qcfg-page-title text-balance">{title}</h1>
           {description ? (
-            <p className="mt-2 max-w-3xl text-sm leading-6 text-slate-700">
-              {description}
-            </p>
+            <p className="qcfg-body-text mt-2 max-w-3xl">{description}</p>
           ) : null}
         </div>
         {actions ? <div className="shrink-0">{actions}</div> : null}
@@ -192,15 +184,11 @@ export function Panel({
   return (
     <section
       className={classNames(
-        "rounded-xl border border-slate-200 bg-white p-4 shadow-sm",
+        "qcfg-card p-[var(--qcfg-card-padding)]",
         className
       )}
     >
-      {title ? (
-        <h2 className="mb-3 text-xs font-bold uppercase tracking-wide text-slate-700">
-          {title}
-        </h2>
-      ) : null}
+      {title ? <h2 className="qcfg-section-heading mb-3">{title}</h2> : null}
       {children}
     </section>
   );
@@ -298,7 +286,7 @@ export function ActivityList({
       {activities.map((activity) => (
         <li key={activity.id}>
           <NavigationLink
-            className="block rounded border border-slate-200 bg-white px-3 py-2 text-sm hover:border-blue-300 hover:bg-blue-50 hover:no-underline"
+            className="qcfg-card-hover qcfg-touch-target block rounded-lg border border-[var(--qcfg-border-normal)] bg-[var(--qcfg-surface-card)] px-3 py-2 text-sm hover:no-underline"
             target={{ objectType: "activity", id: activity.id }}
           >
             <span className="font-mono text-xs text-slate-500">
@@ -323,7 +311,7 @@ export function LinkPill({
 }) {
   return (
     <NavigationLink
-      className="inline-flex min-h-9 items-center rounded border border-slate-300 bg-white px-3 py-1.5 text-sm font-medium text-slate-700 hover:border-blue-500 hover:text-blue-700 hover:no-underline"
+      className="qcfg-touch-target inline-flex items-center rounded-lg border border-[var(--qcfg-border-normal)] bg-[var(--qcfg-surface-card)] px-3 py-1.5 text-sm font-semibold text-slate-700 transition hover:border-[var(--qcfg-border-emphasis)] hover:bg-[var(--qcfg-surface-card-hover)] hover:text-blue-700 hover:no-underline"
       target={target}
     >
       {children}

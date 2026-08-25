@@ -5,16 +5,16 @@ import { AppSidebar } from "./AppSidebar";
 
 export function AppShell({ children }: PropsWithChildren) {
   return (
-    <div className="min-h-screen bg-slate-50 text-slate-950">
-      <AppHeader
-        appName="QC Field Guide"
-        homeLabel="QC Field Guide home"
-        languageLabel="Language preference"
-        searchLabel="Search"
-      />
-      <div className="lg:flex">
-        <AppSidebar />
-        <main className="min-w-0 flex-1 px-4 py-5 md:px-6 lg:px-7">
+    <div className="qcfg-app-shell">
+      <AppSidebar />
+      <div className="min-h-screen md:pl-[274px]">
+        <AppHeader
+          appName="QC/QA"
+          homeLabel="QC Field Guide home"
+          languageLabel="Language preference"
+          searchLabel="Search"
+        />
+        <main className="qcfg-main-surface min-w-0 p-4 md:min-h-[calc(100vh-92px)] md:pb-6 md:pl-6 md:pr-[18px] md:pt-6">
           {children}
         </main>
       </div>

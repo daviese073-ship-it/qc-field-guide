@@ -4,14 +4,137 @@ const screenshot = (name: string) =>
   `test-results/phase017-correction-${name}.png`;
 
 test.describe("Phase 017 correction visual composition", () => {
+  test("captures the corrected Home interface at approved comparison widths", async ({
+    page
+  }) => {
+    test.setTimeout(60000);
+
+    const viewports = [
+      { name: "home-1536", width: 1536, height: 1024 },
+      { name: "home-1440", width: 1440, height: 900 },
+      { name: "home-1280", width: 1280, height: 800 },
+      { name: "home-1024", width: 1024, height: 768 }
+    ];
+
+    for (const viewport of viewports) {
+      await page.setViewportSize({
+        width: viewport.width,
+        height: viewport.height
+      });
+      await page.goto("/");
+
+      await expect(
+        page.getByRole("heading", { name: "What will you inspect today?" })
+      ).toBeVisible();
+      await expect(
+        page.getByRole("heading", { name: "Inspection Systems" })
+      ).toBeVisible();
+      await expect(
+        page.getByRole("heading", { name: "Recently Visited Systems" })
+      ).toBeVisible();
+      await expect(
+        page.getByRole("heading", { name: "Field Tips" })
+      ).toBeVisible();
+      await expect(page.getByText("Quick Inspection")).toHaveCount(0);
+      await expect(page.getByText("What Are You Doing?")).toHaveCount(0);
+      await expect(page.getByText("Production data")).toHaveCount(0);
+      await expect(page.getByRole("main").getByRole("link")).toHaveCount(15);
+
+      const hasHorizontalOverflow = await page.evaluate(
+        () => document.documentElement.scrollWidth > window.innerWidth
+      );
+
+      expect(hasHorizontalOverflow).toBe(false);
+      await page.screenshot({
+        fullPage: true,
+        path: screenshot(`layer2a-${viewport.name}`)
+      });
+    }
+  });
+
+  test("keeps the shared shell usable across Layer 1 viewport targets", async ({
+    page
+  }) => {
+    test.setTimeout(60000);
+
+    const viewports = [
+      { name: "large-desktop", width: 1440, height: 900 },
+      { name: "standard-laptop", width: 1280, height: 800 },
+      { name: "landscape-tablet", width: 1024, height: 768 },
+      { name: "narrow-tablet", width: 820, height: 1180 },
+      { name: "phone", width: 390, height: 844 }
+    ];
+
+    for (const viewport of viewports) {
+      await page.setViewportSize({
+        width: viewport.width,
+        height: viewport.height
+      });
+      await page.goto("/section/10");
+
+      await expect(
+        page.getByRole("link", { name: "QC Field Guide home" })
+      ).toBeVisible();
+      await expect(
+        page.getByRole("searchbox", { name: "Search" })
+      ).toBeVisible();
+      await expect(
+        page.getByRole("heading", { name: /Fire & Life-Safety Construction/i })
+      ).toBeVisible();
+
+      const hasHorizontalOverflow = await page.evaluate(
+        () => document.documentElement.scrollWidth > window.innerWidth
+      );
+
+      expect(hasHorizontalOverflow).toBe(false);
+      await page.screenshot({
+        fullPage: true,
+        path: screenshot(`layer1-shell-${viewport.name}`)
+      });
+    }
+  });
+
+  test("keeps language preference changes separate from canonical routing", async ({
+    page
+  }) => {
+    await page.goto("/section/10");
+
+    await page.getByRole("button", { name: "FR" }).click();
+
+    await expect(page).toHaveURL(/\/section\/10$/);
+    await expect(page.getByRole("searchbox", { name: "Search" })).toBeVisible();
+
+    const hasHorizontalOverflow = await page.evaluate(
+      () => document.documentElement.scrollWidth > window.innerWidth
+    );
+
+    expect(hasHorizontalOverflow).toBe(false);
+    await page.screenshot({
+      fullPage: true,
+      path: screenshot("layer1-shell-french")
+    });
+  });
+
   test("captures the primary route-bound production screens", async ({
     page
   }) => {
+    test.setTimeout(60000);
+
     await page.goto("/");
     await expect(
-      page.getByRole("heading", { name: "Browse Systems" })
+      page.getByRole("heading", { name: "What will you inspect today?" })
     ).toBeVisible();
-    await expect(page.getByText("Production data")).toBeVisible();
+    await expect(
+      page.getByRole("heading", { name: "Inspection Systems" })
+    ).toBeVisible();
+    await expect(
+      page.getByRole("heading", { name: "Recently Visited Systems" })
+    ).toBeVisible();
+    await expect(
+      page.getByRole("heading", { name: "Field Tips" })
+    ).toBeVisible();
+    await expect(page.getByText("Quick Inspection")).toHaveCount(0);
+    await expect(page.getByText("Production data")).toHaveCount(0);
     await page.screenshot({ fullPage: true, path: screenshot("home") });
 
     await page.goto("/section/10");
@@ -40,9 +163,7 @@ test.describe("Phase 017 correction visual composition", () => {
       "aria-selected",
       "true"
     );
-    await expect(
-      page.getByLabel("Full activity content")
-    ).toBeVisible();
+    await expect(page.getByLabel("Full activity content")).toBeVisible();
     await page.screenshot({
       fullPage: true,
       path: screenshot("activity-full")
