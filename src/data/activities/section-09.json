@@ -1,0 +1,190 @@
+[
+  {
+    "id": "9.1",
+    "sectionId": "9",
+    "title": {
+      "en": "Conduits / Raceways"
+    },
+    "nodeTags": [
+      "activity",
+      "interface",
+      "preConcealment"
+    ],
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "BUILD 3 - STEP 1 - CANONICAL ACTIVITY REGISTRY"
+    }
+  },
+  {
+    "id": "9.2",
+    "sectionId": "9",
+    "title": {
+      "en": "Cable Trays"
+    },
+    "nodeTags": [
+      "activity",
+      "interface"
+    ],
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "BUILD 3 - STEP 1 - CANONICAL ACTIVITY REGISTRY"
+    }
+  },
+  {
+    "id": "9.3",
+    "sectionId": "9",
+    "title": {
+      "en": "Supports / Hangers"
+    },
+    "nodeTags": [
+      "activity",
+      "interface"
+    ],
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "BUILD 3 - STEP 1 - CANONICAL ACTIVITY REGISTRY"
+    }
+  },
+  {
+    "id": "9.4",
+    "sectionId": "9",
+    "title": {
+      "en": "Electrical Equipment Installation"
+    },
+    "nodeTags": [
+      "activity",
+      "interface",
+      "specialistInterface"
+    ],
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "BUILD 3 - STEP 1 - CANONICAL ACTIVITY REGISTRY"
+    }
+  },
+  {
+    "id": "9.5",
+    "sectionId": "9",
+    "title": {
+      "en": "Building Distribution Interfaces"
+    },
+    "nodeTags": [
+      "interface",
+      "specialistInterface"
+    ],
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "BUILD 3 - STEP 1 - CANONICAL ACTIVITY REGISTRY"
+    }
+  },
+  {
+    "id": "9.6",
+    "sectionId": "9",
+    "title": {
+      "en": "Grounding / Bonding — Within Assigned Inspection Scope"
+    },
+    "nodeTags": [
+      "interface",
+      "testing",
+      "preConcealment",
+      "specialistInterface"
+    ],
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "BUILD 3 - STEP 1 - CANONICAL ACTIVITY REGISTRY"
+    }
+  },
+  {
+    "id": "9.7",
+    "sectionId": "9",
+    "title": {
+      "en": "Lighting"
+    },
+    "nodeTags": [
+      "activity",
+      "interface",
+      "testing"
+    ],
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "BUILD 3 - STEP 1 - CANONICAL ACTIVITY REGISTRY"
+    }
+  },
+  {
+    "id": "9.8",
+    "sectionId": "9",
+    "title": {
+      "en": "Emergency Lighting"
+    },
+    "nodeTags": [
+      "activity",
+      "interface",
+      "testing",
+      "specialistInterface"
+    ],
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "BUILD 3 - STEP 1 - CANONICAL ACTIVITY REGISTRY"
+    }
+  },
+  {
+    "id": "9.9",
+    "sectionId": "9",
+    "title": {
+      "en": "Electrical Penetrations"
+    },
+    "nodeTags": [
+      "interface",
+      "gate",
+      "preConcealment",
+      "highControl",
+      "traceabilityCritical"
+    ],
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "BUILD 3 - STEP 1 - CANONICAL ACTIVITY REGISTRY"
+    }
+  },
+  {
+    "id": "9.10",
+    "sectionId": "9",
+    "title": {
+      "en": "Identification / Labels"
+    },
+    "nodeTags": [
+      "activity",
+      "closeout"
+    ],
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "BUILD 3 - STEP 1 - CANONICAL ACTIVITY REGISTRY"
+    }
+  },
+  {
+    "id": "9.11",
+    "sectionId": "9",
+    "title": {
+      "en": "Electrical Testing Interfaces"
+    },
+    "nodeTags": [
+      "testing",
+      "gate",
+      "specialistInterface",
+      "traceabilityCritical"
+    ],
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "BUILD 3 - STEP 1 - CANONICAL ACTIVITY REGISTRY"
+    }
+  }
+]

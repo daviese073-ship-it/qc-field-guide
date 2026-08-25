@@ -1,0 +1,117 @@
+[
+  {
+    "id": "1.1",
+    "sectionId": "1",
+    "title": {
+      "en": "Existing Conditions"
+    },
+    "nodeTags": [
+      "activity",
+      "traceabilityCritical"
+    ],
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "BUILD 3 - STEP 1 - CANONICAL ACTIVITY REGISTRY"
+    }
+  },
+  {
+    "id": "1.2",
+    "sectionId": "1",
+    "title": {
+      "en": "Survey & Layout"
+    },
+    "nodeTags": [
+      "activity",
+      "interface"
+    ],
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "BUILD 3 - STEP 1 - CANONICAL ACTIVITY REGISTRY"
+    }
+  },
+  {
+    "id": "1.3",
+    "sectionId": "1",
+    "title": {
+      "en": "Excavation"
+    },
+    "nodeTags": [
+      "activity",
+      "preConcealment"
+    ],
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "BUILD 3 - STEP 1 - CANONICAL ACTIVITY REGISTRY"
+    }
+  },
+  {
+    "id": "1.4",
+    "sectionId": "1",
+    "title": {
+      "en": "Subgrade"
+    },
+    "nodeTags": [
+      "activity",
+      "gate",
+      "preConcealment"
+    ],
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "BUILD 3 - STEP 1 - CANONICAL ACTIVITY REGISTRY"
+    }
+  },
+  {
+    "id": "1.5",
+    "sectionId": "1",
+    "title": {
+      "en": "Granular Materials"
+    },
+    "nodeTags": [
+      "activity",
+      "testing",
+      "preConcealment"
+    ],
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "BUILD 3 - STEP 1 - CANONICAL ACTIVITY REGISTRY"
+    }
+  },
+  {
+    "id": "1.6",
+    "sectionId": "1",
+    "title": {
+      "en": "Backfill"
+    },
+    "nodeTags": [
+      "activity",
+      "testing"
+    ],
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "BUILD 3 - STEP 1 - CANONICAL ACTIVITY REGISTRY"
+    }
+  },
+  {
+    "id": "1.7",
+    "sectionId": "1",
+    "title": {
+      "en": "Site Drainage"
+    },
+    "nodeTags": [
+      "activity",
+      "interface",
+      "preConcealment"
+    ],
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "BUILD 3 - STEP 1 - CANONICAL ACTIVITY REGISTRY"
+    }
+  }
+]

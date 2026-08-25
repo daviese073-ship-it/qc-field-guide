@@ -1,0 +1,168 @@
+[
+  {
+    "id": "12.1",
+    "sectionId": "12",
+    "title": {
+      "en": "Underground Services"
+    },
+    "nodeTags": [
+      "activity",
+      "interface",
+      "testing",
+      "preConcealment",
+      "traceabilityCritical"
+    ],
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "BUILD 3 - STEP 1 - CANONICAL ACTIVITY REGISTRY"
+    }
+  },
+  {
+    "id": "12.2",
+    "sectionId": "12",
+    "title": {
+      "en": "Utility Trenches"
+    },
+    "nodeTags": [
+      "activity",
+      "preConcealment"
+    ],
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "BUILD 3 - STEP 1 - CANONICAL ACTIVITY REGISTRY"
+    }
+  },
+  {
+    "id": "12.3",
+    "sectionId": "12",
+    "title": {
+      "en": "Manholes / Catch Basins / Structures"
+    },
+    "nodeTags": [
+      "activity",
+      "interface",
+      "testing"
+    ],
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "BUILD 3 - STEP 1 - CANONICAL ACTIVITY REGISTRY"
+    }
+  },
+  {
+    "id": "12.4",
+    "sectionId": "12",
+    "title": {
+      "en": "Exterior Drainage"
+    },
+    "nodeTags": [
+      "activity",
+      "interface",
+      "testing"
+    ],
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "BUILD 3 - STEP 1 - CANONICAL ACTIVITY REGISTRY"
+    }
+  },
+  {
+    "id": "12.5",
+    "sectionId": "12",
+    "title": {
+      "en": "Granular Base / Subbase"
+    },
+    "nodeTags": [
+      "activity",
+      "testing",
+      "gate"
+    ],
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "BUILD 3 - STEP 1 - CANONICAL ACTIVITY REGISTRY"
+    }
+  },
+  {
+    "id": "12.6",
+    "sectionId": "12",
+    "title": {
+      "en": "Curbs"
+    },
+    "nodeTags": [
+      "activity"
+    ],
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "BUILD 3 - STEP 1 - CANONICAL ACTIVITY REGISTRY"
+    }
+  },
+  {
+    "id": "12.7",
+    "sectionId": "12",
+    "title": {
+      "en": "Concrete Exterior Works"
+    },
+    "nodeTags": [
+      "activity",
+      "testing"
+    ],
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "BUILD 3 - STEP 1 - CANONICAL ACTIVITY REGISTRY"
+    }
+  },
+  {
+    "id": "12.8",
+    "sectionId": "12",
+    "title": {
+      "en": "Asphalt"
+    },
+    "nodeTags": [
+      "activity",
+      "testing"
+    ],
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "BUILD 3 - STEP 1 - CANONICAL ACTIVITY REGISTRY"
+    }
+  },
+  {
+    "id": "12.9",
+    "sectionId": "12",
+    "title": {
+      "en": "Site Restoration"
+    },
+    "nodeTags": [
+      "closeout",
+      "closeoutHub"
+    ],
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "BUILD 3 - STEP 1 - CANONICAL ACTIVITY REGISTRY"
+    }
+  },
+  {
+    "id": "12.10",
+    "sectionId": "12",
+    "title": {
+      "en": "Fencing / Gates — If Applicable"
+    },
+    "nodeTags": [
+      "activity",
+      "interface",
+      "testing"
+    ],
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "BUILD 3 - STEP 1 - CANONICAL ACTIVITY REGISTRY"
+    }
+  }
+]

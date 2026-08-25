@@ -1,0 +1,158 @@
+[
+  {
+    "id": "5.1",
+    "sectionId": "5",
+    "title": {
+      "en": "Roof Deck / Substrate"
+    },
+    "nodeTags": [
+      "activity",
+      "gate",
+      "preConcealment"
+    ],
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "BUILD 3 - STEP 1 - CANONICAL ACTIVITY REGISTRY"
+    }
+  },
+  {
+    "id": "5.2",
+    "sectionId": "5",
+    "title": {
+      "en": "Vapour / Air Control Layer"
+    },
+    "nodeTags": [
+      "activity",
+      "interface",
+      "gate",
+      "preConcealment",
+      "highControl"
+    ],
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "BUILD 3 - STEP 1 - CANONICAL ACTIVITY REGISTRY"
+    }
+  },
+  {
+    "id": "5.3",
+    "sectionId": "5",
+    "title": {
+      "en": "Roof Insulation"
+    },
+    "nodeTags": [
+      "activity",
+      "gate",
+      "preConcealment"
+    ],
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "BUILD 3 - STEP 1 - CANONICAL ACTIVITY REGISTRY"
+    }
+  },
+  {
+    "id": "5.4",
+    "sectionId": "5",
+    "title": {
+      "en": "Roofing Membrane"
+    },
+    "nodeTags": [
+      "activity",
+      "interface",
+      "gate",
+      "highControl"
+    ],
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "BUILD 3 - STEP 1 - CANONICAL ACTIVITY REGISTRY"
+    }
+  },
+  {
+    "id": "5.5",
+    "sectionId": "5",
+    "title": {
+      "en": "Flashings & Terminations"
+    },
+    "nodeTags": [
+      "activity",
+      "interface",
+      "highControl"
+    ],
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "BUILD 3 - STEP 1 - CANONICAL ACTIVITY REGISTRY"
+    }
+  },
+  {
+    "id": "5.6",
+    "sectionId": "5",
+    "title": {
+      "en": "Roof Penetrations"
+    },
+    "nodeTags": [
+      "interface",
+      "preConcealment",
+      "highControl",
+      "traceabilityCritical"
+    ],
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "BUILD 3 - STEP 1 - CANONICAL ACTIVITY REGISTRY"
+    }
+  },
+  {
+    "id": "5.7",
+    "sectionId": "5",
+    "title": {
+      "en": "Curbs & Equipment Interfaces"
+    },
+    "nodeTags": [
+      "interface",
+      "preConcealment"
+    ],
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "BUILD 3 - STEP 1 - CANONICAL ACTIVITY REGISTRY"
+    }
+  },
+  {
+    "id": "5.8",
+    "sectionId": "5",
+    "title": {
+      "en": "Roof Drains"
+    },
+    "nodeTags": [
+      "interface",
+      "testing",
+      "preConcealment"
+    ],
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "BUILD 3 - STEP 1 - CANONICAL ACTIVITY REGISTRY"
+    }
+  },
+  {
+    "id": "5.9",
+    "sectionId": "5",
+    "title": {
+      "en": "Roofing Testing / Final Inspection"
+    },
+    "nodeTags": [
+      "testing",
+      "gate",
+      "acceptanceGate"
+    ],
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "BUILD 3 - STEP 1 - CANONICAL ACTIVITY REGISTRY"
+    }
+  }
+]

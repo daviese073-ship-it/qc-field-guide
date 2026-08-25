@@ -1,0 +1,189 @@
+[
+  {
+    "id": "13.1",
+    "sectionId": "13",
+    "title": {
+      "en": "Test Readiness"
+    },
+    "nodeTags": [
+      "testing",
+      "gate",
+      "acceptanceGate"
+    ],
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "BUILD 3 - STEP 1 - CANONICAL ACTIVITY REGISTRY"
+    }
+  },
+  {
+    "id": "13.2",
+    "sectionId": "13",
+    "title": {
+      "en": "Test Documentation"
+    },
+    "nodeTags": [
+      "testing",
+      "traceabilityCritical"
+    ],
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "BUILD 3 - STEP 1 - CANONICAL ACTIVITY REGISTRY"
+    }
+  },
+  {
+    "id": "13.3",
+    "sectionId": "13",
+    "title": {
+      "en": "Mechanical Testing"
+    },
+    "nodeTags": [
+      "testing",
+      "specialistInterface"
+    ],
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "BUILD 3 - STEP 1 - CANONICAL ACTIVITY REGISTRY"
+    }
+  },
+  {
+    "id": "13.4",
+    "sectionId": "13",
+    "title": {
+      "en": "Electrical Testing Interfaces"
+    },
+    "nodeTags": [
+      "testing",
+      "specialistInterface"
+    ],
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "BUILD 3 - STEP 1 - CANONICAL ACTIVITY REGISTRY"
+    }
+  },
+  {
+    "id": "13.5",
+    "sectionId": "13",
+    "title": {
+      "en": "Building Envelope Testing"
+    },
+    "nodeTags": [
+      "testing",
+      "specialistInterface"
+    ],
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "BUILD 3 - STEP 1 - CANONICAL ACTIVITY REGISTRY"
+    }
+  },
+  {
+    "id": "13.6",
+    "sectionId": "13",
+    "title": {
+      "en": "Functional Testing"
+    },
+    "nodeTags": [
+      "testing",
+      "commissioning",
+      "specialistInterface"
+    ],
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "BUILD 3 - STEP 1 - CANONICAL ACTIVITY REGISTRY"
+    }
+  },
+  {
+    "id": "13.7",
+    "sectionId": "13",
+    "title": {
+      "en": "Equipment Start-Up"
+    },
+    "nodeTags": [
+      "testing",
+      "commissioning",
+      "specialistInterface"
+    ],
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "BUILD 3 - STEP 1 - CANONICAL ACTIVITY REGISTRY"
+    }
+  },
+  {
+    "id": "13.8",
+    "sectionId": "13",
+    "title": {
+      "en": "Integrated / System Testing — Where Applicable"
+    },
+    "nodeTags": [
+      "testing",
+      "commissioning",
+      "interface",
+      "specialistInterface",
+      "highControl"
+    ],
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "BUILD 3 - STEP 1 - CANONICAL ACTIVITY REGISTRY"
+    }
+  },
+  {
+    "id": "13.9",
+    "sectionId": "13",
+    "title": {
+      "en": "Failed-Test Management"
+    },
+    "nodeTags": [
+      "testing",
+      "gate",
+      "traceabilityCritical",
+      "highControl"
+    ],
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "BUILD 3 - STEP 1 - CANONICAL ACTIVITY REGISTRY"
+    }
+  },
+  {
+    "id": "13.10",
+    "sectionId": "13",
+    "title": {
+      "en": "Retesting"
+    },
+    "nodeTags": [
+      "testing",
+      "gate",
+      "traceabilityCritical"
+    ],
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "BUILD 3 - STEP 1 - CANONICAL ACTIVITY REGISTRY"
+    }
+  },
+  {
+    "id": "13.11",
+    "sectionId": "13",
+    "title": {
+      "en": "Acceptance Evidence"
+    },
+    "nodeTags": [
+      "testing",
+      "closeoutHub",
+      "acceptanceGate",
+      "traceabilityCritical"
+    ],
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "BUILD 3 - STEP 1 - CANONICAL ACTIVITY REGISTRY"
+    }
+  }
+]

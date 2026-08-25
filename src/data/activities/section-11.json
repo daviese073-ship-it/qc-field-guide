@@ -1,0 +1,181 @@
+[
+  {
+    "id": "11.1",
+    "sectionId": "11",
+    "title": {
+      "en": "Structural ↔ Architectural"
+    },
+    "nodeTags": [
+      "interface"
+    ],
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "BUILD 3 - STEP 1 - CANONICAL ACTIVITY REGISTRY"
+    }
+  },
+  {
+    "id": "11.2",
+    "sectionId": "11",
+    "title": {
+      "en": "Structural ↔ Mechanical"
+    },
+    "nodeTags": [
+      "interface"
+    ],
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "BUILD 3 - STEP 1 - CANONICAL ACTIVITY REGISTRY"
+    }
+  },
+  {
+    "id": "11.3",
+    "sectionId": "11",
+    "title": {
+      "en": "Structural ↔ Electrical"
+    },
+    "nodeTags": [
+      "interface"
+    ],
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "BUILD 3 - STEP 1 - CANONICAL ACTIVITY REGISTRY"
+    }
+  },
+  {
+    "id": "11.4",
+    "sectionId": "11",
+    "title": {
+      "en": "Envelope ↔ Mechanical"
+    },
+    "nodeTags": [
+      "interface",
+      "highControl"
+    ],
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "BUILD 3 - STEP 1 - CANONICAL ACTIVITY REGISTRY"
+    }
+  },
+  {
+    "id": "11.5",
+    "sectionId": "11",
+    "title": {
+      "en": "Envelope ↔ Electrical"
+    },
+    "nodeTags": [
+      "interface",
+      "highControl"
+    ],
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "BUILD 3 - STEP 1 - CANONICAL ACTIVITY REGISTRY"
+    }
+  },
+  {
+    "id": "11.6",
+    "sectionId": "11",
+    "title": {
+      "en": "Architectural ↔ MEP"
+    },
+    "nodeTags": [
+      "interface",
+      "preConcealment"
+    ],
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "BUILD 3 - STEP 1 - CANONICAL ACTIVITY REGISTRY"
+    }
+  },
+  {
+    "id": "11.7",
+    "sectionId": "11",
+    "title": {
+      "en": "Universal Penetrations"
+    },
+    "nodeTags": [
+      "umbrella",
+      "interface",
+      "gate",
+      "preConcealment",
+      "highControl",
+      "traceabilityCritical"
+    ],
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "BUILD 3 - STEP 1 - CANONICAL ACTIVITY REGISTRY"
+    }
+  },
+  {
+    "id": "11.8",
+    "sectionId": "11",
+    "title": {
+      "en": "Embedded Items"
+    },
+    "nodeTags": [
+      "interface",
+      "gate",
+      "preConcealment",
+      "traceabilityCritical"
+    ],
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "BUILD 3 - STEP 1 - CANONICAL ACTIVITY REGISTRY"
+    }
+  },
+  {
+    "id": "11.9",
+    "sectionId": "11",
+    "title": {
+      "en": "Equipment Bases / Housekeeping Pads"
+    },
+    "nodeTags": [
+      "interface",
+      "gate"
+    ],
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "BUILD 3 - STEP 1 - CANONICAL ACTIVITY REGISTRY"
+    }
+  },
+  {
+    "id": "11.10",
+    "sectionId": "11",
+    "title": {
+      "en": "Access & Maintainability"
+    },
+    "nodeTags": [
+      "interface",
+      "acceptanceGate"
+    ],
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "BUILD 3 - STEP 1 - CANONICAL ACTIVITY REGISTRY"
+    }
+  },
+  {
+    "id": "11.11",
+    "sectionId": "11",
+    "title": {
+      "en": "Trade Coordination / Congestion"
+    },
+    "nodeTags": [
+      "umbrella",
+      "interface"
+    ],
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "BUILD 3 - STEP 1 - CANONICAL ACTIVITY REGISTRY"
+    }
+  }
+]

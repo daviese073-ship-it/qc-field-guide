@@ -50,11 +50,15 @@ implementation use only and does not change the source documents.
   executable foundation audit.
 - `implementation-sequence.md` documents the Phase 008 implementation sequence
   and dependency plan.
+- `production-identity-seed.md` documents the Phase 009 production canonical
+  section/activity identity seed.
 
 ## Current Boundary
 
 The repository now has domain contracts, validation, registries, relationship
-services, screen contracts, and reusable component foundations. It still does
-not ingest production Build 2 content, implement search indexing/ranking/results,
-favorites/recents, official records, approvals, releases, signatures, backend
-services, databases, authentication, analytics, or project tracking.
+services, screen contracts, reusable component foundations, and the production
+section/activity identity catalogue. It still does not ingest substantive
+production Build 2 technical content, implement production logic/relationships,
+search indexing/ranking/results, favorites/recents, official records, approvals,
+releases, signatures, backend services, databases, authentication, analytics, or
+project tracking.

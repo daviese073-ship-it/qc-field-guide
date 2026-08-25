@@ -1,0 +1,191 @@
+[
+  {
+    "id": "8.1",
+    "sectionId": "8",
+    "title": {
+      "en": "Plumbing — Domestic Water"
+    },
+    "nodeTags": [
+      "activity",
+      "testing",
+      "preConcealment"
+    ],
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "BUILD 3 - STEP 1 - CANONICAL ACTIVITY REGISTRY"
+    }
+  },
+  {
+    "id": "8.2",
+    "sectionId": "8",
+    "title": {
+      "en": "Sanitary Drainage"
+    },
+    "nodeTags": [
+      "activity",
+      "testing",
+      "preConcealment"
+    ],
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "BUILD 3 - STEP 1 - CANONICAL ACTIVITY REGISTRY"
+    }
+  },
+  {
+    "id": "8.3",
+    "sectionId": "8",
+    "title": {
+      "en": "Storm Drainage"
+    },
+    "nodeTags": [
+      "activity",
+      "interface",
+      "testing",
+      "preConcealment"
+    ],
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "BUILD 3 - STEP 1 - CANONICAL ACTIVITY REGISTRY"
+    }
+  },
+  {
+    "id": "8.4",
+    "sectionId": "8",
+    "title": {
+      "en": "Process / Equipment Piping — Where Applicable"
+    },
+    "nodeTags": [
+      "activity",
+      "interface",
+      "testing"
+    ],
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "BUILD 3 - STEP 1 - CANONICAL ACTIVITY REGISTRY"
+    }
+  },
+  {
+    "id": "8.5",
+    "sectionId": "8",
+    "title": {
+      "en": "HVAC Ductwork"
+    },
+    "nodeTags": [
+      "activity",
+      "interface",
+      "testing",
+      "preConcealment"
+    ],
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "BUILD 3 - STEP 1 - CANONICAL ACTIVITY REGISTRY"
+    }
+  },
+  {
+    "id": "8.6",
+    "sectionId": "8",
+    "title": {
+      "en": "HVAC Equipment"
+    },
+    "nodeTags": [
+      "activity",
+      "interface",
+      "commissioning"
+    ],
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "BUILD 3 - STEP 1 - CANONICAL ACTIVITY REGISTRY"
+    }
+  },
+  {
+    "id": "8.7",
+    "sectionId": "8",
+    "title": {
+      "en": "Mechanical Insulation"
+    },
+    "nodeTags": [
+      "activity",
+      "preConcealment"
+    ],
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "BUILD 3 - STEP 1 - CANONICAL ACTIVITY REGISTRY"
+    }
+  },
+  {
+    "id": "8.8",
+    "sectionId": "8",
+    "title": {
+      "en": "Mechanical Controls / BAS Interfaces"
+    },
+    "nodeTags": [
+      "interface",
+      "commissioning",
+      "specialistInterface"
+    ],
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "BUILD 3 - STEP 1 - CANONICAL ACTIVITY REGISTRY"
+    }
+  },
+  {
+    "id": "8.9",
+    "sectionId": "8",
+    "title": {
+      "en": "Mechanical Penetrations"
+    },
+    "nodeTags": [
+      "interface",
+      "gate",
+      "preConcealment",
+      "highControl",
+      "traceabilityCritical"
+    ],
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "BUILD 3 - STEP 1 - CANONICAL ACTIVITY REGISTRY"
+    }
+  },
+  {
+    "id": "8.10",
+    "sectionId": "8",
+    "title": {
+      "en": "Mechanical Testing"
+    },
+    "nodeTags": [
+      "testing",
+      "gate",
+      "specialistInterface"
+    ],
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "BUILD 3 - STEP 1 - CANONICAL ACTIVITY REGISTRY"
+    }
+  },
+  {
+    "id": "8.11",
+    "sectionId": "8",
+    "title": {
+      "en": "Mechanical Identification"
+    },
+    "nodeTags": [
+      "activity",
+      "closeout"
+    ],
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "BUILD 3 - STEP 1 - CANONICAL ACTIVITY REGISTRY"
+    }
+  }
+]

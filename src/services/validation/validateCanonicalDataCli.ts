@@ -1,21 +1,29 @@
 import process from "node:process";
 
 import { phase003ValidationDataset } from "@/data/development/phase003ValidationDataset";
+import { productionCanonicalDataset } from "@/data/productionCanonicalDataset";
 import { CanonicalDataValidationError } from "@/domain/registries";
 
 import { validateCanonicalDataset } from "./validateCanonicalDataset";
 
 try {
-  const { registries } = validateCanonicalDataset(phase003ValidationDataset);
+  const fixtureValidation = validateCanonicalDataset(phase003ValidationDataset);
+  const productionValidation = validateCanonicalDataset(
+    productionCanonicalDataset
+  );
 
   console.log(
     [
-      "Phase 003 canonical data validation passed.",
-      "Validated non-production fixture dataset only.",
-      `Sections: ${registries.sections.getAll().length}`,
-      `Activities: ${registries.activities.getAll().length}`,
-      `Relationships: ${registries.relationships.getAll().length}`,
-      "Production dataset validation is not implemented in this phase."
+      "Canonical data validation passed.",
+      "Validated non-production Phase 003 fixture dataset.",
+      `Fixture sections: ${fixtureValidation.registries.sections.getAll().length}`,
+      `Fixture activities: ${fixtureValidation.registries.activities.getAll().length}`,
+      `Fixture relationships: ${fixtureValidation.registries.relationships.getAll().length}`,
+      "Validated Phase 009 production identity dataset.",
+      `Production sections: ${productionValidation.registries.sections.getAll().length}`,
+      `Production activities: ${productionValidation.registries.activities.getAll().length}`,
+      `Production relationships: ${productionValidation.registries.relationships.getAll().length}`,
+      `Production gates: ${productionValidation.registries.gates.getAll().length}`
     ].join("\n")
   );
 } catch (error) {

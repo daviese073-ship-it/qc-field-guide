@@ -1,0 +1,113 @@
+[
+  {
+    "id": "7.1",
+    "sectionId": "7",
+    "title": {
+      "en": "Concrete Floor Preparation"
+    },
+    "nodeTags": [
+      "activity",
+      "testing"
+    ],
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "BUILD 3 - STEP 1 - CANONICAL ACTIVITY REGISTRY"
+    }
+  },
+  {
+    "id": "7.2",
+    "sectionId": "7",
+    "title": {
+      "en": "Floor Finishes"
+    },
+    "nodeTags": [
+      "activity",
+      "testing"
+    ],
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "BUILD 3 - STEP 1 - CANONICAL ACTIVITY REGISTRY"
+    }
+  },
+  {
+    "id": "7.3",
+    "sectionId": "7",
+    "title": {
+      "en": "Wall Finishes"
+    },
+    "nodeTags": [
+      "activity"
+    ],
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "BUILD 3 - STEP 1 - CANONICAL ACTIVITY REGISTRY"
+    }
+  },
+  {
+    "id": "7.4",
+    "sectionId": "7",
+    "title": {
+      "en": "Painting / Coatings"
+    },
+    "nodeTags": [
+      "activity",
+      "testing"
+    ],
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "BUILD 3 - STEP 1 - CANONICAL ACTIVITY REGISTRY"
+    }
+  },
+  {
+    "id": "7.5",
+    "sectionId": "7",
+    "title": {
+      "en": "Architectural Sealants"
+    },
+    "nodeTags": [
+      "activity",
+      "interface",
+      "testing"
+    ],
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "BUILD 3 - STEP 1 - CANONICAL ACTIVITY REGISTRY"
+    }
+  },
+  {
+    "id": "7.6",
+    "sectionId": "7",
+    "title": {
+      "en": "Specialty Finishes"
+    },
+    "nodeTags": [
+      "activity"
+    ],
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "BUILD 3 - STEP 1 - CANONICAL ACTIVITY REGISTRY"
+    }
+  },
+  {
+    "id": "7.7",
+    "sectionId": "7",
+    "title": {
+      "en": "Final Architectural Deficiency Inspection"
+    },
+    "nodeTags": [
+      "closeout",
+      "closeoutHub"
+    ],
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "BUILD 3 - STEP 1 - CANONICAL ACTIVITY REGISTRY"
+    }
+  }
+]

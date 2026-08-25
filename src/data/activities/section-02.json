@@ -1,0 +1,204 @@
+[
+  {
+    "id": "2.1",
+    "sectionId": "2",
+    "title": {
+      "en": "Foundation Formwork"
+    },
+    "nodeTags": [
+      "activity",
+      "preConcealment"
+    ],
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "BUILD 3 - STEP 1 - CANONICAL ACTIVITY REGISTRY"
+    }
+  },
+  {
+    "id": "2.2",
+    "sectionId": "2",
+    "title": {
+      "en": "Foundation Reinforcement"
+    },
+    "nodeTags": [
+      "activity",
+      "preConcealment",
+      "highControl"
+    ],
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "BUILD 3 - STEP 1 - CANONICAL ACTIVITY REGISTRY"
+    }
+  },
+  {
+    "id": "2.3",
+    "sectionId": "2",
+    "title": {
+      "en": "Embedded Items"
+    },
+    "nodeTags": [
+      "activity",
+      "interface",
+      "preConcealment",
+      "traceabilityCritical"
+    ],
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "BUILD 3 - STEP 1 - CANONICAL ACTIVITY REGISTRY"
+    }
+  },
+  {
+    "id": "2.4",
+    "sectionId": "2",
+    "title": {
+      "en": "Pre-Pour Quality Gate"
+    },
+    "nodeTags": [
+      "gate",
+      "preConcealment",
+      "highControl"
+    ],
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "BUILD 3 - STEP 1 - CANONICAL ACTIVITY REGISTRY"
+    }
+  },
+  {
+    "id": "2.5",
+    "sectionId": "2",
+    "title": {
+      "en": "Foundation Concrete"
+    },
+    "nodeTags": [
+      "activity",
+      "testing",
+      "highControl"
+    ],
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "BUILD 3 - STEP 1 - CANONICAL ACTIVITY REGISTRY"
+    }
+  },
+  {
+    "id": "2.6",
+    "sectionId": "2",
+    "title": {
+      "en": "Foundation Concrete Acceptance"
+    },
+    "nodeTags": [
+      "gate",
+      "testing"
+    ],
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "BUILD 3 - STEP 1 - CANONICAL ACTIVITY REGISTRY"
+    }
+  },
+  {
+    "id": "2.7",
+    "sectionId": "2",
+    "title": {
+      "en": "Foundation Walls"
+    },
+    "nodeTags": [
+      "activity",
+      "preConcealment"
+    ],
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "BUILD 3 - STEP 1 - CANONICAL ACTIVITY REGISTRY"
+    }
+  },
+  {
+    "id": "2.8",
+    "sectionId": "2",
+    "title": {
+      "en": "Slab-on-Grade"
+    },
+    "nodeTags": [
+      "activity",
+      "interface",
+      "preConcealment",
+      "testing"
+    ],
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "BUILD 3 - STEP 1 - CANONICAL ACTIVITY REGISTRY"
+    }
+  },
+  {
+    "id": "2.9",
+    "sectionId": "2",
+    "title": {
+      "en": "Below-Grade Waterproofing"
+    },
+    "nodeTags": [
+      "activity",
+      "preConcealment",
+      "highControl"
+    ],
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "BUILD 3 - STEP 1 - CANONICAL ACTIVITY REGISTRY"
+    }
+  },
+  {
+    "id": "2.10",
+    "sectionId": "2",
+    "title": {
+      "en": "Foundation Insulation"
+    },
+    "nodeTags": [
+      "activity",
+      "preConcealment"
+    ],
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "BUILD 3 - STEP 1 - CANONICAL ACTIVITY REGISTRY"
+    }
+  },
+  {
+    "id": "2.11",
+    "sectionId": "2",
+    "title": {
+      "en": "Foundation Drainage"
+    },
+    "nodeTags": [
+      "activity",
+      "interface",
+      "preConcealment",
+      "testing"
+    ],
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "BUILD 3 - STEP 1 - CANONICAL ACTIVITY REGISTRY"
+    }
+  },
+  {
+    "id": "2.12",
+    "sectionId": "2",
+    "title": {
+      "en": "Backfill Against Structure"
+    },
+    "nodeTags": [
+      "activity",
+      "gate"
+    ],
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "BUILD 3 - STEP 1 - CANONICAL ACTIVITY REGISTRY"
+    }
+  }
+]

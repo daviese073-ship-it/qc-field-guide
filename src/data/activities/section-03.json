@@ -1,0 +1,139 @@
+[
+  {
+    "id": "3.1",
+    "sectionId": "3",
+    "title": {
+      "en": "Cast-in-Place Concrete"
+    },
+    "nodeTags": [
+      "activity",
+      "interface",
+      "testing",
+      "preConcealment"
+    ],
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "BUILD 3 - STEP 1 - CANONICAL ACTIVITY REGISTRY"
+    }
+  },
+  {
+    "id": "3.2",
+    "sectionId": "3",
+    "title": {
+      "en": "Structural Steel — Materials"
+    },
+    "nodeTags": [
+      "activity",
+      "traceabilityCritical"
+    ],
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "BUILD 3 - STEP 1 - CANONICAL ACTIVITY REGISTRY"
+    }
+  },
+  {
+    "id": "3.3",
+    "sectionId": "3",
+    "title": {
+      "en": "Structural Steel — Erection"
+    },
+    "nodeTags": [
+      "activity",
+      "interface"
+    ],
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "BUILD 3 - STEP 1 - CANONICAL ACTIVITY REGISTRY"
+    }
+  },
+  {
+    "id": "3.4",
+    "sectionId": "3",
+    "title": {
+      "en": "Bolted Connections"
+    },
+    "nodeTags": [
+      "activity",
+      "testing",
+      "preConcealment"
+    ],
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "BUILD 3 - STEP 1 - CANONICAL ACTIVITY REGISTRY"
+    }
+  },
+  {
+    "id": "3.5",
+    "sectionId": "3",
+    "title": {
+      "en": "Welding"
+    },
+    "nodeTags": [
+      "activity",
+      "testing",
+      "specialistInterface",
+      "preConcealment"
+    ],
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "BUILD 3 - STEP 1 - CANONICAL ACTIVITY REGISTRY"
+    }
+  },
+  {
+    "id": "3.6",
+    "sectionId": "3",
+    "title": {
+      "en": "Steel Protection"
+    },
+    "nodeTags": [
+      "activity",
+      "testing",
+      "preConcealment"
+    ],
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "BUILD 3 - STEP 1 - CANONICAL ACTIVITY REGISTRY"
+    }
+  },
+  {
+    "id": "3.7",
+    "sectionId": "3",
+    "title": {
+      "en": "Structural Masonry"
+    },
+    "nodeTags": [
+      "activity",
+      "interface",
+      "testing",
+      "preConcealment"
+    ],
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "BUILD 3 - STEP 1 - CANONICAL ACTIVITY REGISTRY"
+    }
+  },
+  {
+    "id": "3.8",
+    "sectionId": "3",
+    "title": {
+      "en": "Precast Elements — If Applicable"
+    },
+    "nodeTags": [
+      "activity",
+      "interface",
+      "testing"
+    ],
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "BUILD 3 - STEP 1 - CANONICAL ACTIVITY REGISTRY"
+    }
+  }
+]

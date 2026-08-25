@@ -1,0 +1,153 @@
+[
+  {
+    "id": "6.1",
+    "sectionId": "6",
+    "title": {
+      "en": "Interior Masonry"
+    },
+    "nodeTags": [
+      "activity",
+      "interface",
+      "preConcealment"
+    ],
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "BUILD 3 - STEP 1 - CANONICAL ACTIVITY REGISTRY"
+    }
+  },
+  {
+    "id": "6.2",
+    "sectionId": "6",
+    "title": {
+      "en": "Metal Stud Framing"
+    },
+    "nodeTags": [
+      "activity",
+      "interface",
+      "preConcealment"
+    ],
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "BUILD 3 - STEP 1 - CANONICAL ACTIVITY REGISTRY"
+    }
+  },
+  {
+    "id": "6.3",
+    "sectionId": "6",
+    "title": {
+      "en": "Interior Insulation"
+    },
+    "nodeTags": [
+      "activity",
+      "preConcealment"
+    ],
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "BUILD 3 - STEP 1 - CANONICAL ACTIVITY REGISTRY"
+    }
+  },
+  {
+    "id": "6.4",
+    "sectionId": "6",
+    "title": {
+      "en": "Gypsum Board"
+    },
+    "nodeTags": [
+      "activity",
+      "gate"
+    ],
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "BUILD 3 - STEP 1 - CANONICAL ACTIVITY REGISTRY"
+    }
+  },
+  {
+    "id": "6.5",
+    "sectionId": "6",
+    "title": {
+      "en": "Fire-Rated Assemblies"
+    },
+    "nodeTags": [
+      "umbrella",
+      "interface",
+      "preConcealment",
+      "highControl"
+    ],
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "BUILD 3 - STEP 1 - CANONICAL ACTIVITY REGISTRY"
+    }
+  },
+  {
+    "id": "6.6",
+    "sectionId": "6",
+    "title": {
+      "en": "Interior Doors & Frames"
+    },
+    "nodeTags": [
+      "activity",
+      "interface"
+    ],
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "BUILD 3 - STEP 1 - CANONICAL ACTIVITY REGISTRY"
+    }
+  },
+  {
+    "id": "6.7",
+    "sectionId": "6",
+    "title": {
+      "en": "Door Hardware"
+    },
+    "nodeTags": [
+      "activity",
+      "interface",
+      "testing"
+    ],
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "BUILD 3 - STEP 1 - CANONICAL ACTIVITY REGISTRY"
+    }
+  },
+  {
+    "id": "6.8",
+    "sectionId": "6",
+    "title": {
+      "en": "Ceilings"
+    },
+    "nodeTags": [
+      "activity",
+      "interface",
+      "gate",
+      "preConcealment"
+    ],
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "BUILD 3 - STEP 1 - CANONICAL ACTIVITY REGISTRY"
+    }
+  },
+  {
+    "id": "6.9",
+    "sectionId": "6",
+    "title": {
+      "en": "Access Panels"
+    },
+    "nodeTags": [
+      "interface",
+      "preConcealment"
+    ],
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "BUILD 3 - STEP 1 - CANONICAL ACTIVITY REGISTRY"
+    }
+  }
+]

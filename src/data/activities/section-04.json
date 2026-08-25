@@ -1,0 +1,173 @@
+[
+  {
+    "id": "4.1",
+    "sectionId": "4",
+    "title": {
+      "en": "Exterior Wall Assemblies"
+    },
+    "nodeTags": [
+      "umbrella",
+      "interface",
+      "highControl"
+    ],
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "BUILD 3 - STEP 1 - CANONICAL ACTIVITY REGISTRY"
+    }
+  },
+  {
+    "id": "4.2",
+    "sectionId": "4",
+    "title": {
+      "en": "Air Barrier"
+    },
+    "nodeTags": [
+      "activity",
+      "interface",
+      "preConcealment",
+      "highControl"
+    ],
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "BUILD 3 - STEP 1 - CANONICAL ACTIVITY REGISTRY"
+    }
+  },
+  {
+    "id": "4.3",
+    "sectionId": "4",
+    "title": {
+      "en": "Vapour Barrier"
+    },
+    "nodeTags": [
+      "activity",
+      "interface",
+      "preConcealment"
+    ],
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "BUILD 3 - STEP 1 - CANONICAL ACTIVITY REGISTRY"
+    }
+  },
+  {
+    "id": "4.4",
+    "sectionId": "4",
+    "title": {
+      "en": "Thermal Insulation"
+    },
+    "nodeTags": [
+      "activity",
+      "interface",
+      "preConcealment"
+    ],
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "BUILD 3 - STEP 1 - CANONICAL ACTIVITY REGISTRY"
+    }
+  },
+  {
+    "id": "4.5",
+    "sectionId": "4",
+    "title": {
+      "en": "Exterior Sheathing"
+    },
+    "nodeTags": [
+      "activity",
+      "preConcealment"
+    ],
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "BUILD 3 - STEP 1 - CANONICAL ACTIVITY REGISTRY"
+    }
+  },
+  {
+    "id": "4.6",
+    "sectionId": "4",
+    "title": {
+      "en": "Exterior Masonry / Veneer"
+    },
+    "nodeTags": [
+      "activity",
+      "interface",
+      "preConcealment"
+    ],
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "BUILD 3 - STEP 1 - CANONICAL ACTIVITY REGISTRY"
+    }
+  },
+  {
+    "id": "4.7",
+    "sectionId": "4",
+    "title": {
+      "en": "Exterior Cladding / Panels"
+    },
+    "nodeTags": [
+      "activity",
+      "interface",
+      "preConcealment"
+    ],
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "BUILD 3 - STEP 1 - CANONICAL ACTIVITY REGISTRY"
+    }
+  },
+  {
+    "id": "4.8",
+    "sectionId": "4",
+    "title": {
+      "en": "Windows / Glazing"
+    },
+    "nodeTags": [
+      "activity",
+      "interface",
+      "testing",
+      "highControl"
+    ],
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "BUILD 3 - STEP 1 - CANONICAL ACTIVITY REGISTRY"
+    }
+  },
+  {
+    "id": "4.9",
+    "sectionId": "4",
+    "title": {
+      "en": "Exterior Doors"
+    },
+    "nodeTags": [
+      "activity",
+      "interface",
+      "testing"
+    ],
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "BUILD 3 - STEP 1 - CANONICAL ACTIVITY REGISTRY"
+    }
+  },
+  {
+    "id": "4.10",
+    "sectionId": "4",
+    "title": {
+      "en": "Sealants"
+    },
+    "nodeTags": [
+      "activity",
+      "interface",
+      "testing"
+    ],
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "BUILD 3 - STEP 1 - CANONICAL ACTIVITY REGISTRY"
+    }
+  }
+]

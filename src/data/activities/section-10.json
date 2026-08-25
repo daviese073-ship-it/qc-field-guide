@@ -1,0 +1,148 @@
+[
+  {
+    "id": "10.1",
+    "sectionId": "10",
+    "title": {
+      "en": "Fire-Rated Walls"
+    },
+    "nodeTags": [
+      "activity",
+      "interface",
+      "gate",
+      "preConcealment",
+      "highControl"
+    ],
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "BUILD 3 - STEP 1 - CANONICAL ACTIVITY REGISTRY"
+    }
+  },
+  {
+    "id": "10.2",
+    "sectionId": "10",
+    "title": {
+      "en": "Fire-Rated Floors / Ceilings"
+    },
+    "nodeTags": [
+      "activity",
+      "interface",
+      "gate",
+      "preConcealment",
+      "highControl"
+    ],
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "BUILD 3 - STEP 1 - CANONICAL ACTIVITY REGISTRY"
+    }
+  },
+  {
+    "id": "10.3",
+    "sectionId": "10",
+    "title": {
+      "en": "Firestopping"
+    },
+    "nodeTags": [
+      "interface",
+      "gate",
+      "preConcealment",
+      "highControl",
+      "traceabilityCritical"
+    ],
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "BUILD 3 - STEP 1 - CANONICAL ACTIVITY REGISTRY"
+    }
+  },
+  {
+    "id": "10.4",
+    "sectionId": "10",
+    "title": {
+      "en": "Fire / Smoke Dampers"
+    },
+    "nodeTags": [
+      "interface",
+      "testing",
+      "preConcealment",
+      "specialistInterface"
+    ],
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "BUILD 3 - STEP 1 - CANONICAL ACTIVITY REGISTRY"
+    }
+  },
+  {
+    "id": "10.5",
+    "sectionId": "10",
+    "title": {
+      "en": "Fire-Rated Doors"
+    },
+    "nodeTags": [
+      "interface",
+      "testing",
+      "highControl"
+    ],
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "BUILD 3 - STEP 1 - CANONICAL ACTIVITY REGISTRY"
+    }
+  },
+  {
+    "id": "10.6",
+    "sectionId": "10",
+    "title": {
+      "en": "Fire-Alarm Physical Installation Interfaces"
+    },
+    "nodeTags": [
+      "interface",
+      "testing",
+      "specialistInterface"
+    ],
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "BUILD 3 - STEP 1 - CANONICAL ACTIVITY REGISTRY"
+    }
+  },
+  {
+    "id": "10.7",
+    "sectionId": "10",
+    "title": {
+      "en": "Emergency / Life-Safety Interfaces"
+    },
+    "nodeTags": [
+      "umbrella",
+      "interface",
+      "testing",
+      "acceptanceGate",
+      "specialistInterface"
+    ],
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "BUILD 3 - STEP 1 - CANONICAL ACTIVITY REGISTRY"
+    }
+  },
+  {
+    "id": "10.8",
+    "sectionId": "10",
+    "title": {
+      "en": "Fire Protection Systems — If Applicable"
+    },
+    "nodeTags": [
+      "activity",
+      "interface",
+      "testing",
+      "specialistInterface"
+    ],
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "BUILD 3 - STEP 1 - CANONICAL ACTIVITY REGISTRY"
+    }
+  }
+]

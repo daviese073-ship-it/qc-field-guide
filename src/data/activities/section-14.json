@@ -1,0 +1,245 @@
+[
+  {
+    "id": "14.1",
+    "sectionId": "14",
+    "title": {
+      "en": "Preparatory Deficiency Review"
+    },
+    "nodeTags": [
+      "closeout",
+      "closeoutHub"
+    ],
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "BUILD 3 - STEP 1 - CANONICAL ACTIVITY REGISTRY"
+    }
+  },
+  {
+    "id": "14.2",
+    "sectionId": "14",
+    "title": {
+      "en": "Formal Deficiency Survey"
+    },
+    "nodeTags": [
+      "closeout",
+      "traceabilityCritical"
+    ],
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "BUILD 3 - STEP 1 - CANONICAL ACTIVITY REGISTRY"
+    }
+  },
+  {
+    "id": "14.3",
+    "sectionId": "14",
+    "title": {
+      "en": "Deficiency Classification"
+    },
+    "nodeTags": [
+      "closeout",
+      "gate"
+    ],
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "BUILD 3 - STEP 1 - CANONICAL ACTIVITY REGISTRY"
+    }
+  },
+  {
+    "id": "14.4",
+    "sectionId": "14",
+    "title": {
+      "en": "Assignment"
+    },
+    "nodeTags": [
+      "closeout"
+    ],
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "BUILD 3 - STEP 1 - CANONICAL ACTIVITY REGISTRY"
+    }
+  },
+  {
+    "id": "14.5",
+    "sectionId": "14",
+    "title": {
+      "en": "Corrective Work"
+    },
+    "nodeTags": [
+      "closeout",
+      "activity"
+    ],
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "BUILD 3 - STEP 1 - CANONICAL ACTIVITY REGISTRY"
+    }
+  },
+  {
+    "id": "14.6",
+    "sectionId": "14",
+    "title": {
+      "en": "Reinspection"
+    },
+    "nodeTags": [
+      "closeout",
+      "testing",
+      "gate"
+    ],
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "BUILD 3 - STEP 1 - CANONICAL ACTIVITY REGISTRY"
+    }
+  },
+  {
+    "id": "14.7",
+    "sectionId": "14",
+    "title": {
+      "en": "Closure"
+    },
+    "nodeTags": [
+      "closeout",
+      "acceptanceGate"
+    ],
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "BUILD 3 - STEP 1 - CANONICAL ACTIVITY REGISTRY"
+    }
+  },
+  {
+    "id": "14.8",
+    "sectionId": "14",
+    "title": {
+      "en": "Outstanding NC Closure"
+    },
+    "nodeTags": [
+      "closeout",
+      "highControl",
+      "traceabilityCritical",
+      "acceptanceGate"
+    ],
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "BUILD 3 - STEP 1 - CANONICAL ACTIVITY REGISTRY"
+    }
+  },
+  {
+    "id": "14.9",
+    "sectionId": "14",
+    "title": {
+      "en": "Outstanding Test Results"
+    },
+    "nodeTags": [
+      "closeout",
+      "testing",
+      "acceptanceGate"
+    ],
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "BUILD 3 - STEP 1 - CANONICAL ACTIVITY REGISTRY"
+    }
+  },
+  {
+    "id": "14.10",
+    "sectionId": "14",
+    "title": {
+      "en": "Redlines / As-Builts"
+    },
+    "nodeTags": [
+      "closeout",
+      "traceabilityCritical"
+    ],
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "BUILD 3 - STEP 1 - CANONICAL ACTIVITY REGISTRY"
+    }
+  },
+  {
+    "id": "14.11",
+    "sectionId": "14",
+    "title": {
+      "en": "O&M Documentation"
+    },
+    "nodeTags": [
+      "closeout"
+    ],
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "BUILD 3 - STEP 1 - CANONICAL ACTIVITY REGISTRY"
+    }
+  },
+  {
+    "id": "14.12",
+    "sectionId": "14",
+    "title": {
+      "en": "Certificates / Technical Records"
+    },
+    "nodeTags": [
+      "closeout",
+      "traceabilityCritical"
+    ],
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "BUILD 3 - STEP 1 - CANONICAL ACTIVITY REGISTRY"
+    }
+  },
+  {
+    "id": "14.13",
+    "sectionId": "14",
+    "title": {
+      "en": "Warranties"
+    },
+    "nodeTags": [
+      "closeout"
+    ],
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "BUILD 3 - STEP 1 - CANONICAL ACTIVITY REGISTRY"
+    }
+  },
+  {
+    "id": "14.14",
+    "sectionId": "14",
+    "title": {
+      "en": "Final Quality Records"
+    },
+    "nodeTags": [
+      "closeout",
+      "closeoutHub",
+      "traceabilityCritical"
+    ],
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "BUILD 3 - STEP 1 - CANONICAL ACTIVITY REGISTRY"
+    }
+  },
+  {
+    "id": "14.15",
+    "sectionId": "14",
+    "title": {
+      "en": "Turnover / Acceptance"
+    },
+    "nodeTags": [
+      "closeout",
+      "acceptanceGate",
+      "highControl"
+    ],
+    "sourceRef": {
+      "build": "Build 3",
+      "document": "docs/source/02-build-3-relationships.docx",
+      "section": "BUILD 3 - STEP 1 - CANONICAL ACTIVITY REGISTRY"
+    }
+  }
+]
