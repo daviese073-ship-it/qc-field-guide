@@ -65,6 +65,9 @@ implementation use only and does not change the source documents.
   LearnContent production presentation data.
 - `production-workflow-preconcealment-data.md` documents the Phase 015 Workflow
   and PreConcealmentWorkflow production presentation data.
+- `derived-search-infrastructure.md` documents the Phase 016 derived search
+  index, normalization, ranking, deduplication, traceability, and validation
+  layer.
 
 ## Current Boundary
 
@@ -75,7 +78,9 @@ and the Build-3-governed production condition, gate, and invalidation-rule
 registries, the Build-3-governed production relationship registry, and the
 Build-4-governed terminology/acronym/localization/UI-string layer. It also has
 Build-5-governed QuickView, LearnContent, Workflow, and
-PreConcealmentWorkflow production data. It still does not implement search
-indexing/ranking/results, final route-bound screen composition,
-favorites/recents, official records, approvals, releases, signatures, backend
-services, databases, authentication, analytics, or project tracking.
+PreConcealmentWorkflow production data, plus derived bilingual search
+normalization, indexing, ranking, deduplication, traceability, and validation.
+It still does not implement route-bound search UI/results, final route-bound
+screen composition, favorites/recents, official records, approvals, releases,
+signatures, backend services, databases, authentication, analytics, or project
+tracking.

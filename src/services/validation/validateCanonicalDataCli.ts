@@ -32,6 +32,10 @@ import {
   auditProductionRelationshipDataset,
   formatProductionRelationshipAuditReport
 } from "./productionRelationshipAudit";
+import {
+  auditProductionSearchDataset,
+  formatProductionSearchAuditReport
+} from "./productionSearchAudit";
 import { validateCanonicalDataset } from "./validateCanonicalDataset";
 
 try {
@@ -61,6 +65,10 @@ try {
   );
   const batirAudit = auditBatirTerminologyDataset(
     productionValidation.dataset
+  );
+  const searchAudit = auditProductionSearchDataset(
+    productionValidation.dataset,
+    productionValidation.registries
   );
 
   if (!contentAudit.ok) {
@@ -112,6 +120,13 @@ try {
     );
   }
 
+  if (!searchAudit.ok) {
+    throw new CanonicalDataValidationError(
+      "Production search validation failed.",
+      searchAudit.errors
+    );
+  }
+
   console.log(
     [
       "Canonical data validation passed.",
@@ -130,7 +145,8 @@ try {
       formatProductionLocalizationAuditReport(localizationAudit),
       formatProductionPresentationAuditReport(presentationAudit),
       formatProductionWorkflowAuditReport(workflowAudit),
-      formatBatirTerminologyAuditReport(batirAudit)
+      formatBatirTerminologyAuditReport(batirAudit),
+      formatProductionSearchAuditReport(searchAudit)
     ].join("\n")
   );
 } catch (error) {
