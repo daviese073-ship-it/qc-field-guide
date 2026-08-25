@@ -94,6 +94,7 @@ describe("Phase 006 component architecture", () => {
       "placeholder",
       "Search inspections, systems, topics..."
     );
+    expect(screen.queryByText("Ctrl + K")).not.toBeInTheDocument();
     expect(
       screen.getByRole("link", { name: /General QC Processes/i })
     ).toHaveAttribute("href", "/search?q=general%20qc%20processes");

@@ -63,16 +63,16 @@ export function HomePage() {
   const sections = productionRegistries.sections.getAll();
 
   return (
-    <div className="mx-auto grid w-full max-w-[1240px] gap-6 xl:grid-cols-[minmax(0,811px)_385px]">
+    <div className="mx-auto grid w-full max-w-[1197px] gap-6 min-[1400px]:grid-cols-[minmax(0,873px)_300px]">
       <div className="min-w-0">
-        <header className="pt-[17px]">
-          <p className="text-[30px] font-bold leading-[38px] text-[#07142e]">
+        <header className="pt-4">
+          <p className="text-[34px] font-bold leading-[42px] text-[#07142e]">
             {formatCopy(homeCopy.greeting, preference)}{" "}
-            <span className="text-[30px]" aria-hidden>
+            <span className="text-[34px]" aria-hidden>
               👋
             </span>
           </p>
-          <h1 className="mt-1 text-[17px] font-medium leading-6 text-[#53627d]">
+          <h1 className="mt-1 text-[19px] font-medium leading-7 text-[#53627d]">
             {formatCopy(homeCopy.orientation, preference)}
           </h1>
         </header>
@@ -107,7 +107,7 @@ export function HomePage() {
         </section>
       </div>
 
-      <aside className="space-y-5 xl:pt-0">
+      <aside className="space-y-5 min-[1400px]:pt-0">
         <HomeRailPanel
           actionLabel="View All"
           icon={<Clock3 className="h-6 w-6" aria-hidden />}
@@ -192,25 +192,25 @@ function HomeRailPanel({
 }) {
   return (
     <section className="rounded-xl border border-[rgba(15,23,42,0.12)] bg-white shadow-[0_3px_10px_rgba(15,23,42,0.05)]">
-      <header className="flex h-[66px] items-center justify-between border-b border-[rgba(15,23,42,0.10)] px-5">
-        <div className="flex items-center gap-3">
+      <header className="flex h-[60px] items-center justify-between gap-3 border-b border-[rgba(15,23,42,0.10)] px-4">
+        <div className="flex min-w-0 items-center gap-3">
           <span className="text-[#07142e]">{icon}</span>
-          <h2 className="text-[17px] font-bold leading-6 text-[#07142e]">
+          <h2 className="text-[16px] font-bold leading-6 text-[#07142e]">
             {title}
           </h2>
         </div>
-        <span className="text-[13px] font-semibold text-[#005cff]">
+        <span className="shrink-0 text-[12px] font-semibold text-[#005cff]">
           {actionLabel}
         </span>
       </header>
-      <div className="p-5">{children}</div>
+      <div className="p-4">{children}</div>
     </section>
   );
 }
 
 function EmptyRailState({ icon, text }: { icon: JSX.Element; text: string }) {
   return (
-    <div className="min-h-[190px] rounded-[10px] border border-[rgba(15,23,42,0.10)] bg-white/75 p-5">
+    <div className="min-h-[172px] rounded-[10px] border border-[rgba(15,23,42,0.10)] bg-white/75 p-4">
       <div className="mb-5 flex h-[54px] w-[54px] items-center justify-center rounded-full bg-blue-50 text-[#005cff]">
         {icon}
       </div>

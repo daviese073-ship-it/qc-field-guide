@@ -3,9 +3,9 @@
 @tailwind utilities;
 
 :root {
-  --qcfg-surface-page: #fbfafc;
-  --qcfg-surface-page-glow: rgba(255, 225, 218, 0.46);
-  --qcfg-surface-main: #fbfafc;
+  --qcfg-surface-page: #f6f6fa;
+  --qcfg-surface-page-glow: rgba(226, 232, 255, 0.44);
+  --qcfg-surface-main: #f6f6fa;
   --qcfg-surface-secondary: #eef4fb;
   --qcfg-surface-card: rgba(255, 255, 255, 0.94);
   --qcfg-surface-card-hover: #f8fbff;
@@ -25,12 +25,12 @@
       var(--qcfg-surface-page-glow),
       transparent 34%
     ),
-    linear-gradient(135deg, #fbfafc 0%, #fafcff 48%, #f7fbff 100%);
+    linear-gradient(135deg, #f6f6fa 0%, #f7f8fb 52%, #f5f7fb 100%);
   --qcfg-gradient-header: linear-gradient(
-    110deg,
-    #ece6ff 0%,
-    #dfeaff 52%,
-    #bfd7ff 100%
+    100deg,
+    #071b3a 0%,
+    #192d6b 55%,
+    #5b3b88 100%
   );
   --qcfg-gradient-sidebar:
     radial-gradient(
@@ -95,8 +95,8 @@ a {
 
   .qcfg-app-header {
     background: var(--qcfg-gradient-header);
-    border-color: var(--qcfg-border-subtle);
-    box-shadow: 0 3px 12px rgba(15, 23, 42, 0.08);
+    border-color: rgba(255, 255, 255, 0.14);
+    box-shadow: 0 3px 12px rgba(5, 12, 28, 0.18);
   }
 
   .qcfg-sidebar {
@@ -176,33 +176,33 @@ a {
   }
 
   .qcfg-system-earthworks {
-    --qcfg-system-accent: #047857;
-    --qcfg-system-surface: #e7f7ef;
-    --qcfg-system-border: #9ad7bc;
+    --qcfg-system-accent: #138a5b;
+    --qcfg-system-surface: #e5f6ee;
+    --qcfg-system-border: #a7dac3;
   }
 
   .qcfg-system-substructure {
-    --qcfg-system-accent: #0f766e;
-    --qcfg-system-surface: #e3f5f2;
-    --qcfg-system-border: #99d5cc;
+    --qcfg-system-accent: #2563eb;
+    --qcfg-system-surface: #e7efff;
+    --qcfg-system-border: #aac4ff;
   }
 
   .qcfg-system-superstructure {
-    --qcfg-system-accent: #4338ca;
-    --qcfg-system-surface: #eceeff;
-    --qcfg-system-border: #b8c0ff;
+    --qcfg-system-accent: #7048d8;
+    --qcfg-system-surface: #eee8ff;
+    --qcfg-system-border: #c9b8ff;
   }
 
   .qcfg-system-envelope {
-    --qcfg-system-accent: #0369a1;
-    --qcfg-system-surface: #e4f3fb;
-    --qcfg-system-border: #9dd2ef;
+    --qcfg-system-accent: #0f9a9a;
+    --qcfg-system-surface: #e0f7f5;
+    --qcfg-system-border: #9bded9;
   }
 
   .qcfg-system-roofing {
-    --qcfg-system-accent: #7c3aed;
-    --qcfg-system-surface: #f0ebff;
-    --qcfg-system-border: #c7b7ff;
+    --qcfg-system-accent: #f97316;
+    --qcfg-system-surface: #fff0e1;
+    --qcfg-system-border: #ffc28a;
   }
 
   .qcfg-system-interiors {
@@ -212,50 +212,50 @@ a {
   }
 
   .qcfg-system-finishes {
-    --qcfg-system-accent: #a21caf;
-    --qcfg-system-surface: #fbe9fb;
-    --qcfg-system-border: #e9a8e9;
+    --qcfg-system-accent: #c026d3;
+    --qcfg-system-surface: #fbe7fd;
+    --qcfg-system-border: #eda8f3;
   }
 
   .qcfg-system-mechanical {
-    --qcfg-system-accent: #1d4ed8;
+    --qcfg-system-accent: #2563eb;
     --qcfg-system-surface: #e7efff;
     --qcfg-system-border: #a8c4ff;
   }
 
   .qcfg-system-electrical {
-    --qcfg-system-accent: #b45309;
-    --qcfg-system-surface: #fff4dc;
-    --qcfg-system-border: #f3c977;
+    --qcfg-system-accent: #d97706;
+    --qcfg-system-surface: #fff2d7;
+    --qcfg-system-border: #f5c76c;
   }
 
   .qcfg-system-fire {
     --qcfg-system-accent: #dc2626;
-    --qcfg-system-surface: #feecec;
+    --qcfg-system-surface: #fde7e7;
     --qcfg-system-border: #f5a6a6;
   }
 
   .qcfg-system-interfaces {
     --qcfg-system-accent: #0891b2;
-    --qcfg-system-surface: #e5f8fc;
+    --qcfg-system-surface: #e3f7fb;
     --qcfg-system-border: #99dcea;
   }
 
   .qcfg-system-external {
-    --qcfg-system-accent: #15803d;
-    --qcfg-system-surface: #e8f7ee;
+    --qcfg-system-accent: #16a34a;
+    --qcfg-system-surface: #e8f7ea;
     --qcfg-system-border: #a7d9b9;
   }
 
   .qcfg-system-testing {
-    --qcfg-system-accent: #2563eb;
-    --qcfg-system-surface: #e8f0ff;
+    --qcfg-system-accent: #3159d8;
+    --qcfg-system-surface: #e8edff;
     --qcfg-system-border: #aec8ff;
   }
 
   .qcfg-system-closeout {
-    --qcfg-system-accent: #475569;
-    --qcfg-system-surface: #eef2f6;
+    --qcfg-system-accent: #52627a;
+    --qcfg-system-surface: #edf1f5;
     --qcfg-system-border: #c7d0dc;
   }
 

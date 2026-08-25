@@ -1,8 +1,6 @@
 import {
   BadgeCheck,
-  Building2,
   ClipboardCheck,
-  Construction,
   DoorOpen,
   Fan,
   Flame,
@@ -15,14 +13,21 @@ import {
   Shield,
   Shovel,
   Trees,
-  Users,
-  Warehouse,
-  Zap,
-  type LucideIcon
+  Zap
 } from "lucide-react";
+import type { ComponentType, SVGProps } from "react";
+
+import {
+  BuildingEnvelopeIcon,
+  MultidisciplinaryInterfacesIcon,
+  SubstructureIcon,
+  SuperstructureIcon
+} from "./systemIconComponents";
+
+type IconComponent = ComponentType<SVGProps<SVGSVGElement>>;
 
 type VisualMeta = {
-  Icon: LucideIcon;
+  Icon: IconComponent;
   accent: string;
   soft: string;
   border: string;
@@ -46,14 +51,14 @@ const sectionVisuals: Record<string, VisualMeta> = {
     tokenClass: "qcfg-system-earthworks"
   },
   "2": {
-    Icon: Warehouse,
+    Icon: SubstructureIcon,
     accent: "qcfg-system-substructure text-[var(--qcfg-system-accent)]",
     soft: "qcfg-system-substructure bg-[var(--qcfg-system-surface)]",
     border: "qcfg-system-substructure border-[color:var(--qcfg-system-border)]",
     tokenClass: "qcfg-system-substructure"
   },
   "3": {
-    Icon: Construction,
+    Icon: SuperstructureIcon,
     accent: "qcfg-system-superstructure text-[var(--qcfg-system-accent)]",
     soft: "qcfg-system-superstructure bg-[var(--qcfg-system-surface)]",
     border:
@@ -61,7 +66,7 @@ const sectionVisuals: Record<string, VisualMeta> = {
     tokenClass: "qcfg-system-superstructure"
   },
   "4": {
-    Icon: Building2,
+    Icon: BuildingEnvelopeIcon,
     accent: "qcfg-system-envelope text-[var(--qcfg-system-accent)]",
     soft: "qcfg-system-envelope bg-[var(--qcfg-system-surface)]",
     border: "qcfg-system-envelope border-[color:var(--qcfg-system-border)]",
@@ -110,7 +115,7 @@ const sectionVisuals: Record<string, VisualMeta> = {
     tokenClass: "qcfg-system-fire"
   },
   "11": {
-    Icon: Users,
+    Icon: MultidisciplinaryInterfacesIcon,
     accent: "qcfg-system-interfaces text-[var(--qcfg-system-accent)]",
     soft: "qcfg-system-interfaces bg-[var(--qcfg-system-surface)]",
     border: "qcfg-system-interfaces border-[color:var(--qcfg-system-border)]",

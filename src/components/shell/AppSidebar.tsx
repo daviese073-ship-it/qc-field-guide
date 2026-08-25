@@ -25,18 +25,18 @@ export function AppSidebar() {
   const homeLabel = formatUi("UI-NAV-HOME", preference, "Home");
 
   return (
-    <aside className="qcfg-sidebar fixed inset-y-0 left-0 z-40 hidden w-[274px] overflow-y-auto md:block">
-      <div className="flex h-[92px] items-center gap-3 px-6">
+    <aside className="qcfg-sidebar fixed inset-y-0 left-0 z-40 hidden w-[255px] overflow-y-auto md:block">
+      <div className="flex h-[66px] items-center gap-3 px-5">
         <Link
           aria-label="QC Field Guide home"
           className="flex items-center gap-3 rounded-xl focus-visible:outline-offset-4"
           to="/"
         >
-          <span className="flex h-[54px] w-[54px] items-center justify-center rounded-xl border border-[#f7c931]/40 bg-[#07142e]/80 text-[#f7c931] shadow-sm">
-            <BookOpenCheck className="h-8 w-8" aria-hidden />
+          <span className="flex h-11 w-11 items-center justify-center rounded-xl border border-[#f7c931]/40 bg-[#07142e]/80 text-[#f7c931] shadow-sm">
+            <BookOpenCheck className="h-7 w-7" aria-hidden />
           </span>
           <span className="leading-tight">
-            <span className="block text-[24px] font-extrabold tracking-tight text-white">
+            <span className="block text-[22px] font-extrabold tracking-tight text-white">
               QC/QA
             </span>
             <span className="block text-[11px] font-bold uppercase tracking-wide text-blue-100">
@@ -46,7 +46,7 @@ export function AppSidebar() {
         </Link>
       </div>
 
-      <nav className="px-3 pb-6" aria-label="Primary">
+      <nav className="px-2 pb-6" aria-label="Primary">
         <div className="space-y-2">
           <SidebarLink
             active={location.pathname === "/"}
@@ -63,6 +63,7 @@ export function AppSidebar() {
             href="/search?q=general%20qc%20processes"
             icon={<ClipboardList className="h-6 w-6" aria-hidden />}
             label="General QC Processes"
+            truncateLabel={false}
             showChevron
           />
         </div>
@@ -84,7 +85,7 @@ export function AppSidebar() {
                 href={`/section/${encodeURIComponent(section.id)}`}
                 icon={
                   <Icon
-                    className={classNames("h-7 w-7", visual.accent)}
+                    className={classNames("h-6 w-6", visual.accent)}
                     aria-hidden
                   />
                 }
@@ -110,6 +111,7 @@ function SidebarLink({
   icon,
   label,
   showChevron = false,
+  truncateLabel = true,
   variant = "default"
 }: {
   active: boolean;
@@ -117,6 +119,7 @@ function SidebarLink({
   icon: ReactNode;
   label: ReactNode;
   showChevron?: boolean;
+  truncateLabel?: boolean;
   variant?: "default" | "home";
 }) {
   const homeActive = active && variant === "home";
@@ -125,7 +128,7 @@ function SidebarLink({
     <Link
       aria-current={active ? "page" : undefined}
       className={classNames(
-        "relative flex min-h-[54px] items-center gap-4 rounded-[10px] px-4 text-[15px] font-semibold transition focus-visible:outline-offset-2",
+        "relative flex min-h-[54px] items-center gap-2 rounded-[10px] px-2 text-[15px] font-semibold transition focus-visible:outline-offset-2",
         homeActive
           ? "bg-white/10 text-[#f7c931] shadow-[inset_0_0_0_1px_rgba(255,255,255,0.03)]"
           : active
@@ -142,15 +145,22 @@ function SidebarLink({
       ) : null}
       <span
         className={classNames(
-          "flex h-8 w-8 shrink-0 items-center justify-center",
+          "flex h-6 w-6 shrink-0 items-center justify-center",
           homeActive ? "text-[#f7c931]" : "text-current"
         )}
       >
         {icon}
       </span>
-      <span className="min-w-0 flex-1 truncate">{label}</span>
+      <span
+        className={classNames(
+          "min-w-0 flex-1",
+          truncateLabel ? "truncate" : "whitespace-nowrap"
+        )}
+      >
+        {label}
+      </span>
       {showChevron ? (
-        <ChevronRight className="h-4 w-4 shrink-0" aria-hidden />
+        <ChevronRight className="h-3.5 w-3.5 shrink-0" aria-hidden />
       ) : null}
     </Link>
   );

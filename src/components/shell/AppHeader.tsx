@@ -22,8 +22,8 @@ export function AppHeader({
   const [query, setQuery] = useState(searchParams.get("q") ?? "");
 
   return (
-    <header className="qcfg-app-header sticky top-0 z-30 h-auto border-b text-slate-950 md:h-[92px]">
-      <div className="flex h-full flex-col gap-3 px-4 py-3 md:flex-row md:items-center md:justify-center md:gap-6 md:px-8">
+    <header className="qcfg-app-header sticky top-0 z-30 h-auto border-b text-slate-950 md:h-[66px]">
+      <div className="flex h-full flex-col gap-3 px-4 py-3 md:flex-row md:items-center md:justify-center md:gap-6 md:px-8 md:py-0">
         <Link
           aria-label={homeLabel}
           className="qcfg-touch-target flex shrink-0 items-center gap-3 rounded-xl pr-2 font-semibold focus-visible:outline-offset-4 md:hidden"
@@ -45,7 +45,7 @@ export function AppHeader({
           </span>
         </Link>
         <form
-          className="flex h-14 w-full min-w-0 items-center rounded-[15px] border border-[rgba(15,23,42,0.12)] bg-white/90 px-4 shadow-[0_4px_18px_rgba(15,23,42,0.08)] transition focus-within:border-[var(--qcfg-focus)] focus-within:ring-4 focus-within:ring-blue-100 md:w-[610px]"
+          className="flex h-12 w-full min-w-0 items-center rounded-[14px] border border-white/55 bg-white px-4 shadow-[0_4px_16px_rgba(5,12,28,0.16)] transition focus-within:border-white focus-within:ring-4 focus-within:ring-white/25 md:w-[610px]"
           onSubmit={(event) => {
             event.preventDefault();
             const trimmed = query.trim();
@@ -59,16 +59,13 @@ export function AppHeader({
             {searchLabel}
           </label>
           <input
-            className="min-h-12 flex-1 bg-transparent px-4 text-[15px] font-normal text-[#07142e] outline-none placeholder:text-[#53627d]"
+            className="min-h-11 flex-1 bg-transparent px-4 text-[15px] font-normal text-[#07142e] outline-none placeholder:text-[#53627d]"
             id="global-search"
             onChange={(event) => setQuery(event.currentTarget.value)}
             placeholder="Search inspections, systems, topics..."
             type="search"
             value={query}
           />
-          <kbd className="hidden h-7 min-w-14 items-center justify-center rounded-md border border-[rgba(15,23,42,0.18)] bg-white px-2 text-xs font-semibold text-[#53627d] shadow-sm sm:inline-flex">
-            Ctrl + K
-          </kbd>
         </form>
         <div className="flex shrink-0 flex-wrap items-center gap-3 md:absolute md:right-8">
           <LanguageSwitch ariaLabel={languageLabel} />
