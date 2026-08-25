@@ -3,8 +3,10 @@
 Phase 008 implements the final blueprint planning step: converting the frozen
 architecture into an operational Codex execution sequence.
 
-This phase does not begin production content ingestion, search, final screen
-implementation, or any later feature work.
+Phase 008A corrected the future sequence to add a dedicated Phase 010 for full
+Build 2 technical activity content. This correction does not begin production
+content ingestion, search, final screen implementation, or any later feature
+work.
 
 ## Responsibility
 
@@ -27,6 +29,26 @@ Every future phase must declare:
 
 Future phase descriptions in the sequence document are dependency order only.
 They do not authorize implementation by themselves.
+
+## Corrected Future Sequence
+
+The corrected post-Phase-008 dependency chain is:
+
+1. Phase 009 - Production Canonical Identity Seed.
+2. Phase 010 - Production Technical Activity Content.
+3. Phase 011 - Production Logic Registries.
+4. Phase 012 - Production Relationship Registry.
+5. Phase 013 - Terminology, Acronyms, Localization, And UI Strings.
+6. Phase 014 - Authored Field Presentation Data.
+7. Phase 015 - Derived Search Infrastructure.
+8. Phase 016 - Route-Bound Screen Composition.
+9. Phase 017 - Field Interaction And Offline Polish.
+10. Final MVP Acceptance Audit.
+
+The explicit Phase 010 closes the planning gap between identity seeding and
+logic/relationship/presentation work. Build 2 owns this technical activity
+content, and ingestion should happen in reviewable section-level batches with
+validation between batches.
 
 ## Architecture Consumption
 
@@ -53,6 +75,9 @@ and contains the required operational markers:
 - acceptance;
 - checkpoint;
 - future work package warning.
+- the dedicated Build 2 technical-content phase;
+- downstream phases through Phase 017;
+- final MVP acceptance audit.
 
 The validator is deliberately simple. It protects the presence of the plan and
 its main governance sections; it does not interpret product content.

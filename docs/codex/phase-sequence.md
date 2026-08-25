@@ -187,9 +187,11 @@ documents before any implementation begins.
 
 Prerequisite: Phase 008 complete and committed.
 
-Allowed touch: production canonical section and activity identity records only
-where explicitly authorized by the Phase 009 instruction, using language-neutral
-IDs and source references.
+Purpose: establish the production identity catalogue only.
+
+Allowed touch: all authorized canonical sections, all authorized canonical
+activity identities, language-neutral canonical IDs, section ownership, ordering,
+activity titles where authorized, and source references.
 
 Forbidden: full technical criteria, Quick/Full/Learn content, production
 relationships, gates, workflows, search index, UI implementation, or invented
@@ -201,9 +203,43 @@ data.
 
 Checkpoint: commit after successful validation.
 
-### Phase 010 - Production Logic Registries
+### Phase 010 - Production Technical Activity Content
 
 Prerequisite: Phase 009 complete and committed.
+
+Purpose: ingest the substantive production technical activity content governed
+by Build 2.
+
+Allowed touch: production activity content fields already represented by the
+canonical Activity schema, including where applicable quality objective,
+requirements, planning, document control, material control, inspection/testing,
+evidence/records, deficiencies/non-conformity guidance, corrective-action
+guidance, verification, closure, reporting, checkpoints, practical field
+examples, and other Build-2-authored technical activity fields.
+
+Implementation strategy: ingest production activity content in reviewable
+section-level batches, with schema and referential validation between batches.
+The phase is complete only when the authorized production activity set is
+complete and validated.
+
+Forbidden: invented QC criteria, invented acceptance values, invented
+inspection/test requirements, invented project-specific acceptance criteria,
+official project inspection records, project status, approvals, releases,
+signatures, runtime AI-generated canonical content, fictional fixture content
+mixed into production data, or duplicated Quick/Learn/workflow presentation data
+inside the canonical technical activity record where the architecture assigns
+that information elsewhere.
+
+Acceptance: Build 2 remains the technical-content authority; production content
+is distinct from development fixtures; all ingested activity content validates
+through schemas, registries, and integrity checks; no source gaps are silently
+filled; full validation suite passes after every batch and at phase completion.
+
+Checkpoint: commit after successful validation.
+
+### Phase 011 - Production Logic Registries
+
+Prerequisite: Phase 010 complete and committed.
 
 Allowed touch: production condition, gate, and invalidation-rule records where
 explicitly authorized.
@@ -217,9 +253,9 @@ objects remain universal guidance rather than official project records.
 
 Checkpoint: commit after successful validation.
 
-### Phase 011 - Production Relationship Registry
+### Phase 012 - Production Relationship Registry
 
-Prerequisite: Phase 010 complete and committed.
+Prerequisite: Phase 011 complete and committed.
 
 Allowed touch: production relationship records where explicitly authorized and
 tests for graph validity.
@@ -233,43 +269,59 @@ fail, and Phase 004 derivation tests remain green.
 
 Checkpoint: commit after successful validation.
 
-### Phase 012 - Terminology, Acronyms, And UI Strings
+### Phase 013 - Terminology, Acronyms, Localization, And UI Strings
 
-Prerequisite: Phase 011 complete and committed.
+Prerequisite: Phase 012 complete and committed.
 
-Allowed touch: production terminology, acronym, and recurring UI-string records
-where explicitly authorized by Build 4.
+Allowed touch: production terminology concepts, acronym records, localization
+records, content-translation records where explicitly authorized, and recurring
+UI-string records governed by Build 4.
 
-Forbidden: independent French terminology invention, duplicated EN/FR
-components, language-specific routes, or search-ranking implementation unless
-the phase explicitly includes it.
+Governance: canonical IDs remain language-neutral; English and French are views
+of the same canonical knowledge model; approved/source-governed French
+terminology must be used; terminology records, translation/localization records,
+and recurring UI strings remain distinct where the source architecture
+distinguishes them.
+
+Forbidden: independently invented French technical terminology/content,
+duplicated EN/FR components, language-specific routes, search-ranking
+implementation unless the phase explicitly includes it, or treating French as
+post-MVP optional work.
 
 Acceptance: missing/provisional French follows schema rules, canonical concept
-IDs remain language-neutral, and components continue to consume centralized
-labels.
+IDs remain language-neutral, recurring UI strings remain centralized, shared
+routes/relationships work across languages, and components continue to consume
+centralized labels.
 
 Checkpoint: commit after successful validation.
 
-### Phase 013 - Authored Field Presentation Data
+### Phase 014 - Authored Field Presentation Data
 
-Prerequisite: Phase 012 complete and committed.
+Prerequisite: Phase 013 complete and committed.
 
 Allowed touch: QuickView, LearnContent, Workflow, and PreConcealmentWorkflow
 records where explicitly authorized by Build 5 and the phase instruction.
 
-Forbidden: runtime AI generation of Quick content, duplicated activity technical
-content inside workflows, official workflow completion state, or final visual UI
-polish.
+Governance: Quick, Full, and Learn are views of the same underlying activity
+knowledge rather than independent competing knowledge bases. Quick/Learn/
+workflow/pre-concealment data must reference canonical activities and associated
+canonical logic rather than silently duplicating or redefining technical truth.
+
+Forbidden: runtime AI generation of Quick content, duplicated or redefined
+technical truth inside workflows, official workflow completion state, or final
+visual UI polish.
 
 Acceptance: authored presentation data references existing activities,
 relationships, gates, conditions, and terminology; empty visible objects fail
-validation where required by that phase.
+validation where required by that phase; bilingual authored/presentation content
+requirements from Build 4/5 remain represented.
 
 Checkpoint: commit after successful validation.
 
-### Phase 014 - Derived Search Infrastructure
+### Phase 015 - Derived Search Infrastructure
 
-Prerequisite: sufficient canonical content and terminology from prior phases.
+Prerequisite: Phase 014 complete and committed, with sufficient canonical
+content and terminology available for deterministic bilingual search.
 
 Allowed touch: deterministic search normalization, derived search index
 generation, search ranking service, generated artifact handling, and tests where
@@ -285,10 +337,10 @@ preserved.
 
 Checkpoint: commit after successful validation.
 
-### Phase 015 - Route-Bound Screen Composition
+### Phase 016 - Route-Bound Screen Composition
 
-Prerequisite: enough validated canonical data and services to render meaningful
-screens without placeholders.
+Prerequisite: Phase 015 complete and committed, with validated production data
+and services sufficient to render meaningful screens without placeholders.
 
 Allowed touch: route components, screen composition, responsive field-use
 layouts, and tests that consume Phase 005 screen models and Phase 006
@@ -303,18 +355,59 @@ canonical IDs/routes, and remain usable in required viewports.
 
 Checkpoint: commit after successful validation.
 
-### Phase 016 - Field Interaction And Offline Polish
+### Phase 017 - Field Interaction And Offline Polish
 
-Prerequisite: route-bound screens and core data are in place.
+Prerequisite: Phase 016 complete and committed.
 
 Allowed touch: session-only checklist state, accordion/scroll restoration,
 origin-aware Back behavior if not already implemented, offline validation,
-responsive overlay behavior, and PWA polish where explicitly authorized.
+responsive overlay behavior, favorites/recents where authorized by the MVP
+source, and PWA polish where explicitly authorized.
 
 Forbidden: official inspection records, project status tracking, signatures,
 approvals, releases, backend persistence, accounts, or analytics.
 
 Acceptance: interaction state remains temporary and separate from canonical
-data; offline shell/content behavior works; full validation suite passes.
+data; contextual navigation preserves canonical IDs; core content works offline;
+the app still does not imply official project-QMS behavior; full validation
+suite passes.
 
 Checkpoint: commit after successful validation.
+
+## Dependency Chain
+
+Phase 008 -> Phase 009 identities -> Phase 010 full Build 2 technical activity
+content -> Phase 011 logic -> Phase 012 relationships -> Phase 013 bilingual
+terminology/localization -> Phase 014 authored Quick/Learn/workflow/
+pre-concealment data -> Phase 015 derived bilingual search -> Phase 016 real
+route-bound screens -> Phase 017 field interaction/offline polish -> Final MVP
+Acceptance Audit.
+
+## Final MVP Acceptance Audit
+
+This is an acceptance/release checkpoint, not an open-ended feature phase. It
+may fix defects found against frozen MVP requirements, but it does not authorize
+new product scope.
+
+The audit should verify, where applicable from the source-defined MVP:
+
+- all 14 sections render;
+- all canonical activities open;
+- Quick, Full, and Learn work;
+- relationships render dynamically from canonical relationships;
+- contextual navigation works;
+- workflows work;
+- pre-concealment works;
+- gates work;
+- search works in EN/FR;
+- terminology lookup works;
+- language switching preserves context;
+- favorites/recents work where required by the MVP source;
+- responsive layouts work;
+- core content works offline;
+- no dead controls exist;
+- no route leads to an empty page;
+- no official project-QMS functionality is implied.
+
+Source-defined end-to-end field test scenarios remain final acceptance checks
+where documented by the authoritative Build documents.

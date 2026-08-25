@@ -28,6 +28,50 @@ describe("Phase 008 implementation sequence validation", () => {
     );
   });
 
+  it("represents the corrected post-Phase-008 dependency chain", () => {
+    const result = runPhasePlanModule(`
+      import { readFileSync } from "node:fs";
+      const content = readFileSync("docs/codex/phase-sequence.md", "utf8");
+      const phases = [
+        "### Phase 009 - Production Canonical Identity Seed",
+        "### Phase 010 - Production Technical Activity Content",
+        "### Phase 011 - Production Logic Registries",
+        "### Phase 012 - Production Relationship Registry",
+        "### Phase 013 - Terminology, Acronyms, Localization, And UI Strings",
+        "### Phase 014 - Authored Field Presentation Data",
+        "### Phase 015 - Derived Search Infrastructure",
+        "### Phase 016 - Route-Bound Screen Composition",
+        "### Phase 017 - Field Interaction And Offline Polish",
+        "## Final MVP Acceptance Audit"
+      ];
+      console.log(JSON.stringify(phases.map((phase) => content.indexOf(phase))));
+    `);
+    const indexes = JSON.parse(result.stdout) as number[];
+
+    expect(result.status).toBe(0);
+    expect(indexes.every((index) => index >= 0)).toBe(true);
+    expect(indexes).toEqual([...indexes].sort((left, right) => left - right));
+  });
+
+  it("keeps Phase 008A as governance rather than implementation authorization", () => {
+    const result = runPhasePlanModule(`
+      import { readFileSync } from "node:fs";
+      const content = readFileSync("docs/codex/phase-sequence.md", "utf8");
+      console.log(content);
+    `);
+
+    expect(result.status).toBe(0);
+    expect(result.stdout).toContain(
+      "These work packages are dependency order only"
+    );
+    expect(result.stdout).toContain(
+      "Each future user instruction must name the exact phase"
+    );
+    expect(result.stdout).toContain(
+      "This is an acceptance/release checkpoint, not an open-ended feature phase"
+    );
+  });
+
   it("reports missing governance sections clearly", () => {
     const root = mkdtempSync(join(tmpdir(), "qc-field-guide-phase-plan-"));
     const codexDocs = join(root, "docs", "codex");
@@ -58,5 +102,7 @@ describe("Phase 008 implementation sequence validation", () => {
     expect(result.stdout).toContain("Global Rules");
     expect(result.stdout).toContain("Prerequisite:");
     expect(result.stdout).toContain("Phase 008");
+    expect(result.stdout).toContain("Phase 017");
+    expect(result.stdout).toContain("Final MVP Acceptance Audit");
   });
 });

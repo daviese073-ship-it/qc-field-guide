@@ -7,6 +7,22 @@ export const phasePlanRequirements = Object.freeze({
   requiredPhrases: [
     "Implementation Phase Sequence",
     "Global Rules",
+    "Production Canonical Identity Seed",
+    "Production Technical Activity Content",
+    "Production Logic Registries",
+    "Production Relationship Registry",
+    "Terminology, Acronyms, Localization, And UI Strings",
+    "Authored Field Presentation Data",
+    "Derived Search Infrastructure",
+    "Route-Bound Screen Composition",
+    "Field Interaction And Offline Polish",
+    "Final MVP Acceptance Audit",
+    "Build 2 remains the technical-content authority",
+    "section-level batches",
+    "canonical IDs remain language-neutral",
+    "Quick, Full, and Learn are views of the same underlying activity",
+    "search index is derived",
+    "This is an acceptance/release checkpoint",
     "Prerequisite:",
     "Allowed touch:",
     "Forbidden:",
@@ -25,7 +41,15 @@ export const phasePlanRequirements = Object.freeze({
     "Phase 006",
     "Phase 007",
     "Phase 008",
-    "Phase 009"
+    "Phase 009",
+    "Phase 010",
+    "Phase 011",
+    "Phase 012",
+    "Phase 013",
+    "Phase 014",
+    "Phase 015",
+    "Phase 016",
+    "Phase 017"
   ]
 });
 
