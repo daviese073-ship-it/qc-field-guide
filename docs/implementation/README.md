@@ -68,6 +68,8 @@ implementation use only and does not change the source documents.
 - `derived-search-infrastructure.md` documents the Phase 016 derived search
   index, normalization, ranking, deduplication, traceability, and validation
   layer.
+- `route-bound-screen-composition.md` documents the Phase 017 route-bound
+  production screen composition layer.
 
 ## Current Boundary
 
@@ -80,7 +82,8 @@ Build-4-governed terminology/acronym/localization/UI-string layer. It also has
 Build-5-governed QuickView, LearnContent, Workflow, and
 PreConcealmentWorkflow production data, plus derived bilingual search
 normalization, indexing, ranking, deduplication, traceability, and validation.
-It still does not implement route-bound search UI/results, final route-bound
-screen composition, favorites/recents, official records, approvals, releases,
-signatures, backend services, databases, authentication, analytics, or project
-tracking.
+It now composes the production route-bound screens for home, sections,
+activities, workflows, pre-concealment, gates, search, terminology/acronym
+detail, and Not Found handling. It still does not implement favorites/recents,
+field interaction polish, official records, approvals, releases, signatures,
+backend services, databases, authentication, analytics, or project tracking.

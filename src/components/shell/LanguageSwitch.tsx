@@ -1,26 +1,13 @@
-import { useState } from "react";
-
-import {
-  defaultLanguagePreference,
-  getLanguagePreference,
-  setLanguagePreference,
-  type LanguagePreference
-} from "@/services/localization/languagePreference";
+import { useLanguagePreference } from "@/app/languagePreferenceContext";
+import { type LanguagePreference } from "@/services/localization/languagePreference";
 import { classNames } from "@/utils/classNames";
 
 const options = [
   { label: "EN", preference: { mode: "en" } },
-  {
-    label: "EN/FR",
-    preference: { mode: "bilingual", bilingualPrimary: "en" }
-  },
   { label: "FR", preference: { mode: "fr" } }
 ] satisfies readonly { label: string; preference: LanguagePreference }[];
 
-const samePreference = (
-  left: LanguagePreference,
-  right: LanguagePreference
-) =>
+const samePreference = (left: LanguagePreference, right: LanguagePreference) =>
   left.mode === right.mode &&
   (left.mode !== "bilingual" ||
     (right.mode === "bilingual" &&
@@ -31,16 +18,7 @@ interface LanguageSwitchProps {
 }
 
 export function LanguageSwitch({ ariaLabel }: LanguageSwitchProps) {
-  const [preference, setPreference] = useState<LanguagePreference>(() =>
-    typeof window === "undefined"
-      ? defaultLanguagePreference
-      : getLanguagePreference()
-  );
-
-  const updatePreference = (nextPreference: LanguagePreference) => {
-    setLanguagePreference(nextPreference);
-    setPreference(nextPreference);
-  };
+  const { preference, setPreference } = useLanguagePreference();
 
   return (
     <div aria-label={ariaLabel} className="flex gap-1" role="group">
@@ -53,11 +31,11 @@ export function LanguageSwitch({ ariaLabel }: LanguageSwitchProps) {
             className={classNames(
               "min-h-10 rounded px-3 py-2 text-sm font-semibold transition",
               active
-                ? "bg-blue-700 text-white"
-                : "text-slate-700 hover:bg-slate-100"
+                ? "bg-sky-400 text-slate-950"
+                : "text-slate-100 hover:bg-slate-800"
             )}
             key={option.label}
-            onClick={() => updatePreference(option.preference)}
+            onClick={() => setPreference(option.preference)}
             type="button"
           >
             {option.label}

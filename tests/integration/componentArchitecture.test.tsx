@@ -4,6 +4,7 @@ import type { ReactNode } from "react";
 import { MemoryRouter, useLocation } from "react-router-dom";
 import { beforeEach, describe, expect, it, vi } from "vitest";
 
+import { AppProviders } from "@/app/providers";
 import { ActivityModeTabs } from "@/components/activity/ActivityModeTabs";
 import { CriticalFlagRow } from "@/components/activity/CriticalFlagRow";
 import { QuickChecklistGroup } from "@/components/activity/QuickChecklistGroup";
@@ -52,11 +53,19 @@ const exampleLabels = {
 function LocationProbe() {
   const location = useLocation();
 
-  return <output aria-label="current route">{location.pathname + location.search}</output>;
+  return (
+    <output aria-label="current route">
+      {location.pathname + location.search}
+    </output>
+  );
 }
 
 const renderInRouter = (node: ReactNode, initialEntry = "/") =>
-  render(<MemoryRouter initialEntries={[initialEntry]}>{node}</MemoryRouter>);
+  render(
+    <AppProviders>
+      <MemoryRouter initialEntries={[initialEntry]}>{node}</MemoryRouter>
+    </AppProviders>
+  );
 
 const getActivityModel = () => {
   const registries = validateCanonicalDataset(
@@ -103,14 +112,18 @@ describe("Phase 006 component architecture", () => {
       "/activity/10.3?mode=learn"
     );
 
-    await user.click(screen.getByRole("button", { name: "EN/FR" }));
+    expect(
+      screen.queryByRole("button", { name: "EN/FR" })
+    ).not.toBeInTheDocument();
+
+    await user.click(screen.getByRole("button", { name: /^FR$/ }));
 
     expect(screen.getByLabelText("current route")).toHaveTextContent(
       "/activity/10.3?mode=learn"
     );
-    expect(localStorage.getItem("qc-field-guide:language-preference")).toContain(
-      "bilingual"
-    );
+    expect(
+      localStorage.getItem("qc-field-guide:language-preference")
+    ).toContain('"mode":"fr"');
   });
 
   it("localized text centralizes bilingual fallback behavior", () => {
@@ -126,7 +139,9 @@ describe("Phase 006 component architecture", () => {
 
   it("empty-safe renderer returns nothing for missing or empty data", () => {
     const { container, rerender } = render(
-      <EmptySafeRenderer value={[]}>{() => <div>Visible</div>}</EmptySafeRenderer>
+      <EmptySafeRenderer value={[]}>
+        {() => <div>Visible</div>}
+      </EmptySafeRenderer>
     );
 
     expect(container).toBeEmptyDOMElement();
@@ -154,11 +169,12 @@ describe("Phase 006 component architecture", () => {
 
     expect(screen.getByRole("heading", { name: "Before" })).toBeInTheDocument();
     expect(screen.getByRole("heading", { name: "Gates" })).toBeInTheDocument();
-    expect(screen.queryByRole("heading", { name: "Testing" })).not.toBeInTheDocument();
-    expect(screen.getByRole("link", { name: "Fictional Gate" })).toHaveAttribute(
-      "href",
-      "/gate/G-STR-01"
-    );
+    expect(
+      screen.queryByRole("heading", { name: "Testing" })
+    ).not.toBeInTheDocument();
+    expect(
+      screen.getByRole("link", { name: "Fictional Gate" })
+    ).toHaveAttribute("href", "/gate/G-STR-01");
   });
 
   it("relationship strip renders nothing for empty groups", () => {
@@ -214,11 +230,7 @@ describe("Phase 006 component architecture", () => {
 
   it("quick checklist group renders supplied content and hides empty groups", () => {
     const { container, rerender } = renderInRouter(
-      <QuickChecklistGroup
-        items={[]}
-        preference={preference}
-        title="Before"
-      />
+      <QuickChecklistGroup items={[]} preference={preference} title="Before" />
     );
 
     expect(container).toBeEmptyDOMElement();

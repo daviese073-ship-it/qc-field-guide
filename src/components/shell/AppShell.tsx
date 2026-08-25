@@ -1,6 +1,7 @@
 import type { PropsWithChildren } from "react";
 
 import { AppHeader } from "./AppHeader";
+import { AppSidebar } from "./AppSidebar";
 
 export function AppShell({ children }: PropsWithChildren) {
   return (
@@ -11,7 +12,12 @@ export function AppShell({ children }: PropsWithChildren) {
         languageLabel="Language preference"
         searchLabel="Search"
       />
-      <main className="mx-auto max-w-5xl px-4 py-8">{children}</main>
+      <div className="lg:flex">
+        <AppSidebar />
+        <main className="min-w-0 flex-1 px-4 py-5 md:px-6 lg:px-7">
+          {children}
+        </main>
+      </div>
     </div>
   );
 }

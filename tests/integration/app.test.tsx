@@ -1,6 +1,9 @@
 import { render, screen } from "@testing-library/react";
+import userEvent from "@testing-library/user-event";
 import { createMemoryRouter, RouterProvider } from "react-router-dom";
 
+import { AppProviders } from "@/app/providers";
+import { productionRegistries } from "@/app/productionAppData";
 import { routes } from "@/app/router";
 
 function renderRoute(initialEntry: string) {
@@ -8,55 +11,189 @@ function renderRoute(initialEntry: string) {
     initialEntries: [initialEntry]
   });
 
-  return render(<RouterProvider router={router} />);
+  return {
+    router,
+    ...render(
+      <AppProviders>
+        <RouterProvider router={router} />
+      </AppProviders>
+    )
+  };
 }
 
-describe("application routing foundation", () => {
-  it("renders the application shell", () => {
+function escapeRegExp(value: string) {
+  return value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+}
+
+describe("production route-bound screen composition", () => {
+  beforeEach(() => {
+    localStorage.clear();
+  });
+
+  it("renders the production application shell and home route", () => {
     renderRoute("/");
 
     expect(
       screen.getByRole("link", { name: "QC Field Guide home" })
     ).toBeInTheDocument();
+    expect(
+      screen.getByRole("heading", { name: "Browse Systems" })
+    ).toBeInTheDocument();
+    expect(
+      screen.getByRole("link", { name: /Quick Inspection/i })
+    ).toHaveAttribute("href", "/search?q=inspection");
+    expect(screen.getByText("Production data")).toBeInTheDocument();
+    expect(screen.getByText("139")).toBeInTheDocument();
   });
 
-  it("resolves the home route", () => {
-    renderRoute("/");
+  it("makes all production section routes reachable", () => {
+    for (const section of productionRegistries.sections.getAll()) {
+      const { unmount } = renderRoute(`/section/${section.id}`);
+
+      expect(
+        screen.getByRole("heading", {
+          name: new RegExp(escapeRegExp(section.title.en))
+        })
+      ).toBeInTheDocument();
+      expect(screen.getByText("Activities in this system")).toBeInTheDocument();
+
+      unmount();
+    }
+  });
+
+  it("exposes canonical activity links from a section screen", () => {
+    renderRoute("/section/10");
 
     expect(
-      screen.getByRole("heading", { name: "Foundation Home" })
+      screen.getAllByRole("link", { name: /10.3 Firestopping/i })[0]
+    ).toHaveAttribute("href", "/activity/10.3");
+  });
+
+  it("renders representative activity routes and preserves string IDs", () => {
+    for (const activityId of ["10.3", "2.5", "13.1"]) {
+      const activity = productionRegistries.activities.getById(activityId);
+      const { unmount } = renderRoute(`/activity/${activityId}`);
+
+      expect(activity).toBeDefined();
+      expect(
+        screen.getByRole("heading", {
+          name: new RegExp(`${activityId} .*${activity?.title.en}`)
+        })
+      ).toBeInTheDocument();
+
+      unmount();
+    }
+  });
+
+  it("renders QuickView from production presentation data", () => {
+    renderRoute("/activity/10.3");
+
+    expect(screen.getByRole("tab", { name: "Quick" })).toHaveAttribute(
+      "aria-selected",
+      "true"
+    );
+    expect(screen.getByText("Before")).toBeInTheDocument();
+    expect(screen.getByText("Inspect")).toBeInTheDocument();
+    expect(screen.getByText("Evidence")).toBeInTheDocument();
+    expect(screen.getByText("Watch for")).toBeInTheDocument();
+  });
+
+  it("renders Learn from production presentation data", () => {
+    renderRoute("/activity/10.3?mode=learn");
+
+    expect(screen.getByRole("tab", { name: "Learn" })).toHaveAttribute(
+      "aria-selected",
+      "true"
+    );
+    expect(screen.getByText("What is this?")).toBeInTheDocument();
+    expect(screen.getByText("Why it matters")).toBeInTheDocument();
+  });
+
+  it("shows workflow and pre-concealment links only when applicable", () => {
+    renderRoute("/activity/10.3");
+
+    expect(
+      screen.getByRole("link", { name: /Firestop Inspection/i })
+    ).toHaveAttribute("href", "/workflow/WF-FIRE-01");
+    expect(
+      screen.getByRole("link", { name: /Before Closing Fire-Rated Assembly/i })
+    ).toHaveAttribute("href", "/preconcealment/PC-FIRE-01");
+  });
+
+  it("does not show meaningless workflow panels for activities outside workflow data", () => {
+    const activityWithoutWorkflow = productionRegistries.activities
+      .getAll()
+      .find(
+        (activity) =>
+          !productionRegistries.workflows
+            .getAll()
+            .some((workflow) => workflow.activityIds?.includes(activity.id))
+      );
+
+    expect(activityWithoutWorkflow).toBeDefined();
+    renderRoute(`/activity/${activityWithoutWorkflow?.id}`);
+
+    expect(screen.queryByText("Related Workflows")).not.toBeInTheDocument();
+  });
+
+  it("renders workflow and pre-concealment route screens", () => {
+    const workflowRoute = renderRoute("/workflow/WF-FIRE-01");
+
+    expect(
+      screen.getByRole("heading", { name: /Firestop Inspection/i })
+    ).toBeInTheDocument();
+    expect(screen.getByText("Workflow Information")).toBeInTheDocument();
+    expect(screen.getByText("Step")).toBeInTheDocument();
+
+    workflowRoute.unmount();
+
+    renderRoute("/preconcealment/PC-FIRE-01");
+
+    expect(
+      screen.getByRole("heading", {
+        name: /Before Closing Fire-Rated Assembly/i
+      })
+    ).toBeInTheDocument();
+    expect(screen.getAllByText("Stop")[0]).toBeInTheDocument();
+    expect(screen.getAllByText("Check")[0]).toBeInTheDocument();
+    expect(screen.getAllByText("Evidence")[0]).toBeInTheDocument();
+  });
+
+  it("binds production search results to canonical navigation", () => {
+    renderRoute("/search?q=firestop");
+
+    const result = screen.getByRole("link", { name: /10.3 Firestopping/i });
+    expect(result).toBeInTheDocument();
+    expect(result).toHaveAttribute("href", "/activity/10.3");
+  });
+
+  it("switches visible activity content to French without changing route identity", async () => {
+    const user = userEvent.setup();
+    const { router } = renderRoute("/activity/10.3");
+
+    await user.click(screen.getByRole("button", { name: "FR" }));
+
+    expect(router.state.location.pathname).toBe("/activity/10.3");
+    expect(
+      screen.getByRole("heading", { name: /10.3 Calfeutrement coupe-feu/i })
     ).toBeInTheDocument();
   });
 
-  it("resolves activity deep links with string IDs", () => {
-    renderRoute("/activity/10.3");
+  it("handles invalid route objects gracefully", () => {
+    const invalidActivityRoute = renderRoute("/activity/10.999");
 
-    expect(screen.getByTestId("activity-id")).toHaveTextContent("10.3");
-  });
+    expect(
+      screen.getByRole("heading", { name: "Activity not found" })
+    ).toBeInTheDocument();
 
-  it("resolves gate deep links with string IDs", () => {
-    renderRoute("/gate/G-STR-01");
+    invalidActivityRoute.unmount();
 
-    expect(screen.getByText("G-STR-01")).toBeInTheDocument();
-  });
-
-  it("resolves workflow deep links with string IDs", () => {
-    renderRoute("/workflow/WF-CON-01");
-
-    expect(screen.getByText("WF-CON-01")).toBeInTheDocument();
-  });
-
-  it("resolves pre-concealment deep links with string IDs", () => {
-    renderRoute("/preconcealment/PC-FIRE-01");
-
-    expect(screen.getByText("PC-FIRE-01")).toBeInTheDocument();
-  });
-
-  it("renders Not Found for unknown routes", () => {
     renderRoute("/not-a-route");
 
     expect(
-      screen.getByRole("heading", { name: "Not Found" })
+      screen.getByRole("heading", {
+        name: "This production route is not available"
+      })
     ).toBeInTheDocument();
   });
 });

@@ -2,6 +2,7 @@ import { screen } from "@testing-library/react";
 import { render } from "@testing-library/react";
 import { createMemoryRouter, RouterProvider } from "react-router-dom";
 
+import { AppProviders } from "@/app/providers";
 import { routes } from "@/app/router";
 import {
   clearLanguagePreference,
@@ -42,7 +43,11 @@ describe("language preference foundation", () => {
       initialEntries: ["/activity/10.3"]
     });
 
-    render(<RouterProvider router={router} />);
+    render(
+      <AppProviders>
+        <RouterProvider router={router} />
+      </AppProviders>
+    );
 
     expect(router.state.location.pathname).toBe("/activity/10.3");
     expect(screen.getByTestId("activity-id")).toHaveTextContent("10.3");
