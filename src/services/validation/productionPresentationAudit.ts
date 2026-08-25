@@ -296,12 +296,6 @@ export const auditProductionPresentationDataset = (
       `Expected French text for every presentation value; found ${localizedPresentationFrCount}/${localizedPresentationValueCount}.`
     );
   }
-  if (dataset.workflows.length > 0 || dataset.preConcealmentWorkflows.length > 0) {
-    errors.push(
-      "Phase 014 prompt authorizes QuickView/LearnContent production data only; Workflow and PreConcealmentWorkflow records remain deferred."
-    );
-  }
-
   return {
     ok: errors.length === 0,
     errors,

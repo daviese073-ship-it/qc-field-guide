@@ -121,11 +121,11 @@ describe("Phase 009 production identity dataset", () => {
     expect(report.contentItemCount).toBeGreaterThan(1000);
   });
 
-  it("populates Phase 014 Quick/Learn data without later workflow or search data", () => {
+  it("populates Phase 014 Quick/Learn and Phase 015 workflow data without search data", () => {
     expect(productionCanonicalDataset.quickViews).toHaveLength(139);
     expect(productionCanonicalDataset.learnContent).toHaveLength(139);
-    expect(productionCanonicalDataset.workflows).toHaveLength(0);
-    expect(productionCanonicalDataset.preConcealmentWorkflows).toHaveLength(0);
+    expect(productionCanonicalDataset.workflows).toHaveLength(12);
+    expect(productionCanonicalDataset.preConcealmentWorkflows).toHaveLength(7);
     expect(productionCanonicalDataset.terminology.length).toBeGreaterThan(0);
     expect(productionCanonicalDataset.acronyms.length).toBeGreaterThan(0);
     expect(productionCanonicalDataset.uiStrings.length).toBeGreaterThan(0);

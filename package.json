@@ -16,6 +16,7 @@
     "validate:foundation": "node scripts/verify-technical-foundation.mjs",
     "validate:localization": "node scripts/validate-production-localization.mjs",
     "validate:presentation": "node scripts/validate-production-presentation.mjs",
+    "validate:workflows": "node scripts/validate-production-workflows.mjs",
     "validate:phase-plan": "node scripts/validate-phase-plan.mjs"
   },
   "dependencies": {

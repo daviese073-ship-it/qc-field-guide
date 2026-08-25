@@ -70,6 +70,8 @@ import terminologyRoofing from "@/data/terminology/roofing.json";
 import terminologyStructural from "@/data/terminology/structural.json";
 import terminologyTesting from "@/data/terminology/testing.json";
 import uiStrings from "@/data/ui/ui-strings.json";
+import preConcealmentWorkflows from "@/data/preConcealment/pre-concealment-workflows.json";
+import workflows from "@/data/workflows/workflows.json";
 
 const activities = [
   ...section01Activities,
@@ -161,14 +163,14 @@ export const productionCanonicalDataset = {
   gates,
   invalidationRules,
   conditions,
-  workflows: [],
-  preConcealmentWorkflows: [],
+  workflows,
+  preConcealmentWorkflows,
   terminology,
   acronyms,
   uiStrings,
   version: {
     schemaVersion: "phase-002",
-    contentVersion: "phase-014-authored-field-presentation",
+    contentVersion: "phase-015-production-workflow-preconcealment",
     terminologyVersion: "phase-013a-batir-terminology"
   }
 };

@@ -65,5 +65,7 @@ The following remain deliberately deferred to later phases:
 - Phase 011: production conditions, gates, and invalidation rules;
 - Phase 012: production relationships;
 - Phase 013: terminology, acronyms, localization, and UI strings;
-- Phase 014: QuickView, LearnContent, Workflow, and PreConcealmentWorkflow data;
-- Phase 015+: search, final screen composition, and field interaction polish.
+- Phase 014: QuickView and LearnContent data;
+- Phase 015: Workflow and PreConcealmentWorkflow data;
+- Phase 016+: search, final screen composition, field interaction polish, and
+  required pre-production reviews.

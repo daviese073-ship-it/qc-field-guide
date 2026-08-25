@@ -17,11 +17,6 @@ const contentBlockFields = [
   "qualityCheckpoint"
 ] as const;
 
-const laterPhaseCollections = [
-  "workflows",
-  "preConcealmentWorkflows"
-] as const;
-
 const placeholderPattern =
   /\b(coming soon|tbd|todo|lorem ipsum|placeholder)\b/i;
 const leakedSourceNotePattern = /✓|module complete|build 2 .*status/i;
@@ -227,14 +222,6 @@ export const auditProductionContentDataset = (
           `Production activity "${activity.id}" appears to contain a source status note: "${value}".`
         );
       }
-    }
-  }
-
-  for (const collection of laterPhaseCollections) {
-    if (dataset[collection].length > 0) {
-      errors.push(
-        `Production ${collection} contains ${dataset[collection].length} records before its authorized phase.`
-      );
     }
   }
 

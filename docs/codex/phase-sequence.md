@@ -299,13 +299,13 @@ Checkpoint: commit after successful validation.
 
 Prerequisite: Phase 013 complete and committed.
 
-Allowed touch: QuickView, LearnContent, Workflow, and PreConcealmentWorkflow
-records where explicitly authorized by Build 5 and the phase instruction.
+Allowed touch: QuickView and LearnContent records where explicitly authorized
+by Build 5 and the phase instruction.
 
 Governance: Quick, Full, and Learn are views of the same underlying activity
-knowledge rather than independent competing knowledge bases. Quick/Learn/
-workflow/pre-concealment data must reference canonical activities and associated
-canonical logic rather than silently duplicating or redefining technical truth.
+knowledge rather than independent competing knowledge bases. Quick/Learn data
+must reference canonical activities and associated canonical logic rather than
+silently duplicating or redefining technical truth.
 
 Forbidden: runtime AI generation of Quick content, duplicated or redefined
 technical truth inside workflows, official workflow completion state, or final
@@ -318,10 +318,34 @@ requirements from Build 4/5 remain represented.
 
 Checkpoint: commit after successful validation.
 
-### Phase 015 - Derived Search Infrastructure
+### Phase 015 - Production Workflow & Pre-Concealment Data
 
-Prerequisite: Phase 014 complete and committed, with sufficient canonical
-content and terminology available for deterministic bilingual search.
+Prerequisite: Phase 014 complete and committed, with validated production
+QuickView and LearnContent data available for workflow/pre-concealment
+authoring.
+
+Allowed touch: production Workflow and PreConcealmentWorkflow records, workflow
+and pre-concealment validation, deterministic generation scripts, tests, and
+implementation documentation where explicitly authorized by Build 5 and the
+phase instruction.
+
+Forbidden: final workflow UI, route-bound screen composition, official workflow
+completion state, project approvals/releases/signatures, search
+indexing/ranking/results, backend/API/database work, or invented workflow,
+gate, relationship, condition, invalidation, or QC technical content.
+
+Acceptance: workflow and pre-concealment records reference existing canonical
+activities, relationships, gates, conditions, invalidation rules, terminology,
+and source content; empty or orphan records fail; bilingual/provisional status
+is represented; full validation suite passes.
+
+Checkpoint: commit after successful validation.
+
+### Phase 016 - Derived Search Infrastructure
+
+Prerequisite: Phase 015 complete and committed, with sufficient canonical
+content, terminology, workflows, and pre-concealment records available for
+deterministic bilingual search.
 
 Allowed touch: deterministic search normalization, derived search index
 generation, search ranking service, generated artifact handling, and tests where
@@ -337,9 +361,9 @@ preserved.
 
 Checkpoint: commit after successful validation.
 
-### Phase 016 - Route-Bound Screen Composition
+### Phase 017 - Route-Bound Screen Composition
 
-Prerequisite: Phase 015 complete and committed, with validated production data
+Prerequisite: Phase 016 complete and committed, with validated production data
 and services sufficient to render meaningful screens without placeholders.
 
 Allowed touch: route components, screen composition, responsive field-use
@@ -355,9 +379,9 @@ canonical IDs/routes, and remain usable in required viewports.
 
 Checkpoint: commit after successful validation.
 
-### Phase 017 - Field Interaction And Offline Polish
+### Phase 018 - Field Interaction And Offline Polish
 
-Prerequisite: Phase 016 complete and committed.
+Prerequisite: Phase 017 complete and committed.
 
 Allowed touch: session-only checklist state, accordion/scroll restoration,
 origin-aware Back behavior if not already implemented, offline validation,
@@ -374,20 +398,65 @@ suite passes.
 
 Checkpoint: commit after successful validation.
 
+### Phase 019 - Field-Presentation Quality Review
+
+Prerequisite: Phase 018 complete and committed, with route-bound screens and
+field interaction behavior available for review.
+
+Allowed touch: review findings, field-presentation corrections, validation
+updates, tests, and documentation required to verify Quick/Full/Learn,
+workflow, pre-concealment, gate, relationship, terminology, and search
+presentation quality against the source-defined MVP.
+
+Forbidden: new product features, new production QC technical content,
+relationship/gate/workflow invention, official project-QMS behavior, backend
+services, databases, accounts, analytics, or scope expansion beyond review
+findings.
+
+Acceptance: visible interface elements have a defined purpose, data source, and
+working behavior; empty/dead controls are absent; field-presentation quality
+issues required before release are resolved or explicitly documented as release
+blockers.
+
+Checkpoint: commit after successful validation.
+
+### Phase 020 - Bilingual Authority & Content Review
+
+Prerequisite: Phase 019 complete and committed.
+
+Allowed touch: bilingual authority/content review findings, source-authorized
+French terminology/content corrections, translation-status updates, validation
+updates, tests, and documentation required to verify bilingual behavior before
+production release.
+
+Forbidden: independently invented French terminology, language-specific routes,
+duplicated EN/FR components, search or UI feature expansion, official
+project-QMS behavior, backend services, databases, accounts, analytics, or
+unreviewed changes to source-governed final terminology.
+
+Acceptance: bilingual authority-sensitive content and terminology required for
+release are reviewed or explicitly marked as unresolved release blockers;
+language-neutral canonical IDs/routes are preserved; English, French, and
+bilingual behavior remain centralized and validated.
+
+Checkpoint: commit after successful validation.
+
 ## Dependency Chain
 
 Phase 008 -> Phase 009 identities -> Phase 010 full Build 2 technical activity
 content -> Phase 011 logic -> Phase 012 relationships -> Phase 013 bilingual
-terminology/localization -> Phase 014 authored Quick/Learn/workflow/
-pre-concealment data -> Phase 015 derived bilingual search -> Phase 016 real
-route-bound screens -> Phase 017 field interaction/offline polish -> Final MVP
-Acceptance Audit.
+terminology/localization -> Phase 014 authored Quick/Learn data -> Phase 015
+production workflow/pre-concealment data -> Phase 016 derived bilingual search
+-> Phase 017 real route-bound screens -> Phase 018 field interaction/offline
+polish -> Phase 019 field-presentation quality review -> Phase 020 bilingual
+authority/content review -> Final MVP Acceptance Audit.
 
 ## Final MVP Acceptance Audit
 
 This is an acceptance/release checkpoint, not an open-ended feature phase. It
-may fix defects found against frozen MVP requirements, but it does not authorize
-new product scope.
+comes after the required Field-Presentation Quality Review and Bilingual
+Authority & Content Review. It may fix defects found against frozen MVP
+requirements, but it does not authorize new product scope.
 
 The audit should verify, where applicable from the source-defined MVP:
 

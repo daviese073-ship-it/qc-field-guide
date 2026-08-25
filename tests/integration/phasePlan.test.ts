@@ -39,9 +39,12 @@ describe("Phase 008 implementation sequence validation", () => {
         "### Phase 012 - Production Relationship Registry",
         "### Phase 013 - Terminology, Acronyms, Localization, And UI Strings",
         "### Phase 014 - Authored Field Presentation Data",
-        "### Phase 015 - Derived Search Infrastructure",
-        "### Phase 016 - Route-Bound Screen Composition",
-        "### Phase 017 - Field Interaction And Offline Polish",
+        "### Phase 015 - Production Workflow & Pre-Concealment Data",
+        "### Phase 016 - Derived Search Infrastructure",
+        "### Phase 017 - Route-Bound Screen Composition",
+        "### Phase 018 - Field Interaction And Offline Polish",
+        "### Phase 019 - Field-Presentation Quality Review",
+        "### Phase 020 - Bilingual Authority & Content Review",
         "## Final MVP Acceptance Audit"
       ];
       console.log(JSON.stringify(phases.map((phase) => content.indexOf(phase))));
@@ -102,7 +105,7 @@ describe("Phase 008 implementation sequence validation", () => {
     expect(result.stdout).toContain("Global Rules");
     expect(result.stdout).toContain("Prerequisite:");
     expect(result.stdout).toContain("Phase 008");
-    expect(result.stdout).toContain("Phase 017");
+    expect(result.stdout).toContain("Phase 020");
     expect(result.stdout).toContain("Final MVP Acceptance Audit");
   });
 });

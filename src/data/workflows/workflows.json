@@ -1,0 +1,5430 @@
+[
+  {
+    "id": "WF-CON-01",
+    "title": {
+      "en": "Concrete Pour",
+      "fr": "Coulée de béton",
+      "status": {
+        "fr": "provisional"
+      }
+    },
+    "stages": [
+      {
+        "id": "prepare",
+        "title": {
+          "en": "Prepare",
+          "fr": "Préparer",
+          "status": {
+            "fr": "provisional"
+          }
+        },
+        "activityIds": [
+          "2.1",
+          "2.2",
+          "2.3",
+          "9.1",
+          "9.6",
+          "11.8"
+        ]
+      },
+      {
+        "id": "verify",
+        "title": {
+          "en": "Verify",
+          "fr": "Vérifier",
+          "status": {
+            "fr": "provisional"
+          }
+        },
+        "activityIds": [
+          "2.1",
+          "2.2",
+          "2.3",
+          "11.8"
+        ],
+        "gateIds": [
+          "G-STR-01"
+        ]
+      },
+      {
+        "id": "executeObserve",
+        "title": {
+          "en": "Execute / Observe",
+          "fr": "Exécuter / observer",
+          "status": {
+            "fr": "provisional"
+          }
+        },
+        "activityIds": [
+          "2.5",
+          "3.1",
+          "2.8"
+        ]
+      },
+      {
+        "id": "test",
+        "title": {
+          "en": "Test",
+          "fr": "Tester",
+          "status": {
+            "fr": "provisional"
+          }
+        },
+        "activityIds": [
+          "13.1",
+          "13.2"
+        ]
+      },
+      {
+        "id": "releaseClose",
+        "title": {
+          "en": "Release / Close",
+          "fr": "Autoriser / clore",
+          "status": {
+            "fr": "provisional"
+          }
+        },
+        "activityIds": [
+          "14.7"
+        ],
+        "gateIds": [
+          "G-STR-01"
+        ]
+      }
+    ],
+    "activityIds": [
+      "2.1",
+      "2.2",
+      "2.3",
+      "9.1",
+      "9.6",
+      "11.8",
+      "2.5",
+      "3.1",
+      "2.8",
+      "13.1",
+      "13.2",
+      "14.7"
+    ],
+    "gateIds": [
+      "G-STR-01"
+    ],
+    "relatedRelationshipIds": [
+      "REL-11.2-INTERFACES_WITH-3.1",
+      "REL-11.3-INTERFACES_WITH-3.1",
+      "REL-11.3-INTERFACES_WITH-9.1",
+      "REL-9.6-INTERFACES_WITH-11.8-whereApplicable",
+      "REL-9.1-INTERFACES_WITH-11.11",
+      "REL-9.1-INTERFACES_WITH-11.3-whereApplicable",
+      "REL-9.1-INTERFACES_WITH-11.8-whereApplicable",
+      "REL-9.6-INTERFACES_WITH-3.3-whereApplicable",
+      "REL-9.6-TESTED_BY-9.11-whereTestingRequired",
+      "REL-12.1-INTERFACES_WITH-9.1-whereExterior",
+      "REL-7.1-REQUIRES-2.8",
+      "REL-1.4-INTERFACES_WITH-2.8-whereApplicable",
+      "REL-1.5-INTERFACES_WITH-2.8-whereApplicable",
+      "REL-2.1-REQUIRES-1.4-whereApplicable",
+      "REL-2.2-REQUIRES-2.1",
+      "REL-2.3-REQUIRES-2.1",
+      "REL-2.3-REQUIRES-2.2",
+      "REL-2.4-REQUIRES-2.1",
+      "REL-2.4-REQUIRES-2.2",
+      "REL-2.4-REQUIRES-2.3",
+      "REL-2.5-REQUIRES-2.4",
+      "REL-2.6-REQUIRES-2.5",
+      "REL-2.8-REQUIRES-1.4",
+      "REL-2.8-REQUIRES-1.5"
+    ],
+    "evidenceFocus": [
+      {
+        "type": "checkList",
+        "items": [
+          {
+            "id": "WFI-WF-CON-01-EVD-001",
+            "text": {
+              "en": "footing/wall ID;",
+              "fr": "semelle/mur ID;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "2.1",
+              "page": "CNT-2.1-EVID-001",
+              "note": {
+                "en": "Mapped from canonical Activity 2.1 evidence/verification/closureCriteria item CNT-2.1-EVID-001."
+              }
+            }
+          },
+          {
+            "id": "WFI-WF-CON-01-EVD-002",
+            "text": {
+              "en": "drawing/detail reference;",
+              "fr": "planifier/detail référence;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "2.1",
+              "page": "CNT-2.1-EVID-002",
+              "note": {
+                "en": "Mapped from canonical Activity 2.1 evidence/verification/closureCriteria item CNT-2.1-EVID-002."
+              }
+            }
+          },
+          {
+            "id": "WFI-WF-CON-01-EVD-003",
+            "text": {
+              "en": "form dimensions;",
+              "fr": "form dimensions;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "2.1",
+              "page": "CNT-2.1-EVID-003",
+              "note": {
+                "en": "Mapped from canonical Activity 2.1 evidence/verification/closureCriteria item CNT-2.1-EVID-003."
+              }
+            }
+          },
+          {
+            "id": "WFI-WF-CON-01-EVD-004",
+            "text": {
+              "en": "elevation verification;",
+              "fr": "élévation vérification;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "2.1",
+              "page": "CNT-2.1-EVID-004",
+              "note": {
+                "en": "Mapped from canonical Activity 2.1 evidence/verification/closureCriteria item CNT-2.1-EVID-004."
+              }
+            }
+          },
+          {
+            "id": "WFI-WF-CON-01-EVD-005",
+            "text": {
+              "en": "photographs;",
+              "fr": "photographs;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "2.1",
+              "page": "CNT-2.1-EVID-005",
+              "note": {
+                "en": "Mapped from canonical Activity 2.1 evidence/verification/closureCriteria item CNT-2.1-EVID-005."
+              }
+            }
+          },
+          {
+            "id": "WFI-WF-CON-01-EVD-006",
+            "text": {
+              "en": "Grid correct",
+              "fr": "grille corriger",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "2.1",
+              "page": "CNT-2.1-QC-001",
+              "note": {
+                "en": "Mapped from canonical Activity 2.1 qualityCheckpoint/closureCriteria/verification item CNT-2.1-QC-001."
+              }
+            }
+          },
+          {
+            "id": "WFI-WF-CON-01-EVD-007",
+            "text": {
+              "en": "Dimensions correct",
+              "fr": "Dimensions corriger",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "2.1",
+              "page": "CNT-2.1-QC-002",
+              "note": {
+                "en": "Mapped from canonical Activity 2.1 qualityCheckpoint/closureCriteria/verification item CNT-2.1-QC-002."
+              }
+            }
+          },
+          {
+            "id": "WFI-WF-CON-01-EVD-008",
+            "text": {
+              "en": "Elevation correct",
+              "fr": "élévation corriger",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "2.1",
+              "page": "CNT-2.1-QC-003",
+              "note": {
+                "en": "Mapped from canonical Activity 2.1 qualityCheckpoint/closureCriteria/verification item CNT-2.1-QC-003."
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "issuePath": [
+      {
+        "type": "checkList",
+        "items": [
+          {
+            "id": "WFI-WF-CON-01-ISS-001",
+            "text": {
+              "en": "wrong dimensions;",
+              "fr": "wrong dimensions;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "2.1",
+              "page": "CNT-2.1-ISSUE-001",
+              "note": {
+                "en": "Mapped from canonical Activity 2.1 issues.commonDeficiencies/correctiveAction item CNT-2.1-ISSUE-001."
+              }
+            }
+          },
+          {
+            "id": "WFI-WF-CON-01-ISS-002",
+            "text": {
+              "en": "wrong elevation;",
+              "fr": "wrong élévation;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "2.1",
+              "page": "CNT-2.1-ISSUE-002",
+              "note": {
+                "en": "Mapped from canonical Activity 2.1 issues.commonDeficiencies/correctiveAction item CNT-2.1-ISSUE-002."
+              }
+            }
+          },
+          {
+            "id": "WFI-WF-CON-01-ISS-003",
+            "text": {
+              "en": "misalignment;",
+              "fr": "misalignment;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "2.1",
+              "page": "CNT-2.1-ISSUE-003",
+              "note": {
+                "en": "Mapped from canonical Activity 2.1 issues.commonDeficiencies/correctiveAction item CNT-2.1-ISSUE-003."
+              }
+            }
+          },
+          {
+            "id": "WFI-WF-CON-01-ISS-004",
+            "text": {
+              "en": "unstable formwork;",
+              "fr": "unstable coffrage;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "2.1",
+              "page": "CNT-2.1-ISSUE-004",
+              "note": {
+                "en": "Mapped from canonical Activity 2.1 issues.commonDeficiencies/correctiveAction item CNT-2.1-ISSUE-004."
+              }
+            }
+          },
+          {
+            "id": "WFI-WF-CON-01-ISS-005",
+            "text": {
+              "en": "missing blockout;",
+              "fr": "manquant réservation;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "2.1",
+              "page": "CNT-2.1-ISSUE-005",
+              "note": {
+                "en": "Mapped from canonical Activity 2.1 issues.commonDeficiencies/correctiveAction item CNT-2.1-ISSUE-005."
+              }
+            }
+          },
+          {
+            "id": "WFI-WF-CON-01-ISS-006",
+            "text": {
+              "en": "wrong bar size;",
+              "fr": "wrong bar size;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "2.2",
+              "page": "CNT-2.2-ISSUE-001",
+              "note": {
+                "en": "Mapped from canonical Activity 2.2 issues.commonDeficiencies/correctiveAction item CNT-2.2-ISSUE-001."
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "sourceRef": {
+      "build": "Build 5",
+      "document": "docs/source/04-build-5-field-presentation.docx",
+      "section": "Build 5 Activity Mode examples - Concrete Pour"
+    }
+  },
+  {
+    "id": "WF-WALL-01",
+    "title": {
+      "en": "Wall Closure",
+      "fr": "Fermeture des murs",
+      "status": {
+        "fr": "provisional"
+      }
+    },
+    "stages": [
+      {
+        "id": "prepare",
+        "title": {
+          "en": "Prepare",
+          "fr": "Préparer",
+          "status": {
+            "fr": "provisional"
+          }
+        },
+        "activityIds": [
+          "6.1",
+          "6.2",
+          "6.3",
+          "8.9",
+          "9.9",
+          "10.3"
+        ]
+      },
+      {
+        "id": "verify",
+        "title": {
+          "en": "Verify",
+          "fr": "Vérifier",
+          "status": {
+            "fr": "provisional"
+          }
+        },
+        "activityIds": [
+          "6.5",
+          "10.1",
+          "10.3",
+          "10.4",
+          "11.6"
+        ],
+        "gateIds": [
+          "G-INT-01",
+          "G-MEP-01",
+          "G-LS-01"
+        ]
+      },
+      {
+        "id": "executeObserve",
+        "title": {
+          "en": "Execute / Observe",
+          "fr": "Exécuter / observer",
+          "status": {
+            "fr": "provisional"
+          }
+        },
+        "activityIds": [
+          "6.4"
+        ]
+      },
+      {
+        "id": "test",
+        "title": {
+          "en": "Test",
+          "fr": "Tester",
+          "status": {
+            "fr": "provisional"
+          }
+        },
+        "activityIds": [
+          "13.8"
+        ]
+      },
+      {
+        "id": "releaseClose",
+        "title": {
+          "en": "Release / Close",
+          "fr": "Autoriser / clore",
+          "status": {
+            "fr": "provisional"
+          }
+        },
+        "activityIds": [
+          "14.7"
+        ],
+        "gateIds": [
+          "G-INT-01",
+          "G-MEP-01",
+          "G-LS-01"
+        ]
+      }
+    ],
+    "activityIds": [
+      "6.1",
+      "6.2",
+      "6.3",
+      "8.9",
+      "9.9",
+      "10.3",
+      "6.5",
+      "10.1",
+      "10.4",
+      "11.6",
+      "6.4",
+      "13.8",
+      "14.7"
+    ],
+    "gateIds": [
+      "G-INT-01",
+      "G-MEP-01",
+      "G-LS-01"
+    ],
+    "relatedRelationshipIds": [
+      "REL-11.1-INTERFACES_WITH-6.2",
+      "REL-11.4-INTERFACES_WITH-8.9-whereExterior",
+      "REL-11.5-INTERFACES_WITH-9.9-whereExterior",
+      "REL-11.6-INTERFACES_WITH-6.4-whereConcealed",
+      "REL-11.6-INTERFACES_WITH-8.9-whereConcealed",
+      "REL-11.6-INTERFACES_WITH-9.9-whereConcealed",
+      "REL-9.9-PENETRATION_MANAGED_BY-11.7-whereApplicable",
+      "REL-9.9-INTERFACES_WITH-6.5-whereFireSeparation",
+      "REL-9.9-INTERFACES_WITH-10.3-whereFireSeparation",
+      "REL-4.2-INTERFACES_WITH-8.9-whereExterior",
+      "REL-4.2-INTERFACES_WITH-9.9-whereExterior",
+      "REL-4.3-INTERFACES_WITH-8.9-whereExterior",
+      "REL-4.3-INTERFACES_WITH-9.9-whereExterior",
+      "REL-10.1-INTERFACES_WITH-8.9-whereFireSeparation",
+      "REL-10.1-INTERFACES_WITH-9.9-whereFireSeparation",
+      "REL-10.1-INTERFACES_WITH-10.3-whereFireSeparation",
+      "REL-10.1-INTERFACES_WITH-10.5-whereRated",
+      "REL-10.2-INTERFACES_WITH-10.3-whereFireSeparation",
+      "REL-10.2-INTERFACES_WITH-10.4-whereFireSeparation",
+      "REL-10.3-PENETRATION_MANAGED_BY-11.7-whereApplicable",
+      "REL-10.3-GATED_BY-G-INT-01-whereConcealed",
+      "REL-10.4-INTERFACES_WITH-10.6-whereFireSeparation",
+      "REL-10.4-ACCESS_CHECKED_BY-11.10-whereApplicable",
+      "REL-10.4-COMMISSIONED_BY-13.6-whereTestingRequired"
+    ],
+    "evidenceFocus": [
+      {
+        "type": "checkList",
+        "items": [
+          {
+            "id": "WFI-WF-WALL-01-EVD-001",
+            "text": {
+              "en": "wall ID/room;",
+              "fr": "mur ID/room;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "6.1",
+              "page": "CNT-6.1-EVID-001",
+              "note": {
+                "en": "Mapped from canonical Activity 6.1 evidence/verification/closureCriteria item CNT-6.1-EVID-001."
+              }
+            }
+          },
+          {
+            "id": "WFI-WF-WALL-01-EVD-002",
+            "text": {
+              "en": "wall type;",
+              "fr": "mur type;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "6.1",
+              "page": "CNT-6.1-EVID-002",
+              "note": {
+                "en": "Mapped from canonical Activity 6.1 evidence/verification/closureCriteria item CNT-6.1-EVID-002."
+              }
+            }
+          },
+          {
+            "id": "WFI-WF-WALL-01-EVD-003",
+            "text": {
+              "en": "reinforcement before grout;",
+              "fr": "armatures avant coulis;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "6.1",
+              "page": "CNT-6.1-EVID-003",
+              "note": {
+                "en": "Mapped from canonical Activity 6.1 evidence/verification/closureCriteria item CNT-6.1-EVID-003."
+              }
+            }
+          },
+          {
+            "id": "WFI-WF-WALL-01-EVD-004",
+            "text": {
+              "en": "lintels;",
+              "fr": "lintels;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "6.1",
+              "page": "CNT-6.1-EVID-004",
+              "note": {
+                "en": "Mapped from canonical Activity 6.1 evidence/verification/closureCriteria item CNT-6.1-EVID-004."
+              }
+            }
+          },
+          {
+            "id": "WFI-WF-WALL-01-EVD-005",
+            "text": {
+              "en": "openings;",
+              "fr": "openings;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "6.1",
+              "page": "CNT-6.1-EVID-005",
+              "note": {
+                "en": "Mapped from canonical Activity 6.1 evidence/verification/closureCriteria item CNT-6.1-EVID-005."
+              }
+            }
+          },
+          {
+            "id": "WFI-WF-WALL-01-EVD-006",
+            "text": {
+              "en": "Correct wall type",
+              "fr": "corriger mur type",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "6.1",
+              "page": "CNT-6.1-QC-001",
+              "note": {
+                "en": "Mapped from canonical Activity 6.1 qualityCheckpoint/closureCriteria/verification item CNT-6.1-QC-001."
+              }
+            }
+          },
+          {
+            "id": "WFI-WF-WALL-01-EVD-007",
+            "text": {
+              "en": "Location",
+              "fr": "emplacement",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "6.1",
+              "page": "CNT-6.1-QC-002",
+              "note": {
+                "en": "Mapped from canonical Activity 6.1 qualityCheckpoint/closureCriteria/verification item CNT-6.1-QC-002."
+              }
+            }
+          },
+          {
+            "id": "WFI-WF-WALL-01-EVD-008",
+            "text": {
+              "en": "Thickness",
+              "fr": "Thickness",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "6.1",
+              "page": "CNT-6.1-QC-003",
+              "note": {
+                "en": "Mapped from canonical Activity 6.1 qualityCheckpoint/closureCriteria/verification item CNT-6.1-QC-003."
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "issuePath": [
+      {
+        "type": "checkList",
+        "items": [
+          {
+            "id": "WFI-WF-WALL-01-ISS-001",
+            "text": {
+              "en": "wrong block type;",
+              "fr": "wrong block type;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "6.1",
+              "page": "CNT-6.1-ISSUE-001",
+              "note": {
+                "en": "Mapped from canonical Activity 6.1 issues.commonDeficiencies/correctiveAction item CNT-6.1-ISSUE-001."
+              }
+            }
+          },
+          {
+            "id": "WFI-WF-WALL-01-ISS-002",
+            "text": {
+              "en": "out-of-plumb wall;",
+              "fr": "out-de-plumb mur;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "6.1",
+              "page": "CNT-6.1-ISSUE-002",
+              "note": {
+                "en": "Mapped from canonical Activity 6.1 issues.commonDeficiencies/correctiveAction item CNT-6.1-ISSUE-002."
+              }
+            }
+          },
+          {
+            "id": "WFI-WF-WALL-01-ISS-003",
+            "text": {
+              "en": "missing reinforcement;",
+              "fr": "manquant armatures;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "6.1",
+              "page": "CNT-6.1-ISSUE-003",
+              "note": {
+                "en": "Mapped from canonical Activity 6.1 issues.commonDeficiencies/correctiveAction item CNT-6.1-ISSUE-003."
+              }
+            }
+          },
+          {
+            "id": "WFI-WF-WALL-01-ISS-004",
+            "text": {
+              "en": "ungrouted required cells;",
+              "fr": "ungrouted requis cells;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "6.1",
+              "page": "CNT-6.1-ISSUE-004",
+              "note": {
+                "en": "Mapped from canonical Activity 6.1 issues.commonDeficiencies/correctiveAction item CNT-6.1-ISSUE-004."
+              }
+            }
+          },
+          {
+            "id": "WFI-WF-WALL-01-ISS-005",
+            "text": {
+              "en": "wrong opening;",
+              "fr": "wrong opening;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "6.1",
+              "page": "CNT-6.1-ISSUE-005",
+              "note": {
+                "en": "Mapped from canonical Activity 6.1 issues.commonDeficiencies/correctiveAction item CNT-6.1-ISSUE-005."
+              }
+            }
+          },
+          {
+            "id": "WFI-WF-WALL-01-ISS-006",
+            "text": {
+              "en": "wrong stud gauge;",
+              "fr": "wrong stud gauge;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "6.2",
+              "page": "CNT-6.2-ISSUE-001",
+              "note": {
+                "en": "Mapped from canonical Activity 6.2 issues.commonDeficiencies/correctiveAction item CNT-6.2-ISSUE-001."
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "sourceRef": {
+      "build": "Build 5",
+      "document": "docs/source/04-build-5-field-presentation.docx",
+      "section": "Build 5 Activity Mode examples - Wall Closure"
+    }
+  },
+  {
+    "id": "WF-CEILING-01",
+    "title": {
+      "en": "Ceiling Closure",
+      "fr": "Fermeture des plafonds",
+      "status": {
+        "fr": "provisional"
+      }
+    },
+    "stages": [
+      {
+        "id": "prepare",
+        "title": {
+          "en": "Prepare",
+          "fr": "Préparer",
+          "status": {
+            "fr": "provisional"
+          }
+        },
+        "activityIds": [
+          "6.8",
+          "6.9",
+          "8.5",
+          "8.9",
+          "9.1",
+          "9.2",
+          "9.3",
+          "9.9"
+        ]
+      },
+      {
+        "id": "verify",
+        "title": {
+          "en": "Verify",
+          "fr": "Vérifier",
+          "status": {
+            "fr": "provisional"
+          }
+        },
+        "activityIds": [
+          "10.2",
+          "10.3",
+          "10.4",
+          "11.6",
+          "11.10"
+        ],
+        "gateIds": [
+          "G-INT-01",
+          "G-MEP-01",
+          "G-LS-01"
+        ]
+      },
+      {
+        "id": "executeObserve",
+        "title": {
+          "en": "Execute / Observe",
+          "fr": "Exécuter / observer",
+          "status": {
+            "fr": "provisional"
+          }
+        },
+        "activityIds": [
+          "6.8"
+        ]
+      },
+      {
+        "id": "test",
+        "title": {
+          "en": "Test",
+          "fr": "Tester",
+          "status": {
+            "fr": "provisional"
+          }
+        },
+        "activityIds": [
+          "13.8"
+        ]
+      },
+      {
+        "id": "releaseClose",
+        "title": {
+          "en": "Release / Close",
+          "fr": "Autoriser / clore",
+          "status": {
+            "fr": "provisional"
+          }
+        },
+        "activityIds": [
+          "14.7"
+        ],
+        "gateIds": [
+          "G-INT-01",
+          "G-MEP-01",
+          "G-LS-01"
+        ]
+      }
+    ],
+    "activityIds": [
+      "6.8",
+      "6.9",
+      "8.5",
+      "8.9",
+      "9.1",
+      "9.2",
+      "9.3",
+      "9.9",
+      "10.2",
+      "10.3",
+      "10.4",
+      "11.6",
+      "11.10",
+      "13.8",
+      "14.7"
+    ],
+    "gateIds": [
+      "G-INT-01",
+      "G-MEP-01",
+      "G-LS-01"
+    ],
+    "relatedRelationshipIds": [
+      "REL-11.3-INTERFACES_WITH-9.1",
+      "REL-11.4-INTERFACES_WITH-8.9-whereExterior",
+      "REL-11.5-INTERFACES_WITH-9.9-whereExterior",
+      "REL-11.6-INTERFACES_WITH-6.4-whereConcealed",
+      "REL-11.6-INTERFACES_WITH-8.9-whereConcealed",
+      "REL-11.6-INTERFACES_WITH-9.9-whereConcealed",
+      "REL-8.8-ACCESS_CHECKED_BY-11.10-whereApplicable",
+      "REL-9.4-ACCESS_CHECKED_BY-11.10-whereApplicable",
+      "REL-9.5-ACCESS_CHECKED_BY-11.10-whereApplicable",
+      "REL-8.5-INTERFACES_WITH-11.11",
+      "REL-9.2-INTERFACES_WITH-11.11",
+      "REL-9.1-INTERFACES_WITH-11.11",
+      "REL-6.8-INTERFACES_WITH-11.11",
+      "REL-9.2-REQUIRES-9.3-whereApplicable",
+      "REL-9.1-INTERFACES_WITH-11.3-whereApplicable",
+      "REL-9.1-INTERFACES_WITH-11.8-whereApplicable",
+      "REL-9.3-INTERFACES_WITH-3.3-whereApplicable",
+      "REL-9.9-PENETRATION_MANAGED_BY-11.7-whereApplicable",
+      "REL-9.9-INTERFACES_WITH-6.5-whereFireSeparation",
+      "REL-9.9-INTERFACES_WITH-10.3-whereFireSeparation",
+      "REL-4.2-INTERFACES_WITH-8.9-whereExterior",
+      "REL-4.2-INTERFACES_WITH-9.9-whereExterior",
+      "REL-4.3-INTERFACES_WITH-8.9-whereExterior",
+      "REL-4.3-INTERFACES_WITH-9.9-whereExterior"
+    ],
+    "evidenceFocus": [
+      {
+        "type": "checkList",
+        "items": [
+          {
+            "id": "WFI-WF-CEILING-01-EVD-001",
+            "text": {
+              "en": "ceiling zone;",
+              "fr": "plafond zone;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "6.8",
+              "page": "CNT-6.8-EVID-001",
+              "note": {
+                "en": "Mapped from canonical Activity 6.8 evidence/verification/closureCriteria item CNT-6.8-EVID-001."
+              }
+            }
+          },
+          {
+            "id": "WFI-WF-CEILING-01-EVD-002",
+            "text": {
+              "en": "above-ceiling inspection;",
+              "fr": "above-plafond inspection;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "6.8",
+              "page": "CNT-6.8-EVID-002",
+              "note": {
+                "en": "Mapped from canonical Activity 6.8 evidence/verification/closureCriteria item CNT-6.8-EVID-002."
+              }
+            }
+          },
+          {
+            "id": "WFI-WF-CEILING-01-EVD-003",
+            "text": {
+              "en": "grid/suspension;",
+              "fr": "grille/suspension;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "6.8",
+              "page": "CNT-6.8-EVID-003",
+              "note": {
+                "en": "Mapped from canonical Activity 6.8 evidence/verification/closureCriteria item CNT-6.8-EVID-003."
+              }
+            }
+          },
+          {
+            "id": "WFI-WF-CEILING-01-EVD-004",
+            "text": {
+              "en": "coordinated devices;",
+              "fr": "coordinated devices;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "6.8",
+              "page": "CNT-6.8-EVID-004",
+              "note": {
+                "en": "Mapped from canonical Activity 6.8 evidence/verification/closureCriteria item CNT-6.8-EVID-004."
+              }
+            }
+          },
+          {
+            "id": "WFI-WF-CEILING-01-EVD-005",
+            "text": {
+              "en": "access-panel locations;",
+              "fr": "access-panel locations;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "6.8",
+              "page": "CNT-6.8-EVID-005",
+              "note": {
+                "en": "Mapped from canonical Activity 6.8 evidence/verification/closureCriteria item CNT-6.8-EVID-005."
+              }
+            }
+          },
+          {
+            "id": "WFI-WF-CEILING-01-EVD-006",
+            "text": {
+              "en": "Above-ceiling inspection",
+              "fr": "Above-plafond inspection",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "6.8",
+              "page": "CNT-6.8-QC-001",
+              "note": {
+                "en": "Mapped from canonical Activity 6.8 qualityCheckpoint/closureCriteria/verification item CNT-6.8-QC-001."
+              }
+            }
+          },
+          {
+            "id": "WFI-WF-CEILING-01-EVD-007",
+            "text": {
+              "en": "Suspension",
+              "fr": "Suspension",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "6.8",
+              "page": "CNT-6.8-QC-002",
+              "note": {
+                "en": "Mapped from canonical Activity 6.8 qualityCheckpoint/closureCriteria/verification item CNT-6.8-QC-002."
+              }
+            }
+          },
+          {
+            "id": "WFI-WF-CEILING-01-EVD-008",
+            "text": {
+              "en": "Grid",
+              "fr": "grille",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "6.8",
+              "page": "CNT-6.8-QC-003",
+              "note": {
+                "en": "Mapped from canonical Activity 6.8 qualityCheckpoint/closureCriteria/verification item CNT-6.8-QC-003."
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "issuePath": [
+      {
+        "type": "checkList",
+        "items": [
+          {
+            "id": "WFI-WF-CEILING-01-ISS-001",
+            "text": {
+              "en": "ceiling wrong elevation;",
+              "fr": "plafond wrong élévation;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "6.8",
+              "page": "CNT-6.8-ISSUE-001",
+              "note": {
+                "en": "Mapped from canonical Activity 6.8 issues.commonDeficiencies/correctiveAction item CNT-6.8-ISSUE-001."
+              }
+            }
+          },
+          {
+            "id": "WFI-WF-CEILING-01-ISS-002",
+            "text": {
+              "en": "unsupported grid;",
+              "fr": "unsupported grille;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "6.8",
+              "page": "CNT-6.8-ISSUE-002",
+              "note": {
+                "en": "Mapped from canonical Activity 6.8 issues.commonDeficiencies/correctiveAction item CNT-6.8-ISSUE-002."
+              }
+            }
+          },
+          {
+            "id": "WFI-WF-CEILING-01-ISS-003",
+            "text": {
+              "en": "poor alignment;",
+              "fr": "poor alignement;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "6.8",
+              "page": "CNT-6.8-ISSUE-003",
+              "note": {
+                "en": "Mapped from canonical Activity 6.8 issues.commonDeficiencies/correctiveAction item CNT-6.8-ISSUE-003."
+              }
+            }
+          },
+          {
+            "id": "WFI-WF-CEILING-01-ISS-004",
+            "text": {
+              "en": "damaged tiles;",
+              "fr": "damaged tiles;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "6.8",
+              "page": "CNT-6.8-ISSUE-004",
+              "note": {
+                "en": "Mapped from canonical Activity 6.8 issues.commonDeficiencies/correctiveAction item CNT-6.8-ISSUE-004."
+              }
+            }
+          },
+          {
+            "id": "WFI-WF-CEILING-01-ISS-005",
+            "text": {
+              "en": "device clashes;",
+              "fr": "device clashes;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "6.8",
+              "page": "CNT-6.8-ISSUE-005",
+              "note": {
+                "en": "Mapped from canonical Activity 6.8 issues.commonDeficiencies/correctiveAction item CNT-6.8-ISSUE-005."
+              }
+            }
+          },
+          {
+            "id": "WFI-WF-CEILING-01-ISS-006",
+            "text": {
+              "en": "missing panel;",
+              "fr": "manquant panel;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "6.9",
+              "page": "CNT-6.9-ISSUE-001",
+              "note": {
+                "en": "Mapped from canonical Activity 6.9 issues.commonDeficiencies/correctiveAction item CNT-6.9-ISSUE-001."
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "sourceRef": {
+      "build": "Build 5",
+      "document": "docs/source/04-build-5-field-presentation.docx",
+      "section": "Build 5 Activity Mode examples - Ceiling Closure"
+    }
+  },
+  {
+    "id": "WF-ROOF-01",
+    "title": {
+      "en": "Roof Inspection",
+      "fr": "Inspection de toiture",
+      "status": {
+        "fr": "provisional"
+      }
+    },
+    "stages": [
+      {
+        "id": "prepare",
+        "title": {
+          "en": "Prepare",
+          "fr": "Préparer",
+          "status": {
+            "fr": "provisional"
+          }
+        },
+        "activityIds": [
+          "5.1",
+          "5.2",
+          "5.3"
+        ]
+      },
+      {
+        "id": "verify",
+        "title": {
+          "en": "Verify",
+          "fr": "Vérifier",
+          "status": {
+            "fr": "provisional"
+          }
+        },
+        "activityIds": [
+          "5.4",
+          "5.5",
+          "5.8"
+        ],
+        "gateIds": [
+          "G-ROOF-01A",
+          "G-ROOF-01B",
+          "G-ROOF-01C",
+          "G-ROOF-01D",
+          "G-ROOF-01E"
+        ]
+      },
+      {
+        "id": "executeObserve",
+        "title": {
+          "en": "Execute / Observe",
+          "fr": "Exécuter / observer",
+          "status": {
+            "fr": "provisional"
+          }
+        },
+        "activityIds": [
+          "5.4",
+          "5.5",
+          "5.8",
+          "5.9"
+        ]
+      },
+      {
+        "id": "test",
+        "title": {
+          "en": "Test",
+          "fr": "Tester",
+          "status": {
+            "fr": "provisional"
+          }
+        },
+        "activityIds": [
+          "13.5"
+        ]
+      },
+      {
+        "id": "releaseClose",
+        "title": {
+          "en": "Release / Close",
+          "fr": "Autoriser / clore",
+          "status": {
+            "fr": "provisional"
+          }
+        },
+        "activityIds": [
+          "14.7",
+          "14.15"
+        ],
+        "gateIds": [
+          "G-ROOF-01A",
+          "G-ROOF-01B",
+          "G-ROOF-01C",
+          "G-ROOF-01D",
+          "G-ROOF-01E"
+        ]
+      }
+    ],
+    "activityIds": [
+      "5.1",
+      "5.2",
+      "5.3",
+      "5.4",
+      "5.5",
+      "5.8",
+      "5.9",
+      "13.5",
+      "14.7",
+      "14.15"
+    ],
+    "gateIds": [
+      "G-ROOF-01A",
+      "G-ROOF-01B",
+      "G-ROOF-01C",
+      "G-ROOF-01D",
+      "G-ROOF-01E"
+    ],
+    "relatedRelationshipIds": [
+      "REL-11.1-INTERFACES_WITH-5.1",
+      "REL-4.2-INTERFACES_WITH-5.2-whereRoof",
+      "REL-4.3-INTERFACES_WITH-5.2-whereRoof",
+      "REL-4.4-INTERFACES_WITH-5.3-whereRoof",
+      "REL-4.8-TESTED_BY-13.5-whereTestingRequired",
+      "REL-4.9-TESTED_BY-13.5-whereSpecified",
+      "REL-4.1-TESTED_BY-13.5-whereApplicable",
+      "REL-5.2-REQUIRES-5.1",
+      "REL-5.3-REQUIRES-5.2",
+      "REL-5.4-REQUIRES-5.3",
+      "REL-5.5-REQUIRES-5.4",
+      "REL-5.6-REQUIRES-5.4-whereRoof",
+      "REL-5.7-REQUIRES-5.4-whereEquipmentPresent",
+      "REL-5.8-REQUIRES-5.4-whereRoof",
+      "REL-5.9-REQUIRES-5.1-whereApplicable",
+      "REL-5.9-REQUIRES-5.2-whereApplicable",
+      "REL-5.9-REQUIRES-5.3-whereApplicable",
+      "REL-5.9-REQUIRES-5.4-whereApplicable",
+      "REL-5.9-REQUIRES-5.5-whereApplicable",
+      "REL-5.9-REQUIRES-5.6-whereApplicable",
+      "REL-5.9-REQUIRES-5.7-whereApplicable",
+      "REL-5.9-REQUIRES-5.8-whereApplicable",
+      "REL-5.2-GATED_BY-G-ROOF-01A",
+      "REL-5.3-GATED_BY-G-ROOF-01B"
+    ],
+    "evidenceFocus": [
+      {
+        "type": "checkList",
+        "items": [
+          {
+            "id": "WFI-WF-ROOF-01-EVD-001",
+            "text": {
+              "en": "roof zone;",
+              "fr": "toiture zone;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.1",
+              "page": "CNT-5.1-EVID-001",
+              "note": {
+                "en": "Mapped from canonical Activity 5.1 evidence/verification/closureCriteria item CNT-5.1-EVID-001."
+              }
+            }
+          },
+          {
+            "id": "WFI-WF-ROOF-01-EVD-002",
+            "text": {
+              "en": "deck type;",
+              "fr": "deck type;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.1",
+              "page": "CNT-5.1-EVID-002",
+              "note": {
+                "en": "Mapped from canonical Activity 5.1 evidence/verification/closureCriteria item CNT-5.1-EVID-002."
+              }
+            }
+          },
+          {
+            "id": "WFI-WF-ROOF-01-EVD-003",
+            "text": {
+              "en": "condition;",
+              "fr": "condition;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.1",
+              "page": "CNT-5.1-EVID-003",
+              "note": {
+                "en": "Mapped from canonical Activity 5.1 evidence/verification/closureCriteria item CNT-5.1-EVID-003."
+              }
+            }
+          },
+          {
+            "id": "WFI-WF-ROOF-01-EVD-004",
+            "text": {
+              "en": "fastening inspection;",
+              "fr": "fastening inspection;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.1",
+              "page": "CNT-5.1-EVID-004",
+              "note": {
+                "en": "Mapped from canonical Activity 5.1 evidence/verification/closureCriteria item CNT-5.1-EVID-004."
+              }
+            }
+          },
+          {
+            "id": "WFI-WF-ROOF-01-EVD-005",
+            "text": {
+              "en": "slope/elevation verification;",
+              "fr": "pente/élévation vérification;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.1",
+              "page": "CNT-5.1-EVID-005",
+              "note": {
+                "en": "Mapped from canonical Activity 5.1 evidence/verification/closureCriteria item CNT-5.1-EVID-005."
+              }
+            }
+          },
+          {
+            "id": "WFI-WF-ROOF-01-EVD-006",
+            "text": {
+              "en": "Correct deck",
+              "fr": "corriger deck",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.1",
+              "page": "CNT-5.1-QC-001",
+              "note": {
+                "en": "Mapped from canonical Activity 5.1 qualityCheckpoint/closureCriteria/verification item CNT-5.1-QC-001."
+              }
+            }
+          },
+          {
+            "id": "WFI-WF-ROOF-01-EVD-007",
+            "text": {
+              "en": "Fastening",
+              "fr": "Fastening",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.1",
+              "page": "CNT-5.1-QC-002",
+              "note": {
+                "en": "Mapped from canonical Activity 5.1 qualityCheckpoint/closureCriteria/verification item CNT-5.1-QC-002."
+              }
+            }
+          },
+          {
+            "id": "WFI-WF-ROOF-01-EVD-008",
+            "text": {
+              "en": "Clean",
+              "fr": "Clean",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.1",
+              "page": "CNT-5.1-QC-003",
+              "note": {
+                "en": "Mapped from canonical Activity 5.1 qualityCheckpoint/closureCriteria/verification item CNT-5.1-QC-003."
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "issuePath": [
+      {
+        "type": "checkList",
+        "items": [
+          {
+            "id": "WFI-WF-ROOF-01-ISS-001",
+            "text": {
+              "en": "damaged deck;",
+              "fr": "damaged deck;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.1",
+              "page": "CNT-5.1-ISSUE-001",
+              "note": {
+                "en": "Mapped from canonical Activity 5.1 issues.commonDeficiencies/correctiveAction item CNT-5.1-ISSUE-001."
+              }
+            }
+          },
+          {
+            "id": "WFI-WF-ROOF-01-ISS-002",
+            "text": {
+              "en": "wet substrate;",
+              "fr": "wet support;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.1",
+              "page": "CNT-5.1-ISSUE-002",
+              "note": {
+                "en": "Mapped from canonical Activity 5.1 issues.commonDeficiencies/correctiveAction item CNT-5.1-ISSUE-002."
+              }
+            }
+          },
+          {
+            "id": "WFI-WF-ROOF-01-ISS-003",
+            "text": {
+              "en": "wrong slope;",
+              "fr": "wrong pente;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.1",
+              "page": "CNT-5.1-ISSUE-003",
+              "note": {
+                "en": "Mapped from canonical Activity 5.1 issues.commonDeficiencies/correctiveAction item CNT-5.1-ISSUE-003."
+              }
+            }
+          },
+          {
+            "id": "WFI-WF-ROOF-01-ISS-004",
+            "text": {
+              "en": "missing fasteners;",
+              "fr": "manquant fasteners;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.1",
+              "page": "CNT-5.1-ISSUE-004",
+              "note": {
+                "en": "Mapped from canonical Activity 5.1 issues.commonDeficiencies/correctiveAction item CNT-5.1-ISSUE-004."
+              }
+            }
+          },
+          {
+            "id": "WFI-WF-ROOF-01-ISS-005",
+            "text": {
+              "en": "excessive openings;",
+              "fr": "excessive openings;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.1",
+              "page": "CNT-5.1-ISSUE-005",
+              "note": {
+                "en": "Mapped from canonical Activity 5.1 issues.commonDeficiencies/correctiveAction item CNT-5.1-ISSUE-005."
+              }
+            }
+          },
+          {
+            "id": "WFI-WF-ROOF-01-ISS-006",
+            "text": {
+              "en": "open seam;",
+              "fr": "open seam;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.2",
+              "page": "CNT-5.2-ISSUE-001",
+              "note": {
+                "en": "Mapped from canonical Activity 5.2 issues.commonDeficiencies/correctiveAction item CNT-5.2-ISSUE-001."
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "sourceRef": {
+      "build": "Build 5",
+      "document": "docs/source/04-build-5-field-presentation.docx",
+      "section": "Build 5 Activity Mode examples - Roof Inspection"
+    }
+  },
+  {
+    "id": "WF-ROOF-02",
+    "title": {
+      "en": "Roof Penetration",
+      "fr": "Penetration de toiture",
+      "status": {
+        "fr": "provisional"
+      }
+    },
+    "stages": [
+      {
+        "id": "prepare",
+        "title": {
+          "en": "Prepare",
+          "fr": "Préparer",
+          "status": {
+            "fr": "provisional"
+          }
+        },
+        "activityIds": [
+          "5.4",
+          "5.6",
+          "5.7"
+        ]
+      },
+      {
+        "id": "verify",
+        "title": {
+          "en": "Verify",
+          "fr": "Vérifier",
+          "status": {
+            "fr": "provisional"
+          }
+        },
+        "activityIds": [
+          "5.6",
+          "5.7",
+          "8.6",
+          "9.4",
+          "11.7"
+        ],
+        "gateIds": [
+          "G-ROOF-01D"
+        ]
+      },
+      {
+        "id": "executeObserve",
+        "title": {
+          "en": "Execute / Observe",
+          "fr": "Exécuter / observer",
+          "status": {
+            "fr": "provisional"
+          }
+        },
+        "activityIds": [
+          "5.6",
+          "5.7"
+        ]
+      },
+      {
+        "id": "test",
+        "title": {
+          "en": "Test",
+          "fr": "Tester",
+          "status": {
+            "fr": "provisional"
+          }
+        },
+        "activityIds": [
+          "13.5"
+        ]
+      },
+      {
+        "id": "releaseClose",
+        "title": {
+          "en": "Release / Close",
+          "fr": "Autoriser / clore",
+          "status": {
+            "fr": "provisional"
+          }
+        },
+        "activityIds": [
+          "5.9",
+          "14.7"
+        ],
+        "gateIds": [
+          "G-ROOF-01D"
+        ]
+      }
+    ],
+    "activityIds": [
+      "5.4",
+      "5.6",
+      "5.7",
+      "8.6",
+      "9.4",
+      "11.7",
+      "13.5",
+      "5.9",
+      "14.7"
+    ],
+    "gateIds": [
+      "G-ROOF-01D"
+    ],
+    "relatedRelationshipIds": [
+      "REL-11.2-INTERFACES_WITH-8.6",
+      "REL-8.6-INTERFACES_WITH-11.9-whereEquipmentPresent",
+      "REL-9.4-ACCESS_CHECKED_BY-11.10-whereApplicable",
+      "REL-9.4-REQUIRES-11.9-whereEquipmentPresent",
+      "REL-9.5-REQUIRES-9.4-whereEquipmentPresent",
+      "REL-9.10-REQUIRES-9.4-whereEquipmentPresent",
+      "REL-9.11-REQUIRES-9.4-whereTestingRequired",
+      "REL-9.4-INTERFACES_WITH-11.9-whereEquipmentPresent",
+      "REL-9.9-PENETRATION_MANAGED_BY-11.7-whereApplicable",
+      "REL-9.4-TESTED_BY-9.11-whereTestingRequired",
+      "REL-9.4-COMMISSIONED_BY-13.7-whereEquipmentPresent",
+      "REL-9.4-COMMISSIONED_BY-13.6-whereEquipmentPresent",
+      "REL-4.8-TESTED_BY-13.5-whereTestingRequired",
+      "REL-4.9-TESTED_BY-13.5-whereSpecified",
+      "REL-4.1-TESTED_BY-13.5-whereApplicable",
+      "REL-10.3-PENETRATION_MANAGED_BY-11.7-whereApplicable",
+      "REL-8.8-REQUIRES-8.6-whereEquipmentPresent",
+      "REL-8.11-REQUIRES-8.6-whereEquipmentPresent",
+      "REL-8.4-INTERFACES_WITH-8.6-whereEquipmentPresent",
+      "REL-8.5-INTERFACES_WITH-8.6-whereEquipmentPresent",
+      "REL-8.6-INTERFACES_WITH-9.5-whereEquipmentPresent",
+      "REL-8.6-INTERFACES_WITH-8.8-whereEquipmentPresent",
+      "REL-8.6-ACCESS_CHECKED_BY-11.10-whereApplicable",
+      "REL-8.9-PENETRATION_MANAGED_BY-11.7-whereApplicable"
+    ],
+    "evidenceFocus": [
+      {
+        "type": "checkList",
+        "items": [
+          {
+            "id": "WFI-WF-ROOF-02-EVD-001",
+            "text": {
+              "en": "roof zone;",
+              "fr": "toiture zone;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.4",
+              "page": "CNT-5.4-EVID-001",
+              "note": {
+                "en": "Mapped from canonical Activity 5.4 evidence/verification/closureCriteria item CNT-5.4-EVID-001."
+              }
+            }
+          },
+          {
+            "id": "WFI-WF-ROOF-02-EVD-002",
+            "text": {
+              "en": "membrane product;",
+              "fr": "membrane product;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.4",
+              "page": "CNT-5.4-EVID-002",
+              "note": {
+                "en": "Mapped from canonical Activity 5.4 evidence/verification/closureCriteria item CNT-5.4-EVID-002."
+              }
+            }
+          },
+          {
+            "id": "WFI-WF-ROOF-02-EVD-003",
+            "text": {
+              "en": "installation date;",
+              "fr": "installation date;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.4",
+              "page": "CNT-5.4-EVID-003",
+              "note": {
+                "en": "Mapped from canonical Activity 5.4 evidence/verification/closureCriteria item CNT-5.4-EVID-003."
+              }
+            }
+          },
+          {
+            "id": "WFI-WF-ROOF-02-EVD-004",
+            "text": {
+              "en": "weather;",
+              "fr": "weather;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.4",
+              "page": "CNT-5.4-EVID-004",
+              "note": {
+                "en": "Mapped from canonical Activity 5.4 evidence/verification/closureCriteria item CNT-5.4-EVID-004."
+              }
+            }
+          },
+          {
+            "id": "WFI-WF-ROOF-02-EVD-005",
+            "text": {
+              "en": "seams;",
+              "fr": "seams;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.4",
+              "page": "CNT-5.4-EVID-005",
+              "note": {
+                "en": "Mapped from canonical Activity 5.4 evidence/verification/closureCriteria item CNT-5.4-EVID-005."
+              }
+            }
+          },
+          {
+            "id": "WFI-WF-ROOF-02-EVD-006",
+            "text": {
+              "en": "Correct membrane",
+              "fr": "corriger membrane",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.4",
+              "page": "CNT-5.4-QC-001",
+              "note": {
+                "en": "Mapped from canonical Activity 5.4 qualityCheckpoint/closureCriteria/verification item CNT-5.4-QC-001."
+              }
+            }
+          },
+          {
+            "id": "WFI-WF-ROOF-02-EVD-007",
+            "text": {
+              "en": "Substrate dry/ready",
+              "fr": "support dry/ready",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.4",
+              "page": "CNT-5.4-QC-002",
+              "note": {
+                "en": "Mapped from canonical Activity 5.4 qualityCheckpoint/closureCriteria/verification item CNT-5.4-QC-002."
+              }
+            }
+          },
+          {
+            "id": "WFI-WF-ROOF-02-EVD-008",
+            "text": {
+              "en": "Application correct",
+              "fr": "Application corriger",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.4",
+              "page": "CNT-5.4-QC-003",
+              "note": {
+                "en": "Mapped from canonical Activity 5.4 qualityCheckpoint/closureCriteria/verification item CNT-5.4-QC-003."
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "issuePath": [
+      {
+        "type": "checkList",
+        "items": [
+          {
+            "id": "WFI-WF-ROOF-02-ISS-001",
+            "text": {
+              "en": "insufficient lap;",
+              "fr": "insufficient lap;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.4",
+              "page": "CNT-5.4-ISSUE-001",
+              "note": {
+                "en": "Mapped from canonical Activity 5.4 issues.commonDeficiencies/correctiveAction item CNT-5.4-ISSUE-001."
+              }
+            }
+          },
+          {
+            "id": "WFI-WF-ROOF-02-ISS-002",
+            "text": {
+              "en": "failed seam;",
+              "fr": "non conforme seam;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.4",
+              "page": "CNT-5.4-ISSUE-002",
+              "note": {
+                "en": "Mapped from canonical Activity 5.4 issues.commonDeficiencies/correctiveAction item CNT-5.4-ISSUE-002."
+              }
+            }
+          },
+          {
+            "id": "WFI-WF-ROOF-02-ISS-003",
+            "text": {
+              "en": "puncture;",
+              "fr": "puncture;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.4",
+              "page": "CNT-5.4-ISSUE-003",
+              "note": {
+                "en": "Mapped from canonical Activity 5.4 issues.commonDeficiencies/correctiveAction item CNT-5.4-ISSUE-003."
+              }
+            }
+          },
+          {
+            "id": "WFI-WF-ROOF-02-ISS-004",
+            "text": {
+              "en": "wrinkle;",
+              "fr": "wrinkle;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.4",
+              "page": "CNT-5.4-ISSUE-004",
+              "note": {
+                "en": "Mapped from canonical Activity 5.4 issues.commonDeficiencies/correctiveAction item CNT-5.4-ISSUE-004."
+              }
+            }
+          },
+          {
+            "id": "WFI-WF-ROOF-02-ISS-005",
+            "text": {
+              "en": "blister;",
+              "fr": "blister;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.4",
+              "page": "CNT-5.4-ISSUE-005",
+              "note": {
+                "en": "Mapped from canonical Activity 5.4 issues.commonDeficiencies/correctiveAction item CNT-5.4-ISSUE-005."
+              }
+            }
+          },
+          {
+            "id": "WFI-WF-ROOF-02-ISS-006",
+            "text": {
+              "en": "unapproved penetration;",
+              "fr": "unapproved penetration;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "5.6",
+              "page": "CNT-5.6-ISSUE-001",
+              "note": {
+                "en": "Mapped from canonical Activity 5.6 issues.commonDeficiencies/correctiveAction item CNT-5.6-ISSUE-001."
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "sourceRef": {
+      "build": "Build 5",
+      "document": "docs/source/04-build-5-field-presentation.docx",
+      "section": "Build 5 Activity Mode examples - Roof Penetration"
+    }
+  },
+  {
+    "id": "WF-UG-01",
+    "title": {
+      "en": "Underground Service Before Backfill",
+      "fr": "Service souterrain avant remblai",
+      "status": {
+        "fr": "provisional"
+      }
+    },
+    "stages": [
+      {
+        "id": "prepare",
+        "title": {
+          "en": "Prepare",
+          "fr": "Préparer",
+          "status": {
+            "fr": "provisional"
+          }
+        },
+        "activityIds": [
+          "1.2",
+          "12.1",
+          "12.2"
+        ]
+      },
+      {
+        "id": "verify",
+        "title": {
+          "en": "Verify",
+          "fr": "Vérifier",
+          "status": {
+            "fr": "provisional"
+          }
+        },
+        "activityIds": [
+          "12.1",
+          "12.2",
+          "12.3"
+        ],
+        "gateIds": [
+          "G-EXT-01"
+        ]
+      },
+      {
+        "id": "executeObserve",
+        "title": {
+          "en": "Execute / Observe",
+          "fr": "Exécuter / observer",
+          "status": {
+            "fr": "provisional"
+          }
+        },
+        "activityIds": [
+          "12.1",
+          "12.2",
+          "12.3"
+        ]
+      },
+      {
+        "id": "test",
+        "title": {
+          "en": "Test",
+          "fr": "Tester",
+          "status": {
+            "fr": "provisional"
+          }
+        },
+        "activityIds": [
+          "13.1",
+          "13.2"
+        ]
+      },
+      {
+        "id": "releaseClose",
+        "title": {
+          "en": "Release / Close",
+          "fr": "Autoriser / clore",
+          "status": {
+            "fr": "provisional"
+          }
+        },
+        "activityIds": [
+          "1.6",
+          "2.12",
+          "12.9"
+        ],
+        "gateIds": [
+          "G-EXT-01"
+        ]
+      }
+    ],
+    "activityIds": [
+      "1.2",
+      "12.1",
+      "12.2",
+      "12.3",
+      "13.1",
+      "13.2",
+      "1.6",
+      "2.12",
+      "12.9"
+    ],
+    "gateIds": [
+      "G-EXT-01"
+    ],
+    "relatedRelationshipIds": [
+      "REL-12.1-REQUIRES-12.2",
+      "REL-12.3-REQUIRES-12.2",
+      "REL-12.4-REQUIRES-12.1-whereExterior",
+      "REL-12.9-REQUIRES-12.1-whereExterior",
+      "REL-12.9-REQUIRES-12.4-whereExterior",
+      "REL-12.9-REQUIRES-12.5-whereExterior",
+      "REL-12.9-REQUIRES-12.6-whereExterior",
+      "REL-12.9-REQUIRES-12.7-whereExterior",
+      "REL-12.9-REQUIRES-12.8-whereExterior",
+      "REL-12.9-REQUIRES-12.10-whereExterior",
+      "REL-12.10-REQUIRES-1.2-whereExterior",
+      "REL-12.1-INTERFACES_WITH-8.1-whereExterior",
+      "REL-12.1-INTERFACES_WITH-8.2-whereExterior",
+      "REL-12.1-INTERFACES_WITH-8.3-whereExterior",
+      "REL-12.1-INTERFACES_WITH-9.1-whereExterior",
+      "REL-12.3-INTERFACES_WITH-12.4",
+      "REL-12.1-GATED_BY-G-EXT-01-whereBuried",
+      "REL-12.9-GATED_BY-G-EXT-02",
+      "REL-1.2-REQUIRES-1.1",
+      "REL-1.3-REQUIRES-1.2",
+      "REL-1.7-REQUIRES-1.2",
+      "REL-1.6-GATED_BY-G-EXT-01-whereBuried",
+      "REL-1.3-INTERFACES_WITH-12.2",
+      "REL-1.3-INTERFACES_WITH-12.1"
+    ],
+    "evidenceFocus": [
+      {
+        "type": "checkList",
+        "items": [
+          {
+            "id": "WFI-WF-UG-01-EVD-001",
+            "text": {
+              "en": "survey reports;",
+              "fr": "survey rapports;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "1.2",
+              "page": "CNT-1.2-EVID-001",
+              "note": {
+                "en": "Mapped from canonical Activity 1.2 evidence/verification/closureCriteria item CNT-1.2-EVID-001."
+              }
+            }
+          },
+          {
+            "id": "WFI-WF-UG-01-EVD-002",
+            "text": {
+              "en": "surveyor records;",
+              "fr": "surveyor dossiers;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "1.2",
+              "page": "CNT-1.2-EVID-002",
+              "note": {
+                "en": "Mapped from canonical Activity 1.2 evidence/verification/closureCriteria item CNT-1.2-EVID-002."
+              }
+            }
+          },
+          {
+            "id": "WFI-WF-UG-01-EVD-003",
+            "text": {
+              "en": "coordinates;",
+              "fr": "coordinates;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "1.2",
+              "page": "CNT-1.2-EVID-003",
+              "note": {
+                "en": "Mapped from canonical Activity 1.2 evidence/verification/closureCriteria item CNT-1.2-EVID-003."
+              }
+            }
+          },
+          {
+            "id": "WFI-WF-UG-01-EVD-004",
+            "text": {
+              "en": "elevation records;",
+              "fr": "élévation dossiers;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "1.2",
+              "page": "CNT-1.2-EVID-004",
+              "note": {
+                "en": "Mapped from canonical Activity 1.2 evidence/verification/closureCriteria item CNT-1.2-EVID-004."
+              }
+            }
+          },
+          {
+            "id": "WFI-WF-UG-01-EVD-005",
+            "text": {
+              "en": "annotated drawings;",
+              "fr": "annotated plans;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "1.2",
+              "page": "CNT-1.2-EVID-005",
+              "note": {
+                "en": "Mapped from canonical Activity 1.2 evidence/verification/closureCriteria item CNT-1.2-EVID-005."
+              }
+            }
+          },
+          {
+            "id": "WFI-WF-UG-01-EVD-006",
+            "text": {
+              "en": "Correct drawing",
+              "fr": "corriger planifier",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "1.2",
+              "page": "CNT-1.2-QC-001",
+              "note": {
+                "en": "Mapped from canonical Activity 1.2 qualityCheckpoint/closureCriteria/verification item CNT-1.2-QC-001."
+              }
+            }
+          },
+          {
+            "id": "WFI-WF-UG-01-EVD-007",
+            "text": {
+              "en": "Correct datum",
+              "fr": "corriger datum",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "1.2",
+              "page": "CNT-1.2-QC-002",
+              "note": {
+                "en": "Mapped from canonical Activity 1.2 qualityCheckpoint/closureCriteria/verification item CNT-1.2-QC-002."
+              }
+            }
+          },
+          {
+            "id": "WFI-WF-UG-01-EVD-008",
+            "text": {
+              "en": "Correct benchmark",
+              "fr": "corriger benchmark",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "1.2",
+              "page": "CNT-1.2-QC-003",
+              "note": {
+                "en": "Mapped from canonical Activity 1.2 qualityCheckpoint/closureCriteria/verification item CNT-1.2-QC-003."
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "issuePath": [
+      {
+        "type": "checkList",
+        "items": [
+          {
+            "id": "WFI-WF-UG-01-ISS-001",
+            "text": {
+              "en": "wrong grid;",
+              "fr": "wrong grille;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "1.2",
+              "page": "CNT-1.2-ISSUE-001",
+              "note": {
+                "en": "Mapped from canonical Activity 1.2 issues.commonDeficiencies/correctiveAction item CNT-1.2-ISSUE-001."
+              }
+            }
+          },
+          {
+            "id": "WFI-WF-UG-01-ISS-002",
+            "text": {
+              "en": "wrong elevation;",
+              "fr": "wrong élévation;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "1.2",
+              "page": "CNT-1.2-ISSUE-002",
+              "note": {
+                "en": "Mapped from canonical Activity 1.2 issues.commonDeficiencies/correctiveAction item CNT-1.2-ISSUE-002."
+              }
+            }
+          },
+          {
+            "id": "WFI-WF-UG-01-ISS-003",
+            "text": {
+              "en": "control point disturbed;",
+              "fr": "contrôler point disturbed;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "1.2",
+              "page": "CNT-1.2-ISSUE-003",
+              "note": {
+                "en": "Mapped from canonical Activity 1.2 issues.commonDeficiencies/correctiveAction item CNT-1.2-ISSUE-003."
+              }
+            }
+          },
+          {
+            "id": "WFI-WF-UG-01-ISS-004",
+            "text": {
+              "en": "excavation outside layout;",
+              "fr": "excavation outside layout;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "1.2",
+              "page": "CNT-1.2-ISSUE-004",
+              "note": {
+                "en": "Mapped from canonical Activity 1.2 issues.commonDeficiencies/correctiveAction item CNT-1.2-ISSUE-004."
+              }
+            }
+          },
+          {
+            "id": "WFI-WF-UG-01-ISS-005",
+            "text": {
+              "en": "footing misplaced;",
+              "fr": "semelle misplaced;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "1.2",
+              "page": "CNT-1.2-ISSUE-005",
+              "note": {
+                "en": "Mapped from canonical Activity 1.2 issues.commonDeficiencies/correctiveAction item CNT-1.2-ISSUE-005."
+              }
+            }
+          },
+          {
+            "id": "WFI-WF-UG-01-ISS-006",
+            "text": {
+              "en": "wrong route;",
+              "fr": "wrong route;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "12.1",
+              "page": "CNT-12.1-ISSUE-001",
+              "note": {
+                "en": "Mapped from canonical Activity 12.1 issues.commonDeficiencies/correctiveAction item CNT-12.1-ISSUE-001."
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "sourceRef": {
+      "build": "Build 5",
+      "document": "docs/source/04-build-5-field-presentation.docx",
+      "section": "Build 5 Activity Mode examples - Underground Service Before Backfill"
+    }
+  },
+  {
+    "id": "WF-EQP-01",
+    "title": {
+      "en": "Equipment Installation",
+      "fr": "Installation des equipements",
+      "status": {
+        "fr": "provisional"
+      }
+    },
+    "stages": [
+      {
+        "id": "prepare",
+        "title": {
+          "en": "Prepare",
+          "fr": "Préparer",
+          "status": {
+            "fr": "provisional"
+          }
+        },
+        "activityIds": [
+          "8.6",
+          "9.4",
+          "11.9",
+          "11.10"
+        ]
+      },
+      {
+        "id": "verify",
+        "title": {
+          "en": "Verify",
+          "fr": "Vérifier",
+          "status": {
+            "fr": "provisional"
+          }
+        },
+        "activityIds": [
+          "8.6",
+          "8.8",
+          "9.4",
+          "9.5",
+          "9.10"
+        ],
+        "gateIds": [
+          "G-MEP-02"
+        ]
+      },
+      {
+        "id": "executeObserve",
+        "title": {
+          "en": "Execute / Observe",
+          "fr": "Exécuter / observer",
+          "status": {
+            "fr": "provisional"
+          }
+        },
+        "activityIds": [
+          "8.6",
+          "9.4"
+        ]
+      },
+      {
+        "id": "test",
+        "title": {
+          "en": "Test",
+          "fr": "Tester",
+          "status": {
+            "fr": "provisional"
+          }
+        },
+        "activityIds": [
+          "13.3",
+          "13.4"
+        ]
+      },
+      {
+        "id": "releaseClose",
+        "title": {
+          "en": "Release / Close",
+          "fr": "Autoriser / clore",
+          "status": {
+            "fr": "provisional"
+          }
+        },
+        "activityIds": [
+          "13.7",
+          "13.11"
+        ],
+        "gateIds": [
+          "G-MEP-02"
+        ]
+      }
+    ],
+    "activityIds": [
+      "8.6",
+      "9.4",
+      "11.9",
+      "11.10",
+      "8.8",
+      "9.5",
+      "9.10",
+      "13.3",
+      "13.4",
+      "13.7",
+      "13.11"
+    ],
+    "gateIds": [
+      "G-MEP-02"
+    ],
+    "relatedRelationshipIds": [
+      "REL-11.2-INTERFACES_WITH-8.6",
+      "REL-8.6-INTERFACES_WITH-11.9-whereEquipmentPresent",
+      "REL-8.8-ACCESS_CHECKED_BY-11.10-whereApplicable",
+      "REL-9.4-ACCESS_CHECKED_BY-11.10-whereApplicable",
+      "REL-9.5-ACCESS_CHECKED_BY-11.10-whereApplicable",
+      "REL-9.4-REQUIRES-11.9-whereEquipmentPresent",
+      "REL-9.5-REQUIRES-9.4-whereEquipmentPresent",
+      "REL-9.10-REQUIRES-9.4-whereEquipmentPresent",
+      "REL-9.11-REQUIRES-9.4-whereTestingRequired",
+      "REL-9.4-INTERFACES_WITH-11.9-whereEquipmentPresent",
+      "REL-9.4-TESTED_BY-9.11-whereTestingRequired",
+      "REL-9.11-TESTED_BY-13.4-whereTestingRequired",
+      "REL-9.4-COMMISSIONED_BY-13.7-whereEquipmentPresent",
+      "REL-9.4-COMMISSIONED_BY-13.6-whereEquipmentPresent",
+      "REL-10.4-ACCESS_CHECKED_BY-11.10-whereApplicable",
+      "REL-10.6-INTERFACES_WITH-9.5-whereSystemPresent",
+      "REL-6.9-ACCESS_CHECKED_BY-11.10-whereApplicable",
+      "REL-8.8-REQUIRES-8.6-whereEquipmentPresent",
+      "REL-8.11-REQUIRES-8.6-whereEquipmentPresent",
+      "REL-8.4-INTERFACES_WITH-8.6-whereEquipmentPresent",
+      "REL-8.5-INTERFACES_WITH-8.6-whereEquipmentPresent",
+      "REL-8.6-INTERFACES_WITH-9.5-whereEquipmentPresent",
+      "REL-8.6-INTERFACES_WITH-8.8-whereEquipmentPresent",
+      "REL-8.6-ACCESS_CHECKED_BY-11.10-whereApplicable"
+    ],
+    "evidenceFocus": [
+      {
+        "type": "checkList",
+        "items": [
+          {
+            "id": "WFI-WF-EQP-01-EVD-001",
+            "text": {
+              "en": "equipment tag;",
+              "fr": "equipment tag;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "8.6",
+              "page": "CNT-8.6-EVID-001",
+              "note": {
+                "en": "Mapped from canonical Activity 8.6 evidence/verification/closureCriteria item CNT-8.6-EVID-001."
+              }
+            }
+          },
+          {
+            "id": "WFI-WF-EQP-01-EVD-002",
+            "text": {
+              "en": "model/serial;",
+              "fr": "model/serial;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "8.6",
+              "page": "CNT-8.6-EVID-002",
+              "note": {
+                "en": "Mapped from canonical Activity 8.6 evidence/verification/closureCriteria item CNT-8.6-EVID-002."
+              }
+            }
+          },
+          {
+            "id": "WFI-WF-EQP-01-EVD-003",
+            "text": {
+              "en": "receiving inspection;",
+              "fr": "receiving inspection;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "8.6",
+              "page": "CNT-8.6-EVID-003",
+              "note": {
+                "en": "Mapped from canonical Activity 8.6 evidence/verification/closureCriteria item CNT-8.6-EVID-003."
+              }
+            }
+          },
+          {
+            "id": "WFI-WF-EQP-01-EVD-004",
+            "text": {
+              "en": "installation;",
+              "fr": "installation;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "8.6",
+              "page": "CNT-8.6-EVID-004",
+              "note": {
+                "en": "Mapped from canonical Activity 8.6 evidence/verification/closureCriteria item CNT-8.6-EVID-004."
+              }
+            }
+          },
+          {
+            "id": "WFI-WF-EQP-01-EVD-005",
+            "text": {
+              "en": "anchors;",
+              "fr": "anchors;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "8.6",
+              "page": "CNT-8.6-EVID-005",
+              "note": {
+                "en": "Mapped from canonical Activity 8.6 evidence/verification/closureCriteria item CNT-8.6-EVID-005."
+              }
+            }
+          },
+          {
+            "id": "WFI-WF-EQP-01-EVD-006",
+            "text": {
+              "en": "Tag/model",
+              "fr": "Tag/model",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "8.6",
+              "page": "CNT-8.6-QC-001",
+              "note": {
+                "en": "Mapped from canonical Activity 8.6 qualityCheckpoint/closureCriteria/verification item CNT-8.6-QC-001."
+              }
+            }
+          },
+          {
+            "id": "WFI-WF-EQP-01-EVD-007",
+            "text": {
+              "en": "Receiving condition",
+              "fr": "Receiving condition",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "8.6",
+              "page": "CNT-8.6-QC-002",
+              "note": {
+                "en": "Mapped from canonical Activity 8.6 qualityCheckpoint/closureCriteria/verification item CNT-8.6-QC-002."
+              }
+            }
+          },
+          {
+            "id": "WFI-WF-EQP-01-EVD-008",
+            "text": {
+              "en": "Location",
+              "fr": "emplacement",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "8.6",
+              "page": "CNT-8.6-QC-003",
+              "note": {
+                "en": "Mapped from canonical Activity 8.6 qualityCheckpoint/closureCriteria/verification item CNT-8.6-QC-003."
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "issuePath": [
+      {
+        "type": "checkList",
+        "items": [
+          {
+            "id": "WFI-WF-EQP-01-ISS-001",
+            "text": {
+              "en": "wrong model;",
+              "fr": "wrong model;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "8.6",
+              "page": "CNT-8.6-ISSUE-001",
+              "note": {
+                "en": "Mapped from canonical Activity 8.6 issues.commonDeficiencies/correctiveAction item CNT-8.6-ISSUE-001."
+              }
+            }
+          },
+          {
+            "id": "WFI-WF-EQP-01-ISS-002",
+            "text": {
+              "en": "shipping damage;",
+              "fr": "shipping damage;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "8.6",
+              "page": "CNT-8.6-ISSUE-002",
+              "note": {
+                "en": "Mapped from canonical Activity 8.6 issues.commonDeficiencies/correctiveAction item CNT-8.6-ISSUE-002."
+              }
+            }
+          },
+          {
+            "id": "WFI-WF-EQP-01-ISS-003",
+            "text": {
+              "en": "wrong orientation;",
+              "fr": "wrong orientation;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "8.6",
+              "page": "CNT-8.6-ISSUE-003",
+              "note": {
+                "en": "Mapped from canonical Activity 8.6 issues.commonDeficiencies/correctiveAction item CNT-8.6-ISSUE-003."
+              }
+            }
+          },
+          {
+            "id": "WFI-WF-EQP-01-ISS-004",
+            "text": {
+              "en": "inadequate maintenance clearance;",
+              "fr": "inadequate maintenance clearance;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "8.6",
+              "page": "CNT-8.6-ISSUE-004",
+              "note": {
+                "en": "Mapped from canonical Activity 8.6 issues.commonDeficiencies/correctiveAction item CNT-8.6-ISSUE-004."
+              }
+            }
+          },
+          {
+            "id": "WFI-WF-EQP-01-ISS-005",
+            "text": {
+              "en": "missing isolation;",
+              "fr": "manquant isolation;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "8.6",
+              "page": "CNT-8.6-ISSUE-005",
+              "note": {
+                "en": "Mapped from canonical Activity 8.6 issues.commonDeficiencies/correctiveAction item CNT-8.6-ISSUE-005."
+              }
+            }
+          },
+          {
+            "id": "WFI-WF-EQP-01-ISS-006",
+            "text": {
+              "en": "wrong model;",
+              "fr": "wrong model;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "9.4",
+              "page": "CNT-9.4-ISSUE-001",
+              "note": {
+                "en": "Mapped from canonical Activity 9.4 issues.commonDeficiencies/correctiveAction item CNT-9.4-ISSUE-001."
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "sourceRef": {
+      "build": "Build 5",
+      "document": "docs/source/04-build-5-field-presentation.docx",
+      "section": "Build 5 Activity Mode examples - Equipment Installation"
+    }
+  },
+  {
+    "id": "WF-EQP-02",
+    "title": {
+      "en": "Equipment Start-Up",
+      "fr": "Démarrage des équipements",
+      "status": {
+        "fr": "provisional"
+      }
+    },
+    "stages": [
+      {
+        "id": "prepare",
+        "title": {
+          "en": "Prepare",
+          "fr": "Préparer",
+          "status": {
+            "fr": "provisional"
+          }
+        },
+        "activityIds": [
+          "13.1",
+          "13.2",
+          "8.6",
+          "9.4"
+        ]
+      },
+      {
+        "id": "verify",
+        "title": {
+          "en": "Verify",
+          "fr": "Vérifier",
+          "status": {
+            "fr": "provisional"
+          }
+        },
+        "activityIds": [
+          "8.8",
+          "9.5",
+          "11.10"
+        ],
+        "gateIds": [
+          "G-MEP-02",
+          "G-TST-01"
+        ]
+      },
+      {
+        "id": "executeObserve",
+        "title": {
+          "en": "Execute / Observe",
+          "fr": "Exécuter / observer",
+          "status": {
+            "fr": "provisional"
+          }
+        },
+        "activityIds": [
+          "13.7"
+        ]
+      },
+      {
+        "id": "test",
+        "title": {
+          "en": "Test",
+          "fr": "Tester",
+          "status": {
+            "fr": "provisional"
+          }
+        },
+        "activityIds": [
+          "13.3",
+          "13.4",
+          "13.6",
+          "13.7"
+        ]
+      },
+      {
+        "id": "releaseClose",
+        "title": {
+          "en": "Release / Close",
+          "fr": "Autoriser / clore",
+          "status": {
+            "fr": "provisional"
+          }
+        },
+        "activityIds": [
+          "13.11",
+          "14.15"
+        ],
+        "gateIds": [
+          "G-MEP-02",
+          "G-TST-01"
+        ]
+      }
+    ],
+    "activityIds": [
+      "13.1",
+      "13.2",
+      "8.6",
+      "9.4",
+      "8.8",
+      "9.5",
+      "11.10",
+      "13.7",
+      "13.3",
+      "13.4",
+      "13.6",
+      "13.11",
+      "14.15"
+    ],
+    "gateIds": [
+      "G-MEP-02",
+      "G-TST-01"
+    ],
+    "relatedRelationshipIds": [
+      "REL-11.2-INTERFACES_WITH-8.6",
+      "REL-8.6-INTERFACES_WITH-11.9-whereEquipmentPresent",
+      "REL-8.8-ACCESS_CHECKED_BY-11.10-whereApplicable",
+      "REL-9.4-ACCESS_CHECKED_BY-11.10-whereApplicable",
+      "REL-9.5-ACCESS_CHECKED_BY-11.10-whereApplicable",
+      "REL-9.4-REQUIRES-11.9-whereEquipmentPresent",
+      "REL-9.5-REQUIRES-9.4-whereEquipmentPresent",
+      "REL-9.10-REQUIRES-9.4-whereEquipmentPresent",
+      "REL-9.11-REQUIRES-9.4-whereTestingRequired",
+      "REL-9.4-INTERFACES_WITH-11.9-whereEquipmentPresent",
+      "REL-9.4-TESTED_BY-9.11-whereTestingRequired",
+      "REL-9.11-TESTED_BY-13.4-whereTestingRequired",
+      "REL-9.4-COMMISSIONED_BY-13.7-whereEquipmentPresent",
+      "REL-9.4-COMMISSIONED_BY-13.6-whereEquipmentPresent",
+      "REL-10.4-ACCESS_CHECKED_BY-11.10-whereApplicable",
+      "REL-10.4-COMMISSIONED_BY-13.6-whereTestingRequired",
+      "REL-10.5-COMMISSIONED_BY-13.6-whereTestingRequired",
+      "REL-10.6-INTERFACES_WITH-9.5-whereSystemPresent",
+      "REL-10.8-COMMISSIONED_BY-13.6-whereTestingRequired",
+      "REL-6.9-ACCESS_CHECKED_BY-11.10-whereApplicable",
+      "REL-8.8-REQUIRES-8.6-whereEquipmentPresent",
+      "REL-8.11-REQUIRES-8.6-whereEquipmentPresent",
+      "REL-8.4-INTERFACES_WITH-8.6-whereEquipmentPresent",
+      "REL-8.5-INTERFACES_WITH-8.6-whereEquipmentPresent"
+    ],
+    "evidenceFocus": [
+      {
+        "type": "checkList",
+        "items": [
+          {
+            "id": "WFI-WF-EQP-02-EVD-001",
+            "text": {
+              "en": "system/equipment ID;",
+              "fr": "system/equipment ID;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "13.1",
+              "page": "CNT-13.1-EVID-001",
+              "note": {
+                "en": "Mapped from canonical Activity 13.1 evidence/verification/closureCriteria item CNT-13.1-EVID-001."
+              }
+            }
+          },
+          {
+            "id": "WFI-WF-EQP-02-EVD-002",
+            "text": {
+              "en": "readiness checklist;",
+              "fr": "readiness checklist;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "13.1",
+              "page": "CNT-13.1-EVID-002",
+              "note": {
+                "en": "Mapped from canonical Activity 13.1 evidence/verification/closureCriteria item CNT-13.1-EVID-002."
+              }
+            }
+          },
+          {
+            "id": "WFI-WF-EQP-02-EVD-003",
+            "text": {
+              "en": "date;",
+              "fr": "date;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "13.1",
+              "page": "CNT-13.1-EVID-003",
+              "note": {
+                "en": "Mapped from canonical Activity 13.1 evidence/verification/closureCriteria item CNT-13.1-EVID-003."
+              }
+            }
+          },
+          {
+            "id": "WFI-WF-EQP-02-EVD-004",
+            "text": {
+              "en": "open prerequisites;",
+              "fr": "open prerequisites;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "13.1",
+              "page": "CNT-13.1-EVID-004",
+              "note": {
+                "en": "Mapped from canonical Activity 13.1 evidence/verification/closureCriteria item CNT-13.1-EVID-004."
+              }
+            }
+          },
+          {
+            "id": "WFI-WF-EQP-02-EVD-005",
+            "text": {
+              "en": "person responsible;",
+              "fr": "person responsible;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "13.1",
+              "page": "CNT-13.1-EVID-005",
+              "note": {
+                "en": "Mapped from canonical Activity 13.1 evidence/verification/closureCriteria item CNT-13.1-EVID-005."
+              }
+            }
+          },
+          {
+            "id": "WFI-WF-EQP-02-EVD-006",
+            "text": {
+              "en": "Are open deficiencies affecting the test resolved?",
+              "fr": "Are open déficiences affecting le essai resolved?",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "13.1",
+              "page": "CNT-13.1-QC-001",
+              "note": {
+                "en": "Mapped from canonical Activity 13.1 qualityCheckpoint/closureCriteria/verification item CNT-13.1-QC-001."
+              }
+            }
+          },
+          {
+            "id": "WFI-WF-EQP-02-EVD-007",
+            "text": {
+              "en": "Have prerequisite inspections passed?",
+              "fr": "Have prerequisite inspections passed?",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "13.1",
+              "page": "CNT-13.1-QC-002",
+              "note": {
+                "en": "Mapped from canonical Activity 13.1 qualityCheckpoint/closureCriteria/verification item CNT-13.1-QC-002."
+              }
+            }
+          },
+          {
+            "id": "WFI-WF-EQP-02-EVD-008",
+            "text": {
+              "en": "Have previous test failures been closed?",
+              "fr": "Have previous essai failures been closed?",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "13.1",
+              "page": "CNT-13.1-QC-003",
+              "note": {
+                "en": "Mapped from canonical Activity 13.1 qualityCheckpoint/closureCriteria/verification item CNT-13.1-QC-003."
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "issuePath": [
+      {
+        "type": "checkList",
+        "items": [
+          {
+            "id": "WFI-WF-EQP-02-ISS-001",
+            "text": {
+              "en": "missing component;",
+              "fr": "manquant component;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "13.1",
+              "page": "CNT-13.1-ISSUE-001",
+              "note": {
+                "en": "Mapped from canonical Activity 13.1 issues.commonDeficiencies/correctiveAction item CNT-13.1-ISSUE-001."
+              }
+            }
+          },
+          {
+            "id": "WFI-WF-EQP-02-ISS-002",
+            "text": {
+              "en": "incomplete wiring;",
+              "fr": "incomplete wiring;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "13.1",
+              "page": "CNT-13.1-ISSUE-002",
+              "note": {
+                "en": "Mapped from canonical Activity 13.1 issues.commonDeficiencies/correctiveAction item CNT-13.1-ISSUE-002."
+              }
+            }
+          },
+          {
+            "id": "WFI-WF-EQP-02-ISS-003",
+            "text": {
+              "en": "valve in wrong state;",
+              "fr": "vanne dans wrong state;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "13.1",
+              "page": "CNT-13.1-ISSUE-003",
+              "note": {
+                "en": "Mapped from canonical Activity 13.1 issues.commonDeficiencies/correctiveAction item CNT-13.1-ISSUE-003."
+              }
+            }
+          },
+          {
+            "id": "WFI-WF-EQP-02-ISS-004",
+            "text": {
+              "en": "untested piping section;",
+              "fr": "untested tuyauterie section;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "13.1",
+              "page": "CNT-13.1-ISSUE-004",
+              "note": {
+                "en": "Mapped from canonical Activity 13.1 issues.commonDeficiencies/correctiveAction item CNT-13.1-ISSUE-004."
+              }
+            }
+          },
+          {
+            "id": "WFI-WF-EQP-02-ISS-005",
+            "text": {
+              "en": "missing firestop;",
+              "fr": "manquant calfeutrement coupe-feu;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "13.1",
+              "page": "CNT-13.1-ISSUE-005",
+              "note": {
+                "en": "Mapped from canonical Activity 13.1 issues.commonDeficiencies/correctiveAction item CNT-13.1-ISSUE-005."
+              }
+            }
+          },
+          {
+            "id": "WFI-WF-EQP-02-ISS-006",
+            "text": {
+              "en": "missing equipment ID;",
+              "fr": "manquant equipment ID;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "13.2",
+              "page": "CNT-13.2-ISSUE-001",
+              "note": {
+                "en": "Mapped from canonical Activity 13.2 issues.commonDeficiencies/correctiveAction item CNT-13.2-ISSUE-001."
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "sourceRef": {
+      "build": "Build 5",
+      "document": "docs/source/04-build-5-field-presentation.docx",
+      "section": "Build 5 Activity Mode examples - Equipment Start-Up"
+    }
+  },
+  {
+    "id": "WF-TST-01",
+    "title": {
+      "en": "Pressure Test",
+      "fr": "Essai de pression",
+      "status": {
+        "fr": "provisional"
+      }
+    },
+    "stages": [
+      {
+        "id": "prepare",
+        "title": {
+          "en": "Prepare",
+          "fr": "Préparer",
+          "status": {
+            "fr": "provisional"
+          }
+        },
+        "activityIds": [
+          "13.1",
+          "13.2",
+          "8.1",
+          "8.2",
+          "8.3",
+          "8.4"
+        ]
+      },
+      {
+        "id": "verify",
+        "title": {
+          "en": "Verify",
+          "fr": "Vérifier",
+          "status": {
+            "fr": "provisional"
+          }
+        },
+        "activityIds": [
+          "8.10",
+          "13.1",
+          "13.2"
+        ],
+        "gateIds": [
+          "G-TST-01"
+        ]
+      },
+      {
+        "id": "executeObserve",
+        "title": {
+          "en": "Execute / Observe",
+          "fr": "Exécuter / observer",
+          "status": {
+            "fr": "provisional"
+          }
+        },
+        "activityIds": [
+          "13.3"
+        ]
+      },
+      {
+        "id": "test",
+        "title": {
+          "en": "Test",
+          "fr": "Tester",
+          "status": {
+            "fr": "provisional"
+          }
+        },
+        "activityIds": [
+          "8.10",
+          "13.3"
+        ]
+      },
+      {
+        "id": "releaseClose",
+        "title": {
+          "en": "Release / Close",
+          "fr": "Autoriser / clore",
+          "status": {
+            "fr": "provisional"
+          }
+        },
+        "activityIds": [
+          "14.3",
+          "14.9",
+          "13.11"
+        ],
+        "gateIds": [
+          "G-TST-01"
+        ]
+      }
+    ],
+    "activityIds": [
+      "13.1",
+      "13.2",
+      "8.1",
+      "8.2",
+      "8.3",
+      "8.4",
+      "8.10",
+      "13.3",
+      "14.3",
+      "14.9",
+      "13.11"
+    ],
+    "gateIds": [
+      "G-TST-01"
+    ],
+    "relatedRelationshipIds": [
+      "REL-12.1-INTERFACES_WITH-8.1-whereExterior",
+      "REL-12.1-INTERFACES_WITH-8.2-whereExterior",
+      "REL-12.1-INTERFACES_WITH-8.3-whereExterior",
+      "REL-8.7-REQUIRES-8.10-whereTestingRequired",
+      "REL-8.10-REQUIRES-8.1-whereTestingRequired",
+      "REL-8.10-REQUIRES-8.2-whereTestingRequired",
+      "REL-8.10-REQUIRES-8.3-whereTestingRequired",
+      "REL-8.10-REQUIRES-8.4-whereTestingRequired",
+      "REL-8.10-REQUIRES-8.5-whereTestingRequired",
+      "REL-8.3-INTERFACES_WITH-12.4-whereExterior",
+      "REL-8.4-INTERFACES_WITH-8.6-whereEquipmentPresent",
+      "REL-8.1-TESTED_BY-8.10-whereTestingRequired",
+      "REL-8.2-TESTED_BY-8.10-whereTestingRequired",
+      "REL-8.3-TESTED_BY-8.10-whereTestingRequired",
+      "REL-8.4-TESTED_BY-8.10-whereTestingRequired",
+      "REL-8.5-TESTED_BY-8.10-whereTestingRequired",
+      "REL-8.10-TESTED_BY-13.3-whereTestingRequired",
+      "REL-5.8-INTERFACES_WITH-8.3-whereRoof",
+      "REL-2.3-INTERFACES_WITH-8.4-whereApplicable",
+      "REL-2.8-INTERFACES_WITH-8.3-whereApplicable",
+      "REL-13.3-GATED_BY-G-TST-01",
+      "REL-13.4-GATED_BY-G-TST-01",
+      "REL-13.5-GATED_BY-G-TST-01",
+      "REL-13.6-GATED_BY-G-TST-01"
+    ],
+    "evidenceFocus": [
+      {
+        "type": "checkList",
+        "items": [
+          {
+            "id": "WFI-WF-TST-01-EVD-001",
+            "text": {
+              "en": "system/equipment ID;",
+              "fr": "system/equipment ID;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "13.1",
+              "page": "CNT-13.1-EVID-001",
+              "note": {
+                "en": "Mapped from canonical Activity 13.1 evidence/verification/closureCriteria item CNT-13.1-EVID-001."
+              }
+            }
+          },
+          {
+            "id": "WFI-WF-TST-01-EVD-002",
+            "text": {
+              "en": "readiness checklist;",
+              "fr": "readiness checklist;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "13.1",
+              "page": "CNT-13.1-EVID-002",
+              "note": {
+                "en": "Mapped from canonical Activity 13.1 evidence/verification/closureCriteria item CNT-13.1-EVID-002."
+              }
+            }
+          },
+          {
+            "id": "WFI-WF-TST-01-EVD-003",
+            "text": {
+              "en": "date;",
+              "fr": "date;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "13.1",
+              "page": "CNT-13.1-EVID-003",
+              "note": {
+                "en": "Mapped from canonical Activity 13.1 evidence/verification/closureCriteria item CNT-13.1-EVID-003."
+              }
+            }
+          },
+          {
+            "id": "WFI-WF-TST-01-EVD-004",
+            "text": {
+              "en": "open prerequisites;",
+              "fr": "open prerequisites;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "13.1",
+              "page": "CNT-13.1-EVID-004",
+              "note": {
+                "en": "Mapped from canonical Activity 13.1 evidence/verification/closureCriteria item CNT-13.1-EVID-004."
+              }
+            }
+          },
+          {
+            "id": "WFI-WF-TST-01-EVD-005",
+            "text": {
+              "en": "person responsible;",
+              "fr": "person responsible;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "13.1",
+              "page": "CNT-13.1-EVID-005",
+              "note": {
+                "en": "Mapped from canonical Activity 13.1 evidence/verification/closureCriteria item CNT-13.1-EVID-005."
+              }
+            }
+          },
+          {
+            "id": "WFI-WF-TST-01-EVD-006",
+            "text": {
+              "en": "Are open deficiencies affecting the test resolved?",
+              "fr": "Are open déficiences affecting le essai resolved?",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "13.1",
+              "page": "CNT-13.1-QC-001",
+              "note": {
+                "en": "Mapped from canonical Activity 13.1 qualityCheckpoint/closureCriteria/verification item CNT-13.1-QC-001."
+              }
+            }
+          },
+          {
+            "id": "WFI-WF-TST-01-EVD-007",
+            "text": {
+              "en": "Have prerequisite inspections passed?",
+              "fr": "Have prerequisite inspections passed?",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "13.1",
+              "page": "CNT-13.1-QC-002",
+              "note": {
+                "en": "Mapped from canonical Activity 13.1 qualityCheckpoint/closureCriteria/verification item CNT-13.1-QC-002."
+              }
+            }
+          },
+          {
+            "id": "WFI-WF-TST-01-EVD-008",
+            "text": {
+              "en": "Have previous test failures been closed?",
+              "fr": "Have previous essai failures been closed?",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "13.1",
+              "page": "CNT-13.1-QC-003",
+              "note": {
+                "en": "Mapped from canonical Activity 13.1 qualityCheckpoint/closureCriteria/verification item CNT-13.1-QC-003."
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "issuePath": [
+      {
+        "type": "checkList",
+        "items": [
+          {
+            "id": "WFI-WF-TST-01-ISS-001",
+            "text": {
+              "en": "missing component;",
+              "fr": "manquant component;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "13.1",
+              "page": "CNT-13.1-ISSUE-001",
+              "note": {
+                "en": "Mapped from canonical Activity 13.1 issues.commonDeficiencies/correctiveAction item CNT-13.1-ISSUE-001."
+              }
+            }
+          },
+          {
+            "id": "WFI-WF-TST-01-ISS-002",
+            "text": {
+              "en": "incomplete wiring;",
+              "fr": "incomplete wiring;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "13.1",
+              "page": "CNT-13.1-ISSUE-002",
+              "note": {
+                "en": "Mapped from canonical Activity 13.1 issues.commonDeficiencies/correctiveAction item CNT-13.1-ISSUE-002."
+              }
+            }
+          },
+          {
+            "id": "WFI-WF-TST-01-ISS-003",
+            "text": {
+              "en": "valve in wrong state;",
+              "fr": "vanne dans wrong state;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "13.1",
+              "page": "CNT-13.1-ISSUE-003",
+              "note": {
+                "en": "Mapped from canonical Activity 13.1 issues.commonDeficiencies/correctiveAction item CNT-13.1-ISSUE-003."
+              }
+            }
+          },
+          {
+            "id": "WFI-WF-TST-01-ISS-004",
+            "text": {
+              "en": "untested piping section;",
+              "fr": "untested tuyauterie section;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "13.1",
+              "page": "CNT-13.1-ISSUE-004",
+              "note": {
+                "en": "Mapped from canonical Activity 13.1 issues.commonDeficiencies/correctiveAction item CNT-13.1-ISSUE-004."
+              }
+            }
+          },
+          {
+            "id": "WFI-WF-TST-01-ISS-005",
+            "text": {
+              "en": "missing firestop;",
+              "fr": "manquant calfeutrement coupe-feu;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "13.1",
+              "page": "CNT-13.1-ISSUE-005",
+              "note": {
+                "en": "Mapped from canonical Activity 13.1 issues.commonDeficiencies/correctiveAction item CNT-13.1-ISSUE-005."
+              }
+            }
+          },
+          {
+            "id": "WFI-WF-TST-01-ISS-006",
+            "text": {
+              "en": "missing equipment ID;",
+              "fr": "manquant equipment ID;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "13.2",
+              "page": "CNT-13.2-ISSUE-001",
+              "note": {
+                "en": "Mapped from canonical Activity 13.2 issues.commonDeficiencies/correctiveAction item CNT-13.2-ISSUE-001."
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "sourceRef": {
+      "build": "Build 5",
+      "document": "docs/source/04-build-5-field-presentation.docx",
+      "section": "Build 5 Activity Mode examples - Pressure Test"
+    }
+  },
+  {
+    "id": "WF-FIRE-01",
+    "title": {
+      "en": "Firestop Inspection",
+      "fr": "Inspection du calfeutrement coupe-feu",
+      "status": {
+        "fr": "provisional"
+      }
+    },
+    "stages": [
+      {
+        "id": "prepare",
+        "title": {
+          "en": "Prepare",
+          "fr": "Préparer",
+          "status": {
+            "fr": "provisional"
+          }
+        },
+        "activityIds": [
+          "10.1",
+          "10.2",
+          "10.3",
+          "8.9",
+          "9.9",
+          "11.7"
+        ]
+      },
+      {
+        "id": "verify",
+        "title": {
+          "en": "Verify",
+          "fr": "Vérifier",
+          "status": {
+            "fr": "provisional"
+          }
+        },
+        "activityIds": [
+          "10.3",
+          "8.9",
+          "9.9",
+          "11.7"
+        ],
+        "gateIds": [
+          "G-INT-01",
+          "G-LS-01"
+        ]
+      },
+      {
+        "id": "executeObserve",
+        "title": {
+          "en": "Execute / Observe",
+          "fr": "Exécuter / observer",
+          "status": {
+            "fr": "provisional"
+          }
+        },
+        "activityIds": [
+          "10.3"
+        ]
+      },
+      {
+        "id": "test",
+        "title": {
+          "en": "Test",
+          "fr": "Tester",
+          "status": {
+            "fr": "provisional"
+          }
+        },
+        "activityIds": [
+          "13.8"
+        ]
+      },
+      {
+        "id": "releaseClose",
+        "title": {
+          "en": "Release / Close",
+          "fr": "Autoriser / clore",
+          "status": {
+            "fr": "provisional"
+          }
+        },
+        "activityIds": [
+          "6.4",
+          "6.8",
+          "14.7"
+        ],
+        "gateIds": [
+          "G-INT-01",
+          "G-LS-01"
+        ]
+      }
+    ],
+    "activityIds": [
+      "10.1",
+      "10.2",
+      "10.3",
+      "8.9",
+      "9.9",
+      "11.7",
+      "13.8",
+      "6.4",
+      "6.8",
+      "14.7"
+    ],
+    "gateIds": [
+      "G-INT-01",
+      "G-LS-01"
+    ],
+    "relatedRelationshipIds": [
+      "REL-11.4-INTERFACES_WITH-8.9-whereExterior",
+      "REL-11.5-INTERFACES_WITH-9.9-whereExterior",
+      "REL-11.6-INTERFACES_WITH-6.4-whereConcealed",
+      "REL-11.6-INTERFACES_WITH-8.9-whereConcealed",
+      "REL-11.6-INTERFACES_WITH-9.9-whereConcealed",
+      "REL-6.8-INTERFACES_WITH-11.11",
+      "REL-9.9-PENETRATION_MANAGED_BY-11.7-whereApplicable",
+      "REL-9.9-INTERFACES_WITH-6.5-whereFireSeparation",
+      "REL-9.9-INTERFACES_WITH-10.3-whereFireSeparation",
+      "REL-4.2-INTERFACES_WITH-8.9-whereExterior",
+      "REL-4.2-INTERFACES_WITH-9.9-whereExterior",
+      "REL-4.3-INTERFACES_WITH-8.9-whereExterior",
+      "REL-4.3-INTERFACES_WITH-9.9-whereExterior",
+      "REL-10.1-INTERFACES_WITH-8.9-whereFireSeparation",
+      "REL-10.1-INTERFACES_WITH-9.9-whereFireSeparation",
+      "REL-10.1-INTERFACES_WITH-10.3-whereFireSeparation",
+      "REL-10.1-INTERFACES_WITH-10.5-whereRated",
+      "REL-10.2-INTERFACES_WITH-6.8-whereFireSeparation",
+      "REL-10.2-INTERFACES_WITH-10.3-whereFireSeparation",
+      "REL-10.2-INTERFACES_WITH-10.4-whereFireSeparation",
+      "REL-10.3-PENETRATION_MANAGED_BY-11.7-whereApplicable",
+      "REL-10.3-GATED_BY-G-INT-01-whereConcealed",
+      "REL-10.4-COMMISSIONED_BY-13.8-whereTestingRequired",
+      "REL-10.6-COMMISSIONED_BY-13.8-whereTestingRequired"
+    ],
+    "evidenceFocus": [
+      {
+        "type": "checkList",
+        "items": [
+          {
+            "id": "WFI-WF-FIRE-01-EVD-001",
+            "text": {
+              "en": "wall ID;",
+              "fr": "mur ID;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "10.1",
+              "page": "CNT-10.1-EVID-001",
+              "note": {
+                "en": "Mapped from canonical Activity 10.1 evidence/verification/closureCriteria item CNT-10.1-EVID-001."
+              }
+            }
+          },
+          {
+            "id": "WFI-WF-FIRE-01-EVD-002",
+            "text": {
+              "en": "location/grid/room;",
+              "fr": "emplacement/grille/room;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "10.1",
+              "page": "CNT-10.1-EVID-002",
+              "note": {
+                "en": "Mapped from canonical Activity 10.1 evidence/verification/closureCriteria item CNT-10.1-EVID-002."
+              }
+            }
+          },
+          {
+            "id": "WFI-WF-FIRE-01-EVD-003",
+            "text": {
+              "en": "assembly reference;",
+              "fr": "assemblage référence;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "10.1",
+              "page": "CNT-10.1-EVID-003",
+              "note": {
+                "en": "Mapped from canonical Activity 10.1 evidence/verification/closureCriteria item CNT-10.1-EVID-003."
+              }
+            }
+          },
+          {
+            "id": "WFI-WF-FIRE-01-EVD-004",
+            "text": {
+              "en": "rating;",
+              "fr": "rating;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "10.1",
+              "page": "CNT-10.1-EVID-004",
+              "note": {
+                "en": "Mapped from canonical Activity 10.1 evidence/verification/closureCriteria item CNT-10.1-EVID-004."
+              }
+            }
+          },
+          {
+            "id": "WFI-WF-FIRE-01-EVD-005",
+            "text": {
+              "en": "framing;",
+              "fr": "cadrage;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "10.1",
+              "page": "CNT-10.1-EVID-005",
+              "note": {
+                "en": "Mapped from canonical Activity 10.1 evidence/verification/closureCriteria item CNT-10.1-EVID-005."
+              }
+            }
+          },
+          {
+            "id": "WFI-WF-FIRE-01-EVD-006",
+            "text": {
+              "en": "Wall ID",
+              "fr": "mur ID",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "10.1",
+              "page": "CNT-10.1-QC-001",
+              "note": {
+                "en": "Mapped from canonical Activity 10.1 qualityCheckpoint/closureCriteria/verification item CNT-10.1-QC-001."
+              }
+            }
+          },
+          {
+            "id": "WFI-WF-FIRE-01-EVD-007",
+            "text": {
+              "en": "Rating",
+              "fr": "Rating",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "10.1",
+              "page": "CNT-10.1-QC-002",
+              "note": {
+                "en": "Mapped from canonical Activity 10.1 qualityCheckpoint/closureCriteria/verification item CNT-10.1-QC-002."
+              }
+            }
+          },
+          {
+            "id": "WFI-WF-FIRE-01-EVD-008",
+            "text": {
+              "en": "Approved assembly",
+              "fr": "approuvé assemblage",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "10.1",
+              "page": "CNT-10.1-QC-003",
+              "note": {
+                "en": "Mapped from canonical Activity 10.1 qualityCheckpoint/closureCriteria/verification item CNT-10.1-QC-003."
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "issuePath": [
+      {
+        "type": "checkList",
+        "items": [
+          {
+            "id": "WFI-WF-FIRE-01-ISS-001",
+            "text": {
+              "en": "wrong board;",
+              "fr": "wrong board;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "10.1",
+              "page": "CNT-10.1-ISSUE-001",
+              "note": {
+                "en": "Mapped from canonical Activity 10.1 issues.commonDeficiencies/correctiveAction item CNT-10.1-ISSUE-001."
+              }
+            }
+          },
+          {
+            "id": "WFI-WF-FIRE-01-ISS-002",
+            "text": {
+              "en": "missing layer;",
+              "fr": "manquant layer;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "10.1",
+              "page": "CNT-10.1-ISSUE-002",
+              "note": {
+                "en": "Mapped from canonical Activity 10.1 issues.commonDeficiencies/correctiveAction item CNT-10.1-ISSUE-002."
+              }
+            }
+          },
+          {
+            "id": "WFI-WF-FIRE-01-ISS-003",
+            "text": {
+              "en": "incorrect framing;",
+              "fr": "incorrect cadrage;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "10.1",
+              "page": "CNT-10.1-ISSUE-003",
+              "note": {
+                "en": "Mapped from canonical Activity 10.1 issues.commonDeficiencies/correctiveAction item CNT-10.1-ISSUE-003."
+              }
+            }
+          },
+          {
+            "id": "WFI-WF-FIRE-01-ISS-004",
+            "text": {
+              "en": "excessive gaps;",
+              "fr": "excessive gaps;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "10.1",
+              "page": "CNT-10.1-ISSUE-004",
+              "note": {
+                "en": "Mapped from canonical Activity 10.1 issues.commonDeficiencies/correctiveAction item CNT-10.1-ISSUE-004."
+              }
+            }
+          },
+          {
+            "id": "WFI-WF-FIRE-01-ISS-005",
+            "text": {
+              "en": "damaged board;",
+              "fr": "damaged board;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "10.1",
+              "page": "CNT-10.1-ISSUE-005",
+              "note": {
+                "en": "Mapped from canonical Activity 10.1 issues.commonDeficiencies/correctiveAction item CNT-10.1-ISSUE-005."
+              }
+            }
+          },
+          {
+            "id": "WFI-WF-FIRE-01-ISS-006",
+            "text": {
+              "en": "missing layer;",
+              "fr": "manquant layer;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "10.2",
+              "page": "CNT-10.2-ISSUE-001",
+              "note": {
+                "en": "Mapped from canonical Activity 10.2 issues.commonDeficiencies/correctiveAction item CNT-10.2-ISSUE-001."
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "sourceRef": {
+      "build": "Build 5",
+      "document": "docs/source/04-build-5-field-presentation.docx",
+      "section": "Build 5H Activity Mode Integration - WF-FIRE-01"
+    }
+  },
+  {
+    "id": "WF-DEF-01",
+    "title": {
+      "en": "Deficiency Walk",
+      "fr": "Relevé des déficiences",
+      "status": {
+        "fr": "provisional"
+      }
+    },
+    "stages": [
+      {
+        "id": "prepare",
+        "title": {
+          "en": "Prepare",
+          "fr": "Préparer",
+          "status": {
+            "fr": "provisional"
+          }
+        },
+        "activityIds": [
+          "14.1",
+          "14.2"
+        ]
+      },
+      {
+        "id": "verify",
+        "title": {
+          "en": "Verify",
+          "fr": "Vérifier",
+          "status": {
+            "fr": "provisional"
+          }
+        },
+        "activityIds": [
+          "14.2",
+          "14.3"
+        ],
+        "gateIds": [
+          "G-FINAL-01"
+        ]
+      },
+      {
+        "id": "executeObserve",
+        "title": {
+          "en": "Execute / Observe",
+          "fr": "Exécuter / observer",
+          "status": {
+            "fr": "provisional"
+          }
+        },
+        "activityIds": [
+          "14.3",
+          "14.7",
+          "14.8"
+        ]
+      },
+      {
+        "id": "test",
+        "title": {
+          "en": "Test",
+          "fr": "Tester",
+          "status": {
+            "fr": "provisional"
+          }
+        },
+        "activityIds": [
+          "14.9"
+        ]
+      },
+      {
+        "id": "releaseClose",
+        "title": {
+          "en": "Release / Close",
+          "fr": "Autoriser / clore",
+          "status": {
+            "fr": "provisional"
+          }
+        },
+        "activityIds": [
+          "14.10",
+          "14.14"
+        ],
+        "gateIds": [
+          "G-FINAL-01"
+        ]
+      }
+    ],
+    "activityIds": [
+      "14.1",
+      "14.2",
+      "14.3",
+      "14.7",
+      "14.8",
+      "14.9",
+      "14.10",
+      "14.14"
+    ],
+    "gateIds": [
+      "G-FINAL-01"
+    ],
+    "relatedRelationshipIds": [
+      "REL-7.7-CLOSES_THROUGH-14.1",
+      "REL-7.7-CLOSES_THROUGH-14.2",
+      "REL-14.2-REQUIRES-14.1",
+      "REL-14.3-REQUIRES-14.2",
+      "REL-14.4-REQUIRES-14.3",
+      "REL-14.7-REQUIRES-14.6",
+      "REL-14.9-REQUIRES-13.11-whereTestingRequired",
+      "REL-14.15-REQUIRES-14.9",
+      "REL-14.14-REQUIRES-14.10",
+      "REL-14.14-REQUIRES-14.11",
+      "REL-14.14-REQUIRES-14.12",
+      "REL-14.14-REQUIRES-14.13",
+      "REL-14.14-REQUIRES-13.11",
+      "REL-14.15-REQUIRES-14.7",
+      "REL-14.15-REQUIRES-14.8",
+      "REL-14.15-REQUIRES-14.14",
+      "REL-14.15-GATED_BY-G-FINAL-01",
+      "REL-12.1-AS_BUILT_FEEDS-14.10-whereApplicable",
+      "REL-1.7-AS_BUILT_FEEDS-14.10-whereApplicable",
+      "REL-8.1-AS_BUILT_FEEDS-14.10-whereApplicable",
+      "REL-8.2-AS_BUILT_FEEDS-14.10-whereApplicable",
+      "REL-8.3-AS_BUILT_FEEDS-14.10-whereApplicable",
+      "REL-8.4-AS_BUILT_FEEDS-14.10-whereApplicable",
+      "REL-8.5-AS_BUILT_FEEDS-14.10-whereApplicable"
+    ],
+    "evidenceFocus": [
+      {
+        "type": "checkList",
+        "items": [
+          {
+            "id": "WFI-WF-DEF-01-EVD-001",
+            "text": {
+              "en": "location;",
+              "fr": "emplacement;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "14.1",
+              "page": "CNT-14.1-EVID-001",
+              "note": {
+                "en": "Mapped from canonical Activity 14.1 evidence/verification/closureCriteria item CNT-14.1-EVID-001."
+              }
+            }
+          },
+          {
+            "id": "WFI-WF-DEF-01-EVD-002",
+            "text": {
+              "en": "deficiency description;",
+              "fr": "déficience description;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "14.1",
+              "page": "CNT-14.1-EVID-002",
+              "note": {
+                "en": "Mapped from canonical Activity 14.1 evidence/verification/closureCriteria item CNT-14.1-EVID-002."
+              }
+            }
+          },
+          {
+            "id": "WFI-WF-DEF-01-EVD-003",
+            "text": {
+              "en": "responsible trade;",
+              "fr": "responsible corps de métier;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "14.1",
+              "page": "CNT-14.1-EVID-003",
+              "note": {
+                "en": "Mapped from canonical Activity 14.1 evidence/verification/closureCriteria item CNT-14.1-EVID-003."
+              }
+            }
+          },
+          {
+            "id": "WFI-WF-DEF-01-EVD-004",
+            "text": {
+              "en": "photo;",
+              "fr": "photo;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "14.1",
+              "page": "CNT-14.1-EVID-004",
+              "note": {
+                "en": "Mapped from canonical Activity 14.1 evidence/verification/closureCriteria item CNT-14.1-EVID-004."
+              }
+            }
+          },
+          {
+            "id": "WFI-WF-DEF-01-EVD-005",
+            "text": {
+              "en": "status;",
+              "fr": "statut;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "14.1",
+              "page": "CNT-14.1-EVID-005",
+              "note": {
+                "en": "Mapped from canonical Activity 14.1 evidence/verification/closureCriteria item CNT-14.1-EVID-005."
+              }
+            }
+          },
+          {
+            "id": "WFI-WF-DEF-01-EVD-006",
+            "text": {
+              "en": "Area complete enough",
+              "fr": "zone complete enough",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "14.1",
+              "page": "CNT-14.1-QC-001",
+              "note": {
+                "en": "Mapped from canonical Activity 14.1 qualityCheckpoint/closureCriteria/verification item CNT-14.1-QC-001."
+              }
+            }
+          },
+          {
+            "id": "WFI-WF-DEF-01-EVD-007",
+            "text": {
+              "en": "Visual quality",
+              "fr": "Visual quality",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "14.1",
+              "page": "CNT-14.1-QC-002",
+              "note": {
+                "en": "Mapped from canonical Activity 14.1 qualityCheckpoint/closureCriteria/verification item CNT-14.1-QC-002."
+              }
+            }
+          },
+          {
+            "id": "WFI-WF-DEF-01-EVD-008",
+            "text": {
+              "en": "Equipment complete",
+              "fr": "Equipment complete",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "14.1",
+              "page": "CNT-14.1-QC-003",
+              "note": {
+                "en": "Mapped from canonical Activity 14.1 qualityCheckpoint/closureCriteria/verification item CNT-14.1-QC-003."
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "issuePath": [
+      {
+        "type": "checkList",
+        "items": [
+          {
+            "id": "WFI-WF-DEF-01-ISS-001",
+            "text": {
+              "en": "Not everything found here needs to become a formal NCR.",
+              "fr": "ne pas everything found here needs à become a formal NCR.",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "14.1",
+              "page": "CNT-14.1-ISSUE-001",
+              "note": {
+                "en": "Mapped from canonical Activity 14.1 issues.commonDeficiencies/correctiveAction item CNT-14.1-ISSUE-001."
+              }
+            }
+          },
+          {
+            "id": "WFI-WF-DEF-01-ISS-002",
+            "text": {
+              "en": "Use actual CRT classification rules.",
+              "fr": "Use réel CRT classification rules.",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "14.1",
+              "page": "CNT-14.1-ISSUE-002",
+              "note": {
+                "en": "Mapped from canonical Activity 14.1 issues.commonDeficiencies/correctiveAction item CNT-14.1-ISSUE-002."
+              }
+            }
+          },
+          {
+            "id": "WFI-WF-DEF-01-ISS-003",
+            "text": {
+              "en": "During internal walkdown, you find 8 access panels missing above concealed valves.",
+              "fr": "pendant internal walkdown, vous find 8 access panels manquant above dissimulé valves.",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "14.1",
+              "page": "CNT-14.1-CA-001",
+              "note": {
+                "en": "Mapped from canonical Activity 14.1 issues.commonDeficiencies/correctiveAction item CNT-14.1-CA-001."
+              }
+            }
+          },
+          {
+            "id": "WFI-WF-DEF-01-ISS-004",
+            "text": {
+              "en": "Better to catch this internally than have Hydro-Québec list all 8 during formal turnover.",
+              "fr": "Better à catch cela internally than have Hydro-Québec list all 8 pendant formal remise.",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "14.1",
+              "page": "CNT-14.1-CA-002",
+              "note": {
+                "en": "Mapped from canonical Activity 14.1 issues.commonDeficiencies/correctiveAction item CNT-14.1-CA-002."
+              }
+            }
+          },
+          {
+            "id": "WFI-WF-DEF-01-ISS-005",
+            "text": {
+              "en": "Identify → assign → install → verify actual access → close before formal survey.",
+              "fr": "identifier → affecter → installer → vérifier réel access → clore avant formal survey.",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "14.1",
+              "page": "CNT-14.1-CA-003",
+              "note": {
+                "en": "Mapped from canonical Activity 14.1 issues.commonDeficiencies/correctiveAction item CNT-14.1-CA-003."
+              }
+            }
+          },
+          {
+            "id": "WFI-WF-DEF-01-ISS-006",
+            "text": {
+              "en": "Formal survey may identify conditions requiring escalation to NCR.",
+              "fr": "Formal survey peut identifier conditions requiring escalation à NCR.",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "14.2",
+              "page": "CNT-14.2-ISSUE-001",
+              "note": {
+                "en": "Mapped from canonical Activity 14.2 issues.commonDeficiencies/correctiveAction item CNT-14.2-ISSUE-001."
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "sourceRef": {
+      "build": "Build 5",
+      "document": "docs/source/04-build-5-field-presentation.docx",
+      "section": "Build 5 Activity Mode examples - Deficiency Walk"
+    }
+  },
+  {
+    "id": "WF-FINAL-01",
+    "title": {
+      "en": "Final Acceptance Review",
+      "fr": "Revue finale d'acceptation",
+      "status": {
+        "fr": "provisional"
+      }
+    },
+    "stages": [
+      {
+        "id": "prepare",
+        "title": {
+          "en": "Prepare",
+          "fr": "Préparer",
+          "status": {
+            "fr": "provisional"
+          }
+        },
+        "activityIds": [
+          "14.7",
+          "14.8",
+          "14.9"
+        ]
+      },
+      {
+        "id": "verify",
+        "title": {
+          "en": "Verify",
+          "fr": "Vérifier",
+          "status": {
+            "fr": "provisional"
+          }
+        },
+        "activityIds": [
+          "14.10",
+          "14.11",
+          "14.12",
+          "14.13",
+          "14.14"
+        ],
+        "gateIds": [
+          "G-FINAL-01"
+        ]
+      },
+      {
+        "id": "executeObserve",
+        "title": {
+          "en": "Execute / Observe",
+          "fr": "Exécuter / observer",
+          "status": {
+            "fr": "provisional"
+          }
+        },
+        "activityIds": [
+          "13.11",
+          "14.14"
+        ]
+      },
+      {
+        "id": "test",
+        "title": {
+          "en": "Test",
+          "fr": "Tester",
+          "status": {
+            "fr": "provisional"
+          }
+        },
+        "activityIds": [
+          "13.11"
+        ]
+      },
+      {
+        "id": "releaseClose",
+        "title": {
+          "en": "Release / Close",
+          "fr": "Autoriser / clore",
+          "status": {
+            "fr": "provisional"
+          }
+        },
+        "activityIds": [
+          "14.15"
+        ],
+        "gateIds": [
+          "G-FINAL-01"
+        ]
+      }
+    ],
+    "activityIds": [
+      "14.7",
+      "14.8",
+      "14.9",
+      "14.10",
+      "14.11",
+      "14.12",
+      "14.13",
+      "14.14",
+      "13.11",
+      "14.15"
+    ],
+    "gateIds": [
+      "G-FINAL-01"
+    ],
+    "relatedRelationshipIds": [
+      "REL-13.11-REQUIRES-13.10-whereTestingRequired",
+      "REL-13.11-REQUIRES-13.3-whereTestingRequired",
+      "REL-13.11-REQUIRES-13.4-whereTestingRequired",
+      "REL-13.11-REQUIRES-13.5-whereTestingRequired",
+      "REL-13.11-REQUIRES-13.6-whereTestingRequired",
+      "REL-13.11-REQUIRES-13.7-whereTestingRequired",
+      "REL-13.11-REQUIRES-13.8-whereTestingRequired",
+      "REL-14.7-REQUIRES-14.6",
+      "REL-14.9-REQUIRES-13.11-whereTestingRequired",
+      "REL-14.15-REQUIRES-14.9",
+      "REL-14.14-REQUIRES-14.10",
+      "REL-14.14-REQUIRES-14.11",
+      "REL-14.14-REQUIRES-14.12",
+      "REL-14.14-REQUIRES-14.13",
+      "REL-14.14-REQUIRES-13.11",
+      "REL-14.15-REQUIRES-14.7",
+      "REL-14.15-REQUIRES-14.8",
+      "REL-14.15-REQUIRES-14.14",
+      "REL-14.15-GATED_BY-G-FINAL-01",
+      "REL-14.15-GATED_BY-G-EXT-02-whereExterior",
+      "REL-12.1-AS_BUILT_FEEDS-14.10-whereApplicable",
+      "REL-1.7-AS_BUILT_FEEDS-14.10-whereApplicable",
+      "REL-8.1-AS_BUILT_FEEDS-14.10-whereApplicable",
+      "REL-8.2-AS_BUILT_FEEDS-14.10-whereApplicable"
+    ],
+    "evidenceFocus": [
+      {
+        "type": "checkList",
+        "items": [
+          {
+            "id": "WFI-WF-FINAL-01-EVD-001",
+            "text": {
+              "en": "deficiency ID;",
+              "fr": "déficience ID;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "14.7",
+              "page": "CNT-14.7-EVID-001",
+              "note": {
+                "en": "Mapped from canonical Activity 14.7 evidence/verification/closureCriteria item CNT-14.7-EVID-001."
+              }
+            }
+          },
+          {
+            "id": "WFI-WF-FINAL-01-EVD-002",
+            "text": {
+              "en": "original issue;",
+              "fr": "original issue;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "14.7",
+              "page": "CNT-14.7-EVID-002",
+              "note": {
+                "en": "Mapped from canonical Activity 14.7 evidence/verification/closureCriteria item CNT-14.7-EVID-002."
+              }
+            }
+          },
+          {
+            "id": "WFI-WF-FINAL-01-EVD-003",
+            "text": {
+              "en": "correction;",
+              "fr": "correction;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "14.7",
+              "page": "CNT-14.7-EVID-003",
+              "note": {
+                "en": "Mapped from canonical Activity 14.7 evidence/verification/closureCriteria item CNT-14.7-EVID-003."
+              }
+            }
+          },
+          {
+            "id": "WFI-WF-FINAL-01-EVD-004",
+            "text": {
+              "en": "after evidence;",
+              "fr": "après preuve;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "14.7",
+              "page": "CNT-14.7-EVID-004",
+              "note": {
+                "en": "Mapped from canonical Activity 14.7 evidence/verification/closureCriteria item CNT-14.7-EVID-004."
+              }
+            }
+          },
+          {
+            "id": "WFI-WF-FINAL-01-EVD-005",
+            "text": {
+              "en": "reinspection date;",
+              "fr": "reinspection date;",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "14.7",
+              "page": "CNT-14.7-EVID-005",
+              "note": {
+                "en": "Mapped from canonical Activity 14.7 evidence/verification/closureCriteria item CNT-14.7-EVID-005."
+              }
+            }
+          },
+          {
+            "id": "WFI-WF-FINAL-01-EVD-006",
+            "text": {
+              "en": "Physical fix",
+              "fr": "Physical fix",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "14.7",
+              "page": "CNT-14.7-QC-001",
+              "note": {
+                "en": "Mapped from canonical Activity 14.7 qualityCheckpoint/closureCriteria/verification item CNT-14.7-QC-001."
+              }
+            }
+          },
+          {
+            "id": "WFI-WF-FINAL-01-EVD-007",
+            "text": {
+              "en": "Verification",
+              "fr": "vérification",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "14.7",
+              "page": "CNT-14.7-QC-002",
+              "note": {
+                "en": "Mapped from canonical Activity 14.7 qualityCheckpoint/closureCriteria/verification item CNT-14.7-QC-002."
+              }
+            }
+          },
+          {
+            "id": "WFI-WF-FINAL-01-EVD-008",
+            "text": {
+              "en": "Retest if required",
+              "fr": "refaire l’essai si requis",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "14.7",
+              "page": "CNT-14.7-QC-003",
+              "note": {
+                "en": "Mapped from canonical Activity 14.7 qualityCheckpoint/closureCriteria/verification item CNT-14.7-QC-003."
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "issuePath": [
+      {
+        "type": "checkList",
+        "items": [
+          {
+            "id": "WFI-WF-FINAL-01-ISS-001",
+            "text": {
+              "en": "Do not close unresolved dependency.",
+              "fr": "ne pas clore unresolved dépendance.",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "14.7",
+              "page": "CNT-14.7-ISSUE-001",
+              "note": {
+                "en": "Mapped from canonical Activity 14.7 issues.commonDeficiencies/correctiveAction item CNT-14.7-ISSUE-001."
+              }
+            }
+          },
+          {
+            "id": "WFI-WF-FINAL-01-ISS-002",
+            "text": {
+              "en": "ceiling tile replaced but roof leak causing stain remains unresolved.",
+              "fr": "plafond tile replaced mais toiture leak causing stain remains unresolved.",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "14.7",
+              "page": "CNT-14.7-ISSUE-002",
+              "note": {
+                "en": "Mapped from canonical Activity 14.7 issues.commonDeficiencies/correctiveAction item CNT-14.7-ISSUE-002."
+              }
+            }
+          },
+          {
+            "id": "WFI-WF-FINAL-01-ISS-003",
+            "text": {
+              "en": "Root issue remains open.",
+              "fr": "Root issue remains open.",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "14.7",
+              "page": "CNT-14.7-ISSUE-003",
+              "note": {
+                "en": "Mapped from canonical Activity 14.7 issues.commonDeficiencies/correctiveAction item CNT-14.7-ISSUE-003."
+              }
+            }
+          },
+          {
+            "id": "WFI-WF-FINAL-01-ISS-004",
+            "text": {
+              "en": "Reopen if incomplete.",
+              "fr": "rouvrir if incomplete.",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "14.7",
+              "page": "CNT-14.7-CA-001",
+              "note": {
+                "en": "Mapped from canonical Activity 14.7 issues.commonDeficiencies/correctiveAction item CNT-14.7-CA-001."
+              }
+            }
+          },
+          {
+            "id": "WFI-WF-FINAL-01-ISS-005",
+            "text": {
+              "en": "open?",
+              "fr": "open?",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "14.8",
+              "page": "CNT-14.8-ISSUE-001",
+              "note": {
+                "en": "Mapped from canonical Activity 14.8 issues.commonDeficiencies/correctiveAction item CNT-14.8-ISSUE-001."
+              }
+            }
+          },
+          {
+            "id": "WFI-WF-FINAL-01-ISS-006",
+            "text": {
+              "en": "disposition approved?",
+              "fr": "disposition approuvé?",
+              "status": {
+                "en": "validated",
+                "fr": "provisional"
+              }
+            },
+            "authority": {
+              "authorizedProcessRequired": true
+            },
+            "sourceRef": {
+              "build": "Phase 014",
+              "document": "Authored field-presentation data",
+              "section": "14.8",
+              "page": "CNT-14.8-ISSUE-002",
+              "note": {
+                "en": "Mapped from canonical Activity 14.8 issues.commonDeficiencies/correctiveAction item CNT-14.8-ISSUE-002."
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "sourceRef": {
+      "build": "Build 5",
+      "document": "docs/source/04-build-5-field-presentation.docx",
+      "section": "Build 5 Activity Mode examples - Final Acceptance Review"
+    }
+  }
+]

@@ -13,9 +13,12 @@ export const phasePlanRequirements = Object.freeze({
     "Production Relationship Registry",
     "Terminology, Acronyms, Localization, And UI Strings",
     "Authored Field Presentation Data",
+    "Production Workflow & Pre-Concealment Data",
     "Derived Search Infrastructure",
     "Route-Bound Screen Composition",
     "Field Interaction And Offline Polish",
+    "Field-Presentation Quality Review",
+    "Bilingual Authority & Content Review",
     "Final MVP Acceptance Audit",
     "Build 2 remains the technical-content authority",
     "section-level batches",
@@ -49,7 +52,10 @@ export const phasePlanRequirements = Object.freeze({
     "Phase 014",
     "Phase 015",
     "Phase 016",
-    "Phase 017"
+    "Phase 017",
+    "Phase 018",
+    "Phase 019",
+    "Phase 020"
   ]
 });
 

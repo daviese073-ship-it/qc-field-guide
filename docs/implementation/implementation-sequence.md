@@ -40,10 +40,13 @@ The corrected post-Phase-008 dependency chain is:
 4. Phase 012 - Production Relationship Registry.
 5. Phase 013 - Terminology, Acronyms, Localization, And UI Strings.
 6. Phase 014 - Authored Field Presentation Data.
-7. Phase 015 - Derived Search Infrastructure.
-8. Phase 016 - Route-Bound Screen Composition.
-9. Phase 017 - Field Interaction And Offline Polish.
-10. Final MVP Acceptance Audit.
+7. Phase 015 - Production Workflow & Pre-Concealment Data.
+8. Phase 016 - Derived Search Infrastructure.
+9. Phase 017 - Route-Bound Screen Composition.
+10. Phase 018 - Field Interaction And Offline Polish.
+11. Phase 019 - Field-Presentation Quality Review.
+12. Phase 020 - Bilingual Authority & Content Review.
+13. Final MVP Acceptance Audit.
 
 The explicit Phase 010 closes the planning gap between identity seeding and
 logic/relationship/presentation work. Build 2 owns this technical activity
@@ -76,8 +79,10 @@ and contains the required operational markers:
 - checkpoint;
 - future work package warning.
 - the dedicated Build 2 technical-content phase;
-- downstream phases through Phase 017;
+- downstream phases through Phase 020;
 - final MVP acceptance audit.
+- the required field-presentation and bilingual authority/content review
+  checkpoints before production release.
 
 The validator is deliberately simple. It protects the presence of the plan and
 its main governance sections; it does not interpret product content.
@@ -89,10 +94,10 @@ Still deferred to later phases:
 - production Build 2 content ingestion;
 - production conditions, gates, invalidation rules, and relationships;
 - terminology/acronym/UI-string population;
-- QuickView, LearnContent, Workflow, and PreConcealmentWorkflow production
-  data;
 - derived search indexing/ranking/results;
 - final route-bound screen composition;
 - field interaction and offline polish;
+- field-presentation quality review;
+- bilingual authority and content review;
 - backend, database, accounts, analytics, official records, approvals,
   releases, and signatures.

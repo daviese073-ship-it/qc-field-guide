@@ -21,6 +21,10 @@ import {
   formatProductionPresentationAuditReport
 } from "./productionPresentationAudit";
 import {
+  auditProductionWorkflowDataset,
+  formatProductionWorkflowAuditReport
+} from "./productionWorkflowAudit";
+import {
   auditBatirTerminologyDataset,
   formatBatirTerminologyAuditReport
 } from "./batirTerminologyAudit";
@@ -48,6 +52,10 @@ try {
     productionValidation.registries
   );
   const presentationAudit = auditProductionPresentationDataset(
+    productionValidation.dataset,
+    productionValidation.registries
+  );
+  const workflowAudit = auditProductionWorkflowDataset(
     productionValidation.dataset,
     productionValidation.registries
   );
@@ -90,6 +98,13 @@ try {
     );
   }
 
+  if (!workflowAudit.ok) {
+    throw new CanonicalDataValidationError(
+      "Canonical production workflow validation failed.",
+      workflowAudit.errors
+    );
+  }
+
   if (!batirAudit.ok) {
     throw new CanonicalDataValidationError(
       "BÂTIR terminology validation failed.",
@@ -114,6 +129,7 @@ try {
       formatProductionRelationshipAuditReport(relationshipAudit),
       formatProductionLocalizationAuditReport(localizationAudit),
       formatProductionPresentationAuditReport(presentationAudit),
+      formatProductionWorkflowAuditReport(workflowAudit),
       formatBatirTerminologyAuditReport(batirAudit)
     ].join("\n")
   );

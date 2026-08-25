@@ -55,8 +55,8 @@ describe("Phase 014 production presentation data", () => {
     expect(report.localizedPresentationReviewedFrCount).toBe(0);
     expect(report.localizedPresentationProvisionalFrCount).toBe(7604);
     expect(report.localizedPresentationFallbackOnlyCount).toBe(0);
-    expect(report.workflowCount).toBe(0);
-    expect(report.preConcealmentWorkflowCount).toBe(0);
+    expect(report.workflowCount).toBe(12);
+    expect(report.preConcealmentWorkflowCount).toBe(7);
     expect(formatProductionPresentationAuditReport(report)).toContain(
       "Phase 014 production presentation audit passed."
     );

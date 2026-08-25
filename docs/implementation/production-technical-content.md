@@ -157,6 +157,7 @@ Still deferred:
 - Phase 011: production conditions, gates, and invalidation rules;
 - Phase 012: production relationships;
 - Phase 013: terminology, acronyms, localization, and UI strings;
-- Phase 014: QuickView, LearnContent, Workflow, and PreConcealmentWorkflow data;
-- Phase 015+: derived search, route-bound screen composition, field interaction,
-  and offline polish.
+- Phase 014: QuickView and LearnContent data;
+- Phase 015: Workflow and PreConcealmentWorkflow data;
+- Phase 016+: derived search, route-bound screen composition, field interaction,
+  offline polish, and required pre-production reviews.

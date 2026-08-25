@@ -538,12 +538,6 @@ export const auditProductionLocalizationDataset = (
       `Found ${terminologyConformanceIssueCount} terminology-conformance issues in content-item translations.`
     );
   }
-  if (dataset.workflows.length > 0 || dataset.preConcealmentWorkflows.length > 0) {
-    errors.push(
-      "Phase 014 must not populate Workflow or PreConcealmentWorkflow production records."
-    );
-  }
-
   for (const activity of activities) {
     for (const termId of activity.terminologyRefs ?? []) {
       terminologyReferenceCount += 1;

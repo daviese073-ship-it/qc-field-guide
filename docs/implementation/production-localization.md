@@ -1,7 +1,7 @@
 # Production Localization
 
 Phase 013 populates the production bilingual/localization layer governed by
-Build 4. It does not begin Phase 014 presentation data, Phase 015 search, or
+Build 4. It does not begin Phase 014/015 presentation data, Phase 016 search, or
 route-bound UI composition.
 
 ## Data Boundary
@@ -115,7 +115,9 @@ content, logic, and relationship audits.
 
 ## Deferred
 
-Phase 014 owns authored QuickView, LearnContent, Workflow, and
-PreConcealmentWorkflow production records. Phase 015 owns derived bilingual
-search indexing/ranking. Later UI phases consume this localization layer without
-creating language-specific routes or duplicate canonical objects.
+Phase 014 owns authored QuickView and LearnContent production records. Phase
+015 owns Workflow and PreConcealmentWorkflow production records. Phase 016 owns
+derived bilingual search indexing/ranking. The Bilingual Authority & Content
+Review remains required before production release. Later UI phases consume this
+localization layer without creating language-specific routes or duplicate
+canonical objects.

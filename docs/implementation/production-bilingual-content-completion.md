@@ -69,5 +69,7 @@ production localization and BÂTIR terminology validation.
 
 Human terminology/prose review remains required before any generated Full
 content can be considered final. Phase 014 remains responsible for authored
-Quick/Learn/workflow/pre-concealment data, and Phase 015 remains responsible
-for derived bilingual search infrastructure.
+Quick/Learn data, Phase 015 remains responsible for production workflow and
+pre-concealment data, Phase 016 remains responsible for derived bilingual search
+infrastructure, and the Bilingual Authority & Content Review remains required
+before production release.

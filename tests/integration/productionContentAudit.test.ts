@@ -91,20 +91,9 @@ describe("Phase 010 production content audit", () => {
     expect(report.errors.join("\n")).toMatch(/placeholder-like text/);
   });
 
-  it("fails when later-phase workflow production data appears", () => {
-    const dataset = validatedProductionDataset();
+  it("does not treat authorized Phase 015 workflow records as Phase 010 technical content failures", () => {
+    const report = auditProductionContentDataset(validatedProductionDataset());
 
-    dataset.workflows.push({
-      id: "WF-SHOULD-NOT-EXIST",
-      title: { en: "Later phase workflow fixture" },
-      activityIds: ["1.1"]
-    });
-
-    const report = auditProductionContentDataset(dataset);
-
-    expect(report.ok).toBe(false);
-    expect(report.errors).toContain(
-      "Production workflows contains 1 records before its authorized phase."
-    );
+    expect(report.ok).toBe(true);
   });
 });
