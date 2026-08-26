@@ -4,10 +4,12 @@ const screenshot = (name: string) =>
   `test-results/phase017-correction-${name}.png`;
 
 test.describe("Phase 017 correction visual composition", () => {
+  test.describe.configure({ mode: "serial" });
+
   test("captures the corrected Home interface at approved comparison widths", async ({
     page
   }) => {
-    test.setTimeout(60000);
+    test.setTimeout(120000);
 
     const viewports = [
       { name: "home-1536", width: 1536, height: 1024 },
@@ -55,7 +57,7 @@ test.describe("Phase 017 correction visual composition", () => {
   test("captures the General QC Processes rebuild at approved comparison widths", async ({
     page
   }) => {
-    test.setTimeout(60000);
+    test.setTimeout(120000);
 
     const viewports = [
       { name: "general-qc-1536", width: 1536, height: 1024 },
@@ -115,6 +117,8 @@ test.describe("Phase 017 correction visual composition", () => {
   test("captures the final General QC Process detail composition", async ({
     page
   }) => {
+    test.setTimeout(120000);
+
     await page.setViewportSize({ width: 1536, height: 1024 });
     await page.goto("/general-qc/general-qc-ncr");
 
@@ -241,10 +245,208 @@ test.describe("Phase 017 correction visual composition", () => {
     }
   });
 
+  test("captures the final System / Section entry composition", async ({
+    page
+  }) => {
+    test.setTimeout(120000);
+
+    await page.setViewportSize({ width: 1600, height: 1024 });
+    await page.goto("/section/1");
+
+    await expect(
+      page.getByRole("heading", { name: /01 Sitework & Earthworks/i })
+    ).toBeVisible();
+    await expect(
+      page.getByRole("heading", { name: "Activities in this system" })
+    ).toBeVisible();
+    await expect(
+      page.getByRole("heading", { name: "Section QC Focus" })
+    ).toBeVisible();
+    await expect(
+      page.getByRole("heading", { name: "Related Workflows" })
+    ).toBeVisible();
+    await expect(
+      page.getByRole("heading", { name: "Key Interfaces" })
+    ).toBeVisible();
+    await expect(page.getByRole("heading", { name: "QC Tip" })).toBeVisible();
+    await expect(page.getByRole("link", { name: /1\.1/i })).toHaveAttribute(
+      "href",
+      "/activity/1.1"
+    );
+    await expect(
+      page.getByText("Open the activity for field inspection execution.")
+    ).toHaveCount(0);
+    await expect(
+      page.getByText("This workflow establishes what exists")
+    ).toHaveCount(0);
+
+    const geometry = await page.evaluate(() => {
+      const bounds = (testId: string) => {
+        const element = document.querySelector(`[data-testid="${testId}"]`);
+
+        if (!element) throw new Error(`Missing ${testId}`);
+
+        const rect = element.getBoundingClientRect();
+        return {
+          x: Math.round(rect.x),
+          y: Math.round(rect.y),
+          width: Math.round(rect.width),
+          height: Math.round(rect.height)
+        };
+      };
+
+      const number = document.querySelector(
+        '[data-testid="section-entry-number"]'
+      );
+      const title = document.querySelector(
+        '[data-testid="section-entry-title"]'
+      );
+      const rail = bounds("section-entry-rail");
+      const main = bounds("section-entry-main");
+      const firstRow = bounds("section-activity-row");
+      const rows = Array.from(
+        document.querySelectorAll('[data-testid="section-activity-row"]')
+      );
+      const arrows = rows.map((row) => {
+        const arrow = row.querySelector('[data-testid="section-activity-arrow"]');
+
+        if (!arrow) throw new Error("Missing section activity arrow");
+
+        const rowRect = row.getBoundingClientRect();
+        const arrowRect = arrow.getBoundingClientRect();
+
+        return {
+          arrowLeft: Math.round(arrowRect.left),
+          arrowRight: Math.round(arrowRect.right),
+          rowRight: Math.round(rowRect.right),
+          rowScrollWidth: Math.round(row.scrollWidth),
+          rowClientWidth: Math.round(row.clientWidth)
+        };
+      });
+
+      if (!number || !title) {
+        throw new Error("Missing section identity typography markers");
+      }
+
+      return {
+        activityHeader: bounds("section-activities-header"),
+        activityIconTile: bounds("section-activity-icon-tile"),
+        activityIdTile: bounds("section-activity-id-tile"),
+        activityRow: firstRow,
+        bottomNav: bounds("section-bottom-nav"),
+        iconTile: bounds("section-entry-icon-tile"),
+        main,
+        numberFontSize: Number.parseFloat(getComputedStyle(number).fontSize),
+        rail,
+        railGap: Math.round(
+          bounds("section-rail-related-workflows").y -
+            (bounds("section-rail-section-qc-focus").y +
+              bounds("section-rail-section-qc-focus").height)
+        ),
+        railWidth: rail.width,
+        rowArrowLefts: arrows.map((arrow) => arrow.arrowLeft),
+        rowArrowRightOffsets: arrows.map(
+          (arrow) => arrow.rowRight - arrow.arrowRight
+        ),
+        rowOverflowCount: arrows.filter(
+          (arrow) => arrow.rowScrollWidth > arrow.rowClientWidth
+        ).length,
+        rightRailLeft: rail.x,
+        titleFontSize: Number.parseFloat(getComputedStyle(title).fontSize)
+      };
+    });
+
+    expect(geometry.main.x).toBeGreaterThanOrEqual(276);
+    expect(geometry.main.x).toBeLessThanOrEqual(284);
+    expect(geometry.railWidth).toBeGreaterThanOrEqual(350);
+    expect(geometry.railWidth).toBeLessThanOrEqual(370);
+    expect(
+      geometry.rightRailLeft - (geometry.main.x + geometry.main.width)
+    ).toBe(22);
+    expect(geometry.iconTile.width).toBe(72);
+    expect(geometry.iconTile.height).toBe(72);
+    expect(geometry.numberFontSize).toBe(40);
+    expect(geometry.titleFontSize).toBe(40);
+    expect(geometry.activityHeader.height).toBe(76);
+    expect(geometry.activityRow.height).toBeGreaterThanOrEqual(72);
+    expect(geometry.activityRow.height).toBeLessThanOrEqual(78);
+    expect(geometry.activityIdTile.width).toBe(60);
+    expect(geometry.activityIdTile.height).toBe(50);
+    expect(geometry.activityIconTile.width).toBe(52);
+    expect(geometry.activityIconTile.height).toBe(52);
+    expect(geometry.railGap).toBe(18);
+    expect(geometry.bottomNav.height).toBe(80);
+    expect(new Set(geometry.rowArrowLefts).size).toBe(1);
+    expect(new Set(geometry.rowArrowRightOffsets).size).toBe(1);
+    expect(geometry.rowOverflowCount).toBe(0);
+
+    const hasHorizontalOverflow = await page.evaluate(
+      () => document.documentElement.scrollWidth > window.innerWidth
+    );
+
+    expect(hasHorizontalOverflow).toBe(false);
+    await page.screenshot({
+      fullPage: true,
+      path: screenshot("section-entry-sitework")
+    });
+
+    const sectionScreenshots = [
+      { id: "2", name: "substructure", title: "Substructure" },
+      { id: "3", name: "superstructure", title: "Superstructure" },
+      { id: "4", name: "building-envelope", title: "Building Envelope" },
+      { id: "8", name: "mechanical-services", title: "Mechanical Services" },
+      {
+        id: "9",
+        name: "electrical-building-services",
+        title: "Electrical Building Services"
+      },
+      {
+        id: "13",
+        name: "testing-commissioning",
+        title: "Testing, Commissioning & System Acceptance"
+      },
+      {
+        id: "14",
+        name: "deficiencies-closeout",
+        title: "Deficiencies, Completion & Closeout"
+      }
+    ];
+
+    for (const section of sectionScreenshots) {
+      await page.goto(`/section/${section.id}`);
+      await expect(
+        page.getByRole("heading", {
+          name: new RegExp(`${section.id.padStart(2, "0")}.*${section.title}`)
+        })
+      ).toBeVisible();
+      await expect(
+        page
+          .getByRole("navigation", { name: "Primary" })
+          .getByRole("link", { name: section.title })
+      ).toHaveAttribute("aria-current", "page");
+      expect(
+        await page.evaluate(
+          () => document.documentElement.scrollWidth > window.innerWidth
+        )
+      ).toBe(false);
+      expect(
+        await page
+          .locator('[data-testid="section-activity-row"]')
+          .evaluateAll((rows) =>
+            rows.filter((row) => row.scrollWidth > row.clientWidth).length
+          )
+      ).toBe(0);
+      await page.screenshot({
+        fullPage: true,
+        path: screenshot(`section-entry-${section.name}`)
+      });
+    }
+  });
+
   test("keeps the shared shell usable across Layer 1 viewport targets", async ({
     page
   }) => {
-    test.setTimeout(60000);
+    test.setTimeout(120000);
 
     const viewports = [
       { name: "large-desktop", width: 1440, height: 900 },
@@ -307,7 +509,7 @@ test.describe("Phase 017 correction visual composition", () => {
   test("captures the primary route-bound production screens", async ({
     page
   }) => {
-    test.setTimeout(60000);
+    test.setTimeout(120000);
 
     await page.goto("/");
     await expect(

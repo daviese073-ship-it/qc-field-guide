@@ -184,7 +184,7 @@ export function GeneralQcProcessDetailPage() {
                 return (
                   <button
                     aria-controls={tabPanelId}
-                    aria-selected={selected}
+                    aria-selected={selected ? "true" : "false"}
                     className={classNames(
                       "relative inline-flex items-center justify-center gap-3 text-[15px] font-semibold leading-5 transition focus-visible:outline-offset-[-3px]",
                       selected ? accent.text : "text-[#52617d]"
