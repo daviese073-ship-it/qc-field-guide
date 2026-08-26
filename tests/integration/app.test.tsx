@@ -152,10 +152,10 @@ describe("production route-bound screen composition", () => {
       "aria-selected",
       "true"
     );
-    expect(screen.getByText("Before")).toBeInTheDocument();
+    expect(screen.getAllByText("Before").length).toBeGreaterThan(0);
     expect(screen.getByText("Inspect")).toBeInTheDocument();
     expect(screen.getByText("Evidence")).toBeInTheDocument();
-    expect(screen.getByText("Watch for")).toBeInTheDocument();
+    expect(screen.getByText("Watch For")).toBeInTheDocument();
   });
 
   it("renders Learn from production presentation data", () => {
@@ -165,8 +165,8 @@ describe("production route-bound screen composition", () => {
       "aria-selected",
       "true"
     );
-    expect(screen.getByText("What is this?")).toBeInTheDocument();
-    expect(screen.getByText("Why it matters")).toBeInTheDocument();
+    expect(screen.getByText("What is Firestopping?")).toBeInTheDocument();
+    expect(screen.getByText("Why It Matters")).toBeInTheDocument();
   });
 
   it("shows workflow and pre-concealment links only when applicable", () => {

@@ -1,7 +1,31 @@
-import { expect, test } from "@playwright/test";
+import { expect, test, type Locator, type Page } from "@playwright/test";
 
 const screenshot = (name: string) =>
   `test-results/phase017-correction-${name}.png`;
+
+const expectInRange = (actual: number, min: number, max: number) => {
+  expect(actual).toBeGreaterThanOrEqual(min);
+  expect(actual).toBeLessThanOrEqual(max);
+};
+
+const roundedBox = async (locator: Locator) => {
+  const box = await locator.boundingBox();
+
+  expect(box).not.toBeNull();
+
+  return {
+    height: Math.round(box?.height ?? 0),
+    width: Math.round(box?.width ?? 0)
+  };
+};
+
+const expectNoHorizontalOverflow = async (page: Page) => {
+  const hasHorizontalOverflow = await page.evaluate(
+    () => document.documentElement.scrollWidth > window.innerWidth
+  );
+
+  expect(hasHorizontalOverflow).toBe(false);
+};
 
 test.describe("Phase 017 correction visual composition", () => {
   test.describe.configure({ mode: "serial" });
@@ -543,7 +567,12 @@ test.describe("Phase 017 correction visual composition", () => {
       "aria-selected",
       "true"
     );
-    await expect(page.getByText("Watch for").first()).toBeVisible();
+    await expect(
+      page.getByRole("heading", {
+        name: "Quick Check — Essentials in the Field"
+      })
+    ).toBeVisible();
+    await expect(page.getByRole("heading", { name: "Watch For" })).toBeVisible();
     await page.screenshot({
       fullPage: true,
       path: screenshot("activity-quick")
@@ -554,7 +583,8 @@ test.describe("Phase 017 correction visual composition", () => {
       "aria-selected",
       "true"
     );
-    await expect(page.getByLabel("Full activity content")).toBeVisible();
+    await expect(page.getByTestId("activity-full-mode")).toBeVisible();
+    await expect(page.getByTestId("full-group-row")).toHaveCount(10);
     await page.screenshot({
       fullPage: true,
       path: screenshot("activity-full")
@@ -565,7 +595,10 @@ test.describe("Phase 017 correction visual composition", () => {
       "aria-selected",
       "true"
     );
-    await expect(page.getByText("Learn the inspection logic")).toBeVisible();
+    await expect(
+      page.getByRole("heading", { name: "Learn & Understand" })
+    ).toBeVisible();
+    await expect(page.getByTestId("activity-learn-mode")).toBeVisible();
     await page.screenshot({
       fullPage: true,
       path: screenshot("activity-learn")
@@ -612,6 +645,166 @@ test.describe("Phase 017 correction visual composition", () => {
     ).toBeVisible();
     await expect(page.getByText("EN / FR source data")).toBeVisible();
     await page.screenshot({ fullPage: true, path: screenshot("terminology") });
+  });
+
+  test("captures final Activity Quick, Full, and Learn visual states", async ({
+    page
+  }) => {
+    test.setTimeout(120000);
+    await page.setViewportSize({ width: 1536, height: 1024 });
+
+    await page.goto("/activity/2.1");
+    await expect(
+      page.getByRole("heading", { name: /2\.1 Foundation Formwork/i })
+    ).toBeVisible();
+    await expect(
+      page.getByRole("heading", {
+        name: "Quick Check — Essentials in the Field"
+      })
+    ).toBeVisible();
+    await expect(page.getByTestId("quick-card")).toHaveCount(4);
+    await expect(page.getByTestId("quick-do-not-miss")).toBeVisible();
+    await expect(page.getByTestId("quick-field-tip")).toBeVisible();
+    await expect(page.getByTestId("quick-info-panel")).toContainText("Stage");
+    await expect(page.getByTestId("quick-info-panel")).toContainText(
+      "Criticality"
+    );
+    await expect(page.getByTestId("quick-info-panel")).toContainText(
+      "Quality Impact"
+    );
+    await expect(page.getByTestId("activity-relationship-rail")).toBeVisible();
+    await expect(
+      page.getByRole("heading", { name: "Next / Related Work" })
+    ).toBeVisible();
+    await expect(page.getByRole("heading", { name: "Related Systems" }))
+      .toBeVisible();
+    await expect(page.getByRole("heading", { name: "Related Inspections" }))
+      .toBeVisible();
+    await expect(page.getByTestId("activity-view-all-unavailable"))
+      .toBeDisabled();
+    await expectNoHorizontalOverflow(page);
+
+    const quickMain = await roundedBox(page.getByTestId("activity-main-column"));
+    const quickRail = await roundedBox(
+      page.getByTestId("activity-relationship-rail")
+    );
+    const quickIdentity = await roundedBox(
+      page.getByTestId("activity-identity-card")
+    );
+    const quickTabs = await roundedBox(page.getByTestId("activity-mode-tabs"));
+    const quickPanel = await roundedBox(page.getByTestId("activity-quick-mode"));
+    const quickCards = await page.getByTestId("quick-card").all();
+    const firstQuickCard = await roundedBox(quickCards[0]);
+    const secondQuickCardBox = await quickCards[1].boundingBox();
+    const firstQuickCardBox = await quickCards[0].boundingBox();
+    const quickGridGap =
+      Math.round(
+        (secondQuickCardBox?.x ?? 0) -
+          (firstQuickCardBox?.x ?? 0) -
+          (firstQuickCardBox?.width ?? 0)
+      ) || 0;
+    const quickRailRows = await page.getByTestId("activity-rail-row").all();
+    const firstRailRow = await roundedBox(quickRailRows[0]);
+    const mainShare = quickMain.width / (quickMain.width + quickRail.width);
+
+    expectInRange(Math.round(mainShare * 100), 74, 76);
+    expectInRange(quickRail.width, 276, 284);
+    expectInRange(quickIdentity.height, 132, 155);
+    expectInRange(quickTabs.height, 42, 48);
+    expectInRange(Math.abs(quickPanel.width - quickMain.width), 0, 2);
+    expectInRange(firstQuickCard.width, 150, 250);
+    expectInRange(quickGridGap, 8, 14);
+    expectInRange(firstRailRow.height, 34, 42);
+    await page.screenshot({
+      fullPage: true,
+      path: screenshot("activity-foundation-quick")
+    });
+
+    const railBefore = await page.getByTestId("activity-relationship-rail")
+      .innerText();
+    await page.getByRole("tab", { name: "Full" }).click();
+    await expect(page).toHaveURL(/\/activity\/2\.1\?mode=full$/);
+    await expect(page.getByTestId("activity-id")).toHaveText("2.1");
+    await expect(page.getByTestId("activity-full-mode")).toBeVisible();
+    await expect(page.getByTestId("full-group-row")).toHaveCount(10);
+    expect(await page.getByTestId("activity-relationship-rail").innerText())
+      .toBe(railBefore);
+
+    const fullPanel = await roundedBox(page.getByTestId("activity-full-mode"));
+    const fullRows = await page.getByTestId("full-group-row").all();
+    const firstFullRow = await roundedBox(fullRows[0]);
+
+    expectInRange(Math.abs(fullPanel.width - quickMain.width), 0, 2);
+    expectInRange(firstFullRow.height, 42, 58);
+    await expectNoHorizontalOverflow(page);
+    await page.screenshot({
+      fullPage: true,
+      path: screenshot("activity-foundation-full")
+    });
+    await fullRows[2].locator("summary").click();
+    await expect(
+      page.getByText("latest structural foundation drawings;")
+    ).toBeVisible();
+
+    await page.getByRole("tab", { name: "Learn" }).click();
+    await expect(page).toHaveURL(/\/activity\/2\.1\?mode=learn$/);
+    await expect(page.getByTestId("activity-id")).toHaveText("2.1");
+    await expect(page.getByTestId("activity-learn-mode")).toBeVisible();
+    await expect(page.getByTestId("learn-card")).toHaveCount(6);
+    await expect(page.getByTestId("learn-sequence")).toBeVisible();
+    expect(await page.getByTestId("activity-relationship-rail").innerText())
+      .toBe(railBefore);
+
+    const learnCards = await page.getByTestId("learn-card").all();
+    const firstLearnCard = await roundedBox(learnCards[0]);
+
+    expectInRange(firstLearnCard.width, 180, 310);
+    await expectNoHorizontalOverflow(page);
+    await page.screenshot({
+      fullPage: true,
+      path: screenshot("activity-foundation-learn")
+    });
+  });
+
+  test("captures cross-activity Quick, Full, and Learn renderer coverage", async ({
+    page
+  }) => {
+    test.setTimeout(120000);
+    await page.setViewportSize({ width: 1366, height: 900 });
+
+    const activities = [
+      { id: "1.1", name: "sitework" },
+      { id: "4.1", name: "building-envelope" },
+      { id: "8.1", name: "mechanical" },
+      { id: "9.1", name: "electrical" },
+      { id: "10.3", name: "fire-life-safety" },
+      { id: "13.1", name: "testing-commissioning" },
+      { id: "14.1", name: "closeout" }
+    ];
+    const modes = [
+      { mode: "quick", query: "" },
+      { mode: "full", query: "?mode=full" },
+      { mode: "learn", query: "?mode=learn" }
+    ];
+
+    for (const activity of activities) {
+      for (const mode of modes) {
+        await page.goto(`/activity/${activity.id}${mode.query}`);
+
+        await expect(page.getByTestId("activity-interface")).toBeVisible();
+        await expect(page.getByTestId("activity-id")).toHaveText(activity.id);
+        await expect(
+          page.getByRole("tab", { name: new RegExp(mode.mode, "i") })
+        ).toHaveAttribute("aria-selected", "true");
+        await expect(page.getByTestId(`activity-${mode.mode}-mode`))
+          .toBeVisible();
+        await expectNoHorizontalOverflow(page);
+        await page.screenshot({
+          fullPage: true,
+          path: screenshot(`activity-cross-${activity.name}-${mode.mode}`)
+        });
+      }
+    }
   });
 
   test("captures the activity route on a narrow viewport", async ({ page }) => {
