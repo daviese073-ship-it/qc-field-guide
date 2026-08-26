@@ -202,7 +202,7 @@ describe("production route-bound screen composition", () => {
     expect(
       screen.getByRole("heading", { name: /Firestop Inspection/i })
     ).toBeInTheDocument();
-    expect(screen.getByText("Workflow Information")).toBeInTheDocument();
+    expect(screen.getByText("Workflow Overview")).toBeInTheDocument();
     expect(screen.getByText("Step")).toBeInTheDocument();
 
     workflowRoute.unmount();

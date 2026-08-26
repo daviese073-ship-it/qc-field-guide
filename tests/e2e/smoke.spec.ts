@@ -608,7 +608,7 @@ test.describe("Phase 017 correction visual composition", () => {
     await expect(
       page.getByRole("heading", { name: /Firestop Inspection/i })
     ).toBeVisible();
-    await expect(page.getByText("Workflow Information")).toBeVisible();
+    await expect(page.getByText("Workflow Overview")).toBeVisible();
     await page.screenshot({ fullPage: true, path: screenshot("workflow") });
 
     await page.goto("/preconcealment/PC-FIRE-01");
