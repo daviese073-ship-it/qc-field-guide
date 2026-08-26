@@ -112,10 +112,10 @@ test.describe("Phase 017 correction visual composition", () => {
     }
   });
 
-  test("captures a populated General QC Process detail page", async ({
+  test("captures the final General QC Process detail composition", async ({
     page
   }) => {
-    await page.setViewportSize({ width: 1440, height: 900 });
+    await page.setViewportSize({ width: 1536, height: 1024 });
     await page.goto("/general-qc/general-qc-ncr");
 
     await expect(
@@ -123,7 +123,65 @@ test.describe("Phase 017 correction visual composition", () => {
     ).toBeVisible();
     await expect(page.getByText("Field Workflow")).toBeVisible();
     await expect(page.getByText("What to Capture")).toBeVisible();
-    await expect(page.getByText("Related Processes")).toBeVisible();
+    await expect(page.getByText("Common Mistakes")).toBeVisible();
+    await expect(
+      page.getByRole("heading", { name: "Key Reminders" })
+    ).toBeVisible();
+    await expect(
+      page.getByRole("heading", { name: "Typical Outputs" })
+    ).toBeVisible();
+
+    const geometry = await page.evaluate(() => {
+      const bounds = (testId: string) => {
+        const element = document.querySelector(`[data-testid="${testId}"]`);
+
+        if (!element) throw new Error(`Missing ${testId}`);
+
+        const rect = element.getBoundingClientRect();
+        return {
+          x: Math.round(rect.x),
+          y: Math.round(rect.y),
+          width: Math.round(rect.width),
+          height: Math.round(rect.height)
+        };
+      };
+
+      const title = document.querySelector(
+        '[data-testid="general-qc-detail-title"]'
+      );
+
+      if (!title) throw new Error("Missing detail title");
+
+      return {
+        breadcrumb: bounds("general-qc-detail-breadcrumb"),
+        header: bounds("general-qc-detail-header"),
+        icon: bounds("general-qc-detail-icon"),
+        main: bounds("general-qc-detail-main"),
+        rail: bounds("general-qc-detail-rail"),
+        tabs: bounds("general-qc-detail-tabs"),
+        titleFontSize: Number.parseFloat(getComputedStyle(title).fontSize),
+        whenToUse: bounds("general-qc-when-to-use"),
+        workflow: bounds("general-qc-workflow-panel"),
+        workflowIcon: bounds("general-qc-workflow-step-icon"),
+        workflowNumber: bounds("general-qc-workflow-step-number")
+      };
+    });
+
+    expect(geometry.main.x).toBeGreaterThanOrEqual(270);
+    expect(geometry.main.x).toBeLessThanOrEqual(292);
+    expect(geometry.main.width).toBeGreaterThanOrEqual(850);
+    expect(geometry.main.width).toBeLessThanOrEqual(895);
+    expect(geometry.rail.width).toBeGreaterThanOrEqual(315);
+    expect(geometry.rail.width).toBeLessThanOrEqual(342);
+    expect(geometry.rail.x - (geometry.main.x + geometry.main.width)).toBe(24);
+    expect(geometry.icon.width).toBe(76);
+    expect(geometry.icon.height).toBe(76);
+    expect(geometry.titleFontSize).toBe(28);
+    expect(geometry.tabs.height).toBe(48);
+    expect(geometry.workflowNumber.width).toBe(26);
+    expect(geometry.workflowNumber.height).toBe(26);
+    expect(geometry.workflowIcon.width).toBe(44);
+    expect(geometry.workflowIcon.height).toBe(44);
 
     const hasHorizontalOverflow = await page.evaluate(
       () => document.documentElement.scrollWidth > window.innerWidth
@@ -134,6 +192,53 @@ test.describe("Phase 017 correction visual composition", () => {
       fullPage: true,
       path: screenshot("general-qc-detail-ncr")
     });
+
+    const processScreenshots = [
+      {
+        id: "general-qc-inspection-planning",
+        name: "inspection-planning",
+        title: "Inspection Planning"
+      },
+      {
+        id: "general-qc-itp-execution",
+        name: "itp-pie-prie",
+        title: "ITP / PIE / PRIE Execution"
+      },
+      {
+        id: "general-qc-quality-evidence",
+        name: "quality-evidence",
+        title: "Quality Evidence & Photo Documentation"
+      },
+      {
+        id: "general-qc-traceability",
+        name: "traceability",
+        title: "Traceability"
+      },
+      {
+        id: "general-qc-quality-closeout",
+        name: "quality-closeout",
+        title: "Quality Closeout"
+      }
+    ];
+
+    for (const process of processScreenshots) {
+      await page.goto(`/general-qc/${process.id}`);
+      await expect(
+        page.getByRole("heading", { name: process.title })
+      ).toBeVisible();
+      await expect(
+        page.getByRole("tab", { name: "Field Workflow" })
+      ).toHaveAttribute("aria-selected", "true");
+      expect(
+        await page.evaluate(
+          () => document.documentElement.scrollWidth > window.innerWidth
+        )
+      ).toBe(false);
+      await page.screenshot({
+        fullPage: true,
+        path: screenshot(`general-qc-detail-${process.name}`)
+      });
+    }
   });
 
   test("keeps the shared shell usable across Layer 1 viewport targets", async ({

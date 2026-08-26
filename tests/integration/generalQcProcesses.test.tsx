@@ -1,3 +1,5 @@
+import { readFileSync } from "node:fs";
+
 import { render, screen, within } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { createMemoryRouter, RouterProvider } from "react-router-dom";
@@ -145,10 +147,112 @@ describe("General QC Processes canonical content", () => {
       expect(screen.getByText("When to Use")).toBeInTheDocument();
       expect(screen.getByText("Field Workflow")).toBeInTheDocument();
       expect(screen.getByText("What to Capture")).toBeInTheDocument();
-      expect(screen.getByText("Related Processes")).toBeInTheDocument();
+      expect(screen.getByText("Common Mistakes")).toBeInTheDocument();
+      expect(screen.getByText("Key Reminders")).toBeInTheDocument();
+      expect(screen.getByText("Typical Outputs")).toBeInTheDocument();
 
       unmount();
     }
+  });
+
+  it("renders the NCR detail screen from canonical process content", () => {
+    const process = productionGeneralQcService.getProcessById("general-qc-ncr");
+
+    expect(process).toBeDefined();
+    if (!process) throw new Error("Expected NCR process fixture to exist.");
+    renderRoute("/general-qc/general-qc-ncr");
+
+    expect(screen.getByTestId("general-qc-detail")).toHaveAttribute(
+      "data-process-accent",
+      "red"
+    );
+    expect(
+      screen.getByRole("heading", { name: process.title.en })
+    ).toBeInTheDocument();
+    expect(screen.getByText(process.summary.en)).toBeInTheDocument();
+    expect(screen.getByText(process.whenToUse.en)).toBeInTheDocument();
+
+    expect(
+      screen.getAllByTestId("general-qc-workflow-step-number")
+    ).toHaveLength(process.fieldWorkflow.length);
+    for (const step of process.fieldWorkflow) {
+      expect(screen.getByText(step.action.en)).toBeInTheDocument();
+      expect(screen.getByText(step.detail.en)).toBeInTheDocument();
+    }
+
+    for (const reminder of process.keyReminders) {
+      expect(screen.getByText(reminder.en)).toBeInTheDocument();
+    }
+    for (const output of process.typicalOutputs) {
+      expect(screen.getByText(output.en)).toBeInTheDocument();
+    }
+  });
+
+  it("renders source-backed capture and mistake tabs without changing route identity", async () => {
+    const user = userEvent.setup();
+    const process = productionGeneralQcService.getProcessById("general-qc-ncr");
+    const { router } = renderRoute("/general-qc/general-qc-ncr");
+
+    expect(process).toBeDefined();
+    if (!process) throw new Error("Expected NCR process fixture to exist.");
+
+    await user.click(screen.getByRole("tab", { name: "What to Capture" }));
+    expect(
+      screen.getByRole("tab", { name: "What to Capture" })
+    ).toHaveAttribute("aria-selected", "true");
+    for (const item of process.whatToCapture) {
+      expect(screen.getByText(item.en)).toBeInTheDocument();
+    }
+
+    await user.click(screen.getByRole("tab", { name: "Common Mistakes" }));
+    expect(
+      screen.getByRole("tab", { name: "Common Mistakes" })
+    ).toHaveAttribute("aria-selected", "true");
+    for (const item of process.commonMistakes) {
+      expect(screen.getByText(item.en)).toBeInTheDocument();
+    }
+
+    expect(router.state.location.pathname).toBe("/general-qc/general-qc-ncr");
+  });
+
+  it("uses per-process accent metadata without per-process detail components", () => {
+    const expectedAccents = new Map([
+      ["general-qc-inspection-planning", "teal"],
+      ["general-qc-ncr", "red"],
+      ["general-qc-quality-evidence", "purple"],
+      ["general-qc-quality-closeout", "purple"]
+    ]);
+
+    for (const [processId, accent] of expectedAccents) {
+      const { unmount } = renderRoute(`/general-qc/${processId}`);
+
+      expect(screen.getByTestId("general-qc-detail")).toHaveAttribute(
+        "data-process-accent",
+        accent
+      );
+
+      unmount();
+    }
+
+    const source = readFileSync(
+      "src/screens/GeneralQcProcessesPage/GeneralQcProcessDetailPage.tsx",
+      "utf8"
+    );
+
+    expect(source).not.toMatch(/processId\s*===/);
+    expect(source).not.toMatch(/case\s+["']general-qc-/);
+  });
+
+  it("does not add deferred or official-QMS controls to the process detail screen", () => {
+    renderRoute("/general-qc/general-qc-ncr");
+
+    expect(screen.queryByText(/Download/i)).not.toBeInTheDocument();
+    expect(screen.queryByText(/Learn More/i)).not.toBeInTheDocument();
+    expect(screen.queryByText(/At a Glance/i)).not.toBeInTheDocument();
+    expect(screen.queryByText(/Related Resources/i)).not.toBeInTheDocument();
+    expect(screen.queryByRole("button", { name: /Approve/i })).toBeNull();
+    expect(screen.queryByRole("button", { name: /Release/i })).toBeNull();
+    expect(screen.queryByRole("button", { name: /Sign/i })).toBeNull();
   });
 
   it("renders related process links as navigable canonical destinations", () => {
