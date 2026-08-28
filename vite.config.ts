@@ -3,7 +3,10 @@ import { resolve } from "node:path";
 import { VitePWA } from "vite-plugin-pwa";
 import { defineConfig } from "vitest/config";
 
+const appBase = process.env.GITHUB_PAGES === "true" ? "/qc-field-guide/" : "/";
+
 export default defineConfig({
+  base: appBase,
   plugins: [
     react(),
     VitePWA({
@@ -19,10 +22,11 @@ export default defineConfig({
         theme_color: "#0f172a",
         background_color: "#f8fafc",
         display: "standalone",
-        start_url: "/",
+        start_url: appBase,
+        scope: appBase,
         icons: [
           {
-            src: "/pwa.svg",
+            src: `${appBase}pwa.svg`,
             sizes: "512x512",
             type: "image/svg+xml",
             purpose: "any"

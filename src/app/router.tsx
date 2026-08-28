@@ -40,4 +40,11 @@ export const routes: RouteObject[] = [
   }
 ];
 
-export const router = createBrowserRouter(routes);
+export const routerBasename =
+  import.meta.env.BASE_URL === "/"
+    ? undefined
+    : import.meta.env.BASE_URL.replace(/\/$/, "");
+
+export const router = createBrowserRouter(routes, {
+  basename: routerBasename
+});
