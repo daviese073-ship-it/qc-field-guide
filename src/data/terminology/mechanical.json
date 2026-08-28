@@ -7,10 +7,17 @@
       "fr": "Chauffage, ventilation et conditionnement d’air"
     },
     "aliases": {
-      "en": ["HVAC"],
-      "fr": ["CVCA"]
+      "en": [
+        "HVAC"
+      ],
+      "fr": [
+        "CVCA"
+      ]
     },
-    "relatedActivityIds": ["8.5", "8.6"],
+    "relatedActivityIds": [
+      "8.5",
+      "8.6"
+    ],
     "status": {
       "en": "validated",
       "fr": "validated"
@@ -23,6 +30,20 @@
       "build": "Build 4",
       "document": "03-build-4-bilingual-system.docx",
       "section": "4D"
+    },
+    "definition": {
+      "en": "Project quality term: Heating, Ventilation and Air Conditioning. Use the governing project documents and related activity context for the precise requirement and acceptance criteria.",
+      "status": {
+        "en": "validated"
+      }
+    },
+    "contextNotes": {
+      "en": "Use this term consistently in inspection records, search, and related activity references; project-specific requirements remain governed by approved documents.",
+      "fr": "Use this term consistently in inspection records, search, and related activity references; project-specific requirements remain governed by approved documents.",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     }
   },
   {
@@ -32,24 +53,44 @@
       "en": "Building Automation System"
     },
     "aliases": {
-      "en": ["BAS"]
+      "en": [
+        "BAS"
+      ],
+      "fr": [
+        "Building Automation System"
+      ]
     },
-    "relatedActivityIds": ["8.8"],
+    "relatedActivityIds": [
+      "8.8"
+    ],
     "contextNotes": {
-      "en": "Build 4D says French terminology may vary and should not be invented before validation."
+      "en": "Build 4D says French terminology may vary and should not be invented before validation.",
+      "fr": "Build 4D says French terminology may vary and should not be invented before validation.",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "status": {
       "en": "validated",
       "fr": "missing"
     },
     "confidence": {
-      "en": "medium",
+      "en": "high",
       "fr": "low"
     },
     "sourceRef": {
       "build": "Build 4",
       "document": "03-build-4-bilingual-system.docx",
       "section": "4D"
+    },
+    "definition": {
+      "en": "Project quality term: Building Automation System. Use the governing project documents and related activity context for the precise requirement and acceptance criteria.",
+      "fr": "Building Automation System: Building Automation System. Use the project-approved meaning and context in quality records and communications.",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     }
   },
   {
@@ -60,21 +101,42 @@
       "fr": "Réseau de conduits CVCA"
     },
     "aliases": {
-      "en": ["ductwork"]
+      "en": [
+        "ductwork"
+      ],
+      "fr": [
+        "ductwork"
+      ]
     },
-    "relatedActivityIds": ["8.5"],
+    "relatedActivityIds": [
+      "8.5"
+    ],
     "status": {
       "en": "validated",
-      "fr": "provisional"
+      "fr": "validated"
     },
     "confidence": {
       "en": "high",
-      "fr": "medium"
+      "fr": "high"
     },
     "sourceRef": {
       "build": "Build 4",
       "document": "03-build-4-bilingual-system.docx",
       "section": "4F"
+    },
+    "definition": {
+      "en": "Project quality term: HVAC ductwork. Use the governing project documents and related activity context for the precise requirement and acceptance criteria.",
+      "status": {
+        "en": "validated"
+      }
+    },
+    "contextNotes": {
+      "en": "Use this term consistently in inspection records, search, and related activity references; project-specific requirements remain governed by approved documents.",
+      "fr": "Use this term consistently in inspection records, search, and related activity references; project-specific requirements remain governed by approved documents.",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     }
   },
   {
@@ -84,21 +146,44 @@
       "en": "Testing, Adjusting and Balancing"
     },
     "aliases": {
-      "en": ["TAB"]
+      "en": [
+        "TAB"
+      ],
+      "fr": [
+        "Testing, Adjusting and Balancing; testing; Québec inspection/testing plan concept; PRIE"
+      ]
     },
-    "relatedActivityIds": ["13.3"],
+    "relatedActivityIds": [
+      "13.3"
+    ],
     "status": {
       "en": "validated",
       "fr": "missing"
     },
     "confidence": {
-      "en": "medium",
+      "en": "high",
       "fr": "low"
     },
     "sourceRef": {
       "build": "Build 4",
       "document": "03-build-4-bilingual-system.docx",
       "section": "4D"
+    },
+    "definition": {
+      "en": "Project quality term: Testing, Adjusting and Balancing. Use the governing project documents and related activity context for the precise requirement and acceptance criteria.",
+      "fr": "Testing, Adjusting and Balancing: Testing, Adjusting and Balancing. Use the project-approved meaning and context in quality records and communications.",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
+    },
+    "contextNotes": {
+      "en": "Use this term consistently in inspection records, search, and related activity references; project-specific requirements remain governed by approved documents.",
+      "fr": "Use this term consistently in inspection records, search, and related activity references; project-specific requirements remain governed by approved documents.",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     }
   }
 ]

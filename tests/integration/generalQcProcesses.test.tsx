@@ -281,7 +281,7 @@ describe("General QC Processes canonical content", () => {
     });
   });
 
-  it("FR mode falls back to English without changing the canonical process route", async () => {
+  it("FR mode preserves the canonical process route while rendering available localized content", async () => {
     const user = userEvent.setup();
     const { router } = renderRoute(
       "/general-qc/general-qc-inspection-planning"
@@ -293,7 +293,7 @@ describe("General QC Processes canonical content", () => {
       "/general-qc/general-qc-inspection-planning"
     );
     expect(
-      screen.getByRole("heading", { name: "Inspection Planning" })
+      screen.getByRole("heading", { name: "Planification de l'inspection" })
     ).toBeInTheDocument();
   });
 });

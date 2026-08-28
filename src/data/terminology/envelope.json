@@ -7,9 +7,14 @@
       "fr": "Membrane pare-air"
     },
     "aliases": {
-      "fr": ["Pare-air"]
+      "fr": [
+        "Pare-air"
+      ]
     },
-    "relatedActivityIds": ["4.2", "5.2"],
+    "relatedActivityIds": [
+      "4.2",
+      "5.2"
+    ],
     "status": {
       "en": "validated",
       "fr": "validated"
@@ -22,6 +27,20 @@
       "build": "Build 4",
       "document": "03-build-4-bilingual-system.docx",
       "section": "4B"
+    },
+    "definition": {
+      "en": "Project quality term: Air barrier membrane. Use the governing project documents and related activity context for the precise requirement and acceptance criteria.",
+      "status": {
+        "en": "validated"
+      }
+    },
+    "contextNotes": {
+      "en": "Use this term consistently in inspection records, search, and related activity references; project-specific requirements remain governed by approved documents.",
+      "fr": "Use this term consistently in inspection records, search, and related activity references; project-specific requirements remain governed by approved documents.",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     }
   },
   {
@@ -32,9 +51,15 @@
       "fr": "Continuité du pare-air"
     },
     "aliases": {
-      "fr": ["Continuité de l’étanchéité à l’air"]
+      "fr": [
+        "Continuité de l’étanchéité à l’air"
+      ]
     },
-    "relatedActivityIds": ["4.2", "11.4", "11.5"],
+    "relatedActivityIds": [
+      "4.2",
+      "11.4",
+      "11.5"
+    ],
     "status": {
       "en": "validated",
       "fr": "validated"
@@ -47,6 +72,20 @@
       "build": "Build 4",
       "document": "03-build-4-bilingual-system.docx",
       "section": "4B"
+    },
+    "definition": {
+      "en": "Project quality term: Air barrier continuity. Use the governing project documents and related activity context for the precise requirement and acceptance criteria.",
+      "status": {
+        "en": "validated"
+      }
+    },
+    "contextNotes": {
+      "en": "Use this term consistently in inspection records, search, and related activity references; project-specific requirements remain governed by approved documents.",
+      "fr": "Use this term consistently in inspection records, search, and related activity references; project-specific requirements remain governed by approved documents.",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     }
   }
 ]

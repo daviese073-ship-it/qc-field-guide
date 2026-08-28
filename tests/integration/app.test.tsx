@@ -81,6 +81,51 @@ describe("production route-bound screen composition", () => {
     ).toBeInTheDocument();
   });
 
+  it("applies route-aware interface surface tint classes", () => {
+    const homeRoute = renderRoute("/");
+
+    expect(screen.getByTestId("app-main-surface")).toHaveClass(
+      "qcfg-page-home"
+    );
+
+    homeRoute.unmount();
+
+    const generalQcRoute = renderRoute("/general-qc");
+
+    expect(screen.getByTestId("app-main-surface")).toHaveClass(
+      "qcfg-page-general-qc"
+    );
+
+    generalQcRoute.unmount();
+
+    renderRoute("/activity/2.1");
+
+    expect(screen.getByTestId("app-main-surface")).toHaveClass(
+      "qcfg-system-substructure"
+    );
+  });
+
+  it("uses compact shared header controls without a heavy search focus outline", async () => {
+    const user = userEvent.setup();
+    renderRoute("/");
+
+    const search = screen.getByRole("searchbox", { name: "Search" });
+    const searchForm = search.closest("form");
+
+    expect(searchForm).toHaveClass("qcfg-global-search-form", "h-10");
+    expect(search).toHaveClass(
+      "qcfg-global-search-input",
+      "focus-visible:outline-none"
+    );
+    expect(
+      screen.getByRole("group", { name: "Language preference" })
+    ).toHaveClass("h-10");
+
+    await user.click(search);
+
+    expect(search).toHaveFocus();
+  });
+
   it("does not render obsolete rejected Home elements", () => {
     renderRoute("/");
     const main = screen.getByRole("main");
@@ -221,6 +266,14 @@ describe("production route-bound screen composition", () => {
 
   it("binds production search results to canonical navigation", () => {
     renderRoute("/search?q=firestop");
+
+    expect(screen.getAllByRole("searchbox", { name: "Search" })).toHaveLength(
+      1
+    );
+    expect(screen.queryByLabelText("Search query")).not.toBeInTheDocument();
+    expect(
+      within(screen.getByRole("main")).queryByRole("searchbox")
+    ).not.toBeInTheDocument();
 
     const result = screen.getByRole("link", { name: /10.3 Firestopping/i });
     expect(result).toBeInTheDocument();

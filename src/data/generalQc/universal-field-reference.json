@@ -1,151 +1,333 @@
 {
   "id": "general-qc-universal-field-reference",
   "title": {
-    "en": "Universal Field Reference"
+    "en": "Universal Field Reference",
+    "fr": "Référence universelle sur le terrain",
+    "status": {
+      "en": "validated",
+      "fr": "validated"
+    }
   },
   "fieldPrinciple": [
     {
-      "en": "REQUIREMENT"
+      "en": "REQUIREMENT",
+      "fr": "EXIGENCE",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     {
-      "en": "VERIFY"
+      "en": "VERIFY",
+      "fr": "VÉRIFIER",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     {
-      "en": "EVIDENCE"
+      "en": "EVIDENCE",
+      "fr": "PREUVES",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     {
-      "en": "DECISION"
+      "en": "DECISION",
+      "fr": "DÉCISION",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     {
-      "en": "ACTION"
+      "en": "ACTION",
+      "fr": "ACTION",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     {
-      "en": "CLOSE"
+      "en": "CLOSE",
+      "fr": "CLÔTURER",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     }
   ],
   "beforeAnyInspection": [
     {
-      "en": "Confirm the exact work and location."
+      "en": "Confirm the exact work and location.",
+      "fr": "Confirmez le travail exact et l'emplacement.",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     {
-      "en": "Confirm current approved drawings/specifications and applicable submittals."
+      "en": "Confirm current approved drawings/specifications and applicable submittals.",
+      "fr": "Confirmez les plans/spécifications approuvés actuels ainsi que les documents soumis applicables.",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     {
-      "en": "Know the acceptance criteria and tolerances."
+      "en": "Know the acceptance criteria and tolerances.",
+      "fr": "Connais les critères d'acceptation et les tolérances.",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     {
-      "en": "Check ITP/PIE/PRIE points, notifications and prerequisites."
+      "en": "Check ITP/PIE/PRIE points, notifications and prerequisites.",
+      "fr": "Vérifiez les points, notifications et prérequis ITP/PIE/PRIE.",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     {
-      "en": "Have suitable measuring/test tools and required forms."
+      "en": "Have suitable measuring/test tools and required forms.",
+      "fr": "Ayez des outils de mesure/test appropriés et des formulaires requis.",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     {
-      "en": "Inspect before concealment."
+      "en": "Inspect before concealment.",
+      "fr": "Inspectez avant la dissimulation.",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     }
   ],
   "whenYouFindAProblem": [
     {
-      "en": "Do not jump immediately to an NCR: first verify the requirement and project classification rules."
+      "en": "Do not jump immediately to an NCR: first verify the requirement and project classification rules.",
+      "fr": "Ne passez pas immédiatement à un NCR : vérifiez d'abord les exigences et les règles de classification des projets.",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     {
-      "en": "Record the actual condition objectively and precisely."
+      "en": "Record the actual condition objectively and precisely.",
+      "fr": "Notez l'état réel de façon objective et précise.",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     {
-      "en": "Protect/identify affected work where required."
+      "en": "Protect/identify affected work where required.",
+      "fr": "Protégez/identifiez les travaux affectés lorsque nécessaire.",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     {
-      "en": "Use the approved communication and escalation path."
+      "en": "Use the approved communication and escalation path.",
+      "fr": "Utilisez la voie de communication et d'escalade approuvée.",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     {
-      "en": "Do not design the fix unless that authority is part of your role."
+      "en": "Do not design the fix unless that authority is part of your role.",
+      "fr": "Ne concevez pas la solution à moins que cette autorité ne fasse partie de votre rôle.",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     {
-      "en": "Verify the completed correction/disposition before closure."
+      "en": "Verify the completed correction/disposition before closure.",
+      "fr": "Vérifiez la correction ou décision de traitement complétée avant la clôture.",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     }
   ],
   "minimumUsefulQualityRecord": [
     {
       "key": {
-        "en": "Identity"
+        "en": "Identity — Name the activity, element, asset, or record.",
+        "fr": "Identité — Nommer l'activité, l'élément, l'actif ou l'enregistrement.",
+        "status": {
+          "fr": "validated"
+        }
       },
       "question": {
-        "en": "What activity/record is this?"
+        "en": "What activity/record is this?",
+        "fr": "Quelle activité/enregistrement est-ce?",
+        "status": {
+          "fr": "validated"
+        }
       }
     },
     {
       "key": {
-        "en": "Location"
+        "en": "Location — State the exact grid, room, elevation, area, or asset position.",
+        "fr": "Emplacement — Indiquez la grille exacte, la pièce, l'élévation, la zone ou la position de l'actif.",
+        "status": {
+          "fr": "validated"
+        }
       },
       "question": {
-        "en": "Exactly where is it?"
+        "en": "Exactly where is it?",
+        "fr": "Où est-ce exactement?",
+        "status": {
+          "fr": "validated"
+        }
       }
     },
     {
       "key": {
-        "en": "Requirement"
+        "en": "Requirement — Cite the approved document, revision, and acceptance criterion.",
+        "fr": "Exigence — Citez le document approuvé, la révision et le critère d'acceptation.",
+        "status": {
+          "fr": "validated"
+        }
       },
       "question": {
-        "en": "What approved requirement applies?"
+        "en": "What approved requirement applies?",
+        "fr": "Quelle exigence approuvée s'applique?",
+        "status": {
+          "fr": "validated"
+        }
       }
     },
     {
       "key": {
-        "en": "Observation/result"
+        "en": "Observation or result — Record what was actually seen, measured, or tested.",
+        "fr": "Observation ou résultat — Enregistrer ce qui a réellement été vu, mesuré ou testé.",
+        "status": {
+          "fr": "validated"
+        }
       },
       "question": {
-        "en": "What did I actually see or measure?"
+        "en": "What did I actually see or measure?",
+        "fr": "Qu'est-ce que j'ai réellement vu ou mesuré?",
+        "status": {
+          "fr": "validated"
+        }
       }
     },
     {
       "key": {
-        "en": "Evidence"
+        "en": "Evidence — Link photographs, measurements, test reports, certificates, or inspection records.",
+        "fr": "Preuves — Liez photographies, mesures, rapports de test, certificats ou dossiers d'inspection.",
+        "status": {
+          "fr": "validated"
+        }
       },
       "question": {
-        "en": "What proves the observation/result?"
+        "en": "What proves the observation/result?",
+        "fr": "Qu'est-ce qui prouve l'observation ou le résultat?",
+        "status": {
+          "fr": "validated"
+        }
       }
     },
     {
       "key": {
-        "en": "Decision/status"
+        "en": "Decision or status — Record accepted, deficient, non-conforming, awaiting clarification, or pending verification.",
+        "fr": "Décision ou statut — Dossier accepté, déficient, non conforme, en attente de clarification ou en attente de vérification.",
+        "status": {
+          "fr": "validated"
+        }
       },
       "question": {
-        "en": "Accepted, deficient, NCR, clarification, pending?"
+        "en": "Accepted, deficient, NCR, clarification, pending?",
+        "fr": "Accepté, déficient, NCR, clarification, en attente?",
+        "status": {
+          "fr": "validated"
+        }
       }
     },
     {
       "key": {
-        "en": "Responsibility"
+        "en": "Responsibility — Identify who must correct, review, release, or approve.",
+        "fr": "Responsabilité — Identifier qui doit corriger, examiner, libérer ou approuver.",
+        "status": {
+          "fr": "validated"
+        }
       },
       "question": {
-        "en": "Who must act or approve?"
+        "en": "Who must act or approve?",
+        "fr": "Qui doit agir ou approuver?",
+        "status": {
+          "fr": "validated"
+        }
       }
     },
     {
       "key": {
-        "en": "Follow-up"
+        "en": "Follow-up — State the next action and required timing.",
+        "fr": "Suivi — Indiquez la prochaine action et le moment requis.",
+        "status": {
+          "fr": "validated"
+        }
       },
       "question": {
-        "en": "What happens next and by when?"
+        "en": "What happens next and by when?",
+        "fr": "Que se passe-t-il ensuite et à quand?",
+        "status": {
+          "fr": "validated"
+        }
       }
     },
     {
       "key": {
-        "en": "Closure"
+        "en": "Closure — Identify who verified closure, when it was verified, and against what basis.",
+        "fr": "Fermeture — Identifier qui a vérifié la clôture, quand elle a été vérifiée et sur quelle base.",
+        "status": {
+          "fr": "validated"
+        }
       },
       "question": {
-        "en": "Who verified it, when, and against what basis?"
+        "en": "Who verified it, when, and against what basis?",
+        "fr": "Qui l'a vérifié, quand et sur quelle base?",
+        "status": {
+          "fr": "validated"
+        }
       }
     }
   ],
   "importantLimitations": [
     {
-      "en": "This guide provides generic field reminders. Contract documents, codes, approved project procedures, owner requirements, delegated authority and the project quality plan govern."
+      "en": "This guide provides generic field reminders. Contract documents, codes, approved project procedures, owner requirements, delegated authority and the project quality plan govern.",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      },
+      "fr": "Ce guide fournit des rappels génériques sur le terrain. Les documents contractuels, les codes, les procédures approuvées du projet, les exigences du propriétaire, l'autorité déléguée et le plan de qualité du projet régissent."
     },
     {
-      "en": "Terminology such as deficiency, NCR, observation, punch item, repair, rework, concession, hold point and witness point may be defined differently by different projects."
+      "en": "Terminology such as deficiency, NCR, observation, punch item, repair, rework, concession, hold point and witness point may be defined differently by different projects.",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      },
+      "fr": "Des terminologies telles que déficience, NCR, observation, élément de la liste de déficiences, réparation, reprise, concession, point d'arrêt et point témoin peuvent être définies différemment selon les projets."
     },
     {
-      "en": "Where safety, structural integrity, life-safety systems or engineering acceptance is implicated, follow the project's escalation and professional-responsibility requirements."
+      "en": "Where safety, structural integrity, life-safety systems or engineering acceptance is implicated, follow the project's escalation and professional-responsibility requirements.",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      },
+      "fr": "Lorsque la sécurité, l'intégrité structurelle, les systèmes de sécurité de la vie ou l'acceptation de l'ingénierie sont impliqués, respectez les exigences d'escalade et de responsabilité professionnelle du projet."
     }
   ],
   "sourceRef": {

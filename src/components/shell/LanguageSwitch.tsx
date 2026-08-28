@@ -23,7 +23,7 @@ export function LanguageSwitch({ ariaLabel }: LanguageSwitchProps) {
   return (
     <div
       aria-label={ariaLabel}
-      className="flex h-12 w-[137px] rounded-xl border border-[rgba(15,23,42,0.10)] bg-white/80 p-1 shadow-sm"
+      className="flex h-10 w-[122px] rounded-[10px] border border-[rgba(15,23,42,0.10)] bg-white/80 p-1 shadow-sm"
       role="group"
     >
       {options.map((option) => {
@@ -33,7 +33,7 @@ export function LanguageSwitch({ ariaLabel }: LanguageSwitchProps) {
           <button
             aria-pressed={active}
             className={classNames(
-              "h-10 flex-1 rounded-lg px-3 text-[15px] font-bold transition focus-visible:outline-offset-2",
+              "h-8 flex-1 rounded-[8px] px-2.5 text-[14px] font-bold transition focus-visible:outline-offset-2",
               active
                 ? "bg-[#07142e] text-white shadow-sm"
                 : "text-[#07142e] hover:bg-blue-50"

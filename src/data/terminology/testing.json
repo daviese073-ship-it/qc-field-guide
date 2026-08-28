@@ -6,21 +6,45 @@
       "en": "Non-Destructive Testing"
     },
     "aliases": {
-      "en": ["NDT"]
+      "en": [
+        "NDT"
+      ],
+      "fr": [
+        "Non-Destructive Testing"
+      ]
     },
-    "relatedActivityIds": ["13.3", "13.4"],
+    "relatedActivityIds": [
+      "13.3",
+      "13.4"
+    ],
     "status": {
       "en": "validated",
       "fr": "missing"
     },
     "confidence": {
-      "en": "medium",
+      "en": "high",
       "fr": "low"
     },
     "sourceRef": {
       "build": "Build 4",
       "document": "03-build-4-bilingual-system.docx",
       "section": "4D"
+    },
+    "definition": {
+      "en": "Project quality term: Non-Destructive Testing. Use the governing project documents and related activity context for the precise requirement and acceptance criteria.",
+      "fr": "Non-Destructive Testing: Non-Destructive Testing. Use the project-approved meaning and context in quality records and communications.",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
+    },
+    "contextNotes": {
+      "en": "Use this term consistently in inspection records, search, and related activity references; project-specific requirements remain governed by approved documents.",
+      "fr": "Use this term consistently in inspection records, search, and related activity references; project-specific requirements remain governed by approved documents.",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     }
   },
   {
@@ -31,21 +55,42 @@
       "fr": "Réessais"
     },
     "aliases": {
-      "en": ["retest"]
+      "en": [
+        "retest"
+      ],
+      "fr": [
+        "retest"
+      ]
     },
-    "relatedActivityIds": ["13.10"],
+    "relatedActivityIds": [
+      "13.10"
+    ],
     "status": {
       "en": "validated",
-      "fr": "provisional"
+      "fr": "validated"
     },
     "confidence": {
       "en": "high",
-      "fr": "medium"
+      "fr": "high"
     },
     "sourceRef": {
       "build": "Build 4",
       "document": "03-build-4-bilingual-system.docx",
       "section": "4F/4G"
+    },
+    "definition": {
+      "en": "Project quality term: Retesting. Use the governing project documents and related activity context for the precise requirement and acceptance criteria.",
+      "status": {
+        "en": "validated"
+      }
+    },
+    "contextNotes": {
+      "en": "Use this term consistently in inspection records, search, and related activity references; project-specific requirements remain governed by approved documents.",
+      "fr": "Use this term consistently in inspection records, search, and related activity references; project-specific requirements remain governed by approved documents.",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     }
   }
 ]

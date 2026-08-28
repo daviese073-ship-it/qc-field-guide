@@ -3,130 +3,290 @@
     "id": "general-qc-inspection-planning",
     "sequence": 1,
     "title": {
-      "en": "Inspection Planning"
+      "en": "Inspection Planning",
+      "fr": "Planification de l'inspection",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "summary": {
-      "en": "Prepare the inspection so the right work is checked against the right requirements at the right time."
+      "en": "Prepare the inspection so the right work is checked against the right requirements at the right time.",
+      "fr": "Préparez l'inspection afin que le bon travail soit vérifié selon les bonnes exigences au bon moment.",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "whenToUse": {
-      "en": "Before planned work, before a defined inspection point, or whenever upcoming work may become concealed or difficult to verify later."
+      "en": "Before planned work, a defined inspection point, or whenever upcoming work may become concealed or difficult to verify later.",
+      "fr": "Avant les travaux planifiés, un point d'inspection défini, ou chaque fois que les travaux à venir peuvent devenir cachés ou difficiles à vérifier ultérieurement.",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "fieldWorkflow": [
       {
         "sequence": 1,
         "action": {
-          "en": "Define the inspection scope"
+          "en": "Define the inspection scope",
+          "fr": "Définissez le portée de l'inspection",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         },
         "detail": {
-          "en": "Identify the activity, location, lot/area and stage of work to be inspected."
+          "en": "Identify the activity, location, lot/area and stage of work to be inspected.",
+          "fr": "Identifiez l'activité, l'emplacement, le lot/la zone et l'étape du travail à inspecter.",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         }
       },
       {
         "sequence": 2,
         "action": {
-          "en": "Review requirements"
+          "en": "Review requirements",
+          "fr": "Exigences de révision",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         },
         "detail": {
-          "en": "Check current drawings, specifications, approved submittals, ITP/PIE/PRIE, procedures and applicable acceptance criteria."
+          "en": "Check current drawings, specifications, approved submittals, ITP/PIE/PRIE, procedures and applicable acceptance criteria.",
+          "fr": "Vérifiez les plans à jour, les spécifications, les documents soumis approuvés, les ITP/PIE/PRIE, les procédures et les critères d'acceptation applicables.",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         }
       },
       {
         "sequence": 3,
         "action": {
-          "en": "Identify inspection points"
+          "en": "Identify inspection points",
+          "fr": "Identifiez les points d'inspection",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         },
         "detail": {
-          "en": "Confirm hold, witness, surveillance and testing points and required notifications."
+          "en": "Confirm hold, witness, surveillance and testing points and required notifications.",
+          "fr": "Confirmez les points d'arrêt, de témoin, de surveillance et de test ainsi que les notifications requises.",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         }
       },
       {
         "sequence": 4,
         "action": {
-          "en": "Confirm prerequisites"
+          "en": "Confirm prerequisites",
+          "fr": "Confirmez les prérequis",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         },
         "detail": {
-          "en": "Verify preceding work, approvals, materials, access, equipment and test readiness."
+          "en": "Verify preceding work, approvals, materials, access, equipment and test readiness.",
+          "fr": "Vérifiez le travail précédent, les approbations, les matériaux, l'accès, l'équipement et la préparation aux essais.",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         }
       },
       {
         "sequence": 5,
         "action": {
-          "en": "Coordinate timing"
+          "en": "Coordinate timing",
+          "fr": "Coordonner le calendrier",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         },
         "detail": {
-          "en": "Align with superintendent/foreman, subcontractor, testing agency and owner/consultant as required."
+          "en": "Align with superintendent/foreman, subcontractor, testing agency and owner/consultant as required.",
+          "fr": "Alignez-vous avec le surintendant de chantier/contremaître, le entrepreneur spécialisé, l'laboratoire d'essaiss et le donneur d'ouvrage/consultant selon les besoins.",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         }
       },
       {
         "sequence": 6,
         "action": {
-          "en": "Prepare tools and records"
+          "en": "Prepare tools and records",
+          "fr": "Préparez les outils et les dossiers",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         },
         "detail": {
-          "en": "Have checklist, measuring tools, camera, drawings and forms ready."
+          "en": "Have checklist, measuring tools, camera, drawings and forms ready.",
+          "fr": "Ayez la liste de vérification, les outils de mesure, la caméra, les dessins et les formulaires prêts.",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         }
       },
       {
         "sequence": 7,
         "action": {
-          "en": "Inspect before concealment"
+          "en": "Inspect before concealment",
+          "fr": "Inspectez avant la dissimulation",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         },
         "detail": {
-          "en": "Arrive early enough to observe the condition before it is covered or altered."
+          "en": "Arrive early enough to observe the condition before it is covered or altered.",
+          "fr": "Arrivez assez tôt pour observer l'état avant qu'il ne soit couvert ou modifié.",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         }
       }
     ],
     "whatToCapture": [
       {
-        "en": "Activity/location and planned inspection time"
+        "en": "Activity/location and planned inspection time",
+        "fr": "Activité/emplacement et temps d'inspection planifié",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Applicable document numbers and revisions"
+        "en": "Applicable document numbers and revisions",
+        "fr": "Numéros de documents applicables et révisions",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Required hold/witness points and notifications"
+        "en": "Required hold/witness points and notifications",
+        "fr": "Points et notifications de retenue/témoin requis",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Required test/inspection equipment"
+        "en": "Required test/inspection equipment",
+        "fr": "Équipement de test/inspection requis",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Responsible parties and prerequisites"
+        "en": "Responsible parties and prerequisites",
+        "fr": "Parties responsables et prérequis",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       }
     ],
     "keyReminders": [
       {
-        "en": "Plan from the work sequence, not only from the calendar."
+        "en": "Plan from the work sequence, not only from the calendar.",
+        "fr": "Planifiez à partir de la séquence de travail, pas seulement à partir du calendrier.",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "A good inspection starts before arriving at the workface."
+        "en": "A good inspection starts before arriving at the workface.",
+        "fr": "Une bonne inspection commence avant d'arriver dans la zone de travail.",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "If a critical point may be missed, communicate early."
+        "en": "If a critical point may be missed, communicate early.",
+        "fr": "Si un point crucial peut être manqué, communiquez tôt.",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       }
     ],
     "commonMistakes": [
       {
-        "en": "Inspecting after concealment"
+        "en": "Inspecting after concealment",
+        "fr": "Inspection après dissimulation",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Using an old drawing revision"
+        "en": "Using an old drawing revision",
+        "fr": "Utilisation d'une ancienne révision du dessin",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Arriving without knowing acceptance criteria"
+        "en": "Arriving without knowing acceptance criteria",
+        "fr": "Arriver sans connaître les critères d'acceptation",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Failing to coordinate third-party or owner witness requirements"
+        "en": "Failing to coordinate third-party or owner witness requirements",
+        "fr": "Ne pas coordonner les exigences de témoins tiers ou propriétaires",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       }
     ],
     "typicalOutputs": [
       {
-        "en": "Inspection plan/readiness confirmation"
+        "en": "Inspection plan/readiness confirmation",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        },
+        "fr": "Plan d'inspection/confirmation de préparation"
       },
       {
-        "en": "Prepared checklist/inspection record"
+        "en": "Prepared checklist/inspection record",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        },
+        "fr": "Liste de vérification préparée/dossier d'inspection"
       },
       {
-        "en": "Required notifications"
+        "en": "Required notifications",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        },
+        "fr": "Notifications requises"
       }
     ],
     "relatedProcessIds": [
@@ -143,130 +303,290 @@
     "id": "general-qc-requirement-review",
     "sequence": 2,
     "title": {
-      "en": "Requirement Review"
+      "en": "Requirement Review",
+      "fr": "Examen des exigences",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "summary": {
-      "en": "Establish what 'acceptable' means before inspecting or making a quality decision."
+      "en": "Establish what 'acceptable' means before inspecting or making a quality decision.",
+      "fr": "Déterminez ce que signifie « acceptable » avant d'inspecter ou de prendre une décision de qualité.",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "whenToUse": {
-      "en": "Before inspection, testing, acceptance, deficiency/NCR issuance, material verification, or whenever requirements appear conflicting or unclear."
+      "en": "Before inspection, testing, acceptance, deficiency/NCR issuance, material verification, or whenever requirements appear conflicting or unclear.",
+      "fr": "Avant l'inspection, test, acceptation, signalement d'une déficience ou d'une NCR, vérification des matériaux, ou chaque fois que les exigences semblent contradictoires ou floues.",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "fieldWorkflow": [
       {
         "sequence": 1,
         "action": {
-          "en": "Identify the work"
+          "en": "Identify the work",
+          "fr": "Identifiez le travail",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         },
         "detail": {
-          "en": "Define the exact component, system, location and activity."
+          "en": "Define the exact component, system, location and activity.",
+          "fr": "Définissez le composant, le système, l'emplacement et l'activité exacts.",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         }
       },
       {
         "sequence": 2,
         "action": {
-          "en": "Find governing documents"
+          "en": "Find governing documents",
+          "fr": "Trouvez les documents régissants",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         },
         "detail": {
-          "en": "Locate contract drawings/specifications and applicable approved procedures."
+          "en": "Locate contract drawings/specifications and applicable approved procedures.",
+          "fr": "Trouvez les plans/spécifications contractuelles ainsi que les procédures approuvées applicables.",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         }
       },
       {
         "sequence": 3,
         "action": {
-          "en": "Confirm current revision"
+          "en": "Confirm current revision",
+          "fr": "Confirmez la révision actuelle",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         },
         "detail": {
-          "en": "Verify the document is approved/current for construction."
+          "en": "Verify the document is approved/current for construction.",
+          "fr": "Vérifiez que le document est approuvé/à jour pour la construction.",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         }
       },
       {
         "sequence": 4,
         "action": {
-          "en": "Check supporting requirements"
+          "en": "Check supporting requirements",
+          "fr": "Vérifiez les exigences de soutien",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         },
         "detail": {
-          "en": "Review approved submittals, shop drawings, RFIs, changes, manufacturer instructions and ITP criteria."
+          "en": "Review approved submittals, shop drawings, RFIs, changes, manufacturer instructions and ITP criteria.",
+          "fr": "Examinez les documents soumis approuvés, les plans d'atelier, les RFI, les modifications, les instructions du fabricant et les critères ITP.",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         }
       },
       {
         "sequence": 5,
         "action": {
-          "en": "Resolve conflicts"
+          "en": "Resolve conflicts",
+          "fr": "Résoudre les conflits",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         },
         "detail": {
-          "en": "Do not invent an interpretation; identify discrepancies and obtain clarification through the approved channel."
+          "en": "Do not invent an interpretation; identify discrepancies and obtain clarification through the approved channel.",
+          "fr": "Ne pas inventer d'interprétation; Identifiez les divergences et obtenez des clarifications via le canal approuvé.",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         }
       },
       {
         "sequence": 6,
         "action": {
-          "en": "Extract acceptance criteria"
+          "en": "Extract acceptance criteria",
+          "fr": "Extraire les critères d'acceptation",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         },
         "detail": {
-          "en": "Convert the requirement into observable or measurable checks."
+          "en": "Convert the requirement into observable or measurable checks.",
+          "fr": "Convertir l'exigence en vérifications observables ou mesurables.",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         }
       },
       {
         "sequence": 7,
         "action": {
-          "en": "Record the basis"
+          "en": "Record the basis",
+          "fr": "Consignez la base",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         },
         "detail": {
-          "en": "Keep the document/revision reference supporting the inspection decision."
+          "en": "Keep the document/revision reference supporting the inspection decision.",
+          "fr": "Conservez le document ou la référence de révision appuyant la décision d'inspection.",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         }
       }
     ],
     "whatToCapture": [
       {
-        "en": "Drawing/specification section and revision"
+        "en": "Drawing/specification section and revision",
+        "fr": "Section de dessin/cahier des charges et révision",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Approved submittal/shop drawing reference"
+        "en": "Approved submittal/shop drawing reference",
+        "fr": "Soumission/référence de dessin d'atelier approuvée",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "RFI/change reference where applicable"
+        "en": "RFI/change reference where applicable",
+        "fr": "RFI/référence de modification lorsque c'est applicable",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Acceptance criterion or tolerance"
+        "en": "Acceptance criterion or tolerance",
+        "fr": "Critère d'acceptation ou tolérance",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Any unresolved ambiguity"
+        "en": "Any unresolved ambiguity",
+        "fr": "Toute ambiguïté non résolue",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       }
     ],
     "keyReminders": [
       {
-        "en": "Verify the requirement first; do not inspect from memory when the requirement is available."
+        "en": "Verify the requirement first; do not inspect from memory when the requirement is available.",
+        "fr": "Vérifiez d'abord l'exigence; ne pas inspecter à partir de la mémoire lorsque l'exigence est disponible.",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "A manufacturer instruction does not automatically override the contract hierarchy."
+        "en": "A manufacturer instruction does not automatically override the contract hierarchy.",
+        "fr": "Une instruction du fabricant ne prend pas automatiquement le dessus sur la hiérarchie du contrat.",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "If documents conflict, escalate through the project's defined authority chain."
+        "en": "If documents conflict, escalate through the project's defined authority chain.",
+        "fr": "Si les documents entrent en conflit, il faut les escalader à travers la chaîne d'autorité définie par le projet.",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       }
     ],
     "commonMistakes": [
       {
-        "en": "Judging from personal preference"
+        "en": "Judging from personal preference",
+        "fr": "Juger selon une préférence personnelle",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Using superseded drawings"
+        "en": "Using superseded drawings",
+        "fr": "Utilisation de dessins remplacés",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Quoting a requirement without its revision/context"
+        "en": "Quoting a requirement without its revision/context",
+        "fr": "Citation d'une exigence sans sa révision ou son contexte",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Treating an unresolved conflict as a field decision"
+        "en": "Treating an unresolved conflict as a field decision",
+        "fr": "Traiter un conflit non résolu comme une décision de terrain",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       }
     ],
     "typicalOutputs": [
       {
-        "en": "Confirmed inspection basis"
+        "en": "Confirmed inspection basis",
+        "fr": "Base d'inspection confirmée",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "List of applicable requirements"
+        "en": "List of applicable requirements",
+        "fr": "Liste des exigences applicables",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Technical clarification request if needed"
+        "en": "Technical clarification request if needed",
+        "fr": "Demande de clarification technique si nécessaire",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       }
     ],
     "relatedProcessIds": [
@@ -283,139 +603,309 @@
     "id": "general-qc-itp-execution",
     "sequence": 3,
     "title": {
-      "en": "ITP / PIE / PRIE Execution"
+      "en": "ITP / PIE / PRIE Execution",
+      "fr": "Exécution de l'ITP / PIE / PRIE",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "summary": {
-      "en": "Use the approved inspection/test plan to control inspection sequence, responsibilities, intervention points and records."
+      "en": "Use the approved inspection/test plan to control inspection sequence, responsibilities, intervention points and records.",
+      "fr": "Utilisez le plan d'inspection et essais approuvé pour contrôler la séquence d'inspection, les responsabilités, les points d'intervention et les dossiers.",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "whenToUse": {
-      "en": "When an activity is governed by an ITP, PIE, PRIE or equivalent inspection/testing plan."
+      "en": "When an activity is governed by an ITP, PIE, PRIE or equivalent inspection/testing plan.",
+      "fr": "Lorsqu'une activité est régie par un ITP, PIE, PRIE ou un plan d'inspection et essais équivalent.",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "fieldWorkflow": [
       {
         "sequence": 1,
         "action": {
-          "en": "Select the applicable plan"
+          "en": "Select the applicable plan",
+          "fr": "Sélectionnez le plan applicable",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         },
         "detail": {
-          "en": "Confirm activity, scope and revision."
+          "en": "Confirm activity, scope and revision.",
+          "fr": "Confirmez l'activité, la portée et la révision.",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         }
       },
       {
         "sequence": 2,
         "action": {
-          "en": "Review sequence and responsibilities"
+          "en": "Review sequence and responsibilities",
+          "fr": "Revoir la séquence et les responsabilités",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         },
         "detail": {
-          "en": "Know who performs, verifies, witnesses and accepts each point."
+          "en": "Know who performs, verifies, witnesses and accepts each point.",
+          "fr": "Sachez qui exécute, vérifie, témoigne et accepte chaque point.",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         }
       },
       {
         "sequence": 3,
         "action": {
-          "en": "Confirm prerequisites"
+          "en": "Confirm prerequisites",
+          "fr": "Confirmez les prérequis",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         },
         "detail": {
-          "en": "Ensure preceding stages and required approvals are complete."
+          "en": "Ensure preceding stages and required approvals are complete.",
+          "fr": "Assurez-vous que les étapes précédentes et les approbations requises sont complètes.",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         }
       },
       {
         "sequence": 4,
         "action": {
-          "en": "Respect intervention points"
+          "en": "Respect intervention points",
+          "fr": "Respecter les points d'intervention",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         },
         "detail": {
-          "en": "Do not pass a hold point without required release; provide witness notice as required."
+          "en": "Do not pass a hold point without required release; provide witness notice as required.",
+          "fr": "Ne pas franchir un point d'arrêt sans relâchement requis; Fournir un avis au témoin au besoin.",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         }
       },
       {
         "sequence": 5,
         "action": {
-          "en": "Perform/observe checks"
+          "en": "Perform/observe checks",
+          "fr": "Effectuez/observez les vérifications",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         },
         "detail": {
-          "en": "Complete inspections and tests against listed criteria."
+          "en": "Complete inspections and tests against listed criteria.",
+          "fr": "Effectuez des inspections et des essais selon les critères énumérés.",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         }
       },
       {
         "sequence": 6,
         "action": {
-          "en": "Record results"
+          "en": "Record results",
+          "fr": "Enregistrer les résultats",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         },
         "detail": {
-          "en": "Enter objective results, references, evidence and signatures/approvals as required."
+          "en": "Enter objective results, references, evidence and signatures/approvals as required.",
+          "fr": "Entrer des résultats objectifs, références, preuves et signatures/approbations au besoin.",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         }
       },
       {
         "sequence": 7,
         "action": {
-          "en": "Address failures"
+          "en": "Address failures",
+          "fr": "Traiter les écarts",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         },
         "detail": {
-          "en": "Route deficiencies or non-conformities through the defined process."
+          "en": "Route deficiencies or non-conformities through the defined process.",
+          "fr": "Acheminer les déficiences ou les non-conformités selon le processus établi.",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         }
       },
       {
         "sequence": 8,
         "action": {
-          "en": "Complete the record"
+          "en": "Complete the record",
+          "fr": "Complétez le dossier",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         },
         "detail": {
-          "en": "Ensure all required stages are signed/closed and traceable."
+          "en": "Ensure all required stages are signed/closed and traceable.",
+          "fr": "Assurez-vous que toutes les étapes requises sont signées et clôturées et traçables.",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         }
       }
     ],
     "whatToCapture": [
       {
-        "en": "Plan number/revision"
+        "en": "Plan number/revision",
+        "fr": "Numéro/révision du plan",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Inspection/test point and status"
+        "en": "Inspection/test point and status",
+        "fr": "Point d'inspection et essais et statut",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Acceptance criteria and measured results"
+        "en": "Acceptance criteria and measured results",
+        "fr": "Critères d'acceptation et résultats mesurés",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Required signatures/notifications"
+        "en": "Required signatures/notifications",
+        "fr": "Signatures/notifications requises",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Linked test reports, photos, NCRs or deficiencies"
+        "en": "Linked test reports, photos, NCRs or deficiencies",
+        "fr": "Rapports d'essais, photos, NCR ou déficiences liés",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       }
     ],
     "keyReminders": [
       {
-        "en": "The ITP is a control map, not merely a form to sign at the end."
+        "en": "The ITP is a control map, not merely a form to sign at the end.",
+        "fr": "L'ITP est une carte de contrôle, pas simplement un formulaire à signer à la fin.",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "A missed hold point can invalidate downstream assurance."
+        "en": "A missed hold point can invalidate downstream assurance.",
+        "fr": "Un point d'arrêt manqué peut invalider l'confiance dans les vérifications en aval.",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Use the project's definitions for H/W/S/R points."
+        "en": "Use the project's definitions for H/W/S/R points.",
+        "fr": "Utilisez les définitions du projet pour les points H/W/S/R.",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       }
     ],
     "commonMistakes": [
       {
-        "en": "Back-filling signatures"
+        "en": "Back-filling signatures",
+        "fr": "Remplacement des signatures",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Skipping points because the work looks acceptable"
+        "en": "Skipping points because the work looks acceptable",
+        "fr": "Sauter des points parce que le travail semble acceptable",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Treating witness and hold points as interchangeable"
+        "en": "Treating witness and hold points as interchangeable",
+        "fr": "Considérer les points témoins et de maintien comme interchangeables",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Failing to link supporting records"
+        "en": "Failing to link supporting records",
+        "fr": "Omission de lier les documents de soutien",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       }
     ],
     "typicalOutputs": [
       {
-        "en": "Completed ITP/PIE/PRIE record"
+        "en": "Completed ITP/PIE/PRIE record",
+        "fr": "Enregistrement terminé de l'ITP/PIE/PRIE",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Linked inspection/test evidence"
+        "en": "Linked inspection/test evidence",
+        "fr": "Preuves d'inspection et essais liées",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Hold/witness releases"
+        "en": "Hold/witness releases",
+        "fr": "Point d'arrêt ou point témoin et libération",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       }
     ],
     "relatedProcessIds": [
@@ -432,130 +922,290 @@
     "id": "general-qc-hold-witness-points",
     "sequence": 4,
     "title": {
-      "en": "Hold & Witness Points"
+      "en": "Hold & Witness Points",
+      "fr": "Points d'arrêt et points témoins",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "summary": {
-      "en": "Control critical inspection stages so required parties can verify work before it proceeds."
+      "en": "Control critical inspection stages so required parties can verify work before it proceeds.",
+      "fr": "Contrôlez les étapes d'inspection critiques afin que les parties concernées puissent vérifier les travaux avant qu'ils ne se poursuivent.",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "whenToUse": {
-      "en": "When the ITP/quality plan or contract defines hold, witness, review or surveillance points."
+      "en": "When the ITP/quality plan or contract defines hold, witness, review or surveillance points.",
+      "fr": "Lorsque le plan ITP/qualité ou le contrat définit des points d'arrêt, de témoin, de révision ou de surveillance.",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "fieldWorkflow": [
       {
         "sequence": 1,
         "action": {
-          "en": "Identify the point"
+          "en": "Identify the point",
+          "fr": "Identifiez le point",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         },
         "detail": {
-          "en": "Confirm type, requirement, responsible party and notification period."
+          "en": "Confirm type, requirement, responsible party and notification period.",
+          "fr": "Confirmez le type, l'exigence, la partie responsable et la période de notification.",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         }
       },
       {
         "sequence": 2,
         "action": {
-          "en": "Verify readiness"
+          "en": "Verify readiness",
+          "fr": "Vérifier la préparation",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         },
         "detail": {
-          "en": "Ensure work and prerequisite documentation are ready for inspection."
+          "en": "Ensure work and prerequisite documentation are ready for inspection.",
+          "fr": "Assurez-vous que le travail et la documentation préalable sont prêts pour l'inspection.",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         }
       },
       {
         "sequence": 3,
         "action": {
-          "en": "Notify required parties"
+          "en": "Notify required parties",
+          "fr": "Notifier les parties concernées",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         },
         "detail": {
-          "en": "Issue notice using the approved communication method and lead time."
+          "en": "Issue notice using the approved communication method and lead time.",
+          "fr": "Émettre un avis en utilisant la méthode de communication approuvée et les délais d'anticipation.",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         }
       },
       {
         "sequence": 4,
         "action": {
-          "en": "Maintain control"
+          "en": "Maintain control",
+          "fr": "Maintenir le contrôle",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         },
         "detail": {
-          "en": "For a hold point, do not proceed until formal release is obtained."
+          "en": "For a hold point, do not proceed until formal release is obtained.",
+          "fr": "Pour un point d'arrêt, ne procédez pas tant que la libération officielle n'est pas obtenue.",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         }
       },
       {
         "sequence": 5,
         "action": {
-          "en": "Perform/observe inspection"
+          "en": "Perform/observe inspection",
+          "fr": "Effectuer/observer l'inspection",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         },
         "detail": {
-          "en": "Record observations, results and evidence."
+          "en": "Record observations, results and evidence.",
+          "fr": "Enregistrer les observations, les résultats et les preuves.",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         }
       },
       {
         "sequence": 6,
         "action": {
-          "en": "Obtain disposition/release"
+          "en": "Obtain disposition/release",
+          "fr": "Obtenir la décision et libération",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         },
         "detail": {
-          "en": "Capture required acceptance, waiver or authorized release."
+          "en": "Capture required acceptance, waiver or authorized release.",
+          "fr": "Obtenir l'acceptation, la dérogation ou la libération autorisée requises.",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         }
       },
       {
         "sequence": 7,
         "action": {
-          "en": "Record traceability"
+          "en": "Record traceability",
+          "fr": "Assurer la traçabilité",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         },
         "detail": {
-          "en": "Link the release to the activity, location and inspection record."
+          "en": "Link the release to the activity, location and inspection record.",
+          "fr": "Relier la libération à l'activité, à l'emplacement et à l'historique des inspections.",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         }
       }
     ],
     "whatToCapture": [
       {
-        "en": "Point type and identifier"
+        "en": "Point type and identifier",
+        "fr": "Type de point et identifiant",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Notification date/time"
+        "en": "Notification date/time",
+        "fr": "Date et heure de notification",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Attendees or notified parties"
+        "en": "Attendees or notified parties",
+        "fr": "Participants ou parties notifiées",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Inspection result"
+        "en": "Inspection result",
+        "fr": "Résultat de l'inspection",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Release/waiver evidence"
+        "en": "Release/waiver evidence",
+        "fr": "Preuve de libération ou dérogation",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       }
     ],
     "keyReminders": [
       {
-        "en": "Hold point = stop until authorized release, unless the governing procedure expressly provides otherwise."
+        "en": "Hold point = stop until authorized release, unless the governing procedure expressly provides otherwise.",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        },
+        "fr": "Point d'arrêt = arrêt jusqu'à libération autorisée, sauf si la procédure régissant prévoit expressément le contraire."
       },
       {
-        "en": "Witness-point rules can vary; follow the project's notification and waiver procedure."
+        "en": "Witness-point rules can vary; follow the project's notification and waiver procedure.",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        },
+        "fr": "Les règles sur les points de témoignage peuvent varier; Suivez la procédure de notification et de dérogation du projet."
       },
       {
-        "en": "Never self-release a point outside your authority."
+        "en": "Never self-release a point outside your authority.",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        },
+        "fr": "Ne vous auto-lâchez jamais un point en dehors de votre autorité."
       }
     ],
     "commonMistakes": [
       {
-        "en": "Proceeding because the inspector did not arrive"
+        "en": "Proceeding because the inspector did not arrive",
+        "fr": "Continuer parce que l'inspecteur n'est pas arrivé",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Verbal release with no record when formal release is required"
+        "en": "Verbal release with no record when formal release is required",
+        "fr": "Libération verbale sans dossier lorsque la libération formelle est requise",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Late notification"
+        "en": "Late notification",
+        "fr": "Notification tardive",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Confusing surveillance with hold/witness requirements"
+        "en": "Confusing surveillance with hold/witness requirements",
+        "fr": "Confondre la surveillance avec les exigences de détention/témoin",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       }
     ],
     "typicalOutputs": [
       {
-        "en": "Notification record"
+        "en": "Notification record",
+        "fr": "Enregistrement des notifications",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Inspection/witness record"
+        "en": "Inspection/witness record",
+        "fr": "Dossier d'inspection/témoin",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Formal release/waiver where applicable"
+        "en": "Formal release/waiver where applicable",
+        "fr": "Libération/dérogation formelle lorsque c'est applicable",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       }
     ],
     "relatedProcessIds": [
@@ -572,142 +1222,317 @@
     "id": "general-qc-inspection-acceptance",
     "sequence": 5,
     "title": {
-      "en": "Inspection & Acceptance"
+      "en": "Inspection & Acceptance",
+      "fr": "Inspection et acceptation",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "summary": {
-      "en": "Verify completed or in-progress work against defined requirements and record an objective result."
+      "en": "Verify completed or in-progress work against defined requirements and record an objective result.",
+      "fr": "Vérifier les travaux terminés ou en cours selon les exigences définies et enregistrer un résultat objectif.",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "whenToUse": {
-      "en": "At planned inspection stages, before concealment, at completion of an activity, or when acceptance is required."
+      "en": "At planned inspection stages, before concealment, at completion of an activity, or when acceptance is required.",
+      "fr": "Lors des étapes d'inspection planifiées, avant la dissimulation, à la fin d'une activité ou lorsque l'acceptation est requise.",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "fieldWorkflow": [
       {
         "sequence": 1,
         "action": {
-          "en": "Confirm inspection basis"
+          "en": "Confirm inspection basis",
+          "fr": "Confirmez la base de l'inspection",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         },
         "detail": {
-          "en": "Verify scope, location and current requirements."
+          "en": "Verify scope, location and current requirements.",
+          "fr": "Vérifiez la portée, l'emplacement et les exigences actuelles.",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         }
       },
       {
         "sequence": 2,
         "action": {
-          "en": "Observe the work"
+          "en": "Observe the work",
+          "fr": "Observez le travail",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         },
         "detail": {
-          "en": "Inspect condition, installation, workmanship and interfaces."
+          "en": "Inspect condition, installation, workmanship and interfaces.",
+          "fr": "Inspectez l'état, l'installation, la qualité de la fabrication et les interfaces.",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         }
       },
       {
         "sequence": 3,
         "action": {
-          "en": "Measure/test as required"
+          "en": "Measure/test as required",
+          "fr": "Mesurez/testez au besoin",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         },
         "detail": {
-          "en": "Use suitable calibrated/verified tools where measurement is required."
+          "en": "Use suitable calibrated/verified tools where measurement is required.",
+          "fr": "Utilisez des outils calibrés/vérifiés appropriés lorsque la mesure est requise.",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         }
       },
       {
         "sequence": 4,
         "action": {
-          "en": "Compare with criteria"
+          "en": "Compare with criteria",
+          "fr": "Comparez avec les critères",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         },
         "detail": {
-          "en": "Determine compliance against explicit requirements."
+          "en": "Determine compliance against explicit requirements.",
+          "fr": "Déterminez la conformité aux exigences explicites.",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         }
       },
       {
         "sequence": 5,
         "action": {
-          "en": "Record evidence"
+          "en": "Record evidence",
+          "fr": "Enregistrer les preuves",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         },
         "detail": {
-          "en": "Capture results, measurements, photos and references."
+          "en": "Capture results, measurements, photos and references.",
+          "fr": "Capturez les résultats, les mesures, les photos et les références.",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         }
       },
       {
         "sequence": 6,
         "action": {
-          "en": "Classify result"
+          "en": "Classify result",
+          "fr": "Classifier le résultat",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         },
         "detail": {
-          "en": "Accept, identify deficiency, initiate NCR, or seek clarification according to project rules."
+          "en": "Accept, identify deficiency, initiate NCR, or seek clarification according to project rules.",
+          "fr": "Accepter, identifier une lacune, initier la NCR ou demander des clarifications selon les règles du projet.",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         }
       },
       {
         "sequence": 7,
         "action": {
-          "en": "Communicate result"
+          "en": "Communicate result",
+          "fr": "Communiquez les résultats",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         },
         "detail": {
-          "en": "Notify responsible parties and record required approvals."
+          "en": "Notify responsible parties and record required approvals.",
+          "fr": "Notifiez les parties responsables et consignez les approbations requises.",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         }
       },
       {
         "sequence": 8,
         "action": {
-          "en": "Preserve traceability"
+          "en": "Preserve traceability",
+          "fr": "Préserver la traçabilité",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         },
         "detail": {
-          "en": "Link the inspection to location, activity and supporting records."
+          "en": "Link the inspection to location, activity and supporting records.",
+          "fr": "Relier l'inspection à l'emplacement, à l'activité et aux dossiers de soutien.",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         }
       }
     ],
     "whatToCapture": [
       {
-        "en": "Location/element ID"
+        "en": "Location/element ID",
+        "fr": "Localisation/ID d'élément",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Requirement and revision"
+        "en": "Requirement and revision",
+        "fr": "Exigence et révision",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Observed/measured result"
+        "en": "Observed/measured result",
+        "fr": "Résultat observé/mesuré",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Photos where useful"
+        "en": "Photos where useful",
+        "fr": "Les photos étaient utiles",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Inspector/date/time"
+        "en": "Inspector/date/time",
+        "fr": "Inspecteur/date/heure",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Acceptance or issue reference"
+        "en": "Acceptance or issue reference",
+        "fr": "Acceptation ou référence de la question",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       }
     ],
     "keyReminders": [
       {
-        "en": "Acceptance must be based on requirements, not appearance alone."
+        "en": "Acceptance must be based on requirements, not appearance alone.",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        },
+        "fr": "L'acceptation doit être basée sur des exigences, pas seulement sur l'apparence."
       },
       {
-        "en": "Record actual values when a measurable criterion exists."
+        "en": "Record actual values when a measurable criterion exists.",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        },
+        "fr": "Notez les valeurs réelles lorsqu'un critère mesurable existe."
       },
       {
-        "en": "Do not sign for work you did not inspect unless the procedure explicitly permits record-based verification."
+        "en": "Do not sign for work you did not inspect unless the procedure explicitly permits record-based verification.",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        },
+        "fr": "Ne signez pas pour un travail que vous n'avez pas inspecté à moins que la procédure ne permette explicitement une vérification basée sur les dossiers."
       }
     ],
     "commonMistakes": [
       {
-        "en": "'Looks good' without criteria"
+        "en": "'Looks good' without criteria",
+        "fr": "« Ça a l'air bien » sans critères",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Recording only pass/fail with no evidence for critical checks"
+        "en": "Recording only pass/fail with no evidence for critical checks",
+        "fr": "Enregistrement seulement réussi/échec sans preuve de vérification critique",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Accepting concealed work that was not verified"
+        "en": "Accepting concealed work that was not verified",
+        "fr": "Accepter un travail caché non vérifié",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Using uncalibrated equipment where calibration is required"
+        "en": "Using uncalibrated equipment where calibration is required",
+        "fr": "Utilisation d'équipements non calibrés lorsque la calibration est requise",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       }
     ],
     "typicalOutputs": [
       {
-        "en": "Inspection record"
+        "en": "Inspection record",
+        "fr": "Bilan d'inspection",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Acceptance/release"
+        "en": "Acceptance/release",
+        "fr": "Acceptation et libération",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Deficiency/NCR/RFI if applicable"
+        "en": "Deficiency/NCR/RFI if applicable",
+        "fr": "Déficience/NCR/RFI si applicable",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       }
     ],
     "relatedProcessIds": [
@@ -724,142 +1549,317 @@
     "id": "general-qc-deficiency-reporting",
     "sequence": 6,
     "title": {
-      "en": "Deficiency Reporting"
+      "en": "Deficiency Reporting",
+      "fr": "Signalement des déficiences",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "summary": {
-      "en": "Record an observed quality issue that requires correction but is handled below the project's formal NCR threshold."
+      "en": "Record an observed quality issue that requires correction but is handled below the project's formal NCR threshold.",
+      "fr": "Enregistrer un problème de qualité observé qui nécessite une correction mais qui est traité en dessous du seuil formel de NCR du projet.",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "whenToUse": {
-      "en": "When work has a correctable issue and the project quality plan permits it to be managed as a deficiency/punch item rather than an NCR."
+      "en": "When work has a correctable issue and the project quality plan permits it to be managed as a deficiency/punch item rather than an NCR.",
+      "fr": "Lorsque le travail présente un problème corrigible et que le plan de qualité du projet permet de le gérer comme un élément de déficience ou de perforation plutôt que comme un NCR.",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "fieldWorkflow": [
       {
         "sequence": 1,
         "action": {
-          "en": "Identify the issue"
+          "en": "Identify the issue",
+          "fr": "Identifiez le problème",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         },
         "detail": {
-          "en": "State what is wrong and where."
+          "en": "State what is wrong and where.",
+          "fr": "Indiquez ce qui ne va pas et où.",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         }
       },
       {
         "sequence": 2,
         "action": {
-          "en": "Verify the requirement"
+          "en": "Verify the requirement",
+          "fr": "Vérifiez l'exigence",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         },
         "detail": {
-          "en": "Confirm the expected condition."
+          "en": "Confirm the expected condition.",
+          "fr": "Confirmez l'état attendu.",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         }
       },
       {
         "sequence": 3,
         "action": {
-          "en": "Document evidence"
+          "en": "Document evidence",
+          "fr": "Preuve documentaire",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         },
         "detail": {
-          "en": "Capture objective description, location and photos/measurements."
+          "en": "Capture objective description, location and photos/measurements.",
+          "fr": "Capturez la description objective, l'emplacement et les photos/mesures.",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         }
       },
       {
         "sequence": 4,
         "action": {
-          "en": "Classify correctly"
+          "en": "Classify correctly",
+          "fr": "Classifiez correctement",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         },
         "detail": {
-          "en": "Confirm the issue belongs in the deficiency process rather than NCR or RFI."
+          "en": "Confirm the issue belongs in the deficiency process rather than NCR or RFI.",
+          "fr": "Confirmez que le problème appartient au processus de déficience plutôt qu'à la NCR ou à la RFI.",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         }
       },
       {
         "sequence": 5,
         "action": {
-          "en": "Notify responsible party"
+          "en": "Notify responsible party",
+          "fr": "Notifier la partie responsable",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         },
         "detail": {
-          "en": "Assign/communicate through the approved process."
+          "en": "Assign/communicate through the approved process.",
+          "fr": "Assigner/communiquer à travers le processus approuvé.",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         }
       },
       {
         "sequence": 6,
         "action": {
-          "en": "Correct the work"
+          "en": "Correct the work",
+          "fr": "Corrigez le travail",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         },
         "detail": {
-          "en": "Responsible party completes correction."
+          "en": "Responsible party completes correction.",
+          "fr": "La partie responsable effectue la correction.",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         }
       },
       {
         "sequence": 7,
         "action": {
-          "en": "Reinspect"
+          "en": "Reinspect",
+          "fr": "Réinspecter",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         },
         "detail": {
-          "en": "Verify the corrected condition."
+          "en": "Verify the corrected condition.",
+          "fr": "Vérifier l'état corrigé.",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         }
       },
       {
         "sequence": 8,
         "action": {
-          "en": "Close"
+          "en": "Close",
+          "fr": "Clôturer",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         },
         "detail": {
-          "en": "Record verification and closure evidence."
+          "en": "Record verification and closure evidence.",
+          "fr": "Enregistrer la vérification et les preuves de clôture.",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         }
       }
     ],
     "whatToCapture": [
       {
-        "en": "Unique issue ID"
+        "en": "Unique issue ID",
+        "fr": "Numéro d'émission unique",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Exact location/element"
+        "en": "Exact location/element",
+        "fr": "Emplacement/élément exact",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Requirement/reference"
+        "en": "Requirement/reference",
+        "fr": "Exigence/référence",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Clear description and evidence"
+        "en": "Clear description and evidence",
+        "fr": "Description claire et preuves",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Responsible party/status"
+        "en": "Responsible party/status",
+        "fr": "Partie responsable/statut",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Correction and closure evidence"
+        "en": "Correction and closure evidence",
+        "fr": "Preuves de correction et de clôture",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       }
     ],
     "keyReminders": [
       {
-        "en": "A deficiency is not a way to avoid an NCR when the NCR criteria are met."
+        "en": "A deficiency is not a way to avoid an NCR when the NCR criteria are met.",
+        "fr": "Une déficience n'est pas une façon d'éviter une NCR lorsque les critères de la NCR sont remplis.",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Describe the condition, not the person who caused it."
+        "en": "Describe the condition, not the person who caused it.",
+        "fr": "Décrivez la condition, pas la personne qui l'a causée.",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Closure requires verification."
+        "en": "Closure requires verification.",
+        "fr": "La fermeture nécessite une vérification.",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       }
     ],
     "commonMistakes": [
       {
-        "en": "Vague descriptions such as 'fix wall'"
+        "en": "Vague descriptions such as 'fix wall'",
+        "fr": "Des descriptions vagues comme « mur fixe »",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "No location reference"
+        "en": "No location reference",
+        "fr": "Aucune référence de localisation",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Closing from a contractor's message without verification"
+        "en": "Closing from a contractor's message without verification",
+        "fr": "Clôture à partir d'un message d'un entrepreneur sans vérification",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Using deficiency and NCR terminology interchangeably"
+        "en": "Using deficiency and NCR terminology interchangeably",
+        "fr": "Utilisation interchangeable de la terminologie déficience et NCR",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       }
     ],
     "typicalOutputs": [
       {
-        "en": "Deficiency record"
+        "en": "Deficiency record",
+        "fr": "Dossier de déficience",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Correction evidence"
+        "en": "Correction evidence",
+        "fr": "Preuves de correction",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Verified closure"
+        "en": "Verified closure",
+        "fr": "Fermeture vérifiée",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       }
     ],
     "relatedProcessIds": [
@@ -876,169 +1876,384 @@
     "id": "general-qc-ncr",
     "sequence": 7,
     "title": {
-      "en": "Non-Conformity Reporting (NCR)"
+      "en": "Non-Conformity Reporting (NCR)",
+      "fr": "Signalement des non-conformités (NCR)",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "summary": {
-      "en": "Control, document and resolve work, material or installation that does not conform to an applicable requirement."
+      "en": "Control, document and resolve work, material or installation that does not conform to an applicable requirement.",
+      "fr": "Contrôler, documenter et résoudre les travaux, matériaux ou installations qui ne respectent pas une exigence applicable.",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "whenToUse": {
-      "en": "When the project's NCR criteria are met: a specified requirement is not satisfied and formal control/disposition is required."
+      "en": "When the project's NCR criteria are met: a specified requirement is not satisfied and formal control/disposition is required.",
+      "fr": "Lorsque les critères NCR du projet sont remplis : une exigence spécifiée n'est pas satisfaite et un contrôle/disposition formel est requis.",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "fieldWorkflow": [
       {
         "sequence": 1,
         "action": {
-          "en": "Identify the non-conformity"
+          "en": "Identify the non-conformity",
+          "fr": "Identifiez la non-conformité",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         },
         "detail": {
-          "en": "Determine exactly what does not comply and where."
+          "en": "Determine exactly what does not comply and where.",
+          "fr": "Déterminez exactement ce qui ne se conforme pas et où.",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         }
       },
       {
         "sequence": 2,
         "action": {
-          "en": "Verify the requirement"
+          "en": "Verify the requirement",
+          "fr": "Vérifiez l'exigence",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         },
         "detail": {
-          "en": "Confirm the applicable drawing, specification, approved submittal, procedure, code or other governing requirement."
+          "en": "Confirm the applicable drawing, specification, approved submittal, procedure, code or other governing requirement.",
+          "fr": "Confirmez le dessin, la spécification, la document soumis approuvé, la procédure, le code ou toute autre exigence applicable.",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         }
       },
       {
         "sequence": 3,
         "action": {
-          "en": "Control the condition"
+          "en": "Control the condition",
+          "fr": "Contrôler la condition",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         },
         "detail": {
-          "en": "Prevent concealment, continuation, use or incorporation of affected work where required."
+          "en": "Prevent concealment, continuation, use or incorporation of affected work where required.",
+          "fr": "Empêcher la dissimulation, la poursuite, l'utilisation ou l'incorporation des travaux affectées lorsque nécessaire.",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         }
       },
       {
         "sequence": 4,
         "action": {
-          "en": "Document objective evidence"
+          "en": "Document objective evidence",
+          "fr": "Documentez les preuves objectives",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         },
         "detail": {
-          "en": "Record location, element ID, condition, photos, measurements and requirement."
+          "en": "Record location, element ID, condition, photos, measurements and requirement.",
+          "fr": "Consignez l'emplacement, l'identifiant de l'élément, l'état, les photos, les mesures et les besoins.",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         }
       },
       {
         "sequence": 5,
         "action": {
-          "en": "Notify responsible parties"
+          "en": "Notify responsible parties",
+          "fr": "Notifier les parties responsables",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         },
         "detail": {
-          "en": "Follow the project's NCR communication and quality procedure."
+          "en": "Follow the project's NCR communication and quality procedure.",
+          "fr": "Suivre la procédure de communication et de qualité du NCR du projet.",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         }
       },
       {
         "sequence": 6,
         "action": {
-          "en": "Determine disposition"
+          "en": "Determine disposition",
+          "fr": "Déterminer la disposition",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         },
         "detail": {
-          "en": "Use authorized disposition such as rework, repair, replace, reject, or accept-as-is/concession where formally permitted."
+          "en": "Use authorized disposition such as rework, repair, replace, reject, or accept-as-is/concession where formally permitted.",
+          "fr": "Utiliser la disposition autorisée telle que reprendre, réparer, remplacer, rejeter ou accepter en l'état au moyen d'une concession lorsque c'est formellement permis.",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         }
       },
       {
         "sequence": 7,
         "action": {
-          "en": "Implement corrective action"
+          "en": "Implement corrective action",
+          "fr": "Mettre en œuvre des mesures correctives",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         },
         "detail": {
-          "en": "Ensure the approved disposition/action is completed."
+          "en": "Ensure the approved disposition/action is completed.",
+          "fr": "Assurez-vous que la décision ou l'action approuvée est complétée.",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         }
       },
       {
         "sequence": 8,
         "action": {
-          "en": "Reinspect / verify"
+          "en": "Reinspect / verify",
+          "fr": "Réinspecter / vérifier",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         },
         "detail": {
-          "en": "Confirm the resulting work satisfies the approved disposition and applicable requirements."
+          "en": "Confirm the resulting work satisfies the approved disposition and applicable requirements.",
+          "fr": "Confirmer que le travail résultant respecte la disposition approuvée et les exigences applicables.",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         }
       },
       {
         "sequence": 9,
         "action": {
-          "en": "Close and retain traceability"
+          "en": "Close and retain traceability",
+          "fr": "Clôturer et conserver la traçabilité",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         },
         "detail": {
-          "en": "Record verification, evidence, approvals and formal closure."
+          "en": "Record verification, evidence, approvals and formal closure.",
+          "fr": "Enregistrer la vérification, les preuves, les approbations et la fermeture officielle.",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         }
       }
     ],
     "whatToCapture": [
       {
-        "en": "NCR number and date"
+        "en": "NCR number and date",
+        "fr": "Numéro et date NCR",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Exact location/affected item"
+        "en": "Exact location/affected item",
+        "fr": "Emplacement exact/objet affecté",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Requirement violated and revision"
+        "en": "Requirement violated and revision",
+        "fr": "Exigence violée et révision",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Objective description and evidence"
+        "en": "Objective description and evidence",
+        "fr": "Description objective et preuves",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Immediate control/containment"
+        "en": "Immediate control/containment",
+        "fr": "Contrôle/confinement immédiat",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Disposition and authorizing party"
+        "en": "Disposition and authorizing party",
+        "fr": "Disposition et partie autorisée",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Correction/rework evidence"
+        "en": "Correction/rework evidence",
+        "fr": "Preuves de correction/reprise",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Reinspection result and closure approval"
+        "en": "Reinspection result and closure approval",
+        "fr": "Résultat de la réinspection et approbation de la fermeture",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       }
     ],
     "keyReminders": [
       {
-        "en": "Do not close the NCR merely because the repair was performed; verify the completed work first."
+        "en": "Do not close the NCR merely because the repair was performed; verify the completed work first.",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        },
+        "fr": "Ne fermez pas la NCR simplement parce que la réparation a été effectuée; Vérifiez d'abord le travail terminé."
       },
       {
-        "en": "Do not prescribe an engineering disposition unless you have the authority to do so."
+        "en": "Do not prescribe an engineering disposition unless you have the authority to do so.",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        },
+        "fr": "Ne prescrivez pas une disposition d'ingénierie à moins d'en avoir l'autorité."
       },
       {
-        "en": "Keep the original non-conforming condition traceable to its final disposition."
+        "en": "Keep the original non-conforming condition traceable to its final disposition.",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        },
+        "fr": "Garder la condition non conforme initiale retraçable jusqu'à sa disposition finale."
       },
       {
-        "en": "If accept-as-is/use-as-is is proposed, obtain the approval required by the contract and quality procedure."
+        "en": "If accept-as-is/use-as-is is proposed, obtain the approval required by the contract and quality procedure.",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        },
+        "fr": "Si l'acceptation telle quelle/l'utilisation telle quelle est est proposée, obtenez l'approbation requise par le contrat et la procédure de qualité."
       }
     ],
     "commonMistakes": [
       {
-        "en": "Writing the NCR before confirming the requirement"
+        "en": "Writing the NCR before confirming the requirement",
+        "fr": "Écrire à la NCR avant de confirmer l'exigence",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Blaming individuals instead of describing facts"
+        "en": "Blaming individuals instead of describing facts",
+        "fr": "Blâmer les individus au lieu de décrire les faits",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Allowing affected work to be concealed"
+        "en": "Allowing affected work to be concealed",
+        "fr": "Permettre de dissimuler les travaux affectées",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Using 'repair' and 'rework' casually where the project distinguishes them"
+        "en": "Using 'repair' and 'rework' casually where the project distinguishes them",
+        "fr": "Utiliser « réparer » et « reprendre » de façon décontractée là où le projet les distingue",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Closing without disposition approval or verification"
+        "en": "Closing without disposition approval or verification",
+        "fr": "Clôture sans approbation ou vérification de la disposition",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       }
     ],
     "typicalOutputs": [
       {
-        "en": "NCR record"
+        "en": "NCR record",
+        "fr": "Palmarès NCR",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Approved disposition"
+        "en": "Approved disposition",
+        "fr": "Disposition approuvée",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Correction/corrective-action evidence"
+        "en": "Correction/corrective-action evidence",
+        "fr": "Preuves de correction/mesures correctives",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Reinspection record"
+        "en": "Reinspection record",
+        "fr": "Bilan de réinspection",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Formal closure"
+        "en": "Formal closure",
+        "fr": "Fermeture officielle",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       }
     ],
     "relatedProcessIds": [
@@ -1068,148 +2283,333 @@
     "id": "general-qc-corrective-action",
     "sequence": 8,
     "title": {
-      "en": "Corrective Action"
+      "en": "Corrective Action",
+      "fr": "Action corrective",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "summary": {
-      "en": "Implement and verify action that removes the cause or condition associated with a quality problem and prevents or reduces recurrence where required."
+      "en": "Implement and verify action that removes the cause or condition associated with a quality problem and prevents or reduces recurrence where required.",
+      "fr": "Mettre en œuvre et vérifier une action qui élimine la cause ou la condition associée à un problème de qualité et empêche ou réduit la récidive lorsque nécessaire.",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "whenToUse": {
-      "en": "When an NCR, repeated deficiency, audit finding, trend, test failure or other quality event requires formal corrective action."
+      "en": "When an NCR, repeated deficiency, audit finding, trend, test failure or other quality event requires formal corrective action.",
+      "fr": "Lorsqu'un NCR, une déficience répétée, une constatation d'audit, une tendance, un échec d'essai ou tout autre événement de qualité nécessite une action corrective formelle.",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "fieldWorkflow": [
       {
         "sequence": 1,
         "action": {
-          "en": "Define the problem"
+          "en": "Define the problem",
+          "fr": "Définissez le problème",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         },
         "detail": {
-          "en": "State the issue and scope using evidence."
+          "en": "State the issue and scope using evidence.",
+          "fr": "Énoncez la question et la portée à l'aide de preuves.",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         }
       },
       {
         "sequence": 2,
         "action": {
-          "en": "Contain immediate risk"
+          "en": "Contain immediate risk",
+          "fr": "Contenir le risque immédiat",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         },
         "detail": {
-          "en": "Control affected work/material where necessary."
+          "en": "Control affected work/material where necessary.",
+          "fr": "Contrôler le travail ou le matériau ou équipement touché lorsque nécessaire.",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         }
       },
       {
         "sequence": 3,
         "action": {
-          "en": "Determine cause"
+          "en": "Determine cause",
+          "fr": "Déterminer la cause",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         },
         "detail": {
-          "en": "Use an appropriate root-cause method proportional to significance."
+          "en": "Use an appropriate root-cause method proportional to significance.",
+          "fr": "Utiliser une méthode de cause racine proportionnelle à la signification.",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         }
       },
       {
         "sequence": 4,
         "action": {
-          "en": "Define action"
+          "en": "Define action",
+          "fr": "Définir l'action",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         },
         "detail": {
-          "en": "Specify what will correct the condition and, where required, address recurrence."
+          "en": "Specify what will correct the condition and, where required, address recurrence.",
+          "fr": "Spécifier ce qui corrigera la condition et, au besoin, traiter la récurrence.",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         }
       },
       {
         "sequence": 5,
         "action": {
-          "en": "Assign responsibility and due date"
+          "en": "Assign responsibility and due date",
+          "fr": "Attribuez la responsabilité et la date d'échéance",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         },
         "detail": {
-          "en": "Make ownership and timing explicit."
+          "en": "Make ownership and timing explicit.",
+          "fr": "Rendez la propriété et le calendrier explicites.",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         }
       },
       {
         "sequence": 6,
         "action": {
-          "en": "Implement action"
+          "en": "Implement action",
+          "fr": "Mettre en œuvre l'action",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         },
         "detail": {
-          "en": "Complete approved actions and retain evidence."
+          "en": "Complete approved actions and retain evidence.",
+          "fr": "Compléter les actions approuvées et conserver les preuves.",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         }
       },
       {
         "sequence": 7,
         "action": {
-          "en": "Verify effectiveness"
+          "en": "Verify effectiveness",
+          "fr": "Vérifiez l'efficacité",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         },
         "detail": {
-          "en": "Check that the action worked, not merely that it was performed."
+          "en": "Check that the action worked, not merely that it was performed.",
+          "fr": "Vérifiez que l'action a fonctionné, et pas seulement qu'elle a été effectuée.",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         }
       },
       {
         "sequence": 8,
         "action": {
-          "en": "Close"
+          "en": "Close",
+          "fr": "Clôturer",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         },
         "detail": {
-          "en": "Document verification and approval."
+          "en": "Document verification and approval.",
+          "fr": "Vérification et approbation des documents.",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         }
       }
     ],
     "whatToCapture": [
       {
-        "en": "Problem statement and scope"
+        "en": "Problem statement and scope",
+        "fr": "Énoncé du problème et portée",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Containment actions"
+        "en": "Containment actions",
+        "fr": "Actions de confinement",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Cause analysis"
+        "en": "Cause analysis",
+        "fr": "Analyse des causes",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Approved action plan"
+        "en": "Approved action plan",
+        "fr": "Plan d'action approuvé",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Owner/due date"
+        "en": "Owner/due date",
+        "fr": "Propriétaire/date d'échéance",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Implementation evidence"
+        "en": "Implementation evidence",
+        "fr": "Preuves de mise en œuvre",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Effectiveness verification"
+        "en": "Effectiveness verification",
+        "fr": "Vérification de l'efficacité",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       }
     ],
     "keyReminders": [
       {
-        "en": "Correction fixes a detected condition; corrective action may address why it occurred. Follow project terminology."
+        "en": "Correction fixes a detected condition; corrective action may address why it occurred. Follow project terminology.",
+        "fr": "La correction corrige une condition détectée; Des mesures correctives pourraient expliquer pourquoi cela s'est produit. Suivez la terminologie du projet.",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Root-cause depth should match risk/significance."
+        "en": "Root-cause depth should match risk/significance.",
+        "fr": "La profondeur de la cause profonde devrait correspondre au risque/importance.",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Effectiveness verification may require observing later work, not only reviewing a completed form."
+        "en": "Effectiveness verification may require observing later work, not only reviewing a completed form.",
+        "fr": "La vérification de l'efficacité peut nécessiter d'observer un travail ultérieur, et non seulement de revoir un formulaire rempli.",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       }
     ],
     "commonMistakes": [
       {
-        "en": "Calling every repair a root-cause corrective action"
+        "en": "Calling every repair a root-cause corrective action",
+        "fr": "Qualifier toute réparation d'action corrective visant la cause fondamentale",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Choosing a cause without evidence"
+        "en": "Choosing a cause without evidence",
+        "fr": "Choisir une cause sans preuve",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Closing immediately after implementation"
+        "en": "Closing immediately after implementation",
+        "fr": "Fermeture immédiatement après la mise en œuvre",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Actions with no owner or due date"
+        "en": "Actions with no owner or due date",
+        "fr": "Actions sans propriétaire ni date d'échéance",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       }
     ],
     "typicalOutputs": [
       {
-        "en": "Corrective action record"
+        "en": "Corrective action record",
+        "fr": "Bilan d'actions correctives",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Cause analysis"
+        "en": "Cause analysis",
+        "fr": "Analyse des causes",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Implementation evidence"
+        "en": "Implementation evidence",
+        "fr": "Preuves de mise en œuvre",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Effectiveness verification"
+        "en": "Effectiveness verification",
+        "fr": "Vérification de l'efficacité",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       }
     ],
     "relatedProcessIds": [
@@ -1226,130 +2626,290 @@
     "id": "general-qc-reinspection-verification",
     "sequence": 9,
     "title": {
-      "en": "Reinspection & Verification"
+      "en": "Reinspection & Verification",
+      "fr": "Réinspection et vérification",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "summary": {
-      "en": "Confirm that corrected, repaired, reworked or otherwise dispositioned work now satisfies the required condition."
+      "en": "Confirm that corrected, repaired, reworked or otherwise dispositioned work now satisfies the required condition.",
+      "fr": "Confirmez que le travail corrigé, réparé, repris ou autrement remplacé satisfait maintenant la condition requise.",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "whenToUse": {
-      "en": "After deficiency correction, NCR disposition, failed inspection/test, or corrective work requiring verification."
+      "en": "After deficiency correction, NCR disposition, failed inspection/test, or corrective work requiring verification.",
+      "fr": "Après la correction d'une déficience, l'exécution d'une disposition de NCR, un échec d'inspection ou d'essai, ou des travaux correctifs nécessitant une vérification.",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "fieldWorkflow": [
       {
         "sequence": 1,
         "action": {
-          "en": "Review original issue"
+          "en": "Review original issue",
+          "fr": "Revoir le problème original",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         },
         "detail": {
-          "en": "Understand the requirement, condition and approved disposition."
+          "en": "Understand the requirement, condition and approved disposition.",
+          "fr": "Comprendre l'exigence, l'état et la disposition approuvée.",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         }
       },
       {
         "sequence": 2,
         "action": {
-          "en": "Confirm correction is complete"
+          "en": "Confirm correction is complete",
+          "fr": "Confirmez que la correction est terminée",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         },
         "detail": {
-          "en": "Ensure the work is ready for verification."
+          "en": "Ensure the work is ready for verification.",
+          "fr": "Assurez-vous que le travail est prêt pour vérification.",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         }
       },
       {
         "sequence": 3,
         "action": {
-          "en": "Inspect the affected work"
+          "en": "Inspect the affected work",
+          "fr": "Inspectez le travail affecté",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         },
         "detail": {
-          "en": "Verify the correction itself and relevant interfaces."
+          "en": "Verify the correction itself and relevant interfaces.",
+          "fr": "Vérifiez la correction elle-même et les interfaces pertinentes.",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         }
       },
       {
         "sequence": 4,
         "action": {
-          "en": "Repeat measurements/tests where required"
+          "en": "Repeat measurements/tests where required",
+          "fr": "Répétez les mesures/essais lorsque nécessaire",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         },
         "detail": {
-          "en": "Use the same acceptance basis or approved revised basis."
+          "en": "Use the same acceptance basis or approved revised basis.",
+          "fr": "Utilisez la même base d'acceptation ou la base révisée approuvée.",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         }
       },
       {
         "sequence": 5,
         "action": {
-          "en": "Compare with requirements"
+          "en": "Compare with requirements",
+          "fr": "Comparez avec les exigences",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         },
         "detail": {
-          "en": "Determine whether closure criteria are met."
+          "en": "Determine whether closure criteria are met.",
+          "fr": "Déterminez si les critères de clôture sont respectés.",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         }
       },
       {
         "sequence": 6,
         "action": {
-          "en": "Record evidence"
+          "en": "Record evidence",
+          "fr": "Enregistrer les preuves",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         },
         "detail": {
-          "en": "Capture results, photos, measurements and linked records."
+          "en": "Capture results, photos, measurements and linked records.",
+          "fr": "Capturez les résultats, photos, mesures et documents associés.",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         }
       },
       {
         "sequence": 7,
         "action": {
-          "en": "Close or return"
+          "en": "Close or return",
+          "fr": "Clôturer ou retourner pour correction",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         },
         "detail": {
-          "en": "Close only if acceptable; otherwise keep open/escalate."
+          "en": "Close only if acceptable; otherwise keep open/escalate.",
+          "fr": "Clôturer seulement si c'est acceptable; sinon, maintenir le dossier ouvert et faire remonter le problème.",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         }
       }
     ],
     "whatToCapture": [
       {
-        "en": "Original issue/NCR reference"
+        "en": "Original issue/NCR reference",
+        "fr": "Numéro original/référence NCR",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Approved disposition"
+        "en": "Approved disposition",
+        "fr": "Disposition approuvée",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Reinspection date/location"
+        "en": "Reinspection date/location",
+        "fr": "Date/lieu de réinspection",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Measured/observed result"
+        "en": "Measured/observed result",
+        "fr": "Résultat mesuré/observé",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Photos/test results"
+        "en": "Photos/test results",
+        "fr": "Photos/résultats des essais",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Closure status and verifier"
+        "en": "Closure status and verifier",
+        "fr": "Statut de clôture et vérificateur",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       }
     ],
     "keyReminders": [
       {
-        "en": "Reinspection is an independent verification step, not an administrative checkbox."
+        "en": "Reinspection is an independent verification step, not an administrative checkbox.",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        },
+        "fr": "La réinspection est une étape de vérification indépendante, pas une case à cocher administrative."
       },
       {
-        "en": "Verify the whole affected condition where the correction could create secondary issues."
+        "en": "Verify the whole affected condition where the correction could create secondary issues.",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        },
+        "fr": "Vérifiez l'ensemble de l'état affecté où la correction pourrait causer des problèmes secondaires."
       },
       {
-        "en": "Maintain linkage to the original record."
+        "en": "Maintain linkage to the original record.",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        },
+        "fr": "Maintenez le lien avec le dossier original."
       }
     ],
     "commonMistakes": [
       {
-        "en": "Checking only that work was attempted"
+        "en": "Checking only that work was attempted",
+        "fr": "Vérifier seulement que ce travail avait été tenté",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Closing without viewing inaccessible corrected work"
+        "en": "Closing without viewing inaccessible corrected work",
+        "fr": "Fermeture sans voir des travaux corrigés inaccessibles",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Creating a new unrelated record with no link to the original"
+        "en": "Creating a new unrelated record with no link to the original",
+        "fr": "Création d'un nouvel enregistrement non lié sans lien avec l'original",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       }
     ],
     "typicalOutputs": [
       {
-        "en": "Reinspection record"
+        "en": "Reinspection record",
+        "fr": "Bilan de réinspection",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Closure evidence"
+        "en": "Closure evidence",
+        "fr": "Preuves de fermeture",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Updated NCR/deficiency status"
+        "en": "Updated NCR/deficiency status",
+        "fr": "NCR mis à jour/statut de la déficience",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       }
     ],
     "relatedProcessIds": [
@@ -1366,139 +2926,314 @@
     "id": "general-qc-quality-evidence",
     "sequence": 10,
     "title": {
-      "en": "Quality Evidence & Photo Documentation"
+      "en": "Quality Evidence & Photo Documentation",
+      "fr": "Preuves de qualité et documentation photographique",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "summary": {
-      "en": "Create objective, retrievable evidence that shows what was inspected, where, when and against what requirement."
+      "en": "Create objective, retrievable evidence that shows what was inspected, where, when and against what requirement.",
+      "fr": "Créez des preuves objectives et récupérables qui montrent ce qui a été inspecté, où, quand et selon quelles exigences.",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "whenToUse": {
-      "en": "During inspections, tests, receiving, deficiencies/NCRs, corrective work, concealed-work verification and closeout."
+      "en": "During inspections, tests, receiving, deficiencies/NCRs, corrective work, concealed-work verification and closeout.",
+      "fr": "Lors des inspections, essais, réception, déficiences/NCR, travaux correctifs, vérification des travaux dissimulés et clôture.",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "fieldWorkflow": [
       {
         "sequence": 1,
         "action": {
-          "en": "Define what must be proven"
+          "en": "Define what must be proven",
+          "fr": "Définissez ce qui doit être prouvé",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         },
         "detail": {
-          "en": "Know the condition/result the evidence needs to support."
+          "en": "Know the condition/result the evidence needs to support.",
+          "fr": "Connaissez la condition ou le résultat que les preuves doivent soutenir.",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         }
       },
       {
         "sequence": 2,
         "action": {
-          "en": "Capture context"
+          "en": "Capture context",
+          "fr": "Capturez le contexte",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         },
         "detail": {
-          "en": "Take an overview establishing location/orientation."
+          "en": "Take an overview establishing location/orientation.",
+          "fr": "Faites un aperçu en établissant l'emplacement et l'orientation.",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         }
       },
       {
         "sequence": 3,
         "action": {
-          "en": "Capture detail"
+          "en": "Capture detail",
+          "fr": "Capturer les détails",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         },
         "detail": {
-          "en": "Photograph the specific feature, defect, measurement or identification."
+          "en": "Photograph the specific feature, defect, measurement or identification.",
+          "fr": "Photographier la caractéristique, le défaut, la mesure ou l'identification spécifique.",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         }
       },
       {
         "sequence": 4,
         "action": {
-          "en": "Include scale/ID where useful"
+          "en": "Include scale/ID where useful",
+          "fr": "Inclure l'échelle ou l'ID lorsque c'est utile",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         },
         "detail": {
-          "en": "Use measuring device, tag, gridline or element identifier without obscuring the condition."
+          "en": "Use measuring device, tag, gridline or element identifier without obscuring the condition.",
+          "fr": "Utilisez un dispositif de mesure, une étiquette, une ligne de grille ou un identifiant d'élément sans masquer la condition.",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         }
       },
       {
         "sequence": 5,
         "action": {
-          "en": "Record metadata"
+          "en": "Record metadata",
+          "fr": "Métadonnées de l'enregistrement",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         },
         "detail": {
-          "en": "Link date, location, activity and record ID."
+          "en": "Link date, location, activity and record ID.",
+          "fr": "Date du lien, emplacement, activité et ID de l'enregistrement.",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         }
       },
       {
         "sequence": 6,
         "action": {
-          "en": "Add concise notes"
+          "en": "Add concise notes",
+          "fr": "Ajoutez des notes concises",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         },
         "detail": {
-          "en": "Describe what the image demonstrates."
+          "en": "Describe what the image demonstrates.",
+          "fr": "Décrivez ce que l'image démontre.",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         }
       },
       {
         "sequence": 7,
         "action": {
-          "en": "Store and link"
+          "en": "Store and link",
+          "fr": "Stockez et liez",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         },
         "detail": {
-          "en": "Place evidence in the approved system and connect it to the relevant record."
+          "en": "Place evidence in the approved system and connect it to the relevant record.",
+          "fr": "Placez des preuves dans le système approuvé et reliez-les au dossier pertinent.",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         }
       }
     ],
     "whatToCapture": [
       {
-        "en": "Overview and detail photos"
+        "en": "Overview and detail photos",
+        "fr": "Aperçu et photos détaillées",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Location/grid/room/element ID"
+        "en": "Location/grid/room/element ID",
+        "fr": "Identificateur de localisation/grille/pièce/élément",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Date/time if required"
+        "en": "Date/time if required",
+        "fr": "Date et heure si nécessaire",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Measurement/result shown"
+        "en": "Measurement/result shown",
+        "fr": "Mesure/résultat affiché",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Associated inspection/NCR/test/material record"
+        "en": "Associated inspection/NCR/test/material record",
+        "fr": "Dossier d'inspection, de NCR, d'essai ou de matériau associé",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Concise factual caption"
+        "en": "Concise factual caption",
+        "fr": "Légende factuelle concise",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       }
     ],
     "keyReminders": [
       {
-        "en": "A photo without context may prove very little."
+        "en": "A photo without context may prove very little.",
+        "fr": "Une photo sans contexte peut prouver très peu.",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Capture evidence before concealment or correction when possible."
+        "en": "Capture evidence before concealment or correction when possible.",
+        "fr": "Capturez les preuves avant de les dissimuler ou de les corriger lorsque possible.",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Do not rely on photos alone when a measurement/test record is required."
+        "en": "Do not rely on photos alone when a measurement/test record is required.",
+        "fr": "Ne vous fiez pas uniquement aux photos lorsqu'un enregistrement de mesure ou de test est requis.",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Follow project privacy/security rules when people, sensitive assets or restricted information may appear."
+        "en": "Follow project privacy/security rules when people, sensitive assets or restricted information may appear.",
+        "fr": "Respectez les règles de confidentialité/sécurité du projet lorsque des personnes, des actifs sensibles ou des informations restreintes peuvent apparaître.",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       }
     ],
     "commonMistakes": [
       {
-        "en": "Only close-up photos with no location context"
+        "en": "Only close-up photos with no location context",
+        "fr": "Seulement des photos en gros plan sans contexte d'emplacement",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Blurry or dark images"
+        "en": "Blurry or dark images",
+        "fr": "Images floues ou sombres",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "No caption or record linkage"
+        "en": "No caption or record linkage",
+        "fr": "Aucun lien entre légendes ou enregistrements",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Photographing a tape measure at an unreadable angle"
+        "en": "Photographing a tape measure at an unreadable angle",
+        "fr": "Photographier un mètre ruban à un angle illisible",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Using edited images that obscure original evidence"
+        "en": "Using edited images that obscure original evidence",
+        "fr": "Utilisation d'images éditées qui masquent les preuves originales",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       }
     ],
     "typicalOutputs": [
       {
-        "en": "Photo/evidence record"
+        "en": "Photo/evidence record",
+        "fr": "Dossier photo/preuves",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Linked inspection support"
+        "en": "Linked inspection support",
+        "fr": "Soutien d'inspection lié",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Before/after correction evidence"
+        "en": "Before/after correction evidence",
+        "fr": "Preuves de correction avant/après",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       }
     ],
     "relatedProcessIds": [
@@ -1515,151 +3250,341 @@
     "id": "general-qc-testing-records",
     "sequence": 11,
     "title": {
-      "en": "Testing & Test Records"
+      "en": "Testing & Test Records",
+      "fr": "Essais et dossiers d'essais",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "summary": {
-      "en": "Plan, witness, record and evaluate required quality tests using approved methods and traceable results."
+      "en": "Plan, witness, record and evaluate required quality tests using approved methods and traceable results.",
+      "fr": "Planifier, témoigner, enregistrer et évaluer les essais de qualité requis en utilisant des méthodes approuvées et des résultats traçables.",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "whenToUse": {
-      "en": "When specifications, codes, ITPs or procedures require testing of materials, systems or completed work."
+      "en": "When specifications, codes, ITPs or procedures require testing of materials, systems or completed work.",
+      "fr": "Lorsque les spécifications, codes, ITP ou procédures exigent des essais de matériaux, de systèmes ou de travaux achevés.",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "fieldWorkflow": [
       {
         "sequence": 1,
         "action": {
-          "en": "Confirm test requirement"
+          "en": "Confirm test requirement",
+          "fr": "Confirmez l'exigence du test",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         },
         "detail": {
-          "en": "Identify method, frequency, sample/location and acceptance criteria."
+          "en": "Identify method, frequency, sample/location and acceptance criteria.",
+          "fr": "Identifiez la méthode, la fréquence, l'échantillon/emplacement et les critères d'acceptation.",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         }
       },
       {
         "sequence": 2,
         "action": {
-          "en": "Verify readiness"
+          "en": "Verify readiness",
+          "fr": "Vérifiez la préparation",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         },
         "detail": {
-          "en": "Confirm test area/material, equipment and prerequisites."
+          "en": "Confirm test area/material, equipment and prerequisites.",
+          "fr": "Confirmez la zone ou matériau, l'équipement et les prérequis.",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         }
       },
       {
         "sequence": 3,
         "action": {
-          "en": "Verify test resources"
+          "en": "Verify test resources",
+          "fr": "Vérifiez les ressources d'essai",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         },
         "detail": {
-          "en": "Check qualified personnel/laboratory and calibration/certification where required."
+          "en": "Check qualified personnel/laboratory and calibration/certification where required.",
+          "fr": "Vérifiez le personnel/laboratoire qualifié et l'étalonnage/certification si nécessaire.",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         }
       },
       {
         "sequence": 4,
         "action": {
-          "en": "Identify sample/test"
+          "en": "Identify sample/test",
+          "fr": "Identifier l'échantillon/test",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         },
         "detail": {
-          "en": "Assign traceable sample, location or equipment identification."
+          "en": "Assign traceable sample, location or equipment identification.",
+          "fr": "Assigner l'échantillon, l'emplacement ou l'identification de l'équipement traçable.",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         }
       },
       {
         "sequence": 5,
         "action": {
-          "en": "Perform or witness test"
+          "en": "Perform or witness test",
+          "fr": "Effectuer ou tester comme témoin",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         },
         "detail": {
-          "en": "Follow approved method and record actual results."
+          "en": "Follow approved method and record actual results.",
+          "fr": "Suivre la méthode approuvée et enregistrer les résultats réels.",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         }
       },
       {
         "sequence": 6,
         "action": {
-          "en": "Evaluate result"
+          "en": "Evaluate result",
+          "fr": "Évaluer le résultat",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         },
         "detail": {
-          "en": "Compare against acceptance criteria."
+          "en": "Compare against acceptance criteria.",
+          "fr": "Comparer avec les critères d'acceptation.",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         }
       },
       {
         "sequence": 7,
         "action": {
-          "en": "Control failures"
+          "en": "Control failures",
+          "fr": "Défaillances de contrôle",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         },
         "detail": {
-          "en": "Notify and initiate required deficiency/NCR/retest process."
+          "en": "Notify and initiate required deficiency/NCR/retest process.",
+          "fr": "Aviser et initier le processus requis de déficience/NCR/retest.",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         }
       },
       {
         "sequence": 8,
         "action": {
-          "en": "File final record"
+          "en": "File final record",
+          "fr": "Déposer le dossier final",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         },
         "detail": {
-          "en": "Link signed report and supporting evidence to the work."
+          "en": "Link signed report and supporting evidence to the work.",
+          "fr": "Lier le rapport signé et les preuves à l'appui de l'ouvrage.",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         }
       }
     ],
     "whatToCapture": [
       {
-        "en": "Test type/method"
+        "en": "Test type/method",
+        "fr": "Type/méthode de test",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Location/sample ID"
+        "en": "Location/sample ID",
+        "fr": "Localisation/identifiant d'échantillon",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Date/time"
+        "en": "Date/time",
+        "fr": "Date/heure",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Equipment ID/calibration where required"
+        "en": "Equipment ID/calibration where required",
+        "fr": "Identification/calibration de l'équipement lorsque nécessaire",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Actual results and units"
+        "en": "Actual results and units",
+        "fr": "Résultats réels et unités",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Acceptance criteria"
+        "en": "Acceptance criteria",
+        "fr": "Critères d'acceptation",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Technician/lab/witness"
+        "en": "Technician/lab/witness",
+        "fr": "Technicien/laboratoire/témoin",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Failure/retest links"
+        "en": "Failure/retest links",
+        "fr": "Liens de défaillance/retest",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       }
     ],
     "keyReminders": [
       {
-        "en": "Record actual test values, not just 'pass'."
+        "en": "Record actual test values, not just 'pass'.",
+        "fr": "Note les valeurs réelles du test, pas juste « réussi ».",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "A retest does not erase the original failed result."
+        "en": "A retest does not erase the original failed result.",
+        "fr": "Un retest n'efface pas le résultat initial échoué.",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Confirm sampling frequency and location requirements before work advances."
+        "en": "Confirm sampling frequency and location requirements before work advances.",
+        "fr": "Confirmez les exigences en fréquence d'échantillonnage et en localisation avant que les travaux avancent.",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       }
     ],
     "commonMistakes": [
       {
-        "en": "Missing sample location"
+        "en": "Missing sample location",
+        "fr": "Emplacement manquant de l'échantillon",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "No calibration traceability"
+        "en": "No calibration traceability",
+        "fr": "Aucune traçabilité d'étalonnage",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Discarding failed results after a passing retest"
+        "en": "Discarding failed results after a passing retest",
+        "fr": "Défausse des résultats non conformes après un retest réussi",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Using wrong units or acceptance criteria"
+        "en": "Using wrong units or acceptance criteria",
+        "fr": "Utiliser des unités ou des critères d'acceptation incorrects",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       }
     ],
     "typicalOutputs": [
       {
-        "en": "Test report"
+        "en": "Test report",
+        "fr": "Rapport d'essai",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Laboratory certificate/report where applicable"
+        "en": "Laboratory certificate/report where applicable",
+        "fr": "Certificat/rapport de laboratoire, le cas échéant",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Failure/NCR/retest record"
+        "en": "Failure/NCR/retest record",
+        "fr": "Échec/NCR/dossier de retest",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Acceptance evidence"
+        "en": "Acceptance evidence",
+        "fr": "Preuves d'acceptation",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       }
     ],
     "relatedProcessIds": [
@@ -1676,148 +3601,333 @@
     "id": "general-qc-material-receiving",
     "sequence": 12,
     "title": {
-      "en": "Material Receiving & Verification"
+      "en": "Material Receiving & Verification",
+      "fr": "Réception et vérification des matériaux et équipements",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "summary": {
-      "en": "Verify delivered materials/equipment are correct, approved, undamaged and traceable before incorporation into the work."
+      "en": "Verify delivered materials/equipment are correct, approved, undamaged and traceable before incorporation into the work.",
+      "fr": "Vérifiez que les matériaux/équipements livrés sont corrects, approuvés, intacts et traçables avant de les intégrer à l'ouvrage.",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "whenToUse": {
-      "en": "At delivery, before storage/use, and before installation where receiving verification is required."
+      "en": "At delivery, before storage/use, and before installation where receiving verification is required.",
+      "fr": "À la livraison, avant le stockage/l'utilisation, et avant l'installation lorsque la vérification est requise.",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "fieldWorkflow": [
       {
         "sequence": 1,
         "action": {
-          "en": "Identify delivery"
+          "en": "Identify delivery",
+          "fr": "Identifier la livraison",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         },
         "detail": {
-          "en": "Confirm purchase/submittal/material description and intended use."
+          "en": "Confirm purchase/submittal/material description and intended use.",
+          "fr": "Confirmer la description de l'achat/soumission/du matériau ou de l'équipement et l'utilisation prévue.",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         }
       },
       {
         "sequence": 2,
         "action": {
-          "en": "Verify approval status"
+          "en": "Verify approval status",
+          "fr": "Vérifier le statut d'approbation",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         },
         "detail": {
-          "en": "Check approved submittal/product data and required certifications."
+          "en": "Check approved submittal/product data and required certifications.",
+          "fr": "Vérifier les données de soumission/produit approuvées et les certifications requises.",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         }
       },
       {
         "sequence": 3,
         "action": {
-          "en": "Inspect condition"
+          "en": "Inspect condition",
+          "fr": "Inspectez l'état",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         },
         "detail": {
-          "en": "Look for damage, contamination, deterioration or improper packaging."
+          "en": "Look for damage, contamination, deterioration or improper packaging.",
+          "fr": "Vérifiez s'il y a des dommages, des contaminations, des détériorations ou des emballages inappropriés.",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         }
       },
       {
         "sequence": 4,
         "action": {
-          "en": "Verify identification"
+          "en": "Verify identification",
+          "fr": "Vérifiez l'identification",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         },
         "detail": {
-          "en": "Check manufacturer, model/type, grade, size, heat/batch/lot numbers where applicable."
+          "en": "Check manufacturer, model/type, grade, size, heat/batch/lot numbers where applicable.",
+          "fr": "Vérifiez le fabricant, le modèle/type, la classe, la taille, les numéros de coulée, de lot ou de série lorsque c'est applicable.",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         }
       },
       {
         "sequence": 5,
         "action": {
-          "en": "Review documentation"
+          "en": "Review documentation",
+          "fr": "Vérifiez la documentation",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         },
         "detail": {
-          "en": "Confirm delivery ticket, certificates, test reports and compliance documents."
+          "en": "Confirm delivery ticket, certificates, test reports and compliance documents.",
+          "fr": "Confirmez le billet de livraison, les certificats, les rapports de test et les documents de conformité.",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         }
       },
       {
         "sequence": 6,
         "action": {
-          "en": "Check storage requirements"
+          "en": "Check storage requirements",
+          "fr": "Vérifiez les exigences d'entreposage",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         },
         "detail": {
-          "en": "Protect material from damage or environmental exposure."
+          "en": "Protect material from damage or environmental exposure.",
+          "fr": "Protégez le matériau ou l'équipement contre les dommages ou l'exposition environnementale.",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         }
       },
       {
         "sequence": 7,
         "action": {
-          "en": "Accept, quarantine or reject"
+          "en": "Accept, quarantine or reject",
+          "fr": "Accepter, mettre en quarantaine ou rejeter",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         },
         "detail": {
-          "en": "Apply project controls to nonconforming or unverified material."
+          "en": "Apply project controls to nonconforming or unverified material.",
+          "fr": "Appliquer les contrôles de projet au matériau ou à l'équipement non conforme ou non vérifié.",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         }
       },
       {
         "sequence": 8,
         "action": {
-          "en": "Record traceability"
+          "en": "Record traceability",
+          "fr": "Enregistrer la traçabilité",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         },
         "detail": {
-          "en": "Link material to delivery, lot and installation area where required."
+          "en": "Link material to delivery, lot and installation area where required.",
+          "fr": "Relier le matériau ou l'équipement à la livraison, au lot et à la zone d'installation si nécessaire.",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         }
       }
     ],
     "whatToCapture": [
       {
-        "en": "Supplier/manufacturer"
+        "en": "Supplier/manufacturer",
+        "fr": "Fournisseur/fabricant",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Product/model/grade/size"
+        "en": "Product/model/grade/size",
+        "fr": "Produit/modèle/grade/taille",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Quantity"
+        "en": "Quantity",
+        "fr": "Quantité",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Delivery date/ticket"
+        "en": "Delivery date/ticket",
+        "fr": "Date de livraison/billet",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Lot/batch/heat/serial number where applicable"
+        "en": "Lot/batch/heat/serial number where applicable",
+        "fr": "Numéro de lot, coulée ou série lorsque c'est applicable",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Certificates/test reports"
+        "en": "Certificates/test reports",
+        "fr": "Certificats/rapports d'essai",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Condition photos"
+        "en": "Condition photos",
+        "fr": "Condition photo",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Acceptance/quarantine status"
+        "en": "Acceptance/quarantine status",
+        "fr": "Statut d'acceptation/quarantaine",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       }
     ],
     "keyReminders": [
       {
-        "en": "Approved product does not mean every delivered unit is automatically acceptable."
+        "en": "Approved product does not mean every delivered unit is automatically acceptable.",
+        "fr": "Un produit approuvé ne signifie pas que chaque unité livrée est automatiquement acceptable.",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Preserve identification needed for later traceability."
+        "en": "Preserve identification needed for later traceability.",
+        "fr": "Préserver l'identification nécessaire pour une traçabilité ultérieure.",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Quarantine unverified/nonconforming material according to project procedure."
+        "en": "Quarantine unverified/nonconforming material according to project procedure.",
+        "fr": "Mettre en quarantaine le matériau ou l'équipement non vérifié/non conforme selon la procédure du projet.",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       }
     ],
     "commonMistakes": [
       {
-        "en": "Material installed before approval"
+        "en": "Material installed before approval",
+        "fr": "Matériel installé avant approbation",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Certificates filed without linking them to delivered lots"
+        "en": "Certificates filed without linking them to delivered lots",
+        "fr": "Certificats déposés sans les lier aux lots livrés",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Damaged material accepted because product type is correct"
+        "en": "Damaged material accepted because product type is correct",
+        "fr": "Matériel endommagé accepté parce que le type de produit est correct",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Losing batch/heat identification"
+        "en": "Losing batch/heat identification",
+        "fr": "Perte d'identification par lots/chaleur",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       }
     ],
     "typicalOutputs": [
       {
-        "en": "Receiving inspection record"
+        "en": "Receiving inspection record",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        },
+        "fr": "Enregistrement d'inspection de réception"
       },
       {
-        "en": "Material traceability record"
+        "en": "Material traceability record",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        },
+        "fr": "Dossier de traçabilité des matériaux"
       },
       {
-        "en": "Quarantine/rejection/NCR record if needed"
+        "en": "Quarantine/rejection/NCR record if needed",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        },
+        "fr": "Quarantaine/refus/dossier NCR si nécessaire"
       }
     ],
     "relatedProcessIds": [
@@ -1834,145 +3944,325 @@
     "id": "general-qc-rfi-clarification",
     "sequence": 13,
     "title": {
-      "en": "RFI / Technical Clarification"
+      "en": "RFI / Technical Clarification",
+      "fr": "RFI / Clarification technique",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "summary": {
-      "en": "Obtain an authorized clarification when contract information is missing, conflicting, ambiguous or unsuitable for a reliable field decision."
+      "en": "Obtain an authorized clarification when contract information is missing, conflicting, ambiguous or unsuitable for a reliable field decision.",
+      "fr": "Obtenez une clarification autorisée lorsque des informations contractuelles manquent, sont contradictoires, ambiguës ou inadaptées à une décision fiable sur le terrain.",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "whenToUse": {
-      "en": "When the inspector cannot determine the requirement without interpretation or when documents conflict."
+      "en": "When the inspector cannot determine the requirement without interpretation or when documents conflict.",
+      "fr": "Lorsque l'inspecteur ne peut pas déterminer l'exigence sans interprétation ou lorsque les documents entrent en conflit.",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "fieldWorkflow": [
       {
         "sequence": 1,
         "action": {
-          "en": "Define the question"
+          "en": "Define the question",
+          "fr": "Définissez la question",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         },
         "detail": {
-          "en": "State the exact technical issue and location."
+          "en": "State the exact technical issue and location.",
+          "fr": "Énoncez le problème technique exact et l'emplacement.",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         }
       },
       {
         "sequence": 2,
         "action": {
-          "en": "Research existing information"
+          "en": "Research existing information",
+          "fr": "Renseignez-vous sur les informations existantes",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         },
         "detail": {
-          "en": "Check drawings, specifications, submittals, prior RFIs and changes first."
+          "en": "Check drawings, specifications, submittals, prior RFIs and changes first.",
+          "fr": "Vérifiez d'abord les plans, les spécifications, les documents soumis, les RFI et modifications antérieures.",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         }
       },
       {
         "sequence": 3,
         "action": {
-          "en": "Describe the conflict/gap"
+          "en": "Describe the conflict/gap",
+          "fr": "Décrivez le conflit ou l'écart",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         },
         "detail": {
-          "en": "Reference the affected documents and revisions."
+          "en": "Reference the affected documents and revisions.",
+          "fr": "Référencez les documents et révisions concernés.",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         }
       },
       {
         "sequence": 4,
         "action": {
-          "en": "State field impact"
+          "en": "State field impact",
+          "fr": "Indiquer l'impact sur le terrain",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         },
         "detail": {
-          "en": "Identify work affected, timing or quality risk without overstating."
+          "en": "Identify work affected, timing or quality risk without overstating.",
+          "fr": "Identifier le travail affecté, le calendrier ou le risque de qualité sans exagérer.",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         }
       },
       {
         "sequence": 5,
         "action": {
-          "en": "Submit through approved channel"
+          "en": "Submit through approved channel",
+          "fr": "Soumettre par le canal approuvé",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         },
         "detail": {
-          "en": "Use the project's RFI/clarification process."
+          "en": "Use the project's RFI/clarification process.",
+          "fr": "Utilisez le processus de RFI/clarification du projet.",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         }
       },
       {
         "sequence": 6,
         "action": {
-          "en": "Track response"
+          "en": "Track response",
+          "fr": "Suivre la réponse",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         },
         "detail": {
-          "en": "Do not treat informal discussion as final where formal response is required."
+          "en": "Do not treat informal discussion as final where formal response is required.",
+          "fr": "Ne considérez pas la discussion informelle comme finale lorsque la réponse formelle est requise.",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         }
       },
       {
         "sequence": 7,
         "action": {
-          "en": "Verify implementation"
+          "en": "Verify implementation",
+          "fr": "Vérifier la mise en œuvre",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         },
         "detail": {
-          "en": "Ensure the authorized response is reflected in the work and records."
+          "en": "Ensure the authorized response is reflected in the work and records.",
+          "fr": "Assurez-vous que la réponse autorisée est reflétée dans le travail et les dossiers.",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         }
       },
       {
         "sequence": 8,
         "action": {
-          "en": "Link downstream records"
+          "en": "Link downstream records",
+          "fr": "Relier les dossiers en aval",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         },
         "detail": {
-          "en": "Connect response to inspection/change/as-built documentation."
+          "en": "Connect response to inspection/change/as-built documentation.",
+          "fr": "Associer la réponse aux dossiers d'inspection, de modification et de plans conformes à l'exécution.",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         }
       }
     ],
     "whatToCapture": [
       {
-        "en": "RFI number"
+        "en": "RFI number",
+        "fr": "Numéro RFI",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Location/affected work"
+        "en": "Location/affected work",
+        "fr": "Emplacement/travail affecté",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Referenced documents/revisions"
+        "en": "Referenced documents/revisions",
+        "fr": "Documents/révisions référencés",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Clear question"
+        "en": "Clear question",
+        "fr": "Question claire",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Supporting sketches/photos if useful"
+        "en": "Supporting sketches/photos if useful",
+        "fr": "Croquis ou photos de soutien si utile",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Authorized response"
+        "en": "Authorized response",
+        "fr": "Réponse autorisée",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Related change/revision"
+        "en": "Related change/revision",
+        "fr": "Changement/révision connexe",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       }
     ],
     "keyReminders": [
       {
-        "en": "Ask a focused question; do not write an RFI that hides the actual conflict."
+        "en": "Ask a focused question; do not write an RFI that hides the actual conflict.",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        },
+        "fr": "Posez une question ciblée; ne rédigez pas de RFI qui masque le conflit réel."
       },
       {
-        "en": "An RFI is not automatically authorization to change scope, cost or design."
+        "en": "An RFI is not automatically authorization to change scope, cost or design.",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        },
+        "fr": "Une RFI n'est pas automatiquement une autorisation de changer de portée, de coût ou de conception."
       },
       {
-        "en": "Use the response only within the authority and scope stated."
+        "en": "Use the response only within the authority and scope stated.",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        },
+        "fr": "Utilisez la réponse uniquement dans l'autorité et la portée énoncés."
       }
     ],
     "commonMistakes": [
       {
-        "en": "Submitting before checking available documents"
+        "en": "Submitting before checking available documents",
+        "fr": "Transmettre une RFI avant d'avoir vérifié les documents disponibles",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Suggesting an unapproved design solution as if accepted"
+        "en": "Suggesting an unapproved design solution as if accepted",
+        "fr": "Suggérer une solution de conception non approuvée comme si elle était acceptée",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Proceeding on a verbal answer when formal response is required"
+        "en": "Proceeding on a verbal answer when formal response is required",
+        "fr": "Procéder à une réponse verbale lorsque la réponse formelle est requise",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Failing to link the response to affected inspections"
+        "en": "Failing to link the response to affected inspections",
+        "fr": "Ne pas relier la réponse aux inspections concernées",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       }
     ],
     "typicalOutputs": [
       {
-        "en": "RFI/clarification record"
+        "en": "RFI/clarification record",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        },
+        "fr": "Dossier de RFI/clarification"
       },
       {
-        "en": "Authorized response"
+        "en": "Authorized response",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        },
+        "fr": "Réponse autorisée"
       },
       {
-        "en": "Linked change/revised document where applicable"
+        "en": "Linked change/revised document where applicable",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        },
+        "fr": "Changement lié/document révisé lorsque c'est applicable"
       }
     ],
     "relatedProcessIds": [
@@ -1989,133 +4279,298 @@
     "id": "general-qc-change-document-control",
     "sequence": 14,
     "title": {
-      "en": "Change & Revised Document Control"
+      "en": "Change & Revised Document Control",
+      "fr": "Modification et contrôle révisé des documents",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "summary": {
-      "en": "Ensure field decisions and inspections use the latest authorized information and that changes remain traceable."
+      "en": "Ensure field decisions and inspections use the latest authorized information and that changes remain traceable.",
+      "fr": "Assurez-vous que les décisions sur le terrain et les inspections utilisent les informations autorisées les plus récentes et que les changements restent traçables.",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "whenToUse": {
-      "en": "When drawings, specifications, RFIs, site instructions, change notices, shop drawings or procedures are revised."
+      "en": "When drawings, specifications, RFIs, site instructions, change notices, shop drawings or procedures are revised.",
+      "fr": "Lorsque des dessins, des spécifications, des demandes de renseignements, des instructions de chantier, des avis de modification, des dessins d'atelier ou des procédures sont révisés.",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "fieldWorkflow": [
       {
         "sequence": 1,
         "action": {
-          "en": "Receive authorized revision"
+          "en": "Receive authorized revision",
+          "fr": "Recevoir la révision autorisée",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         },
         "detail": {
-          "en": "Confirm source, status and approval."
+          "en": "Confirm source, status and approval.",
+          "fr": "Confirmer la source, le statut et l'approbation.",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         }
       },
       {
         "sequence": 2,
         "action": {
-          "en": "Identify affected work"
+          "en": "Identify affected work",
+          "fr": "Identifier les travaux affectés",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         },
         "detail": {
-          "en": "Determine systems, locations, inspections and records impacted."
+          "en": "Determine systems, locations, inspections and records impacted.",
+          "fr": "Déterminer les systèmes, emplacements, inspections et dossiers affectés.",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         }
       },
       {
         "sequence": 3,
         "action": {
-          "en": "Withdraw superseded information"
+          "en": "Withdraw superseded information",
+          "fr": "Retirer les informations remplaçantes",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         },
         "detail": {
-          "en": "Prevent unintended field use according to document-control procedure."
+          "en": "Prevent unintended field use according to document-control procedure.",
+          "fr": "Prévenir l'utilisation non intentionnelle du champ selon la procédure de contrôle des documents.",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         }
       },
       {
         "sequence": 4,
         "action": {
-          "en": "Distribute current information"
+          "en": "Distribute current information",
+          "fr": "Distribuez l'information actuelle",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         },
         "detail": {
-          "en": "Ensure relevant teams have access."
+          "en": "Ensure relevant teams have access.",
+          "fr": "Assurez-vous que les équipes concernées y aient accès.",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         }
       },
       {
         "sequence": 5,
         "action": {
-          "en": "Review quality impact"
+          "en": "Review quality impact",
+          "fr": "Revoir l'impact sur la qualité",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         },
         "detail": {
-          "en": "Update inspection criteria, ITPs/checklists or pending inspections where needed."
+          "en": "Update inspection criteria, ITPs/checklists or pending inspections where needed.",
+          "fr": "Mettre à jour les critères d'inspection, les ITP/listes de vérification ou les inspections en attente si nécessaire.",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         }
       },
       {
         "sequence": 6,
         "action": {
-          "en": "Verify field implementation"
+          "en": "Verify field implementation",
+          "fr": "Vérifier la mise en œuvre sur le champ",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         },
         "detail": {
-          "en": "Check work reflects the authorized revision."
+          "en": "Check work reflects the authorized revision.",
+          "fr": "Vérifier que le travail reflète la révision autorisée.",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         }
       },
       {
         "sequence": 7,
         "action": {
-          "en": "Preserve revision history"
+          "en": "Preserve revision history",
+          "fr": "Préserver l'historique des révisions",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         },
         "detail": {
-          "en": "Maintain traceability between old/new documents and affected records."
+          "en": "Maintain traceability between old/new documents and affected records.",
+          "fr": "Maintenir la traçabilité entre les anciens et nouveaux documents et les dossiers affectés.",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         }
       }
     ],
     "whatToCapture": [
       {
-        "en": "Document number/revision/status"
+        "en": "Document number/revision/status",
+        "fr": "Numéro/révision/statut du document",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Date received"
+        "en": "Date received",
+        "fr": "Date de réception",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Affected areas/activities"
+        "en": "Affected areas/activities",
+        "fr": "Zones/activités touchées",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Distribution/acknowledgement where required"
+        "en": "Distribution/acknowledgement where required",
+        "fr": "Distribution/accusé de réception lorsque nécessaire",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Updated inspection records"
+        "en": "Updated inspection records",
+        "fr": "Dossiers d'inspection mis à jour",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Linked RFI/change authorization"
+        "en": "Linked RFI/change authorization",
+        "fr": "RFI/autorisation de modification liée",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       }
     ],
     "keyReminders": [
       {
-        "en": "'Latest file received' is not always 'approved for construction.' Verify status."
+        "en": "'Latest file received' is not always 'approved for construction.' Verify status.",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        },
+        "fr": "« Dernier fichier reçu » n'est pas toujours « approuvé pour construction ». Vérifiez le statut."
       },
       {
-        "en": "Never erase revision history needed to explain earlier inspections."
+        "en": "Never erase revision history needed to explain earlier inspections.",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        },
+        "fr": "Ne jamais effacer l'historique des révisions nécessaires pour expliquer les inspections antérieures."
       },
       {
-        "en": "Revisit completed or ongoing work if a revision has retrospective impact."
+        "en": "Revisit completed or ongoing work if a revision has retrospective impact.",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        },
+        "fr": "Revisitez les travaux terminés ou en cours si une révision a un impact rétrospectif."
       }
     ],
     "commonMistakes": [
       {
-        "en": "Inspecting from a superseded drawing"
+        "en": "Inspecting from a superseded drawing",
+        "fr": "Inspection à partir d'un dessin remplacé",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Deleting old records rather than superseding them"
+        "en": "Deleting old records rather than superseding them",
+        "fr": "Supprimer les anciens dossiers plutôt que de les remplacer",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Assuming an RFI response is a formal drawing revision"
+        "en": "Assuming an RFI response is a formal drawing revision",
+        "fr": "En supposant qu'une réponse RFI soit une révision formelle du dessin",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "No impact review for work already installed"
+        "en": "No impact review for work already installed",
+        "fr": "Aucune évaluation d'impact pour le travail déjà installé",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       }
     ],
     "typicalOutputs": [
       {
-        "en": "Revision/distribution record"
+        "en": "Revision/distribution record",
+        "fr": "Dossier de révision/distribution",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Updated inspection basis"
+        "en": "Updated inspection basis",
+        "fr": "Base d'inspection mise à jour",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Linked change/RFI records"
+        "en": "Linked change/RFI records",
+        "fr": "Enregistrements de changement/RFI liés",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       }
     ],
     "relatedProcessIds": [
@@ -2132,145 +4587,325 @@
     "id": "general-qc-traceability",
     "sequence": 15,
     "title": {
-      "en": "Traceability"
+      "en": "Traceability",
+      "fr": "Traçabilité",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "summary": {
-      "en": "Maintain a defensible chain connecting the installed work to requirements, materials, inspections, tests, issues, approvals and closeout records."
+      "en": "Maintain a defensible chain connecting the installed work to requirements, materials, inspections, tests, issues, approvals and closeout records.",
+      "fr": "Maintenir une chaîne défendable reliant l'ouvrage exécuté aux exigences, matériaux, inspections, essais, problèmes, approbations et registres de clôture.",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "whenToUse": {
-      "en": "Throughout construction, especially for critical materials, concealed work, testing, NCRs and turnover documentation."
+      "en": "Throughout construction, especially for critical materials, concealed work, testing, NCRs and turnover documentation.",
+      "fr": "Tout au long de la construction, surtout pour les matériaux critiques, les travaux cachés, les essais, les NCR et la documentation de remise.",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "fieldWorkflow": [
       {
         "sequence": 1,
         "action": {
-          "en": "Define traceability requirement"
+          "en": "Define traceability requirement",
+          "fr": "Définir l'exigence de traçabilité",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         },
         "detail": {
-          "en": "Know what identifiers and links the project requires."
+          "en": "Know what identifiers and links the project requires.",
+          "fr": "Sachez quels identifiants et liens le projet requiert.",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         }
       },
       {
         "sequence": 2,
         "action": {
-          "en": "Assign/use stable identifiers"
+          "en": "Assign/use stable identifiers",
+          "fr": "Attribuer des identifiants stables",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         },
         "detail": {
-          "en": "Use location, lot, batch, heat, serial, inspection or record IDs."
+          "en": "Use location, lot, batch, heat, serial, inspection or record IDs.",
+          "fr": "Utiliser les identifiants d'emplacement, de lot, de coulée, de série, d'inspection ou de dossier.",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         }
       },
       {
         "sequence": 3,
         "action": {
-          "en": "Link source records"
+          "en": "Link source records",
+          "fr": "Relier les documents sources",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         },
         "detail": {
-          "en": "Connect materials, certificates, submittals and requirements."
+          "en": "Connect materials, certificates, submittals and requirements.",
+          "fr": "Relier les documents, certificats, soumissions et exigences.",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         }
       },
       {
         "sequence": 4,
         "action": {
-          "en": "Link execution records"
+          "en": "Link execution records",
+          "fr": "Relier les dossiers d'exécution",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         },
         "detail": {
-          "en": "Connect inspections, tests, photos and ITP points."
+          "en": "Connect inspections, tests, photos and ITP points.",
+          "fr": "Associer les inspections, les essais, les photographies et les points de l'ITP.",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         }
       },
       {
         "sequence": 5,
         "action": {
-          "en": "Link issues and dispositions"
+          "en": "Link issues and dispositions",
+          "fr": "Relier les problèmes et leurs dispositions",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         },
         "detail": {
-          "en": "Maintain NCR/deficiency/corrective-action linkage."
+          "en": "Maintain NCR/deficiency/corrective-action linkage.",
+          "fr": "Maintenir le lien entre la NCR ou la déficience et l'action corrective.",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         }
       },
       {
         "sequence": 6,
         "action": {
-          "en": "Preserve revisions"
+          "en": "Preserve revisions",
+          "fr": "Conserver les révisions",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         },
         "detail": {
-          "en": "Keep the document basis used at the time of inspection."
+          "en": "Keep the document basis used at the time of inspection.",
+          "fr": "Conserver la base documentaire utilisée au moment de l'inspection.",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         }
       },
       {
         "sequence": 7,
         "action": {
-          "en": "Verify completeness"
+          "en": "Verify completeness",
+          "fr": "Vérifier la complétude",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         },
         "detail": {
-          "en": "Check the chain can be followed without relying on memory."
+          "en": "Check the chain can be followed without relying on memory.",
+          "fr": "Vérifier que la chaîne peut être suivie sans dépendre de la mémoire.",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         }
       },
       {
         "sequence": 8,
         "action": {
-          "en": "Transfer to closeout"
+          "en": "Transfer to closeout",
+          "fr": "Transfert vers clôture",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         },
         "detail": {
-          "en": "Organize records for turnover/retention."
+          "en": "Organize records for turnover/retention.",
+          "fr": "Organiser les dossiers pour le roulement et la rétention.",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         }
       }
     ],
     "whatToCapture": [
       {
-        "en": "Stable record IDs"
+        "en": "Stable record IDs",
+        "fr": "IDs d'enregistrements stables",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Location/asset identifiers"
+        "en": "Location/asset identifiers",
+        "fr": "Identifiants de localisation/actif",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Material batch/heat/serial where required"
+        "en": "Material batch/heat/serial where required",
+        "fr": "Matériau par lots/chaleur/série là où nécessaire",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Document revisions"
+        "en": "Document revisions",
+        "fr": "Document de révision",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Inspection/test references"
+        "en": "Inspection/test references",
+        "fr": "Références d'inspection et essaiss",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Issue/disposition links"
+        "en": "Issue/disposition links",
+        "fr": "Liens avec les dossiers en aval et les décisions de traitement",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Approvals/signatures"
+        "en": "Approvals/signatures",
+        "fr": "Approbations/signatures",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       }
     ],
     "keyReminders": [
       {
-        "en": "A record is traceable only if another person can follow the chain later."
+        "en": "A record is traceable only if another person can follow the chain later.",
+        "fr": "Un dossier n'est traçable que si une autre personne peut suivre la chaîne plus tard.",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Use consistent identifiers across systems."
+        "en": "Use consistent identifiers across systems.",
+        "fr": "Utilisez des identifiants cohérents entre les systèmes.",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Do not depend on filenames alone where metadata/record IDs are available."
+        "en": "Do not depend on filenames alone where metadata/record IDs are available.",
+        "fr": "Ne vous fiez pas uniquement aux noms de fichiers où les métadonnées/identifiants d'enregistrement sont disponibles.",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       }
     ],
     "commonMistakes": [
       {
-        "en": "Photos not linked to an activity"
+        "en": "Photos not linked to an activity",
+        "fr": "Photos non liées à une activité",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Certificates with no installed-location linkage"
+        "en": "Certificates with no installed-location linkage",
+        "fr": "Certificats sans liaison d'emplacement installé",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "NCR closure detached from original inspection"
+        "en": "NCR closure detached from original inspection",
+        "fr": "Clôture de la NCR détachée de l'inspection initiale",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Renaming files in ways that break references"
+        "en": "Renaming files in ways that break references",
+        "fr": "Renommer des fichiers de manière à casser les références",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       }
     ],
     "typicalOutputs": [
       {
-        "en": "Traceability matrix/index where required"
+        "en": "Traceability matrix/index where required",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        },
+        "fr": "Matrice/index de traçabilité lorsque nécessaire"
       },
       {
-        "en": "Linked quality dossier"
+        "en": "Linked quality dossier",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        },
+        "fr": "Dossier de qualité lié"
       },
       {
-        "en": "Complete audit trail"
+        "en": "Complete audit trail",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        },
+        "fr": "Trace d'audit complète"
       }
     ],
     "relatedProcessIds": [
@@ -2287,151 +4922,341 @@
     "id": "general-qc-quality-closeout",
     "sequence": 16,
     "title": {
-      "en": "Quality Closeout"
+      "en": "Quality Closeout",
+      "fr": "Clôture qualité",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "summary": {
-      "en": "Confirm required quality obligations are complete, verified, organized and ready for turnover."
+      "en": "Confirm required quality obligations are complete, verified, organized and ready for turnover.",
+      "fr": "Assurez-vous que les obligations de qualité requises sont remplies, vérifiées, organisées et prêtes à être remises en service.",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "whenToUse": {
-      "en": "At system, area, milestone or project completion and before final quality turnover."
+      "en": "At system, area, milestone or project completion and before final quality turnover.",
+      "fr": "À l'achèvement du système, de la région, du jalon ou du projet et avant le remise finale de la qualité.",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "fieldWorkflow": [
       {
         "sequence": 1,
         "action": {
-          "en": "Define closeout requirements"
+          "en": "Define closeout requirements",
+          "fr": "Définissez les exigences de clôture",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         },
         "detail": {
-          "en": "Review contract, quality plan and turnover checklist."
+          "en": "Review contract, quality plan and turnover checklist.",
+          "fr": "Révisez le contrat, le plan de qualité et la liste de vérification du roulement.",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         }
       },
       {
         "sequence": 2,
         "action": {
-          "en": "Check inspections/tests"
+          "en": "Check inspections/tests",
+          "fr": "Vérifiez les inspections/essais",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         },
         "detail": {
-          "en": "Confirm required records are complete and accepted."
+          "en": "Confirm required records are complete and accepted.",
+          "fr": "Confirmez que les dossiers requis sont complets et acceptés.",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         }
       },
       {
         "sequence": 3,
         "action": {
-          "en": "Resolve open issues"
+          "en": "Resolve open issues",
+          "fr": "Résoudre les enjeux ouverts",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         },
         "detail": {
-          "en": "Close or formally disposition deficiencies, NCRs and corrective actions."
+          "en": "Close or formally disposition deficiencies, NCRs and corrective actions.",
+          "fr": "Fermer ou éliminer formellement les lacunes, les NCR et les mesures correctives.",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         }
       },
       {
         "sequence": 4,
         "action": {
-          "en": "Verify final condition"
+          "en": "Verify final condition",
+          "fr": "Vérifier l'état final",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         },
         "detail": {
-          "en": "Complete final inspections/punch verification as required."
+          "en": "Complete final inspections/punch verification as required.",
+          "fr": "Effectuer les inspections finales et la inspection de la liste de déficiences selon les besoins.",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         }
       },
       {
         "sequence": 5,
         "action": {
-          "en": "Assemble records"
+          "en": "Assemble records",
+          "fr": "Rassembler les dossiers",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         },
         "detail": {
-          "en": "Organize ITPs, inspection reports, test reports, certificates, approvals and evidence."
+          "en": "Organize ITPs, inspection reports, test reports, certificates, approvals and evidence.",
+          "fr": "Organiser les ITP, les rapports d'inspection, les rapports d'essais, les certificats, les approbations et les preuves.",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         }
       },
       {
         "sequence": 6,
         "action": {
-          "en": "Check traceability"
+          "en": "Check traceability",
+          "fr": "Vérifiez la traçabilité",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         },
         "detail": {
-          "en": "Confirm records can be linked to systems/areas/assets."
+          "en": "Confirm records can be linked to systems/areas/assets.",
+          "fr": "Confirmez que les dossiers peuvent être liés aux systèmes/zones/actifs.",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         }
       },
       {
         "sequence": 7,
         "action": {
-          "en": "Verify document status"
+          "en": "Verify document status",
+          "fr": "Vérifier l'état documentaire",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         },
         "detail": {
-          "en": "Ensure final/as-built/O&M/commissioning interfaces are coordinated where within QC scope."
+          "en": "Ensure final/as-built/O&M/commissioning interfaces are coordinated where within QC scope.",
+          "fr": "S'assurer que les dossiers finaux, les plans conformes à l'exécution, les documents d'exploitation et d'entretien ainsi que la mise en service sont coordonnés dans le processus qualité.",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         }
       },
       {
         "sequence": 8,
         "action": {
-          "en": "Complete turnover"
+          "en": "Complete turnover",
+          "fr": "Rotation complète",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         },
         "detail": {
-          "en": "Obtain required reviews, approvals and retention/hand-off."
+          "en": "Obtain required reviews, approvals and retention/hand-off.",
+          "fr": "Obtenir les révisions, approbations et rétention/remise requises.",
+          "status": {
+            "en": "validated",
+            "fr": "validated"
+          }
         }
       }
     ],
     "whatToCapture": [
       {
-        "en": "Closeout checklist"
+        "en": "Closeout checklist",
+        "fr": "Liste de contrôle des clôtures",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Open-item status"
+        "en": "Open-item status",
+        "fr": "Statut d'article ouvert",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Final inspection records"
+        "en": "Final inspection records",
+        "fr": "Dossiers d'inspection finale",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "NCR/deficiency closure"
+        "en": "NCR/deficiency closure",
+        "fr": "NCR/fermeture des déficiences",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Test/certificate dossier"
+        "en": "Test/certificate dossier",
+        "fr": "Dossier test/certificat",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Material records"
+        "en": "Material records",
+        "fr": "Dossiers relatifs aux matériaux",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Traceability index"
+        "en": "Traceability index",
+        "fr": "Indice de traçabilité",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Required turnover approvals"
+        "en": "Required turnover approvals",
+        "fr": "Autorisations requises pour le remise",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       }
     ],
     "keyReminders": [
       {
-        "en": "Closeout begins during construction, not at the end."
+        "en": "Closeout begins during construction, not at the end.",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        },
+        "fr": "La clôture commence pendant la construction, pas à la fin."
       },
       {
-        "en": "Do not hide unresolved items to make the dossier appear complete."
+        "en": "Do not hide unresolved items to make the dossier appear complete.",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        },
+        "fr": "Ne cachez pas les éléments non résolus pour faire paraître le dossier complet."
       },
       {
-        "en": "Verify completeness and retrievability, not merely file count."
+        "en": "Verify completeness and retrievability, not merely file count.",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        },
+        "fr": "Vérifiez l'exhaustivité et la récupérabilité, pas seulement le nombre de fichiers."
       }
     ],
     "commonMistakes": [
       {
-        "en": "Waiting until project end to organize records"
+        "en": "Waiting until project end to organize records",
+        "fr": "Attendre la fin du projet pour organiser les dossiers",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Missing signatures/revisions"
+        "en": "Missing signatures/revisions",
+        "fr": "Signatures/révisions manquantes",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Open NCRs buried in turnover files"
+        "en": "Open NCRs buried in turnover files",
+        "fr": "Dissimuler des NCR ouvertes dans les dossiers de remise",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Duplicate/uncontrolled records with unclear final status"
+        "en": "Duplicate/uncontrolled records with unclear final status",
+        "fr": "Dossiers en double/non contrôlés avec un statut final incertain",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       }
     ],
     "typicalOutputs": [
       {
-        "en": "Quality turnover dossier"
+        "en": "Quality turnover dossier",
+        "fr": "Dossier de rotation de qualité",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Final quality status"
+        "en": "Final quality status",
+        "fr": "État final de la qualité",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Closed issue register"
+        "en": "Closed issue register",
+        "fr": "Registre de clôture",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       },
       {
-        "en": "Traceable retained records"
+        "en": "Traceable retained records",
+        "fr": "Dossiers conservés traçables",
+        "status": {
+          "en": "validated",
+          "fr": "validated"
+        }
       }
     ],
     "relatedProcessIds": [

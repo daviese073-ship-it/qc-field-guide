@@ -37,6 +37,22 @@ const firstText = (blocks: NonNullable<unknown>) => {
     .trim();
 };
 
+const blockTextItems = (blocks: NonNullable<unknown>) => {
+  const typedBlocks = blocks as readonly {
+    type: string;
+    item?: { text?: { en: string } };
+    items?: readonly { text: { en: string } }[];
+  }[];
+
+  return typedBlocks.flatMap((block) => {
+    if (block.items) {
+      return block.items.map((item) => item.text.en);
+    }
+
+    return block.item?.text?.en ? [block.item.text.en] : [];
+  });
+};
+
 describe("Activity Quick / Full / Learn interface", () => {
   beforeEach(() => {
     localStorage.clear();
@@ -111,14 +127,14 @@ describe("Activity Quick / Full / Learn interface", () => {
     ).not.toBeInTheDocument();
   });
 
-  it("preserves required Quick visual slots when optional source data is sparse", () => {
+  it("renders required Quick visual slots with imported source-backed content", () => {
     renderRoute("/activity/2.4");
 
     expect(screen.getByTestId("quick-primary-grid")).toBeInTheDocument();
     expect(screen.getAllByTestId("quick-card")).toHaveLength(4);
     expect(screen.getByTestId("quick-do-not-miss")).toBeInTheDocument();
     expect(screen.getByTestId("quick-field-tip")).toHaveTextContent(
-      "Information not available for this activity."
+      "Verify pre-pour quality gate while critical details remain visible and correctable."
     );
     expect(screen.getByTestId("quick-info-panel")).toHaveTextContent("Stage");
     expect(screen.getByTestId("quick-info-panel")).toHaveTextContent(
@@ -127,8 +143,94 @@ describe("Activity Quick / Full / Learn interface", () => {
     expect(screen.getByTestId("quick-info-panel")).toHaveTextContent(
       "Quality Impact"
     );
-    expect(screen.getAllByTestId("quick-unavailable-state").length)
-      .toBeGreaterThan(0);
+  });
+
+  it("keeps multi-item Quick cards compact until expanded", async () => {
+    const user = userEvent.setup();
+    const quickView = productionRegistries.quickViews.getById("2.1");
+    const [firstBefore, secondBefore] = blockTextItems(quickView?.before ?? []);
+    const [, secondInspect] = blockTextItems(quickView?.inspect ?? []);
+
+    renderRoute("/activity/2.1");
+
+    const [beforeCard, inspectCard] = screen.getAllByTestId("quick-card");
+    const quickGrid = screen.getByTestId("quick-primary-grid");
+
+    expect(quickGrid.className).toContain("items-start");
+    expect(beforeCard.className).not.toContain("overflow-hidden");
+    expect(beforeCard.className).not.toContain("h-[160px]");
+    expect(within(beforeCard).getByText(firstBefore)).toBeInTheDocument();
+    expect(
+      within(beforeCard).queryByText(secondBefore)
+    ).not.toBeInTheDocument();
+    expect(
+      within(inspectCard).queryByText(secondInspect)
+    ).not.toBeInTheDocument();
+
+    const expandButton = within(beforeCard).getByRole("button", {
+      name: "Show details"
+    });
+
+    expect(expandButton).toHaveAttribute("aria-expanded", "false");
+
+    await user.click(expandButton);
+
+    expect(expandButton).toHaveAccessibleName("Hide details");
+    expect(expandButton).toHaveAttribute("aria-expanded", "true");
+    expect(within(beforeCard).getByText(secondBefore)).toBeInTheDocument();
+    expect(
+      within(inspectCard).queryByText(secondInspect)
+    ).not.toBeInTheDocument();
+
+    await user.click(expandButton);
+
+    expect(expandButton).toHaveAccessibleName("Show details");
+    expect(
+      within(beforeCard).queryByText(secondBefore)
+    ).not.toBeInTheDocument();
+  });
+
+  it("supports keyboard toggling and localized disclosure labels", async () => {
+    const user = userEvent.setup();
+    const quickView = productionRegistries.quickViews.getById("2.1");
+    const [, secondInspect] = blockTextItems(quickView?.inspect ?? []);
+
+    renderRoute("/activity/2.1");
+
+    const inspectCard = screen.getAllByTestId("quick-card")[1];
+    const expandButton = within(inspectCard).getByRole("button", {
+      name: "Show details"
+    });
+
+    expandButton.focus();
+    await user.keyboard("{Enter}");
+
+    expect(within(inspectCard).getByText(secondInspect)).toBeInTheDocument();
+
+    await user.keyboard(" ");
+
+    expect(
+      within(inspectCard).queryByText(secondInspect)
+    ).not.toBeInTheDocument();
+
+    await user.click(screen.getByRole("button", { name: "FR" }));
+
+    expect(
+      within(inspectCard).getByRole("button", {
+        name: "Afficher les détails"
+      })
+    ).toBeInTheDocument();
+  });
+
+  it("does not render a chevron for a one-sentence Field Tip", () => {
+    renderRoute("/activity/2.1");
+
+    const fieldTip = screen.getByTestId("quick-field-tip");
+
+    expect(fieldTip).toHaveTextContent(
+      "Verify foundation formwork while critical details remain visible and correctable."
+    );
+    expect(within(fieldTip).queryByRole("button")).not.toBeInTheDocument();
   });
 
   it("keeps required right-rail panels available even when a group is empty", () => {
@@ -143,34 +245,37 @@ describe("Activity Quick / Full / Learn interface", () => {
     expect(
       screen.getByRole("heading", { name: "Related Inspections" })
     ).toBeInTheDocument();
-    expect(
-      screen.getByTestId("activity-view-all-unavailable")
-    ).toBeDisabled();
+    expect(screen.getByTestId("activity-view-all-unavailable")).toBeDisabled();
   });
 
   it("maps canonical Full technical content into controlled presentation groups", () => {
     renderRoute("/activity/2.1?mode=full");
 
-    expect(
-      screen.getByRole("tab", { name: "Full" })
-    ).toHaveAttribute("aria-selected", "true");
+    expect(screen.getByRole("tab", { name: "Full" })).toHaveAttribute(
+      "aria-selected",
+      "true"
+    );
     expect(screen.getAllByTestId("full-group-row")).toHaveLength(10);
     expect(screen.getAllByText("Quality Objective").length).toBeGreaterThan(0);
     expect(screen.getByText("Planning & Preparation")).toBeInTheDocument();
     expect(screen.getByText("Acceptance & Closure")).toBeInTheDocument();
     expect(
-      screen.getByText("latest structural foundation drawings;")
-    ).toBeInTheDocument();
+      screen.getAllByText(
+        "Current structural and architectural drawings, specifications, approved shop/temporary-work information, and revisions."
+      ).length
+    ).toBeGreaterThan(0);
   });
 
-  it("preserves all ten fixed Full rows when a group has no mapped source data", () => {
+  it("preserves all ten fixed Full rows with imported source-backed data", () => {
     renderRoute("/activity/2.4?mode=full");
 
     expect(screen.getAllByTestId("full-group-row")).toHaveLength(10);
     expect(screen.getAllByTestId("full-row-number")).toHaveLength(10);
     expect(screen.getAllByTestId("full-row-badge")).toHaveLength(10);
     expect(
-      screen.getAllByText("Information not available for this activity.").length
+      screen.getAllByText(
+        "Prevent concrete placement until every required prerequisite, inspection, hold point, document, and interface is complete and formally released."
+      ).length
     ).toBeGreaterThan(0);
   });
 
@@ -180,13 +285,43 @@ describe("Activity Quick / Full / Learn interface", () => {
     expect(learnContent?.whatIsThis).toBeDefined();
     renderRoute("/activity/2.1?mode=learn");
 
-    expect(screen.getByText("What is Foundation Formwork?")).toBeInTheDocument();
+    expect(
+      screen.getByText("What is Foundation Formwork?")
+    ).toBeInTheDocument();
     expect(
       screen.getAllByText(firstText(learnContent?.whatIsThis ?? [])).length
     ).toBeGreaterThan(0);
     expect(screen.getByText("Key Principles")).toBeInTheDocument();
     expect(screen.getByTestId("learn-sequence")).toBeInTheDocument();
     expect(screen.getAllByTestId("learn-card")).toHaveLength(6);
+  });
+
+  it("shows the first complete Learn card item before expanding remaining items", async () => {
+    const user = userEvent.setup();
+    const learnContent = productionRegistries.learnContent.getById("2.1");
+    const [firstPrinciple, secondPrinciple] = blockTextItems([
+      ...(learnContent?.howGoodWorkLooks ?? []),
+      ...(learnContent?.criticalChecksExplained ?? [])
+    ]);
+
+    renderRoute("/activity/2.1?mode=learn");
+
+    const principlesCard = screen.getAllByTestId("learn-card")[2];
+
+    expect(
+      within(principlesCard).getByText(firstPrinciple)
+    ).toBeInTheDocument();
+    expect(
+      within(principlesCard).queryByText(secondPrinciple)
+    ).not.toBeInTheDocument();
+
+    await user.click(
+      within(principlesCard).getByRole("button", { name: "Show details" })
+    );
+
+    expect(
+      within(principlesCard).getByText(secondPrinciple)
+    ).toBeInTheDocument();
   });
 
   it("preserves the fixed Learn template slots when source data is sparse", () => {
@@ -203,7 +338,11 @@ describe("Activity Quick / Full / Learn interface", () => {
   });
 
   it("keeps the right rail sourced from relationship navigation groups", () => {
-    const model = buildActivityScreenModel(productionRegistries, "2.1", "quick");
+    const model = buildActivityScreenModel(
+      productionRegistries,
+      "2.1",
+      "quick"
+    );
     const before = model.relationshipGroups.find(
       (group) => group.id === "before"
     );
@@ -228,9 +367,9 @@ describe("Activity Quick / Full / Learn interface", () => {
   it("renders workflow and pre-concealment controls only when functional", () => {
     renderRoute("/activity/10.3");
 
-    expect(screen.getByRole("link", { name: /Activity Mode:/i })).toHaveAttribute(
-      "href"
-    );
+    expect(
+      screen.getByRole("link", { name: /Activity Mode:/i })
+    ).toHaveAttribute("href");
     expect(
       screen.getByRole("link", { name: /Pre-Concealment:/i })
     ).toHaveAttribute("href");
@@ -262,6 +401,24 @@ describe("Activity Quick / Full / Learn interface", () => {
     expect(router.state.location.pathname).toBe("/activity/2.1");
     expect(router.state.location.search).toBe("?mode=learn");
     expect(screen.getByTestId("activity-id")).toHaveTextContent("2.1");
+  });
+
+  it("provides a section Back button consistently in Quick, Full, and Learn", async () => {
+    for (const mode of ["quick", "full", "learn"] as const) {
+      const user = userEvent.setup();
+      const { router, unmount } = renderRoute(
+        mode === "quick" ? "/activity/2.1" : `/activity/2.1?mode=${mode}`
+      );
+
+      const backButton = screen.getByTestId("activity-back-button");
+
+      expect(backButton).toHaveAccessibleName("Back to Substructure");
+
+      await user.click(backButton);
+
+      expect(router.state.location.pathname).toBe("/section/2");
+      unmount();
+    }
   });
 
   it("uses different approved system accents for activities in different sections", () => {

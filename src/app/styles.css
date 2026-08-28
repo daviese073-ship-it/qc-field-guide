@@ -6,6 +6,7 @@
   --qcfg-surface-page: #f6f6fa;
   --qcfg-surface-page-glow: rgba(226, 232, 255, 0.44);
   --qcfg-surface-main: #f6f6fa;
+  --qcfg-interface-tint: #f6f6fa;
   --qcfg-surface-secondary: #eef4fb;
   --qcfg-surface-card: rgba(255, 255, 255, 0.94);
   --qcfg-surface-card-hover: #f8fbff;
@@ -106,7 +107,52 @@ a {
   }
 
   .qcfg-main-surface {
-    background: var(--qcfg-surface-main);
+    background:
+      radial-gradient(
+        circle at 28% 0%,
+        color-mix(in srgb, var(--qcfg-interface-tint) 74%, transparent),
+        transparent 38%
+      ),
+      linear-gradient(
+        135deg,
+        var(--qcfg-interface-tint) 0%,
+        #fff 58%,
+        #f8fafc 100%
+      );
+  }
+
+  .qcfg-page-home {
+    --qcfg-interface-tint: color-mix(in srgb, #f7c931 15%, white);
+  }
+
+  .qcfg-page-general-qc {
+    --qcfg-interface-tint: color-mix(in srgb, #f97316 15%, white);
+  }
+
+  .qcfg-page-search {
+    --qcfg-interface-tint: color-mix(in srgb, #2563eb 15%, white);
+  }
+
+  .qcfg-page-terminology {
+    --qcfg-interface-tint: color-mix(in srgb, #0891b2 15%, white);
+  }
+
+  .qcfg-page-gate {
+    --qcfg-interface-tint: color-mix(in srgb, #047857 15%, white);
+  }
+
+  .qcfg-global-search-input::-webkit-search-cancel-button {
+    cursor: pointer;
+  }
+
+  .qcfg-global-search-input:focus,
+  .qcfg-global-search-input:focus-visible {
+    outline: none;
+    box-shadow: none;
+  }
+
+  .qcfg-global-search-form:focus-within {
+    outline: none;
   }
 
   .qcfg-card {
@@ -179,89 +225,164 @@ a {
     --qcfg-system-accent: #138a5b;
     --qcfg-system-surface: #e5f6ee;
     --qcfg-system-border: #a7dac3;
+    --qcfg-interface-tint: color-mix(
+      in srgb,
+      var(--qcfg-system-accent) 15%,
+      white
+    );
   }
 
   .qcfg-system-substructure {
     --qcfg-system-accent: #2563eb;
     --qcfg-system-surface: #e7efff;
     --qcfg-system-border: #aac4ff;
+    --qcfg-interface-tint: color-mix(
+      in srgb,
+      var(--qcfg-system-accent) 15%,
+      white
+    );
   }
 
   .qcfg-system-superstructure {
     --qcfg-system-accent: #7048d8;
     --qcfg-system-surface: #eee8ff;
     --qcfg-system-border: #c9b8ff;
+    --qcfg-interface-tint: color-mix(
+      in srgb,
+      var(--qcfg-system-accent) 15%,
+      white
+    );
   }
 
   .qcfg-system-envelope {
     --qcfg-system-accent: #0f9a9a;
     --qcfg-system-surface: #e0f7f5;
     --qcfg-system-border: #9bded9;
+    --qcfg-interface-tint: color-mix(
+      in srgb,
+      var(--qcfg-system-accent) 15%,
+      white
+    );
   }
 
   .qcfg-system-roofing {
     --qcfg-system-accent: #f97316;
     --qcfg-system-surface: #fff0e1;
     --qcfg-system-border: #ffc28a;
+    --qcfg-interface-tint: color-mix(
+      in srgb,
+      var(--qcfg-system-accent) 15%,
+      white
+    );
   }
 
   .qcfg-system-interiors {
     --qcfg-system-accent: #7e22ce;
     --qcfg-system-surface: #f4eaff;
     --qcfg-system-border: #d2b4f4;
+    --qcfg-interface-tint: color-mix(
+      in srgb,
+      var(--qcfg-system-accent) 15%,
+      white
+    );
   }
 
   .qcfg-system-finishes {
     --qcfg-system-accent: #c026d3;
     --qcfg-system-surface: #fbe7fd;
     --qcfg-system-border: #eda8f3;
+    --qcfg-interface-tint: color-mix(
+      in srgb,
+      var(--qcfg-system-accent) 15%,
+      white
+    );
   }
 
   .qcfg-system-mechanical {
     --qcfg-system-accent: #2563eb;
     --qcfg-system-surface: #e7efff;
     --qcfg-system-border: #a8c4ff;
+    --qcfg-interface-tint: color-mix(
+      in srgb,
+      var(--qcfg-system-accent) 15%,
+      white
+    );
   }
 
   .qcfg-system-electrical {
     --qcfg-system-accent: #d97706;
     --qcfg-system-surface: #fff2d7;
     --qcfg-system-border: #f5c76c;
+    --qcfg-interface-tint: color-mix(
+      in srgb,
+      var(--qcfg-system-accent) 15%,
+      white
+    );
   }
 
   .qcfg-system-fire {
     --qcfg-system-accent: #dc2626;
     --qcfg-system-surface: #fde7e7;
     --qcfg-system-border: #f5a6a6;
+    --qcfg-interface-tint: color-mix(
+      in srgb,
+      var(--qcfg-system-accent) 15%,
+      white
+    );
   }
 
   .qcfg-system-interfaces {
     --qcfg-system-accent: #0891b2;
     --qcfg-system-surface: #e3f7fb;
     --qcfg-system-border: #99dcea;
+    --qcfg-interface-tint: color-mix(
+      in srgb,
+      var(--qcfg-system-accent) 15%,
+      white
+    );
   }
 
   .qcfg-system-external {
     --qcfg-system-accent: #16a34a;
     --qcfg-system-surface: #e8f7ea;
     --qcfg-system-border: #a7d9b9;
+    --qcfg-interface-tint: color-mix(
+      in srgb,
+      var(--qcfg-system-accent) 15%,
+      white
+    );
   }
 
   .qcfg-system-testing {
     --qcfg-system-accent: #3159d8;
     --qcfg-system-surface: #e8edff;
     --qcfg-system-border: #aec8ff;
+    --qcfg-interface-tint: color-mix(
+      in srgb,
+      var(--qcfg-system-accent) 15%,
+      white
+    );
   }
 
   .qcfg-system-closeout {
     --qcfg-system-accent: #52627a;
     --qcfg-system-surface: #edf1f5;
     --qcfg-system-border: #c7d0dc;
+    --qcfg-interface-tint: color-mix(
+      in srgb,
+      var(--qcfg-system-accent) 15%,
+      white
+    );
   }
 
   .qcfg-system-default {
     --qcfg-system-accent: var(--qcfg-status-info);
     --qcfg-system-surface: #e8f0ff;
     --qcfg-system-border: #aec8ff;
+    --qcfg-interface-tint: color-mix(
+      in srgb,
+      var(--qcfg-system-accent) 15%,
+      white
+    );
   }
 }

@@ -1,5 +1,6 @@
 import {
   AlertTriangle,
+  ArrowLeft,
   ArrowRight,
   BookOpen,
   Camera,
@@ -18,12 +19,14 @@ import {
   Target,
   Wrench
 } from "lucide-react";
-import type {
-  ComponentType,
-  ReactNode,
-  SVGProps
-} from "react";
-import { Link, useParams, useSearchParams } from "react-router-dom";
+import type { ComponentType, ReactNode, SVGProps } from "react";
+import { useState } from "react";
+import {
+  Link,
+  useNavigate,
+  useParams,
+  useSearchParams
+} from "react-router-dom";
 
 import { useLanguagePreference } from "@/app/languagePreferenceContext";
 import { productionRegistries } from "@/app/productionAppData";
@@ -166,14 +169,13 @@ const getUiLabel = (
   fallback: string,
   preference: LanguagePreference
 ) =>
-  createUiStringService(productionRegistries).formatUiString(
-    id,
-    preference
-  ) ?? fallback;
+  createUiStringService(productionRegistries).formatUiString(id, preference) ??
+  fallback;
 
 export function ActivityPage() {
   const { activityId = "" } = useParams<{ activityId: string }>();
   const [searchParams] = useSearchParams();
+  const navigate = useNavigate();
   const { preference } = useLanguagePreference();
   const modeParam = searchParams.get("mode");
   const requestedMode = isActivityMode(modeParam) ? modeParam : undefined;
@@ -209,7 +211,11 @@ export function ActivityPage() {
     >
       <div className="grid gap-[18px] min-[1100px]:grid-cols-[minmax(0,1fr)_220px] xl:grid-cols-[minmax(0,1fr)_260px] min-[1440px]:grid-cols-[minmax(0,1fr)_280px]">
         <div className="min-w-0" data-testid="activity-main-column">
-          <ActivityBreadcrumb preference={preference} section={section} />
+          <ActivityBreadcrumb
+            navigate={navigate}
+            preference={preference}
+            section={section}
+          />
 
           <ActivityIdentityCard
             ActivityIcon={ActivityIcon}
@@ -271,41 +277,69 @@ export function ActivityPage() {
 }
 
 function ActivityBreadcrumb({
+  navigate,
   preference,
   section
 }: {
+  navigate: (to: string) => void;
   preference: LanguagePreference;
   section?: Section;
 }) {
+  const backLabel = getUiLabel("UI-NAV-BACK", "Back", preference);
+  const homeLabel = getUiLabel("UI-NAV-HOME", "Home", preference);
+  const backTarget = section
+    ? getCanonicalRoute({ objectType: "section", id: section.id })
+    : "/";
+  const destinationLabel = section
+    ? formatLocalized(section.title, preference)
+    : homeLabel;
+  const isFrench =
+    preference.mode === "fr" ||
+    (preference.mode === "bilingual" && preference.bilingualPrimary === "fr");
+  const backAriaLabel = isFrench
+    ? `${backLabel} à ${destinationLabel}`
+    : `${backLabel} to ${destinationLabel}`;
+
   return (
-    <nav
-      aria-label="Activity breadcrumb"
-      className="flex min-h-5 items-center gap-1.5 text-[12px] font-semibold leading-5 text-[#52617d]"
-      data-testid="activity-breadcrumb"
-    >
-      <Link className="hover:text-[#075fef] hover:underline" to="/">
-        {getUiLabel("UI-NAV-HOME", "Home", preference)}
-      </Link>
-      <span aria-hidden>›</span>
-      <Link
-        className="hover:text-[#075fef] hover:underline"
-        to="/#home-inspection-systems"
+    <div className="flex items-center gap-3">
+      <button
+        aria-label={backAriaLabel}
+        className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-[rgba(15,23,42,0.12)] bg-white text-[#07142e] shadow-[0_2px_8px_rgba(15,23,42,0.08)] transition hover:border-[rgba(15,23,42,0.22)] hover:bg-[#f8fafc] focus-visible:outline-offset-4"
+        data-testid="activity-back-button"
+        onClick={() => navigate(backTarget)}
+        type="button"
       >
-        Browse Systems
-      </Link>
-      {section ? (
-        <>
-          <span aria-hidden>›</span>
-          <Link
-            className="text-[#075fef] hover:underline"
-            to={getCanonicalRoute({ objectType: "section", id: section.id })}
-          >
-            {section.id.padStart(2, "0")}{" "}
-            <LocalizedText preference={preference} value={section.title} />
-          </Link>
-        </>
-      ) : null}
-    </nav>
+        <ArrowLeft className="h-5 w-5" aria-hidden />
+      </button>
+      <nav
+        aria-label="Activity breadcrumb"
+        className="flex min-h-5 items-center gap-1.5 text-[12px] font-semibold leading-5 text-[#52617d]"
+        data-testid="activity-breadcrumb"
+      >
+        <Link className="hover:text-[#075fef] hover:underline" to="/">
+          {homeLabel}
+        </Link>
+        <span aria-hidden>›</span>
+        <Link
+          className="hover:text-[#075fef] hover:underline"
+          to="/#home-inspection-systems"
+        >
+          Browse Systems
+        </Link>
+        {section ? (
+          <>
+            <span aria-hidden>›</span>
+            <Link
+              className="text-[#075fef] hover:underline"
+              to={getCanonicalRoute({ objectType: "section", id: section.id })}
+            >
+              {section.id.padStart(2, "0")}{" "}
+              <LocalizedText preference={preference} value={section.title} />
+            </Link>
+          </>
+        ) : null}
+      </nav>
+    </div>
   );
 }
 
@@ -477,7 +511,9 @@ function ActivityModeStrip({
     full: getUiLabel("UI-MODE-FULL", "Full", preference),
     learn: getUiLabel("UI-MODE-LEARN", "Learn", preference)
   };
-  const orderedModes = modeOrder.filter((mode) => availableModes.includes(mode));
+  const orderedModes = modeOrder.filter((mode) =>
+    availableModes.includes(mode)
+  );
 
   if (orderedModes.length <= 1) return null;
 
@@ -553,7 +589,7 @@ function QuickMode({
       />
 
       <div
-        className="mt-3 grid gap-2 lg:grid-cols-4"
+        className="mt-4 grid items-start gap-3 lg:grid-cols-4"
         data-testid="quick-primary-grid"
       >
         <QuickChecklistCard
@@ -588,7 +624,7 @@ function QuickMode({
 
       <div
         className={classNames(
-          "mt-2 grid gap-2 md:grid-cols-[minmax(0,0.59fr)_minmax(0,0.41fr)]"
+          "mt-3 grid items-start gap-3 md:grid-cols-[minmax(0,0.59fr)_minmax(0,0.41fr)]"
         )}
       >
         <QuickDontMissPanel
@@ -596,7 +632,10 @@ function QuickMode({
           preference={preference}
           title={getUiLabel("UI-QUICK-DONT-MISS", "Do Not Miss", preference)}
         />
-        <QuickFieldTipPanel preference={preference} />
+        <QuickFieldTipPanel
+          fieldTip={quickView.fieldTip}
+          preference={preference}
+        />
       </div>
 
       <QuickInfoPanel
@@ -609,19 +648,13 @@ function QuickMode({
   );
 }
 
-function ModeHeader({
-  subtitle,
-  title
-}: {
-  subtitle: string;
-  title: string;
-}) {
+function ModeHeader({ subtitle, title }: { subtitle: string; title: string }) {
   return (
     <header>
-      <h2 className="text-[13px] font-bold uppercase leading-5 text-[#07142e]">
+      <h2 className="text-[15px] font-bold uppercase leading-6 text-[#07142e]">
         {title}
       </h2>
-      <p className="mt-0.5 text-[11px] font-medium leading-4 text-[#52617d]">
+      <p className="mt-1 text-[13px] font-medium leading-5 text-[#52617d]">
         {subtitle}
       </p>
     </header>
@@ -642,26 +675,44 @@ function QuickChecklistCard({
   tone: ChecklistVisualTone;
 }) {
   const items = blocksToChecklistItems(blocks, preference);
+  const [expanded, setExpanded] = useState(false);
+  const expandable = items.length > 1;
+  const visibleItems = expanded ? items : items.slice(0, 1);
+  const toneClasses = quickToneClass(tone);
 
   return (
     <section
-      className="h-[160px] overflow-hidden rounded-[9px] border border-[rgba(15,23,42,0.11)] bg-white p-[11px]"
+      className={classNames(
+        "min-h-[116px] rounded-[9px] border bg-white p-3 transition-colors duration-150",
+        toneClasses.border,
+        toneClasses.hover
+      )}
       data-testid="quick-card"
     >
-      <h3 className="mb-2 flex items-center gap-1.5 text-[11px] font-bold uppercase leading-4 text-[#07142e]">
-        <span
-          className={classNames(
-            "flex h-[22px] w-[22px] items-center justify-center rounded-[6px]",
-            quickToneClass(tone).soft,
-            quickToneClass(tone).accent
-          )}
-        >
-          <Icon className="h-[15px] w-[15px]" aria-hidden />
+      <h3 className="mb-3 flex items-center justify-between gap-2 text-[13px] font-bold uppercase leading-5 text-[#07142e]">
+        <span className="flex min-w-0 items-center gap-2">
+          <span
+            className={classNames(
+              "flex h-7 w-7 shrink-0 items-center justify-center rounded-[7px]",
+              toneClasses.soft,
+              toneClasses.accent
+            )}
+          >
+            <Icon className="h-4 w-4" aria-hidden />
+          </span>
+          {title}
         </span>
-        {title}
+        {expandable ? (
+          <TileDisclosureButton
+            accentClassName={toneClasses.accent}
+            expanded={expanded}
+            onToggle={() => setExpanded((current) => !current)}
+            preference={preference}
+          />
+        ) : null}
       </h3>
       {items.length ? (
-        <ChecklistTextList items={items} warning={tone === "watch"} />
+        <ChecklistTextList items={visibleItems} warning={tone === "watch"} />
       ) : (
         <UnavailableState
           text={getUiLabel(
@@ -685,18 +736,34 @@ function QuickDontMissPanel({
   title: string;
 }) {
   const items = blocksToChecklistItems(blocks, preference);
+  const [expanded, setExpanded] = useState(false);
+  const expandable = items.length > 1;
+  const visibleItems = expanded ? items : items.slice(0, 1);
 
   return (
     <section
-      className="h-[76px] overflow-hidden rounded-[9px] border border-red-200 bg-red-50/55 p-2.5"
+      className="min-h-[92px] rounded-[9px] border border-red-200 bg-red-50/55 p-3 transition-colors duration-150 hover:border-red-300 hover:bg-red-50"
       data-testid="quick-do-not-miss"
     >
-      <h3 className="mb-2 flex items-center gap-2 text-[11px] font-bold uppercase leading-4 text-[#07142e]">
-        <AlertTriangle className="h-[15px] w-[15px] text-red-600" aria-hidden />
-        {title}
+      <h3 className="mb-3 flex items-center justify-between gap-2 text-[13px] font-bold uppercase leading-5 text-[#07142e]">
+        <span className="flex min-w-0 items-center gap-2">
+          <AlertTriangle
+            className="h-4 w-4 shrink-0 text-red-600"
+            aria-hidden
+          />
+          {title}
+        </span>
+        {expandable ? (
+          <TileDisclosureButton
+            accentClassName="text-red-600"
+            expanded={expanded}
+            onToggle={() => setExpanded((current) => !current)}
+            preference={preference}
+          />
+        ) : null}
       </h3>
       {items.length ? (
-        <ChecklistTextList columns items={items} warning />
+        <ChecklistTextList columns={expanded} items={visibleItems} warning />
       ) : (
         <UnavailableState
           text={getUiLabel(
@@ -711,28 +778,53 @@ function QuickDontMissPanel({
 }
 
 function QuickFieldTipPanel({
+  fieldTip,
   preference
 }: {
+  fieldTip?: LocalizedContent;
   preference: LanguagePreference;
 }) {
+  const [expanded, setExpanded] = useState(false);
+  const text = fieldTip ? formatLocalized(fieldTip, preference) : "";
+  const sentenceParts = splitFirstSentence(text);
+  const expandable = Boolean(sentenceParts.remaining);
+
   return (
     <section
-      className="h-[76px] overflow-hidden rounded-[9px] border border-emerald-200 bg-emerald-50/55 p-2.5"
+      className="min-h-[92px] rounded-[9px] border border-emerald-200 bg-emerald-50/55 p-3 transition-colors duration-150 hover:border-emerald-300 hover:bg-emerald-50"
       data-testid="quick-field-tip"
     >
-      <h3 className="mb-2 flex items-center gap-2 text-[11px] font-bold uppercase leading-4 text-[#07142e]">
-        <Lightbulb className="h-[15px] w-[15px] text-emerald-600" aria-hidden />
-        {getUiLabel(
-          "UI-ACTIVITY-FIELD-TIP",
-          "Field Tip",
-          preference
-        )}
+      <h3 className="mb-3 flex items-center justify-between gap-2 text-[13px] font-bold uppercase leading-5 text-[#07142e]">
+        <span className="flex min-w-0 items-center gap-2">
+          <Lightbulb
+            className="h-4 w-4 shrink-0 text-emerald-600"
+            aria-hidden
+          />
+          {getUiLabel("UI-ACTIVITY-FIELD-TIP", "Field Tip", preference)}
+        </span>
+        {expandable ? (
+          <TileDisclosureButton
+            accentClassName="text-emerald-600"
+            expanded={expanded}
+            onToggle={() => setExpanded((current) => !current)}
+            preference={preference}
+          />
+        ) : null}
       </h3>
-      <p className="text-[11px] font-medium leading-[16px] text-[#52617d]">
-        {getUiLabel(
-          "UI-ACTIVITY-FIELD-TIP-UNAVAILABLE",
-          "Information not available for this activity.",
-          preference
+      <p className="text-[13px] font-medium leading-5 text-[#52617d]">
+        {fieldTip ? (
+          <>
+            {sentenceParts.first}
+            {expanded && sentenceParts.remaining ? (
+              <span className="mt-1 block">{sentenceParts.remaining}</span>
+            ) : null}
+          </>
+        ) : (
+          getUiLabel(
+            "UI-ACTIVITY-FIELD-TIP-UNAVAILABLE",
+            "Information not available for this activity.",
+            preference
+          )
         )}
       </p>
     </section>
@@ -748,37 +840,54 @@ function QuickInfoPanel({
   activity: Activity;
   flags: readonly string[];
   preference: LanguagePreference;
-  quickView: NonNullable<ReturnType<typeof buildActivityScreenModel>["quickView"]>;
+  quickView: NonNullable<
+    ReturnType<typeof buildActivityScreenModel>["quickView"]
+  >;
 }) {
   const metadata = getQuickMetadata(activity, flags, quickView, preference);
+  const objective = activity.qualityObjective
+    ? formatLocalized(activity.qualityObjective, preference)
+    : "";
+  const [expanded, setExpanded] = useState(false);
+  const objectiveParts = splitFirstSentence(objective);
+  const expandable = Boolean(objectiveParts.remaining);
 
   return (
     <section
-      className="mt-3 grid min-h-[80px] gap-3 rounded-[9px] border border-[rgba(15,23,42,0.1)] bg-white p-3 md:grid-cols-[minmax(0,1fr)_300px]"
+      className="mt-4 grid min-h-[96px] gap-4 rounded-[9px] border border-[rgba(15,23,42,0.1)] bg-white p-4 md:grid-cols-[minmax(0,1fr)_300px]"
       data-testid="quick-info-panel"
     >
       <div className="flex gap-3">
         <Info className="mt-0.5 h-5 w-5 shrink-0 text-[#075fef]" aria-hidden />
-        <div>
-          <h3 className="text-[11px] font-bold uppercase leading-4 text-[#07142e]">
-            {getUiLabel(
-              "UI-ACTIVITY-COVERS",
-              "What This Activity Covers",
-              preference
-            )}
-          </h3>
-          {activity.qualityObjective ? (
-            <p className="mt-1.5 line-clamp-2 text-[11px] font-medium leading-[17px] text-[#52617d]">
-              <LocalizedText
-                density="long"
+        <div className="min-w-0 flex-1">
+          <div className="flex items-center justify-between gap-2">
+            <h3 className="text-[13px] font-bold uppercase leading-5 text-[#07142e]">
+              {getUiLabel(
+                "UI-ACTIVITY-COVERS",
+                "What This Activity Covers",
+                preference
+              )}
+            </h3>
+            {expandable ? (
+              <TileDisclosureButton
+                accentClassName="text-[#075fef]"
+                expanded={expanded}
+                onToggle={() => setExpanded((current) => !current)}
                 preference={preference}
-                value={activity.qualityObjective}
               />
+            ) : null}
+          </div>
+          {activity.qualityObjective ? (
+            <p className="mt-2 text-[13px] font-medium leading-5 text-[#52617d]">
+              {objectiveParts.first}
+              {expanded && objectiveParts.remaining ? (
+                <span className="mt-1 block">{objectiveParts.remaining}</span>
+              ) : null}
             </p>
           ) : null}
         </div>
       </div>
-      <dl className="grid grid-cols-3 gap-3 border-t border-[rgba(148,163,184,0.24)] pt-3 text-[10px] md:border-l md:border-t-0 md:pl-4 md:pt-0">
+      <dl className="grid grid-cols-3 gap-3 border-t border-[rgba(148,163,184,0.24)] pt-3 text-[12px] md:border-l md:border-t-0 md:pl-4 md:pt-0">
         {metadata.map((item) => (
           <QuickMeta
             key={item.label}
@@ -828,23 +937,23 @@ function ChecklistTextList({
   return (
     <ul
       className={classNames(
-        "grid gap-x-4 gap-y-0.5",
+        "grid gap-x-4 gap-y-2",
         columns ? "sm:grid-cols-2" : ""
       )}
     >
       {items.map((item, index) => (
         <li
-          className="flex min-w-0 gap-[5px] text-[11px] font-medium leading-[15px] text-[#24365f]"
+          className="flex min-w-0 gap-2 text-[13px] font-medium leading-5 text-[#24365f]"
           key={`${item}-${index}`}
         >
           <span
             className={classNames(
-              "mt-0.5 h-3 w-3 shrink-0 rounded-[3px] border bg-white",
+              "mt-1 h-3.5 w-3.5 shrink-0 rounded-[3px] border bg-white",
               warning ? "border-red-300" : "border-[#cbd5e1]"
             )}
             aria-hidden
           />
-          <span className="min-w-0 truncate">{item}</span>
+          <span className="min-w-0 break-words">{item}</span>
         </li>
       ))}
     </ul>
@@ -854,7 +963,7 @@ function ChecklistTextList({
 function UnavailableState({ text }: { text: string }) {
   return (
     <p
-      className="flex min-h-[42px] items-center text-[11px] font-medium leading-[16px] text-[#64748b]"
+      className="flex min-h-[48px] items-center text-[13px] font-medium leading-5 text-[#64748b]"
       data-testid="quick-unavailable-state"
     >
       {text}
@@ -862,25 +971,19 @@ function UnavailableState({ text }: { text: string }) {
   );
 }
 
-function CompactTextItems({
-  items,
-  maxItems
-}: {
-  items: readonly string[];
-  maxItems: number;
-}) {
+function CompactTextItems({ items }: { items: readonly string[] }) {
   if (items.length === 1) {
     return (
-      <p className="line-clamp-4 text-[10px] font-medium leading-[15px] text-[#24365f]">
+      <p className="text-[13px] font-medium leading-5 text-[#24365f]">
         {items[0]}
       </p>
     );
   }
 
   return (
-    <ul className="space-y-0.5 text-[9.5px] font-medium leading-[14px] text-[#24365f]">
-      {items.slice(0, maxItems).map((item, index) => (
-        <li className="line-clamp-1" key={`${item}-${index}`}>
+    <ul className="space-y-2 text-[13px] font-medium leading-5 text-[#24365f]">
+      {items.map((item, index) => (
+        <li key={`${item}-${index}`}>
           {items.length > 1 ? <span aria-hidden>• </span> : null}
           {item}
         </li>
@@ -901,7 +1004,7 @@ function FullMode({
   return (
     <section
       aria-label="Full activity content"
-      className="overflow-hidden rounded-[10px] border border-[rgba(15,23,42,0.11)] bg-white shadow-[0_2px_6px_rgba(15,23,42,0.035)]"
+      className="rounded-[10px] border border-[rgba(15,23,42,0.11)] bg-white shadow-[0_2px_6px_rgba(15,23,42,0.035)]"
       data-testid="activity-full-mode"
     >
       {groups.map((group, index) => (
@@ -936,10 +1039,10 @@ function FullGroupRow({
       className="group border-b border-[rgba(148,163,184,0.24)] last:border-b-0"
       data-testid="full-group-row"
     >
-      <summary className="grid min-h-[48px] cursor-pointer list-none grid-cols-[22px_minmax(145px,0.72fr)_minmax(160px,1fr)_132px_18px] items-center gap-2.5 px-3 py-1.5 text-[#07142e] transition hover:bg-[#f8fbff] [&::-webkit-details-marker]:hidden max-lg:grid-cols-[22px_minmax(0,1fr)_18px]">
+      <summary className="grid min-h-[64px] cursor-pointer list-none grid-cols-[24px_minmax(145px,0.72fr)_minmax(160px,1fr)_132px_18px] items-center gap-3 px-4 py-3 text-[#07142e] transition hover:bg-[#f8fbff] [&::-webkit-details-marker]:hidden max-lg:grid-cols-[24px_minmax(0,1fr)_18px]">
         <span
           className={classNames(
-            "flex h-[19px] w-[19px] items-center justify-center rounded-full text-[9px] font-bold",
+            "flex h-6 w-6 items-center justify-center rounded-full text-[10px] font-bold",
             group.accentClass
           )}
           data-testid="full-row-number"
@@ -947,16 +1050,16 @@ function FullGroupRow({
           {index + 1}
         </span>
         <span className="min-w-0">
-          <span className="block text-[12px] font-bold leading-4">
+          <span className="block text-[13px] font-bold leading-5">
             {group.title}
           </span>
         </span>
-        <span className="line-clamp-2 text-[10px] font-medium leading-[14px] text-[#52617d] max-lg:hidden">
+        <span className="break-words text-[12px] font-medium leading-5 text-[#52617d] max-lg:hidden">
           {preview}
         </span>
         <span
           className={classNames(
-            "justify-self-end rounded-[6px] px-2 py-1 text-[9px] font-semibold leading-none max-lg:hidden",
+            "justify-self-end rounded-[6px] px-2 py-1 text-[10px] font-semibold leading-4 max-lg:hidden",
             group.badgeClass
           )}
           data-testid="full-row-badge"
@@ -974,12 +1077,12 @@ function FullGroupRow({
           Source-backed content
         </div>
         {availableSources.length ? (
-          <div className="space-y-3 text-[12px] leading-5 text-[#24365f]">
+          <div className="space-y-4 text-[13px] leading-6 text-[#24365f]">
             {availableSources.map((source) =>
               source.value ? (
                 <div key={source.label}>
-                  <h3 className="mb-2 text-[11px] font-bold uppercase tracking-wide text-[#07142e]">
-                  {source.label}
+                  <h3 className="mb-2 text-[12px] font-bold uppercase tracking-wide text-[#07142e]">
+                    {source.label}
                   </h3>
                   {isContentBlockArray(source.value) ? (
                     <ContentBlockRenderer
@@ -988,7 +1091,7 @@ function FullGroupRow({
                       preference={preference}
                     />
                   ) : (
-                    <p className="text-[12px] text-slate-800">
+                    <p className="text-[13px] leading-6 text-slate-800">
                       <LocalizedText
                         density="long"
                         preference={preference}
@@ -1054,7 +1157,7 @@ function LearnMode({
         )}
       />
 
-      <div className="mt-3 grid gap-2 lg:grid-cols-3">
+      <div className="mt-4 grid items-start gap-3 lg:grid-cols-3">
         <LearnCard
           blocks={learnContent.whatIsThis}
           Icon={Target}
@@ -1087,7 +1190,7 @@ function LearnMode({
 
       <LearnSequencePanel items={sequenceItems} preference={preference} />
 
-      <div className="mt-2 grid gap-2 lg:grid-cols-3">
+      <div className="mt-3 grid items-start gap-3 lg:grid-cols-3">
         <LearnRelationshipCard
           interfaces={interfaces}
           preference={preference}
@@ -1131,35 +1234,51 @@ function LearnCard({
   variant?: "standard" | "compact";
 }) {
   const items = blocksToChecklistItems(blocks, preference);
+  const [expanded, setExpanded] = useState(false);
+  const expandable = items.length > 1;
+  const visibleItems = expanded ? items : items.slice(0, 1);
 
   return (
     <section
       className={classNames(
-        "rounded-[9px] border border-[rgba(15,23,42,0.11)] bg-white p-2.5",
-        variant === "compact" ? "min-h-[104px]" : "min-h-[142px]"
+        "rounded-[9px] border border-[rgba(15,23,42,0.11)] bg-white p-3",
+        variant === "compact" ? "min-h-[120px]" : "min-h-[164px]"
       )}
       data-testid="learn-card"
     >
-      <h3 className="mb-2 flex items-center gap-2 text-[10px] font-bold leading-4 text-[#07142e]">
-        <span
-          className={classNames(
-            "flex h-6 w-6 shrink-0 items-center justify-center rounded-full",
-            tone === "blue"
-              ? "bg-blue-50 text-blue-600"
-              : tone === "green"
-                ? "bg-emerald-50 text-emerald-600"
-                : "bg-violet-50 text-violet-600"
-          )}
-        >
-          <Icon className="h-3.5 w-3.5" aria-hidden />
+      <h3 className="mb-3 flex items-center justify-between gap-2 text-[13px] font-bold leading-5 text-[#07142e]">
+        <span className="flex min-w-0 items-center gap-2">
+          <span
+            className={classNames(
+              "flex h-7 w-7 shrink-0 items-center justify-center rounded-full",
+              tone === "blue"
+                ? "bg-blue-50 text-blue-600"
+                : tone === "green"
+                  ? "bg-emerald-50 text-emerald-600"
+                  : "bg-violet-50 text-violet-600"
+            )}
+          >
+            <Icon className="h-4 w-4" aria-hidden />
+          </span>
+          {title}
         </span>
-        {title}
+        {expandable ? (
+          <TileDisclosureButton
+            accentClassName={
+              tone === "blue"
+                ? "text-blue-600"
+                : tone === "green"
+                  ? "text-emerald-600"
+                  : "text-violet-600"
+            }
+            expanded={expanded}
+            onToggle={() => setExpanded((current) => !current)}
+            preference={preference}
+          />
+        ) : null}
       </h3>
       {items.length ? (
-        <CompactTextItems
-          items={items}
-          maxItems={variant === "compact" ? 4 : 6}
-        />
+        <CompactTextItems items={visibleItems} />
       ) : (
         <UnavailableState text={getUnavailableText(preference)} />
       )}
@@ -1180,10 +1299,10 @@ function LearnSequencePanel({
 }) {
   return (
     <section
-      className="mt-2 min-h-[104px] rounded-[9px] border border-[rgba(15,23,42,0.1)] bg-white p-2"
+      className="mt-3 min-h-[120px] rounded-[9px] border border-[rgba(15,23,42,0.1)] bg-white p-3"
       data-testid="learn-sequence"
     >
-      <h3 className="mb-1.5 text-[11px] font-bold leading-5 text-[#07142e]">
+      <h3 className="mb-2 text-[13px] font-bold leading-5 text-[#07142e]">
         {getUiLabel(
           "UI-ACTIVITY-HOW-IT-WORKS",
           "How it works (at a glance)",
@@ -1198,11 +1317,11 @@ function LearnSequencePanel({
               data-testid="learn-sequence-step"
               key={`${item}-${index}`}
             >
-              <div className="flex min-h-[62px] min-w-0 flex-1 flex-col items-center justify-center rounded-[9px] bg-slate-50 px-2 py-1.5 text-center">
-                <span className="mb-1 flex h-7 w-7 items-center justify-center rounded-full bg-blue-50 text-blue-600">
+              <div className="flex min-h-[76px] min-w-0 flex-1 flex-col items-center justify-center rounded-[9px] bg-slate-50 px-2.5 py-2 text-center">
+                <span className="mb-1.5 flex h-8 w-8 items-center justify-center rounded-full bg-blue-50 text-blue-600">
                   <Route className="h-3.5 w-3.5" aria-hidden />
                 </span>
-                <span className="line-clamp-2 text-[9.5px] font-bold leading-[13px] text-[#07142e]">
+                <span className="text-[11px] font-bold leading-4 text-[#07142e]">
                   {item}
                 </span>
               </div>
@@ -1233,26 +1352,40 @@ function LearnRelationshipCard({
   preference: LanguagePreference;
   title: string;
 }) {
+  const [expanded, setExpanded] = useState(false);
+  const expandable = interfaces.length > 1;
+  const visibleInterfaces = expanded ? interfaces : interfaces.slice(0, 1);
+
   return (
     <section
-      className="min-h-[102px] rounded-[9px] border border-[rgba(15,23,42,0.11)] bg-white p-2.5"
+      className="min-h-[120px] rounded-[9px] border border-[rgba(15,23,42,0.11)] bg-white p-3"
       data-testid="learn-card"
     >
-      <h3 className="mb-2 flex items-center gap-2 text-[10px] font-bold leading-4 text-[#07142e]">
-        <span className="flex h-6 w-6 items-center justify-center rounded-full bg-blue-50 text-blue-600">
-          <LinkIcon className="h-3.5 w-3.5" aria-hidden />
+      <h3 className="mb-3 flex items-center justify-between gap-2 text-[13px] font-bold leading-5 text-[#07142e]">
+        <span className="flex min-w-0 items-center gap-2">
+          <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-blue-50 text-blue-600">
+            <LinkIcon className="h-4 w-4" aria-hidden />
+          </span>
+          {title}
         </span>
-        {title}
+        {expandable ? (
+          <TileDisclosureButton
+            accentClassName="text-blue-600"
+            expanded={expanded}
+            onToggle={() => setExpanded((current) => !current)}
+            preference={preference}
+          />
+        ) : null}
       </h3>
       {interfaces.length ? (
-        <ul className="space-y-1">
-          {interfaces.slice(0, 5).map((item) => (
+        <ul className="space-y-2">
+          {visibleInterfaces.map((item) => (
             <li key={item.relationship.id}>
               <Link
-                className="flex items-center justify-between gap-3 text-[10.5px] font-semibold leading-4 text-[#075fef] hover:underline"
+                className="flex items-center justify-between gap-3 text-[12.5px] font-semibold leading-5 text-[#075fef] hover:underline"
                 to={getCanonicalRoute(toRelationshipTarget(item))}
               >
-                <span className="min-w-0 truncate">
+                <span className="min-w-0 break-words">
                   <LocalizedText
                     preference={preference}
                     value={item.relatedNode.object.title}
@@ -1277,25 +1410,35 @@ function TermsCard({
   preference: LanguagePreference;
   terminology: readonly TerminologyConcept[];
 }) {
+  const [expanded, setExpanded] = useState(false);
+  const expandable = terminology.length > 1;
+  const visibleTerms = expanded ? terminology : terminology.slice(0, 1);
+
   return (
     <section
-      className="min-h-[102px] rounded-[9px] border border-[rgba(15,23,42,0.11)] bg-white p-2.5"
+      className="min-h-[120px] rounded-[9px] border border-[rgba(15,23,42,0.11)] bg-white p-3"
       data-testid="learn-card"
     >
-      <h3 className="mb-2 flex items-center gap-2 text-[10px] font-bold leading-4 text-[#07142e]">
-        <span className="flex h-6 w-6 items-center justify-center rounded-full bg-violet-50 text-violet-600">
-          <BookOpen className="h-3.5 w-3.5" aria-hidden />
+      <h3 className="mb-3 flex items-center justify-between gap-2 text-[13px] font-bold leading-5 text-[#07142e]">
+        <span className="flex min-w-0 items-center gap-2">
+          <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-violet-50 text-violet-600">
+            <BookOpen className="h-4 w-4" aria-hidden />
+          </span>
+          {getUiLabel("UI-ACTIVITY-TERMS-TO-KNOW", "Terms to Know", preference)}
         </span>
-        {getUiLabel(
-          "UI-ACTIVITY-TERMS-TO-KNOW",
-          "Terms to Know",
-          preference
-        )}
+        {expandable ? (
+          <TileDisclosureButton
+            accentClassName="text-violet-600"
+            expanded={expanded}
+            onToggle={() => setExpanded((current) => !current)}
+            preference={preference}
+          />
+        ) : null}
       </h3>
       {terminology.length ? (
-        <ul className="space-y-1">
-          {terminology.slice(0, 4).map((term) => (
-            <li className="text-[10.5px] leading-4" key={term.id}>
+        <ul className="space-y-2">
+          {visibleTerms.map((term) => (
+            <li className="text-[12.5px] leading-5" key={term.id}>
               <Link
                 className="font-bold text-[#075fef] hover:underline"
                 to={getCanonicalRoute({ objectType: "term", id: term.id })}
@@ -1303,7 +1446,7 @@ function TermsCard({
                 <LocalizedText preference={preference} value={term.preferred} />
               </Link>
               {term.definition ? (
-                <p className="mt-0.5 line-clamp-1 text-[#52617d]">
+                <p className="mt-1 text-[#52617d]">
                   <LocalizedText
                     density="long"
                     preference={preference}
@@ -1338,13 +1481,19 @@ function ActivityRelationshipRail({
     relationshipGroups.find((group) => group.id === "before")?.items ?? [];
   const after =
     relationshipGroups.find((group) => group.id === "after")?.items ?? [];
-  const relatedSystems = getRelatedSystems(relationshipGroups, currentSectionId);
+  const relatedSystems = getRelatedSystems(
+    relationshipGroups,
+    currentSectionId
+  );
   const relatedInspections = getRelatedInspections(relationshipGroups);
   const directDestinations = [
     ...workflows.map((workflow) => ({
       id: workflow.id,
       title: workflow.title,
-      target: { objectType: "workflow", id: workflow.id } as CanonicalRouteTarget
+      target: {
+        objectType: "workflow",
+        id: workflow.id
+      } as CanonicalRouteTarget
     })),
     ...preConcealment.map((workflow) => ({
       id: workflow.id,
@@ -1501,13 +1650,7 @@ function RailDirectDestinationRow({
   );
 }
 
-function RailCard({
-  children,
-  title
-}: {
-  children: ReactNode;
-  title: string;
-}) {
+function RailCard({ children, title }: { children: ReactNode; title: string }) {
   return (
     <section
       className="rounded-[10px] border border-[rgba(15,23,42,0.11)] bg-white p-3 shadow-[0_2px_6px_rgba(15,23,42,0.035)]"
@@ -1658,7 +1801,10 @@ function getFullPresentationGroups(
       title: getUiLabel("UI-ACTIVITY-FULL-EXECUTION", "Execution", preference),
       sources: [
         { label: "During Inspection", value: activity.inspection?.during },
-        { label: "During Communications", value: activity.communications?.during }
+        {
+          label: "During Communications",
+          value: activity.communications?.during
+        }
       ]
     },
     {
@@ -1735,7 +1881,10 @@ function getFullPresentationGroups(
         { label: "After Inspection", value: activity.inspection?.after },
         { label: "Closure Criteria", value: activity.closureCriteria },
         { label: "Follow-up", value: activity.outputs?.followUp },
-        { label: "After Communications", value: activity.communications?.after },
+        {
+          label: "After Communications",
+          value: activity.communications?.after
+        },
         {
           label: "Specialist Boundary",
           value: activity.specialistBoundary?.text
@@ -1744,11 +1893,10 @@ function getFullPresentationGroups(
     }
   ];
 
-  return groups
-    .map((group, index) => ({
-      ...group,
-      ...fullGroupVisuals[index]
-    }));
+  return groups.map((group, index) => ({
+    ...group,
+    ...fullGroupVisuals[index]
+  }));
 }
 
 function getGroupPreview(
@@ -1772,6 +1920,63 @@ function getUnavailableText(preference: LanguagePreference) {
     "Information not available for this activity.",
     preference
   );
+}
+
+function TileDisclosureButton({
+  accentClassName,
+  expanded,
+  onToggle,
+  preference
+}: {
+  accentClassName: string;
+  expanded: boolean;
+  onToggle: () => void;
+  preference: LanguagePreference;
+}) {
+  return (
+    <button
+      aria-expanded={expanded}
+      aria-label={getDisclosureLabel(preference, expanded)}
+      className={classNames(
+        "flex h-6 w-6 shrink-0 items-center justify-center rounded-full transition duration-150 hover:bg-white/70 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2",
+        accentClassName
+      )}
+      onClick={onToggle}
+      type="button"
+    >
+      <ChevronDown
+        className={classNames(
+          "h-4 w-4 transition-transform duration-150",
+          expanded ? "rotate-180" : null
+        )}
+        aria-hidden
+      />
+    </button>
+  );
+}
+
+function getDisclosureLabel(preference: LanguagePreference, expanded: boolean) {
+  const french =
+    preference.mode === "fr" ||
+    (preference.mode === "bilingual" && preference.bilingualPrimary === "fr");
+
+  if (french) return expanded ? "Masquer les détails" : "Afficher les détails";
+
+  return expanded ? "Hide details" : "Show details";
+}
+
+function splitFirstSentence(value: string) {
+  const normalized = value.trim();
+  if (!normalized) return { first: "", remaining: "" };
+
+  const match = normalized.match(/^([\s\S]*?[.!?])(?:\s+)([\s\S]+)$/);
+
+  if (!match) return { first: normalized, remaining: "" };
+
+  return {
+    first: match[1].trim(),
+    remaining: match[2].trim()
+  };
 }
 
 function getContentPreview(
@@ -1837,20 +2042,42 @@ function splitChecklistText(value: string) {
 function quickToneClass(tone: ChecklistVisualTone) {
   switch (tone) {
     case "before":
-      return { soft: "bg-amber-50", accent: "text-amber-600" };
+      return {
+        soft: "bg-amber-50",
+        accent: "text-amber-600",
+        border: "border-amber-100",
+        hover: "hover:border-amber-300 hover:bg-amber-50/35"
+      };
     case "inspect":
-      return { soft: "bg-emerald-50", accent: "text-emerald-600" };
+      return {
+        soft: "bg-emerald-50",
+        accent: "text-emerald-600",
+        border: "border-emerald-100",
+        hover: "hover:border-emerald-300 hover:bg-emerald-50/35"
+      };
     case "evidence":
-      return { soft: "bg-blue-50", accent: "text-blue-600" };
+      return {
+        soft: "bg-blue-50",
+        accent: "text-blue-600",
+        border: "border-blue-100",
+        hover: "hover:border-blue-300 hover:bg-blue-50/35"
+      };
     case "watch":
-      return { soft: "bg-red-50", accent: "text-red-600" };
+      return {
+        soft: "bg-red-50",
+        accent: "text-red-600",
+        border: "border-red-100",
+        hover: "hover:border-red-300 hover:bg-red-50/35"
+      };
   }
 }
 
 function getQuickMetadata(
   activity: Activity,
   flags: readonly string[],
-  quickView: NonNullable<ReturnType<typeof buildActivityScreenModel>["quickView"]>,
+  quickView: NonNullable<
+    ReturnType<typeof buildActivityScreenModel>["quickView"]
+  >,
   preference: LanguagePreference
 ): readonly QuickMetadataItem[] {
   const unavailable = getUiLabel(
@@ -1911,7 +2138,10 @@ function getQuickMetadata(
   ];
 }
 
-function getFirstMatchingLabel(values: readonly string[], keys: readonly string[]) {
+function getFirstMatchingLabel(
+  values: readonly string[],
+  keys: readonly string[]
+) {
   const key = keys.find((candidate) => values.includes(candidate));
 
   return key ? (flagLabels[key] ?? key) : undefined;

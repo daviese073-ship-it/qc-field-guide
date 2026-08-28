@@ -10,13 +10,12 @@ import {
   Network,
   Search,
   ShieldCheck,
-  Workflow,
-  X
+  Workflow
 } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 import type { ReactNode } from "react";
 import { useEffect, useMemo, useState } from "react";
-import { Link, useNavigate, useSearchParams } from "react-router-dom";
+import { Link, useSearchParams } from "react-router-dom";
 
 import {
   productionRegistries,
@@ -184,15 +183,13 @@ const resultVisuals: Record<
 };
 
 export function SearchPage() {
-  const navigate = useNavigate();
   const [searchParams] = useSearchParams();
   const { preference } = useLanguagePreference();
   const query = searchParams.get("q") ?? "";
   const trimmedQuery = query.trim();
-  const [draftQuery, setDraftQuery] = useState(query);
-  const [selectedTypes, setSelectedTypes] = useState<ReadonlySet<TypeFilterKey>>(
-    () => new Set(allTypeKeys)
-  );
+  const [selectedTypes, setSelectedTypes] = useState<
+    ReadonlySet<TypeFilterKey>
+  >(() => new Set(allTypeKeys));
   const [selectedSections, setSelectedSections] = useState<ReadonlySet<string>>(
     () => new Set()
   );
@@ -202,10 +199,6 @@ export function SearchPage() {
   const [fullyShownGroups, setFullyShownGroups] = useState<ReadonlySet<string>>(
     () => new Set()
   );
-
-  useEffect(() => {
-    setDraftQuery(query);
-  }, [query]);
 
   const baseResults = useMemo(
     () =>
@@ -218,8 +211,14 @@ export function SearchPage() {
     [preference.mode, trimmedQuery]
   );
 
-  const typeCounts = useMemo(() => countByTypeOption(baseResults), [baseResults]);
-  const sectionCounts = useMemo(() => countBySection(baseResults), [baseResults]);
+  const typeCounts = useMemo(
+    () => countByTypeOption(baseResults),
+    [baseResults]
+  );
+  const sectionCounts = useMemo(
+    () => countBySection(baseResults),
+    [baseResults]
+  );
 
   useEffect(() => {
     setSelectedTypes(new Set(allTypeKeys));
@@ -276,13 +275,6 @@ export function SearchPage() {
     [baseResults, preference, trimmedQuery]
   );
 
-  const submitSearch = () => {
-    const nextQuery = draftQuery.trim();
-    navigate(
-      nextQuery ? `/search?q=${encodeURIComponent(nextQuery)}` : "/search"
-    );
-  };
-
   const resetFilters = () => {
     setSelectedTypes(new Set(allTypeKeys));
     setSelectedSections(new Set());
@@ -304,16 +296,6 @@ export function SearchPage() {
 
       <div className="mt-6 grid gap-[22px] min-[1100px]:grid-cols-[minmax(0,1fr)_300px]">
         <div className="min-w-0" data-testid="search-main-column">
-          <SearchForm
-            onClear={() => {
-              setDraftQuery("");
-              navigate("/search");
-            }}
-            onSubmit={submitSearch}
-            query={draftQuery}
-            setQuery={setDraftQuery}
-          />
-
           <SearchSummary
             count={filteredResults.length}
             query={trimmedQuery}
@@ -349,58 +331,6 @@ export function SearchPage() {
         />
       </div>
     </article>
-  );
-}
-
-function SearchForm({
-  onClear,
-  onSubmit,
-  query,
-  setQuery
-}: {
-  onClear: () => void;
-  onSubmit: () => void;
-  query: string;
-  setQuery: (value: string) => void;
-}) {
-  return (
-    <form
-      className="flex min-h-[62px] items-center gap-3 rounded-[11px] border border-[rgba(15,23,42,0.12)] bg-white px-5 shadow-[0_2px_7px_rgba(15,23,42,0.04)]"
-      onSubmit={(event) => {
-        event.preventDefault();
-        onSubmit();
-      }}
-      role="search"
-    >
-      <Search className="h-[22px] w-[22px] shrink-0 text-[#52617d]" />
-      <label className="sr-only" htmlFor="search-page-query">
-        Search query
-      </label>
-      <input
-        className="min-h-11 min-w-0 flex-1 bg-transparent text-[14px] font-semibold uppercase leading-5 text-[#07142e] outline-none placeholder:normal-case placeholder:font-medium placeholder:text-[#64748b]"
-        id="search-page-query"
-        onChange={(event) => setQuery(event.currentTarget.value)}
-        placeholder="Search inspections, systems, topics..."
-        type="search"
-        value={query}
-      />
-      <button
-        className="min-h-[40px] rounded-[8px] bg-blue-600 px-5 text-[13px] font-bold leading-none text-white transition hover:bg-blue-700"
-        type="submit"
-      >
-        Search
-      </button>
-      {query ? (
-        <button
-          aria-label="Clear search"
-          className="flex h-9 w-9 items-center justify-center rounded-[8px] text-[#52617d] transition hover:bg-slate-100"
-          onClick={onClear}
-          type="button"
-        >
-          <X className="h-5 w-5" />
-        </button>
-      ) : null}
-    </form>
   );
 }
 
@@ -463,7 +393,8 @@ function TypeChips({
       </button>
       {typeOptions.map((option) => {
         const count = counts.get(option.key) ?? 0;
-        const active = selectedTypes.size === 1 && selectedTypes.has(option.key);
+        const active =
+          selectedTypes.size === 1 && selectedTypes.has(option.key);
 
         return (
           <button
@@ -769,7 +700,8 @@ function SearchRail({
             sectionCounts.map(({ count, section }) => (
               <FilterCheckbox
                 checked={
-                  selectedSections.size === 0 || selectedSections.has(section.id)
+                  selectedSections.size === 0 ||
+                  selectedSections.has(section.id)
                 }
                 count={count}
                 key={section.id}
@@ -1021,12 +953,14 @@ function resolveResultSectionId(result: DerivedSearchResult) {
   if (result.sectionId) return result.sectionId;
   if (result.objectType === "section") return result.objectId;
   if (result.activityId) {
-    return productionRegistries.activities.getById(result.activityId)?.sectionId;
+    return productionRegistries.activities.getById(result.activityId)
+      ?.sectionId;
   }
 
   switch (result.objectType) {
     case "activity":
-      return productionRegistries.activities.getById(result.objectId)?.sectionId;
+      return productionRegistries.activities.getById(result.objectId)
+        ?.sectionId;
     case "workflow":
       return firstSectionFromActivityIds(
         productionRegistries.workflows.getById(result.objectId)?.activityIds
@@ -1078,8 +1012,8 @@ function getDefaultExpandedGroupId(
 
 function firstSectionFromActivityIds(activityIds: readonly string[] = []) {
   for (const activityId of activityIds) {
-    const sectionId = productionRegistries.activities.getById(activityId)
-      ?.sectionId;
+    const sectionId =
+      productionRegistries.activities.getById(activityId)?.sectionId;
     if (sectionId) return sectionId;
   }
 

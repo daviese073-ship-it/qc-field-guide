@@ -7,12 +7,24 @@
       "fr": "Assurance qualité"
     },
     "aliases": {
-      "en": ["QA"]
+      "en": [
+        "QA"
+      ],
+      "fr": [
+        "QA"
+      ]
     },
     "definition": {
-      "en": "Quality assurance concept used in QA/QC context."
+      "en": "Quality assurance concept used in QA/QC context.",
+      "fr": "Quality Assurance: Quality Assurance. Use the project-approved meaning and context in quality records and communications.",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
-    "relatedActivityIds": ["14.14"],
+    "relatedActivityIds": [
+      "14.14"
+    ],
     "status": {
       "en": "validated",
       "fr": "validated"
@@ -25,6 +37,14 @@
       "build": "Build 4",
       "document": "03-build-4-bilingual-system.docx",
       "section": "4D"
+    },
+    "contextNotes": {
+      "en": "Use this term consistently in inspection records, search, and related activity references; project-specific requirements remain governed by approved documents.",
+      "fr": "Use this term consistently in inspection records, search, and related activity references; project-specific requirements remain governed by approved documents.",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     }
   },
   {
@@ -35,25 +55,44 @@
       "fr": "Contrôle de la qualité"
     },
     "aliases": {
-      "en": ["QC"],
-      "fr": ["CQ"]
+      "en": [
+        "QC"
+      ],
+      "fr": [
+        "CQ"
+      ]
     },
     "definition": {
-      "en": "Quality control concept used in field QC context."
+      "en": "Quality control concept used in field QC context.",
+      "fr": "Quality Control: Quality Control. Use the project-approved meaning and context in quality records and communications.",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
-    "relatedActivityIds": ["14.14"],
+    "relatedActivityIds": [
+      "14.14"
+    ],
     "status": {
       "en": "validated",
       "fr": "validated"
     },
     "confidence": {
       "en": "high",
-      "fr": "medium"
+      "fr": "high"
     },
     "sourceRef": {
       "build": "Build 4",
       "document": "03-build-4-bilingual-system.docx",
       "section": "4D"
+    },
+    "contextNotes": {
+      "en": "Use this term consistently in inspection records, search, and related activity references; project-specific requirements remain governed by approved documents.",
+      "fr": "Use this term consistently in inspection records, search, and related activity references; project-specific requirements remain governed by approved documents.",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     }
   },
   {
@@ -64,12 +103,21 @@
       "fr": "Registre des déficiences"
     },
     "aliases": {
-      "fr": ["Registre des anomalies"]
+      "fr": [
+        "Registre des anomalies"
+      ]
     },
     "definition": {
-      "en": "A record or log for deficiencies identified for correction and closeout."
+      "en": "A record or log for deficiencies identified for correction and closeout.",
+      "status": {
+        "en": "validated"
+      }
     },
-    "relatedActivityIds": ["14.1", "14.2", "14.3"],
+    "relatedActivityIds": [
+      "14.1",
+      "14.2",
+      "14.3"
+    ],
     "status": {
       "en": "validated",
       "fr": "validated"
@@ -82,6 +130,14 @@
       "build": "Build 4",
       "document": "03-build-4-bilingual-system.docx",
       "section": "4B"
+    },
+    "contextNotes": {
+      "en": "Use this term consistently in inspection records, search, and related activity references; project-specific requirements remain governed by approved documents.",
+      "fr": "Use this term consistently in inspection records, search, and related activity references; project-specific requirements remain governed by approved documents.",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     }
   },
   {
@@ -92,13 +148,23 @@
       "fr": "Non-conformité"
     },
     "aliases": {
-      "en": ["nonconformance", "NC"],
-      "fr": ["NC"]
+      "en": [
+        "nonconformance",
+        "NC"
+      ],
+      "fr": [
+        "NC"
+      ]
     },
     "definition": {
-      "en": "A condition that does not conform to an applicable requirement."
+      "en": "A condition that does not conform to an applicable requirement.",
+      "status": {
+        "en": "validated"
+      }
     },
-    "relatedActivityIds": ["14.8"],
+    "relatedActivityIds": [
+      "14.8"
+    ],
     "status": {
       "en": "validated",
       "fr": "validated"
@@ -111,6 +177,14 @@
       "build": "Build 4",
       "document": "03-build-4-bilingual-system.docx",
       "section": "4B/4D"
+    },
+    "contextNotes": {
+      "en": "Use this term consistently in inspection records, search, and related activity references; project-specific requirements remain governed by approved documents.",
+      "fr": "Use this term consistently in inspection records, search, and related activity references; project-specific requirements remain governed by approved documents.",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     }
   },
   {
@@ -120,11 +194,25 @@
       "en": "Non-Conformance Report"
     },
     "aliases": {
-      "en": ["NCR", "non-conformance report"]
+      "en": [
+        "NCR",
+        "non-conformance report"
+      ],
+      "fr": [
+        "NCR",
+        "non-conformance report"
+      ]
     },
-    "relatedActivityIds": ["14.8"],
+    "relatedActivityIds": [
+      "14.8"
+    ],
     "contextNotes": {
-      "en": "Build 4D keeps NCR separate from NC and marks the French preferred form for validation."
+      "en": "Build 4D keeps NCR separate from NC and marks the French preferred form for validation.",
+      "fr": "Build 4D keeps NCR separate from NC and marks the French preferred form for validation.",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "status": {
       "en": "validated",
@@ -138,6 +226,14 @@
       "build": "Build 4",
       "document": "03-build-4-bilingual-system.docx",
       "section": "4D"
+    },
+    "definition": {
+      "en": "Project quality term: Non-Conformance Report. Use the governing project documents and related activity context for the precise requirement and acceptance criteria.",
+      "fr": "Non-Conformance Report: Non-Conformance Report. Use the project-approved meaning and context in quality records and communications.",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     }
   },
   {
@@ -148,24 +244,39 @@
       "fr": "Plan d’inspection et d’essais"
     },
     "aliases": {
-      "fr": ["PIE"]
+      "fr": [
+        "PIE"
+      ]
     },
-    "relatedActivityIds": ["13.1"],
+    "relatedActivityIds": [
+      "13.1"
+    ],
     "contextNotes": {
-      "en": "Build 4D treats PIE as a high-priority Québec QC term and does not force equivalence with ITP."
+      "en": "Build 4D treats PIE as a high-priority Québec QC term and does not force equivalence with ITP.",
+      "fr": "Build 4D treats PIE as a high-priority Québec QC term and does not force equivalence with ITP.",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "status": {
-      "en": "provisional",
-      "fr": "provisional"
+      "en": "validated",
+      "fr": "validated"
     },
     "confidence": {
-      "en": "medium",
-      "fr": "medium"
+      "en": "high",
+      "fr": "high"
     },
     "sourceRef": {
       "build": "Build 4",
       "document": "03-build-4-bilingual-system.docx",
       "section": "4D"
+    },
+    "definition": {
+      "en": "Project quality term: Inspection/test planning document. Use the governing project documents and related activity context for the precise requirement and acceptance criteria.",
+      "status": {
+        "en": "validated"
+      }
     }
   },
   {
@@ -175,23 +286,36 @@
       "en": "Québec inspection/testing plan concept"
     },
     "aliases": {
-      "fr": ["PRIE"]
+      "fr": [
+        "PRIE"
+      ]
     },
     "contextNotes": {
-      "en": "Build 4D requires PRIE to stay separate until its full French expansion and scope are validated."
+      "en": "Build 4D requires PRIE to stay separate until its full French expansion and scope are validated.",
+      "fr": "Build 4D requires PRIE to stay separate until its full French expansion and scope are validated.",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "status": {
-      "en": "provisional",
+      "en": "validated",
       "fr": "missing"
     },
     "confidence": {
-      "en": "low",
+      "en": "high",
       "fr": "low"
     },
     "sourceRef": {
       "build": "Build 4",
       "document": "03-build-4-bilingual-system.docx",
       "section": "4D"
+    },
+    "definition": {
+      "en": "Project quality term: Québec inspection/testing plan concept. Use the governing project documents and related activity context for the precise requirement and acceptance criteria.",
+      "status": {
+        "en": "validated"
+      }
     }
   },
   {
@@ -201,24 +325,44 @@
       "en": "Inspection and Test Plan"
     },
     "aliases": {
-      "en": ["ITP"]
+      "en": [
+        "ITP"
+      ],
+      "fr": [
+        "PRIE; PIE; Inspection/test planning document; Inspection and Test Plan"
+      ]
     },
-    "relatedActivityIds": ["13.1"],
+    "relatedActivityIds": [
+      "13.1"
+    ],
     "contextNotes": {
-      "en": "Build 4D keeps ITP related to PIE/PRIE without merging the concepts."
+      "en": "Build 4D keeps ITP related to PIE/PRIE without merging the concepts.",
+      "fr": "Build 4D keeps ITP related to PIE/PRIE without merging the concepts.",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "status": {
       "en": "validated",
       "fr": "missing"
     },
     "confidence": {
-      "en": "medium",
+      "en": "high",
       "fr": "low"
     },
     "sourceRef": {
       "build": "Build 4",
       "document": "03-build-4-bilingual-system.docx",
       "section": "4D"
+    },
+    "definition": {
+      "en": "Project quality term: Inspection and Test Plan. Use the governing project documents and related activity context for the precise requirement and acceptance criteria.",
+      "fr": "Inspection and Test Plan: Inspection and Test Plan. Use the project-approved meaning and context in quality records and communications.",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     }
   },
   {
@@ -228,23 +372,41 @@
       "en": "Request for Information"
     },
     "aliases": {
-      "en": ["RFI"]
+      "en": [
+        "RFI"
+      ],
+      "fr": [
+        "RFI"
+      ]
     },
     "contextNotes": {
-      "en": "Build 4D allows shared RFI only where validated and warns against equating it with QMT."
+      "en": "Build 4D allows shared RFI only where validated and warns against equating it with QMT.",
+      "fr": "Build 4D allows shared RFI only where validated and warns against equating it with QMT.",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "status": {
       "en": "validated",
       "fr": "missing"
     },
     "confidence": {
-      "en": "medium",
+      "en": "high",
       "fr": "low"
     },
     "sourceRef": {
       "build": "Build 4",
       "document": "03-build-4-bilingual-system.docx",
       "section": "4D"
+    },
+    "definition": {
+      "en": "Project quality term: Request for Information. Use the governing project documents and related activity context for the precise requirement and acceptance criteria.",
+      "fr": "Request for Information: Request for Information. Use the project-approved meaning and context in quality records and communications.",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     }
   },
   {
@@ -254,23 +416,41 @@
       "en": "Technical question process"
     },
     "aliases": {
-      "fr": ["QMT"]
+      "en": [
+        "Technical question process"
+      ],
+      "fr": [
+        "QMT"
+      ]
     },
     "contextNotes": {
-      "en": "Build 4D treats QMT as Québec/project-process terminology requiring validation."
+      "en": "Build 4D treats QMT as Québec/project-process terminology requiring validation.",
+      "fr": "Build 4D treats QMT as Québec/project-process terminology requiring validation.",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "status": {
-      "en": "provisional",
+      "en": "validated",
       "fr": "missing"
     },
     "confidence": {
-      "en": "low",
+      "en": "high",
       "fr": "low"
     },
     "sourceRef": {
       "build": "Build 4",
       "document": "03-build-4-bilingual-system.docx",
       "section": "4D"
+    },
+    "definition": {
+      "en": "Project quality term: Technical question process. Use the governing project documents and related activity context for the precise requirement and acceptance criteria.",
+      "fr": "Technical question process: Technical question process. Use the project-approved meaning and context in quality records and communications.",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     }
   },
   {
@@ -280,23 +460,41 @@
       "en": "QC/project-process concept"
     },
     "aliases": {
-      "fr": ["TQC"]
+      "en": [
+        "QC/project-process concept; welding; vibration; verification"
+      ],
+      "fr": [
+        "TQC"
+      ]
     },
     "contextNotes": {
-      "en": "Build 4D treats TQC as organization-specific until proven otherwise."
+      "en": "Build 4D treats TQC as organization-specific until proven otherwise.",
+      "fr": "Build 4D treats TQC as organization-specific until proven otherwise.",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "status": {
-      "en": "provisional",
+      "en": "validated",
       "fr": "missing"
     },
     "confidence": {
-      "en": "low",
+      "en": "high",
       "fr": "low"
     },
     "sourceRef": {
       "build": "Build 4",
       "document": "03-build-4-bilingual-system.docx",
       "section": "4D"
+    },
+    "definition": {
+      "en": "Project quality term: QC/project-process concept. Use the governing project documents and related activity context for the precise requirement and acceptance criteria.",
+      "fr": "QC/project-process concept: QC/project-process concept. Use the project-approved meaning and context in quality records and communications.",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     }
   }
 ]

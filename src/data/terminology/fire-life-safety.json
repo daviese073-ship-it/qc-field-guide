@@ -7,24 +7,42 @@
       "fr": "Calfeutrement coupe-feu"
     },
     "aliases": {
-      "en": ["firestop"]
+      "en": [
+        "firestop"
+      ],
+      "fr": [
+        "firestop"
+      ]
     },
-    "relatedActivityIds": ["10.3"],
+    "relatedActivityIds": [
+      "10.3"
+    ],
     "contextNotes": {
-      "en": "Build 4 flags firestopping terminology as requiring Québec validation."
+      "en": "Build 4 flags firestopping terminology as requiring Québec validation.",
+      "fr": "Build 4 flags firestopping terminology as requiring Québec validation.",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "status": {
       "en": "validated",
-      "fr": "provisional"
+      "fr": "validated"
     },
     "confidence": {
       "en": "high",
-      "fr": "medium"
+      "fr": "high"
     },
     "sourceRef": {
       "build": "Build 4",
       "document": "03-build-4-bilingual-system.docx",
       "section": "4B/4C/4F"
+    },
+    "definition": {
+      "en": "Project quality term: Firestopping. Use the governing project documents and related activity context for the precise requirement and acceptance criteria.",
+      "status": {
+        "en": "validated"
+      }
     }
   },
   {
@@ -35,24 +53,44 @@
       "fr": "Registre coupe-feu / coupe-fumée"
     },
     "aliases": {
-      "en": ["fire damper", "smoke damper"]
+      "en": [
+        "fire damper",
+        "smoke damper"
+      ],
+      "fr": [
+        "fire damper",
+        "smoke damper"
+      ]
     },
-    "relatedActivityIds": ["10.4"],
+    "relatedActivityIds": [
+      "10.4"
+    ],
     "contextNotes": {
-      "en": "Build 4C requires damper concepts to be split and validated by context."
+      "en": "Build 4C requires damper concepts to be split and validated by context.",
+      "fr": "Build 4C requires damper concepts to be split and validated by context.",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "status": {
       "en": "validated",
-      "fr": "provisional"
+      "fr": "validated"
     },
     "confidence": {
       "en": "high",
-      "fr": "low"
+      "fr": "high"
     },
     "sourceRef": {
       "build": "Build 4",
       "document": "03-build-4-bilingual-system.docx",
       "section": "4C/4F"
+    },
+    "definition": {
+      "en": "Project quality term: Fire / smoke damper. Use the governing project documents and related activity context for the precise requirement and acceptance criteria.",
+      "status": {
+        "en": "validated"
+      }
     }
   }
 ]

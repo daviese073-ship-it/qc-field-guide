@@ -3,25 +3,41 @@
     "id": "1",
     "title": {
       "en": "Sitework & Earthworks",
-      "fr": "Travaux de chantier et terrassement",
+      "fr": "Travaux de site et terrassement",
       "status": {
         "en": "validated",
         "fr": "validated"
       }
     },
-    "order": 1
+    "order": 1,
+    "description": {
+      "en": "Select the Sitework & Earthworks activity that matches the work being planned, inspected, documented, or closed.",
+      "fr": "Sélectionnez l'activité Travaux de site et de terrassement qui correspond aux travaux prévus, inspectés, documentés ou clôturés.",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
+    }
   },
   {
     "id": "2",
     "title": {
       "en": "Substructure",
-      "fr": "Infrastructure du bâtiment",
+      "fr": "Sous-structure",
       "status": {
         "en": "validated",
         "fr": "validated"
       }
     },
-    "order": 2
+    "order": 2,
+    "description": {
+      "en": "Select the Substructure activity that matches the work being planned, inspected, documented, or closed.",
+      "fr": "Sélectionnez l'activité de la sous-structure qui correspond au travail planifié, inspecté, documenté ou clôturé.",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
+    }
   },
   {
     "id": "3",
@@ -33,7 +49,15 @@
         "fr": "validated"
       }
     },
-    "order": 3
+    "order": 3,
+    "description": {
+      "en": "Select the Superstructure activity that matches the work being planned, inspected, documented, or closed.",
+      "fr": "Sélectionnez l'activité Superstructure qui correspond au travail planifié, inspecté, documenté ou clôturé.",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
+    }
   },
   {
     "id": "4",
@@ -45,7 +69,15 @@
         "fr": "validated"
       }
     },
-    "order": 4
+    "order": 4,
+    "description": {
+      "en": "Select the Building Envelope activity that matches the work being planned, inspected, documented, or closed.",
+      "fr": "Sélectionnez l'activité Enveloppe du bâtiment qui correspond aux travaux prévus, inspectés, documentés ou clôturés.",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
+    }
   },
   {
     "id": "5",
@@ -57,7 +89,15 @@
         "fr": "validated"
       }
     },
-    "order": 5
+    "order": 5,
+    "description": {
+      "en": "Select the Roofing activity that matches the work being planned, inspected, documented, or closed.",
+      "fr": "Sélectionnez l'activité de toiture qui correspond aux travaux prévus, inspectés, documentés ou terminés.",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
+    }
   },
   {
     "id": "6",
@@ -69,19 +109,35 @@
         "fr": "validated"
       }
     },
-    "order": 6
+    "order": 6,
+    "description": {
+      "en": "Select the Interior Architectural Construction activity that matches the work being planned, inspected, documented, or closed.",
+      "fr": "Sélectionnez l'activité de construction architecturale intérieure qui correspond aux travaux prévus, inspectés, documentés ou clôturés.",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
+    }
   },
   {
     "id": "7",
     "title": {
       "en": "Finishes",
-      "fr": "Finis",
+      "fr": "Finitions",
       "status": {
         "en": "validated",
         "fr": "validated"
       }
     },
-    "order": 7
+    "order": 7,
+    "description": {
+      "en": "Select the Finishes activity that matches the work being planned, inspected, documented, or closed.",
+      "fr": "Sélectionnez l'activité Finitions qui correspond au travail planifié, inspecté, documenté ou clôturé.",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
+    }
   },
   {
     "id": "8",
@@ -93,7 +149,15 @@
         "fr": "validated"
       }
     },
-    "order": 8
+    "order": 8,
+    "description": {
+      "en": "Select the Mechanical Services activity that matches the work being planned, inspected, documented, or closed.",
+      "fr": "Sélectionnez l'activité des Services mécaniques qui correspond au travail planifié, inspecté, documenté ou clôturé.",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
+    }
   },
   {
     "id": "9",
@@ -105,19 +169,35 @@
         "fr": "validated"
       }
     },
-    "order": 9
+    "order": 9,
+    "description": {
+      "en": "Select the Electrical Building Services activity that matches the work being planned, inspected, documented, or closed.",
+      "fr": "Sélectionnez l'activité des Services de bâtiments électriques qui correspond aux travaux prévus, inspectés, documentés ou clôturés.",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
+    }
   },
   {
     "id": "10",
     "title": {
       "en": "Fire & Life-Safety Construction",
-      "fr": "Protection incendie et sécurité des personnes",
+      "fr": "Construction résistante au feu et sécurité des occupants",
       "status": {
         "en": "validated",
         "fr": "validated"
       }
     },
-    "order": 10
+    "order": 10,
+    "description": {
+      "en": "Select the Fire & Life-Safety Construction activity that matches the work being planned, inspected, documented, or closed.",
+      "fr": "Sélectionnez l'activité de construction incendie et sécurité des occupants qui correspond aux travaux prévus, inspectés, documentés ou terminés.",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
+    }
   },
   {
     "id": "11",
@@ -129,7 +209,15 @@
         "fr": "validated"
       }
     },
-    "order": 11
+    "order": 11,
+    "description": {
+      "en": "Select the Multidisciplinary Interfaces activity that matches the work being planned, inspected, documented, or closed.",
+      "fr": "Sélectionnez l'activité Interfaces multidisciplinaires qui correspond au travail en cours de planification, d'inspection, de documentation ou de clôture.",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
+    }
   },
   {
     "id": "12",
@@ -141,7 +229,15 @@
         "fr": "validated"
       }
     },
-    "order": 12
+    "order": 12,
+    "description": {
+      "en": "Select the External Works activity that matches the work being planned, inspected, documented, or closed.",
+      "fr": "Sélectionnez l'activité Travaux extérieurs qui correspond au travail planifié, inspecté, documenté ou clôturé.",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
+    }
   },
   {
     "id": "13",
@@ -153,7 +249,15 @@
         "fr": "validated"
       }
     },
-    "order": 13
+    "order": 13,
+    "description": {
+      "en": "Select the Testing, Commissioning & System Acceptance activity that matches the work being planned, inspected, documented, or closed.",
+      "fr": "Sélectionnez l'activité Essais, mise en service et acceptation des systèmes qui correspond au travail planifié, inspecté, documenté ou clôturé.",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
+    }
   },
   {
     "id": "14",
@@ -165,6 +269,14 @@
         "fr": "validated"
       }
     },
-    "order": 14
+    "order": 14,
+    "description": {
+      "en": "Select the Deficiencies, Completion & Closeout activity that matches the work being planned, inspected, documented, or closed.",
+      "fr": "Sélectionnez les activités de déficiences, d'achèvement et de clôture qui correspondent au travail planifié, inspecté, documenté ou clôturé.",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
+    }
   }
 ]

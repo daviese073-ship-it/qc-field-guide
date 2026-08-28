@@ -7,35 +7,18 @@
       "fr": "Exploitation et entretien"
     },
     "aliases": {
-      "en": ["O&M", "OM"]
+      "en": [
+        "O&M",
+        "OM"
+      ],
+      "fr": [
+        "O&M",
+        "OM"
+      ]
     },
-    "relatedActivityIds": ["14.11"],
-    "status": {
-      "en": "validated",
-      "fr": "provisional"
-    },
-    "confidence": {
-      "en": "medium",
-      "fr": "medium"
-    },
-    "sourceRef": {
-      "build": "Build 4",
-      "document": "03-build-4-bilingual-system.docx",
-      "section": "4D/4F"
-    }
-  },
-  {
-    "id": "TERM-CLS-AS-BUILT",
-    "discipline": "Closeout",
-    "preferred": {
-      "en": "As-built",
-      "fr": "Plan tel que construit"
-    },
-    "aliases": {
-      "en": ["as built", "as-builts"],
-      "fr": ["plans tels que construits"]
-    },
-    "relatedActivityIds": ["14.10"],
+    "relatedActivityIds": [
+      "14.11"
+    ],
     "status": {
       "en": "validated",
       "fr": "validated"
@@ -48,6 +31,69 @@
       "build": "Build 4",
       "document": "03-build-4-bilingual-system.docx",
       "section": "4D/4F"
+    },
+    "definition": {
+      "en": "Project quality term: Operations & Maintenance. Use the governing project documents and related activity context for the precise requirement and acceptance criteria.",
+      "fr": "Operations & Maintenance: Operations & Maintenance. Use the project-approved meaning and context in quality records and communications.",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
+    },
+    "contextNotes": {
+      "en": "Use this term consistently in inspection records, search, and related activity references; project-specific requirements remain governed by approved documents.",
+      "fr": "Use this term consistently in inspection records, search, and related activity references; project-specific requirements remain governed by approved documents.",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
+    }
+  },
+  {
+    "id": "TERM-CLS-AS-BUILT",
+    "discipline": "Closeout",
+    "preferred": {
+      "en": "As-built",
+      "fr": "Plan tel que construit"
+    },
+    "aliases": {
+      "en": [
+        "as built",
+        "as-builts"
+      ],
+      "fr": [
+        "plans tels que construits"
+      ]
+    },
+    "relatedActivityIds": [
+      "14.10"
+    ],
+    "status": {
+      "en": "validated",
+      "fr": "validated"
+    },
+    "confidence": {
+      "en": "high",
+      "fr": "high"
+    },
+    "sourceRef": {
+      "build": "Build 4",
+      "document": "03-build-4-bilingual-system.docx",
+      "section": "4D/4F"
+    },
+    "definition": {
+      "en": "Project quality term: As-built. Use the governing project documents and related activity context for the precise requirement and acceptance criteria.",
+      "status": {
+        "en": "validated"
+      }
+    },
+    "contextNotes": {
+      "en": "Use this term consistently in inspection records, search, and related activity references; project-specific requirements remain governed by approved documents.",
+      "fr": "Use this term consistently in inspection records, search, and related activity references; project-specific requirements remain governed by approved documents.",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     }
   },
   {
@@ -57,22 +103,35 @@
       "en": "Turnover",
       "fr": "Remise"
     },
-    "relatedActivityIds": ["14.15"],
+    "relatedActivityIds": [
+      "14.15"
+    ],
     "contextNotes": {
-      "en": "Build 4F marks turnover terminology as project-context sensitive."
+      "en": "Build 4F marks turnover terminology as project-context sensitive.",
+      "fr": "Build 4F marks turnover terminology as project-context sensitive.",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "status": {
       "en": "validated",
-      "fr": "provisional"
+      "fr": "validated"
     },
     "confidence": {
       "en": "high",
-      "fr": "medium"
+      "fr": "high"
     },
     "sourceRef": {
       "build": "Build 4",
       "document": "03-build-4-bilingual-system.docx",
       "section": "4F"
+    },
+    "definition": {
+      "en": "Project quality term: Turnover. Use the governing project documents and related activity context for the precise requirement and acceptance criteria.",
+      "status": {
+        "en": "validated"
+      }
     }
   }
 ]

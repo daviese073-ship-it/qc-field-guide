@@ -17,6 +17,7 @@ export const quickGateNextSchema = z
 export const quickViewSchema = z
   .object({
     activityId: canonicalIdSchema,
+    fieldTip: localizedContentSchema.optional(),
     before: contentBlocksSchema.optional(),
     inspect: contentBlocksSchema.optional(),
     evidence: contentBlocksSchema.optional(),

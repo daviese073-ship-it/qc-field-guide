@@ -7,14 +7,28 @@
       "fr": "Armatures"
     },
     "aliases": {
-      "en": ["reinforcing steel", "rebar"],
-      "fr": ["armature", "acier d’armature", "barres d’armature"]
+      "en": [
+        "reinforcing steel",
+        "rebar"
+      ],
+      "fr": [
+        "armature",
+        "acier d’armature",
+        "barres d’armature"
+      ]
     },
     "definition": {
       "en": "Collection of steel elements embedded in concrete.",
-      "fr": "Ensemble des éléments en acier intégrés au béton."
+      "fr": "Ensemble des éléments en acier intégrés au béton.",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
-    "relatedActivityIds": ["2.2", "3.1"],
+    "relatedActivityIds": [
+      "2.2",
+      "3.1"
+    ],
     "status": {
       "en": "validated",
       "fr": "validated"
@@ -27,6 +41,14 @@
       "build": "Build 4",
       "document": "03-build-4-bilingual-system.docx",
       "section": "4B"
+    },
+    "contextNotes": {
+      "en": "Use this term consistently in inspection records, search, and related activity references; project-specific requirements remain governed by approved documents.",
+      "fr": "Use this term consistently in inspection records, search, and related activity references; project-specific requirements remain governed by approved documents.",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     }
   },
   {
@@ -37,12 +59,23 @@
       "fr": "Enrobage"
     },
     "aliases": {
-      "en": ["cover"]
+      "en": [
+        "cover"
+      ],
+      "fr": [
+        "cover"
+      ]
     },
     "definition": {
-      "en": "Thickness of concrete between reinforcement and concrete surface."
+      "en": "Thickness of concrete between reinforcement and concrete surface.",
+      "status": {
+        "en": "validated"
+      }
     },
-    "relatedActivityIds": ["2.2", "3.1"],
+    "relatedActivityIds": [
+      "2.2",
+      "3.1"
+    ],
     "status": {
       "en": "validated",
       "fr": "validated"
@@ -55,6 +88,14 @@
       "build": "Build 4",
       "document": "03-build-4-bilingual-system.docx",
       "section": "4B/4C"
+    },
+    "contextNotes": {
+      "en": "Use this term consistently in inspection records, search, and related activity references; project-specific requirements remain governed by approved documents.",
+      "fr": "Use this term consistently in inspection records, search, and related activity references; project-specific requirements remain governed by approved documents.",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     }
   }
 ]

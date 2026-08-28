@@ -2,71 +2,117 @@
   {
     "id": "G-STR-01",
     "title": {
-      "en": "Structural Pre-Pour Gate"
+      "en": "Structural Pre-Pour Gate",
+      "fr": "Structural Pre-Pour Gate",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "gateType": "HARD",
-    "tags": ["gate", "preConcealment", "highControl"],
+    "tags": [
+      "gate",
+      "preConcealment",
+      "highControl"
+    ],
     "purpose": {
-      "en": "Prevent concrete placement until relevant formwork, reinforcement, embeds, openings, site conditions, testing preparation, and required releases are acceptable for the area being reviewed."
+      "en": "Prevent concrete placement until relevant formwork, reinforcement, embeds, openings, site conditions, testing preparation, and required releases are acceptable for the area being reviewed.",
+      "fr": "Prevent concrete placement until relevant formwork, reinforcement, embeds, openings, site conditions, testing preparation, and required releases are acceptable for the area being reviewed.",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
-    "prerequisiteActivityIds": ["2.1", "2.2", "2.3", "9.1", "9.6", "11.8"],
+    "prerequisiteActivityIds": [
+      "2.1",
+      "2.2",
+      "2.3",
+      "9.1",
+      "9.6",
+      "11.8"
+    ],
     "checkItems": [
       {
         "type": "checkList",
         "items": [
           {
-            "id": "GCI-G-STR-01-001",
+            "id": "APP-GATE-G-STR-01-CHECK-001",
             "text": {
-              "en": "Current drawings, shop drawings, technical changes, PIE/PRIE, mix information, and required procedures are available for the pour scope."
+              "en": "Current drawings, shop drawings, technical changes, PIE/PRIE, mix information, and required procedures are available for the pour scope.",
+              "fr": "Current drawings, shop drawings, technical changes, PIE/PRIE, mix information, and required procedures are available for the pour scope.",
+              "status": {
+                "en": "validated",
+                "fr": "validated"
+              }
             },
             "sourceRef": {
               "build": "Build 3",
-              "document": "docs/source/02-build-3-relationships.docx",
-              "section": "Step 4 canonical gate registry - G-STR-01"
+              "document": "Approved bilingual content masters",
+              "section": "Phase 017 final bilingual content repopulation"
             }
           },
           {
-            "id": "GCI-G-STR-01-002",
+            "id": "APP-GATE-G-STR-01-CHECK-002",
             "text": {
-              "en": "Formwork dimensions, elevation, alignment, stability, cleanliness, openings, and joints have been reviewed."
+              "en": "Formwork dimensions, elevation, alignment, stability, cleanliness, openings, and joints have been reviewed.",
+              "fr": "Formwork dimensions, elevation, alignment, stability, cleanliness, openings, and joints have been reviewed.",
+              "status": {
+                "en": "validated",
+                "fr": "validated"
+              }
             },
             "sourceRef": {
               "build": "Build 3",
-              "document": "docs/source/02-build-3-relationships.docx",
-              "section": "Step 4 canonical gate registry - G-STR-01"
+              "document": "Approved bilingual content masters",
+              "section": "Phase 017 final bilingual content repopulation"
             }
           },
           {
-            "id": "GCI-G-STR-01-003",
+            "id": "APP-GATE-G-STR-01-CHECK-003",
             "text": {
-              "en": "Reinforcement size, quantity, spacing, cover, laps, anchorage, and stability have been reviewed."
+              "en": "Reinforcement size, quantity, spacing, cover, laps, anchorage, and stability have been reviewed.",
+              "fr": "Reinforcement size, quantity, spacing, cover, laps, anchorage, and stability have been reviewed.",
+              "status": {
+                "en": "validated",
+                "fr": "validated"
+              }
             },
             "sourceRef": {
               "build": "Build 3",
-              "document": "docs/source/02-build-3-relationships.docx",
-              "section": "Step 4 canonical gate registry - G-STR-01"
+              "document": "Approved bilingual content masters",
+              "section": "Phase 017 final bilingual content repopulation"
             }
           },
           {
-            "id": "GCI-G-STR-01-004",
+            "id": "APP-GATE-G-STR-01-CHECK-004",
             "text": {
-              "en": "Anchors, sleeves, inserts, conduits, plates, waterstops, openings, and blockouts have been coordinated."
+              "en": "Anchors, sleeves, inserts, conduits, plates, waterstops, openings, and blockouts have been coordinated.",
+              "fr": "Anchors, sleeves, inserts, conduits, plates, waterstops, openings, and blockouts have been coordinated.",
+              "status": {
+                "en": "validated",
+                "fr": "validated"
+              }
             },
             "sourceRef": {
               "build": "Build 3",
-              "document": "docs/source/02-build-3-relationships.docx",
-              "section": "Step 4 canonical gate registry - G-STR-01"
+              "document": "Approved bilingual content masters",
+              "section": "Phase 017 final bilingual content repopulation"
             }
           },
           {
-            "id": "GCI-G-STR-01-005",
+            "id": "APP-GATE-G-STR-01-CHECK-005",
             "text": {
-              "en": "Base or substrate, water and debris removal, access, weather controls, and testing arrangements are ready."
+              "en": "Base or substrate, water and debris removal, access, weather controls, and testing arrangements are ready.",
+              "fr": "Base or substrate, water and debris removal, access, weather controls, and testing arrangements are ready.",
+              "status": {
+                "en": "validated",
+                "fr": "validated"
+              }
             },
             "sourceRef": {
               "build": "Build 3",
-              "document": "docs/source/02-build-3-relationships.docx",
-              "section": "Step 4 canonical gate registry - G-STR-01"
+              "document": "Approved bilingual content masters",
+              "section": "Phase 017 final bilingual content repopulation"
             }
           }
         ]
@@ -74,36 +120,51 @@
     ],
     "blockingConditions": [
       {
-        "type": "checkList",
-        "items": [
-          {
-            "id": "GBC-G-STR-01-001",
-            "text": {
-              "en": "Unresolved critical formwork issue, incorrect or missing reinforcement, missing or mislocated embed, unresolved MEP clash, unaccepted base/substrate, incomplete required inspection, missing required hold/witness/release, testing arrangements not ready, or open deficiency that would be permanently concealed."
-            },
-            "authority": {
-              "projectDocumentsGovern": true
-            },
-            "sourceRef": {
-              "build": "Build 3",
-              "document": "docs/source/02-build-3-relationships.docx",
-              "section": "Step 4 canonical gate registry - G-STR-01"
+        "type": "paragraph",
+        "item": {
+          "id": "APP-GATE-G-STR-01-BLOCK-001",
+          "text": {
+            "en": "Unresolved critical formwork issue, incorrect or missing reinforcement, missing or mislocated embed, unresolved MEP clash, unaccepted base/substrate, incomplete required inspection, missing required hold/witness/release, testing arrangements not ready, or open deficiency that would be permanently concealed.",
+            "fr": "Unresolved critical formwork issue, incorrect or missing reinforcement, missing or mislocated embed, unresolved MEP clash, unaccepted base/substrate, incomplete required inspection, missing required hold/witness/release, testing arrangements not ready, or open deficiency that would be permanently concealed.",
+            "status": {
+              "en": "validated",
+              "fr": "validated"
             }
+          },
+          "sourceRef": {
+            "build": "Build 3",
+            "document": "Approved bilingual content masters",
+            "section": "Phase 017 final bilingual content repopulation"
           }
-        ]
+        }
       }
     ],
     "releaseCondition": {
-      "en": "Pour ready for the area being reviewed when applicable prerequisites and governing project requirements are satisfied or released by the authorized process."
+      "en": "Pour ready for the area being reviewed when applicable prerequisites and governing project requirements are satisfied or released by the authorized process.",
+      "fr": "Pour ready for the area being reviewed when applicable prerequisites and governing project requirements are satisfied or released by the authorized process.",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
-    "downstreamActivityIds": ["2.5", "3.1", "2.8", "12.7"],
+    "downstreamActivityIds": [
+      "2.5",
+      "3.1",
+      "2.8",
+      "12.7"
+    ],
     "invalidationRuleIds": [
       "INV-STRUCT-REBAR-MOVED",
       "INV-STRUCT-EMBED-MOVED",
       "INV-STRUCT-FORMWORK-ALTERED"
     ],
     "authorityNote": {
-      "en": "This is universal guide logic only. Actual hold, witness, release, approval, and acceptance authority comes from governing project requirements and authorized project processes."
+      "en": "This is universal guide logic only. Actual hold, witness, release, approval, and acceptance authority comes from governing project requirements and authorized project processes.",
+      "fr": "This is universal guide logic only. Actual hold, witness, release, approval, and acceptance authority comes from governing project requirements and authorized project processes.",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "sourceRef": {
       "build": "Build 3",
@@ -114,60 +175,106 @@
   {
     "id": "G-ENV-01",
     "title": {
-      "en": "Envelope Pre-Concealment Gate"
+      "en": "Envelope Pre-Concealment Gate",
+      "fr": "Envelope Pré-dissimulation Gate",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "gateType": "CONDITIONAL_HARD",
-    "tags": ["gate", "preConcealment", "highControl"],
+    "tags": [
+      "gate",
+      "preConcealment",
+      "highControl"
+    ],
     "purpose": {
-      "en": "Ensure building-envelope control layers and interfaces are acceptable before subsequent layers make them inaccessible."
+      "en": "Ensure building-envelope control layers and interfaces are acceptable before subsequent layers make them inaccessible.",
+      "fr": "Ensure building-envelope control layers and interfaces are acceptable before subsequent layers make them inaccessible.",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
-    "prerequisiteActivityIds": ["4.2", "4.3", "4.4", "4.5", "4.8", "4.9", "4.10", "8.9", "9.9", "11.4", "11.5"],
+    "prerequisiteActivityIds": [
+      "4.2",
+      "4.3",
+      "4.4",
+      "4.5",
+      "4.8",
+      "4.9",
+      "4.10",
+      "8.9",
+      "9.9",
+      "11.4",
+      "11.5"
+    ],
     "checkItems": [
       {
         "type": "checkList",
         "items": [
           {
-            "id": "GCI-G-ENV-01-001",
+            "id": "APP-GATE-G-ENV-01-CHECK-001",
             "text": {
-              "en": "Substrate is acceptable, dry and clean where required, and repaired."
+              "en": "Substrate is acceptable, dry and clean where required, and repaired.",
+              "fr": "Substrate is acceptable, dry and clean where required, and repaired.",
+              "status": {
+                "en": "validated",
+                "fr": "validated"
+              }
             },
             "sourceRef": {
               "build": "Build 3",
-              "document": "docs/source/02-build-3-relationships.docx",
-              "section": "Step 4 canonical gate registry - G-ENV-01"
+              "document": "Approved bilingual content masters",
+              "section": "Phase 017 final bilingual content repopulation"
             }
           },
           {
-            "id": "GCI-G-ENV-01-002",
+            "id": "APP-GATE-G-ENV-01-CHECK-002",
             "text": {
-              "en": "Control layers use the correct product and are continuous, with seams, laps, and transitions complete."
+              "en": "Control layers use the correct product and are continuous, with seams, laps, and transitions complete.",
+              "fr": "Control layers use the correct product and are continuous, with seams, laps, and transitions complete.",
+              "status": {
+                "en": "validated",
+                "fr": "validated"
+              }
             },
             "sourceRef": {
               "build": "Build 3",
-              "document": "docs/source/02-build-3-relationships.docx",
-              "section": "Step 4 canonical gate registry - G-ENV-01"
+              "document": "Approved bilingual content masters",
+              "section": "Phase 017 final bilingual content repopulation"
             }
           },
           {
-            "id": "GCI-G-ENV-01-003",
+            "id": "APP-GATE-G-ENV-01-CHECK-003",
             "text": {
-              "en": "Openings and penetrations have coordinated transitions, restored membranes, restored insulation continuity, flashing, and seals."
+              "en": "Openings and penetrations have coordinated transitions, restored membranes, restored insulation continuity, flashing, and seals.",
+              "fr": "Openings and penetrations have coordinated transitions, restored membranes, restored insulation continuity, flashing, and seals.",
+              "status": {
+                "en": "validated",
+                "fr": "validated"
+              }
             },
             "sourceRef": {
               "build": "Build 3",
-              "document": "docs/source/02-build-3-relationships.docx",
-              "section": "Step 4 canonical gate registry - G-ENV-01"
+              "document": "Approved bilingual content masters",
+              "section": "Phase 017 final bilingual content repopulation"
             }
           },
           {
-            "id": "GCI-G-ENV-01-004",
+            "id": "APP-GATE-G-ENV-01-CHECK-004",
             "text": {
-              "en": "Concealed interfaces are photographed and deficiencies are corrected."
+              "en": "Concealed interfaces are photographed and deficiencies are corrected.",
+              "fr": "Concealed interfaces are photographed and deficiencies are corrected.",
+              "status": {
+                "en": "validated",
+                "fr": "validated"
+              }
             },
             "sourceRef": {
               "build": "Build 3",
-              "document": "docs/source/02-build-3-relationships.docx",
-              "section": "Step 4 canonical gate registry - G-ENV-01"
+              "document": "Approved bilingual content masters",
+              "section": "Phase 017 final bilingual content repopulation"
             }
           }
         ]
@@ -175,26 +282,39 @@
     ],
     "blockingConditions": [
       {
-        "type": "checkList",
-        "items": [
-          {
-            "id": "GBC-G-ENV-01-001",
-            "text": {
-              "en": "Tear or discontinuity in air/water control layer, unsealed penetration, wet or damaged insulation, incomplete window/door transition, incomplete flashing, or unresolved envelope deficiency about to be concealed."
-            },
-            "sourceRef": {
-              "build": "Build 3",
-              "document": "docs/source/02-build-3-relationships.docx",
-              "section": "Step 4 canonical gate registry - G-ENV-01"
+        "type": "paragraph",
+        "item": {
+          "id": "APP-GATE-G-ENV-01-BLOCK-001",
+          "text": {
+            "en": "Tear or discontinuity in air/water control layer, unsealed penetration, wet or damaged insulation, incomplete window/door transition, incomplete flashing, or unresolved envelope deficiency about to be concealed.",
+            "fr": "Tear or discontinuity in air/water control layer, unsealed penetration, wet or damaged insulation, incomplete window/door transition, incomplete flashing, or unresolved envelope deficiency about to be concealed.",
+            "status": {
+              "en": "validated",
+              "fr": "validated"
             }
+          },
+          "sourceRef": {
+            "build": "Build 3",
+            "document": "Approved bilingual content masters",
+            "section": "Phase 017 final bilingual content repopulation"
           }
-        ]
+        }
       }
     ],
     "releaseCondition": {
-      "en": "Envelope layer ready for covering or the next assembly layer in the affected scope."
+      "en": "Envelope layer ready for covering or the next assembly layer in the affected scope.",
+      "fr": "Envelope layer ready for covering or the next assembly layer in the affected scope.",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
-    "downstreamActivityIds": ["4.6", "4.7", "6.4", "7.3"],
+    "downstreamActivityIds": [
+      "4.6",
+      "4.7",
+      "6.4",
+      "7.3"
+    ],
     "invalidationRuleIds": [
       "INV-ENV-LATER-PENETRATION",
       "INV-ENV-MEMBRANE-DAMAGE",
@@ -202,7 +322,12 @@
       "INV-ENV-SEALANT-REWORK"
     ],
     "authorityNote": {
-      "en": "Conditional hard means hard only when the envelope condition applies. This guide does not create contractual release authority."
+      "en": "Conditional hard means hard only when the envelope condition applies. This guide does not create contractual release authority.",
+      "fr": "Conditional hard means hard only when the envelope condition applies. This guide does not create contractual release authority.",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "sourceRef": {
       "build": "Build 3",
@@ -213,165 +338,362 @@
   {
     "id": "G-ROOF-01A",
     "title": {
-      "en": "Roof Assembly Progression Gate - Before Air/Vapour Layer"
+      "en": "Roof Assembly Progression Gate - Before Air/Vapour Layer",
+      "fr": "Roof Assembly Progression Gate - Before Air/Vapour Layer",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "gateType": "HARD",
-    "tags": ["gate", "preConcealment", "highControl"],
+    "tags": [
+      "gate",
+      "preConcealment",
+      "highControl"
+    ],
     "purpose": {
-      "en": "Confirm the roof deck/substrate, openings, curbs, and drains are ready before the roof air/vapour layer proceeds."
+      "en": "Confirm the roof deck/substrate, openings, curbs, and drains are ready before the roof air/vapour layer proceeds.",
+      "fr": "Confirm the roof deck/substrate, openings, curbs, and drains are ready before the roof air/vapour layer proceeds.",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
-    "prerequisiteActivityIds": ["5.1"],
+    "prerequisiteActivityIds": [
+      "5.1"
+    ],
     "checkItems": [
       {
-        "type": "checkList",
-        "items": [
-          {
-            "id": "GCI-G-ROOF-01A-001",
-            "text": {
-              "en": "Deck is accepted, openings and curbs are correct, drains are coordinated, and the surface is clean and dry."
-            },
-            "sourceRef": {
-              "build": "Build 3",
-              "document": "docs/source/02-build-3-relationships.docx",
-              "section": "Step 4 canonical gate registry - G-ROOF-01A"
+        "type": "paragraph",
+        "item": {
+          "id": "APP-GATE-G-ROOF-01A-CHECK-001",
+          "text": {
+            "en": "Deck is accepted, openings and curbs are correct, drains are coordinated, and the surface is clean and dry.",
+            "fr": "Deck is accepted, openings and curbs are correct, drains are coordinated, and the surface is clean and dry.",
+            "status": {
+              "en": "validated",
+              "fr": "validated"
             }
+          },
+          "sourceRef": {
+            "build": "Build 3",
+            "document": "Approved bilingual content masters",
+            "section": "Phase 017 final bilingual content repopulation"
           }
-        ]
+        }
       }
     ],
     "releaseCondition": {
-      "en": "Ready for roof vapour/air control layer."
+      "en": "Ready for roof vapour/air control layer.",
+      "fr": "Ready for roof vapour/air control layer.",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
-    "downstreamActivityIds": ["5.2"],
-    "invalidationRuleIds": ["INV-ROOF-NEW-PENETRATION", "INV-ROOF-MEMBRANE-DAMAGE"],
+    "downstreamActivityIds": [
+      "5.2"
+    ],
+    "invalidationRuleIds": [
+      "INV-ROOF-NEW-PENETRATION",
+      "INV-ROOF-MEMBRANE-DAMAGE"
+    ],
     "authorityNote": {
-      "en": "This stage gate is universal guide logic for the reviewed roof scope, not an official project release."
+      "en": "This stage gate is universal guide logic for the reviewed roof scope, not an official project release.",
+      "fr": "This stage gate is universal guide logic for the reviewed roof scope, not an official project release.",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "sourceRef": {
       "build": "Build 3",
       "document": "docs/source/02-build-3-relationships.docx",
       "section": "Step 4 canonical gate registry - G-ROOF-01A"
-    }
+    },
+    "blockingConditions": [
+      {
+        "type": "paragraph",
+        "item": {
+          "id": "APP-GATE-G-ROOF-01A-BLOCK-001",
+          "text": {
+            "en": "None listed",
+            "fr": "None listed",
+            "status": {
+              "en": "validated",
+              "fr": "validated"
+            }
+          },
+          "sourceRef": {
+            "build": "Build 3",
+            "document": "Approved bilingual content masters",
+            "section": "Phase 017 final bilingual content repopulation"
+          }
+        }
+      }
+    ]
   },
   {
     "id": "G-ROOF-01B",
     "title": {
-      "en": "Roof Assembly Progression Gate - Before Insulation"
+      "en": "Roof Assembly Progression Gate - Before Insulation",
+      "fr": "Roof Assembly Progression Gate - Before Insulation",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "gateType": "HARD",
-    "tags": ["gate", "preConcealment", "highControl"],
+    "tags": [
+      "gate",
+      "preConcealment",
+      "highControl"
+    ],
     "purpose": {
-      "en": "Confirm the roof vapour/air control layer is ready before roof insulation proceeds."
+      "en": "Confirm the roof vapour/air control layer is ready before roof insulation proceeds.",
+      "fr": "Confirm the roof vapour/air control layer is ready before roof insulation proceeds.",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
-    "prerequisiteActivityIds": ["5.2"],
+    "prerequisiteActivityIds": [
+      "5.2"
+    ],
     "checkItems": [
       {
-        "type": "checkList",
-        "items": [
-          {
-            "id": "GCI-G-ROOF-01B-001",
-            "text": {
-              "en": "Membrane is continuous, seams are complete, penetrations are sealed, wall/parapet transitions are complete, and repairs are closed."
-            },
-            "sourceRef": {
-              "build": "Build 3",
-              "document": "docs/source/02-build-3-relationships.docx",
-              "section": "Step 4 canonical gate registry - G-ROOF-01B"
+        "type": "paragraph",
+        "item": {
+          "id": "APP-GATE-G-ROOF-01B-CHECK-001",
+          "text": {
+            "en": "Membrane is continuous, seams are complete, penetrations are sealed, wall/parapet transitions are complete, and repairs are closed.",
+            "fr": "Membrane is continuous, seams are complete, penetrations are sealed, wall/parapet transitions are complete, and repairs are closed.",
+            "status": {
+              "en": "validated",
+              "fr": "validated"
             }
+          },
+          "sourceRef": {
+            "build": "Build 3",
+            "document": "Approved bilingual content masters",
+            "section": "Phase 017 final bilingual content repopulation"
           }
-        ]
+        }
       }
     ],
     "releaseCondition": {
-      "en": "Ready for roof insulation."
+      "en": "Ready for roof insulation.",
+      "fr": "Ready for roof insulation.",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
-    "downstreamActivityIds": ["5.3"],
-    "invalidationRuleIds": ["INV-ROOF-NEW-PENETRATION", "INV-ROOF-MEMBRANE-DAMAGE"],
+    "downstreamActivityIds": [
+      "5.3"
+    ],
+    "invalidationRuleIds": [
+      "INV-ROOF-NEW-PENETRATION",
+      "INV-ROOF-MEMBRANE-DAMAGE"
+    ],
     "authorityNote": {
-      "en": "This stage gate is universal guide logic for the reviewed roof scope, not an official project release."
+      "en": "This stage gate is universal guide logic for the reviewed roof scope, not an official project release.",
+      "fr": "This stage gate is universal guide logic for the reviewed roof scope, not an official project release.",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "sourceRef": {
       "build": "Build 3",
       "document": "docs/source/02-build-3-relationships.docx",
       "section": "Step 4 canonical gate registry - G-ROOF-01B"
-    }
+    },
+    "blockingConditions": [
+      {
+        "type": "paragraph",
+        "item": {
+          "id": "APP-GATE-G-ROOF-01B-BLOCK-001",
+          "text": {
+            "en": "None listed",
+            "fr": "None listed",
+            "status": {
+              "en": "validated",
+              "fr": "validated"
+            }
+          },
+          "sourceRef": {
+            "build": "Build 3",
+            "document": "Approved bilingual content masters",
+            "section": "Phase 017 final bilingual content repopulation"
+          }
+        }
+      }
+    ]
   },
   {
     "id": "G-ROOF-01C",
     "title": {
-      "en": "Roof Assembly Progression Gate - Before Roofing Membrane"
+      "en": "Roof Assembly Progression Gate - Before Roofing Membrane",
+      "fr": "Roof Assembly Progression Gate - Before Roofing Membrane",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "gateType": "HARD",
-    "tags": ["gate", "preConcealment", "highControl"],
+    "tags": [
+      "gate",
+      "preConcealment",
+      "highControl"
+    ],
     "purpose": {
-      "en": "Confirm roof insulation is ready before the roofing membrane proceeds."
+      "en": "Confirm roof insulation is ready before the roofing membrane proceeds.",
+      "fr": "Confirm roof insulation is ready before the roofing membrane proceeds.",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
-    "prerequisiteActivityIds": ["5.3"],
+    "prerequisiteActivityIds": [
+      "5.3"
+    ],
     "checkItems": [
       {
-        "type": "checkList",
-        "items": [
-          {
-            "id": "GCI-G-ROOF-01C-001",
-            "text": {
-              "en": "Insulation is correct, thickness and taper/slope are acceptable, fastening is complete, boards are not wet, and drain sumps are correct."
-            },
-            "sourceRef": {
-              "build": "Build 3",
-              "document": "docs/source/02-build-3-relationships.docx",
-              "section": "Step 4 canonical gate registry - G-ROOF-01C"
+        "type": "paragraph",
+        "item": {
+          "id": "APP-GATE-G-ROOF-01C-CHECK-001",
+          "text": {
+            "en": "Insulation is correct, thickness and taper/slope are acceptable, fastening is complete, boards are not wet, and drain sumps are correct.",
+            "fr": "Insulation is correct, thickness and taper/slope are acceptable, fastening is complete, boards are not wet, and drain sumps are correct.",
+            "status": {
+              "en": "validated",
+              "fr": "validated"
             }
+          },
+          "sourceRef": {
+            "build": "Build 3",
+            "document": "Approved bilingual content masters",
+            "section": "Phase 017 final bilingual content repopulation"
           }
-        ]
+        }
       }
     ],
     "releaseCondition": {
-      "en": "Ready for roofing membrane."
+      "en": "Ready for roofing membrane.",
+      "fr": "Ready for roofing membrane.",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
-    "downstreamActivityIds": ["5.4"],
-    "invalidationRuleIds": ["INV-ROOF-NEW-PENETRATION", "INV-ROOF-MEMBRANE-DAMAGE"],
+    "downstreamActivityIds": [
+      "5.4"
+    ],
+    "invalidationRuleIds": [
+      "INV-ROOF-NEW-PENETRATION",
+      "INV-ROOF-MEMBRANE-DAMAGE"
+    ],
     "authorityNote": {
-      "en": "This stage gate is universal guide logic for the reviewed roof scope, not an official project release."
+      "en": "This stage gate is universal guide logic for the reviewed roof scope, not an official project release.",
+      "fr": "This stage gate is universal guide logic for the reviewed roof scope, not an official project release.",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "sourceRef": {
       "build": "Build 3",
       "document": "docs/source/02-build-3-relationships.docx",
       "section": "Step 4 canonical gate registry - G-ROOF-01C"
-    }
+    },
+    "blockingConditions": [
+      {
+        "type": "paragraph",
+        "item": {
+          "id": "APP-GATE-G-ROOF-01C-BLOCK-001",
+          "text": {
+            "en": "None listed",
+            "fr": "None listed",
+            "status": {
+              "en": "validated",
+              "fr": "validated"
+            }
+          },
+          "sourceRef": {
+            "build": "Build 3",
+            "document": "Approved bilingual content masters",
+            "section": "Phase 017 final bilingual content repopulation"
+          }
+        }
+      }
+    ]
   },
   {
     "id": "G-ROOF-01D",
     "title": {
-      "en": "Roof Assembly Progression Gate - Before Equipment / Traffic Obscures Final Membrane"
+      "en": "Roof Assembly Progression Gate - Before Equipment / Traffic Obscures Final Membrane",
+      "fr": "Roof Assembly Progression Gate - Before Equipment / Traffic Obscures Final Membrane",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "gateType": "HARD",
-    "tags": ["gate", "preConcealment", "highControl"],
+    "tags": [
+      "gate",
+      "preConcealment",
+      "highControl"
+    ],
     "purpose": {
-      "en": "Confirm final membrane, flashings, penetrations, curbs, and drains before equipment installation or traffic obscures the accepted condition."
+      "en": "Confirm final membrane, flashings, penetrations, curbs, and drains before equipment installation or traffic obscures the accepted condition.",
+      "fr": "Confirm final membrane, flashings, penetrations, curbs, and drains before equipment installation or traffic obscures the accepted condition.",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
-    "prerequisiteActivityIds": ["5.4", "5.5", "5.6", "5.7", "5.8"],
+    "prerequisiteActivityIds": [
+      "5.4",
+      "5.5",
+      "5.6",
+      "5.7",
+      "5.8"
+    ],
     "checkItems": [
       {
-        "type": "checkList",
-        "items": [
-          {
-            "id": "GCI-G-ROOF-01D-001",
-            "text": {
-              "en": "Membrane, seams, flashings, penetrations, curbs, and drains are complete for the affected roof scope."
-            },
-            "sourceRef": {
-              "build": "Build 3",
-              "document": "docs/source/02-build-3-relationships.docx",
-              "section": "Step 4 canonical gate registry - G-ROOF-01D"
+        "type": "paragraph",
+        "item": {
+          "id": "APP-GATE-G-ROOF-01D-CHECK-001",
+          "text": {
+            "en": "Membrane, seams, flashings, penetrations, curbs, and drains are complete for the affected roof scope.",
+            "fr": "Membrane, seams, flashings, penetrations, curbs, and drains are complete for the affected roof scope.",
+            "status": {
+              "en": "validated",
+              "fr": "validated"
             }
+          },
+          "sourceRef": {
+            "build": "Build 3",
+            "document": "Approved bilingual content masters",
+            "section": "Phase 017 final bilingual content repopulation"
           }
-        ]
+        }
       }
     ],
     "releaseCondition": {
-      "en": "Ready for rooftop equipment installation or later roof traffic/obscuration."
+      "en": "Ready for rooftop equipment installation or later roof traffic/obscuration.",
+      "fr": "Ready for rooftop equipment installation or later roof traffic/obscuration.",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
-    "downstreamActivityIds": ["8.6", "9.4", "13.5"],
+    "downstreamActivityIds": [
+      "8.6",
+      "9.4",
+      "13.5"
+    ],
     "invalidationRuleIds": [
       "INV-ROOF-NEW-PENETRATION",
       "INV-ROOF-MEMBRANE-DAMAGE",
@@ -379,118 +701,239 @@
       "INV-ROOF-DRAIN-ALTERED"
     ],
     "authorityNote": {
-      "en": "This stage gate is universal guide logic for the reviewed roof scope, not an official project release."
+      "en": "This stage gate is universal guide logic for the reviewed roof scope, not an official project release.",
+      "fr": "This stage gate is universal guide logic for the reviewed roof scope, not an official project release.",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "sourceRef": {
       "build": "Build 3",
       "document": "docs/source/02-build-3-relationships.docx",
       "section": "Step 4 canonical gate registry - G-ROOF-01D"
-    }
+    },
+    "blockingConditions": [
+      {
+        "type": "paragraph",
+        "item": {
+          "id": "APP-GATE-G-ROOF-01D-BLOCK-001",
+          "text": {
+            "en": "None listed",
+            "fr": "None listed",
+            "status": {
+              "en": "validated",
+              "fr": "validated"
+            }
+          },
+          "sourceRef": {
+            "build": "Build 3",
+            "document": "Approved bilingual content masters",
+            "section": "Phase 017 final bilingual content repopulation"
+          }
+        }
+      }
+    ]
   },
   {
     "id": "G-ROOF-01E",
     "title": {
-      "en": "Roof Assembly Progression Gate - Final Roof Acceptance"
+      "en": "Roof Assembly Progression Gate - Final Roof Acceptance",
+      "fr": "Roof Assembly Progression Gate - Final Roof Acceptance",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "gateType": "HARD",
-    "tags": ["gate", "acceptanceGate", "closeout"],
+    "tags": [
+      "gate",
+      "acceptanceGate",
+      "closeout"
+    ],
     "purpose": {
-      "en": "Confirm roofing testing, drainage, deficiencies, repairs, retesting, and warranty documentation before final roof acceptance guidance is considered ready."
+      "en": "Confirm roofing testing, drainage, deficiencies, repairs, retesting, and warranty documentation before final roof acceptance guidance is considered ready.",
+      "fr": "Confirm roofing testing, drainage, deficiencies, repairs, retesting, and warranty documentation before final roof acceptance guidance is considered ready.",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
-    "prerequisiteActivityIds": ["5.9"],
+    "prerequisiteActivityIds": [
+      "5.9"
+    ],
     "checkItems": [
       {
-        "type": "checkList",
-        "items": [
-          {
-            "id": "GCI-G-ROOF-01E-001",
-            "text": {
-              "en": "Testing is complete, drainage is acceptable, deficiencies are addressed, repairs and retesting are complete, and warranty documentation is complete."
-            },
-            "sourceRef": {
-              "build": "Build 3",
-              "document": "docs/source/02-build-3-relationships.docx",
-              "section": "Step 4 canonical gate registry - G-ROOF-01E"
+        "type": "paragraph",
+        "item": {
+          "id": "APP-GATE-G-ROOF-01E-CHECK-001",
+          "text": {
+            "en": "Testing is complete, drainage is acceptable, deficiencies are addressed, repairs and retesting are complete, and warranty documentation is complete.",
+            "fr": "Testing is complete, drainage is acceptable, deficiencies are addressed, repairs and retesting are complete, and warranty documentation is complete.",
+            "status": {
+              "en": "validated",
+              "fr": "validated"
             }
+          },
+          "sourceRef": {
+            "build": "Build 3",
+            "document": "Approved bilingual content masters",
+            "section": "Phase 017 final bilingual content repopulation"
           }
-        ]
+        }
       }
     ],
     "releaseCondition": {
-      "en": "Final roof acceptance guidance ready for the reviewed scope under governing project requirements."
+      "en": "Final roof acceptance guidance ready for the reviewed scope under governing project requirements.",
+      "fr": "Final roof acceptance guidance ready for the reviewed scope under governing project requirements.",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
-    "downstreamActivityIds": ["14.15"],
+    "downstreamActivityIds": [
+      "14.15"
+    ],
     "invalidationRuleIds": [
       "INV-ROOF-MEMBRANE-DAMAGE",
       "INV-ROOF-EQUIPMENT-CURB-MODIFIED",
       "INV-ROOF-DRAIN-ALTERED"
     ],
     "authorityNote": {
-      "en": "This stage gate is universal guide logic for the reviewed roof scope, not an official project acceptance record."
+      "en": "This stage gate is universal guide logic for the reviewed roof scope, not an official project acceptance record.",
+      "fr": "This stage gate is universal guide logic for the reviewed roof scope, not an official project acceptance record.",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "sourceRef": {
       "build": "Build 3",
       "document": "docs/source/02-build-3-relationships.docx",
       "section": "Step 4 canonical gate registry - G-ROOF-01E"
-    }
+    },
+    "blockingConditions": [
+      {
+        "type": "paragraph",
+        "item": {
+          "id": "APP-GATE-G-ROOF-01E-BLOCK-001",
+          "text": {
+            "en": "None listed",
+            "fr": "None listed",
+            "status": {
+              "en": "validated",
+              "fr": "validated"
+            }
+          },
+          "sourceRef": {
+            "build": "Build 3",
+            "document": "Approved bilingual content masters",
+            "section": "Phase 017 final bilingual content repopulation"
+          }
+        }
+      }
+    ]
   },
   {
     "id": "G-INT-01",
     "title": {
-      "en": "Interior Wall / Ceiling Pre-Concealment Gate"
+      "en": "Interior Wall / Ceiling Pre-Concealment Gate",
+      "fr": "Interior Wall / Ceiling Pré-dissimulation Gate",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "gateType": "HARD",
-    "tags": ["gate", "preConcealment", "highControl"],
+    "tags": [
+      "gate",
+      "preConcealment",
+      "highControl"
+    ],
     "purpose": {
-      "en": "Prevent wall or ceiling closure until concealed architectural, MEP, fire/acoustic, and access conditions are acceptable."
+      "en": "Prevent wall or ceiling closure until concealed architectural, MEP, fire/acoustic, and access conditions are acceptable.",
+      "fr": "Prevent wall or ceiling closure until concealed architectural, MEP, fire/acoustic, and access conditions are acceptable.",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
-    "prerequisiteActivityIds": ["6.1", "6.2", "6.3", "6.5", "6.9", "10.3", "10.4", "11.6"],
+    "prerequisiteActivityIds": [
+      "6.1",
+      "6.2",
+      "6.3",
+      "6.5",
+      "6.9",
+      "10.3",
+      "10.4",
+      "11.6"
+    ],
     "checkItems": [
       {
         "type": "checkList",
         "items": [
           {
-            "id": "GCI-G-INT-01-001",
+            "id": "APP-GATE-G-INT-01-CHECK-001",
             "text": {
-              "en": "Wall or ceiling type, MEP drawings, fire/life-safety details, and technical changes are current."
+              "en": "Wall or ceiling type, MEP drawings, fire/life-safety details, and technical changes are current.",
+              "fr": "Wall or ceiling type, MEP drawings, fire/life-safety details, and technical changes are current.",
+              "status": {
+                "en": "validated",
+                "fr": "validated"
+              }
             },
             "sourceRef": {
               "build": "Build 3",
-              "document": "docs/source/02-build-3-relationships.docx",
-              "section": "Step 4 canonical gate registry - G-INT-01"
+              "document": "Approved bilingual content masters",
+              "section": "Phase 017 final bilingual content repopulation"
             }
           },
           {
-            "id": "GCI-G-INT-01-002",
+            "id": "APP-GATE-G-INT-01-CHECK-002",
             "text": {
-              "en": "Framing or masonry layout, openings, backing, reinforcement, anchors, and supports are ready for closure."
+              "en": "Framing or masonry layout, openings, backing, reinforcement, anchors, and supports are ready for closure.",
+              "fr": "Framing or masonry layout, openings, backing, reinforcement, anchors, and supports are ready for closure.",
+              "status": {
+                "en": "validated",
+                "fr": "validated"
+              }
             },
             "sourceRef": {
               "build": "Build 3",
-              "document": "docs/source/02-build-3-relationships.docx",
-              "section": "Step 4 canonical gate registry - G-INT-01"
+              "document": "Approved bilingual content masters",
+              "section": "Phase 017 final bilingual content repopulation"
             }
           },
           {
-            "id": "GCI-G-INT-01-003",
+            "id": "APP-GATE-G-INT-01-CHECK-003",
             "text": {
-              "en": "MEP rough-in, required tests, boxes, sleeves, supports, and clashes have been addressed."
+              "en": "MEP rough-in, required tests, boxes, sleeves, supports, and clashes have been addressed.",
+              "fr": "MEP rough-in, required tests, boxes, sleeves, supports, and clashes have been addressed.",
+              "status": {
+                "en": "validated",
+                "fr": "validated"
+              }
             },
             "sourceRef": {
               "build": "Build 3",
-              "document": "docs/source/02-build-3-relationships.docx",
-              "section": "Step 4 canonical gate registry - G-INT-01"
+              "document": "Approved bilingual content masters",
+              "section": "Phase 017 final bilingual content repopulation"
             }
           },
           {
-            "id": "GCI-G-INT-01-004",
+            "id": "APP-GATE-G-INT-01-CHECK-004",
             "text": {
-              "en": "Fire, acoustic, damper, valve, junction-box, and access requirements have been addressed with evidence captured."
+              "en": "Fire, acoustic, damper, valve, junction-box, and access requirements have been addressed with evidence captured.",
+              "fr": "Fire, acoustic, damper, valve, junction-box, and access requirements have been addressed with evidence captured.",
+              "status": {
+                "en": "validated",
+                "fr": "validated"
+              }
             },
             "sourceRef": {
               "build": "Build 3",
-              "document": "docs/source/02-build-3-relationships.docx",
-              "section": "Step 4 canonical gate registry - G-INT-01"
+              "document": "Approved bilingual content masters",
+              "section": "Phase 017 final bilingual content repopulation"
             }
           }
         ]
@@ -498,26 +941,37 @@
     ],
     "blockingConditions": [
       {
-        "type": "checkList",
-        "items": [
-          {
-            "id": "GBC-G-INT-01-001",
-            "text": {
-              "en": "Rough-in incomplete, required test incomplete or failed, missing backing, incomplete firestop, inaccessible damper, valve or junction box becoming inaccessible, open clash, incomplete rated assembly, or missing required evidence."
-            },
-            "sourceRef": {
-              "build": "Build 3",
-              "document": "docs/source/02-build-3-relationships.docx",
-              "section": "Step 4 canonical gate registry - G-INT-01"
+        "type": "paragraph",
+        "item": {
+          "id": "APP-GATE-G-INT-01-BLOCK-001",
+          "text": {
+            "en": "Rough-in incomplete, required test incomplete or failed, missing backing, incomplete firestop, inaccessible damper, valve or junction box becoming inaccessible, open clash, incomplete rated assembly, or missing required evidence.",
+            "fr": "Rough-in incomplete, required test incomplete or failed, missing backing, incomplete firestop, inaccessible damper, valve or junction box becoming inaccessible, open clash, incomplete rated assembly, or missing required evidence.",
+            "status": {
+              "en": "validated",
+              "fr": "validated"
             }
+          },
+          "sourceRef": {
+            "build": "Build 3",
+            "document": "Approved bilingual content masters",
+            "section": "Phase 017 final bilingual content repopulation"
           }
-        ]
+        }
       }
     ],
     "releaseCondition": {
-      "en": "Wall or ceiling ready to close for the affected area."
+      "en": "Wall or ceiling ready to close for the affected area.",
+      "fr": "Wall or ceiling ready to close for the affected area.",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
-    "downstreamActivityIds": ["6.4", "6.8"],
+    "downstreamActivityIds": [
+      "6.4",
+      "6.8"
+    ],
     "invalidationRuleIds": [
       "INV-INT-NEW-ROUGH-IN-AFTER-ACCEPTANCE",
       "INV-INT-WALL-CEILING-REOPENED",
@@ -526,7 +980,12 @@
       "INV-FLS-FIRESTOP-DAMAGED"
     ],
     "authorityNote": {
-      "en": "This is a closure-readiness guide gate only. It is not an official project release, approval, or inspection record."
+      "en": "This is a closure-readiness guide gate only. It is not an official project release, approval, or inspection record.",
+      "fr": "This is a closure-readiness guide gate only. It is not an official project release, approval, or inspection record.",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "sourceRef": {
       "build": "Build 3",
@@ -537,61 +996,112 @@
   {
     "id": "G-MEP-01",
     "title": {
-      "en": "MEP Pre-Concealment Gate"
+      "en": "MEP Pre-Concealment Gate",
+      "fr": "MEP Pré-dissimulation Gate",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "gateType": "CONDITIONAL_HARD",
-    "tags": ["gate", "preConcealment", "specialistInterface"],
+    "tags": [
+      "gate",
+      "preConcealment",
+      "specialistInterface"
+    ],
     "purpose": {
-      "en": "Determine whether concealed MEP work itself is ready to disappear, distinct from the architectural closure decision."
+      "en": "Determine whether concealed MEP work itself is ready to disappear, distinct from the architectural closure decision.",
+      "fr": "Determine whether concealed MEP work itself is ready to disappear, distinct from the architectural closure decision.",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
-    "prerequisiteActivityIds": ["8.1", "8.2", "8.3", "8.4", "8.5", "8.9", "8.10", "9.1", "9.2", "9.3", "9.6", "9.9", "10.3", "10.4", "11.10"],
+    "prerequisiteActivityIds": [
+      "8.1",
+      "8.2",
+      "8.3",
+      "8.4",
+      "8.5",
+      "8.9",
+      "8.10",
+      "9.1",
+      "9.2",
+      "9.3",
+      "9.6",
+      "9.9",
+      "10.3",
+      "10.4",
+      "11.10"
+    ],
     "checkItems": [
       {
         "type": "checkList",
         "items": [
           {
-            "id": "GCI-G-MEP-01-001",
+            "id": "APP-GATE-G-MEP-01-CHECK-001",
             "text": {
-              "en": "Route and location are acceptable, supports are complete, and penetrations/interfaces are complete."
+              "en": "Route and location are acceptable, supports are complete, and penetrations/interfaces are complete.",
+              "fr": "Route and location are acceptable, supports are complete, and penetrations/interfaces are complete.",
+              "status": {
+                "en": "validated",
+                "fr": "validated"
+              }
             },
             "sourceRef": {
               "build": "Build 3",
-              "document": "docs/source/02-build-3-relationships.docx",
-              "section": "Step 4 canonical gate registry - G-MEP-01"
+              "document": "Approved bilingual content masters",
+              "section": "Phase 017 final bilingual content repopulation"
             }
           },
           {
-            "id": "GCI-G-MEP-01-002",
+            "id": "APP-GATE-G-MEP-01-CHECK-002",
             "text": {
-              "en": "Required mechanical tests passed and concealed electrical work is inspected or documented according to governing requirements."
-            },
-            "authority": {
-              "specialistRequired": true
+              "en": "Required mechanical tests passed and concealed electrical work is inspected or documented according to governing requirements.",
+              "fr": "Required mechanical tests passed and concealed electrical work is inspected or documented according to governing requirements.",
+              "status": {
+                "en": "validated",
+                "fr": "validated"
+              }
             },
             "sourceRef": {
               "build": "Build 3",
-              "document": "docs/source/02-build-3-relationships.docx",
-              "section": "Step 4 canonical gate registry - G-MEP-01"
+              "document": "Approved bilingual content masters",
+              "section": "Phase 017 final bilingual content repopulation"
             }
           },
           {
-            "id": "GCI-G-MEP-01-003",
+            "id": "APP-GATE-G-MEP-01-CHECK-003",
             "text": {
-              "en": "Firestop, dampers, access, insulation where required, evidence, and unresolved deficiencies have been addressed."
+              "en": "Firestop, dampers, access, insulation where required, evidence, and unresolved deficiencies have been addressed.",
+              "fr": "Firestop, dampers, access, insulation where required, evidence, and unresolved deficiencies have been addressed.",
+              "status": {
+                "en": "validated",
+                "fr": "validated"
+              }
             },
             "sourceRef": {
               "build": "Build 3",
-              "document": "docs/source/02-build-3-relationships.docx",
-              "section": "Step 4 canonical gate registry - G-MEP-01"
+              "document": "Approved bilingual content masters",
+              "section": "Phase 017 final bilingual content repopulation"
             }
           }
         ]
       }
     ],
     "releaseCondition": {
-      "en": "Concealed MEP work ready for insulation, drywall, ceiling, shaft, or other architectural concealment where that condition applies."
+      "en": "Concealed MEP work ready for insulation, drywall, ceiling, shaft, or other architectural concealment where that condition applies.",
+      "fr": "Concealed MEP work ready for insulation, drywall, ceiling, shaft, or other architectural concealment where that condition applies.",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
-    "downstreamActivityIds": ["6.4", "6.8", "8.7"],
+    "downstreamActivityIds": [
+      "6.4",
+      "6.8",
+      "8.7"
+    ],
     "invalidationRuleIds": [
       "INV-INT-NEW-ROUGH-IN-AFTER-ACCEPTANCE",
       "INV-MECH-PIPING-REPAIRED-AFTER-TEST",
@@ -599,52 +1109,110 @@
       "INV-ELEC-RACEWAY-ROUTE-MODIFIED"
     ],
     "authorityNote": {
-      "en": "Conditional hard means hard only when concealment is imminent and the system/condition applies. The guide does not replace specialist acceptance."
+      "en": "Conditional hard means hard only when concealment is imminent and the system/condition applies. The guide does not replace specialist acceptance.",
+      "fr": "Conditional hard means hard only when concealment is imminent and the system/condition applies. The guide does not replace specialist acceptance.",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "sourceRef": {
       "build": "Build 3",
       "document": "docs/source/02-build-3-relationships.docx",
       "section": "Step 4 canonical gate registry - G-MEP-01"
-    }
+    },
+    "blockingConditions": [
+      {
+        "type": "paragraph",
+        "item": {
+          "id": "APP-GATE-G-MEP-01-BLOCK-001",
+          "text": {
+            "en": "None listed",
+            "fr": "None listed",
+            "status": {
+              "en": "validated",
+              "fr": "validated"
+            }
+          },
+          "sourceRef": {
+            "build": "Build 3",
+            "document": "Approved bilingual content masters",
+            "section": "Phase 017 final bilingual content repopulation"
+          }
+        }
+      }
+    ]
   },
   {
     "id": "G-MEP-02",
     "title": {
-      "en": "Equipment Commissioning Readiness Gate"
+      "en": "Equipment Commissioning Readiness Gate",
+      "fr": "Equipment Commissioning Readiness Gate",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "gateType": "HARD",
-    "tags": ["gate", "commissioning", "specialistInterface"],
+    "tags": [
+      "gate",
+      "commissioning",
+      "specialistInterface"
+    ],
     "purpose": {
-      "en": "Determine whether major equipment is ready for start-up or commissioning, not merely installed."
+      "en": "Determine whether major equipment is ready for start-up or commissioning, not merely installed.",
+      "fr": "Determine whether major equipment is ready for start-up or commissioning, not merely installed.",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
-    "prerequisiteActivityIds": ["8.6", "8.8", "9.4", "9.5", "9.6", "9.10", "11.9", "11.10", "13.3", "13.4"],
+    "prerequisiteActivityIds": [
+      "8.6",
+      "8.8",
+      "9.4",
+      "9.5",
+      "9.6",
+      "9.10",
+      "11.9",
+      "11.10",
+      "13.3",
+      "13.4"
+    ],
     "checkItems": [
       {
         "type": "checkList",
         "items": [
           {
-            "id": "GCI-G-MEP-02-001",
+            "id": "APP-GATE-G-MEP-02-CHECK-001",
             "text": {
-              "en": "Equipment, base, anchors, clearances, vibration isolation where required, guards/covers, and room/environment readiness are reviewed."
+              "en": "Equipment, base, anchors, clearances, vibration isolation where required, guards/covers, and room/environment readiness are reviewed.",
+              "fr": "Equipment, base, anchors, clearances, vibration isolation where required, guards/covers, and room/environment readiness are reviewed.",
+              "status": {
+                "en": "validated",
+                "fr": "validated"
+              }
             },
             "sourceRef": {
               "build": "Build 3",
-              "document": "docs/source/02-build-3-relationships.docx",
-              "section": "Step 4 canonical gate registry - G-MEP-02"
+              "document": "Approved bilingual content masters",
+              "section": "Phase 017 final bilingual content repopulation"
             }
           },
           {
-            "id": "GCI-G-MEP-02-002",
+            "id": "APP-GATE-G-MEP-02-CHECK-002",
             "text": {
-              "en": "Mechanical connections, electrical supply/interface, grounding/bonding, specialist prerequisites, controls, identification, and start-up documentation are ready."
-            },
-            "authority": {
-              "specialistRequired": true
+              "en": "Mechanical connections, electrical supply/interface, grounding/bonding, specialist prerequisites, controls, identification, and start-up documentation are ready.",
+              "fr": "Mechanical connections, electrical supply/interface, grounding/bonding, specialist prerequisites, controls, identification, and start-up documentation are ready.",
+              "status": {
+                "en": "validated",
+                "fr": "validated"
+              }
             },
             "sourceRef": {
               "build": "Build 3",
-              "document": "docs/source/02-build-3-relationships.docx",
-              "section": "Step 4 canonical gate registry - G-MEP-02"
+              "document": "Approved bilingual content masters",
+              "section": "Phase 017 final bilingual content repopulation"
             }
           }
         ]
@@ -652,35 +1220,48 @@
     ],
     "blockingConditions": [
       {
-        "type": "checkList",
-        "items": [
-          {
-            "id": "GBC-G-MEP-02-001",
-            "text": {
-              "en": "Incomplete physical installation, incomplete service connection, failed prerequisite test, controls unavailable, missing electrical acceptance, access/clearance issue, missing manufacturer prerequisite, or open issue affecting safe start-up."
-            },
-            "authority": {
-              "specialistRequired": true
-            },
-            "sourceRef": {
-              "build": "Build 3",
-              "document": "docs/source/02-build-3-relationships.docx",
-              "section": "Step 4 canonical gate registry - G-MEP-02"
+        "type": "paragraph",
+        "item": {
+          "id": "APP-GATE-G-MEP-02-BLOCK-001",
+          "text": {
+            "en": "Incomplete physical installation, incomplete service connection, failed prerequisite test, controls unavailable, missing electrical acceptance, access/clearance issue, missing manufacturer prerequisite, or open issue affecting safe start-up.",
+            "fr": "Incomplete physical installation, incomplete service connection, failed prerequisite test, controls unavailable, missing electrical acceptance, access/clearance issue, missing manufacturer prerequisite, or open issue affecting safe start-up.",
+            "status": {
+              "en": "validated",
+              "fr": "validated"
             }
+          },
+          "sourceRef": {
+            "build": "Build 3",
+            "document": "Approved bilingual content masters",
+            "section": "Phase 017 final bilingual content repopulation"
           }
-        ]
+        }
       }
     ],
     "releaseCondition": {
-      "en": "Ready for equipment start-up or commissioning under governing project and specialist requirements."
+      "en": "Ready for equipment start-up or commissioning under governing project and specialist requirements.",
+      "fr": "Ready for equipment start-up or commissioning under governing project and specialist requirements.",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
-    "downstreamActivityIds": ["13.7", "13.6"],
+    "downstreamActivityIds": [
+      "13.7",
+      "13.6"
+    ],
     "invalidationRuleIds": [
       "INV-MECH-EQUIPMENT-RELOCATED",
       "INV-TEST-CONDITION-CHANGED"
     ],
     "authorityNote": {
-      "en": "This is readiness guidance only and does not authorize equipment start-up, commissioning, or acceptance."
+      "en": "This is readiness guidance only and does not authorize equipment start-up, commissioning, or acceptance.",
+      "fr": "This is readiness guidance only and does not authorize equipment start-up, commissioning, or acceptance.",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "sourceRef": {
       "build": "Build 3",
@@ -691,60 +1272,92 @@
   {
     "id": "G-LS-01",
     "title": {
-      "en": "Life-Safety Integrated Readiness Gate"
+      "en": "Life-Safety Integrated Readiness Gate",
+      "fr": "Life-Safety Integrated Readiness Gate",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "gateType": "HARD",
-    "tags": ["gate", "commissioning", "highControl", "specialistInterface"],
+    "tags": [
+      "gate",
+      "commissioning",
+      "highControl",
+      "specialistInterface"
+    ],
     "purpose": {
-      "en": "Determine whether individual fire/life-safety components and interfaces are complete enough to undergo integrated testing."
+      "en": "Determine whether individual fire/life-safety components and interfaces are complete enough to undergo integrated testing.",
+      "fr": "Determine whether individual fire/life-safety components and interfaces are complete enough to undergo integrated testing.",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
-    "prerequisiteActivityIds": ["10.1", "10.2", "10.3", "10.4", "10.5", "10.6", "10.8", "9.8", "10.7"],
+    "prerequisiteActivityIds": [
+      "10.1",
+      "10.2",
+      "10.3",
+      "10.4",
+      "10.5",
+      "10.6",
+      "10.8",
+      "9.8",
+      "10.7"
+    ],
     "checkItems": [
       {
-        "type": "checkList",
-        "items": [
-          {
-            "id": "GCI-G-LS-01-001",
-            "text": {
-              "en": "Rated assemblies, penetrations, firestop systems, dampers, fire-rated doors, fire alarm interfaces, emergency systems, records, and component tests are ready."
-            },
-            "authority": {
-              "specialistRequired": true
-            },
-            "sourceRef": {
-              "build": "Build 3",
-              "document": "docs/source/02-build-3-relationships.docx",
-              "section": "Step 4 canonical gate registry - G-LS-01"
+        "type": "paragraph",
+        "item": {
+          "id": "APP-GATE-G-LS-01-CHECK-001",
+          "text": {
+            "en": "Rated assemblies, penetrations, firestop systems, dampers, fire-rated doors, fire alarm interfaces, emergency systems, records, and component tests are ready.",
+            "fr": "Rated assemblies, penetrations, firestop systems, dampers, fire-rated doors, fire alarm interfaces, emergency systems, records, and component tests are ready.",
+            "status": {
+              "en": "validated",
+              "fr": "validated"
             }
+          },
+          "sourceRef": {
+            "build": "Build 3",
+            "document": "Approved bilingual content masters",
+            "section": "Phase 017 final bilingual content repopulation"
           }
-        ]
+        }
       }
     ],
     "blockingConditions": [
       {
-        "type": "checkList",
-        "items": [
-          {
-            "id": "GBC-G-LS-01-001",
-            "text": {
-              "en": "Incomplete rated assembly, missing firestop, inaccessible damper, fire door not ready, fire alarm interface incomplete, emergency system not ready, open significant life-safety deficiency, or required component test incomplete."
-            },
-            "authority": {
-              "specialistRequired": true
-            },
-            "sourceRef": {
-              "build": "Build 3",
-              "document": "docs/source/02-build-3-relationships.docx",
-              "section": "Step 4 canonical gate registry - G-LS-01"
+        "type": "paragraph",
+        "item": {
+          "id": "APP-GATE-G-LS-01-BLOCK-001",
+          "text": {
+            "en": "Incomplete rated assembly, missing firestop, inaccessible damper, fire door not ready, fire alarm interface incomplete, emergency system not ready, open significant life-safety deficiency, or required component test incomplete.",
+            "fr": "Incomplete rated assembly, missing firestop, inaccessible damper, fire door not ready, fire alarm interface incomplete, emergency system not ready, open significant life-safety deficiency, or required component test incomplete.",
+            "status": {
+              "en": "validated",
+              "fr": "validated"
             }
+          },
+          "sourceRef": {
+            "build": "Build 3",
+            "document": "Approved bilingual content masters",
+            "section": "Phase 017 final bilingual content repopulation"
           }
-        ]
+        }
       }
     ],
     "releaseCondition": {
-      "en": "Ready for life-safety functional or integrated testing under governing project and specialist requirements."
+      "en": "Ready for life-safety functional or integrated testing under governing project and specialist requirements.",
+      "fr": "Ready for life-safety functional or integrated testing under governing project and specialist requirements.",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
-    "downstreamActivityIds": ["13.8"],
+    "downstreamActivityIds": [
+      "13.8"
+    ],
     "invalidationRuleIds": [
       "INV-FLS-NEW-RATED-PENETRATION",
       "INV-FLS-FIRESTOP-DAMAGED",
@@ -753,7 +1366,12 @@
       "INV-TEST-CONDITION-CHANGED"
     ],
     "authorityNote": {
-      "en": "This is universal readiness guidance only and does not provide official life-safety acceptance or release."
+      "en": "This is universal readiness guidance only and does not provide official life-safety acceptance or release.",
+      "fr": "This is universal readiness guidance only and does not provide official life-safety acceptance or release.",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "sourceRef": {
       "build": "Build 3",
@@ -764,64 +1382,99 @@
   {
     "id": "G-EXT-01",
     "title": {
-      "en": "Underground / Pre-Backfill Gate"
+      "en": "Underground / Pre-Backfill Gate",
+      "fr": "Underground / Pre-Backfill Gate",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "gateType": "HARD",
-    "tags": ["gate", "preConcealment", "traceabilityCritical"],
+    "tags": [
+      "gate",
+      "preConcealment",
+      "traceabilityCritical"
+    ],
     "purpose": {
-      "en": "Prevent burial of underground work until the service, geometry, tests, traceability, and required release conditions are complete for the affected segment."
+      "en": "Prevent burial of underground work until the service, geometry, tests, traceability, and required release conditions are complete for the affected segment.",
+      "fr": "Prevent burial of underground work until the service, geometry, tests, traceability, and required release conditions are complete for the affected segment.",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
-    "prerequisiteActivityIds": ["12.1", "12.2", "12.3", "1.2"],
+    "prerequisiteActivityIds": [
+      "12.1",
+      "12.2",
+      "12.3",
+      "1.2"
+    ],
     "checkItems": [
       {
-        "type": "checkList",
-        "items": [
-          {
-            "id": "GCI-G-EXT-01-001",
-            "text": {
-              "en": "Route, trench/subgrade, service type, material, size, elevation, slope, joints, crossings, separations, structures, testing, as-built survey, photos, and service identification are complete."
-            },
-            "sourceRef": {
-              "build": "Build 3",
-              "document": "docs/source/02-build-3-relationships.docx",
-              "section": "Step 4 canonical gate registry - G-EXT-01"
+        "type": "paragraph",
+        "item": {
+          "id": "APP-GATE-G-EXT-01-CHECK-001",
+          "text": {
+            "en": "Route, trench/subgrade, service type, material, size, elevation, slope, joints, crossings, separations, structures, testing, as-built survey, photos, and service identification are complete.",
+            "fr": "Route, trench/subgrade, service type, material, size, elevation, slope, joints, crossings, separations, structures, testing, as-built survey, photos, and service identification are complete.",
+            "status": {
+              "en": "validated",
+              "fr": "validated"
             }
+          },
+          "sourceRef": {
+            "build": "Build 3",
+            "document": "Approved bilingual content masters",
+            "section": "Phase 017 final bilingual content repopulation"
           }
-        ]
+        }
       }
     ],
     "blockingConditions": [
       {
-        "type": "checkList",
-        "items": [
-          {
-            "id": "GBC-G-EXT-01-001",
-            "text": {
-              "en": "Failed or missing test, wrong elevation or slope, unaccepted joint/connection, missing as-built capture, open deficiency about to be buried, or missing required release."
-            },
-            "authority": {
-              "projectDocumentsGovern": true
-            },
-            "sourceRef": {
-              "build": "Build 3",
-              "document": "docs/source/02-build-3-relationships.docx",
-              "section": "Step 4 canonical gate registry - G-EXT-01"
+        "type": "paragraph",
+        "item": {
+          "id": "APP-GATE-G-EXT-01-BLOCK-001",
+          "text": {
+            "en": "Failed or missing test, wrong elevation or slope, unaccepted joint/connection, missing as-built capture, open deficiency about to be buried, or missing required release.",
+            "fr": "Failed or missing test, wrong elevation or slope, unaccepted joint/connection, missing as-built capture, open deficiency about to be buried, or missing required release.",
+            "status": {
+              "en": "validated",
+              "fr": "validated"
             }
+          },
+          "sourceRef": {
+            "build": "Build 3",
+            "document": "Approved bilingual content masters",
+            "section": "Phase 017 final bilingual content repopulation"
           }
-        ]
+        }
       }
     ],
     "releaseCondition": {
-      "en": "Ready for backfill for the affected underground segment."
+      "en": "Ready for backfill for the affected underground segment.",
+      "fr": "Ready for backfill for the affected underground segment.",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
-    "downstreamActivityIds": ["1.6", "2.12"],
+    "downstreamActivityIds": [
+      "1.6",
+      "2.12"
+    ],
     "invalidationRuleIds": [
       "INV-BG-WATERPROOFING-DAMAGED",
       "INV-BG-BURIED-SERVICE-DISTURBED",
       "INV-BG-SERVICE-ROUTE-CHANGED"
     ],
     "authorityNote": {
-      "en": "This guide gate does not create an official backfill release; governing project requirements control actual release."
+      "en": "This guide gate does not create an official backfill release; governing project requirements control actual release.",
+      "fr": "This guide gate does not create an official backfill release; governing project requirements control actual release.",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "sourceRef": {
       "build": "Build 3",
@@ -832,106 +1485,201 @@
   {
     "id": "G-EXT-02",
     "title": {
-      "en": "External Works Completion Gate"
+      "en": "External Works Completion Gate",
+      "fr": "External Works Completion Gate",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "gateType": "HARD",
-    "tags": ["gate", "closeout", "acceptanceGate"],
+    "tags": [
+      "gate",
+      "closeout",
+      "acceptanceGate"
+    ],
     "purpose": {
-      "en": "Determine whether site and external works are complete enough for final acceptance guidance."
+      "en": "Determine whether site and external works are complete enough for final acceptance guidance.",
+      "fr": "Determine whether site and external works are complete enough for final acceptance guidance.",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
-    "prerequisiteActivityIds": ["12.1", "12.2", "12.3", "12.4", "12.5", "12.6", "12.7", "12.8", "12.9", "12.10", "14.7", "14.8", "14.10"],
+    "prerequisiteActivityIds": [
+      "12.1",
+      "12.2",
+      "12.3",
+      "12.4",
+      "12.5",
+      "12.6",
+      "12.7",
+      "12.8",
+      "12.9",
+      "12.10",
+      "14.7",
+      "14.8",
+      "14.10"
+    ],
     "checkItems": [
       {
-        "type": "checkList",
-        "items": [
-          {
-            "id": "GCI-G-EXT-02-001",
-            "text": {
-              "en": "Below-grade utilities, testing, as-builts, structures, backfill, compaction, base/subbase, drainage, surfaces, transitions, restoration, fencing where applicable, cleanup, and issue closure are complete."
-            },
-            "sourceRef": {
-              "build": "Build 3",
-              "document": "docs/source/02-build-3-relationships.docx",
-              "section": "Step 4 canonical gate registry - G-EXT-02"
+        "type": "paragraph",
+        "item": {
+          "id": "APP-GATE-G-EXT-02-CHECK-001",
+          "text": {
+            "en": "Below-grade utilities, testing, as-builts, structures, backfill, compaction, base/subbase, drainage, surfaces, transitions, restoration, fencing where applicable, cleanup, and issue closure are complete.",
+            "fr": "Below-grade utilities, testing, as-builts, structures, backfill, compaction, base/subbase, drainage, surfaces, transitions, restoration, fencing where applicable, cleanup, and issue closure are complete.",
+            "status": {
+              "en": "validated",
+              "fr": "validated"
             }
+          },
+          "sourceRef": {
+            "build": "Build 3",
+            "document": "Approved bilingual content masters",
+            "section": "Phase 017 final bilingual content repopulation"
           }
-        ]
+        }
       }
     ],
     "releaseCondition": {
-      "en": "External works quality complete for final closeout guidance."
+      "en": "External works quality complete for final closeout guidance.",
+      "fr": "External works quality complete for final closeout guidance.",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
-    "downstreamActivityIds": ["12.9", "14.15"],
+    "downstreamActivityIds": [
+      "12.9",
+      "14.15"
+    ],
     "invalidationRuleIds": [
       "INV-ASBUILT-CONDITION-CHANGED",
       "INV-TURNOVER-DEPENDENCY-REOPENED"
     ],
     "authorityNote": {
-      "en": "This is final external-work guide readiness, not official owner or client acceptance."
+      "en": "This is final external-work guide readiness, not official owner or client acceptance.",
+      "fr": "This is final external-work guide readiness, not official owner or client acceptance.",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "sourceRef": {
       "build": "Build 3",
       "document": "docs/source/02-build-3-relationships.docx",
       "section": "Step 4 canonical gate registry - G-EXT-02"
-    }
+    },
+    "blockingConditions": [
+      {
+        "type": "paragraph",
+        "item": {
+          "id": "APP-GATE-G-EXT-02-BLOCK-001",
+          "text": {
+            "en": "None listed",
+            "fr": "None listed",
+            "status": {
+              "en": "validated",
+              "fr": "validated"
+            }
+          },
+          "sourceRef": {
+            "build": "Build 3",
+            "document": "Approved bilingual content masters",
+            "section": "Phase 017 final bilingual content repopulation"
+          }
+        }
+      }
+    ]
   },
   {
     "id": "G-TST-01",
     "title": {
-      "en": "Test Readiness Gate"
+      "en": "Test Readiness Gate",
+      "fr": "Test Readiness Gate",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "gateType": "HARD",
-    "tags": ["gate", "testing", "specialistInterface"],
+    "tags": [
+      "gate",
+      "testing",
+      "specialistInterface"
+    ],
     "purpose": {
-      "en": "Ensure testing begins only when the system is built enough, documentation is correct, and personnel and instruments are ready."
+      "en": "Ensure testing begins only when the system is built enough, documentation is correct, and personnel and instruments are ready.",
+      "fr": "Ensure testing begins only when the system is built enough, documentation is correct, and personnel and instruments are ready.",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
-    "prerequisiteActivityIds": ["13.1", "13.2", "14.3"],
+    "prerequisiteActivityIds": [
+      "13.1",
+      "13.2",
+      "14.3"
+    ],
     "checkItems": [
       {
-        "type": "checkList",
-        "items": [
-          {
-            "id": "GCI-G-TST-01-001",
-            "text": {
-              "en": "System installation and inspections are complete, deficiencies are controlled, procedure is approved/current, utilities are available, instruments are correct and calibrated, and required qualified personnel/witnesses are available."
-            },
-            "authority": {
-              "specialistRequired": true
-            },
-            "sourceRef": {
-              "build": "Build 3",
-              "document": "docs/source/02-build-3-relationships.docx",
-              "section": "Step 4 canonical gate registry - G-TST-01"
+        "type": "paragraph",
+        "item": {
+          "id": "APP-GATE-G-TST-01-CHECK-001",
+          "text": {
+            "en": "System installation and inspections are complete, deficiencies are controlled, procedure is approved/current, utilities are available, instruments are correct and calibrated, and required qualified personnel/witnesses are available.",
+            "fr": "System installation and inspections are complete, deficiencies are controlled, procedure is approved/current, utilities are available, instruments are correct and calibrated, and required qualified personnel/witnesses are available.",
+            "status": {
+              "en": "validated",
+              "fr": "validated"
             }
+          },
+          "sourceRef": {
+            "build": "Build 3",
+            "document": "Approved bilingual content masters",
+            "section": "Phase 017 final bilingual content repopulation"
           }
-        ]
+        }
       }
     ],
     "blockingConditions": [
       {
-        "type": "checkList",
-        "items": [
-          {
-            "id": "GBC-G-TST-01-001",
-            "text": {
-              "en": "Construction incomplete, open issue invalidating result, no approved procedure, missing or expired calibration, missing specialist, missing required witness, or unsafe/unavailable test condition."
-            },
-            "authority": {
-              "specialistRequired": true
-            },
-            "sourceRef": {
-              "build": "Build 3",
-              "document": "docs/source/02-build-3-relationships.docx",
-              "section": "Step 4 canonical gate registry - G-TST-01"
+        "type": "paragraph",
+        "item": {
+          "id": "APP-GATE-G-TST-01-BLOCK-001",
+          "text": {
+            "en": "Construction incomplete, open issue invalidating result, no approved procedure, missing or expired calibration, missing specialist, missing required witness, or unsafe/unavailable test condition.",
+            "fr": "Construction incomplete, open issue invalidating result, no approved procedure, missing or expired calibration, missing specialist, missing required witness, or unsafe/unavailable test condition.",
+            "status": {
+              "en": "validated",
+              "fr": "validated"
             }
+          },
+          "sourceRef": {
+            "build": "Build 3",
+            "document": "Approved bilingual content masters",
+            "section": "Phase 017 final bilingual content repopulation"
           }
-        ]
+        }
       }
     ],
     "releaseCondition": {
-      "en": "Ready to test under governing project procedure and authorized specialist requirements."
+      "en": "Ready to test under governing project procedure and authorized specialist requirements.",
+      "fr": "Ready to test under governing project procedure and authorized specialist requirements.",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
-    "downstreamActivityIds": ["13.3", "13.4", "13.5", "13.6", "13.7", "13.8"],
+    "downstreamActivityIds": [
+      "13.3",
+      "13.4",
+      "13.5",
+      "13.6",
+      "13.7",
+      "13.8"
+    ],
     "invalidationRuleIds": [
       "INV-TEST-CONDITION-CHANGED",
       "INV-TEST-FAILED-CORRECTION-RETEST",
@@ -939,7 +1687,12 @@
       "INV-ELEC-TESTED-CABLE-EQUIPMENT-ALTERED"
     ],
     "authorityNote": {
-      "en": "This readiness gate does not authorize, witness, accept, or close any project test."
+      "en": "This readiness gate does not authorize, witness, accept, or close any project test.",
+      "fr": "This readiness gate does not authorize, witness, accept, or close any project test.",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "sourceRef": {
       "build": "Build 3",
@@ -950,62 +1703,92 @@
   {
     "id": "G-FINAL-01",
     "title": {
-      "en": "Final Turnover / Acceptance Gate"
+      "en": "Final Turnover / Acceptance Gate",
+      "fr": "Final Turnover / Acceptance Gate",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "gateType": "HARD",
-    "tags": ["gate", "closeout", "closeoutHub", "acceptanceGate"],
+    "tags": [
+      "gate",
+      "closeout",
+      "closeoutHub",
+      "acceptanceGate"
+    ],
     "purpose": {
-      "en": "Determine whether physical work, quality issues, testing, records, and owner-readiness requirements have converged sufficiently for turnover guidance."
+      "en": "Determine whether physical work, quality issues, testing, records, and owner-readiness requirements have converged sufficiently for turnover guidance.",
+      "fr": "Determine whether physical work, quality issues, testing, records, and owner-readiness requirements have converged sufficiently for turnover guidance.",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
-    "prerequisiteActivityIds": ["14.7", "14.8", "14.9", "14.10", "14.11", "14.12", "14.13", "14.14", "13.11"],
+    "prerequisiteActivityIds": [
+      "14.7",
+      "14.8",
+      "14.9",
+      "14.10",
+      "14.11",
+      "14.12",
+      "14.13",
+      "14.14",
+      "13.11"
+    ],
     "checkItems": [
       {
-        "type": "checkList",
-        "items": [
-          {
-            "id": "GCI-G-FINAL-01-001",
-            "text": {
-              "en": "Physical work, quality issue closure, testing, commissioning, records, owner readiness, specialist/professional acceptance where required, quality package, and turnover package are complete under governing requirements."
-            },
-            "authority": {
-              "projectDocumentsGovern": true,
-              "authorizedProcessRequired": true
-            },
-            "sourceRef": {
-              "build": "Build 3",
-              "document": "docs/source/02-build-3-relationships.docx",
-              "section": "Step 4 canonical gate registry - G-FINAL-01"
+        "type": "paragraph",
+        "item": {
+          "id": "APP-GATE-G-FINAL-01-CHECK-001",
+          "text": {
+            "en": "Physical work, quality issue closure, testing, commissioning, records, owner readiness, specialist/professional acceptance where required, quality package, and turnover package are complete under governing requirements.",
+            "fr": "Physical work, quality issue closure, testing, commissioning, records, owner readiness, specialist/professional acceptance where required, quality package, and turnover package are complete under governing requirements.",
+            "status": {
+              "en": "validated",
+              "fr": "validated"
             }
+          },
+          "sourceRef": {
+            "build": "Build 3",
+            "document": "Approved bilingual content masters",
+            "section": "Phase 017 final bilingual content repopulation"
           }
-        ]
+        }
       }
     ],
     "blockingConditions": [
       {
-        "type": "checkList",
-        "items": [
-          {
-            "id": "GBC-G-FINAL-01-001",
-            "text": {
-              "en": "Significant/open deficiency, open NCR, missing or failed test, incomplete commissioning, missing acceptance evidence, missing required as-built/O&M/certificate/warranty, incomplete owner-readiness deliverable, or incomplete formal acceptance dependency."
-            },
-            "authority": {
-              "projectDocumentsGovern": true,
-              "authorizedProcessRequired": true
-            },
-            "sourceRef": {
-              "build": "Build 3",
-              "document": "docs/source/02-build-3-relationships.docx",
-              "section": "Step 4 canonical gate registry - G-FINAL-01"
+        "type": "paragraph",
+        "item": {
+          "id": "APP-GATE-G-FINAL-01-BLOCK-001",
+          "text": {
+            "en": "Significant/open deficiency, open NCR, missing or failed test, incomplete commissioning, missing acceptance evidence, missing required as-built/O&M/certificate/warranty, incomplete owner-readiness deliverable, or incomplete formal acceptance dependency.",
+            "fr": "Significant/open deficiency, open NCR, missing or failed test, incomplete commissioning, missing acceptance evidence, missing required as-built/O&M/certificate/warranty, incomplete owner-readiness deliverable, or incomplete formal acceptance dependency.",
+            "status": {
+              "en": "validated",
+              "fr": "validated"
             }
+          },
+          "sourceRef": {
+            "build": "Build 3",
+            "document": "Approved bilingual content masters",
+            "section": "Phase 017 final bilingual content repopulation"
           }
-        ]
+        }
       }
     ],
     "releaseCondition": {
-      "en": "Ready for turnover/acceptance guidance when governing project requirements and authorized acceptance dependencies are satisfied for the scope."
+      "en": "Ready for turnover/acceptance guidance when governing project requirements and authorized acceptance dependencies are satisfied for the scope.",
+      "fr": "Ready for turnover/acceptance guidance when governing project requirements and authorized acceptance dependencies are satisfied for the scope.",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
-    "downstreamActivityIds": ["14.15"],
+    "downstreamActivityIds": [
+      "14.15"
+    ],
     "invalidationRuleIds": [
       "INV-ASBUILT-CONDITION-CHANGED",
       "INV-TURNOVER-DEPENDENCY-REOPENED",
@@ -1013,7 +1796,12 @@
       "INV-TEST-CONDITION-CHANGED"
     ],
     "authorityNote": {
-      "en": "This guide gate is not a formal turnover approval, client acceptance, signature, release, or official project status."
+      "en": "This guide gate is not a formal turnover approval, client acceptance, signature, release, or official project status.",
+      "fr": "This guide gate is not a formal turnover approval, client acceptance, signature, release, or official project status.",
+      "status": {
+        "en": "validated",
+        "fr": "validated"
+      }
     },
     "sourceRef": {
       "build": "Build 3",
