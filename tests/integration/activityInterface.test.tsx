@@ -403,20 +403,16 @@ describe("Activity Quick / Full / Learn interface", () => {
     expect(screen.getByTestId("activity-id")).toHaveTextContent("2.1");
   });
 
-  it("provides a section Back button consistently in Quick, Full, and Learn", async () => {
+  it("provides a section Back button consistently in Quick, Full, and Learn", () => {
     for (const mode of ["quick", "full", "learn"] as const) {
-      const user = userEvent.setup();
-      const { router, unmount } = renderRoute(
+      const { unmount } = renderRoute(
         mode === "quick" ? "/activity/2.1" : `/activity/2.1?mode=${mode}`
       );
 
       const backButton = screen.getByTestId("activity-back-button");
 
       expect(backButton).toHaveAccessibleName("Back to Substructure");
-
-      await user.click(backButton);
-
-      expect(router.state.location.pathname).toBe("/section/2");
+      expect(backButton).toHaveAttribute("href", "/section/2");
       unmount();
     }
   });

@@ -9,7 +9,7 @@ import {
   TriangleAlert
 } from "lucide-react";
 import type { ReactNode } from "react";
-import { useId, useState } from "react";
+import { useEffect, useId, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 
 import { useLanguagePreference } from "@/app/languagePreferenceContext";
@@ -17,6 +17,7 @@ import { productionGeneralQcService } from "@/app/productionAppData";
 import type { GeneralQcProcess } from "@/domain/types";
 import { formatLocalizedValue } from "@/services/localization/localizationService";
 import { getCanonicalRoute } from "@/services/navigation";
+import { recordVisit } from "@/services/storage/visitHistory";
 import { classNames } from "@/utils/classNames";
 
 import { ProcessIcon } from "./ProcessIcon";
@@ -56,6 +57,12 @@ export function GeneralQcProcessDetailPage() {
   const process = processId
     ? productionGeneralQcService.getProcessById(processId)
     : undefined;
+
+  useEffect(() => {
+    if (process?.id) {
+      recordVisit("generalQcProcess", process.id);
+    }
+  }, [process?.id]);
 
   if (!process) {
     return <GeneralQcProcessNotFound />;

@@ -1,6 +1,8 @@
 import type { PropsWithChildren } from "react";
+import { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 
+import { useDeviceView } from "@/app/deviceViewContext";
 import { productionRegistries } from "@/app/productionAppData";
 import { getSectionVisual } from "@/screens/screenVisuals";
 import { classNames } from "@/utils/classNames";
@@ -10,17 +12,28 @@ import { AppSidebar } from "./AppSidebar";
 
 export function AppShell({ children }: PropsWithChildren) {
   const location = useLocation();
+  const { mode: deviceMode } = useDeviceView();
+  const [sidebarOpen, setSidebarOpen] = useState(false);
   const surfaceClassName = getRouteSurfaceClassName(location.pathname);
 
+  useEffect(() => {
+    setSidebarOpen(false);
+  }, [deviceMode, location.pathname]);
+
   return (
-    <div className="qcfg-app-shell">
-      <AppSidebar />
-      <div className="min-h-screen md:pl-[255px]">
+    <div
+      className={classNames("qcfg-app-shell", `qcfg-device-${deviceMode}`)}
+      data-testid="app-shell"
+      data-device-view={deviceMode}
+    >
+      <AppSidebar isOpen={sidebarOpen} onClose={() => setSidebarOpen(false)} />
+      <div className="qcfg-device-layout min-h-screen md:pl-[255px]">
         <AppHeader
           appName="QC/QA"
           homeLabel="QC Field Guide home"
           languageLabel="Language preference"
           searchLabel="Search"
+          onToggleSidebar={() => setSidebarOpen((open) => !open)}
         />
         <main
           className={classNames(

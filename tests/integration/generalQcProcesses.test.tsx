@@ -112,29 +112,66 @@ describe("General QC Processes canonical content", () => {
       "href",
       "/general-qc/general-qc-quality-closeout"
     );
+    expect(within(main).queryByRole("button", { name: "Grid" })).toBeNull();
+    expect(within(main).queryByRole("button", { name: "List" })).toBeNull();
     expect(
       within(main).getByText("No usage history is available yet.")
     ).toBeInTheDocument();
     expect(
       within(main).getByText(
-        "No approved field-tip derivation rule is defined yet."
+        "Use Specific, Actionable Checklists when required for all quality inspection processes."
+      )
+    ).toBeInTheDocument();
+    expect(
+      within(main).getByText(
+        "Ensure the quality process culminates with an output which records the necessary details to satisfy the contractual and project requirements."
       )
     ).toBeInTheDocument();
   });
 
-  it("renders list view from the same canonical records", async () => {
-    const user = userEvent.setup();
-
+  it("renders list-only view from the same canonical records", () => {
     renderRoute("/general-qc");
-    await user.click(screen.getByRole("button", { name: "List" }));
 
-    expect(screen.getByRole("button", { name: "List" })).toHaveAttribute(
-      "aria-pressed",
-      "true"
-    );
     expect(
       screen.getByRole("link", { name: /01 Inspection Planning/i })
     ).toHaveAttribute("href", "/general-qc/general-qc-inspection-planning");
+  });
+
+  it("records commonly used General QC processes by process detail visits", () => {
+    const detailRoute = renderRoute("/general-qc/general-qc-ncr");
+
+    expect(
+      screen.getByRole("heading", { name: /Non-Conformity Reporting/i })
+    ).toBeInTheDocument();
+
+    detailRoute.unmount();
+
+    renderRoute("/general-qc");
+
+    expect(
+      within(screen.getByTestId("commonly-used-processes")).getByRole("link", {
+        name: /Non-Conformity Reporting/i
+      })
+    ).toHaveAttribute("href", "/general-qc/general-qc-ncr");
+    expect(screen.getByText("1 use")).toBeInTheDocument();
+  });
+
+  it("renders approved General QC field tips in French mode", async () => {
+    const user = userEvent.setup();
+
+    renderRoute("/general-qc");
+    await user.click(screen.getByRole("button", { name: "FR" }));
+
+    expect(
+      screen.getByText(
+        "Utilisez des listes de contrôle précises et exploitables au besoin pour tous les processus d'inspection de la qualité."
+      )
+    ).toBeInTheDocument();
+    expect(
+      screen.getByText(
+        "Assurez-vous que le processus de qualité se termine par un livrable qui enregistre les détails nécessaires pour satisfaire aux exigences contractuelles et du projet."
+      )
+    ).toBeInTheDocument();
   });
 
   it("resolves every process detail route with the generic renderer", () => {

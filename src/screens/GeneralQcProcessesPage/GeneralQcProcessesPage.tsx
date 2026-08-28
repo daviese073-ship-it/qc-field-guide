@@ -1,13 +1,6 @@
-import {
-  ArrowLeft,
-  ChevronRight,
-  Grid2X2,
-  History,
-  Lightbulb,
-  List
-} from "lucide-react";
+import { ArrowLeft, ChevronRight, History, Lightbulb } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
-import { useState } from "react";
+import type { ReactNode } from "react";
 import { Link, useNavigate } from "react-router-dom";
 
 import {
@@ -18,23 +11,39 @@ import { useLanguagePreference } from "@/app/languagePreferenceContext";
 import type { GeneralQcProcess } from "@/domain/types";
 import { getCanonicalRoute } from "@/services/navigation";
 import { formatLocalizedValue } from "@/services/localization/localizationService";
+import {
+  getTopVisited,
+  type VisitHistoryRecord
+} from "@/services/storage/visitHistory";
 import { classNames } from "@/utils/classNames";
 
 import { accentClasses, getGeneralQcVisual } from "./generalQcPresentation";
 import { ProcessIcon } from "./ProcessIcon";
 
-type ViewMode = "grid" | "list";
+const generalQcFieldTips = [
+  {
+    en: "Use Specific, Actionable Checklists  when required for all quality inspection processes.",
+    fr: "Utilisez des listes de contrôle précises et exploitables au besoin pour tous les processus d'inspection de la qualité."
+  },
+  {
+    en: "Ensure the quality process culminates with an output which records the necessary details to satisfy the contractual and project requirements.",
+    fr: "Assurez-vous que le processus de qualité se termine par un livrable qui enregistre les détails nécessaires pour satisfaire aux exigences contractuelles et du projet."
+  }
+];
 
 export function GeneralQcProcessesPage() {
   const navigate = useNavigate();
   const { preference } = useLanguagePreference();
-  const [viewMode, setViewMode] = useState<ViewMode>("grid");
   const processes = productionGeneralQcService.getAllProcesses();
+  const commonlyUsedProcesses = getTopVisited("generalQcProcess", 5);
   const homeLabel =
     productionUiStrings.formatUiString("UI-NAV-HOME", preference) ?? "Home";
 
   return (
-    <div className="mx-auto grid w-full max-w-[1204px] gap-7 xl:grid-cols-[minmax(0,647px)_300px] min-[1500px]:grid-cols-[minmax(0,836px)_340px]">
+    <div
+      className="mx-auto grid w-full max-w-[1204px] gap-7 xl:grid-cols-[minmax(0,647px)_300px] min-[1500px]:grid-cols-[minmax(0,836px)_340px]"
+      data-testid="general-qc-interface"
+    >
       <div className="min-w-0 pt-3 min-[1500px]:pt-[34px]">
         <header className="flex items-start gap-4">
           <button
@@ -56,135 +65,38 @@ export function GeneralQcProcessesPage() {
         </header>
 
         <section className="mt-10" aria-labelledby="general-qc-all-processes">
-          <div className="flex items-center justify-between gap-4">
-            <h2
-              className="text-[20px] font-bold leading-7 text-[#07142e]"
-              id="general-qc-all-processes"
-            >
-              All Processes
-            </h2>
-            <GeneralQcViewToggle mode={viewMode} onChange={setViewMode} />
-          </div>
-          {viewMode === "grid" ? (
-            <ul className="mt-5 grid gap-x-4 gap-y-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-              {processes.map((process) => (
-                <li key={process.id}>
-                  <GeneralQcProcessCard process={process} />
-                </li>
-              ))}
-            </ul>
-          ) : (
-            <ul className="mt-5 space-y-3">
-              {processes.map((process) => (
-                <li key={process.id}>
-                  <GeneralQcProcessListItem process={process} />
-                </li>
-              ))}
-            </ul>
-          )}
+          <h2
+            className="text-[20px] font-bold leading-7 text-[#07142e]"
+            id="general-qc-all-processes"
+          >
+            All Processes
+          </h2>
+          <ul className="mt-5 space-y-3">
+            {processes.map((process) => (
+              <li key={process.id}>
+                <GeneralQcProcessListItem process={process} />
+              </li>
+            ))}
+          </ul>
         </section>
       </div>
 
       <aside className="space-y-6 pt-0 min-[1500px]:pt-[34px]">
-        <GeneralQcEmptyPanel
+        <CommonlyUsedPanel
           icon={History}
           iconClassName="text-[#56647d]"
+          preference={preference}
+          records={commonlyUsedProcesses}
           title="Commonly Used"
-        >
-          No usage history is available yet.
-        </GeneralQcEmptyPanel>
-        <GeneralQcEmptyPanel
+        />
+        <GeneralQcFieldTipsPanel
           icon={Lightbulb}
           iconClassName="text-[#7c3aed]"
+          preference={preference}
           title="Field Tips"
-        >
-          No approved field-tip derivation rule is defined yet.
-        </GeneralQcEmptyPanel>
+        />
       </aside>
     </div>
-  );
-}
-
-function GeneralQcViewToggle({
-  mode,
-  onChange
-}: {
-  mode: ViewMode;
-  onChange: (mode: ViewMode) => void;
-}) {
-  return (
-    <div
-      aria-label="Process view"
-      className="flex h-10 w-[178px] overflow-hidden rounded-[10px] border border-[rgba(15,23,42,0.12)] bg-white shadow-[0_2px_6px_rgba(15,23,42,0.04)]"
-      role="group"
-    >
-      <button
-        aria-pressed={mode === "grid"}
-        className={classNames(
-          "inline-flex flex-1 items-center justify-center gap-2 text-[14px] font-semibold",
-          mode === "grid"
-            ? "bg-[#07142e] text-white"
-            : "bg-white text-[#56647d]"
-        )}
-        onClick={() => onChange("grid")}
-        type="button"
-      >
-        <Grid2X2 className="h-4 w-4" aria-hidden />
-        Grid
-      </button>
-      <button
-        aria-pressed={mode === "list"}
-        className={classNames(
-          "inline-flex flex-1 items-center justify-center gap-2 border-l border-[rgba(15,23,42,0.10)] text-[14px] font-semibold",
-          mode === "list"
-            ? "bg-[#07142e] text-white"
-            : "bg-white text-[#56647d]"
-        )}
-        onClick={() => onChange("list")}
-        type="button"
-      >
-        <List className="h-4 w-4" aria-hidden />
-        List
-      </button>
-    </div>
-  );
-}
-
-function GeneralQcProcessCard({ process }: { process: GeneralQcProcess }) {
-  const visual = getGeneralQcVisual(process.id);
-  const accent = accentClasses[visual.accent];
-  const { preference } = useLanguagePreference();
-  const title = formatLocalizedValue(process.title, preference);
-  const summary = formatLocalizedValue(process.summary, preference);
-
-  return (
-    <Link
-      aria-label={`${String(process.sequence).padStart(2, "0")} ${title}`}
-      className={classNames(
-        "group flex h-[210px] flex-col overflow-hidden rounded-[11px] border border-[rgba(15,23,42,0.11)] bg-white p-[18px] shadow-[0_2px_6px_rgba(15,23,42,0.035)] transition hover:shadow-[0_4px_10px_rgba(15,23,42,0.06)] focus-visible:outline-offset-4",
-        accent.border
-      )}
-      to={getCanonicalRoute({ objectType: "generalQcProcess", id: process.id })}
-    >
-      <ProcessIcon Icon={visual.Icon} accent={visual.accent} size="large" />
-      <span className="mt-5 grid grid-cols-[minmax(0,1fr)_20px] items-start gap-2">
-        <span>
-          <span className="line-clamp-2 block max-h-10 overflow-hidden text-[16px] font-bold leading-[20px] text-[#07142e]">
-            {title}
-          </span>
-          <span className="mt-1.5 line-clamp-2 block max-h-10 overflow-hidden text-[14px] font-normal leading-5 text-[#56647d]">
-            {summary}
-          </span>
-        </span>
-        <ChevronRight
-          className={classNames(
-            "mt-7 h-5 w-5 transition group-hover:translate-x-0.5",
-            accent.text
-          )}
-          aria-hidden
-        />
-      </span>
-    </Link>
   );
 }
 
@@ -217,13 +129,13 @@ function GeneralQcProcessListItem({ process }: { process: GeneralQcProcess }) {
   );
 }
 
-function GeneralQcEmptyPanel({
+function GeneralQcRailPanel({
   children,
   icon: Icon,
   iconClassName,
   title
 }: {
-  children: string;
+  children: ReactNode;
   icon: LucideIcon;
   iconClassName: string;
   title: string;
@@ -243,4 +155,127 @@ function GeneralQcEmptyPanel({
       </div>
     </section>
   );
+}
+
+function CommonlyUsedPanel({
+  icon,
+  iconClassName,
+  preference,
+  records,
+  title
+}: {
+  icon: LucideIcon;
+  iconClassName: string;
+  preference: ReturnType<typeof useLanguagePreference>["preference"];
+  records: readonly VisitHistoryRecord[];
+  title: string;
+}) {
+  const visibleRecords = records
+    .map((record) => ({
+      process: productionGeneralQcService.getProcessById(record.id),
+      record
+    }))
+    .filter(
+      (
+        item
+      ): item is { process: GeneralQcProcess; record: VisitHistoryRecord } =>
+        Boolean(item.process)
+    );
+
+  return (
+    <GeneralQcRailPanel icon={icon} iconClassName={iconClassName} title={title}>
+      {visibleRecords.length ? (
+        <ul className="space-y-2" data-testid="commonly-used-processes">
+          {visibleRecords.map(({ process, record }) => (
+            <li key={process.id}>
+              <CommonProcessRow
+                preference={preference}
+                process={process}
+                record={record}
+              />
+            </li>
+          ))}
+        </ul>
+      ) : (
+        <p className="flex min-h-[168px] items-center text-[14px] font-medium leading-6 text-[#56647d]">
+          No usage history is available yet.
+        </p>
+      )}
+    </GeneralQcRailPanel>
+  );
+}
+
+function CommonProcessRow({
+  preference,
+  process,
+  record
+}: {
+  preference: ReturnType<typeof useLanguagePreference>["preference"];
+  process: GeneralQcProcess;
+  record: VisitHistoryRecord;
+}) {
+  const visual = getGeneralQcVisual(process.id);
+  const accent = accentClasses[visual.accent];
+
+  return (
+    <Link
+      className="grid min-h-[58px] grid-cols-[40px_minmax(0,1fr)_18px] items-center gap-3 rounded-[10px] border border-[rgba(15,23,42,0.10)] bg-white/80 px-3 py-2 text-[#07142e] shadow-[0_1px_3px_rgba(15,23,42,0.025)] transition hover:border-blue-200 hover:bg-blue-50/35 focus-visible:outline-offset-3"
+      to={getCanonicalRoute({ objectType: "generalQcProcess", id: process.id })}
+    >
+      <ProcessIcon Icon={visual.Icon} accent={visual.accent} size="small" />
+      <span className="min-w-0">
+        <span className="block truncate text-[13px] font-bold leading-5">
+          {formatLocalizedValue(process.title, preference)}
+        </span>
+        <span className="block text-[11px] font-medium leading-4 text-[#64748b]">
+          {formatUseCount(record.count, preference)}
+        </span>
+      </span>
+      <ChevronRight className={classNames("h-4 w-4", accent.text)} />
+    </Link>
+  );
+}
+
+function GeneralQcFieldTipsPanel({
+  icon,
+  iconClassName,
+  preference,
+  title
+}: {
+  icon: LucideIcon;
+  iconClassName: string;
+  preference: ReturnType<typeof useLanguagePreference>["preference"];
+  title: string;
+}) {
+  return (
+    <GeneralQcRailPanel icon={icon} iconClassName={iconClassName} title={title}>
+      <ul className="space-y-3" data-testid="general-qc-field-tips">
+        {generalQcFieldTips.map((tip) => (
+          <li
+            className="grid grid-cols-[4px_minmax(0,1fr)] gap-3 text-[14px] font-medium leading-[22px] text-[#07142e]"
+            key={tip.en}
+          >
+            <span
+              className="mt-[8px] h-[28px] w-1 rounded-full bg-[#7c3aed]"
+              aria-hidden
+            />
+            <span>{formatLocalizedValue(tip, preference)}</span>
+          </li>
+        ))}
+      </ul>
+    </GeneralQcRailPanel>
+  );
+}
+
+function formatUseCount(
+  count: number,
+  preference: ReturnType<typeof useLanguagePreference>["preference"]
+) {
+  const french =
+    preference.mode === "fr" ||
+    (preference.mode === "bilingual" && preference.bilingualPrimary === "fr");
+
+  if (french) return count === 1 ? "1 utilisation" : `${count} utilisations`;
+
+  return count === 1 ? "1 use" : `${count} uses`;
 }

@@ -229,7 +229,7 @@ describe("System / Section entry interface", () => {
     expect(router.state.location.pathname).toBe("/section/1");
     expect(
       screen.getByRole("heading", {
-        name: /01 Travaux de chantier et terrassement/i
+        name: /01 Travaux de site et terrassement/i
       })
     ).toBeInTheDocument();
   });

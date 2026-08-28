@@ -20,13 +20,8 @@ import {
   Wrench
 } from "lucide-react";
 import type { ComponentType, ReactNode, SVGProps } from "react";
-import { useState } from "react";
-import {
-  Link,
-  useNavigate,
-  useParams,
-  useSearchParams
-} from "react-router-dom";
+import { useEffect, useState } from "react";
+import { Link, useParams, useSearchParams } from "react-router-dom";
 
 import { useLanguagePreference } from "@/app/languagePreferenceContext";
 import { productionRegistries } from "@/app/productionAppData";
@@ -52,6 +47,7 @@ import type {
   RelationshipNavigationItem
 } from "@/services/relationships";
 import { buildActivityScreenModel } from "@/services/screenContracts";
+import { recordVisit } from "@/services/storage/visitHistory";
 import { classNames } from "@/utils/classNames";
 
 import { formatLocalized, practicalExampleLabels } from "../screenLabels";
@@ -175,7 +171,6 @@ const getUiLabel = (
 export function ActivityPage() {
   const { activityId = "" } = useParams<{ activityId: string }>();
   const [searchParams] = useSearchParams();
-  const navigate = useNavigate();
   const { preference } = useLanguagePreference();
   const modeParam = searchParams.get("mode");
   const requestedMode = isActivityMode(modeParam) ? modeParam : undefined;
@@ -189,6 +184,12 @@ export function ActivityPage() {
   const section = activity
     ? productionRegistries.sections.getById(activity.sectionId)
     : undefined;
+
+  useEffect(() => {
+    if (activity?.sectionId) {
+      recordVisit("section", activity.sectionId);
+    }
+  }, [activity?.sectionId]);
 
   if (model.status === "notFound" || !activity) {
     return <MissingObject objectId={activityId} objectLabel="Activity" />;
@@ -211,11 +212,7 @@ export function ActivityPage() {
     >
       <div className="grid gap-[18px] min-[1100px]:grid-cols-[minmax(0,1fr)_220px] xl:grid-cols-[minmax(0,1fr)_260px] min-[1440px]:grid-cols-[minmax(0,1fr)_280px]">
         <div className="min-w-0" data-testid="activity-main-column">
-          <ActivityBreadcrumb
-            navigate={navigate}
-            preference={preference}
-            section={section}
-          />
+          <ActivityBreadcrumb preference={preference} section={section} />
 
           <ActivityIdentityCard
             ActivityIcon={ActivityIcon}
@@ -277,11 +274,9 @@ export function ActivityPage() {
 }
 
 function ActivityBreadcrumb({
-  navigate,
   preference,
   section
 }: {
-  navigate: (to: string) => void;
   preference: LanguagePreference;
   section?: Section;
 }) {
@@ -302,15 +297,14 @@ function ActivityBreadcrumb({
 
   return (
     <div className="flex items-center gap-3">
-      <button
+      <Link
         aria-label={backAriaLabel}
         className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-[rgba(15,23,42,0.12)] bg-white text-[#07142e] shadow-[0_2px_8px_rgba(15,23,42,0.08)] transition hover:border-[rgba(15,23,42,0.22)] hover:bg-[#f8fafc] focus-visible:outline-offset-4"
         data-testid="activity-back-button"
-        onClick={() => navigate(backTarget)}
-        type="button"
+        to={backTarget}
       >
         <ArrowLeft className="h-5 w-5" aria-hidden />
-      </button>
+      </Link>
       <nav
         aria-label="Activity breadcrumb"
         className="flex min-h-5 items-center gap-1.5 text-[12px] font-semibold leading-5 text-[#52617d]"

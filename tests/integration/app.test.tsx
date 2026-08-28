@@ -42,6 +42,7 @@ describe("production route-bound screen composition", () => {
         name: "What will you inspect today?"
       })
     ).toBeInTheDocument();
+    expect(within(main).getByText("Hello")).toBeInTheDocument();
     expect(
       within(main).getByRole("heading", { name: "Inspection Systems" })
     ).toBeInTheDocument();
@@ -50,6 +51,12 @@ describe("production route-bound screen composition", () => {
     ).toBeInTheDocument();
     expect(
       within(main).getByRole("heading", { name: "Field Tips" })
+    ).toBeInTheDocument();
+    expect(
+      within(main).getByText(/When photographing a defect/i)
+    ).toBeInTheDocument();
+    expect(
+      within(main).getByText(/Never inspect finishes/i)
     ).toBeInTheDocument();
     expect(screen.getAllByRole("searchbox", { name: "Search" })).toHaveLength(
       1
@@ -124,6 +131,82 @@ describe("production route-bound screen composition", () => {
     await user.click(search);
 
     expect(search).toHaveFocus();
+  });
+
+  it("records visited systems and renders the top systems on Home", () => {
+    const sectionRoute = renderRoute("/section/2");
+
+    expect(
+      screen.getByRole("heading", { name: /Substructure/i })
+    ).toBeInTheDocument();
+
+    sectionRoute.unmount();
+
+    renderRoute("/");
+
+    expect(
+      within(screen.getByTestId("recently-visited-systems")).getByRole("link", {
+        name: /02 Substructure/i
+      })
+    ).toHaveAttribute("href", "/section/2");
+    expect(screen.getByText("1 visit")).toBeInTheDocument();
+  });
+
+  it("switches device view modes and toggles the sidebar drawer", async () => {
+    const user = userEvent.setup();
+    renderRoute("/");
+
+    expect(screen.getByTestId("app-shell")).toHaveAttribute(
+      "data-device-view",
+      "computer"
+    );
+
+    await user.click(screen.getByRole("button", { name: "Mobile view" }));
+
+    expect(screen.getByTestId("app-shell")).toHaveAttribute(
+      "data-device-view",
+      "mobile"
+    );
+    expect(screen.getByTestId("app-sidebar")).toHaveAttribute(
+      "data-open",
+      "false"
+    );
+
+    await user.click(screen.getByRole("button", { name: "Toggle navigation" }));
+
+    expect(screen.getByTestId("app-sidebar")).toHaveAttribute(
+      "data-open",
+      "true"
+    );
+
+    await user.click(screen.getByRole("button", { name: "Tablet view" }));
+
+    expect(screen.getByTestId("app-shell")).toHaveAttribute(
+      "data-device-view",
+      "tablet"
+    );
+    expect(screen.getByTestId("app-sidebar")).toHaveAttribute(
+      "data-open",
+      "false"
+    );
+  });
+
+  it("keeps section activity titles compact in mobile device view", async () => {
+    const user = userEvent.setup();
+    renderRoute("/section/1");
+
+    await user.click(screen.getByRole("button", { name: "Mobile view" }));
+
+    expect(screen.getByTestId("app-shell")).toHaveAttribute(
+      "data-device-view",
+      "mobile"
+    );
+    expect(screen.getAllByTestId("section-activity-title")[0]).toHaveClass(
+      "qcfg-section-activity-title"
+    );
+    expect(screen.getAllByTestId("section-activity-title-cell")[0]).toHaveClass(
+      "qcfg-section-activity-title-cell"
+    );
   });
 
   it("does not render obsolete rejected Home elements", () => {
@@ -294,14 +377,8 @@ describe("production route-bound screen composition", () => {
     expect(
       within(main).getByRole("heading", { name: "All Processes" })
     ).toBeInTheDocument();
-    expect(within(main).getByRole("button", { name: "Grid" })).toHaveAttribute(
-      "aria-pressed",
-      "true"
-    );
-    expect(within(main).getByRole("button", { name: "List" })).toHaveAttribute(
-      "aria-pressed",
-      "false"
-    );
+    expect(within(main).queryByRole("button", { name: "Grid" })).toBeNull();
+    expect(within(main).queryByRole("button", { name: "List" })).toBeNull();
     expect(
       within(main).getByRole("heading", { name: "Commonly Used" })
     ).toBeInTheDocument();

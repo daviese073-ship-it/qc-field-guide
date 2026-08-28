@@ -1,4 +1,5 @@
 import { ArrowRight, Clock3, Lightbulb } from "lucide-react";
+import type { ReactNode } from "react";
 import { Link } from "react-router-dom";
 
 import { useLanguagePreference } from "@/app/languagePreferenceContext";
@@ -7,13 +8,17 @@ import { LocalizedText } from "@/components/content/LocalizedText";
 import type { LocalizedString, Section } from "@/domain/types";
 import type { LanguagePreference } from "@/services/localization/languagePreference";
 import { formatLocalizedValue } from "@/services/localization/localizationService";
+import {
+  getTopVisited,
+  type VisitHistoryRecord
+} from "@/services/storage/visitHistory";
 import { classNames } from "@/utils/classNames";
 
 import { getSectionVisual } from "../screenVisuals";
 
 const homeCopy = {
   greeting: {
-    en: "Good morning",
+    en: "Hello",
     fr: "Bonjour"
   },
   orientation: {
@@ -35,12 +40,19 @@ const homeCopy = {
   fieldTips: {
     en: "Field Tips",
     fr: "Conseils de terrain"
-  },
-  fieldTipsEmpty: {
-    en: "Field tips need an approved canonical content source before they can appear here.",
-    fr: "Les conseils de terrain necessitent une source de contenu canonique approuvee avant d'apparaitre ici."
   }
 } satisfies Record<string, LocalizedString>;
+
+const homeFieldTips = [
+  {
+    en: "When photographing a defect or non-conformance issue, place a standard reference object (like a tape measure or a coin) next to it to show the exact scale. Take one wide shot for site context and one close-up shot for detail.",
+    fr: "Lorsque vous photographiez un défaut ou un problème de non-conformité, placez un objet de référence standard (comme un ruban à mesurer ou une pièce de monnaie) à côté de celui-ci pour indiquer l'échelle exacte. Prenez une photo large pour situer le contexte du site et une photo en gros plan pour les détails."
+  },
+  {
+    en: "Never inspect finishes, coatings, or structural alignments in low-light or shadow conditions. Use portable task lighting to expose hidden surface imperfections, uneven jointing, or missed paint coats before signing off.",
+    fr: "N'inspectez jamais les finitions, les revêtements ou les alignements structurels dans des conditions de faible luminosité ou d'ombre. Utilisez un éclairage d'appoint portatif pour exposer les imperfections de surface cachées, les joints inégaux ou les couches de peinture manquantes avant de valider les travaux."
+  }
+] satisfies readonly LocalizedString[];
 
 const formatCopy = (value: LocalizedString, preference: LanguagePreference) =>
   formatLocalizedValue(value, preference, "short");
@@ -61,9 +73,13 @@ const formatActivityCount = (count: number, preference: LanguagePreference) => {
 export function HomePage() {
   const { preference } = useLanguagePreference();
   const sections = productionRegistries.sections.getAll();
+  const recentlyVisitedSections = getTopVisited("section", 5);
 
   return (
-    <div className="mx-auto grid w-full max-w-[1197px] gap-6 min-[1400px]:grid-cols-[minmax(0,873px)_300px]">
+    <div
+      className="mx-auto grid w-full max-w-[1197px] gap-6 min-[1400px]:grid-cols-[minmax(0,873px)_300px]"
+      data-testid="home-interface"
+    >
       <div className="min-w-0">
         <header className="pt-4">
           <p className="text-[34px] font-bold leading-[42px] text-[#07142e]">
@@ -97,7 +113,10 @@ export function HomePage() {
             </a>
           </div>
 
-          <ul className="grid gap-[18px] sm:grid-cols-2 min-[1440px]:grid-cols-3">
+          <ul
+            className="grid gap-[18px] sm:grid-cols-2 min-[1440px]:grid-cols-3"
+            data-testid="home-systems-grid"
+          >
             {sections.map((section) => (
               <li key={section.id}>
                 <HomeSystemCard section={section} preference={preference} />
@@ -109,24 +128,21 @@ export function HomePage() {
 
       <aside className="space-y-5 min-[1400px]:pt-0">
         <HomeRailPanel
+          actionHref="#home-inspection-systems"
           actionLabel="View All"
           icon={<Clock3 className="h-6 w-6" aria-hidden />}
           title={formatCopy(homeCopy.recentlyVisitedSystems, preference)}
         >
-          <EmptyRailState
-            icon={<Clock3 className="h-7 w-7" aria-hidden />}
-            text={formatCopy(homeCopy.recentsEmpty, preference)}
+          <RecentSystemsList
+            preference={preference}
+            records={recentlyVisitedSections}
           />
         </HomeRailPanel>
         <HomeRailPanel
-          actionLabel="View All"
           icon={<Lightbulb className="h-6 w-6" aria-hidden />}
           title={formatCopy(homeCopy.fieldTips, preference)}
         >
-          <EmptyRailState
-            icon={<Lightbulb className="h-7 w-7" aria-hidden />}
-            text={formatCopy(homeCopy.fieldTipsEmpty, preference)}
-          />
+          <HomeFieldTipsList preference={preference} />
         </HomeRailPanel>
       </aside>
     </div>
@@ -180,13 +196,15 @@ function HomeSystemCard({
 }
 
 function HomeRailPanel({
+  actionHref,
   actionLabel,
   children,
   icon,
   title
 }: {
-  actionLabel: string;
-  children: JSX.Element;
+  actionHref?: string;
+  actionLabel?: string;
+  children: ReactNode;
   icon: JSX.Element;
   title: string;
 }) {
@@ -199,12 +217,125 @@ function HomeRailPanel({
             {title}
           </h2>
         </div>
-        <span className="shrink-0 text-[12px] font-semibold text-[#005cff]">
-          {actionLabel}
-        </span>
+        {actionLabel && actionHref ? (
+          <a
+            className="shrink-0 text-[12px] font-semibold text-[#005cff] hover:underline"
+            href={actionHref}
+          >
+            {actionLabel}
+          </a>
+        ) : null}
       </header>
       <div className="p-4">{children}</div>
     </section>
+  );
+}
+
+function RecentSystemsList({
+  preference,
+  records
+}: {
+  preference: LanguagePreference;
+  records: readonly VisitHistoryRecord[];
+}) {
+  const visibleRecords = records
+    .map((record) => ({
+      record,
+      section: productionRegistries.sections.getById(record.id)
+    }))
+    .filter((item): item is { record: VisitHistoryRecord; section: Section } =>
+      Boolean(item.section)
+    );
+
+  if (!visibleRecords.length) {
+    return (
+      <EmptyRailState
+        icon={<Clock3 className="h-7 w-7" aria-hidden />}
+        text={formatCopy(homeCopy.recentsEmpty, preference)}
+      />
+    );
+  }
+
+  return (
+    <ul className="space-y-2" data-testid="recently-visited-systems">
+      {visibleRecords.map(({ record, section }) => (
+        <li key={section.id}>
+          <RecentSystemRow
+            preference={preference}
+            record={record}
+            section={section}
+          />
+        </li>
+      ))}
+    </ul>
+  );
+}
+
+function RecentSystemRow({
+  preference,
+  record,
+  section
+}: {
+  preference: LanguagePreference;
+  record: VisitHistoryRecord;
+  section: Section;
+}) {
+  const visual = getSectionVisual(section.id);
+  const Icon = visual.Icon;
+
+  return (
+    <Link
+      className="grid min-h-[58px] grid-cols-[42px_minmax(0,1fr)_18px] items-center gap-3 rounded-[10px] border border-[rgba(15,23,42,0.10)] bg-white/80 px-3 py-2 text-[#07142e] shadow-[0_1px_3px_rgba(15,23,42,0.025)] transition hover:border-blue-200 hover:bg-blue-50/35 focus-visible:outline-offset-3"
+      to={`/section/${encodeURIComponent(section.id)}`}
+    >
+      <span
+        className={classNames(
+          "flex h-9 w-9 items-center justify-center rounded-[9px]",
+          visual.soft
+        )}
+      >
+        <Icon className={classNames("h-5 w-5", visual.accent)} aria-hidden />
+      </span>
+      <span className="min-w-0">
+        <span className="block truncate text-[13px] font-bold leading-5">
+          {section.id.padStart(2, "0")}{" "}
+          <LocalizedText preference={preference} value={section.title} />
+        </span>
+        <span className="block text-[11px] font-medium leading-4 text-[#64748b]">
+          {formatVisitCount(record.count, preference)}
+        </span>
+      </span>
+      <ArrowRight className="h-4 w-4 text-[#075fef]" aria-hidden />
+    </Link>
+  );
+}
+
+function formatVisitCount(count: number, preference: LanguagePreference) {
+  const french =
+    preference.mode === "fr" ||
+    (preference.mode === "bilingual" && preference.bilingualPrimary === "fr");
+
+  if (french) return count === 1 ? "1 visite" : `${count} visites`;
+
+  return count === 1 ? "1 visit" : `${count} visits`;
+}
+
+function HomeFieldTipsList({ preference }: { preference: LanguagePreference }) {
+  return (
+    <ul className="space-y-3" data-testid="home-field-tips">
+      {homeFieldTips.map((tip) => (
+        <li
+          className="grid grid-cols-[4px_minmax(0,1fr)] gap-3 text-[13px] font-medium leading-[21px] text-[#24365f]"
+          key={tip.en}
+        >
+          <span
+            className="mt-1 h-full min-h-8 rounded-full bg-[#f7c931]"
+            aria-hidden
+          />
+          <span>{formatCopy(tip, preference)}</span>
+        </li>
+      ))}
+    </ul>
   );
 }
 

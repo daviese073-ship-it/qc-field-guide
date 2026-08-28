@@ -12,6 +12,7 @@ import {
   UserRoundCheck
 } from "lucide-react";
 import type { ComponentType, ReactNode, SVGProps } from "react";
+import { useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
 
 import { useLanguagePreference } from "@/app/languagePreferenceContext";
@@ -22,6 +23,7 @@ import type { SectionActivitySummary } from "@/services/screenContracts";
 import { buildSectionScreenModel } from "@/services/screenContracts";
 import { getCanonicalRoute } from "@/services/navigation";
 import { createRelationshipService } from "@/services/relationships";
+import { recordVisit } from "@/services/storage/visitHistory";
 import { classNames } from "@/utils/classNames";
 
 import {
@@ -121,6 +123,12 @@ export function SectionPage() {
     currentIndex >= 0 && currentIndex < sections.length - 1
       ? sections[currentIndex + 1]
       : undefined;
+
+  useEffect(() => {
+    if (section?.id) {
+      recordVisit("section", section.id);
+    }
+  }, [section?.id]);
 
   if (model.status === "notFound" || !section) {
     return <MissingObject objectId={sectionId} objectLabel="Section" />;
@@ -323,8 +331,14 @@ function ActivityRow({
           aria-hidden
         />
       </span>
-      <span className="flex min-w-0 flex-wrap items-center gap-x-3 gap-y-2">
-        <span className="min-w-0 text-[16px] font-bold leading-5">
+      <span
+        className="qcfg-section-activity-title-cell flex min-w-0 flex-wrap items-center gap-x-3 gap-y-2"
+        data-testid="section-activity-title-cell"
+      >
+        <span
+          className="qcfg-section-activity-title min-w-0 text-[16px] font-bold leading-5"
+          data-testid="section-activity-title"
+        >
           <LocalizedText preference={preference} value={activity.title} />
         </span>
         <FlagList flags={activity.flags} />

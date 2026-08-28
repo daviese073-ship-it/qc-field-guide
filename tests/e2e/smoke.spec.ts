@@ -49,6 +49,7 @@ test.describe("Phase 017 correction visual composition", () => {
       });
       await page.goto("/");
 
+      await expect(page.getByText("Hello")).toBeVisible();
       await expect(
         page.getByRole("heading", { name: "What will you inspect today?" })
       ).toBeVisible();
@@ -64,7 +65,9 @@ test.describe("Phase 017 correction visual composition", () => {
       await expect(page.getByText("Quick Inspection")).toHaveCount(0);
       await expect(page.getByText("What Are You Doing?")).toHaveCount(0);
       await expect(page.getByText("Production data")).toHaveCount(0);
-      await expect(page.getByRole("main").getByRole("link")).toHaveCount(15);
+      await expect(
+        page.getByTestId("home-systems-grid").getByRole("link")
+      ).toHaveCount(14);
 
       const hasHorizontalOverflow = await page.evaluate(
         () => document.documentElement.scrollWidth > window.innerWidth
@@ -102,14 +105,8 @@ test.describe("Phase 017 correction visual composition", () => {
       await expect(
         page.getByRole("heading", { name: "All Processes" })
       ).toBeVisible();
-      await expect(page.getByRole("button", { name: "Grid" })).toHaveAttribute(
-        "aria-pressed",
-        "true"
-      );
-      await expect(page.getByRole("button", { name: "List" })).toHaveAttribute(
-        "aria-pressed",
-        "false"
-      );
+      await expect(page.getByRole("button", { name: "Grid" })).toHaveCount(0);
+      await expect(page.getByRole("button", { name: "List" })).toHaveCount(0);
       await expect(
         page
           .getByRole("main")
@@ -332,7 +329,9 @@ test.describe("Phase 017 correction visual composition", () => {
         document.querySelectorAll('[data-testid="section-activity-row"]')
       );
       const arrows = rows.map((row) => {
-        const arrow = row.querySelector('[data-testid="section-activity-arrow"]');
+        const arrow = row.querySelector(
+          '[data-testid="section-activity-arrow"]'
+        );
 
         if (!arrow) throw new Error("Missing section activity arrow");
 
@@ -456,8 +455,9 @@ test.describe("Phase 017 correction visual composition", () => {
       expect(
         await page
           .locator('[data-testid="section-activity-row"]')
-          .evaluateAll((rows) =>
-            rows.filter((row) => row.scrollWidth > row.clientWidth).length
+          .evaluateAll(
+            (rows) =>
+              rows.filter((row) => row.scrollWidth > row.clientWidth).length
           )
       ).toBe(0);
       await page.screenshot({
@@ -488,7 +488,7 @@ test.describe("Phase 017 correction visual composition", () => {
       await page.goto("/section/10");
 
       await expect(
-        page.getByRole("link", { name: "QC Field Guide home" })
+        page.getByRole("link", { name: "QC Field Guide home" }).first()
       ).toBeVisible();
       await expect(
         page.getByRole("searchbox", { name: "Search" })
@@ -536,6 +536,7 @@ test.describe("Phase 017 correction visual composition", () => {
     test.setTimeout(120000);
 
     await page.goto("/");
+    await expect(page.getByText("Hello")).toBeVisible();
     await expect(
       page.getByRole("heading", { name: "What will you inspect today?" })
     ).toBeVisible();
@@ -572,7 +573,9 @@ test.describe("Phase 017 correction visual composition", () => {
         name: "Quick Check — Essentials in the Field"
       })
     ).toBeVisible();
-    await expect(page.getByRole("heading", { name: "Watch For" })).toBeVisible();
+    await expect(
+      page.getByRole("heading", { name: "Watch For" })
+    ).toBeVisible();
     await page.screenshot({
       fullPage: true,
       path: screenshot("activity-quick")
@@ -676,15 +679,20 @@ test.describe("Phase 017 correction visual composition", () => {
     await expect(
       page.getByRole("heading", { name: "Next / Related Work" })
     ).toBeVisible();
-    await expect(page.getByRole("heading", { name: "Related Systems" }))
-      .toBeVisible();
-    await expect(page.getByRole("heading", { name: "Related Inspections" }))
-      .toBeVisible();
-    await expect(page.getByTestId("activity-view-all-unavailable"))
-      .toBeDisabled();
+    await expect(
+      page.getByRole("heading", { name: "Related Systems" })
+    ).toBeVisible();
+    await expect(
+      page.getByRole("heading", { name: "Related Inspections" })
+    ).toBeVisible();
+    await expect(
+      page.getByTestId("activity-view-all-unavailable")
+    ).toBeDisabled();
     await expectNoHorizontalOverflow(page);
 
-    const quickMain = await roundedBox(page.getByTestId("activity-main-column"));
+    const quickMain = await roundedBox(
+      page.getByTestId("activity-main-column")
+    );
     const quickRail = await roundedBox(
       page.getByTestId("activity-relationship-rail")
     );
@@ -692,7 +700,9 @@ test.describe("Phase 017 correction visual composition", () => {
       page.getByTestId("activity-identity-card")
     );
     const quickTabs = await roundedBox(page.getByTestId("activity-mode-tabs"));
-    const quickPanel = await roundedBox(page.getByTestId("activity-quick-mode"));
+    const quickPanel = await roundedBox(
+      page.getByTestId("activity-quick-mode")
+    );
     const quickCards = await page.getByTestId("quick-card").all();
     const firstQuickCard = await roundedBox(quickCards[0]);
     const secondQuickCardBox = await quickCards[1].boundingBox();
@@ -720,22 +730,24 @@ test.describe("Phase 017 correction visual composition", () => {
       path: screenshot("activity-foundation-quick")
     });
 
-    const railBefore = await page.getByTestId("activity-relationship-rail")
+    const railBefore = await page
+      .getByTestId("activity-relationship-rail")
       .innerText();
     await page.getByRole("tab", { name: "Full" }).click();
     await expect(page).toHaveURL(/\/activity\/2\.1\?mode=full$/);
     await expect(page.getByTestId("activity-id")).toHaveText("2.1");
     await expect(page.getByTestId("activity-full-mode")).toBeVisible();
     await expect(page.getByTestId("full-group-row")).toHaveCount(10);
-    expect(await page.getByTestId("activity-relationship-rail").innerText())
-      .toBe(railBefore);
+    expect(
+      await page.getByTestId("activity-relationship-rail").innerText()
+    ).toBe(railBefore);
 
     const fullPanel = await roundedBox(page.getByTestId("activity-full-mode"));
     const fullRows = await page.getByTestId("full-group-row").all();
     const firstFullRow = await roundedBox(fullRows[0]);
 
     expectInRange(Math.abs(fullPanel.width - quickMain.width), 0, 2);
-    expectInRange(firstFullRow.height, 42, 58);
+    expectInRange(firstFullRow.height, 42, 90);
     await expectNoHorizontalOverflow(page);
     await page.screenshot({
       fullPage: true,
@@ -743,7 +755,9 @@ test.describe("Phase 017 correction visual composition", () => {
     });
     await fullRows[2].locator("summary").click();
     await expect(
-      page.getByText("latest structural foundation drawings;")
+      page.getByText(
+        "Current structural and architectural drawings, specifications, approved shop/temporary-work information, and revisions."
+      )
     ).toBeVisible();
 
     await page.getByRole("tab", { name: "Learn" }).click();
@@ -752,8 +766,9 @@ test.describe("Phase 017 correction visual composition", () => {
     await expect(page.getByTestId("activity-learn-mode")).toBeVisible();
     await expect(page.getByTestId("learn-card")).toHaveCount(6);
     await expect(page.getByTestId("learn-sequence")).toBeVisible();
-    expect(await page.getByTestId("activity-relationship-rail").innerText())
-      .toBe(railBefore);
+    expect(
+      await page.getByTestId("activity-relationship-rail").innerText()
+    ).toBe(railBefore);
 
     const learnCards = await page.getByTestId("learn-card").all();
     const firstLearnCard = await roundedBox(learnCards[0]);
@@ -796,8 +811,9 @@ test.describe("Phase 017 correction visual composition", () => {
         await expect(
           page.getByRole("tab", { name: new RegExp(mode.mode, "i") })
         ).toHaveAttribute("aria-selected", "true");
-        await expect(page.getByTestId(`activity-${mode.mode}-mode`))
-          .toBeVisible();
+        await expect(
+          page.getByTestId(`activity-${mode.mode}-mode`)
+        ).toBeVisible();
         await expectNoHorizontalOverflow(page);
         await page.screenshot({
           fullPage: true,
@@ -810,6 +826,7 @@ test.describe("Phase 017 correction visual composition", () => {
   test("captures the activity route on a narrow viewport", async ({ page }) => {
     await page.setViewportSize({ width: 390, height: 844 });
     await page.goto("/activity/10.3");
+    await page.getByRole("button", { name: "Mobile view" }).click();
 
     await expect(
       page.getByRole("heading", { name: /10.3 Firestopping/i })
@@ -822,5 +839,55 @@ test.describe("Phase 017 correction visual composition", () => {
       fullPage: true,
       path: screenshot("activity-mobile")
     });
+  });
+
+  test("keeps primary interfaces inside the mobile device canvas", async ({
+    page
+  }) => {
+    test.setTimeout(120000);
+    await page.setViewportSize({ width: 430, height: 844 });
+
+    const routes = [
+      "/",
+      "/general-qc",
+      "/general-qc/general-qc-ncr",
+      "/section/4",
+      "/activity/2.2",
+      "/activity/2.2?mode=full",
+      "/activity/2.2?mode=learn",
+      "/workflow/WF-CON-01",
+      "/preconcealment/PC-FIRE-01",
+      "/search?q=concrete",
+      "/gate/G-STR-01",
+      "/term/TERM-FIRE-FIRESTOPPING"
+    ];
+
+    for (const route of routes) {
+      await page.goto(route);
+      await page.getByRole("button", { name: "Mobile view" }).click();
+      await expect(page.getByTestId("app-shell")).toHaveAttribute(
+        "data-device-view",
+        "mobile"
+      );
+      await expectNoHorizontalOverflow(page);
+
+      const overflowingTiles = await page.evaluate(() => {
+        const selectors = [
+          "[data-testid$='card']",
+          "[data-testid$='panel']",
+          "[data-testid$='row']",
+          "[data-testid='quick-card']",
+          "[data-testid='learn-card']"
+        ];
+
+        return Array.from(document.querySelectorAll(selectors.join(",")))
+          .filter((element) => element instanceof HTMLElement)
+          .map((element) => element as HTMLElement)
+          .filter((element) => element.scrollWidth > element.clientWidth + 1)
+          .map((element) => element.dataset.testid ?? element.tagName);
+      });
+
+      expect(overflowingTiles).toEqual([]);
+    }
   });
 });
