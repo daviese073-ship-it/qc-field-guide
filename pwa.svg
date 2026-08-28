@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="QC Field Guide">
+  <rect width="512" height="512" fill="#0f172a"/>
+  <path d="M154 128h204a26 26 0 0 1 26 26v252H154a26 26 0 0 1-26-26V154a26 26 0 0 1 26-26Z" fill="#f8fafc"/>
+  <path d="M184 184h144M184 240h144M184 296h88" stroke="#2563eb" stroke-width="28" stroke-linecap="round"/>
+  <path d="m292 316 34 34 72-84" fill="none" stroke="#16a34a" stroke-width="30" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
